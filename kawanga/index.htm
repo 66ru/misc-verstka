@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<head>
+	<title>kawanga</title>
+</head>
+<body>
+	<style type="text/css">
+		.kaw-banner {
+			position: fixed;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			height: 60px;
+			background: #76a100;
+			visibility: visible;
+			z-index: 98;
+		}
+		.kaw-banner:hover {
+			height: 120px;
+			cursor: pointer;
+			cursor: hand;
+		}
+		a.kaw-banner__close {
+			position: absolute;
+			right: 10px;
+			width: 30px;
+			height: 30px;
+			background: url(img/kaw-banner__close.png) 0 0 no-repeat;
+			width: 30px;
+			height: 30px;
+			top: -30px;
+			outline: none;
+		}
+		.kaw-banner__shadow {
+			background: url(img/kaw-banner__shadow.png) 0 0 repeat-x;
+			height: 9px;
+			position: absolute;
+			top: -9px;
+			display: block;
+			width: 100%;
+		}
+	</style>
+	<div class="kaw-banner" id="banner12345">
+		<ins class="kaw-banner__shadow"></ins>
+		<a class="kaw-banner__close" href='#' onClick='document.getElementById("banner12345").style.display = "none"; return false;' title="Закрыть"></a>
+		<div class="kaw-banner__content">
+		1123
+		</div>
+	</div>
+</body>
+</html>
