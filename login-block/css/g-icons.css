@@ -83,6 +83,46 @@
 }
 
 
+.g-icons__middle-vk,
+.g-icons__middle-lj,
+.g-icons__middle-fb,
+.g-icons__middle-tw,
+.g-icons__middle-more {
+	background-image: url(../img/social-middle-icons.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.g-icons__middle-vk {
+	background-position: 0 0px;
+}
+.g-icons__middle-lj {
+	background-position: -64px 0;
+}
+.g-icons__middle-fb {
+	background-position: -22px 0;
+}
+.g-icons__middle-tw {
+	background-position: -43px 0;
+}
+.g-icons__middle-more {
+	background-position: -85px 0;
+	display: none;
+}
+
+
+
+.g-icons-more {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+
+
 .g-icons__comments {
 	background-image: url(../../g-icons/img/icons.png);
 	background-position: -251px -470px;	
