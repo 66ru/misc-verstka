@@ -1,0 +1,875 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ru">
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+      
+  
+    
+
+  <link rel="icon" href="http://www.66.ru/favicon66.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://www.66.ru/favicon66.ico" type="image/x-icon">
+
+  <link href="css/g-icons.css" rel=stylesheet type="text/css">
+
+  <link href="http://img.66.ru/css/main.css" rel=stylesheet type="text/css">
+  <link href="http://img.66.ru/css/main_v3.css" rel=stylesheet type="text/css">
+
+  <link href="http://t.66.ru/common/style.css" rel=stylesheet type="text/css">
+  <!--[if lte IE 6]>
+  <style type="text/css" media="all">
+  /**
+   * @package 66-v5-css
+   */
+
+  /**
+   * @section head
+   */
+
+  /**
+   * @subsection weather
+   */
+
+  /**
+   * @workaround ie6 transparent png support
+   * @affected ie6
+   * @css-for ie6
+   * @valid no
+   */
+  #v5-head div.v5-weather-p {
+      background: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://t.66.ru/common/img/v5-white-frame.png', sizingMethod='crop');
+  }
+
+  /**
+   * @workaround ie6 rendering bug
+   * @affected ie6
+   * @css-for ie6
+   * @valid yes
+   */
+  #v5-head div.v5-weather-br {
+      left: -5px !important;
+  }
+
+  /**
+   * @subsection login
+   */
+
+  /**
+   * @workaround ie6 transparent png support
+   * @affected ie6
+   * @css-for ie6
+   * @valid no
+   */
+  #v5-head div.v5-login-p {
+      background: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://t.66.ru/common/img/v5-lightgreen-frame.png', sizingMethod='crop');
+  }
+
+  /**
+   * @workaround ie6 rendering bug
+   * @affected ie6
+   * @css-for ie6
+   * @valid yes
+   */
+  #v5-head div.v5-login-br {
+      left: -5px !important;
+  }
+
+  /**
+   * @subsection elements
+   */
+
+  /**
+   * @workaround ie6 transparent png support
+   * @affected ie6
+   * @css-for ie6
+   * @valid no
+   */
+  div.v5-grayblock-p {
+      background: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://t.66.ru/common/img/v5-gray-frame.png', sizingMethod='crop');
+  }
+
+  div.it-is-for-you {
+      background: none;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://t.66.ru/common/img/it-is-for-you.png', sizingMethod='crop');
+  }
+  </style>
+  <![endif]-->
+
+  <script type="text/javascript" src="http://img.66.ru/js/jquery-1.3.2-pack.js"></script>
+  <script type="text/javascript" src="http://img.66.ru/js/jquery.autocomplete-pack.js"></script>
+  <script type="text/javascript" src="http://img.66.ru/js/jquery.hotkeys-pack.js"></script>
+  <script type="text/javascript" src="http://img.66.ru/js/jquery.mousewheel-pack.js"></script>
+
+  <script type="text/javascript" src="http://img.66.ru/js/jquery.autoresize.js"></script>
+  <script type="text/javascript" src="http://img.66.ru/js/jquery.color.js"></script>
+
+  
+  <script type="text/javascript">
+  (function($) {
+      $(function() {
+          $('#v5-head ul.v5-menu div.v5-submenu-wrap').parent().hover(
+              function() { $(this).addClass('active'); },
+              function() { $(this).removeClass('active'); }
+          ).end().find('li.v5-submenu-item > a').add('li.v5-subsubmenu-item').hover(
+              function() { $(this).addClass('active'); },
+              function() { $(this).removeClass('active'); }
+          );
+
+          var $searchText = $('#v5-search-text');
+
+          $searchText.blur(function() {
+              if(!'как получить образование за границей' || this.value.replace(/(^\s+|\s+$)/g, '')) return;
+              $searchText.val('Например: как получить образование за границей').addClass('blured');
+          })
+                              .focus(function() {
+              if(this.value.replace(/(^\s+|\s+$)/g, '') != 'Например: как получить образование за границей') return;
+              $searchText.val('').removeClass('blured');
+          })
+                              .parents('form').submit(function() {
+              if($.trim($searchText.val()) != 'Например: как получить образование за границей')
+                  return;
+
+              $searchText.val('как получить образование за границей').removeClass('blured');
+          }).attr('autocomplete', 'off');
+
+          if(!$searchText.val() && 'как получить образование за границей')
+              $searchText.addClass('blured').val('Например: как получить образование за границей');
+
+          $.browser.msie && $.browser.version <= 6 ? LoadPng() : '';
+                                              });
+  })(jQuery);
+  </script>
+
+  <script type="text/javascript" src="http://img.66.ru/js/TransparentPng.js"></script>
+  <script type="text/javascript" src='http://img.66.ru/js/ajax2.js'></script>
+
+  <script type="text/javascript" src='http://img.66.ru/js/ax.js'></script>
+  <script type="text/javascript" src='http://img.66.ru/js/main.js'></script>
+  <script type="text/javascript" src='http://img.66.ru/js/new_calendar.js'></script>
+  <script type="text/javascript" src='http://img.66.ru/js/new_66.js'></script>
+  <script type="text/javascript" src='http://img.66.ru/js/window.js'></script>
+  <script type="text/javascript" src="http://img.66.ru/js/scroller_v4_front.js"></script>
+
+  <script type="text/javascript" src="http://img.66.ru/js/chat.js"></script>
+  <script type="text/javascript" src="http://img.66.ru/js/CrySuggest.js"></script>
+  <script type="text/javascript" src='http://img.66.ru/js/gifts.js'></script>
+  <script type="text/javascript">var z=document.createElement("script");z.type="text/javascript";z.async=true;z.src="http://engine.adzerk.net/z/13174/azk1_2_13";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(z, s);</script>
+
+    
+  
+  	
+  
+  
+  
+  
+  
+  
+  
+  
+     <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - новости" href="http://www.66.ru/news/rss/">
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - лента клубов" href="http://www.66.ru/club/lenta/rss/">
+
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - лента блогов" href="http://www.66.ru/users/lenta/rss/">
+  
+  <script type="text/javascript">var debug = 0;</script>
+      <script type="text/javascript">var debug = 1;</script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <link href="http://t.66.ru/main/style.css" rel=stylesheet type="text/css">  <link href="http://t.66.ru/newmain/hp_page_news.css" rel="stylesheet" type="text/css">  <link href="http://t.66.ru/newmain/grid.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+  
+	(function($,sr){
+	  var debounce = function (func, threshold, execAsap) {
+	      var timeout;
+	      return function debounced () {
+	          var obj = this, args = arguments;
+	          function delayed () {
+	              if (!execAsap)
+	                  func.apply(obj, args);
+	              timeout = null; 
+	          };
+	 
+	          if (timeout)
+	              clearTimeout(timeout);
+	          else if (execAsap)
+	              func.apply(obj, args);
+	 
+	          timeout = setTimeout(delayed, threshold || 100); 
+	      };
+	  }
+		jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+	})(jQuery,'smartresize');
+  </script>  
+  <title>Екатеринбург. Современный городской портал — www.66.ru</title>
+
+  
+  <meta name="keywords" content="Екатеринбург, новости, погода, работа, банки, курс валют, портал, общение, Свердловская область">
+  <meta name="description" content="Екатеринбург — погода, курс валют, свежие новости, работа, банки, доска частных объявлений, а также интересные блоги и фотоальбомы. Автомобильный раздел с собственными тест-драйвами и каталогом авто. Современный городской портал — www.66.ru.">
+
+  <script type="text/javascript">
+  var usdie = "die";  
+  </script>
+    
+  <script language="JavaScript" type="text/javascript">
+ if (self.parent.frames.length != 0)
+ self.parent.location="http://66.ru"
+</script>
+ </head>
+ <body class="page-fixed-right">
+
+ 
+    <div class="v5-ad-top">
+    <!--/* OpenX Javascript Tag v2.8.7 */-->
+	</div>
+    
+           
+    <div id="window2">
+        <div class="wie" id="auth" style="z-index: 99999; width: 560px; height: 1px;  top: -1450px">
+            <table style="width: 560px; height: 1px;" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr style="height: 8px;">
+                        <td class="win_a" id="test1_a" width="8"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="8" border="0" height="8"></td>
+                        <td class="win_b" id="test1_b"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="100%" border="0" height="8"></td>
+                        <td class="win_c" id="test1_c" width="8"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="8" border="0" height="8"></td>
+                    </tr>
+                    <tr style="height: 1px;" valign="top">
+                        <td class="win_d" id="test1_d1" width="8"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="8" border="0" height="100%"></td>
+                        <td id="auth_content">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr style="height: 31px; background-color: rgb(109, 106, 101); background-image: url(http://img.66.ru/dez/window_title_bg.gif);">
+                                        <td style="border-bottom: 1px solid rgb(86, 84, 80);" width="50" align="center"><img title="Вход на сайт" alt="Вход на сайт" src="http://img.66.ru/dez/title_reg.gif" width="22" border="0" height="19"></td>
+                                        <td style="border-bottom: 1px solid rgb(86, 84, 80); color: rgb(240, 240, 237);" class="c_news_title">Вход на сайт</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table style="height: 1px;" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr valign="top">
+                                        <td id="auth_mf" style="padding: 0px 5px; background-color: rgb(249, 249, 247);">
+                                            <table style="margin: 10px 0px 5px; border-collapse: collapse;" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="auth_menu_s" width="110">Вход</td>
+                                                        <td class="auth_menu_ns" width="114"><a onclick="add_auth('auth','reg','refresh','undefined'); return false;" href="/">Регистрация</a></td>
+                                                        <td class="auth_menu_ns" width="130"><a onclick="add_auth('auth','getpass','refresh','undefined'); return false;" href="/">Забыли пароль?</a></td>
+                                                        <td class="auth_menu_n">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="aufc" colspan="4" class="auth_menu_b" width="484">
+                                                            <div id="forchange">
+                                                                <form onsubmit="return false;" method="post" action="http://66.ru/" style="margin: 0px; padding: 0px;" id="login_form_66">
+                                                                    <br>
+                                                                    <table style="height: 176px;" width="95%" border="0" cellpadding="2" cellspacing="2" align="center">
+                                                                        <tbody>
+                                                                            <tr style="height: 30px;">
+                                                                                <td style="font-size: 15px; color: rgb(102, 102, 102);" width="100">Ваш логин</td>
+                                                                                <td><input style="height: 25px; width: 100%; font-size: 15px;" value="" id="a_login" name="login_66" type="text"></td>
+                                                                            </tr>
+                                                                            <tr style="height: 30px;">
+                                                                                <td style="font-size: 15px; color: rgb(102, 102, 102);" width="100">Пароль</td>
+                                                                                <td><input onkeydown="findEnter(event,'auth','refresh','undefined');" style="height: 25px; width: 100%; font-size: 15px;" value="" id="a_pass" name="password_66" type="password"></td>
+                                                                            </tr>
+                                                                            <tr style="height: 30px;">
+                                                                                <td style="font-size: 15px;" width="100">&nbsp;</td>
+                                                                                <td valign="top" align="left">
+                                                                                    <table style="margin: 0px; padding: 0px;" celpadding="0" cellspacing="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td><input value="" id="a_remember" name="remember_me" type="checkbox"></td>
+                                                                                                <td><label id="aaasss" style="font-size: 12px; color: rgb(102, 102, 102);" for="a_remember">Запомнить меня</label></td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr style="height: 20px;">
+                                                                                <td colspan="2" id="message" style="color: rgb(255, 0, 0);" align="center"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="2" style="height: 30px; white-space: nowrap;" align="center"><input title="Для успешной авторизации у вас должны быть включены cookies." alt="Вход" onclick="this.disabled=true; checkPOSTauth(); return false;" src="http://img.66.ru/dez/enter.gif" style="width: 54px; height: 16px; margin-right: 14px;" id="auth_enter_button" type="image"><input title="Отмена" alt="Отмена" onclick="window2_close(0); return false;" src="http://img.66.ru/dez/cancel.gif" style="width: 68px; height: 16px;" type="image"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="win_d" id="test1_d2" width="8"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="8" border="0" height="100%"></td>
+                    </tr>
+                    <tr style="height: 8px;">
+                        <td class="win_e" id="test1_e" width="8"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="8" border="0" height="8"></td>
+                        <td class="win_f" id="test1_f"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="100%" border="0" height="8"></td>
+                        <td class="win_g" id="test1_g" width="8"><img alt="" src="http://img.66.ru/dez/spacer.gif" width="8" border="0" height="8"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="drag" id="drag" style="width: 544px; height: 31px; z-index: 99999; cursor: move; text-align: right; top: -1530px"><img onclick="window2_close(0);" style="cursor: pointer; visibility: visible;" title="Закрыть" alt="Закрыть" src="http://img.66.ru/dez/window/close.gif" width="31" border="0" height="31"></div>
+    </div>
+
+        
+    
+      <div id="window"></div>
+  <div id="user_info" onmouseout="userinfo_hide()" onmouseover="clearTimeout(ui_t)"></div><div id="overlay"></div>
+  <div id="v5-frame">
+  
+
+   <div id="v5-head-wrap">
+    <div id="v5-head">
+           
+		     <div class="v5-logo">
+	         <a href="http://www.66.ru/">
+      <i>
+	      		  <img src="http://t.66.ru/common/img/v5-head-logo.png" alt="66.ru" title="Современный портал Екатеринбурга">
+	            </i>
+
+
+        			                <span>Современный портал Екатеринбурга</span>
+		                  </a>
+     </div>
+     
+     
+     <noindex>
+     <form autocomplete="off" accept-charset="utf-8" action="http://www.66.ru/search/" method="get" class="v5-search">
+      <p><label for="v5-search-text">Поиск</label></p>
+      <p>
+       <input class="text blured" name="searchString" value="" id="v5-search-text" type="text">
+       <input class="submit" value="Найти" type="submit">
+      </p>
+     </form>
+	     </noindex>
+	      
+    
+          <div class="v5-currency">
+            <table>
+       <thead>
+        <tr>
+         <td class="today"><a href="http://www.66.ru/bank/currency/">курсы валют</a></td>
+         <td class="dynamic">сегодня</td>
+         <td class="sizer"></td>
+                  <td class="sizer"></td>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="today">$ 32.9054</td>
+         <td class="dynamic">
+          <span>+</span>          0.3888         </td>
+         <td class="sizer"></td>
+                  <td class="sizer"></td>
+        </tr>
+        <tr>
+         <td class="today">€ 41.7208</td>
+         <td class="dynamic">
+          <span>+</span>          0.4767         </td>
+         <td class="sizer"></td>
+                  <td class="sizer"></td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     	
+
+	        
+        
+     <div class="v5-weather">
+      <div class="v5-weather-wrap">
+       <div class="v5-weather-p v5-weather-tl"></div>
+       <div class="v5-weather-p v5-weather-tr"></div>
+       <div class="v5-weather-content">
+        <p class="now">
+         <b>+23</b>
+         <span>ясно</span>
+        </p>
+        <p class="icon">
+         <span style="top: 0px;">
+          <img src="http://t.66.ru/common/img/v5-weather-icons.png" alt="ясно" title="ясно">
+         </span>
+        </p>
+        <ul class="next">
+                  <li>ночью: <span>15° C</span></li>
+                                    <li>завтра: <span>25° C</span></li>
+                           <li>послезавтра: <span>18° C</span></li>
+                 </ul>
+        <p class="link">
+         <a href="http://www.66.ru/weather/">погода в Екатеринбурге</a>
+        </p>
+       </div>
+      </div>
+      <div class="v5-weather-p v5-weather-bl"></div>
+      <div class="v5-weather-p v5-weather-br"></div>
+     </div>
+     	     
+       
+      
+     <div class="v5-login">
+      <div class="v5-login-wrap">
+       <div class="v5-login-wrap-wrap">
+        <div class="v5-login-p v5-login-tl"></div>
+        <div class="v5-login-p v5-login-tr"></div>
+        <div class="v5-login-content">
+                          <b><a href="http://www.66.ru/login/" onclick="window_close(0); add_auth('auth','auth','refresh'); auth2_form_show(); return false;">Войти</a></b>
+         &nbsp;
+         
+	<a href="#" title="Вконтакте"><ins class="g-icons__mini-vk inline-block"></ins></a>
+	<a href="#" title="facebook"><ins class="g-icons__mini-fb inline-block"></ins></a>
+	<a href="#" title="twitter"><ins class="g-icons__mini-tw inline-block"></ins></a>
+	<a href="#" title="LiveJournal"><ins class="g-icons__mini-lj inline-block"></ins></a>
+
+                           </div>
+       </div>
+      </div>
+      <div class="v5-login-p v5-login-bl"></div>
+      <div class="v5-login-p v5-login-br"></div>
+     </div>
+     
+          
+
+     
+     
+     
+          
+     
+<ul class="v5-menu">
+
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/news/">
+			Новости		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/main/">
+							Главные						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/society/">
+							Общество						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/business/">
+							Бизнес						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/politic/">
+							Политика						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/auto/news/">
+							Авто						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/incident/">
+							Происшествия!						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/freetime/">
+							Отдых						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/world">
+							В мире						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/internet/">
+							Интернет						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/sport/">
+							Спорт						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/hitech/">
+							Наука и техника						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/health/news/">
+							Здоровье						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/news/entertainment/">
+							Безумный мир						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/business/news/">
+							Новости компаний						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/bank/">
+			Банки		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a class="" href="http://www.66.ru/business/">
+							Бизнес						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a class="" href="http://www.66.ru/strahovki/">
+							Страхование						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/bank/credit_order/">
+							Заявка на кредит						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/rabota/">
+			Работа		</a>
+		
+				
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/help/">
+			Справка		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/skidki/">
+							Дисконтный клуб «УБРиР - Club 66»						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/hotels/">
+							Гостиницы Екатеринбурга						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/hotels/kvartiry-posutochno/">
+							Квартиры посуточно						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/help/price/">
+							Справочник товаров						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/catalog/">
+							Интернет-магазины						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/otvet/">
+							Вопросы и ответы						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/weather/">
+							Погода в Екатеринбурге						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/citymap/">
+							Карта Екатеринбурга						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/auto/">
+			Авто		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/auto/news/">
+							Автоновости						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/auto/test-drive/">
+							Тест-драйвы						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/auto/catalog/">
+							Каталог автомобилей						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/auto/select/">
+							Подбор автомобиля						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/auto/doska/">
+							Объявления						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/realty/">
+			Недвижимость		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/realty/objects/">
+							Новостройки						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/realty/community/">
+							Коттеджные поселки						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/doska/realty/">
+							Объявления						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/doska/">
+			Объявления		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/doska/">
+							Доска объявлений						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/auto/doska/">
+							Продажа автомобилей						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/doska/realty/">
+							Недвижимость						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/realty/doska/com/">
+							Коммерческая недвижимость						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/realty/doska/zagorod/">
+							Загородная недвижимость						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/doska/my/">
+							Мои объявления						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/health/">
+			Здоровье		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/health/pharmacy/">
+							Поиск лекарств						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/gurman/">
+			Еда		</a>
+		
+				
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/afisha/">
+			Афиша		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/afisha/cinema/">
+							Кино						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/afisha/show/">
+							Концерты						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/afisha/theater/">
+							Театры						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/afisha/kinder/">
+							Для детей						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/afisha/bars/">
+							Вечеринки						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/talk/">
+			Общение		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/users/">
+							Пользователи						</a>
+												<ul class="v5-subsubmenu">
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/users/">
+									Список								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/users/interests/">
+									По интересам								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/users/online/">
+									Сейчас на сайте								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/users/find/">
+									Поиск								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/talk/?bt=1&amp;ct=0">
+									Лента блогов								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/fulllenta/?fbt=1&amp;fct=0">
+									Развернутая лента								</a>
+							</li>
+													</ul>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/club/">
+							Клубы						</a>
+												<ul class="v5-subsubmenu">
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/club/">
+									Список								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/club/interests/">
+									По интересам								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/talk/?bt=0&amp;ct=1">
+									Лента клубов								</a>
+							</li>
+														<li class="v5-subsubmenu-item">
+								<a href="http://www.66.ru/fulllenta/?fbt=0&amp;fct=1">
+									Развернутая лента								</a>
+							</li>
+													</ul>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://www.66.ru/photo/">
+			Фото		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/photo/fresh/">
+							Новые фото						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/photo/mupload/">
+							Загрузить фото						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/photo/favorite/">
+							 Избранные						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/photo/my/">
+							Мои фото						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/video/">
+							Видео						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/video/my/">
+							Моё видео						</a>
+											</li>
+										<li class="v5-submenu-item">
+						<a href="http://www.66.ru/video/?upload">
+							Загрузить видео						</a>
+											</li>
+									</ul>
+			</div>
+		</div>
+			</li>
+		<li class="v5-menu-item">
+		<a href="http://mail.66.ru">
+			Почта		</a>
+		
+		 
+			<span id="mailcount">
+									</span>
+				
+			</li>
+	</ul>
+    </div>
+   </div>
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   
+  </div>
+
+ </body>
+</html>
+ 
+
