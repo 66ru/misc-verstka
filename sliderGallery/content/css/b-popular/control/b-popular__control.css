@@ -1,0 +1,58 @@
+.b-popular__control
+{
+	position: absolute;
+	bottom: 0px;
+	
+	height: 41px;
+	width: 40px;
+	margin-top: -41px;
+	
+	cursor: pointer;
+	background: url(b-popular__control.png) no-repeat;
+	z-index: 100;
+}
+
+.b-popular__control_prev
+{
+	left: -20px;
+	position: absolute;
+	background: #f5f5f5 url(b-popular__control.png) 4px 50% no-repeat;
+	width: 20px;
+	height: 100%;	
+}
+
+
+
+
+
+
+
+.b-popular__control_prev:hover,
+.b-popular__control_prev_hover
+{
+	background-position: -20px 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.b-popular__control_next
+{
+	right: -19px;
+	position: absolute;
+	background: #f5f5f5 url(b-popular__control.png) -46px 50% no-repeat;
+	width: 20px;
+	height: 100%;
+}
+.b-popular__control_next:hover,
+.b-popular__control_next_hover
+{
+    background: #f5f5f5 url(b-popular__control.png) -72px 50% no-repeat;
+}

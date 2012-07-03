@@ -1,0 +1,16 @@
+.b-popular__title
+{
+	font: 2.5em Arial;
+	
+	margin-bottom: 0.25em;
+}
+
+.b-popular__title-link
+{
+	color: #3f4447;
+}
+
+.b-popular__title-link:hover
+{
+	color: #727475;
+}

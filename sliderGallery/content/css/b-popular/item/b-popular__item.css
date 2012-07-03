@@ -1,0 +1,81 @@
+.b-popular__item
+{
+	position: relative;
+	
+	padding: 106px 10px 10px 10px;
+	text-align: center;
+}
+
+.b-popular__item-image-wrapper
+{
+	position: absolute;
+	top: 0;
+	height: 90px;
+	left: 50%;
+	margin-left: -45px;
+	margin-top: -100px;
+}
+
+.b-popular__item-image
+{
+	position: absolute;
+	bottom: 0;
+}
+
+.b-popular__item-title-wrapper
+{
+	position: relative;
+	margin-bottom: 8px;
+	height: 26px;
+}
+
+.b-popular__item-title
+{
+	font: 11px/13px Arial;
+	color: #464646;
+	text-decoration: none;
+	
+}
+
+
+.b-popular__item-price-wrapper
+{
+	position: relative;
+	
+	overflow: hidden;
+	
+	zoom: 1;
+}
+
+.b-popular__item-price
+{	
+	
+    background: #787c7e;
+}
+
+.b-popular__item-price-content
+{
+	background-image: linear-gradient(top, rgb(249,159,50) 45%, rgb(244,117,19) 73%);
+	background-image: -o-linear-gradient(top, rgb(249,159,50) 45%, rgb(244,117,19) 73%);
+	background-image: -moz-linear-gradient(top, rgb(249,159,50) 45%, rgb(244,117,19) 73%);
+	background-image: -ms-linear-gradient(top, rgb(249,159,50) 45%, rgb(244,117,19) 73%);
+	background-image: -webkit-linear-gradient(top, rgb(249,159,50) 45%, rgb(244,117,19) 73%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.45, rgb(249,159,50)),
+		color-stop(0.73, rgb(244,117,19))
+	);	
+    /* For Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f99f32, endColorstr=#f47513)";    
+    background-color: #CCC;	
+	
+	font: bold 14px Arial;
+	
+    padding: 7px 0px;
+	
+	color: #fff;
+	white-space: nowrap;
+}

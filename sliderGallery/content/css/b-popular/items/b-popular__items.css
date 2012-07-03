@@ -1,0 +1,28 @@
+.b-popular__items-wrapper
+{
+	position: relative;
+	
+	
+	width: 100%;
+	
+	
+	overflow: hidden;
+}
+
+.b-popular__items
+{
+	width: 1670%;
+}
+
+.b-popular__items-item
+{
+	float: left;
+	width: 1%;
+	background: #fff;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.b-popular__items-item:hover {
+	background: #f5f5f5;
+}

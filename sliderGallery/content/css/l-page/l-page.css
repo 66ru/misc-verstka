@@ -1,0 +1,78 @@
+.l-page
+{
+	padding: 0 150px;
+}
+
+
+.ekabu-goods-feed {
+	border: 1px solid #d5d5d5;
+	padding-left: 144px;
+	padding-right: 9px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.ekabu-goods-feed-card {
+	padding-top: 10px;
+	font-size: 12px;
+	padding-left: 10px;
+	position: absolute;
+	left: 0px;
+}
+.ekabu-goods-feed__img {
+	margin-bottom: 7px;
+}
+.ekabu-goods-feed__title {
+	color: #000;
+}
+.ekabu-goods-feed__descr {
+	font-size: 11px;
+	line-height: 13px;
+	color: #898989;
+	position: absolute;
+	bottom: 18px;
+	left: 10px;
+	width: 140px;
+}
+
+.b-popular {
+	background: #f5f5f5 url(../b-popular/control/b-popular__control-l.png) 5px 50% no-repeat;;
+}
+
+.b-popular-inner {
+	padding-left: 20px;
+	padding-right: 20px;
+	background: url(../b-popular/control/b-popular__control-r.png) right 50% no-repeat;
+	position: relative;
+}
+
+/*
+.b-popular-ltcnr,
+.b-popular-lbcnr,
+.b-popular-rtcnr,
+.b-popular-rbcnr {
+	position: absolute;
+	background: #fff;
+	width: 20px;
+	height: 10px;
+	display: block;
+	z-index: 1000;
+}
+
+
+.b-popular-ltcnr {
+	left: 0px;
+	top: 0px;
+}
+.b-popular-lbcnr {
+	left: 0px;
+	bottom: 0px;
+}
+.b-popular-rtcnr {
+	right: 1px;
+	top: 0px;
+}
+.b-popular-rbcnr {
+	right: 0px;
+	bottom: 0px;
+}*/
