@@ -1,0 +1,50 @@
+.context .decorationHeader #head-wrap {
+    /*background: url("http://s.66.ru/new66/a7/cd/d9/1./a7cdd91.png") repeat-x scroll 0 0 transparent !important;*/
+	background: url("../img/a7cdd91.png") repeat-x scroll 0 -15px transparent !important;
+}
+.context .decorationHeader .head_menu-top-currency {
+    display: none;
+}
+.context .decorationHeader .head_menu-top-right {
+    position: relative;
+}
+.context .decorationHeaderPic {
+    /*background-image: url("http://s.66.ru/new66/7b/9e/cf/8a/7b9ecf8a.png");*/
+	
+	background-image: url("../img/7b9ecf8a.png");
+    background-position: 360px -15px;
+    background-repeat: no-repeat;
+    height: 105px;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    width: 2000px !important;
+    z-index: -1;
+}
+
+.decorationHeader .head_menu-top {
+	
+    background-position: left 0;
+    background-repeat: no-repeat;	
+}
+
+.ekavilleText {
+	display: block;
+	height: 60px;
+	width: 850px;
+	position:absolute;
+	left: 1200px;
+	top: 0px;
+	background: url(../img/ekaville-text.png) 0 -4px no-repeat;
+}
+
+a.linkekavile {
+	display: block;
+	height: 60px;
+	left: 190px;
+	position:absolute;
+	width: 840px;
+	top: 0px;
+	z-index: 100;
+}
+
