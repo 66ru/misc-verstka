@@ -1,0 +1,12 @@
+<div class="{% renderClass(context) %}">
+    <ins class="{% renderClass(context, 'crn-left') %}"></ins>
+    <ins class="{% renderClass(context, 'crn-right') %}"></ins>
+	{% renderContent(context, 'content') %}
+	<span class="{% renderClass(context, 'text') %}">
+		{% if context.getAttribute('pic') %}
+			<!--ins class="{% renderClass(context, 'pic') %}"></ins-->
+			{% renderContent(context, 'pic') %}
+		{% endif %}
+		{% renderContent(context, 'text') %}
+	</span>
+</div>

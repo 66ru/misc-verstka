@@ -1,0 +1,48 @@
+@import url("b-btn/css/b-btn.css");
+
+.my-combat {
+	margin-bottom: 20px;
+	background-color: #f3f3f3;
+	position:relative;
+	padding-right: 220px;
+	min-height: 92px;
+	//height: 92px;
+}
+
+.my-combat .b-btn {
+	width: 170px;
+	position:absolute;
+	top: 50%;
+	margin-top: -15px;
+	right: 20px;
+}
+
+.my-combat img {
+	display: block;
+}
+
+.my-combat .my-combat__col1 {
+	background-position: left 0;
+	background-repeat: no-repeat;
+	padding-left: 260px;
+	min-height: 92px;
+	//height: 92px;
+	overflow: hidden;
+	//overflow: none;
+}
+	
+.my-combat__title {
+	font: normal 18px/24px Arial, Tahoma, Sans-Serif;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+.my-combat__text,
+.my-combat__text p {
+	font: 13px/18px Arial, Tahoma, Sans-Serif;
+	margin: 0px 0 10px;
+}
+
+.my-combat__button {
+	white-space: nowrap;
+}
