@@ -13,12 +13,13 @@
 	position: absolute;
 	left: 0px;
 	width: 124px;
+	text-align: center;
 }
 
 .ekabu-goods-feed__img {
 	margin-bottom: 7px;
-	width: 100%;
-	display: block;
+	max-width: 100%;
+	max-height: 100%;
 }
 .ekabu-goods-feed__title {
 	color: #000;
