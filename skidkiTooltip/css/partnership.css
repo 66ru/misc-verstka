@@ -1,0 +1,88 @@
+.payMethodParnership {
+	width: 37px;
+	height: 28px;
+	display: block;
+	background: url(../img/skidki_credit.png) 0 0 no-repeat;
+	position:absolute;
+	z-index: 500;
+	right: 13px;
+	bottom: 15px;
+}
+
+.arrow_box {
+    border-radius: 6px 6px 6px 6px;
+    position:absolute;
+	bottom: 20px;
+	left: 0px;
+	width: 203px;
+}
+
+@media screen and (max-width: 1280px) {
+	.payMethodParnership {
+		right: 0px;
+		bottom: 15px;
+	}
+}
+
+.arrow_box__pad {
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 15px;;
+}
+
+
+.arrow_box {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 43px !important;
+	width: 203px !important;
+	z-index: 1000;
+	
+	box-shadow: 0 1px 3px #96a987;
+	
+	
+	background: #ffeb7a;
+	border: 1px solid #ffeb7a;
+}
+.arrow_box:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 235, 122, 0);
+	border-top-color: #ffeb7a;
+	border-width: 8px;
+	left: 50%;
+	margin-left: -72px;
+}
+
+
+.arrow_box a.newMembersItemHov {
+	background: none !important;
+	border: none !important;
+}
+
+.companyMiniCardParnership {
+	padding-left: 40px;
+	padding-top: 9px;
+	padding-bottom: 6px;
+	background: url(../img/skidki_credit.png) 0 0 no-repeat;
+	font-size: 12px;
+	line-height: 15px;	
+	margin-left: -10px;
+	
+}
+
+.company .companyMiniCardParnership a {
+	coloR: #fff;
+	text-decoration: underline;
+	border-bottom: none;
+	
+}
