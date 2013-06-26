@@ -1,18 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head>
 
-    <script src="index_files/analytics.js" async=""></script><script src="index_files/ga.js" async="" type="text/javascript"></script><script src="index_files/watch.js" async="" type="text/javascript"></script><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
-<script type="text/javascript">
-					var url = "http://auth.66.ru/auth/checkIsAuth/?providers_set=66,vk,lj,fb,tw,yandex&redirectUrl=http%3A%2F%2F66.ru%2Fnewgporlogin%2F&returnUrl=http%3A%2F%2F66.ru%2Fskidki%2Fcompany%2Fishop%2F&rand=22305";
-					url = url.replace("http%3A%2F%2F66.ru%2Fskidki%2Fcompany%2Fishop%2F",encodeURIComponent(window.location));
-					document.write('<scri' + 'pt type="text/javascript" src="' + url + '"></scri' + 'pt>');
-				</script><script type="text/javascript" src="index_files/a.js"></script><script src="index_files/a_002.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      GporAuth.run (function(token) {
-       window.location.href = 'http://66.ru/newgporlogin/?auth_token='+token+'&returnUrl='+window.location;
-      });
-    </script>
- 
   <title>Интернет-магазины. Cкидки во всех городах</title>
 
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
@@ -26,7 +14,8 @@
   <link href="index_files/client.css" rel="stylesheet" type="text/css">
   
   
-  <link href="css/partnership.css" rel="stylesheet" type="text/css">
+  <link href="css/discount.css" rel="stylesheet" type="text/css">
+  <link href="css/tooltip.css" rel="stylesheet" type="text/css">
   
 
 <!--[if lt IE 8]>
@@ -111,7 +100,7 @@
  <style media="screen" type="text/css">#adlift_swf_240_480 {visibility:hidden}</style>
  
  
- <script src="js/partnership.js" type="text/javascript"></script>
+ <script src="js/tooltip.js" type="text/javascript"></script>
  
  
  
@@ -1463,6 +1452,9 @@
 							</div>
 
 							<div class="span-11 col-5">
+
+<div id="partnerCreditTooltip" class="tooltip"><div class="tooltip__pad">Можно платить по программе<br>&laquo;<a href="#">Партнерское кредитование</a>&raquo;</div></div>
+
 																<div class="fullMembers context">
 									<table class="fullMembersList">
 																			<tbody><tr class="odd">											<td style="width:25%">
@@ -1488,9 +1480,8 @@
 																											<span class="newMembersItemPAd">
 																											
 																											
-																												<span class="payMethodParnership"></span>
-																											
-																											
+                                                        <span class="payMethodParnership js-tooltip" tooltipId="partnerCreditTooltip"></span>
+																											 
 																											
 																											
 																											
@@ -1524,7 +1515,7 @@
 												
 																											<a class="newMembersItem" href="http://66.ru/skidki/company/1955/">
 																											<span class="newMembersItemPAd">
-																												<span class="payMethodParnership"></span>
+                                                        <span class="payMethodParnership js-tooltip" tooltipId="partnerCreditTooltip"></span>
 																															<span style="background-image: url(http://s.66.ru/localStorage/57/4a/ff/b7/574affb7_resizedScaled_90to80.jpe);" class="newMembersItemImgPad"></span>
 																														<span class="newMembersItemText"><ins class="newMembersItemTextShadow newMembersItemTextShadowPic"></ins><ins>Aro-market.ru</ins></span>
 															<span class="salePercent rc2">
@@ -1583,7 +1574,7 @@
 												
 																											<a class="newMembersItem" href="http://66.ru/skidki/company/850/">
 																											<span class="newMembersItemPAd">
-																											<span class="payMethodParnership"></span>
+                                                        <span class="payMethodParnership js-tooltip" tooltipId="partnerCreditTooltip"></span>
 																															<span style="background-image: url(http://s.66.ru/localStorage/b4/61/80/02/b4618002_resizedScaled_90to80.jpe);" class="newMembersItemImgPad"></span>
 																														<span class="newMembersItemText"><ins class="newMembersItemTextShadow newMembersItemTextShadowPic"></ins><ins>Bezochkoff.ru</ins></span>
 															<span class="salePercent rc2">

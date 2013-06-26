@@ -1925,3 +1925,39 @@ a.discountItemViewsLink:active {
     border-top: 3px solid #F17E00;
     padding-top: 15px;
 }
+
+.payMethodParnership {
+	width: 37px;
+	height: 28px;
+	display: block;
+	background: url(../img/skidki_credit.png) 0 0 no-repeat;
+	position:absolute;
+	z-index: 500;
+	right: 13px;
+	bottom: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+	.payMethodParnership {
+		right: 0px;
+		bottom: 15px;
+	}
+}
+
+.companyMiniCardParnership {
+	padding-left: 40px;
+	padding-top: 9px;
+	padding-bottom: 6px;
+	background: url(../img/skidki_credit.png) 0 0 no-repeat;
+	font-size: 12px;
+	line-height: 15px;	
+	margin-left: -10px;
+	
+}
+
+.company .companyMiniCardParnership a {
+	coloR: #fff;
+	text-decoration: underline;
+	border-bottom: none;
+	
+}
