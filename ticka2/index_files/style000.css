@@ -1,0 +1,1186 @@
+/**
+ * @note ie works in quirks mode, so * html affects on all ie versions
+ * @package 66-v5-css
+ */
+
+/**
+ * @section common
+ */
+
+body {
+	background-color: #FFFFFF !important;
+	font-style: normal;
+	font-weight: normal;
+}
+
+a img {
+	border: 0;
+}
+
+#user_info {
+	z-index: 99997;
+}
+
+#window {
+	position: absolute;
+	z-index: 100000;
+}
+
+#gpor_auth_form {
+	//position: absolute !important;
+	//bogus: expression(function(e){ e.runtimeStyle.top = document.getElementsByTagName( 'body' )[0].scrollTop + "px";}(this));;
+}
+
+div.v5-ad-top {
+
+}
+
+/**
+ * @section frame
+ */
+#v5-frame {
+    min-height: 100%;
+	/**
+	 * @workaround ff rendering bug
+	 * @affected ff
+	 * @css-for ff
+	 * @valid yes
+	 */
+	min-width: 980px;
+	overflow: hidden;
+}
+
+* html #v5-frame {
+	overflow: visible;
+	zoom: 1;
+}
+
+/**
+ * @workaround ie6 min-height support
+ * @affected ie6
+ * @css-for ie6
+ * @valid yes
+ */
+* html #v5-frame {
+	height: auto !important;
+	height: 100%;
+}
+
+#v5-head-wrap,
+#v5-body-wrap,
+#v5-foot-wrap {
+    padding: 0 10px;
+}
+
+/**
+ * @workaround ie margin: 0 auto; support
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head-wrap,
+* html #v5-body-wrap,
+* html #v5-foot-wrap {
+	text-align: center;
+	zoom: 1;
+}
+
+* html #v5-head,
+* html #v5-body,
+* html #v5-foot {
+	text-align: left;
+	zoom: 1;
+}
+
+#v5-head-wrap {
+    height: 90px;
+    background: #779F1A url('v5-head-.png') repeat-x 0 0;
+}
+
+#v5-body-wrap {
+	overflow: hidden;
+	padding-bottom: 90px;
+	clear: both;
+}
+
+#v5-foot-wrap {
+    height: 60px;
+    margin-top: -60px;
+    background-color: #779F1A;
+}
+
+#v5-head,
+#v5-body,
+#v5-foot {
+    min-width: 960px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/**
+ * @workaround ie variable width support
+ * @affected ie
+ * @css-for ie
+ * @valid no
+ */
+* html #v5-head,
+* html #v5-body,
+* html #v5-foot {
+	width: expression(document.getElementsByTagName('body')[0].clientWidth > 1320 ? '1280px' : (document.getElementsByTagName('body')[0].clientWidth <= 1000 ? '960px' : 'auto'));
+}
+
+#v5-head {
+	position: relative;
+	/*z-index: 99996;*/
+	z-index: 990;
+	height: 90px;
+}
+
+#v5-body {
+	position: relative;
+	clear: both;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid no
+ */
+* html #v5-body {
+	zoom: 1;
+}
+
+#v5-foot {
+	position: relative;
+	height: 60px;
+}
+
+/**
+ * @section head
+ */
+
+/**
+ * @subsection it-is-for-you
+ */
+div.it-is-for-you {
+	position: absolute;
+	left: 77px;
+	top: 1px;
+	width: 65px;
+	height: 59px;
+	background: url('http://t.66.ru/common/img/it-is-for-you.png') no-repeat 0 0;
+	text-indent: -999em;
+	z-index: 999;
+}
+
+/**
+ * @subsection logo
+ */
+#v5-head div.v5-logo {
+	position: absolute;
+    top: 0;
+	left: 0;
+	width: 250px;
+	height: 60px;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.v5-logo__pic {background: url('style000.css') 0 50% no-repeat; height: 60px;}
+.v5-logo__descr {line-height: 13px; width: 120px; display: inline-block;}
+.v5-logo__descr span {display: inline-block; vertical-align: middle; margin-top: 8px;}
+
+#v5-head div.v5-logo a,
+#v5-head div.v5-logo a img,
+#v5-head div.v5-logo a span {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/**
+ * @workaround ie inline-block support
+ * @affected ie6, ie7
+ * @css-for ie6, ie7
+ * @valid no
+ */
+* html #v5-head div.v5-logo a,
+* html #v5-head div.v5-logo a img,
+* html #v5-head div.v5-logo a span {
+    display: inline;
+    zoom: 1;
+}
+
+#v5-head div.v5-logo a {
+	text-decoration: none !important;
+	color: #FFFFFF;
+}
+
+#v5-head div.v5-logo a img {
+	margin-left: 7px;
+	border: 0;
+	font-size: 40px;
+}
+
+#v5-head div.v5-logo a span {
+	width: 130px;
+	margin-top: 1px;
+	margin-left: 10px;
+	line-height: 13px;
+}
+
+/**
+ * @subsection global header
+ */
+#v5-head div.global-header {
+	position: absolute;
+	top: 20px;
+	left: 107px;
+	font: bold italic 25px 'Arial';
+	color: #FFFFFF;
+}
+
+#v5-head div.global-header a {
+	text-decoration: none !important;
+	color: #FFFFFF !important;
+}
+
+/**
+ * @subsection search
+ */
+#v5-head form.v5-search,
+.v5-nosearch {
+	position: relative;
+	height: 57px;
+	margin: 0 19% 0 260px;
+	padding-top: 3px;
+	padding-right: 330px;
+}
+
+#v5-head form.v5-search.hidden {
+	visibility: hidden;
+}
+
+/**
+ * @workaround ie wrong box sizing
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head form.v5-search {
+	height: 60px;
+}
+
+#v5-head form.v5-search p {
+	margin: 0;
+	margin-bottom: 1px;
+	white-space: nowrap;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid no
+ */
+* html #v5-head form.v5-search p {
+	zoom: 1;
+}
+
+#v5-head form.v5-search p label {
+	font-size: 11px;
+	color: #EBFFBC;
+}
+
+#v5-head form.v5-search p input.text {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 4px 3px;
+}
+
+/**
+ * @workaround ie wrong input sizing
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head form.v5-search p input.text {
+	height: 27px;
+	overflow: hidden;
+}
+
+#v5-head form.v5-search p input.text.blured {
+	color: #CCCCCC;
+}
+
+#v5-head form.v5-search p input.submit {
+	position: absolute;
+	top: 19px;
+	margin-left: 10px;
+	padding: 2px 10px;
+	height: 30px;
+	font-family: 'Trebuchet MS';
+	font-weight: bold;
+	color: #5E5C58;
+}
+
+/**
+ * @workaround ie buttons rendering bug
+ * @affected ie6, ie7
+ * @css-for ie6, ie7
+ * @valid yes
+ */
+* html #v5-head form.v5-search p input.submit {
+	overflow: visible;
+}
+
+/**
+ * @subsection currency
+ */
+#v5-head div.v5-currency {
+	position: absolute;
+	top: 3px;
+	right: 260px;
+	width: 175px;
+}
+
+#v5-head div.v5-currency table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 1px;
+	float: right;
+}
+
+#v5-head div.v5-currency table td {
+	white-space: nowrap;
+	line-height: 13px;
+	font-size: 12px;
+	color: #EBFFBC;
+}
+
+#v5-head div.v5-currency table td.dynamic,
+#v5-head div.v5-currency table td.tomorrow {
+	padding-left: 5px;
+	text-align: right;
+
+}
+
+#v5-head div.v5-currency table td a {
+	color: #EBFFBC;
+}
+
+#v5-head div.v5-currency table td span {
+	font-family: 'Courier New';
+}
+
+#v5-head div.v5-currency table td.sizer {
+	width: 50%;
+}
+
+#v5-head div.v5-currency table thead td {
+	font-size: 10px;
+}
+
+* html #v5-head div.v5-currency table thead td {
+	padding-bottom: 4px;
+}
+
+#v5-head div.v5-currency table tbody td.today,
+#v5-head div.v5-currency table tbody td.tomorrow {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#v5-head div.v5-currency table tbody td.dynamic {
+	font-size: 10px;
+}
+
+/**
+ * @subsection weather
+ */
+#v5-head div.v5-weather {
+	position: absolute;
+	top: 7px;
+	right: 0;
+	z-index: 0;
+	width: 230px;
+	padding: 5px;
+}
+
+/**
+ * @workaround ie wrong box sizing
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-weather {
+	width: 240px;
+}
+
+#v5-head div.v5-weather-content {
+	position: relative;
+	margin-top: 5px;
+	padding: 0 15px;
+	background-color: #FFFFFF;
+}
+
+#v5-head div.v5-weather-wrap {
+	position: relative;
+	overflow: hidden;
+	margin: -5px;
+	margin-bottom: 0;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid no
+ */
+* html #v5-head div.v5-weather-wrap {
+	zoom: 1;
+}
+
+#v5-head div.v5-weather-p {
+	position: absolute;
+	left: -5px;
+	z-index: -1;
+	background: url('v5-white.png');
+	font-size: 1px;
+}
+
+#v5-head div.v5-weather-tl,
+#v5-head div.v5-weather-tr {
+	top: -5px;
+	height: 400px;
+}
+
+#v5-head div.v5-weather-bl,
+#v5-head div.v5-weather-tl {
+	width: 100%;
+}
+
+#v5-head div.v5-weather-tr,
+#v5-head div.v5-weather-br {
+	width: 5px;
+	margin-left: 100%;
+}
+
+#v5-head div.v5-weather-bl,
+#v5-head div.v5-weather-br {
+	height: 5px;
+}
+
+#v5-head div.v5-weather-bl {
+	clip: rect(auto, auto, auto, 5px);
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-weather-bl {
+	padding-right: 100%;
+	padding-left: 10px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-weather-br {
+	left: 5px;
+}
+
+#v5-head div.v5-weather p {
+	margin: 0;
+}
+
+#v5-head div.v5-weather p.now {
+	width: 100px;
+	line-height: 21px;
+	color: #4C6E00;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid no
+ */
+* html #v5-head div.v5-weather p.now  {
+	zoom: 1;
+	margin-bottom: 2px;
+}
+
+#v5-head div.v5-weather p.now b,
+#v5-head div.v5-weather p.now span {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/**
+ * @workaround ie inline-block support
+ * @affected ie6, ie7
+ * @css-for iie6, ie7
+ * @valid no
+ */
+* html #v5-head div.v5-weather p.now b,
+* html #v5-head div.v5-weather p.now span {
+	display: inline;
+	zoom: 1;
+}
+
+#v5-head div.v5-weather p.now b {
+	font-size: 18px;
+}
+
+#v5-head div.v5-weather p.now span {
+	width: 60px;
+	margin-top: -2px;
+	line-height: 10px;
+	font-size: 9px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-weather p.now span  {
+	padding-bottom: 1px;
+}
+
+#v5-head div.v5-weather ul.next {
+	position: absolute;
+	top: -2px;
+	right: 15px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#v5-head div.v5-weather ul.next li {
+	text-align: right;
+	line-height: 12px;
+	font-size: 9px;
+	color: #797670;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-weather ul.next li {
+	margin-bottom: -4px;
+}
+
+#v5-head div.v5-weather ul.next li span {
+	display: -moz-inline-stack;
+	display: inline-block;
+	width: 30px;
+	text-align: right;
+}
+
+/**
+ * @workaround ie inline-block support
+ * @affected ie6, ie7
+ * @css-for iie6, ie7
+ * @valid no
+ */
+* html #v5-head div.v5-weather ul.next li span {
+	display: inline;
+	zoom: 1;
+}
+
+#v5-head div.v5-weather p.link {
+	line-height: 12px;
+	font-size: 9px;
+	color: #678E0F;
+}
+
+#v5-head div.v5-weather p.link a {
+	color: #678E0F;
+}
+
+#v5-head div.v5-weather p.icon {
+	position: absolute;
+	top: -1px;
+	right: 99px;
+	width: 35px;
+	height: 26px;
+	overflow: hidden;
+}
+
+#v5-head div.v5-weather p.icon span {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/**
+ * @subsection very serious thing
+ */
+#v5-head div.v5-adm {
+	position: absolute;
+	top: -4px;
+	left: 0;
+	color: red;
+}
+
+/**
+ * @subsection menu
+ */
+#v5-head ul.v5-menu {
+	height: 30px;
+    margin: 0;
+	margin-left: -7px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item {
+	position: relative;
+	display: -moz-inline-stack;
+	display: inline-block;
+    height: 30px;
+    margin: 0 2px;
+    padding: 0 5px;
+	vertical-align: top;
+    font-size: 12px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head ul.v5-menu li.v5-menu-item {
+    margin: 0 4px;
+}
+
+/**
+ * @workaround ie inline-block support
+ * @affected ie6, ie7
+ * @css-for ie6, ie7
+ * @valid no
+ */
+* html #v5-head ul.v5-menu li.v5-menu-item {
+    display: inline;
+    zoom: 1;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item a {
+    line-height: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item.current,
+#v5-head ul.v5-menu li.v5-menu-item.active {
+    background-color: #FFFFFF;
+	padding: 0 8px;
+	margin: 0 -1px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head ul.v5-menu li.v5-menu-item.current,
+* html #v5-head ul.v5-menu li.v5-menu-item.active {
+	margin: 0 1px;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item.current:first-child {
+	margin-left: 9px;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item.current a,
+#v5-head ul.v5-menu li.v5-menu-item.active a {
+    color: #FC8100;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item.active div.v5-submenu-wrap {
+	display: block;
+}
+
+#v5-head div.v5-submenu-wrap {
+	position: relative;
+	z-index: 99997;
+	display: none;
+	margin: 0 -8px;
+}
+
+/**
+ * @workaround opera wrong mouseout event capturing bug
+ * @affected opera
+ * @css-for opera
+ * @valid yes
+ */
+#v5-head div.v5-submenu-wrap {
+	min-height: 1px;
+	margin-bottom: -1px;
+}
+
+#v5-head div.v5-submenu {
+	position: absolute;
+	top: 0;
+	left: -1px;
+	z-index: 99998;
+	width: 180px;
+	padding: 10px 15px 5px;
+	background-color: #FFFFFF;
+	border: 1px solid #5A7C0D;
+	border-top: none;
+}
+
+#v5-head div.v5-submenu div.i-hate-opera {
+	position: absolute;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	padding: 20px 0 10px;
+}
+
+/**
+ * @workaround ie wrong box sizing
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-submenu {
+	width: 210px;
+}
+
+#v5-head ul.v5-submenu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#v5-head ul.v5-submenu li.v5-submenu-item {
+	margin-bottom: 7px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#v5-head ul.v5-submenu li.v5-submenu-item a {
+	display: block;
+	line-height: normal;
+	text-decoration: underline !important;
+	color: #037DD3 !important;
+}
+
+#v5-head ul.v5-submenu li.v5-submenu-item a.active {
+	margin: 0 -5px;
+	padding: 0 5px;
+	background-color: #FC8100;
+	color: #FFFFFF !important;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item #mailcount {
+	position: absolute;
+	top: 8px;
+	right: -4px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head ul.v5-menu li.v5-menu-item #mailcount {
+	top: 4px;
+}
+
+#v5-head ul.v5-menu li.v5-menu-item #mailcount b {
+	position: relative;
+	top: -4px;
+	left: 4px;
+	line-height: 10px;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+#v5-head ul.v5-subsubmenu {
+	margin: 3px -5px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#v5-head ul.v5-subsubmenu li.v5-subsubmenu-item {
+	padding-left: 20px;
+	margin-bottom: 1px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+#v5-head ul.v5-subsubmenu li.v5-subsubmenu-item a {
+	font-weight: normal;
+}
+
+#v5-head ul.v5-subsubmenu li.v5-subsubmenu-item.active {
+	background-color: #FC8100;
+}
+
+#v5-head ul.v5-subsubmenu li.v5-subsubmenu-item.active a {
+	color: #FFFFFF !important;
+}
+
+/**
+ * @subsection login
+ */
+#v5-head div.v5-login {
+	position: relative;
+	top: 4px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	padding: 5px;
+	float: right;
+}
+
+/**
+ * @workaround ie inline-block support
+ * @affected ie6, ie7
+ * @css-for ie6, ie7
+ * @valid no
+ */
+* html #v5-head div.v5-login {
+    display: inline;
+    zoom: 1;
+}
+
+#v5-head div.v5-login-content {
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 1px;
+	padding: 0 12px;
+	background-color: #DDE6C7;
+	line-height: 12px;
+	font-size: 12px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-login-content {
+	margin-top: 3px;
+	margin-bottom: -3px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-login-content a {
+	zoom: 1;
+}
+
+div.v5-login-content a img {
+	margin-right: 3px;
+}
+
+#v5-head div.v5-login-wrap {
+	position: relative;
+	overflow: hidden;
+	margin: -5px;
+	margin-bottom: -1px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid no
+ */
+* html #v5-head div.v5-login-wrap-wrap {
+	position: relative;
+	display: inline;
+	zoom: 1;
+	overflow: hidden;
+}
+
+#v5-head div.v5-login-p {
+	position: absolute;
+	left: -5px;
+	z-index: -1;
+	background: url('http://t.66.ru/common/img/v5-lightgreen-frame.png');
+	font-size: 1px;
+}
+
+#v5-head div.v5-login-tl,
+#v5-head div.v5-login-tr {
+	top: -5px;
+	height: 100px;
+}
+
+#v5-head div.v5-login-bl,
+#v5-head div.v5-login-tl {
+	width: 100%;
+}
+
+#v5-head div.v5-login-tr,
+#v5-head div.v5-login-br {
+	width: 5px;
+	margin-left: 100%;
+}
+
+#v5-head div.v5-login-bl,
+#v5-head div.v5-login-br {
+	height: 5px;
+}
+
+#v5-head div.v5-login-bl {
+	clip: rect(auto, auto, auto, 5px);
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-login-bl {
+	padding-right: 100%;
+	padding-left: 10px;
+}
+
+/**
+ * @workaround ie rendering bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-head div.v5-login-br {
+	left: 5px;
+}
+
+/**
+ * @section foot
+ */
+
+/**
+ * @subsection logo
+ */
+#v5-foot div.v5-logo {
+	position: relative;
+	padding-top: 8px;
+	padding-left: 60px;
+}
+
+#v5-foot div.v5-logo a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #CEDCAC;
+}
+
+/**
+ * @workaround opera 10 rendering bug
+ * @affected opera 10
+ * @css-for opera 10
+ * @valid yes
+ */
+#v5-foot div.v5-logo a {
+	display: -moz-inline-stack;
+	display: inline-block;
+}
+
+#v5-foot div.v5-logo a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+
+/**
+ * @workaround ie positioning bug
+ * @affected ie
+ * @css-for ie
+ * @valid yes
+ */
+* html #v5-foot div.v5-logo a img {
+	left: -60px;
+}
+
+#v5-foot div.v5-logo span.v5-footer-links {
+	vertical-align: bottom;
+	font-size: 12px;
+	color: #CEDCAC;
+}
+
+/**
+ * @subsection menu
+ */
+#v5-foot ul.v5-menu {
+	margin: 0;
+	margin-left: -14px;
+	padding: 0;
+	padding-top: 4px;
+	list-style-type: none;
+}
+
+#v5-foot ul.v5-menu li {
+	display: -moz-inline-stack;
+	display: inline-block;
+	line-height: 11px;
+	padding: 0 14px;
+	border-right: 1px solid #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/**
+ * @workaround ie inline-block support
+ * @affected ie6, ie7
+ * @css-for ie6, ie7
+ * @valid no
+ */
+* html #v5-foot ul.v5-menu li {
+    display: inline;
+    zoom: 1;
+}
+
+#v5-foot ul.v5-menu li.v5-last {
+	border-right: none;
+}
+
+#v5-foot ul.v5-menu li a {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+/**
+ * @subsection menu
+ */
+#v5-foot div.v5-counters {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+
+/**
+ * @section innerpage
+ */
+
+/**
+ * @subscection frame
+ */
+#v5-inner-frame {
+	position: relative;
+	margin-right: 262px;
+}
+
+#v5-inner-frame-right,
+#v5-inner-frame-left {
+	position: relative;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/**
+ * @workaround ie inline-block support
+ * @affected ie6, ie7
+ * @css-for ie6, ie7
+ * @valid no
+ */
+* html #v5-inner-frame-right,
+* html #v5-inner-frame-left {
+	display: inline;
+	zoom: 1;
+}
+
+#v5-inner-frame-left {
+	width: 100%;
+}
+
+#v5-inner-frame-right {
+	left: 262px;
+	width: 242px;
+	margin-left: -242px;
+}
+
+/**
+ * @section testdrive
+ */
+div.news-single div.test-drive,
+div.auto-news-view-text div.test-drive {
+    width: 450px;
+	line-height:18px;
+}
+
+    div.news-single div.test-drive div.comment,
+	div.auto-news-view-text div.test-drive div.comment {
+        margin-bottom: 15px;
+        padding: 8px 13px 13px;
+        background: #E9EFDB url('http://t.66.ru/news/img/test-drive-background.gif') repeat-x 0 0;
+    }
+
+    * html div.news-single div.test-drive div.comment,
+    * html div.auto-news-view-text div.test-drive div.comment {
+        zoom: 1;
+    }
+
+        div.news-single div.test-drive div.comment h4,
+        div.auto-news-view-text div.test-drive div.comment h4 {
+            margin: 0;
+            margin-bottom: 2px;
+            padding-top: 2px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        div.news-single div.test-drive div.comment div.text,
+		div.auto-news-view-text div.test-drive div.comment div.text {
+            font-size: 11px;
+            color: #454741;
+        }
+
+    div.news-single div.test-drive.positive div.comment,
+    div.news-single div.test-drive.negative div.comment,
+	div.auto-news-view-text div.test-drive.positive div.comment,
+	div.auto-news-view-text div.test-drive.negative div.comment {
+       padding-left: 77px;
+    }
+
+        div.news-single div.test-drive.positive div.comment h4,
+        div.news-single div.test-drive.negative div.comment h4,
+		div.auto-news-view-text div.test-drive.positive div.comment h4,
+		div.auto-news-view-text div.test-drive.negative div.comment h4 {
+            margin-left: -58px;
+            margin-bottom: -27px;
+            padding: 2px 0 27px 58px;
+        }
+
+        div.news-single div.test-drive.positive div.comment h4,
+		div.auto-news-view-text div.test-drive.positive div.comment h4 {
+            background: url('http://t.66.ru/news/img/test-drive-positive-icon.png') no-repeat 0 0;
+            color: #528E0E;
+        }
+
+        div.news-single div.test-drive.negative div.comment h4,
+		div.auto-news-view-text div.test-drive.negative div.comment h4  {
+            background: url('http://t.66.ru/news/img/test-drive-negative-icon.png') no-repeat 0 0;
+            color: #9C2006;
+        }

@@ -1,0 +1,53 @@
+a.head_menu_item-login {
+	background: url(inner-bt.png) 0 0 no-repeat;
+	width: 40px;
+	height: 22px;
+	position: relative;
+	line-height: 22px;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+	top: -4px;
+}
+
+.head_menu_item_label {
+	color: #fff;
+	font-size: 12px;
+	position: relative;
+	top: -4px;
+	margin-left: 5px;
+	margin-right: 0px;
+}
+
+.head_menu_item-begin .g-icons__middle-vk,
+.head_menu_item-begin .g-icons__middle-fb,
+.head_menu_item-begin .g-icons__middle-tw,
+.head_menu_item-begin .g-icons__middle-lj,
+.head_menu_item-begin .g-icons__middle-vk {
+	margin-left: 3px;
+}
+
+.new-login {
+	display: inline-block;
+    float: right;
+    padding: 5px;
+    position: relative;
+    top: 4px;
+	
+}
+
+.inline-block {
+	display: inline-block;
+    //display: inline;
+    //zoom: 1;
+}
+
+
+.new-login-content {
+	position: relative;
+	top: -2px;
+}

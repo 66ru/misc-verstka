@@ -1,0 +1,75 @@
+/* Закруленные Блоки R(ound-corners) block */
+	.r-block{ border: 1px solid #e3e3e3; }
+	
+	.r-block-1,
+	.r-block-2,
+	.r-block-3,
+	.r-block-4{ position: relative; z-index: 2; height: 4px; line-height: 4px; font-size: 4px; overflow: hidden; }
+	
+	/* по часовой: 1. верх-лево 2. верх-право 3. низ-право 4. низ-лево */
+	
+	.r-block-1{ background: transparent url(http://t.66.ru/66dez/v3/r-block-1.gif) left top no-repeat; left: -1px; top: -1px; }
+	.r-block-2{ background: transparent url(http://t.66.ru/66dez/v3/r-block-2.gif) right top no-repeat; left: 1px; top: -5px; }
+	.r-block-3{ background: transparent url(http://t.66.ru/66dez/v3/r-block-3.gif?1) right bottom no-repeat; left: 1px; top: 5px; }
+	.r-block-4{ background: transparent url(http://t.66.ru/66dez/v3/r-block-4.gif?1) left bottom no-repeat; left: -1px; top: 1px; }
+	
+	.r-block .r-block-content{ padding: 5px 15px 5px 15px; }
+	
+	
+/* Желтый блок */
+	.r-block.r-block-yellow{ background: #fcfbec; border: 1px solid #dcdbd7; color: #666; }
+	.r-block-yellow-text{ color: #666; }
+	.r-block-yellow .r-block-1{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-1.gif ); }
+	.r-block-yellow .r-block-2{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-2.gif ); }
+	.r-block-yellow .r-block-3{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-3.gif ); }
+	.r-block-yellow .r-block-4{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-4.gif ); }
+
+	
+/* Желтый блок 2*/
+	.r-block.r-block-yellow-2{ background: #fef8de; border: 1px solid #fddeb5; color: #666; }
+	.r-block-yellow-2-text{ color: #666; }
+	.r-block-yellow-2 .r-block-1{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-2-1.gif); }
+	.r-block-yellow-2 .r-block-2{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-2-2.gif); }
+	.r-block-yellow-2 .r-block-3{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-2-3.gif); }
+	.r-block-yellow-2 .r-block-4{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-2-4.gif); }
+	
+/* Желтый блок 3*/
+	.r-block.r-block-yellow-3{ background: #fff5c8; border: 1px solid #fff5c8; }
+	.r-block-yellow-3-text{ color: #666; }
+	.r-block-yellow-3 .r-block-1{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-3-1.gif); }
+	.r-block-yellow-3 .r-block-2{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-3-2.gif); }
+	.r-block-yellow-3 .r-block-3{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-3-3.gif); }
+	.r-block-yellow-3 .r-block-4{ background-image: url(http://t.66.ru/66dez/v3/r-block-yellow-3-4.gif); }
+	
+	
+/* Серый блок */
+	.r-block.r-block-gray{ background: #f3f3f0; }
+	.r-block-gray .r-block-1{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray-1.gif); }
+	.r-block-gray .r-block-2{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray-2.gif); }
+	.r-block-gray .r-block-3{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray-3.gif); }
+	.r-block-gray .r-block-4{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray-4.gif); }
+	
+/* #dde6ca */
+	.r-block.r-block-gray2{ background: #dde6ca; }
+	.r-block-gray2 .r-block-1{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray2-1.gif); }
+	.r-block-gray2 .r-block-2{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray2-2.gif); }
+	.r-block-gray2 .r-block-3{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray2-3.gif); }
+	.r-block-gray2 .r-block-4{ background-image: url(http://t.66.ru/66dez/v3/r-block-gray2-4.gif); }
+
+	
+/* Зеленый блок */
+	.r-block.r-block-green{ background: #cae58d; border: 1px solid #cae58d; color: #fff ;  }
+	.r-block-green .r-block-1{ background-image: url(http://t.66.ru/66dez/v3/r-block-green-1.gif); }
+	.r-block-green .r-block-2{ background-image: url(http://t.66.ru/66dez/v3/r-block-green-2.gif); }
+	.r-block-green .r-block-3{ background-image: url(http://t.66.ru/66dez/v3/r-block-green-3.gif); }
+	.r-block-green .r-block-4{ background-image: url(http://t.66.ru/66dez/v3/r-block-green-4.gif); }
+
+	
+/* Бледно зеленый блок */
+	.r-block.r-block-lgreen{ background: #e8f1d4; border: 1px solid #e8f1d4;  }
+	.r-block-lgreen .r-block-1{ background-image: url(http://t.66.ru/66dez/v3/r-lgreen-1.gif); }
+	.r-block-lgreen .r-block-2{ background-image: url(http://t.66.ru/66dez/v3/r-lgreen-2.gif); }
+	.r-block-lgreen .r-block-3{ background-image: url(http://t.66.ru/66dez/v3/r-lgreen-3.gif); }
+	.r-block-lgreen .r-block-4{ background-image: url(http://t.66.ru/66dez/v3/r-lgreen-4.gif); }
+
+		

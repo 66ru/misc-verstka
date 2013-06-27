@@ -1,0 +1,759 @@
+@import url("r-block0.css");
+
+BODY, TD, TH, TEXTAREA
+	{
+	font-family : Trebuchet MS;
+	color: #000000;
+	font-size: 13px;
+	}
+
+a:link    {text-decoration: underline;	color: #037DD3; }
+a:visited {text-decoration: underline;	color: #037DD3; }
+a:active  {text-decoration: underline;	color: #037DD3; }
+a:hover   {text-decoration: none;		color: #037DD3; }
+
+.whiteLink a:link    {text-decoration: underline; color: #FFFFFF; }
+.whiteLink a:visited {text-decoration: underline; color: #FFFFFF; }
+.whiteLink a:active  {text-decoration: underline; color: #FFFFFF; }
+.whiteLink a:hover   {text-decoration: none;	  color: #FFFFFF; }
+
+.whiteLinkNoHover a:link    {text-decoration: none; color: #FFFFFF; }
+.whiteLinkNoHover a:visited {text-decoration: none; color: #FFFFFF; }
+.whiteLinkNoHover a:active  {text-decoration: none; color: #FFFFFF; }
+.whiteLinkNoHover a:hover   {text-decoration: none; color: #FFFFFF; }
+
+.whiteGrayLinkNoHover a:link    {text-decoration: none; color: #888888; }
+.whiteGrayLinkNoHover a:visited {text-decoration: none; color: #888888; }
+.whiteGrayLinkNoHover a:active  {text-decoration: none; color: #888888; }
+.whiteGrayLinkNoHover a:hover   {text-decoration: none;	color: #888888; }
+
+.grayLink a:link    {text-decoration: underline; color: #626262; }
+.grayLink a:visited {text-decoration: underline; color: #626262; }
+.grayLink a:active  {text-decoration: underline; color: #626262; }
+.grayLink a:hover   {text-decoration: none;	  	 color: #626262; }
+
+.grayLinkNoHover a:link    {text-decoration: none; color: #626262; }
+.grayLinkNoHover a:visited {text-decoration: none; color: #626262; }
+.grayLinkNoHover a:active  {text-decoration: none; color: #626262; }
+.grayLinkNoHover a:hover   {text-decoration: none; color: #626262; }
+
+.yellowLink {color: #FC8100;}
+.yellowLink a:link    {text-decoration: underline; color: #FC8100; }
+.yellowLink a:visited {text-decoration: underline; color: #FC8100; }
+.yellowLink a:active  {text-decoration: underline; color: #FC8100; }
+.yellowLink a:hover   {text-decoration: none;	   color: #FC8100; }
+
+a.yellowLink:link,
+a.yellowLink:visited{ text-decoration: underline; color: #FC8100;  }
+
+ a.yellowLink:link,
+ a.yellowLink:visited{text-decoration: underline; color: #FC8100; }
+
+
+.yellowLinkNoHover a:link    {text-decoration: none; color: #FC8100; }
+.yellowLinkNoHover a:visited {text-decoration: none; color: #FC8100; }
+.yellowLinkNoHover a:active  {text-decoration: none; color: #FC8100; }
+.yellowLinkNoHover a:hover   {text-decoration: none; color: #FC8100; }
+
+.blueLink a:link    {text-decoration: underline; color: #037DD3; }
+.blueLink a:visited {text-decoration: underline; color: #037DD3; }
+.blueLink a:active  {text-decoration: underline; color: #037DD3; }
+.blueLink a:hover   {text-decoration: none;	  	 color: #037DD3; }
+
+.blueLinkNoHover a:link    {text-decoration: none; color: #037DD3; }
+.blueLinkNoHover a:visited {text-decoration: none; color: #037DD3; }
+.blueLinkNoHover a:active  {text-decoration: none; color: #037DD3; }
+.blueLinkNoHover a:hover   {text-decoration: none; color: #037DD3; }
+
+.greenLink a:link    {text-decoration: underline; color: #519000; }
+.greenLink a:visited {text-decoration: underline; color: #519000; }
+.greenLink a:active  {text-decoration: underline; color: #519000; }
+.greenLink a:hover   {text-decoration: none;	  color: #519000; }
+
+.darkGreenLink a:link    {text-decoration: underline; 	color: #35470C; }
+.darkGreenLink a:visited {text-decoration: underline; 		color: #35470C; }
+.darkGreenLink a:active  {text-decoration: underline; 		color: #35470C; }
+.darkGreenLink a:hover   {text-decoration: none;	   color: #35470C; }
+
+.userLink
+	{
+	font-weight: bold;
+	color: #037DD3;
+	white-space: nowrap;
+	}
+
+.userLink a:link    {text-decoration: underline; color: #037DD3; }
+.userLink a:visited {text-decoration: underline; color: #037DD3; }
+.userLink a:active  {text-decoration: underline; color: #037DD3; }
+.userLink a:hover   {text-decoration: none;	color: #037DD3; }
+
+
+#main_container
+	{
+	background: #FFFFFF;
+	#height: 100%;
+	}
+
+.favoriteBar
+	{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 11px;
+	}
+
+.favoriteBar span
+	{
+	padding: 1px 13px 2px 30px;
+	background-repeat: no-repeat;
+	background-position: 5px 0px;
+	}
+
+.favoriteBar a:link    {text-decoration: none;     color:#037DD3;}
+.favoriteBar a:visited {text-decoration: none;     color:#037DD3;}
+.favoriteBar a:active  {text-decoration: none;     color:#037DD3;}
+.favoriteBar a:hover   {text-decoration: none;          color:#037DD3;}
+
+
+.footerText div
+	{
+	color: #D2E1AD;
+	font-size: 12px;
+	margin-top: 9px;
+	}
+
+.footerText span
+	{
+	font-size: 12px;
+	font-weight: bold;
+	color: #F0F6E4;
+	}
+
+.footerText span a:link    {text-decoration: underline;     color:#F0F6E4;}
+.footerText span a:visited {text-decoration: underline;     color:#F0F6E4;}
+.footerText span a:active  {text-decoration: underline;     color:#F0F6E4;}
+.footerText span a:hover   {text-decoration: none;          color:#F0F6E4;}
+
+.footerOnline
+	{
+	color: #F0F6E4;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+	}
+
+.footerOnline div
+	{
+	margin-top: 28px;
+	}
+
+.footerOnline div a:link    {text-decoration: underline;     color:#F0F6E4;}
+.footerOnline div a:visited {text-decoration: underline;     color:#F0F6E4;}
+.footerOnline div a:active  {text-decoration: underline;     color:#F0F6E4;}
+.footerOnline div a:hover   {text-decoration: none;          color:#F0F6E4;}
+
+.v3_userInfo
+	{
+	height: 21px;
+	background-image: url(http://t.66.ru/66dez/v3/userInfo_left.gif);
+	background-repeat: no-repeat;
+	background-color: #E3EECB;
+	position: relative;
+	left: 7px;
+	top: 6px;
+	}
+
+.v3_userInfo tr td
+	{
+	background-image: url(http://t.66.ru/66dez/v3/userInfo_right.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	}
+
+.v3_userInfo tr td table tr td
+	{
+	background: none;
+	}
+
+.v3_userInfoUser
+	{
+	font-size: 12px;
+	}
+
+.v3_userInfoUser a:link    {text-decoration: underline;     color:#037DD3;}
+.v3_userInfoUser a:visited {text-decoration: underline;     color:#037DD3;}
+.v3_userInfoUser a:active  {text-decoration: underline;     color:#037DD3;}
+.v3_userInfoUser a:hover   {text-decoration: none;          color:#037DD3;}
+
+
+
+
+
+
+
+.v3_mainMenu_onMain
+	{
+	background-color: #C9DE9A;
+	font-size: 14px;
+	font-weight: bold;
+	background-image: url(http://t.66.ru/66dez/v3/mainMenu_active_left.gif);
+	background-repeat: no-repeat;
+	}
+
+.v3_mainMenu_onMain div
+	{
+	margin: 0px 0px 0px 11px;
+	padding-right: 11px;
+	background-image: url(http://t.66.ru/66dez/v3/mainMenu_active_right.gif);
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 38px;
+	}
+
+.v3_mainMenu_onMain div a
+	{
+	position: relative;
+	top: 10px;
+	}
+
+.v3_mainMenu_onMain a:link    {text-decoration: underline;     color:#037DD3;}
+.v3_mainMenu_onMain a:visited {text-decoration: underline;     color:#037DD3;}
+.v3_mainMenu_onMain a:active  {text-decoration: underline;     color:#037DD3;}
+.v3_mainMenu_onMain a:hover   {text-decoration: underline;     color:#037DD3;}
+
+.v3_mainMenu
+	{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	}
+
+.v3_mainMenu div
+	{
+	margin: 0px 11px 0px 11px;
+	}
+
+.v3_mainMenu div span
+	{
+	position: relative;
+	top: -5px;
+	font-size: 11px;
+	margin-left: 3px;
+	}
+
+.v3_mainMenu a:link    {text-decoration: underline;     color:#FFFFFF;}
+.v3_mainMenu a:visited {text-decoration: underline;     color:#FFFFFF;}
+.v3_mainMenu a:active  {text-decoration: underline;     color:#FFFFFF;}
+.v3_mainMenu a:hover   {text-decoration: underline;     color:#FFFFFF;}
+
+
+
+
+.v3_mainMenu_active
+	{
+	background-color: #FFFFFF;
+	font-size: 18px;
+	background-image: url(http://t.66.ru/66dez/v3/mainMenu_active_white_left.gif);
+	background-repeat: no-repeat;
+	}
+
+.v3_mainMenu_active div
+	{
+	margin: 0px 0px 0px 11px;
+	padding-right: 11px;
+	background-image: url(http://t.66.ru/66dez/v3/mainMenu_active_white_right.gif);
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 38px;
+	}
+
+.v3_mainMenu_active div a
+	{
+	border-top: 0px;
+	position: relative;
+	top: 10px;
+	}
+
+.v3_mainMenu_active a:link    {text-decoration: none;     color:#037DD3;}
+.v3_mainMenu_active a:visited {text-decoration: none;     color:#037DD3;}
+.v3_mainMenu_active a:active  {text-decoration: none;     color:#037DD3;}
+.v3_mainMenu_active a:hover   {text-decoration: none;     color:#037DD3;}
+
+
+
+.v3_mainMenu_hover
+	{
+	background-color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	background-image: url(http://t.66.ru/66dez/v3/mainMenu_hover_left.gif);
+	background-repeat: no-repeat;
+	}
+
+.v3_mainMenu_hover div
+	{
+	margin: 0px 0px 0px 6px;
+	padding-right: 6px;
+	background-image: url(http://t.66.ru/66dez/v3/mainMenu_hover_right.gif);
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 38px;
+	}
+
+.v3_mainMenu_hover div a
+	{
+	border-top: 1px solid #6E9419;
+	position: relative;
+	top: 10px;
+	padding: 9px 5px 0px 5px;
+	}
+
+.v3_mainMenu_hover div a, x:-moz-any-link { margin-right: 24px; }
+.v3_mainMenu_hover div a, x:-moz-any-link, x:default { margin-right: 0px; }
+.v3_mainMenu_hover div a
+	{
+	*margin-right: 0px;
+	}
+
+.v3_mainMenu_hover a:link    {text-decoration: none; color:#037DD3;}
+.v3_mainMenu_hover a:visited {text-decoration: none; color:#037DD3;}
+.v3_mainMenu_hover a:active  {text-decoration: none; color:#037DD3;}
+.v3_mainMenu_hover a:hover   {text-decoration: none; color:#037DD3;}
+
+
+
+
+
+.v3_mainMenuList
+	{
+	background-color: #FFFFFF;
+	padding: 3px 0px 5px 0px;
+	}
+
+.v3_mainMenuList div
+	{
+	margin: 0px 10px 0px 1px;
+	padding: 0px 0px 0px 16px;
+	background-image: url(http://t.66.ru/66dez/v3/v3_dot_1.gif);
+	background-repeat: no-repeat;
+	background-position: 6px 8px;
+	height: auto;
+	font-weight: bold;
+	}
+
+.v3_mainMenuList div a
+	{
+	padding: 0px;
+	border: 0px;
+	position: static;
+	top: 0px;
+	}
+
+.v3_mainMenuList span
+	{
+	display: block;
+	margin: 0px 1px 0px 1px;
+	padding: 0px 0px 0px 26px;
+	background-image: url(http://t.66.ru/66dez/v3/v3_dot_1.gif);
+	background-repeat: no-repeat;
+	background-position: 16px 8px;
+	height: auto;
+	}
+
+.v3_mainMenuList div a:link    {text-decoration: none; color: #037DD3;}
+.v3_mainMenuList div a:visited {text-decoration: none; color: #037DD3;}
+.v3_mainMenuList div a:active  {text-decoration: none; color: #037DD3;}
+.v3_mainMenuList div a:hover   {text-decoration: none; color: #FFFFFF;}
+
+.v3_mainMenuList span a:link    {text-decoration: none; color: #037DD3;}
+.v3_mainMenuList span a:visited {text-decoration: none; color: #037DD3;}
+.v3_mainMenuList span a:active  {text-decoration: none; color: #037DD3;}
+.v3_mainMenuList span a:hover   {text-decoration: none; color: #FFFFFF;}
+
+
+.v3_findMenu_active
+	{
+	color: #FFFFFF;
+	background-color: #96B54F;
+	font-size: 11px;
+	background-image: url(http://t.66.ru/66dez/v3/findMenu_active_left.gif);
+	background-repeat: no-repeat;
+	}
+
+.v3_findMenu_active div
+	{
+	color: #FFFFFF;
+	margin: 0px 0px 0px 10px;
+	padding-right: 10px;
+	background-image: url(http://t.66.ru/66dez/v3/findMenu_active_right.gif);
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 20px;
+	}
+
+.v3_findMenu_active div a
+	{
+	color: #FFFFFF;
+	position: relative;
+	top: 2px;
+	}
+
+.v3_findMenu_active a:link    {text-decoration: none;     color:#FFFFFF;}
+.v3_findMenu_active a:visited {text-decoration: none;     color:#FFFFFF;}
+.v3_findMenu_active a:active  {text-decoration: none;     color:#FFFFFF;}
+.v3_findMenu_active a:hover   {text-decoration: none;     color:#FFFFFF;}
+
+.v3_findMenu
+	{
+	color: #FFFFFF;
+	font-size: 11px;
+	}
+
+.v3_findMenu div
+	{
+	color: #FFFFFF;
+	margin: 0px 10px 0px 10px;
+	}
+
+.v3_findMenu a
+	{
+	color: #FFFFFF;
+	background-image: url(http://t.66.ru/66dez/v3/v3_dot_2.gif);
+	background-repeat: repeat-x;
+	background-position: 0px 14px;
+	}
+
+.v3_findMenu a:link    {text-decoration: none; color:#FFFFFF;}
+.v3_findMenu a:visited {text-decoration: none; color:#FFFFFF;}
+.v3_findMenu a:active  {text-decoration: none; color:#FFFFFF;}
+.v3_findMenu a:hover   {text-decoration: none; color:#FFFFFF;}
+
+.leftMenuLink
+	{
+	font-size: 18px;
+	height: 36px;
+	}
+
+.leftMenuLink a:link    {text-decoration: underline;     color:#037DD3;}
+.leftMenuLink a:visited {text-decoration: underline;     color:#037DD3;}
+.leftMenuLink a:active  {text-decoration: underline;     color:#037DD3;}
+.leftMenuLink a:hover   {text-decoration: none;     	 color:#037DD3;}
+
+.userEmoTextarea
+	{
+	width: 134px;
+	height: 37px;
+	font-size: 10px;
+	background: none;
+	border: 0px;
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #FFFFFF;
+	color: #626262;
+	padding: 7px 0px 0px 5px;
+	margin: 0px;
+	overflow: hidden;
+	background-image: url(http://t.66.ru/66dez/v3/userEmo.gif);
+	background-repeat: no-repeat;
+	outline: none;
+	}
+
+.rightBlockTitle
+	{
+	height: 20px;
+	color: #FFFFFF;
+	font-size: 11px;
+	background-color: #87B51E;
+	padding-left: 8px;
+	}
+
+.v3_carMoney
+	{
+	background-color: #87B51E;
+	color: #FFFFFF;
+	padding: 0px 2px 0px 2px;
+	font-size: 11px;
+	}
+
+.v3_newsTime
+	{
+	background-color: #87B51E;
+	color: #FFFFFF;
+	padding: 0px 2px 0px 2px;
+	font-size: 11px;
+	}
+
+#user_info
+	{
+	z-index: 1000;
+	display: none;
+	position: absolute;
+	}
+
+#overlay
+	{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	}
+
+.my_name
+	{
+	font-size: 12px;
+	}
+
+.my_name_active
+	{
+	font-size: 12px;
+	}
+
+.chat66_active_block
+	{
+	border-left: 0px;
+	border-right: 0px;
+	}
+
+.chat66_block_on
+	{
+	border-left: 0px;
+	border-right: 0px;
+	font-size: 12px;
+	}
+
+.chat66_block
+	{
+	border-left: 0px;
+	border-right: 0px;
+	font-size: 12px;
+	}
+
+.chat66_post_form
+	{
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	}
+
+
+.v3_blogTime
+	{
+	background-image: url(http://t.66.ru/66dez/v3/v3_blogTime.gif);
+	background-repeat: no-repeat;
+	width: 39px;
+	height: 20px;
+	font-size: 12px;
+	color: #FFFFFF;
+	padding: 2px 0px 0px 6px;
+	float: left;
+	margin-right: 5px;
+	}
+
+.v3_tag_blog {
+line-height: 25px;
+}
+
+.v3_tag_blog div {
+margin: 10px;
+}
+
+.v3_tag_blog a:link    {text-decoration: none; color:#037DD3; padding: 2px 3px 2px 3px;}
+.v3_tag_blog a:visited {text-decoration: none; color:#037DD3; padding: 2px 3px 2px 3px;}
+.v3_tag_blog a:active  {text-decoration: none; color:#037DD3; padding: 2px 3px 2px 3px;}
+.v3_tag_blog a:hover   {text-decoration: none; color:#FFFFFF; background-color: #FA7A0C; padding: 2px 3px 2px 3px;}
+
+#toste
+	{
+	//position: relative;
+	//top: -5px;
+	}
+
+#toste, #toste a { font-size: 11px; color: #B6B5B4; text-decoration: none;}
+
+.uploadButton
+	{
+	width: 204px;
+	height: 37px;
+	background-image: url(http://t.66.ru/66dez/v3/v3_uploadButton.gif);
+	text-align: center;
+	font-size: 20px;
+	display: block;
+	}
+
+.uploadButton a
+	{
+	position: relative;
+	top: 5px;
+	}
+
+.uploadButton a:link    {text-decoration: none; color:#FFFFFF;}
+.uploadButton a:visited {text-decoration: none; color:#FFFFFF;}
+.uploadButton a:active  {text-decoration: none; color:#FFFFFF;}
+.uploadButton a:hover   {text-decoration: none; color:#FFFFFF;}
+
+
+.v3_photoAlbumList ul li
+	{
+	margin: 0px;
+	padding: 0px;
+	list-style: url(http://t.66.ru/66dez/v3/v3_dot_1.gif);
+	}
+
+.v3_photoAlbumList ul
+	{
+	margin: 0px;
+	padding: 0px;
+	padding-left: 30px;
+	}
+
+.photo_info a:link    {text-decoration: none; color:#037DD3; border-bottom: 1px dashed #037DD3;}
+.photo_info a:visited {text-decoration: none; color:#037DD3; border-bottom: 1px dashed #037DD3;}
+.photo_info a:active  {text-decoration: none; color:#037DD3; border-bottom: 1px dashed #037DD3;}
+.photo_info a:hover   {text-decoration: none; color:#037DD3; border-bottom: none;}
+
+
+.td_el_left
+	{
+	padding-left: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #666666;
+	width: 155px;
+	}
+
+.td_el_right
+	{
+	width: 59px;
+	height: 28px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #666666;
+	text-align: center;
+	}
+
+.new
+	{
+	background-image: url(http://t.66.ru/66dez/v3/new.gif);
+	background-repeat: no-repeat;
+	background-position:center center;
+	}
+
+.border
+	{
+	border-bottom: 1px solid #d1d1d1;
+	}
+
+.href
+	{
+	font-weight: bold;
+	color: #037dd3;
+	}
+
+h1, h2{
+	font-family: "Trebuchet MS", Tahoma;  font-weight: normal; color: #5e5c58;
+}
+
+h1{ font-size: 24px; margin: 0 0 14px 0; }
+h2{ font-size: 18px; margin: 0 0 8px 0; }
+
+a.gray:link,
+a.gray:visited{
+	color: #5e5c58;
+}
+
+.smaller{
+	font-size: 12px;
+}
+
+.v3_postText
+	{
+
+	}
+
+.v3_commentsText
+	{
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	padding: 10px 0px 10px 0px;
+	}
+
+.news_foto, 
+.news_video, 
+.news_audio, 
+.news_infograph,
+.news_online {
+	margin: 0 -2px -2px 5px;
+	width: 27px;
+	height: 12px;
+}
+
+.news_video {
+	width: 32px;
+} 
+.news_audio {
+	width: 31px;
+}
+.news_infograph {
+	width: 15px;
+}
+.news_online {
+	width: 35px;
+}
+
+a.dashed_link {
+text-decoration:none;
+border-bottom:1px dotted #718cac;
+line-height:140%;
+}
+
+
+.v4_mainMenu{ vertical-align: bottom; line-height: 16px; }
+.v4_mainMenu div.f2{ padding: 9px 9px 9px 9px; }
+.v4_mainMenu div.f2 a:link,
+.v4_mainMenu div.f2 a:visited,
+.v4_mainMenu div.f2 a:hover{ color: #fff; font-size: 14px; font-weight: bold; }
+
+.v4_mainMenu.hover div.f1,
+.v4_mainMenu.active div.f1{ background: transparent url(http://t.66.ru/66dez/v4/mainmenu-active-left.gif) 0 3px no-repeat; }
+
+.v4_mainMenu.hover div.f2,
+.v4_mainMenu.active div.f2{ background: transparent url(http://t.66.ru/66dez/v4/mainmenu-active-right.gif) 100% 3px no-repeat; }
+
+.v4_mainMenu.hover div.f1{ position: relative; top: 2px; z-index: 3; }
+.v4_mainMenu.hover div.f2{ padding-top: 8px; padding-bottom: 10px; }
+.v4_mainMenu.active div.f2{ padding-top: 10px; padding-bottom: 8px; }
+
+.v4_mainMenu.active div.f1{ background-position: 0 5px; }
+.v4_mainMenu.active div.f2{ background-position: 100% 5px; }
+
+.v4_mainMenu.hover div.f2 a:link, .v4_mainMenu.hover div.f2 a:visited, .v4_mainMenu.hover div.f2 a:hover,
+.v4_mainMenu.active div.f2 a:link, .v4_mainMenu.active div.f2 a:visited, .v4_mainMenu.active div.f2 a:hover{ color: #f17e00 !important; }
+
+
+
+
+.v3_mainMenuList div a:link,
+.v3_mainMenuList div a:hover,
+.v3_mainMenuList div a:visited{text-decoration: underline;}
+
+
+.v4_mainMenuList{ padding-bottom: 6px; }
+.v3_mainMenuList div{ margin: 4px 0 8px 8px; padding-left: 6px; background-image: none; }
+.v4_mainMenuList div a:link,
+.v4_mainMenuList div a:visited,
+.v4_mainMenuList div a:hover{ color: #fff; font-size: 12px; font-weight: bold; font-family: "Trebuchet MS";  }
+
+
+.v4_mainMenuList span{ padding-left: 30px; display: block; background: transparent url(http://t.66.ru/66dez/v4/mainmenu-bg1.gif) 14px 1px  no-repeat; }
+.v4_mainMenuList span a:link,
+.v4_mainMenuList span a:visited,
+.v4_mainMenuList span a:hover{ color: #fff; font-size: 12px; text-decoration: none; font-family: "Trebuchet MS" }
+
+.v4_userInfo{ top: 0; }

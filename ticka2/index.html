@@ -1,0 +1,1403 @@
+<!---->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ru">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+    
+    
+
+    <link rel="icon" href="index_files/4496e148.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="index_files/4496e148.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="http://s.66.ru/localStorage/3f/a4/74/1./3fa4741.png">
+
+    <link href="index_files/main0000.css" rel="stylesheet" type="text/css">
+    <link href="index_files/main_v30.css" rel="stylesheet" type="text/css">
+    <link href="index_files/style000.css" rel="stylesheet" type="text/css">
+    <link href="index_files/g-icons0.css" rel="stylesheet" type="text/css">
+    <link href="index_files/new_66_l.css" rel="stylesheet" type="text/css">
+
+ 
+ 
+
+    <script type="text/javascript" src="index_files/jquery-1.js"></script>
+
+    
+    
+    
+    
+    
+            <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - новости" href="http://66.ru/news/rss/">
+        <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - лента клубов" href="http://66.ru/club/lenta/rss/">
+        <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - лента блогов" href="http://66.ru/users/lenta/rss/">
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    <link href="index_files/style001.css" rel="stylesheet" type="text/css">
+	<link href="index_files/hp_page_.css" rel="stylesheet" type="text/css">
+  <link href="index_files/grid0000.css" rel="stylesheet" type="text/css">
+
+
+
+    <title>Современный портал Екатеринбурга — 66.ru — Екатеринбург</title>
+
+    <meta name="keywords" content>
+    <meta name="description" content>
+
+	
+			<!---->
+			<style type="text/css">
+				.news-more-link__link-up {
+					display: block;
+					opacity: 1;
+					position:absolute;
+					bottom: -20px;
+					left: 10px;
+					text-decoration: none;
+					background-color: #779f1a;
+					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.75);
+					padding: 6px 23px 6px 37px;
+					z-index: 1000;
+					height: 20px;
+					zoom: 1;
+					border: 1px solid red;
+				}
+				
+				a.news-more-link__link-up:link,
+				a.news-more-link__link-up:visited,
+				a.news-more-link__link-up:hover,
+				a.news-more-link__link-up:active {
+					text-decoration: none;
+					border: none;
+					color: #fff;
+				}
+				
+				.news-more-link__link-up-ico {
+					position: absolute;
+					left: 18px;
+					top: 50%;
+					width: 14px;
+					height: 8px;
+					margin-top: -4px;
+					background: red;
+				}
+			</style>
+
+
+
+
+
+			<script type="text/javascript">
+			
+				;(function (jQuery, window, document, undefined) {
+ 
+					var pluginName = "flipTopBtn",
+						defaults = {
+							propertyName: "value"
+						};
+				 
+					function Plugin( element, options ) {
+						this.element = element;
+						
+						this.options = jQuery.extend( {}, defaults, options) ;
+						
+						this._defaults = defaults;
+						this._name = pluginName;
+						
+						this.init(element);
+					}
+				 
+					Plugin.prototype.init = function (el) {
+					
+						//выравнивание по контейнеру
+						var leftBorder = this.options.leftBorder;
+						var botBorder = this.options.botBorder;
+						var botBorderPadding = this.options.botBorderPadding;
+						var scrollHeight = this.options.scrollHeight;
+						var showed = 0;
+						
+						jQuery(el).css("left", "0px");
+						
+						jQuery(window).resize(function() {
+							jQuery(el).css("left", "0px");
+						});
+						
+						
+						
+						jQuery(window).scroll(function() {
+						
+							jQuery(el).css({
+								"top": $(window).scrollTop() + $(window).height() - 50 + "px",
+								"bottom": "auto",
+								"opacity": 1,
+								"background": "red"
+							});
+							
+							
+							if ((!showed) && (jQuery(window).scrollTop() > scrollHeight)) {
+
+									jQuery(el).animate({
+										bottom: '+10px', 
+										opacity: '1'
+									}, 500);
+									
+									showed = 1;							
+								
+							};
+							
+							if ((!showed) && (jQuery(window).scrollTop() < scrollHeight)) {
+								
+									jQuery(el).animate({
+										opacity: '0'
+									}, 500);							
+									showed = 0;								
+								
+							};	
+
+							if (showed) {
+								if ((jQuery(window).scrollTop() + jQuery(window).height() + botBorderPadding - jQuery(el).height() -60 > jQuery("#v5-head-wrap").height() + jQuery("#v5-body").height())) {
+									console.log("123");
+									jQuery(el).css({"bottom": "auto", "top": jQuery("#v5-head-wrap").height() + jQuery("#v5-body").height() + botBorderPadding + 15 + "px", "position": "absolute"});
+								} else {
+									console.log("321");
+									jQuery(el).css({"top": "auto", "bottom": "10px", "position": "absolute"});
+								}								
+							};
+							
+							if ((!showed) && (jQuery(window).scrollTop() > scrollHeight)) {
+									jQuery(el).animate({
+										bottom: '+10px', 
+										opacity: '1'
+									}, 500);
+									
+									showed = 1;
+							}
+							
+							/*if ((showed) && (jQuery(window).scrollTop() < scrollHeight)) {
+									jQuery(el).animate({
+										opacity: '0'
+									}, 500);							
+									showed = 0;
+							}	
+						
+							if (showed) {
+								if ((jQuery(window).scrollTop() + jQuery(window).height() + botBorderPadding - jQuery(el).height() -60 > jQuery("#v5-head-wrap").height() + jQuery("#v5-body").height())) {
+									jQuery(el).css({"bottom": "auto", "top": jQuery("#v5-head-wrap").height() + jQuery("#v5-body").height() + botBorderPadding + 15 + "px", "position": "absolute"});
+								} else {
+									jQuery(el).css({"top": "auto", "bottom": "10px", "position": "absolute"});
+								}
+							}*/
+							
+							
+							
+							
+							
+							
+						});
+					};
+					
+					jQuery.fn[pluginName] = function ( options ) {
+						return this.each(function () {
+							if ( !jQuery.data(this, "plugin_" + pluginName )) {
+								jQuery.data( this, "plugin_" + pluginName, 
+								new Plugin( this, options ));
+							}
+						});
+					}
+				 
+				})( jQuery, window, document );
+				
+				jQuery(document).ready(function() {
+					
+					
+					
+					jQuery(".news-more-link__link-up").flipTopBtn({
+						leftBorder: jQuery("#v5-body"), 
+						botBorder: jQuery("#v5-foot-wrap"), 
+						botBorderPadding: 10, 
+						scrollHeight: 300
+					});
+				
+				});
+			</script>
+			<!---->
+    	
+	
+
+</head>
+<body class="page-fixed-right">
+
+
+
+
+
+    
+            
+
+    
+    <div id="window"></div>
+    <div id="user_info" onmouseout="userinfo_hide()" onmouseover="clearTimeout(ui_t)"></div><div id="overlay"></div>
+    <div id="v5-frame">
+    
+	
+	
+	
+	
+    <div id="v5-head-wrap">
+        
+        <div id="v5-head">
+
+
+
+		<a href="" class="news-more-link__link-up" id="ticka">
+			<span class="news-more-link__link-up-pad">наверх <ins class="news-more-link__link-up-ico"></ins></span>
+		</a>	
+            
+
+
+
+  
+
+<ul class="v5-menu">
+
+	    	<li class="v5-menu-item">
+		<a href="http://66.ru/news/">
+			Новости		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/news/main/">
+							Главные						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/society/">
+							Общество						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/business/">
+							Бизнес						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/politic/">
+							Политика						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/auto/news/">
+							Авто						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/incident/">
+							Происшествия!						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/freetime/">
+							Отдых						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/world">
+							В мире						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/internet/">
+							Интернет						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/sport/">
+							Спорт						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/hitech/">
+							Наука и техника						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/health/news/">
+							Здоровье						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/entertainment/">
+							Безумный мир						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/business/news/">
+							Новости компаний						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/blago/">
+							Благотворительность						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/bank/">
+			Банки		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/bank/credit/">
+							Кредиты населению						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/bank/hypothec/">
+							Ипотека						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/bank/credit_order/">
+							Заявка на кредит						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/bank/currency/">
+							Курсы валют						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/bank/forum/">
+							Отзывы о банках						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/bank/analytics/">
+							Короткие новости						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/rabota/">
+			Работа		</a>
+		
+				
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/help/">
+			Справка		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/skidki/">
+							Дисконтный клуб «УБРиР - Club 66»						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/hotels/">
+							Гостиницы Екатеринбурга						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/hotels/kvartiry-posutochno/">
+							Квартиры посуточно						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/help/price/">
+							Справочник товаров						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/catalog/">
+							Интернет-магазины						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/otvet/">
+							Вопросы и ответы						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/weather/">
+							Погода в Екатеринбурге						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/citymap/">
+							Карта Екатеринбурга						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/auto/">
+			Авто		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/auto/test-drive/">
+							Тест-драйвы						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/auto/news/">
+							Автоновости						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/auto/catalog/">
+							Каталог автомобилей						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/auto/select/">
+							Подбор автомобиля						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/auto/doska/">
+							Объявления						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/realty/">
+			Недвижимость		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/realty/news/">
+							Новости						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/realty/objects/">
+							Новостройки						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/realty/community/">
+							Коттеджные поселки						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/doska/realty/">
+							Объявления						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/doska/">
+			Объявления		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/doska/">
+							Доска объявлений						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/auto/doska/">
+							Продажа автомобилей						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/doska/realty/">
+							Недвижимость						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/realty/doska/com/">
+							Коммерческая недвижимость						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/realty/doska/zagorod/">
+							Загородная недвижимость						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/doska/my/">
+							Мои объявления						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/health/">
+			Здоровье		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/health/pharmacy/">
+							Поиск лекарств						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/gurman/">
+			Еда		</a>
+		
+				
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/afisha/">
+			Афиша		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/afisha/cinema/">
+							Кино						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/afisha/event/">
+							События						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/afisha/event/photoreportage/">
+							Фотоотчеты						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/afisha/tv/">
+							ТВ						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/recenz/">
+							Кинорецензии						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/muzobzor/">
+							Музобзоры						</a>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/news/dvdobzor/">
+							DVD-обзоры						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/talk/">
+			Общение		</a>
+		
+				
+				<div class="v5-submenu-wrap">
+			<div class="v5-submenu"><div class="i-hate-opera">&nbsp;</div>
+				<ul class="v5-submenu">
+															<li class="v5-submenu-item">
+						<a href="http://66.ru/users/">
+							Пользователи						</a>
+												<ul class="v5-subsubmenu">
+																					<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/users/">
+									Список								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/users/interests/">
+									По интересам								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/users/online/">
+									Сейчас на сайте								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/users/find/">
+									Поиск								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/talk/?bt=1&amp;ct=0">
+									Лента блогов								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/fulllenta/?fbt=1&amp;fct=0">
+									Развернутая лента								</a>
+							</li>
+																				</ul>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/club/">
+							Клубы						</a>
+												<ul class="v5-subsubmenu">
+																					<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/club/">
+									Список								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/club/interests/">
+									По интересам								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/talk/?bt=0&amp;ct=1">
+									Лента клубов								</a>
+							</li>
+																												<li class="v5-subsubmenu-item">
+								<a href="http://66.ru/fulllenta/?fbt=0&amp;fct=1">
+									Развернутая лента								</a>
+							</li>
+																				</ul>
+											</li>
+																				<li class="v5-submenu-item">
+						<a href="http://66.ru/photo/">
+							Фото						</a>
+											</li>
+														</ul>
+			</div>
+		</div>
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://66.ru/konkurs/">
+			Конкурсы		</a>
+		
+				
+			</li>
+		    	<li class="v5-menu-item">
+		<a href="http://mail.66.ru/">
+			Почта		</a>
+		
+		 
+			<span id="mailcount">
+									</span>
+				
+			</li>
+		</ul>
+        </div>
+    </div>
+        <div id="v5-body-wrap">
+    <div id="v5-body" style="margin: 15px auto 35px auto">
+        
+		
+		
+	
+		
+		
+<div class="page-grid-wrap clearfix">
+	<div class="page-grid clearfix">
+		<div class="page-col-1-span-15">
+			
+			<div class="grid-my context orange-border-bottom">
+				<div class="grid-my-col-1 context grid-my-col-1__without-rcol">
+					
+					
+			  		<div class="b-news__navigator">
+			  			<div class="b-news__navigator__content">
+				  			<ul class="clearfix" id="main_news_tabs">
+												<li blockname="1-news" class="b-news__navigator-item-current">
+								<a href="http://66.ru/news/" style="display: none;">Главные новости</a>
+								<ins class="b-news__navigator-item-current_c">Главные новости</ins>
+							</li>
+													<li blockname="2-news">
+								<a href="http://66.ru/auto/news/">Авто</a>
+								<ins style="display:none;" class="b-news__navigator-item-current_c">Авто</ins>
+							</li>
+													<li blockname="3-news">
+								<a href="http://66.ru/news/business/">Бизнес</a>
+								<ins style="display:none;" class="b-news__navigator-item-current_c">Бизнес</ins>
+							</li>
+													<li blockname="4-news">
+								<a href="http://66.ru/news/society/">Общество</a>
+								<ins style="display:none;" class="b-news__navigator-item-current_c">Общество</ins>
+							</li>
+													<li blockname="5-news">
+								<a href="http://66.ru/news/incident/">Происшествия</a>
+								<ins style="display:none;" class="b-news__navigator-item-current_c">Происшествия</ins>
+							</li>
+													<li blockname="6-news">
+								<a href="http://66.ru/news/world/">В мире</a>
+								<ins style="display:none;" class="b-news__navigator-item-current_c">В мире</ins>
+							</li>
+													<li blockname="21-news">
+								<a href="http://66.ru/news/positive/">Позитив</a>
+								<ins style="display:none;" class="b-news__navigator-item-current_c">Позитив</ins>
+							</li>
+													<li blockname="7-news">
+								<a href="http://66.ru/news/">Фото</a>
+								<ins style="display:none;" class="b-news__navigator-item-current_c">Фото</ins>
+							</li>
+													<!-- li class="b-news__navigator-item-subscr-last notbind">
+<a class="js-subscr-popup-link" title="Все интересные новости Екатеринбурга" target="_blank" href="/news/#subscribe"><img alt="Все интересные новости Екатеринбурга" src="http://t.66.ru/main/v6/img/subscr-news.gif">
+</a>
+</li -->
+<li class="b-news__navigator-item-last notbind"><a href="http://66.ru/news/rss/"><img title="RSS-лента новостей" alt="RSS-лента новостей" src="index_files/menu-rss.gif"></a></li>
+<li class="b-news__navigator-item-vk-last notbind"><a href="http://vkontakte.ru/news_66" target="_blank" title="Все интересные новости Екатеринбурга ВКонтакте"><img src="index_files/vk000000.gif" alt="Все интересные новости Екатеринбурга ВКонтакте"></a></li>				  			</ul>
+				  		</div>
+			  		</div>
+					<div class="cols2-main clearfix newsblock" id="1-news">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/news/business/138145/"><img class="b-new-main_pic" src="index_files/ce77fa0d.jpg" alt="Андрей Санин, «Донбасс Арена»: «Центральный стадион обречен на убыточность»"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/news/business/138145/">Андрей Санин, «Донбасс Арена»: «Центральный стадион обречен на убыточность»</a>&nbsp;<span class="b-new-main_title__date">10:17</span><noindex><a target="_blank" class="b-link-comments" title="комментарии" href="http://66.ru/news/business/138145/#comments">13</a></noindex>									</h3>
+						   			<p>
+										Руководитель отдела консалтинга рассказал Порталу 66.ru, за счет чего удалось сделать прибыльным один из лучших стадионов Европы.									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>12:29</u> Славим человека труда: <a href="http://66.ru/news/society/138253/">как тянули резину на заводе РТИ</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото"></nowrap></li><li><u>12:25</u> <a href="http://66.ru/news/society/138260/">Пойманный «Оккупай-педофиляй» преподаватель</a> отделался легким испугом<nowrap></nowrap></li><li><u>12:00</u> Прогноз погоды на неделю: <a href="http://66.ru/news/society/138242/">в Екатеринбурге ожидаются дожди</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138242/#comments">1</a></noindex></nowrap></li><li><u>11:35</u> В Тавде возле гаражей <a href="http://66.ru/news/incident/138255/">нашли тело младенца</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138255/#comments">4</a></noindex></nowrap></li><li><u>11:09</u> Курильщиков будут бесплатно <a href="http://66.ru/health/news/138252/">лечить от никотиновой зависимости</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/health/news/138252/#comments">2</a></noindex></nowrap></li><li><u>10:48</u> Дело о преднамеренном банкротстве <a href="http://66.ru/news/business/138251/">«Энергомаша» передано в суд</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/business/138251/#comments">4</a></noindex></nowrap></li><li><u>09:45</u> На любой российской АЗС можно будет <a href="http://66.ru/auto/news/138249/">заправляться газом</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138249/#comments">10</a></noindex></nowrap></li><li><u>09:26</u> Сегодня в Екатеринбурге <a href="http://66.ru/news/society/138248/">начинается саммит Россия — ЕС</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138248/#comments">21</a></noindex></nowrap></li><li><u>09:01</u> Портфель частного инвестора. Часть 9: <a href="http://66.ru/bank/news/137832/">мы отдыхаем, биржи работают</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/bank/news/137832/#comments">2</a></noindex></nowrap></li><li><u>08:20</u> <a href="http://66.ru/news/internet/138245/">Ответы на ЕГЭ по математике</a> все-таки появились в сети<nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/internet/138245/#comments">24</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/news/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div><div class="cols2-main clearfix newsblock" id="2-news" style="display:none;">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/auto/news/138232/"><img class="b-new-main_pic" src="index_files/4cf3660b.jpg" alt="Citroen C4 Sedan: французская порода на российский лад"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/auto/news/138232/">Citroen C4 Sedan: французская порода на российский лад</a>&nbsp;<span class="b-new-main_title__date">08:30</span><noindex><a target="_blank" class="b-link-comments" title="комментарии" href="http://66.ru/auto/news/138232/#comments">2</a></noindex>									</h3>
+						   			<p>
+										Почти год спустя после запуска Peugeot 408 к нам поспел его ближайший родственник. Тоже седан, тоже калужской сборки. Но похожи ли они с «братом»?									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>09:45</u> На любой российской АЗС можно будет <a href="http://66.ru/auto/news/138249/">заправляться газом</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138249/#comments">10</a></noindex></nowrap></li><li><u>08:00</u> Новая Skoda Octavia стартовала в Екатеринбурге <a href="http://66.ru/auto/news/138235/">с неожиданным размахом</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138235/#comments">26</a></noindex></nowrap></li><li><u>вчера</u> В Нижнем Тагиле <a href="http://66.ru/auto/news/138238/">байкеры из «Револьверз» поучаствовали</a> в агитпробеге<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138238/#comments">1</a></noindex></nowrap></li><li><u>01.06</u> Автоинспекторы ловили нарушителей ПДД <a href="http://66.ru/auto/news/138215/">в Железнодорожном районе</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138215/#comments">2</a></noindex></nowrap></li><li><u>01.06</u> <a href="http://66.ru/auto/news/138214/">Московский тракт встал в пробке</a> из-за дорожного ремонта<nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138214/#comments">2</a></noindex></nowrap></li><li><u>31.05</u> ГИБДД просит екатеринбуржцев <a href="http://66.ru/auto/news/138156/">не волноваться из-за Путина</a> и напускает туману<nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138156/#comments">15</a></noindex></nowrap></li><li><u>31.05</u> Почти 70% аварий с мотоциклистами <a href="http://66.ru/auto/news/138149/">происходят по их собственной вине</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138149/#comments">17</a></noindex></nowrap></li><li><u>31.05</u> Подрядчиков заставят <a href="http://66.ru/auto/news/138133/">заново ремонтировать свердловские дороги</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138133/#comments">9</a></noindex></nowrap></li><li><u>31.05</u> SEAT Ibiza FR: <a href="http://66.ru/auto/news/138008/">доза антидепрессанта</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138008/#comments">11</a></noindex></nowrap></li><li><u>30.05</u> Екатеринбургских водителей-полицейских <a href="http://66.ru/auto/news/138111/">заставили переучивать ПДД</a><nowrap>&nbsp;<img class="news_video" src="index_files/icon-vid.png" alt="Есть видео" title="Есть видео">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138111/#comments">4</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/auto/news/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div><div class="cols2-main clearfix newsblock" id="3-news" style="display:none;">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/news/business/138261/"><img class="b-new-main_pic" src="index_files/6a5097cd.jpg" alt="«Екатеринбургэнерго» почти погасил долг перед «Уралсевергазом»"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/news/business/138261/">«Екатеринбургэнерго» почти погасил долг перед «Уралсевергазом»</a>&nbsp;<span class="b-new-main_title__date">12:27</span>									</h3>
+						   			<p>
+										Оставшиеся 164 миллиона распределятся по летним месяцам.									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>10:48</u> Дело о преднамеренном банкротстве <a href="http://66.ru/news/business/138251/">«Энергомаша» передано в суд</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/business/138251/#comments">4</a></noindex></nowrap></li><li><u>10:17</u> Андрей Санин, «Донбасс Арена»: <a href="http://66.ru/news/business/138145/">«Центральный стадион обречен на убыточность»</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/business/138145/#comments">13</a></noindex></nowrap></li><li><u>09:01</u> Портфель частного инвестора. Часть 9: <a href="http://66.ru/bank/news/137832/">мы отдыхаем, биржи работают</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/bank/news/137832/#comments">2</a></noindex></nowrap></li><li><u>31.05</u> Обвиняемый в заказных убийствах <a href="http://66.ru/news/business/138199/">не смог обанкротить Валечку</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/business/138199/#comments">7</a></noindex></nowrap></li><li><u>31.05</u> «Ростелеком» готов <a href="http://66.ru/news/business/138189/">пустить провайдеров в канализацию за адекватные деньги</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/business/138189/#comments">6</a></noindex></nowrap></li><li><u>31.05</u> По факту сноса особняка на Гоголя, 7 <a href="http://66.ru/realty/news/138184/">возбудили уголовное дело</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/realty/news/138184/#comments">9</a></noindex></nowrap></li><li><u>31.05</u> Дерипаска покупает у Вексельберга <a href="http://66.ru/news/business/138181/">многострадальную Богословскую ТЭЦ</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/business/138181/#comments">10</a></noindex></nowrap></li><li><u>31.05</u> Рядом с ЦПКиО построят <a href="http://66.ru/realty/news/138127/">огромный бизнес-парк</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/realty/news/138127/#comments">22</a></noindex></nowrap></li><li><u>31.05</u> Свят-свят: английское бюро <a href="http://66.ru/realty/news/138116/">открестилось от застройки парка Энгельса</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/realty/news/138116/#comments">1</a></noindex></nowrap></li><li><u>30.05</u> В Екатеринбурге осуждена мошенница, <a href="http://66.ru/bank/news/138119/">бравшая кредиты по чужому паспорту</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/bank/news/138119/#comments">1</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/news/business/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div><div class="cols2-main clearfix newsblock" id="4-news" style="display:none;">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/news/society/138253/"><img class="b-new-main_pic" src="index_files/b787ac87.jpg" alt="Славим человека труда: как тянули резину на заводе РТИ"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/news/society/138253/">Славим человека труда: как тянули резину на заводе РТИ</a>&nbsp;<span class="b-new-main_title__date">12:29</span>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">									</h3>
+						   			<p>
+										Если вы успели соскучиться по «догнать и перегнать», ритму пятилетки, репортажам о надоях, советам седых и строгих мастеров, то вот пожалуйста — наш репортаж о человеке труда в стиле передовицы газеты «На смену!».									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>12:25</u> <a href="http://66.ru/news/society/138260/">Пойманный «Оккупай-педофиляй» преподаватель</a> отделался легким испугом<nowrap></nowrap></li><li><u>12:00</u> Прогноз погоды на неделю: <a href="http://66.ru/news/society/138242/">в Екатеринбурге ожидаются дожди</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138242/#comments">1</a></noindex></nowrap></li><li><u>09:26</u> Сегодня в Екатеринбурге <a href="http://66.ru/news/society/138248/">начинается саммит Россия — ЕС</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138248/#comments">21</a></noindex></nowrap></li><li><u>вчера</u> На Исети спешно <a href="http://66.ru/news/society/138241/">разбирают кафе «Кораблик»</a><nowrap>&nbsp;<img class="news_video" src="index_files/icon-vid.png" alt="Есть видео" title="Есть видео">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138241/#comments">16</a></noindex></nowrap></li><li><u>вчера</u> В сеть слили <a href="http://66.ru/news/society/138240/">фотографии «дачи Якунина»</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138240/#comments">23</a></noindex></nowrap></li><li><u>вчера</u> В столице выбрали <a href="http://66.ru/news/society/138239/">«Мисс Москву — 2013»</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138239/#comments">11</a></noindex></nowrap></li><li><u>вчера</u> Жителям Екатеринбурга запретили <a href="http://66.ru/news/society/138225/">открывать окна во время саммита</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138225/#comments">33</a></noindex></nowrap></li><li><u>вчера</u> <a href="http://66.ru/news/society/138223/">Добро должно быть разноцветным</a>. Как мы красили пионерлагерь<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138223/#comments">1</a></noindex></nowrap></li><li><u>01.06</u> Сергей Железняк: <a href="http://66.ru/news/society/138182/">«В Госдуме теперь есть одна курилка, и та на улице»</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138182/#comments">33</a></noindex></nowrap></li><li><u>01.06</u> Правительство решило, как <a href="http://66.ru/news/society/138209/">россияне будут отдыхать в 2014 году</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138209/#comments">2</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/news/society/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div><div class="cols2-main clearfix newsblock" id="5-news" style="display:none;">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/news/incident/138259/"><img class="b-new-main_pic" src="index_files/332612af.jpg" alt="В аварии под Североуральском погибла женщина"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/news/incident/138259/">В аварии под Североуральском погибла женщина</a>&nbsp;<span class="b-new-main_title__date">12:07</span><noindex><a target="_blank" class="b-link-comments" title="комментарии" href="http://66.ru/news/incident/138259/#comments">1</a></noindex>									</h3>
+						   			<p>
+										Водитель попытался скрыться с места аварии, но позже был задержан.									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>12:00</u> Идеальное преступление: <a href="http://66.ru/news/incident/138258/">екатеринбуржец ограбил ломбард, но забыл там паспорт</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138258/#comments">2</a></noindex></nowrap></li><li><u>11:35</u> В Тавде возле гаражей <a href="http://66.ru/news/incident/138255/">нашли тело младенца</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138255/#comments">4</a></noindex></nowrap></li><li><u>вчера</u> В Березовском <a href="http://66.ru/news/incident/138185/">сгорела пилорама</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<img class="news_video" src="index_files/icon-vid.png" alt="Есть видео" title="Есть видео"></nowrap></li><li><u>вчера</u> <a href="http://66.ru/news/incident/138236/">Пьяный водитель сбил</a> пенсионерку в Алапаевске<nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138236/#comments">6</a></noindex></nowrap></li><li><u>вчера</u> <a href="http://66.ru/news/incident/138233/">В столице ограбили продюсера</a> кинокомпании «Мосфильм»<nowrap></nowrap></li><li><u>вчера</u> Березовчанина будут судить за избиение бывшей жены, <a href="http://66.ru/news/incident/138230/">которое закончилось ее смертью</a><nowrap></nowrap></li><li><u>вчера</u> Двоих полицейских задержали <a href="http://66.ru/news/incident/138228/">в Арамиле за вымогательство</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138228/#comments">13</a></noindex></nowrap></li><li><u>вчера</u> В Подмосковье <a href="http://66.ru/news/incident/138226/">дети взорвали грузовик</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138226/#comments">10</a></noindex></nowrap></li><li><u>вчера</u> В Махачкале <a href="http://66.ru/news/incident/138224/">задержали мэра</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138224/#comments">10</a></noindex></nowrap></li><li><u>01.06</u> Свердловская полиция и наркоконтроль <a href="http://66.ru/news/incident/138217/">будут вместе бороться с наркобизнесом</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/incident/138217/#comments">6</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/news/incident/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div><div class="cols2-main clearfix newsblock" id="6-news" style="display:none;">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/news/world/138246/"><img class="b-new-main_pic" src="index_files/aebd982d.jpg" alt="Проливные дожди парализовали жизнь немцев, поляков и чехов"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/news/world/138246/">Проливные дожди парализовали жизнь немцев, поляков и чехов</a>&nbsp;<span class="b-new-main_title__date">08:44</span>&nbsp;<img class="news_video" src="index_files/icon-vid.png" alt="Есть видео" title="Есть видео"><noindex><a target="_blank" class="b-link-comments" title="комментарии" href="http://66.ru/news/world/138246/#comments">2</a></noindex>									</h3>
+						   			<p>
+										Местные жители борются с наводнениями, спасают свои дома.									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>08:01</u> В Праге объявлен режим ЧП. <a href="http://66.ru/news/world/138243/">Власти ждут наводнения</a><nowrap></nowrap></li><li><u>вчера</u> Американцы вышли на митинг <a href="http://66.ru/news/world/138227/">в поддержку информатора WikiLeaks</a><nowrap></nowrap></li><li><u>01.06</u> В Греции скончался <a href="http://66.ru/news/world/138211/">старейший в мире медведь</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/world/138211/#comments">1</a></noindex></nowrap></li><li><u>01.06</u> <a href="http://66.ru/news/world/138204/">Очередной торнадо в Оклахоме</a>: пять человек погибли, обесточены тысячи домов<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/world/138204/#comments">6</a></noindex></nowrap></li><li><u>31.05</u> Саакашвили уличили <a href="http://66.ru/news/world/138178/">в нецелевых тратах на ботокс</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/world/138178/#comments">1</a></noindex></nowrap></li><li><u>31.05</u> Ларри Кинг заявил, что не будет <a href="http://66.ru/news/world/138161/">работать на Russia Today</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/world/138161/#comments">1</a></noindex></nowrap></li><li><u>31.05</u> В Киргизии из-за золотого рудника <a href="http://66.ru/news/world/138157/">начались массовые беспорядки</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/world/138157/#comments">2</a></noindex></nowrap></li><li><u>31.05</u> В Латвии родителям <a href="http://66.ru/news/world/138153/">запретили курить при детях</a><nowrap></nowrap></li><li><u>30.05</u> Американцу дали полгода тюрьмы <a href="http://66.ru/news/world/138114/">за угрозы Обаме в Twitter</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/world/138114/#comments">1</a></noindex></nowrap></li><li><u>30.05</u> МММ по-индийски: в тюрьму за мошенничество <a href="http://66.ru/news/world/138112/">попал екатеринбургский режиссер</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/world/138112/#comments">4</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/news/world/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div><div class="cols2-main clearfix newsblock" id="21-news" style="display:none;">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/news/society/138253/"><img class="b-new-main_pic" src="index_files/b787ac87.jpg" alt="Славим человека труда: как тянули резину на заводе РТИ"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/news/society/138253/">Славим человека труда: как тянули резину на заводе РТИ</a>&nbsp;<span class="b-new-main_title__date">12:29</span>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">									</h3>
+						   			<p>
+										Если вы успели соскучиться по «догнать и перегнать», ритму пятилетки, репортажам о надоях, советам седых и строгих мастеров, то вот пожалуйста — наш репортаж о человеке труда в стиле передовицы газеты «На смену!».									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>вчера</u> В Нижнем Тагиле <a href="http://66.ru/auto/news/138238/">байкеры из «Револьверз» поучаствовали</a> в агитпробеге<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138238/#comments">1</a></noindex></nowrap></li><li><u>вчера</u> Екатеринбургская гимнастка <a href="http://66.ru/news/sport/138237/">победила на турнире в Астане</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/sport/138237/#comments">4</a></noindex></nowrap></li><li><u>вчера</u> Репортаж 66.ru: <a href="http://66.ru/news/freetime/138231/">от чего защищали детей 1 июня</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/freetime/138231/#comments">9</a></noindex></nowrap></li><li><u>вчера</u> <a href="http://66.ru/news/society/138223/">Добро должно быть разноцветным</a>. Как мы красили пионерлагерь<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138223/#comments">1</a></noindex></nowrap></li><li><u>01.06</u> Горожане и иностранные дипломаты <a href="http://66.ru/news/sport/138218/">отметили «Дни Европы» велопробегом</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/sport/138218/#comments">2</a></noindex></nowrap></li><li><u>01.06</u> <a href="http://66.ru/news/sport/138216/">Кубок по кросс-кантри</a> стартует в Верхней Пышме<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото"></nowrap></li><li><u>01.06</u> <a href="http://66.ru/news/freetime/138212/">Юные горожане нарисовали</a> на асфальте будущую телебашню<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото"></nowrap></li><li><u>31.05</u> Фоторепортаж 66.ru: <a href="http://66.ru/health/news/138194/">стиляги избавили екатеринбуржцев от сигарет</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/health/news/138194/#comments">3</a></noindex></nowrap></li><li><u>31.05</u> День защиты детей в Екатеринбурге отметят <a href="http://66.ru/news/freetime/138169/">с недетским размахом</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/freetime/138169/#comments">2</a></noindex></nowrap></li><li><u>31.05</u> Завтра в ЦПКиО запустят <a href="http://66.ru/news/freetime/138171/">детскую железную дорогу</a><nowrap>&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/freetime/138171/#comments">1</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/news/society/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div><div class="cols2-main clearfix newsblock" id="7-news" style="display:none;">
+							<div class="col-1-main">
+						   													<a target="_blank" href="http://66.ru/news/society/138253/"><img class="b-new-main_pic" src="index_files/b787ac87.jpg" alt="Славим человека труда: как тянули резину на заводе РТИ"></a>
+													   		   			<div class="b-new-main b-new-main__pad">
+						   			<h3 class="b-new-main_title">
+										<a href="http://66.ru/news/society/138253/">Славим человека труда: как тянули резину на заводе РТИ</a>&nbsp;<span class="b-new-main_title__date">12:29</span>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">									</h3>
+						   			<p>
+										Если вы успели соскучиться по «догнать и перегнать», ритму пятилетки, репортажам о надоях, советам седых и строгих мастеров, то вот пожалуйста — наш репортаж о человеке труда в стиле передовицы газеты «На смену!».									</p>
+						   		</div>
+							</div>
+							<div class="col-2-main col-2-main_with-rightCol">
+			   		   			<div class="v5-main-news">
+						   			<ul class="b-hp-news-list" style="background:none;">
+										<li><u>08:00</u> Новая Skoda Octavia стартовала в Екатеринбурге <a href="http://66.ru/auto/news/138235/">с неожиданным размахом</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138235/#comments">26</a></noindex></nowrap></li><li><u>вчера</u> В Березовском <a href="http://66.ru/news/incident/138185/">сгорела пилорама</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<img class="news_video" src="index_files/icon-vid.png" alt="Есть видео" title="Есть видео"></nowrap></li><li><u>вчера</u> В сеть слили <a href="http://66.ru/news/society/138240/">фотографии «дачи Якунина»</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138240/#comments">23</a></noindex></nowrap></li><li><u>вчера</u> В столице выбрали <a href="http://66.ru/news/society/138239/">«Мисс Москву — 2013»</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138239/#comments">11</a></noindex></nowrap></li><li><u>вчера</u> В Нижнем Тагиле <a href="http://66.ru/auto/news/138238/">байкеры из «Револьверз» поучаствовали</a> в агитпробеге<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138238/#comments">1</a></noindex></nowrap></li><li><u>вчера</u> Репортаж 66.ru: <a href="http://66.ru/news/freetime/138231/">от чего защищали детей 1 июня</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/freetime/138231/#comments">9</a></noindex></nowrap></li><li><u>вчера</u> <a href="http://66.ru/news/society/138223/">Добро должно быть разноцветным</a>. Как мы красили пионерлагерь<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/society/138223/#comments">1</a></noindex></nowrap></li><li><u>01.06</u> Горожане и иностранные дипломаты <a href="http://66.ru/news/sport/138218/">отметили «Дни Европы» велопробегом</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/news/sport/138218/#comments">2</a></noindex></nowrap></li><li><u>01.06</u> <a href="http://66.ru/news/sport/138216/">Кубок по кросс-кантри</a> стартует в Верхней Пышме<nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото"></nowrap></li><li><u>01.06</u> Автоинспекторы ловили нарушителей ПДД <a href="http://66.ru/auto/news/138215/">в Железнодорожном районе</a><nowrap>&nbsp;<img class="news_foto" src="index_files/icon-fot.png" title="Есть фото" alt="Есть фото">&nbsp;<noindex><a target="_blank" class="v5-news-comments" title="комментарии" href="http://66.ru/auto/news/138215/#comments">2</a></noindex></nowrap></li>						   				<li class="b-hp-special-news-list__item-last"><a href="http://66.ru/news/">Все новости за сегодня<ins class="b-hp-news-list-ico-rarr">→</ins></a>&nbsp;</li>
+						   			</ul>
+						   		</div>
+							</div>
+						</div>					<script>
+						jQuery('#main_news_tabs li:not(.notbind) a').each(function () {
+							var caption = jQuery(this).text();
+							/*jQuery(this).after('\
+				  					<ins style="display:none;" class="b-news__navigator-item-current_c">'+caption+'</ins>\
+				  					');*/
+						});
+						var $all_news_ins = jQuery('#main_news_tabs ins');
+						var $all_news_blocks = jQuery('div.newsblock');
+						var $all_news_a = jQuery('#main_news_tabs li:not(.notbind) a');
+						
+						$all_news_a.bind('click', function() {
+							$all_news_ins.hide().parent().removeClass('b-news__navigator-item-current');
+							$all_news_a.show();
+							var blockname = jQuery(this).hide().siblings('ins').show().parent().addClass('b-news__navigator-item-current').attr('blockname');
+							$all_news_blocks.hide();
+							jQuery('#'+blockname).show();
+						
+							return false;
+						});
+						
+						jQuery($all_news_a[0]).click();
+					</script>
+
+			   		<div class="gorizontal-banner-zone"></div>	
+												<div class="mainExclusive">
+								<div class="mainExclusivePad">
+									<h2><a href="http://66.ru/news/exclusive/">Эксклюзивно 66.ru</a></h2>
+									<div class="mainExclusiveBox">
+																<div class="exclusiveItem">
+											<a href="http://66.ru/auto/news/138232/" style="background:url(http://s.66.ru/localStorage/news/f9/bd/22/c7/f9bd22c7_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Citroen C4 Sedan: французская порода <a href="http://66.ru/auto/news/138232/">на российский лад</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/auto/news/138235/" style="background:url(http://s.66.ru/localStorage/news/49/0e/04/81/490e0481_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Новая Skoda Octavia стартовала в Екатеринбурге <a href="http://66.ru/auto/news/138235/">с неожиданным размахом</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138223/" style="background:url(http://s.66.ru/localStorage/news/4f/e0/07/f7/4fe007f7_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText"><a href="http://66.ru/news/society/138223/">Добро должно быть разноцветным</a>. Как мы красили пионерлагерь</span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138182/" style="background:url(http://s.66.ru/localStorage/news/e4/e6/28/32/e4e62832_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Сергей Железняк: <a href="http://66.ru/news/society/138182/">«В Госдуме теперь есть одна курилка, и та на улице»</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138172/" style="background:url(http://s.66.ru/localStorage/news/83/dc/37/73/83dc3773_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Полцарства за коня: <a href="http://66.ru/news/society/138172/">играем на тотализаторе киевского ипподрома</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/business/138199/" style="background:url(http://s.66.ru/localStorage/news/4d/8c/94/41/4d8c9441_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Обвиняемый в заказных убийствах <a href="http://66.ru/news/business/138199/">не смог обанкротить Валечку</a></span>
+											</span>
+										</div>
+															</div>
+								</div>
+							</div>
+												<div class="mainExclusive">
+								<div class="mainExclusivePad">
+									<h2><a href="http://66.ru/news/exclusive/">Эксклюзивно 66.ru</a></h2>
+									<div class="mainExclusiveBox">
+																<div class="exclusiveItem">
+											<a href="http://66.ru/auto/news/138232/" style="background:url(http://s.66.ru/localStorage/news/f9/bd/22/c7/f9bd22c7_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Citroen C4 Sedan: французская порода <a href="http://66.ru/auto/news/138232/">на российский лад</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/auto/news/138235/" style="background:url(http://s.66.ru/localStorage/news/49/0e/04/81/490e0481_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Новая Skoda Octavia стартовала в Екатеринбурге <a href="http://66.ru/auto/news/138235/">с неожиданным размахом</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138223/" style="background:url(http://s.66.ru/localStorage/news/4f/e0/07/f7/4fe007f7_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText"><a href="http://66.ru/news/society/138223/">Добро должно быть разноцветным</a>. Как мы красили пионерлагерь</span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138182/" style="background:url(http://s.66.ru/localStorage/news/e4/e6/28/32/e4e62832_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Сергей Железняк: <a href="http://66.ru/news/society/138182/">«В Госдуме теперь есть одна курилка, и та на улице»</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138172/" style="background:url(http://s.66.ru/localStorage/news/83/dc/37/73/83dc3773_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Полцарства за коня: <a href="http://66.ru/news/society/138172/">играем на тотализаторе киевского ипподрома</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/business/138199/" style="background:url(http://s.66.ru/localStorage/news/4d/8c/94/41/4d8c9441_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Обвиняемый в заказных убийствах <a href="http://66.ru/news/business/138199/">не смог обанкротить Валечку</a></span>
+											</span>
+										</div>
+															</div>
+								</div>
+							</div>							
+												<div class="mainExclusive">
+								<div class="mainExclusivePad">
+									<h2><a href="http://66.ru/news/exclusive/">Эксклюзивно 66.ru</a></h2>
+									<div class="mainExclusiveBox">
+																<div class="exclusiveItem">
+											<a href="http://66.ru/auto/news/138232/" style="background:url(http://s.66.ru/localStorage/news/f9/bd/22/c7/f9bd22c7_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Citroen C4 Sedan: французская порода <a href="http://66.ru/auto/news/138232/">на российский лад</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/auto/news/138235/" style="background:url(http://s.66.ru/localStorage/news/49/0e/04/81/490e0481_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Новая Skoda Octavia стартовала в Екатеринбурге <a href="http://66.ru/auto/news/138235/">с неожиданным размахом</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138223/" style="background:url(http://s.66.ru/localStorage/news/4f/e0/07/f7/4fe007f7_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText"><a href="http://66.ru/news/society/138223/">Добро должно быть разноцветным</a>. Как мы красили пионерлагерь</span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138182/" style="background:url(http://s.66.ru/localStorage/news/e4/e6/28/32/e4e62832_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Сергей Железняк: <a href="http://66.ru/news/society/138182/">«В Госдуме теперь есть одна курилка, и та на улице»</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/society/138172/" style="background:url(http://s.66.ru/localStorage/news/83/dc/37/73/83dc3773_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Полцарства за коня: <a href="http://66.ru/news/society/138172/">играем на тотализаторе киевского ипподрома</a></span>
+											</span>
+										</div>
+																<div class="exclusiveItem">
+											<a href="http://66.ru/news/business/138199/" style="background:url(http://s.66.ru/localStorage/news/4d/8c/94/41/4d8c9441_resizedScaled_300to150.jpg) center center no-repeat; display:block; min-height:150px; height:150px;"></a>
+											<span class="exclusiveItemTextPad">
+												<ins class="exclusiveItemShadow"></ins>
+												<span class="exclusiveItemText">Обвиняемый в заказных убийствах <a href="http://66.ru/news/business/138199/">не смог обанкротить Валечку</a></span>
+											</span>
+										</div>
+															</div>
+								</div>
+							</div>
+														
+
+					
+					<div class="cols2-main clearfix">
+						<div class="col-1-main">
+							
+																								<div class="b-find-job">
+								<h3 class="b-find-job__title">
+									<a href="http://66.ru/rabota/">
+										Работа в Екатеринбурге									</a>
+								</h3>
+								
+								
+								<div class="b-dashboard-job-box">
+								<table class="b-dashboard">								
+
+																					<tr>
+													<th><span><a href="http://66.ru/rabota/vacancy/458177/">Менеджер-инженер</a></span></th>
+													<td><em>20000&nbsp;руб.</em></td>
+												</tr>
+																								<tr>
+													<th><span><a href="http://66.ru/rabota/vacancy/357568/">Администратор</a></span></th>
+													<td><em>18000&nbsp;руб.</em></td>
+												</tr>
+																								<tr>
+													<th><span><a href="http://66.ru/rabota/vacancy/467426/">Кладовщик</a></span></th>
+													<td><em>18000&nbsp;руб.</em></td>
+												</tr>
+																								<tr>
+													<th><span><a href="http://66.ru/rabota/vacancy/409590/">Кредитный эксперт</a></span></th>
+													<td><em>18000&nbsp;руб.</em></td>
+												</tr>
+																								<tr>
+													<th><span><a href="http://66.ru/rabota/vacancy/423264/">Дробильщик</a></span></th>
+													<td><em>25000&nbsp;руб.</em></td>
+												</tr>
+																								<tr>
+													<th><span><a href="http://66.ru/rabota/vacancy/419800/">Мерчендайзер</a></span></th>
+													<td><em>21000&nbsp;руб.</em></td>
+												</tr>
+												
+								</table>
+								</div>
+							</div>
+										
+						<div>
+<!-- <a href="/skidki/"><img src="http://dbx.go66.ru/u/5628910/240x140-Club-66-%28chel%29.jpg" title="Дисконтный клуб «УБРиР - Club 66»" alt="Дисконтный клуб «УБРиР - Club 66»" /></a> -->
+<a href="http://66.ru/skidki/"><img src="index_files/240x140-.jpg" title="Дисконтный клуб «УБРиР - Club 66»" alt="Дисконтный клуб «УБРиР - Club 66»"></a>
+	</div>
+										
+																											
+							
+							
+						</div>
+						<div class="col-2-main col-2-main_with-rightCol">
+							
+							   			<div class="b-car-sell">
+				   				<h4 class="b-car-sell__title"><a href="http://66.ru/auto/doska/">Продажа автомобилей</a> <noindex>объявлений за сегодня: <b>134</b></noindex></h4>
+								<p>
+																        <span>
+								        <a class="image" href="http://66.ru/auto/doska/daewoo/nexia/4413053-prodam-daewoo-nexia.html">
+								        	<img alt="Daewoo Nexia" src="index_files/1852_608.jpg">
+							        	</a><br><a href="http://66.ru/auto/doska/daewoo/nexia/4413053-prodam-daewoo-nexia.html">Daewoo Nexia</a><br>
+										100&nbsp;000&nbsp;рублей						        	</span>
+																        <span>
+								        <a class="image" href="http://66.ru/auto/doska/toyota/rav4/4413105-prodam-toyota-rav4.html">
+								        	<img alt="Toyota RAV4" src="index_files/217_4812.jpg">
+							        	</a><br><a href="http://66.ru/auto/doska/toyota/rav4/4413105-prodam-toyota-rav4.html">Toyota RAV4</a><br>
+										840&nbsp;000&nbsp;рублей						        	</span>
+																        <span>
+								        <a class="image" href="http://66.ru/auto/doska/kia/sportage/4393521-prodam-kia-sportage.html">
+								        	<img alt="Kia Sportage" src="index_files/1244_822.jpg">
+							        	</a><br><a href="http://66.ru/auto/doska/kia/sportage/4393521-prodam-kia-sportage.html">Kia Sportage</a><br>
+										410&nbsp;000&nbsp;рублей						        	</span>
+																        <span>
+								        <a class="image" href="http://66.ru/auto/doska/hyundai/getz/4412872-prodam-hyundai-getz.html">
+								        	<img alt="Hyundai Getz" src="index_files/139_5907.jpg">
+							        	</a><br><a href="http://66.ru/auto/doska/hyundai/getz/4412872-prodam-hyundai-getz.html">Hyundai Getz</a><br>
+										240&nbsp;000&nbsp;рублей						        	</span>
+																        <span>
+								        <a class="image" href="http://66.ru/auto/doska/gaz/3302/4402197-prodam-gaz-3302.html">
+								        	<img alt="ГАЗ 3302" src="index_files/2257_752.jpg">
+							        	</a><br><a href="http://66.ru/auto/doska/gaz/3302/4402197-prodam-gaz-3302.html">ГАЗ 3302</a><br>
+										200&nbsp;000&nbsp;рублей						        	</span>
+																        <span>
+								        <a class="image" href="http://66.ru/auto/doska/skoda/octavia/4412797-prodam-skoda-octavia.html">
+								        	<img alt="Skoda Octavia" src="index_files/31_1505_.jpg">
+							        	</a><br><a href="http://66.ru/auto/doska/skoda/octavia/4412797-prodam-skoda-octavia.html">Skoda Octavia</a><br>
+										670&nbsp;000&nbsp;рублей						        	</span>
+																        <span>
+								        <a class="image" href="http://66.ru/auto/doska/vaz/2115/4399655-prodam-vaz-2115.html">
+								        	<img alt="ВАЗ 2115" src="index_files/1728_409.jpg">
+							        	</a><br><a href="http://66.ru/auto/doska/vaz/2115/4399655-prodam-vaz-2115.html">ВАЗ 2115</a><br>
+										120&nbsp;000&nbsp;рублей						        	</span>
+															        </p>
+				   			</div>
+				   			
+				   			<div class="b-bulletin-board">
+				   				<h4 class="b-bulletin-board__title"><a href="http://66.ru/doska/">Доска объявлений</a> <noindex>объявлений за сегодня: <b>2101</b></noindex></h4>
+				   			</div>
+				   			
+				   			<div class="b-realty-board">
+				   				<h4 class="b-realty-board__title"><a href="http://66.ru/doska/realty/">Недвижимость</a> <noindex>объявлений за сегодня: <b>320</b></noindex></h4>
+								<div class="b-dashboard-realty-box">
+									<table class="b-dashboard">
+																				<tr>
+											<th><span><u>12:29</u><a href="http://66.ru/realty/doska/live/4081904-prodam-2-k-kvartiru-ul-belinskogo-171-avtovokzal.html">Продам 2-к. квартиру, ул. Белинского, 171 (Автовокзал)</a></span></th>
+											<td><em>7500000&nbsp;рублей</em></td>
+										</tr>
+																				<tr>
+											<th><span><u>12:29</u><a href="http://66.ru/realty/doska/live/4333202-prodam-2-k-kvartiru-ul-furmanova-26-avtovokzal.html">Продам 2-к. квартиру, ул. Фурманова, 26 (Автовокзал)</a></span></th>
+											<td><em>750000&nbsp;рублей</em></td>
+										</tr>
+																				<tr>
+											<th><span><u>12:29</u><a href="http://66.ru/realty/doska/live/4312360-prodam-2-k-kvartiru-ul-agronomicheskaya-39a-vtorchermet.html">Продам 2-к. квартиру, ул. Агрономическая, 39а (Вторчермет)</a></span></th>
+											<td><em>1790000&nbsp;рублей</em></td>
+										</tr>
+																				<tr>
+											<th><span><u>12:29</u><a href="http://66.ru/realty/doska/live/4288087-prodam-2-k-kvartiru-ul-chajkovskogo-842-avtovokzal.html">Продам 2-к. квартиру, ул. чайковского, 84/2 (Автовокзал)</a></span></th>
+											<td><em>3200000&nbsp;рублей</em></td>
+										</tr>
+																				<tr>
+											<th><span><u>12:28</u><a href="http://66.ru/realty/doska/live/4405726-prodam-1-k-kvartiru-ul-moskovskaya--46-tsentr.html">Продам 1-к. квартиру, ул. Московская , 46 (Центр)</a></span></th>
+											<td><em>3600000&nbsp;рублей</em></td>
+										</tr>
+																			</table>
+								</div>
+				   			</div>
+							
+										
+						</div>
+					</div>
+					
+				</div>
+							<div class="grid-my-col-2" style="display:none;">
+											<div class="b-interview">
+							<div class="b-interview__pad">
+								<h5 class="b-interview__title">Интервью</h5>
+																<div class="b-interview__row clearfix">
+									<div class="b-interview__row_text">
+										<dl>
+											<dt>Александр Бурков:</dt>
+											<dd><a href="http://66.ru/news/politic/138146/">«Есть два кандидата я и Силин. Остальные — спойлеры»</a></dd>
+										</dl>
+									</div>
+																		<div class="b-interview__row_pic"><ins class="b-interview__cnr"></ins><a href="http://66.ru/news/politic/138146/"><img src="index_files/d245cef_.jpg" alt=""></a></div>										
+																	</div>	
+																<div class="b-interview__row clearfix">
+									<div class="b-interview__row_text">
+										<dl>
+											<dt>Ольга Котлярова:</dt>
+											<dd><a href="http://66.ru/news/society/137922/">«У нас «чиновник» — ругательное слово. Почему?»</a></dd>
+										</dl>
+									</div>
+																		<div class="b-interview__row_pic"><ins class="b-interview__cnr"></ins><a href="http://66.ru/news/society/137922/"><img src="index_files/38db1025.jpg" alt=""></a></div>										
+																	</div>	
+															</div>
+						</div>
+											<div class="vertical-banner-zone">
+												</div>
+						
+						
+						<div class="b-most-discussed">
+							<div class="b-most-discussed__pad v5-main-news">
+								<h5 class="b-most_discussed__title">Популярные новости</h5>
+								<ul class="b-most-discussed__list">
+																			<li>
+											<a href="http://66.ru/auto/news/138235/">Новая Skoda Octavia стартовала в Екатеринбурге с неожиданным размахом</a>
+											<i class="news_single_date">08:00</i>
+											<nowrap><noindex><a href="http://66.ru/auto/news/138235/#comments" title="комментарии" class="v5-news-comments">26</a></noindex></nowrap>
+										</li>
+																			<li>
+											<a href="http://66.ru/news/internet/138245/">Ответы на ЕГЭ по математике все-таки появились в сети</a>
+											<i class="news_single_date">08:20</i>
+											<nowrap><noindex><a href="http://66.ru/news/internet/138245/#comments" title="комментарии" class="v5-news-comments">24</a></noindex></nowrap>
+										</li>
+																			<li>
+											<a href="http://66.ru/news/society/138240/">В сеть слили фотографии «дачи Якунина»</a>
+											<i class="news_single_date">вчера</i>
+											<nowrap><noindex><a href="http://66.ru/news/society/138240/#comments" title="комментарии" class="v5-news-comments">23</a></noindex></nowrap>
+										</li>
+																			<li class="last">
+											<a href="http://66.ru/news/society/138248/">Сегодня в Екатеринбурге начинается саммит Россия — ЕС</a>
+											<i class="news_single_date">09:26</i>
+											<nowrap><noindex><a href="http://66.ru/news/society/138248/#comments" title="комментарии" class="v5-news-comments">21</a></noindex></nowrap>
+										</li>
+																	</ul>
+							</div>
+						</div>
+
+
+
+						
+												<!-- 240-->
+						<div class="b-most-discussed b-most-discussed_news-companies">
+							<div class="b-most-discussed__pad v5-main-news">
+								<h5 class="b-most_discussed__title"><a href="http://66.ru/business/news/">Новости компаний</a></h5>
+								<ul class="b-most-discussed__list">
+																	<li>
+										<a href="http://66.ru/bank/news/releases/138256/">Состоялось годовое общее собрание акционеров Сбербанка России</a>
+										<i class="news_single_date">11:54</i>
+																			</li>
+																	<li>
+										<a href="http://66.ru/bank/news/releases/138254/">Инвестбанк увеличил свой капитал на 14%</a>
+										<i class="news_single_date">11:34</i>
+																			</li>
+																	<li>
+										<a href="http://66.ru/business/news/138247/">«Путешествие к звездам» на Радио СИ. Кто забрал корону?</a>
+										<i class="news_single_date">09:17</i>
+																			</li>
+																	<li>
+										<a href="http://66.ru/bank/news/releases/138186/">Герман Греф выступил на собрании акционеров Сбербанка</a>
+										<i class="news_single_date">31.05</i>
+										 <nowrap><noindex><a href="http://66.ru/bank/news/releases/138186/#comments" title="комментарии" class="v5-news-comments">1</a></noindex></nowrap>									</li>
+																	<li class="last">
+										<a href="http://66.ru/bank/news/releases/138176/">Эксперты СКБ-банка дают советы путешественникам</a>
+										<i class="news_single_date">31.05</i>
+																			</li>
+																
+								</ul>
+							</div>
+						</div>						
+						<!---->
+																												
+				</div>
+							
+			</div>
+			
+			
+		</div>
+		<div class="page-col-16-span-5">
+			 <table cellspacing="0" cellpadding="0" border="0" style="width: 242px;">
+	<tr>
+		<td>
+
+		</td>
+	</tr>
+
+    <tr style="height: 10px;"><td></td></tr>
+
+    <tr>
+        <td>
+		    <div>
+
+
+<!-- test right -->
+</div>
+<br>		    		</td>
+    </tr>
+
+
+	
+	<tr>
+		<td>
+			        </td>
+	</tr>
+</table>		</div>
+	</div>
+</div>
+       <script type="text/javascript">
+       /* <![CDATA[ */
+       
+        function chkResolution() {
+            var animating = false;
+            var $ad = jQuery('.grid-my-col-2');
+            var $grid_my_col1 = jQuery(".grid-my-col-1");
+            var container = jQuery('.page-grid-wrap');
+            var containerWidth = 990;
+			
+            function slide() {
+            	
+                if(animating)
+                    return;
+				if(jQuery.browser.opera) {
+					containerWidth = 990;
+				}
+				if(jQuery.browser.msie) {
+					containerWidth = 990;
+				}
+                if(container.width() < containerWidth) {
+                    if($ad.css('display') == 'none') {
+                    	return;
+                    }
+                        
+					$grid_my_col1.addClass("grid-my-col-1__without-rcol");
+                    $ad.animate({ width: 'hide' }, 300, function() { 
+                    	animating = false; 
+                	});
+                 }
+                else {
+                    if($ad.css('display') == 'block') {
+                        return;
+                    }
+                    $grid_my_col1.removeClass("grid-my-col-1__without-rcol");
+                    $ad.animate({ width: 'show' }, 300, function() { 
+                    	animating = false; 
+                	});
+                }
+                animating = true;
+            }
+            $ad.hide();
+            slide();
+            jQuery(window).resize(function() { slide(); });
+        }
+        
+        jQuery(document).ready(function(){
+        	chkResolution();
+        })
+        
+        
+       /* ]]> */
+       </script>
+   
+ <div id="seohelpdiv"></div>
+
+
+</div>
+</div>
+
+</div>
+<div id="v5-foot-wrap">
+	<div id="v5-foot">
+		<div style="position: absolute; right:100%; width:100px;">
+					</div>
+
+		<div class="v5-logo">
+     <a href="http://66.ru/">
+      <img title="Современный портал Екатеринбурга" alt="66.ru" src="index_files/b6241b3a.jpg">
+      <span>
+       Портал «66.ru» — Современный портал Екатеринбурга.
+      </span>
+     </a>
+    <ul class="v5-menu">
+  <li>
+      <a href="http://66.ru/about/">О проекте</a>
+     </li>
+<li>
+      <a href="http://66.ru/advert/">Размещение рекламы</a>
+     </li>
+<li>
+      <a href="http://66.ru/agreement/">Пользовательское соглашение</a>
+     </li>
+<li>
+      <a href="http://support.66.ru/">Техподдержка</a>
+     </li>
+     <li>
+      <a href="http://www.66.ru/lite/setmobile/">Мобильная версия</a>
+     </li>
+<li class="v5-last">
+      <a href="http://www.66.ru/rabota/office/82788/">Наши вакансии</a>
+     </li>
+
+</ul>		<div class="v5-counters">
+
+
+
+
+	</div>
+</div>
+
+</body>
+</html>
+<!-- This document saved from http://66.ru/ -->
