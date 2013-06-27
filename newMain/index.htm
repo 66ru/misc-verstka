@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+    <!-- Charset must defined in the begining for following fields to be interpret correctly -->
+    <meta charset="utf-8">
+
+    <!-- CHECKLIST: Remove if activated in .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- CHECKLIST: Test on CMS
+         SEO stuff, need to be on every indexing page -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
+    <title>Главная</title>
+
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/AnyGrid.css" />
+	<link rel="stylesheet/less" type="text/css" href="css/global.less" />
+	<link rel="stylesheet/less" type="text/css" href="css/mainpage.less" />
+	<script src="js/less-1.3.3.min.js" type="text/javascript"></script>
+	<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			/*hover на есче*/
+			$(".hasSub").hover(function(e) {
+				$(this).addClass("hover");
+				$(this).find(".sub").show("fast");
+			}, function(e) {
+				if (e.relatedTarget.className != "sub") {
+					$(this).removeClass("hover");
+					$(this).find(".sub").hide("slow");
+				}
+			});
+			
+			/*checkMenu();
+			
+			
+			$(window).resize() {
+				checkMenu();
+			
+			};	
+			
+			
+			function checkMenu() {
+				
+				menuWidth = $(".b-header-menu").width();
+				logoWidth = $(".b-header-logo").width();
+				
+				
+				
+			
+			}*/
+			
+		});
+	</script>
+	
+    <!--script src="publish/_script.js"></script-->
+
+</head>
+<body>
+<div class="header" id="header">
+	<div class="header-wrap">
+		<div class="g-24">
+			<div class="g-col-1 g-span-14">
+				<a href="" class="b-header-logo">
+					<img src="img/b-header-logo.png" alt=""/>
+				</a>
+				
+				<ul class="b-header-menu context">
+					<li><a href=""><ins>Новости</ins></a></li>
+					<li><a href=""><ins>Банки</ins></a></li>
+					<li><a href=""><ins>Работа</ins></a></li>
+					<li class="cur"><a href=""><ins>Справка</ins></a></li>
+					<li><a href=""><ins>Авто</ins></a></li>
+					<li><a href=""><ins>Недвижимость</ins></a></li>
+					<li><a href=""><ins>Объявления</ins></a></li>
+					<li class="hasSub">
+						<a href=""><ins>Еще</ins></a>
+						<ul class="sub">
+							<li><a href="">Здоровье</a></li>
+							<li><a href="">Еда</a></li>
+							<li><a href="">Афиша</a></li>
+							<li><a href="">Общение</a></li>
+							<li><a href="">Конкурсы</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			<div class="g-col-14 g-span-12">
+				<div class="g-24">
+					<div class="g-col-1 g-span-12">
+						<div class="b-header-search">
+							<form action="">
+								<input class="b-header-search__text" type="text" value="Поиск" placeholder="Поиск" />
+								<input class="b-header-search__subm" type="submit" value=""/>
+							</form>
+						</div>
+					</div>
+					<div class="g-col-13 g-span-12">
+						<table class="b-header-authorize">
+							<tr>
+								<td>
+									<a href="" class="b-login">Войти</a>
+									
+									<a href="" class="b-header-social-ico"><img src="img/b-header-vk-ico.png" alt=""/></a>
+									<a href="" class="b-header-social-ico"><img src="img/b-header-fb-ico.png" alt=""/></a>
+									<a href="" class="b-header-social-ico"><img src="img/b-header-tw-ico.png" alt=""/></a>
+								</td>
+								<td></td>
+								<td>&nbsp;</td>
+								<td>
+									<a href="" class="b-header-mail-link">Почта</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="body">
+
+
+
+	<div class="g-24">
+		<div class="g-col-1 g-span-13">
+			<div style="border-right: 1px solid #cccccc; padding-right: 30px; margin-bottom: 27px;">
+			<div class="g-24">
+			
+				<div class="g-col-1 g-span-16">
+					<!---->
+					<a href="#" class="b-teaser-orange-text" style="background-image: url(img/b-teaser-bg.jpg);">
+						<span class="b-teaser-orange-text__row">Ройзмана не пускают в мэры!</span>
+						<span class="b-teaser-orange-text__row">Собираем подписи в поддержку!</span>
+					</a>
+					
+					<div class="b-news-item b-news-item_layout_main">
+						<div class="b-news-item__pic"><img class="" src="img/1.png" alt=""/></div>
+						<h3 class="b-news-item__title">
+							<a href="#1">Еще 90 челябинцев обратились к врачам после метеоритного дождя</a>&nbsp;<span class="b-news-item__activity b-news-item__activity_state_hot">(54)</span>
+							<ins class="b-icon b-icon_img_news-photo"></ins>
+						</h3>
+					</div>
+					
+					<div class="b-news-item">
+						15 цистерн с серной <a href="#2">кислотой сошли с рельсов на Урале</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>
+					
+					<div class="b-news-item b-news-item_layout_video">
+						Сборная России по <a href="#3">биатлону осталась без медалей</a>&nbsp;<span class="b-news-item__activity">(7)</span>
+						<ins class="b-icon b-icon_img_news-infography"></ins>
+						<ins class="b-icon b-icon_img_news-pols"></ins>
+					</div>			
+					
+					<div class="b-news-item b-news-item_layout_photo">
+						«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>						
+					
+					<div class="b-news-item b-news-item_layout_photo">
+						Новая партия Михаила Прохоров может выдвинуть Евгения <a href="#">Ройзмана на пост мэра Екатеринбурга</a>&nbsp;<span class="b-news-item__activity">(2)</span>
+					</div>		
+
+					<div class="b-news-item b-news-item_layout_photo">
+						СК попросит суд о заочном <a href="#">аресте дебошира с рейса Москва-Хургада</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>		
+
+					
+					<div class="b-news-item">
+						Женская сборная России по биатлону осталась без медалей чемпионата мира <a href="#">из-за ошибки тренерского состава</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>		
+
+					<div class="b-news-item">
+						«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>					
+					
+					
+					
+					
+					<!---->
+				</div>			
+				<div class="g-col-17 g-span-8">
+					
+						<a class="b-news-item b-news-item_layout_annonce" href="">
+							<span class="b-news-item__pic">
+								<ins class="b-news-item__pic__shadow"></ins>
+								<img class="" src="img/2.png" alt=""/>
+							</span>
+							<span class="b-news-item__title">
+								Культурная жизнь Екатеринбурга готовится уйти в подполье&nbsp;<span class="b-news-item__activity">(54)</span>
+							</span>
+						</a>
+						
+						<a class="b-news-item b-news-item_layout_annonce" href="">
+							<span class="b-news-item__pic">
+								<ins class="b-news-item__pic__shadow"></ins>
+								<img class="" src="img/3.png" alt=""/>
+							</span>
+							<span class="b-news-item__title">
+								Автохозяйство заплатит дочери погибшего в ДТП с Мишари...&nbsp;<span class="b-news-item__activity">(54)</span>
+							</span>
+						</a>
+
+						<a class="b-news-item b-news-item_layout_annonce" href="">
+							<span class="b-news-item__pic">
+								<ins class="b-news-item__pic__shadow"></ins>
+								<img class="" src="img/4.png" alt=""/>
+							</span>
+							<span class="b-news-item__title">
+								Back to СССР: культурная жизнь Екатеринбурга готовится&nbsp;<span class="b-news-item__activity">(54)</span>
+							</span>
+						</a>					
+				</div>
+				
+			
+			
+			</div>
+			<div class="g-24">
+				<div class="g-col-1 g-span-24">
+					<div class="b-banner b-banner_layout_middle-page">
+						<a href="">
+							<img src="img/ban.png" alt=""/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="g-24">
+				<div class="g-col-1 g-span-16">
+				
+					<div class="b-news-item">
+						15 цистерн с серной <a href="#2">кислотой сошли с рельсов на Урале</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>
+					
+					<div class="b-news-item b-news-item_layout_video">
+						Сборная России по <a href="#3">биатлону осталась без медалей</a>&nbsp;<span class="b-news-item__activity">(7)</span>
+						<ins class="b-icon b-icon_img_news-infography"></ins>
+						<ins class="b-icon b-icon_img_news-pols"></ins>
+					</div>			
+					
+					<div class="b-news-item b-news-item_layout_photo">
+						«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>						
+					
+					<div class="b-news-item b-news-item_layout_photo">
+						Новая партия Михаила Прохоров может выдвинуть Евгения <a href="#">Ройзмана на пост мэра Екатеринбурга</a>&nbsp;<span class="b-news-item__activity">(2)</span>
+					</div>		
+
+					<div class="b-news-item b-news-item_layout_photo">
+						СК попросит суд о заочном <a href="#">аресте дебошира с рейса Москва-Хургада</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>		
+
+					
+					<div class="b-news-item">
+						Женская сборная России по биатлону осталась без медалей чемпионата мира <a href="#">из-за ошибки тренерского состава</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>		
+
+					<div class="b-news-item">
+						«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>										
+				
+					<div class="b-news-item">
+						Женская сборная России по биатлону осталась без медалей чемпионата мира <a href="#">из-за ошибки тренерского состава</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>		
+				
+				</div>
+				<div class="g-col-17 g-span-8">
+				
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/2.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Культурная жизнь Екатеринбурга готовится уйти в подполье&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>
+					
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/3.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Автохозяйство заплатит дочери погибшего в ДТП с Мишари...&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>					
+				
+				</div>
+			</div>	
+			<div class="g-24">
+				<div class="g-col-1 g-span-16">
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/5.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Культурная жизнь Екатеринбурга готовится уйти в подполье&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>
+				</div>
+				<div class="g-col-17 g-span-8">
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/2.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Культурная жизнь Екатеринбурга готовится уйти в подполье&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>
+					
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/3.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Автохозяйство заплатит дочери погибшего в ДТП с Мишари...&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>						
+				</div>
+			</div>
+			<div class="g-24">			
+				<div class="g-col-1 g-span-8">
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/5.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Культурная жизнь Екатеринбурга готовится уйти в подполье&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>
+				</div>
+				<div class="g-col-9 g-span-8">
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/2.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Культурная жизнь Екатеринбурга готовится уйти в подполье&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>
+				</div>
+				<div class="g-col-17 g-span-8">					
+					<a class="b-news-item b-news-item_layout_annonce" href="">
+						<span class="b-news-item__pic">
+							<ins class="b-news-item__pic__shadow"></ins>
+							<img class="" src="img/3.png" alt=""/>
+						</span>
+						<span class="b-news-item__title">
+							Автохозяйство заплатит дочери погибшего в ДТП с Мишари...&nbsp;<span class="b-news-item__activity">(54)</span>
+						</span>
+					</a>						
+				</div>				
+			</div>
+			<div class="g-24">
+				<div class="g-col-1 g-span-24">
+					<div class="b-separator b-separator_border_yes"></div>
+				</div>
+			</div>
+			<div class="g-24">
+				<div class="g-col-1 g-span-16">
+					
+					
+					<h3 class="b-header b-header_type_h3"><a href="#4">Новости компаний</a></h3>
+					
+					<div class="b-news-item">
+						ВУЗ-банк предложил клиента <a href="#">сервис «Торговые сигналы»</a>
+					</div>					
+					<div class="b-news-item">
+						Росбанк поздравляет <a href="#">работников авиационно-космической отрасли</a>
+					</div>
+					<div class="b-news-item">
+						Электронный счет на Урале <a href="#">отметил 10-летний юбилей</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>
+					<div class="b-news-item">
+						Система «Город» теперь доступна <a href="#">в банкоматах и терминалах Сбербанка </a>
+					</div>
+					<div class="b-news-item">
+						Банк «Екатеринбург» и ООО «Топливная компания 3» <a href="#">заключили договор</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>
+					<div class="b-news-item">
+						Электронный счет на Урале <a href="#">отметил 10-летний юбилей</a>&nbsp;<span class="b-news-item__activity">(54)</span>
+					</div>
+					<div class="b-news-item">
+						Система «Город» теперь доступна <a href="#">в банкоматах и терминалах Сбербанка </a>
+					</div>
+
+					
+					
+				</div>
+				<div class="g-col-17 g-span-8">
+
+					<div class="b-banner b-banner_layout_middle-page-2-col">
+						<a href="">
+							<img src="img/ban1.png" alt=""/>
+						</a>
+					</div>
+					
+				</div>
+			</div>			
+		</div>	
+		</div>
+
+		<div class="g-col-14 g-span-12 red">
+			<div class="g-24">
+				<div class="g-col-1 g-span-12 red">
+					
+					<div class="">
+						<div class=""><a href="">Погода</a> <ins class=""></ins> завтра: -15</div>
+						<div class=""><a href="">Обмен валют</a> $31,15	<ins class=""></ins>&nbsp; &nbsp;&euro;41,15 <ins class=""></ins></div>
+					</div>
+					
+					<h3 class="b-header b-header_type_h3"><a href="#5">Недвижимость</a></h3>
+					
+					<div class="">
+						Снять: <a href="">до 20 000 р./месяц</a>, <a href="">офис</a>, <a href="">Центр</a>, <a href="">ЖБИ</a>, <a href="">Ботаника</a>
+					</div>
+					
+					<div class="">
+						Купить: <a href="">в новостройке</a>, <a href="">за городом</a>, <a href="">на вторичном рынке</a>, <a href="">взять ипотеку</a>
+					</div>		
+
+					<h3 class="b-header b-header_type_h3"><a href="#5">Продажа авто</a></h3>
+					
+					<div class="">
+						<a href="">иномарка до 300 000 р.</a>, <a href="">ВАЗ</a>, <a href="">Reno</a>, <a href="">Opel</a>, <a href="">Honda</a>, <a href="">Mitsubishi</a>
+						<a href=""><ins>Opel Astra 460 000руб.</ins></a>
+					</div>
+					
+					<h3 class="b-header b-header_type_h3">Финансы</h3>
+					
+					<div class="">
+						<a href="">Банкоматы на карте</a>, <a href="">Вклады</a>, <a class="" href="">Лучшие кредиты в городе</a>
+					</div>
+					
+					<div class="b-banner b-banner_layout_middle-page-3-col">
+						<a href="">
+							<img src="img/ban2.png" alt=""/>
+						</a>
+					</div>	
+
+					<h3 class="b-header b-header_type_h3"><a href="#5">Афиша</a></h3>
+					
+					<div class="">
+						<a href="" class="">
+							<ins class="">гастроли</ins>
+							<span class="">Юля Волкова<br /><span class="">12 апреля, 19:00, Цирк</span></span>
+							<img src="" alt=""/>
+						</a>
+						<a href="" class="">
+							<ins class="">кино</ins>
+							<span class="">Падение Олимпа</span>
+							<img src="" alt=""/>
+						</a>
+						<a href="" class="">
+							<ins class="">кино</ins>
+							<span class="">G.I. Joe: Бросок кобры 2</span>
+							<img src="" alt=""/>
+						</a>
+					</div>
+					
+					<h3 class="b-header b-header_type_h3"><a href="#5">Работа в Екатеринбурге</a></h3>
+					
+					<div class="">
+						<a href="">от 30 000 р.</a>, <a href="">для студентов</a>,
+						<a href="">без опыта</a>, <a href="">менеджер</a>, <a href="">специалист</a>,
+						<a href="">инженер</a>, <a href="">продавец</a>
+					</div>
+				
+				
+				</div>
+				<div class="g-col-13 g-span-12 red">
+				
+					<div class="b-banner b-banner_layout_middle-page-4-col">
+						<a href="">
+							<img src="img/ban3.png" alt=""/>
+						</a>
+					</div>					
+					
+					<h3 class="b-header b-header_type_h3"><a href="#5">Телепрограмма</a></h3>
+					
+					<div class="">
+						<div><ins class="">21:40</ins> <a href="">Игры судьбы</a> <a href=""><ins class=""></ins></a></div>
+						<div><ins class="">21:45</ins> <a href="">Тайны следствия</a> <a href=""><ins class=""></ins></a></div>
+						<div><ins class="">22:56</ins> <a href="">Лучшее лето нашей молодости</a> <a href=""><ins class=""></ins></a></div>
+						<div style="display: none;" class="">
+							<div><ins class="">22:49</ins> <a href=""></a> <a href=""><ins class=""></ins></a></div>
+							<div><ins class="">23:00</ins> <a href=""></a> <a href=""><ins class=""></ins></a></div>
+							<div><ins class="">0:30</ins> <a href=""></a> <a href=""><ins class=""></ins></a></div>							
+						</div>
+						<div><a href=""></a> <a href="">развернуть еще</a></div>
+					</div>
+					
+					
+				</div>
+				
+			</div>
+			<div class="g-24">
+				<div class="g-col-1 g-span-24">
+					<div class="b-separator b-separator_border_yes b-separator_border-color_orange b-separator_border-height_2"></div>
+					
+					<h3 class="b-header b-header_type_h3"><a href="#5">В блогах</a></h3>
+					
+					<div class=""><a href="">Фотоконкурс «Мисс Весна66ру» <ins class=""></ins></a></div>
+					
+					<div class="">
+						<a href="">Под шумок...</a> (74) <a href="" class=""></a><br />
+						<a href="">Декупажные рукоделки - часики</a> (74) <a href="" class="">as.tochka</a><br />
+						<a href="">5-ый карман или нужны ли блоги на главной странице с длинным заголовком</a> (74) <a href="" class="">Lokomotiv</a><br />
+						<a href="">КЛомки по привычке быть свободной</a> (74) <a href="" class="">tilitrum</a><br />
+						<a href="">Позитивные новости сегодня. </a> (74) <a href="" class="">ArtemG</a><br />
+						<a href="">любимая загадка</a> (74) <a href="" class="">kwarm</a><br />
+						<a href="">Путин поручит пересчитать взносы для малого бизнеса</a> (74) <a href="" class="">Lokomotiv</a><br />
+						<a href="">третья дырка </a> (74) <a href="" class="">ArtemG</a><br />
+					</div>
+					
+					<h3 class="b-header b-header_type_h3"><a href="#5">Фотографии</a></h3>
+					
+					<table class="">
+						<tr>
+							<td>
+								<a href=""><img src="img/6.png" alt=""/></a>
+								<a href="" class="">Lokomotiv</a>
+							</td>
+							<td>
+								<a href=""><img src="img/7.png" alt=""/></a>
+								<a href="" class="">Lokomotiv</a>
+							</td>
+							<td>
+								<a href=""><img src="img/8.png" alt=""/></a>
+								<a href="" class="">Lokomotiv</a>
+							</td>							
+						</tr>
+					</table>
+					
+					
+				</div>
+			</div>			
+		</div>
+		
+	</div>
+</div>
+<div class="footer" id="footer">
+	<div class="footer-wrap">
+
+		<a href="" class="b-footer-logo">
+			<img src="img/b-footer-logo.png" alt=""/>
+		</a>
+		
+		<ul class="b-footer-menu">
+			<li><a href="">Новости</a></li>
+			<li><a href="">Банки</a></li>
+			<li><a href="">Работа</a></li>
+			<li><a href="">Справка</a></li>
+			<li><a href="">Авто</a></li>
+			<li><a href="">Недвижимость</a></li>
+			<li><a href="">Объявления</a></li>
+			<li><a href="">Здоровье</a></li>
+			<li><a href="">Еда</a></li>
+			<li><a href="">Афиша</a></li>
+			<li><a href="">Общение</a></li>
+			<li><a href="">Конкурсы</a></li>			
+			<li><a href="">Почта</a></li>			
+		</ul>
+		
+		<ul class="b-footer-links">
+			<li><a href="">О проекте</a></li>
+			<li><a href="">Размещение рекламы</a></li>
+		</ul>
+		<ul class="b-footer-links">
+			<li><a href="">Пользовательское соглашение</a></li>
+			<li><a href="">Техподдержка</a></li>
+		</ul>
+		<ul class="b-footer-links">
+			<li><a href="">Мобильная версия</a></li>
+			<li><a href="">Наши вакансии</a></li>
+		</ul>		
+		
+
+	</div>
+</div>
+
+</body>
+</html>
+
