@@ -2143,12 +2143,16 @@ function validate_contact() {
                 <p class="b-credit-widget__source-info">Агентство, комиссия 50%</p>
                 <table class="b-credit-widget__controls">
                   <tr>
-                    <td class="b-credit-widget__field b-credit-widget__field_right">
-                      <label for="credit-amount" class="b-credit-widget__label">Сумма кредита</label>
+                    <td class="b-credit-widget__field b-credit-widget__field_right" b-credit-widget__field_right>
+                      <label for="credit-term" class="b-credit-widget__label">Срок кредита</label>
                     </td>
                     <td class="b-credit-widget__field">
-                      <input name="credit-amount" id="credit-amount" type="text" class="b-credit-widget__input b-credit-widget__input_control-input">
-                      <span class="b-credit-widget__postlabel">р.</span>
+                      <select name="credit-term" id="credit-term" class="b-credit-widget__select">
+                        <option value="0" class="b-credit-widget__option">6 мес.</option>
+                        <option value="1" class="b-credit-widget__option">1 год</option>
+                        <option value="2" class="b-credit-widget__option">2 года</option>
+                        <option value="3" class="b-credit-widget__option">25 лет</option>
+                      </select>
                     </td>
                   </tr>
                 </table>
