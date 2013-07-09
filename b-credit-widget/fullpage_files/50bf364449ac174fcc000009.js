@@ -1,0 +1,1 @@
+document.write("<img src=\"http://show.adlift.ru/show/s-50bf364449ac174fcc000009.png\" style=\"position: absolute; width: 0; height:0;\">");
