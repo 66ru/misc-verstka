@@ -42,6 +42,14 @@
 	background: url('../img/uparrow_green.png') no-repeat top left transparent;
 }
 
+.b-credit-widget_bottom {
+	margin-top: 50px;
+	margin-bottom: -5px;
+}
+
+
+
+
 .b-credit-widget__heading {
 	font-size: 18px;
 	margin: 16px 0;
