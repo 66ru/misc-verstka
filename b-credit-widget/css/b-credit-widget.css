@@ -71,7 +71,7 @@
 	white-space: nowrap;
 	width: 50%;
 	vertical-align: middle;
-	padding: 4px;
+	padding: 4px 8px 4px 0;
 	text-align: left;
 }
 
@@ -80,12 +80,13 @@
 }
 
 .b-credit-widget__input {
-	width: 75px;
+	width: 85px;
 	height: 28px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 4px;
+	padding-left: 2px;
 }
 
 .b-credit-widget__input_short {
@@ -93,7 +94,7 @@
 }
 
 .b-credit-widget__select {
-	width: 75px;
+	width: 85px;
 	height: 28px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
