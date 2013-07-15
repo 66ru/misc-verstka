@@ -47,6 +47,14 @@
 	margin-bottom: -5px;
 }
 
+.b-credit-widget_noarrow {
+	margin-top: 30px;
+}
+
+.b-credit-widget_noarrow:after {
+	display: none;
+}
+
 
 
 

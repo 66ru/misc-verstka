@@ -1921,9 +1921,41 @@ function validate_contact() {
 
 
 
+              <link rel="stylesheet" href="b-btn/css/b-btn.css">
+              <link rel="stylesheet" href="b-btn/_layout/css/b-btn_layout_short.css">
+              <link rel="stylesheet" href="css/b-credit-widget.css">
+              <script src="js/b-credit-widget.js"></script>
 
 
+              <form action="#" class="b-credit-widget b-credit-widget_orange">
+                <h6 class="b-credit-widget__heading">Ипотечные программы</h6>
+                <p class="b-credit-widget__source-info">Агентство, комиссия 50%</p>
+                <table class="b-credit-widget__controls">
+                  <tr>
+                    <td class="b-credit-widget__field b-credit-widget__field_right">
+                      <label for="credit-term" class="b-credit-widget__label">Срок кредита</label>
+                    </td>
+                    <td class="b-credit-widget__field">
+                      <select name="credit-term" id="credit-term" class="b-credit-widget__select">
+                        <option value="0" class="b-credit-widget__option">6 мес.</option>
+                        <option value="1" class="b-credit-widget__option">1 год</option>
+                        <option value="2" class="b-credit-widget__option">2 года</option>
+                        <option value="3" class="b-credit-widget__option">25 лет</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
 
+                <div class="b-separator b-separator_size_10"></div>
+                <div class="b-btn b-btn_color_orange b-btn_layout_short">
+                  <ins class="b-btn__crn-left"></ins>
+                  <ins class="b-btn__crn-right"></ins>
+
+                  <input type="submit" class="b-btn__submit" value="" name="">
+
+                  <span class="b-btn__text">Подобрать кредит</span>
+                </div>
+              </form>
 
 
 
@@ -2128,19 +2160,40 @@ function validate_contact() {
                  <!-- b-credit-widget -->
 
 
-              <link rel="stylesheet" href="b-btn/css/b-btn.css">
-              <link rel="stylesheet" href="b-btn/_layout/css/b-btn_layout_short.css">
-              <link rel="stylesheet" href="css/b-credit-widget.css">
-              <script src="js/b-credit-widget.js"></script>
 
-
-
-
-
-
-              <form action="#" class="b-credit-widget b-credit-widget_bottom b-credit-widget_orange">
+              <form action="#" class="b-credit-widget b-credit-widget_bottom b-credit-widget_orange b-credit-widget_noarrow">
                 <h6 class="b-credit-widget__heading">Ипотечные программы</h6>
-                <p class="b-credit-widget__source-info">Агентство, комиссия 50%</p>
+                <table class="b-credit-widget__controls">
+                  <tr>
+                    <td class="b-credit-widget__field b-credit-widget__field_right">
+                      <label for="credit-term" class="b-credit-widget__label">Срок кредита</label>
+                    </td>
+                    <td class="b-credit-widget__field">
+                      <select name="credit-term" id="credit-term" class="b-credit-widget__select">
+                        <option value="0" class="b-credit-widget__option">6 мес.</option>
+                        <option value="1" class="b-credit-widget__option">1 год</option>
+                        <option value="2" class="b-credit-widget__option">2 года</option>
+                        <option value="3" class="b-credit-widget__option">25 лет</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+
+                <div class="b-separator b-separator_size_10"></div>
+                <div class="b-btn b-btn_color_orange b-btn_layout_short">
+                  <ins class="b-btn__crn-left"></ins>
+                  <ins class="b-btn__crn-right"></ins>
+
+                  <input type="submit" class="b-btn__submit" value="" name="">
+
+                  <span class="b-btn__text">Подобрать кредит</span>
+                </div>
+              </form>
+
+
+
+              <form action="#" class="b-credit-widget b-credit-widget_bottom b-credit-widget_orange b-credit-widget_noarrow">
+                <h6 class="b-credit-widget__heading">Ипотечные программы</h6>
                 <table class="b-credit-widget__controls">
                   <tr>
                     <td class="b-credit-widget__field b-credit-widget__field_right">
@@ -2903,117 +2956,6 @@ function fixedEncodeURI(str){
        <span><div class="v5-logo">
     <a href="http://www.66.ru/">
         <img title="Современный портал Екатеринбурга" alt="www.66.ru" src="fullpage_files/v5-foot-logo.png" style="width: 43px; height: 43px;">
-        <span>Портал «www.66.ru» — Современный портал Екатеринбурга.</span>
-    </a>
-    <ul class="v5-menu">
-        <li><a href="http://www.66.ru/about/">О проекте</a></li>
-        <li><a href="http://www.66.ru/advert/">Размещение рекламы</a></li>
-        <li><a href="http://www.66.ru/agreement/">Пользовательское соглашение</a></li>
-        <li><a href="http://www.66.ru/lite/setmobile/">Мобильная версия</a></li>
-        <li><a href="http://support.66.ru/">Техподдержка</a></li>
-        <li class="v5-last"><a href="http://www.66.ru/rabota/office/82788/">Наши вакансии</a></li>
-    </ul>
-</div></span>
-       <div class="b-footer__counters">
-         <span><!--LiveInternet counter--><script type="text/javascript"><!--
-            document.write("<a href='http://www.liveinternet.ru/click;66.ru' "+
-            "target=_blank><img src='//counter.yadro.ru/hit;66?t14.16;r"+
-            escape(document.referrer)+((typeof(screen)=="undefined")?"":
-            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-            ";"+Math.random()+
-            "' alt='' title='LiveInternet: показано число просмотров за 24"+
-            " часа, посетителей за 24 часа и за сегодня' "+
-            "border='0' width='88' height='31'></a>")
-            //--></script><a href="http://www.liveinternet.ru/click;66.ru" target="_blank"><img src="fullpage_files/hit.gif" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" height="31" border="0" width="88"></a><!--/LiveInternet--></span>
-         <span><!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter1519197 = new Ya.Metrika({id:1519197,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/1519197" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter --></span>
-
-         <span><!-- tns-counter.ru -->
-<script language="JavaScript" type="text/javascript">
-	var img = new Image();
-	img.src = 'https://www.tns-counter.ru/V13a***R>' + document.referrer.replace(/\*/g,'%2a') + '*mediasite_ru/ru/UTF-8/tmsec=66_doska/' + Math.round(Math.random() * 1000000000);
-</script>
-<noscript>
-	<img src="https://www.tns-counter.ru/V13a****mediasite_ru/ru/UTF-8/tmsec=66_doska/" width="1" height="1" alt="">
-</noscript>
-<!--/ tns-counter.ru --></span>
-
-         <span><!-- kavanga-style banner -->
-<script type="text/javascript">
-function fixedEncodeURI(str){
-     return encodeURI(str).replace(/[!'()]/g, escape).replace(/\*/g, "%2A");
-}
-var show_adlift = 'http://show.adlift.ru/4fbe2aa6714cbf1cd5000021.js';
-var current_url = fixedEncodeURI(window.location);
-var source = source !== undefined ? source : '';
-var current_code = source;
-document.write ("<scr"+"ipt type='text/javascript' src='"+show_adlift);
-document.write ("?url="+current_url+"&code="+current_code);
-document.write ("'></scr"+"ipt>");
-</script><script type="text/javascript" src="fullpage_files/4fbe2aa6714cbf1cd5000021.js"></script><img src="fullpage_files/s-4fbe2aa6714cbf1cd5000021.png" style="position: absolute; width: 0; height:0;"><img src="fullpage_files/b-5177b87e49ac172ae62e1c24.png" style="position: absolute; width: 0; height:0;"><!-- AdEngine Code START -->
-<!-- Современный портал Екатеринбурга. -->
-<!-- Line -->
-<script language="JavaScript"><!--
-function k_ph(p){document.write('<div id="kph'+p+'" style="display:none"><\/div>');}
-function k_c(p){document.write('<div style="visibility:hidden;position:absolute"><iframe id="k_c'+p+'" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div>');}
-function k_getCode(n,p,s){
-var d;
-if(n<10){try{if(document.all && !window.opera){d = window.frames['k_c'+p].document;}
-else if(document.getElementById){d=document.getElementById('k_c'+p).contentDocument;}}catch(e){}
-if(d){d.write('<scr'+'ipt type="text/javascript">var kphid="kph'+p+'";<\/scr'+'ipt>');
-d.write('<scr'+'ipt type="text/javascript" src="'+s+'"><\/scr'+'ipt>');}
-else {setTimeout('k_getCode('+(++n)+','+p+',"'+s+'")', 100);}
-}}
-if (typeof(document.referrer) != 'undefined') {afReferrer = escape(document.referrer);}
-else {afReferrer = '';}
-var addate = new Date();
-if ('undefined' == typeof(kav_cn)){ var kav_cn = 0; } else {++kav_cn;}
-k_ph(kav_cn); k_c(kav_cn);
-k_getCode(1,kav_cn,'http://b.kavanga.ru/exp?sid=2998&bt=9&bn=1&bc=1&ct=2&pr=' + Math.round(Math.random()*100000) + '&pt=b&pd=' + addate.getDate() + '&pw=' + addate.getDay() + '&pv=' + addate.getHours() + '&prr=' + afReferrer);
-//-->
-</script><div id="kph0" style="display:none"></div><div style="visibility:hidden;position:absolute"><iframe id="k_c0" marginwidth="0" marginheight="0" frameborder="0" height="1" scrolling="no" width="1"></iframe></div>
-<!-- AdEngine Code FINISH -->
-<!-- kavanga-style banner --></span>
-       </div>
-      </div>
-    <div class="content-block"></div>
-  </div>
-  <!--[if IE 8]></div><![endif]-->
-  <!--[if lt IE 8]></div><![endif]-->
-  <!--[if IE 7]></div><![endif]-->
-  <!--[if lt IE 7]></div><![endif]-->
-  <!--[if IE]></div><![endif]-->
-</div>
-
-
-
-
-</body></html>ng" style="width: 43px; height: 43px;">
         <span>Портал «www.66.ru» — Современный портал Екатеринбурга.</span>
     </a>
     <ul class="v5-menu">
