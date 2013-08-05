@@ -1,23 +1,36 @@
 @import "less/global/_reset.less";
 @import "less/global/_colors.less";
+
+
+
+
 @import "less/global/_helpers.less";
 @import "less/global/_mixins.less";
 @import "less/global/_typography.less";
+
+
+@import "less/global/_layers.less";
 
 
 @import "mainpage.less";
 
 
 
-
-.body, .footer-wrap, .header-wrap {
-	max-width: 1280px;
-	min-width: 950px;
-	margin: 0 auto;
+.b-banner_layout_middle-page-4-col {
+	margin-left: 0;
 }
 
+body {
+	min-width: 950px;
+}
 
 .red {
 	border: 1px solid red;
+}
+
+.context:after {
+    clear: both;
+    content: '';
+    display: block;
 }
 

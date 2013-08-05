@@ -1,3 +1,306 @@
+/* =VARIABLES (LESS @variables do not get compiled into the final CSS file)
+   ---------------------------------------------------------------------------------------------------- */
+@base-background:      #fff; /*cream*/
+@base-text:            #000; /*purple/grey*/
+
+@white:                #fff;
+@black:                #000;
+
+
+
+@link-color: 		   #007899; /*blue*/
+@green-text: 		   #6A8E16;
+@light-green-text: 	   #e1f2ba;
+@grey-text: 		   #808080;
+@orange-text: 		   #ff5400;
+
+@grey-bg: 			   #ccc;
+@orange-bg: 		   #ff8f00;
+@green-bg: 			   #6A920F;
+@green-bg-darken:	   #5f7e13;
+@green-bg-lighter:	   #d6eaaa;
+@green-footer-line:    #9cb958;
+
+
+a {
+	color: @link-color;
+
+	&:visited { color: @link-color;}
+	&:hover {color: @orange-text;}
+	&:active {color: @orange-text;}
+}
+
+
+.b-link_border_yes {
+	border-bottom: 1px solid fadeout(@link-color, 70%);
+	text-decoration: none;	
+	&:visited {
+		border-color: fadeout(@grey-text, 70%);
+	}
+	&:hover {
+		color: @orange-text;
+		border-color: fadeout(@orange-text, 70%);
+	}		
+}
+
+.b-link.b-link_border-style_dotted {
+	border-style: dotted;
+	
+	&:hover {
+		border-style: dotted;
+	}
+}
+
+
+/*синий*/
+.b-link_color_blue {
+	color: @link-color;
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@link-color, 70%);
+		text-decoration: none;		
+		
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;		
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;		
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @link-color;
+				border-bottom: 1px solid fadeout(@link-color, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}		
+	}
+}
+
+
+
+/*зеленый*/
+.b-link_color_green {
+	color: @green-text;
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@green-text, 70%);
+		text-decoration: none;		
+		
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;		
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;		
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @green-text;
+				border-bottom: 1px solid fadeout(@green-text, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}		
+	}
+}
+
+/*оранжевый*/
+.b-link_color_orange {
+	color: @orange-text;
+	
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@orange-text, 70%);
+		text-decoration: none;		
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;		
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;		
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}		
+	}
+}
+
+/*черный*/
+.b-link_color_black {
+	color: @black;	
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@black, 70%);
+		text-decoration: none;		
+		
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;		
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;		
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @black;	
+				border-bottom: 1px solid fadeout(@black, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}		
+	}
+}
+
+/*серый*/
+.b-link_color_grey {
+	color: @grey-text;	
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@grey-text, 70%);
+		text-decoration: none;		
+		
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;		
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;		
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;		
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}		
+		}		
+	}
+}
+
+
+
+.b-link_visited_yes {
+	&:visited {
+		color: @grey-text;
+	}
+}
+
+.b-link_visited_no {
+	&:visited {
+		color: @link-color;
+	}
+	&:hover {
+		color: @orange-text;
+	}	
+}
+
+
+
+
+
+
+
+
 .b-news-item {
 	font-size: 1rem;
 	line-height: 18px;
@@ -7,6 +310,16 @@
 	padding-left: 18px;
 	position:relative;
 	margin-bottom: 9px;
+	
+	a {
+		.b-link_color_blue;
+		.b-link_visited_yes;
+		.b-link_border_yes;
+	}
+}
+
+.b-news-collague .b-news-item {
+	margin-bottom: 4px;
 }
 
 .b-news-item_layout_video {
@@ -19,8 +332,16 @@
 
 /**/
 
-.b-news-item__activity {
-	color: #808080;
+a.b-news-item__activity {
+	color: @grey-text;
+	text-decoration: none;
+	border: none;
+	font-size: 11px;
+	
+	&:hover {
+		color: @grey-text;
+		border: none;
+	}
 }
 
 .b-news-item__activity_state_hot {
@@ -34,26 +355,60 @@
 	background: none;
 	overflow: hidden;
 	display: table;
+	margin-bottom: 15px;
 	
-	
-	
-	.b-news-item__pic {
-		display: table-cell;	
-		vertical-align: middle;		
+	a {
+		.b-link_visited_no;
 	}
 	
-	.b-news-item__title {
-		display: table-cell;	
-		vertical-align: middle;
-		line-height: 20px;
-		padding-left: 20px;
+	a.b-news-item__activity {
+		color: @grey-text;
+		text-decoration: none;
+		border: none;
+		font-size: 11px !important;
 		
-		a {
-			font-size: 1.85rem;
-			text-decoration: none;
-			font-family: 'PT Sans Narrow', sans-serif;
-			font-weight: bold;
+		&:hover {
+			color: @grey-text;
+			border: none;
+		}	
+	}
+	
+	.b-news-item__pic {
+		vertical-align: middle;		
+		background-position: center center;
+		background-repeat: no-repeat;
+		
+		img {
+			display: block; 
+			width: 100%; 
+			min-width: 150px;			
 		}
+	}
+	
+	.b-news-item__text {
+		width: 50%; 
+		vertical-align: middle;
+		
+		.b-news-item__title {
+			display: table-cell;	
+			vertical-align: middle;
+			line-height: 20px;
+			padding-left: 20px;
+			
+			a {
+				font-size: 1.85rem;
+				text-decoration: none;
+				border: none;
+				font-family: 'PT Sans Narrow', sans-serif;
+				font-weight: bold;
+				
+				@media @desktop-mini {
+					font-size: 1.5rem;
+				}					
+			}
+
+		}
+		
 	}
 }
 
@@ -62,28 +417,24 @@
 .b-news-item_layout_annonce {
 	display: block;
 	padding: 0px;
+	height: 130px;
 	
-	.b-news-item__pic {
-		display: block;
-		position:relative;
-		z-index: 2;
+	background-repeat: no-repeat;
+	background-position: center center; 
+	
+	
 	
 		.b-news-item__pic__shadow {
 			display: block;
-			background: url(less/blocks/b-news-item/img/b-news-item-shadow.png) 0 bottom no-repeat;
+			background: url(less/blocks/b-news-item/img/b-news-gradient.png) 0 bottom repeat-x;
 			width: 100%;
 			height: 100%;
-			background-size: 100% auto;
 			position:absolute;
 			bottom: 0px;
 			left: 0px;
 			z-index: 1;
 		}
-		img {
-			display: block;
-			width: 100%;
-		}
-	}
+	
 	
 	.b-news-item__title {
 		display: block;
@@ -94,17 +445,63 @@
 		z-index: 2;
 		padding: 0 5px 0 5px;
 		
-		.b-news-item__activity {
-		
+	}
+	
+	&:hover {
+		.b-news-item__pic__shadow {
+			opacity: 0.75;
 		}
 	}
 	
 }
 
+a.b-news-item_layout_annonce {
+	text-decoration: none;
+	border: none;
+}
 
+.b-news-item_size_big {
+	height: 264px;
+	
+	.b-news-item__title {
+		font-size: 21px;
+		line-height: 24px;
+		bottom: 5px;
+		
+		.b-news-item__activity {
+			font-size: 14px;
+		}
+	}
+	
+		.b-news-item__pic__shadow {
+			background-image: url(less/blocks/b-news-item/img/b-news-gradient-big.png);
+		}	
+	
+	
+	
+}
 
+.b-news-collague {
+	margin-top: 12px;
+}
 
-
+.b-news-item-icon {
+	display: inline-block;
+	background: url(less/blocks/b-news-item/img/b-news-item-sprite.png);
+	margin: 0 3px;
+	position:relative;
+	top: 2px;
+}
+.b-news-item-icon_img_diagram {
+	width: 12px;
+	height: 12px;
+	background-position: -120px -92px;
+}
+.b-news-item-icon_img_poll {
+	width: 12px;
+	height: 12px;
+	background-position: -142px -71px;
+}
 
 
 

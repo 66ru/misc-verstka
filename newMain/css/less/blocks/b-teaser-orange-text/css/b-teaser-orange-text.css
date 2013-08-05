@@ -1,0 +1,22 @@
+.b-teaser-orange-text {
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  background-position: center top;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+a.b-teaser-orange-text {
+  text-decoration: none;
+}
+.b-teaser-orange-text__row {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: #ff5400;
+  float: left;
+  clear: left;
+  margin-top: 1px;
+}

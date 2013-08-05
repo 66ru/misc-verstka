@@ -1,0 +1,56 @@
+.l-body {
+  margin-bottom: -140px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+.l-push {
+  height: 140px;
+}
+.l-footer {
+  background: #6a920f;
+  height: 140px;
+}
+.l-header-wrap {
+  background: #6a920f;
+  height: 45px;
+  position: relative;
+}
+.l-body-wrap {
+  padding-top: 16px;
+}
+.l-body-wrap .l-width {
+  padding-bottom: 27px;
+}
+.l-width {
+  max-width: 1324px;
+  min-width: 950px;
+  margin: 0 auto;
+  /*width: 1284px;*/
+
+}
+.l-width-old {
+  max-width: 1280px;
+  padding: 0 1%;
+  position: relative;
+}
+.l-width-vertical-separator {
+  background: #cccccc;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+  right: -2%;
+}
+.l-width-col-2-pad {
+  position: relative;
+  padding-right: 2%;
+  overflow: hidden;
+}
+.l-width-col-3-pad {
+  padding-left: 1%;
+}
+.l-body-wrap  .l-width-col-3-pad {
+  margin-top: -16px;
+}
