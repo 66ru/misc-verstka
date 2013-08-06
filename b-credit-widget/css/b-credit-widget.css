@@ -55,6 +55,10 @@
 	display: none;
 }
 
+.b-credit-widget_simple {
+	margin-top: 0;
+}
+
 
 
 
@@ -63,12 +67,22 @@
 	margin: 16px 0;
 }
 
+.b-credit-widget__heading_hilite {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
 .b-credit-widget_orange .b-credit-widget__heading {
 	color: #f49022;
 }
 
 .b-credit-widget_green .b-credit-widget__heading {
 	color: #79a113;
+}
+
+.b-credit-widget__heading.b-credit-widget__heading_simple {
+	color: black;
+	margin-bottom: 4px;
 }
 
 .b-credit-widget__controls {
