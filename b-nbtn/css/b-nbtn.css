@@ -77,8 +77,6 @@
 	background: -o-linear-gradient(top,  #f17f00 0%,#f48900 95%,#f9a600 100%);
 	background: -ms-linear-gradient(top,  #f17f00 0%,#f48900 95%,#f9a600 100%);
 	background: linear-gradient(to bottom,  #f17f00 0%,#f48900 95%,#f9a600 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17f00', endColorstr='#f9a600',GradientType=0 );
-
 }
 
 .b-nbtn_size_l {
