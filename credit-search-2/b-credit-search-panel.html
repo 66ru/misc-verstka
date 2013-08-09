@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>b-credit-search-panel</title>
+
+	<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<link rel="stylesheet" href="css/b-credit-search-panel.css">
+	<link rel="stylesheet" href="css/b-nbtn.css">
+</head>
+<body>
+
+<form action="#" class="b-credit-search-panel">
+	<label for="credit-amount" class="b-credit-search-panel__heading-label">Сумма</label>
+	<input type="text" name="credit-amount" id="credit-amount" class="b-credit-search-panel__input">
+	<select name="credit-currency" id="credit-currency" class="b-credit-search-panel__select">
+		<option class="b-credit-search-panel__option" value="0">Рубли</option>
+		<option class="b-credit-search-panel__option" value="1">Доллары</option>
+		<option class="b-credit-search-panel__option" value="2">Евро</option>
+	</select>
+
+	<label for="credit-term" class="b-credit-search-panel__heading-label">Срок</label>
+	<select name="credit-term" id="credit-term" class="b-credit-search-panel__select">
+		<option class="b-credit-search-panel__option" value="0">от 1 до 3 месяцев</option>
+		<option class="b-credit-search-panel__option" value="1">от 3 до 6 месяцев</option>
+		<option class="b-credit-search-panel__option" value="2">от 6 месяцев до года</option>
+		<option class="b-credit-search-panel__option" value="3">от 1 до 2 лет</option>
+		<option class="b-credit-search-panel__option" value="4">от 2 до 3 лет</option>
+		<option class="b-credit-search-panel__option" value="5">более 3 лет</option>
+	</select>
+
+	<label for="" class="b-credit-search-panel__heading-label b-credit-search-panel__heading-label_layout_large-mb">Подтверждение дохода</label>
+	<fieldset class="b-credit-search-panel__checkbox-line">
+		<input type="checkbox" name="credit-income-confirm-0" id="credit-income-confirm-0" class="b-credit-search-panel__checkbox">
+		<label for="credit-income-confirm-0" class="b-credit-search-panel__label">Официально (2НДФЛ)</label>
+	</fieldset>
+	<fieldset class="b-credit-search-panel__checkbox-line">
+		<input type="checkbox" name="credit-income-confirm-1" id="credit-income-confirm-1" class="b-credit-search-panel__checkbox">
+		<label for="credit-income-confirm-1" class="b-credit-search-panel__label">Справка банка</label>
+	</fieldset>
+	<fieldset class="b-credit-search-panel__checkbox-line">
+		<input type="checkbox" name="credit-income-confirm-2" id="credit-income-confirm-2" class="b-credit-search-panel__checkbox">
+		<label for="credit-income-confirm-2" class="b-credit-search-panel__label">Без подтверждения</label>
+	</fieldset>
+
+	<label for="credit-age" class="b-credit-search-panel__heading-label">Ваш возраст</label>
+	<input type="text" name="credit-age" id="credit-age" class="b-credit-search-panel__input">
+	<label for="credit-age" class="b-credit-search-panel__label">лет</label>
+
+	<label for="credit-security" class="b-credit-search-panel__heading-label b-credit-search-panel__heading-label_layout_large-mb">Обеспечение кредита</label>
+	<fieldset class="b-credit-search-panel__checkbox-line">
+		<input type="checkbox" id="credit-security-pledge" name="credit-security-pledge" class="b-credit-search-panel__checkbox">
+		<label for="credit-security-pledge" class="b-credit-search-panel__label">Залог</label>
+	</fieldset>
+	<fieldset class="b-credit-search-panel__checkbox-line">
+		<input type="checkbox" id="credit-security-guarantee" name="credit-security-guarantee" class="b-credit-search-panel__checkbox">
+		<label for="credit-security-guarantee" class="b-credit-search-panel__label">Поручитель</label>
+	</fieldset>
+	<fieldset class="b-credit-search-panel__checkbox-line">
+		<input type="checkbox" id="credit-security-no" name="credit-security-no" class="b-credit-search-panel__checkbox">
+		<label for="credit-security-no" class="b-credit-search-panel__label">Никак</label>
+	</fieldset>
+
+	<label for="credit-registration" class="b-credit-search-panel__heading-label">Прописка</label>
+	<select name="credit-registration" id="credit-registration" class="b-credit-search-panel__select b-credit-search-panel__select_layout_mb">
+		<option class="b-credit-search-panel__option" value="0">Екатеринбург</option>
+		<option class="b-credit-search-panel__option" value="1">В пределах 50 км от Екатеринбурга</option>
+		<option class="b-credit-search-panel__option" value="2">Свердловская область</option>
+		<option class="b-credit-search-panel__option" value="3">Россия</option>
+		<option class="b-credit-search-panel__option" value="4">Без ограничений</option>
+	</select>
+
+	<fieldset class="b-credit-search-panel__checkbox-line">
+		<input type="checkbox" name="credit-adv-repayment" id="credit-adv-repayment" class="b-credit-search-panel__checkbox">
+		<label for="credit-adv-repayment" class="b-credit-search-panel__label">Досрочное погашение</label>
+	</fieldset>
+
+	<input type="submit" value="Подобрать кредит" class="b-credit-search-panel__submit b-nbtn b-nbtn_theme_green b-nbtn_size_l">
+</form>
+
+</body>
+</html>

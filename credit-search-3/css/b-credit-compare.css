@@ -1,0 +1,55 @@
+.b-credit-compare {
+	border: 1px solid #d1d1d1;
+	padding: 16px 20px;
+	font-size: 13px;
+	margin-bottom: 12px;
+}
+
+.b-credit-compare__heading {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.b-credit-compare__list {
+	margin-bottom: 16px;
+}
+
+.b-credit-compare__elem {
+	margin-bottom: 6px;
+}
+
+.b-credit-compare__credit {
+	margin-right: 6px;
+	line-height: 1.3;
+}
+
+.b-credit-compare__remove {
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	background: #bbb;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	line-height: 11px;
+	font-size: 10px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.b-credit-compare__remove:hover {
+	background: #779f1a;
+}
+
+.b-credit-compare__compare {
+	color: #636363;
+	font-weight: bold;
+	margin-right: 8px;
+}
+
+.b-credit-compare__clear {
+	color: #636363;
+}
