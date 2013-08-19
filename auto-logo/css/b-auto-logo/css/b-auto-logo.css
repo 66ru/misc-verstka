@@ -1,0 +1,37 @@
+.b-auto-logo {
+	overflow: visible;
+	width: auto;
+	position: relative;
+	margin: 0 0 10px 0;
+    text-align: justify;
+	padding: 10px 0 0 0;
+}
+.b-auto-logo__wrap {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff url(../../../img/auto-logo-sprite-top.png) 0 0px repeat-x;
+}
+.b-auto-logo__item {
+    text-align: center;
+	width: auto;
+    vertical-align: top;
+	padding: 0px;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	background: url(../../../img/auto-logo-sprite-bot.png) 0 bottom repeat-x;
+	font: 9px/12px Arial, Helvetica, Sans-Serif;
+	padding: 24px 10px 14px;
+	max-width: 90px;
+}
+a.b-auto-logo__item__logo-link {
+	color: #6A6A6A;
+    text-decoration: none;
+}
+.b-auto-logo__item__logo-pic {
+    background-position: center 0;
+	background-repeat: no-repeat;
+}
+a.b-auto-logo__item__text-link {
+    color: #6A6A6A;
+    text-decoration: none;
+}
