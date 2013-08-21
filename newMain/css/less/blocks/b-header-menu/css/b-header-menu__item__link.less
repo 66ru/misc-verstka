@@ -1,0 +1,49 @@
+a.b-header-menu__item__link {
+	display: block;
+	padding: 0px 10px 0px 10px;
+	height: 45px;
+	line-height: 47px;
+	position:relative;
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	
+	&:hover {
+		color: #fff;
+	}
+	
+	&:visited {
+		color: #fff;
+	}
+}
+
+a.b-header-menu__item__link:after {
+	content: '';
+	display: inline-block;
+	height: 25px;
+	width: 1px;
+	position:absolute;
+	right: -1px;
+	top: 11px;
+	background-color: #9db959;
+}
+
+	
+/*если это текущий айтем*/
+.cur a.b-header-menu__item__link {
+	background-color: #e1f2ba;	
+	color: #3f530c;
+}
+
+/*если у айтема есть скрытое меню*/
+.b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
+	background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn.png);
+	background-repeat: no-repeat;
+	background-position: right 24px;
+	padding-right: 18px;
+	text-decoration: none;
+	border: none;	
+
+
+}

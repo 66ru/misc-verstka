@@ -1,10 +1,19 @@
-.l-body-wrap {}
+html {
+	font-size: 13px;
+	-webkit-font-smoothing:antialiased;
+	height:100%	
+}
+
+body {
+	min-width: 950px;
+}
 
 .l-body {
 	margin-bottom:-140px;
 	min-height:100%;
 	height:auto !important;
 	height:100%;
+	overflow: hidden;
 }
 
 .l-push {
@@ -14,7 +23,36 @@
 .l-footer {
 	background: #6a920f;
 	height: 140px;
+	overflow: hidden;
+	font-family: Arial, Helvetica, Sans-Serif;
 }
+
+.l-footer_v5 {
+	margin-top: -140px;
+}
+
+#v5-body-wrap {
+    padding-bottom: 150px !important;
+}
+
+
+
+/*для внутренних страниц сайта*/
+
+#frame {
+	overflow: hidden;
+}
+
+#frame .l-footer {
+	background: #6a920f;
+	height: 140px;
+	position:absolute;
+	bottom: 0px;
+	top: auto;
+	width: 100%;
+}
+
+
 
 .l-header-wrap {
 	background: #6a920f;
@@ -35,6 +73,8 @@
 	margin: 0 auto;
 	/*width: 1284px;*/
 }
+
+
 
 .l-width-old {
     max-width: 1280px;

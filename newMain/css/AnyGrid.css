@@ -483,10 +483,128 @@
 }
 
 .g-col-29.g-main-col-2 {
-    left: 561%;
+    left: 571%;
 	width: 374%;
 	margin-right: -374%;
 }
 
+.g-col-38.g-main-col-2 {
+    float: right;
+    left: 0;
+    margin-right: -850%;
+    right: 0;
+    width: 240px;
+}
 
 
+/**/
+
+
+.g-restore, .g-initial {
+    position: relative;
+}
+
+.g-restore .g-12 {
+    padding-right: 0;
+    margin-right: -400%;
+}
+
+.g-restore .g-initial {
+    margin-right: -1075%;
+}
+
+.g-span-1 .g-restore {
+    margin-right: -33.33%;
+}
+
+.g-col-1 .g-restore .g-12, .g-col-1 .g-restore .g-initial {
+    left: 0%;
+}
+
+.g-span-2 .g-restore {
+    margin-right: 42.86%;
+}
+
+.g-col-2 .g-restore .g-12, .g-col-2 .g-restore .g-initial {
+    left: -100%;
+}
+
+.g-span-3 .g-restore {
+    margin-right: 63.64%;
+}
+
+.g-col-3 .g-restore .g-12, .g-col-3 .g-restore .g-initial {
+    left: -200%;
+}
+
+.g-span-4 .g-restore {
+    margin-right: 73.33%;
+}
+
+.g-col-4 .g-restore .g-12, .g-col-4 .g-restore .g-initial {
+    left: -300%;
+}
+
+.g-span-5 .g-restore {
+    margin-right: 78.95%;
+}
+
+.g-col-5 .g-restore .g-12, .g-col-5 .g-restore .g-initial {
+    left: -400%;
+}
+
+.g-span-6 .g-restore {
+    margin-right: 82.61%;
+}
+
+.g-col-6 .g-restore .g-12, .g-col-6 .g-restore .g-initial {
+    left: -500%;
+}
+
+.g-span-7 .g-restore {
+    margin-right: 85.19%;
+}
+
+.g-col-7 .g-restore .g-12, .g-col-7 .g-restore .g-initial {
+    left: -600%;
+}
+
+.g-span-8 .g-restore {
+    margin-right: 87.1%;
+}
+
+.g-col-8 .g-restore .g-12, .g-col-8 .g-restore .g-initial {
+    left: -700%;
+}
+
+.g-span-9 .g-restore {
+    margin-right: 88.57%;
+}
+
+.g-col-9 .g-restore .g-12, .g-col-9 .g-restore .g-initial {
+    left: -800%;
+}
+
+.g-span-10 .g-restore {
+    margin-right: 89.74%;
+}
+
+.g-col-10 .g-restore .g-12, .g-col-10 .g-restore .g-initial {
+    left: -900%;
+}
+
+.g-span-11 .g-restore {
+    margin-right: 90.7%;
+}
+
+.g-col-11 .g-restore .g-12, .g-col-11 .g-restore .g-initial {
+    left: -1000%;
+}
+
+.g-span-12 .g-restore {
+    margin-right: 91.49%;
+}
+
+.g-col-12 .g-restore .g-12, .g-col-12 .g-restore .g-initial {
+    left: -1100%;
+}

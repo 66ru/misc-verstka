@@ -18,173 +18,16 @@
 
     <title>Главная</title>
 
-	
-	
-	<link rel="stylesheet" type="text/css" href="css/AnyGrid.css" />
-	<link rel="stylesheet/less" type="text/css" href="css/global.less" />
-	<link rel="stylesheet/less" type="text/css" href="css/mainpage.less" />
+	<link rel="stylesheet/less" type="text/css" href="css/mainpage.dep.less" />
 	<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
 	<script src="js/less-1.3.3.min.js" type="text/javascript"></script>
 	
-	<script src="js/jquery-menu-stretch.js" type="text/javascript"></script>
-	<script src="js/jquery.menu-aim.js" type="text/javascript"></script>
-	
-	
-	
-	<script type="text/javascript">
-		$(document).ready(function() {
-			
-			
-			function fixMiddleBanner() {
-				$(".js-banner-middle-layout").width($(".js-etalon-2col-width").width() + "px");
-			}
-			
-			
-			$(".b-ad-btn").hover(function() {
-			
-				$(this).animate({width: '80px'}, 100);
-				
-			}, function() {
-				
-				$(this).animate({width: '18px'}, 100);
-			
-			});
-			
-			
-			
-			/*hover на есче*/
-			$(".hasSub").hover(function(e) {
-				$(this).addClass("hover");
-				$(this).find(".sub").show("fast");
-			}, function(e) {
-				if (e.relatedTarget.className != "sub") {
-					$(this).removeClass("hover");
-					$(this).find(".sub").hide("slow");
-				}
-			});
-			
-			var i = 0;
-			var letterWidth = 8;
-			
-			fixMiddleBanner();
-			
-			/*$(".b-header-menu > li").mouseover(function(e) {
-				var num = $(this).index();
-				$(".b-drop-menu__item").eq(num).slideDown(150);
-				$(this).addClass("cur");
-			});
-			
-			$(".b-header-menu li").mouseout(function(e) {
-				if (!$(e.relatedTarget).parents(".b-drop-menu").hasClass("b-drop-menu")) {
-					$(".b-header-menu li").removeClass("cur");
-					$(".b-drop-menu__item").css("display", "none");
-				}
-			});
-			
-			$(".b-drop-menu").mouseout(function(e) {
-				if (!$(e.relatedTarget).parents(".b-drop-menu").hasClass("b-drop-menu")) {
-					$(".b-header-menu li").removeClass("cur");
-					$(".b-drop-menu__item").css("display", "none");
-				};
-			});*/
-			
-			
-			
-			
-			$(".b-header-search__text").on("click", function(e) {
-				$(this).parents(".b-header-search").animate({width: "80%"}, 100);
-				$(this).parents(".b-header-search").css({background: "#fff"});
-				$(this).css({color: "#000"});
-				
-				
-				
-				
-				
-				if ($(".b-header-search__text").val() == "Поиск") {
-					$(this).val("");
-				}				
-				
-				
-				
-				var sClick = true;
-				
-				$(document).bind('click.myEvent', function(e) {
-					if (!sClick && $(e.target).closest(".b-header-search").length == 0) {
-						$(".b-header-search").animate({width: "60%"}, 100);
-						$(".b-header-search").css({background: "#afc971"});
-						$(".b-header-search__text").css({color: "#fff"});
-						
-						if ($(".b-header-search__text").val() == "Поиск") {
-							$(".b-header-search__text").val("Поиск");					
-						}
-						
-						$(".b-header-search__subm").removeClass("b-header-search__subm_state_active");
-						
-						
-						console.log("раскликнули");
-						$(document).unbind("click.myEvent");
-					}
-					sClick = false;
-				})
-				
-				e.preventDefault();
-				
-				$(".b-header-search__subm").addClass("b-header-search__subm_state_active");
-				
-				
-			});
-			
-			$(window).resize(function() {
-				fixMiddleBanner();
-			}) 
-				
-			
-			$(".js-tele-afisha-link-more").click(function() {
-				$(".js-tele-afisha-hidden").toggle();
-				$(".js-tele-afisha-link-more").toggle();
-				return false;
-			});
-			
-			
-			
-			var $menu = $(".b-header-menu");
-
-			$menu.menuAim({
-				activate: activateSubmenu,
-				deactivate: deactivateSubmenu
-			});
-
-			function activateSubmenu(row) {
-				var $row = $(row),
-				num = $row.index();
-				$row.addClass("cur");
-				$submenu = $(".b-drop-menu__item").eq(num);
-				$submenu.css("display", "none")
-				$submenu.slideDown(150);
-				
-			}
-
-			function deactivateSubmenu(row) {
-				var $row = $(row),
-				num = $row.index();
-				$row.removeClass("cur");
-				$submenu = $(".b-drop-menu__item").eq(num);
-				$submenu.hide();
-			}
-
-			
-			$(".b-drop-menu").mouseout(function (e) {
-				if (!$(e.relatedTarget).parents(".b-drop-menu").length) {
-					$(".b-header-menu li").removeClass("cur");
-					$(".b-drop-menu__item").hide();
-				};
-			});			
-		
-			
-			
-			
-		});
-	</script>
+	<!--script src="js/jquery-menu-stretch.js" type="text/javascript"></script-->
+	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim.js" type="text/javascript"></script>
+	<script src="css/less/blocks/b-header-menu/js/b-header-menu.js" type="text/javascript"></script>
+	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
+	<script src="css/less/blocks/b-header-menu/js/b-header-menu-sub.js" type="text/javascript"></script>
+	<script src="css/less/blocks/b-header-search/js/b-header-search.js" type="text/javascript"></script>
 	
 	<!--[if gte IE 9]>
 	  <style type="text/css">
@@ -201,138 +44,176 @@
 
 <div class="l-body">
 	
+
+	
+	
 	<div class="l-header-wrap">
-	
-	
-		<div class="b-drop-menu">
-		
-			<div class="b-drop-menu__item">
-		
-				<div class="l-width">
-					<div class="b-drop-down-corrector">
-					
-						<div class="g-48 b-drop-menu-item">
-							<div class="g-col-2 g-span-6 b-drop-menu_border-left_yes">
-							
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Главные</a></li>
-									<li><a href="#123">Общество</a></li>
-									<li><a href="#123">В мире</a></li>
-								</ul>
-							
-							
-							</div>
-							<div class="g-col-7 g-span-7 b-drop-menu_border-left_yes">
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Политика</a></li>
-									<li><a href="#123">Бизнесс</a></li>
-									<li><a href="#123">Происшествия!</a></li>
-								</ul>
-							</div>					
-							<div class="g-col-14 g-span-7 b-drop-menu_border-left_yes">
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Авто</a></li>
-									<li><a href="#123">Наука и техника</a></li>
-									<li><a href="#123">Спорт</a></li>
-								</ul>
-							</div>					
-							<div class="g-col-21 g-span-8 b-drop-menu_border-left_yes">
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Безумный мир</a></li>
-									<li><a href="#123">Авторские колонки</a></li>
-									<li><a href="#123">Позитив</a></li>
-								</ul>
-							</div>										
-							<div class="g-col-29 g-span-8 b-drop-menu_border-left_yes">
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Интернет</a></li>
-									<li><a href="#123">Благотворительность</a></li>
-									<li><a href="#123">Здоровье</a></li>
-								</ul>
-							</div>															
-							<div class="g-col-37 g-span-8 b-drop-menu_border-left_yes">
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Отдых</a></li>
-									<li><a href="#123">Новости компаний</a></li>
-								</ul>
-							</div>
-						</div>
-					
-					</div>
-				</div>
-			</div>
-			<div class="b-drop-menu__item">
-				<div class="l-width">
-					<div class="b-drop-down-corrector">	
-					
-						<div class="g-48 b-drop-menu-item">
-							<div class="g-col-2 g-span-9 b-drop-menu_border-left_yes">
-							
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Банки Екатеринбурга</a></li>
-									<li><a href="#123">Физическим лицам</a></li>
-									<li><a href="#123">Юридическим лицам</a></li>
-								</ul>
-							
-							
-							</div>
-							<div class="g-col-11 g-span-8 b-drop-menu_border-left_yes">
-								<ul class="b-drop-menu__list">
-									<li><a href="#123">Отзывы о банках</a></li>
-									<li><a href="#123">Факторинг</a></li>
-									<li><a href="#123">Короткие нвости!</a></li>
-								</ul>
-							</div>					
-							<div class="g-col-19 g-span-12 b-drop-menu_border-left_yes">
-
-								<div class="b-drop-menu-bank-zajavka">
-									<a class="b-drop-menu-bank-zajavka__btn" href="#123">Заполни заявку на кредит</a>
-									<p class="align_center">Банки Екатеринбурга предложат вам свои лучшие условия</p>
-								</div>
-							
-							
-							</div>					
-							<div class="g-col-32 g-span-17 b-drop-menu_border-left_yes">
-							
-								<div class="b-drop-menu-day-theme">
-									<div class="b-drop-menu-day-theme__label">Тема дня:</div>
-									<a class="b-drop-menu-day-theme__link" href="#123">Открыть расчетный счет не выходя с работы</a>
-								</div>
-								
-							</div>										
-
-						</div>					
-						
-					</div>					
-				</div>
-			</div>
-		</div>
-		
 	
 		<div class="l-width">
 			<div class="g-48">
 				<div class="g-col-2 g-span-27 js-main-col">
 					<a href="#123" class="b-header-logo">
-						<img src="img/b-header-logo.png" alt=""/>
+						<img class="b-header-logo__img" src="img/b-header-logo.png" alt=""/>
 					</a>
-					<div class="b-header-menu-conainer js-menu-width">
-						<ul class="b-header-menu">
-							<li><a href="#123">Новости</a></li>
-							<li><a href="#123">Банки</a></li>
-							<li><a href="#123">Работа</a></li>
-							<li><a href="#123">Справка</a></li>
-							<li><a href="#123">Авто</a></li>
-							<li><a href="#123">Недвижимость</a></li>
-							<li><a href="#123">Объявления</a></li>
-							<li class="hasSub">
-								<a href="#123"><ins>Еще</ins></a>
-								<ul class="b-header-menu__submenu">
-									<li><a href="#123">Здоровье</a></li>
-									<li><a href="#123">Еда</a></li>
-									<li><a href="#123">Афиша</a></li>
-									<li><a href="#123">Общение</a></li>
-									<li><a href="#123">Конкурсы</a></li>
+					
+					
+					
+					
+					<div class="js-header-menu">
+						<ul class="b-header-menu context">
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Новости</a>
+								
+								<div class="b-header-menu__item__sub">
+									
+									<div class="l-width">
+										<div class="g-48 b-header-menu__item__sub__wrap">
+										
+											<div class="g-col-2 g-span-5 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Главные</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Общество</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">В мире</a></li>
+												</ul>
+											</div>
+											<div class="g-col-6 g-span-7 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Политика</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Бизнесс</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Происшествия!</a></li>
+												</ul>
+											</div>					
+											<div class="g-col-13 g-span-7 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Авто</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Наука и техника</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Спорт</a></li>
+												</ul>
+											</div>					
+											<div class="g-col-20 g-span-8 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Безумный мир</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Авторские колонки</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Позитив</a></li>
+												</ul>
+											</div>										
+											<div class="g-col-28 g-span-10 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Интернет</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Благотворительность</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Здоровье</a></li>
+												</ul>
+											</div>															
+											<div class="g-col-37 g-span-8 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Отдых</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Новости компаний</a></li>
+												</ul>
+											</div>
+										</div>									
+									</div>	
+									
+								</div>	
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Банки</a>
+								
+								<div class="b-header-menu__item__sub">
+									<div class="l-width">
+										<div class="g-48 b-header-menu__item__sub__wrap">
+											<div class="g-col-2 g-span-8 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Банки Екатеринбурга</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Физическим лицам</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Юридическим лицам</a></li>
+												</ul>
+											</div>
+											<div class="g-col-10 g-span-8 b-header-menu__item__sub__wrap__col">
+												<ul class="b-header-menu__item__sub__wrap__col__list">
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Отзывы о банках</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Факторинг</a></li>
+													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="#123">Короткие нвости!</a></li>
+												</ul>
+											</div>					
+											<div class="g-col-19 g-span-12 b-header-menu__item__sub__wrap__col">
+												<div class="b-submenu-item__bank-zajavka">
+													<a class="b-submenu-item__bank-zajavka__btn" href="#123">Заполни заявку на кредит</a>
+													<p class="b-submenu-item__bank-zajavka__text">Банки Екатеринбурга предложат вам свои лучшие условия</p>
+												</div>
+											</div>					
+											<div class="g-col-32 g-span-17 b-header-menu__item__sub__wrap__col">
+												<div class="b-submenu-item__day-theme">
+													<div class="b-submenu-item__day-theme__label">Тема дня:</div>
+													<a class="b-submenu-item__day-theme__link" href="#123">Открыть расчетный счет не выходя с работы</a>
+												</div>
+											</div>										
+										</div>									
+									</div>
+								</div>									
+								
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Работа</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Справка</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Авто</a>
+							</li>
+							<!--li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Недвижимость</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Объявления</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Здоровье</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Еда</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Афиша</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Общение</a>
+							</li>
+							<li class="b-header-menu__item">
+								<a class="b-header-menu__item__link" href="#123">Конкурсы</a>
+							</li-->							
+							
+							
+							<li class="b-header-menu__item b-header-menu__item_hidemenu_yes">
+								<a class="b-header-menu__item__link" href="#123">
+									Еще
+								</a>
+								
+								
+								<ul class="b-header-menu__hidemenu">
+
+									<li class="b-header-menu__hidemenu__item">
+										<a class="b-header-menu__hidemenu__item__link" href="#123">Объявления</a>
+									</li>									
+									
+									<li class="b-header-menu__hidemenu__item">
+										<a class="b-header-menu__hidemenu__item__link" href="#123">Здоровье</a>
+									</li>
+									<li class="b-header-menu__hidemenu__item">
+										<a class="b-header-menu__hidemenu__item__link" href="#123">Еда</a>
+									</li>
+									<li class="b-header-menu__hidemenu__item">
+										<a class="b-header-menu__hidemenu__item__link" href="#123">Афиша</a>
+									</li>
+									<li class="b-header-menu__hidemenu__item">
+										<a class="b-header-menu__hidemenu__item__link" href="#123">Общение</a>
+									</li>
+									<li class="b-header-menu__hidemenu__item">
+										<a class="b-header-menu__hidemenu__item__link" href="#123">Конкурсы</a>
+									</li-->
 								</ul>
+								
+								
 							</li>
 						</ul>
 					</div>
@@ -340,40 +221,54 @@
 				<div class="g-col-29 g-span-19 g-main-col-2">
 					<div class="g-48">
 						<div class="g-col-1 g-span-24">
-							<div class="b-header-search">
-								<form action="">
-									<input class="b-header-search__text" type="text" value="Поиск" placeholder="Поиск" />
-									<input class="b-header-search__subm" type="submit" value=""/>
-								</form>
-							</div>
+							
+							<form action="" class="b-header-search">
+								<input class="b-header-search__text" type="text" value="Поиск" placeholder="Поиск" />
+								<input class="b-header-search__subm" type="submit" value=""/>
+							</form>
+							
 						</div>
 						<div class="g-col-25 g-span-24">
-							<!--table class="b-header-authorize">
+						
+						
+						
+							<table class="b-header-auth"  style="display: none">
 								<tr>
-									<td>
-										<a href="#123" class="b-login">Войти</a>
+									<td class="b-header-auth__tab b-header-auth__tab_active_yes">
+										<div class="b-header-auth__tab__logined-user">
+											<a href="#" class="b-header-auth__tab__logined-user__link">
+												<img class="b-header-auth__tab__logined-user__link__pic" src="img/ava.png" alt=""/>Островский-тян
+											</a>
+										</div>
+									</td>
+									<td class="b-header-auth__tab">
+										<a href="#123" class="b-header-auth__tab__mail-link b-header-auth__tab__mail-link_has_new">
+											<ins class="b-header-auth__tab__mail-link__label">Почта</ins>&nbsp;<span class="b-header-auth__tab__mail-link__count">12</span>
+										</a>
+									</td>
+								</tr>
+							</table>
+
+							<table class="b-header-auth">
+								<tr>
+									<td class="b-header-auth__tab">
+										<a href="" class="b-header-auth__tab__link"><ins class="b-icon b-icon_pic_login"></ins>Войти</a>
+										<a href="" class="b-header-auth__tab__link"><ins class="b-icon b-icon_pic_header-vk"></ins></a>
+										<a href="" class="b-header-auth__tab__link"><ins class="b-icon b-icon_pic_header-fb"></ins></a>
+										<a href="" class="b-header-auth__tab__link"><ins class="b-icon b-icon_pic_header-tw"></ins></a>
+									</td>
+									<td class="b-header-auth__tab">
 										
-										<a href="#123" class="b-header-social-ico"><img src="img/b-header-vk-ico.png" alt=""/></a>
-										<a href="#123" class="b-header-social-ico"><img src="img/b-header-fb-ico.png" alt=""/></a>
-										<a href="#123" class="b-header-social-ico"><img src="img/b-header-tw-ico.png" alt=""/></a>
-									</td>
-									<td class="b-header-authorize__mail-td active">
-										<a href="#123" class="b-header-mail-link"><ins>Почта</ins></a>
-									</td>
-								</tr>
-							</table-->
-							
-							
-							<table class="b-header-logined">
-								<tr>
-									<td class="b-header-authorize__user active">
-										<div class="b-header-logined-ellipsed"><a href="#" class="b-user-logined"><img class="b-user-logined__pic" src="img/ava.png" alt=""/>Островский-тян</a></div>
-									</td>
-									<td class="b-header-authorize__mail-td">
-										<a href="#123" class="b-header-mail-link"><ins>Почта</ins>&nbsp;<span class="b-header-mail-link__messages">12</span></a>
+										<a href="#123" class="b-header-auth__tab__mail-link">
+											<ins class="b-header-auth__tab__mail-link__label">Почта</ins>&nbsp;<span class="b-header-auth__tab__mail-link__count">12</span>
+										</a>
+										
+										
 									</td>
 								</tr>
-							</table>								
+							</table>							
+						
+						
 						</div>
 					</div>
 				</div>
@@ -874,7 +769,7 @@
 			
 
 		<a href="#123" class="b-footer-logo">
-			<img src="img/b-footer-logo.png" alt=""/>
+			<img class="b-footer-logo__pic" src="img/b-footer-logo.png" alt=""/>
 		</a>				
 
 		
