@@ -1,12 +1,12 @@
 <?php 
 $to  = "imelstorn@gmail.com"; 
-$subject = "Новости 66.ru"; 
+$subject = "РќРѕРІРѕСЃС‚Рё 66.ru"; 
 
 $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-    <title>рассылка 66</title>
+    <title>СЂР°СЃСЃС‹Р»РєР° 66</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 </head>
 <body>
@@ -73,14 +73,14 @@ font-size: 13px; margin-bottom: 0; }
 					</a>
 				</td>
 				<td style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height: 1.4; vertical-align: middle;">
-					<span style="padding:0;margin:0;font-size:25px;font-family:arial,sans-serif;line-height:18px;color:white;border:none;font-weight:bold;font-style:italic">—</span> <a href="http://66.ru/" style="padding:0;margin:0;font-size:25px;font-family:arial,sans-serif;line-height: 24px;color:white;text-decoration:none;border:none;font-weight:bold;font-style:italic" target="_blank"> Достоверно и подробно о метеоритной атаке на Урал</a>
+					<span style="padding:0;margin:0;font-size:25px;font-family:arial,sans-serif;line-height:18px;color:white;border:none;font-weight:bold;font-style:italic">вЂ”</span> <a href="http://66.ru/" style="padding:0;margin:0;font-size:25px;font-family:arial,sans-serif;line-height: 24px;color:white;text-decoration:none;border:none;font-weight:bold;font-style:italic" target="_blank"> Р”РѕСЃС‚РѕРІРµСЂРЅРѕ Рё РїРѕРґСЂРѕР±РЅРѕ Рѕ РјРµС‚РµРѕСЂРёС‚РЅРѕР№ Р°С‚Р°РєРµ РЅР° РЈСЂР°Р»</a>
 				</td>
 			</tr>
 		</tbody></table>
 	</div>
 	<div class="body">
 
-		<p style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:20px">Уважаемые читатели, мы были одними из первых кто написал о метеоритном дожде, который обрушился на Свердловскую и Челябинскую область. Весь день мы собирали по кускам достоверную информацию о космической катастрофе и публиковали ее у себя на Портале 66.ru. Читайте подборку лучших материалов по теме. Факты, свидетельства очевидцев, фото, видео, прогнозы.</p>
+		<p style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:20px">РЈРІР°Р¶Р°РµРјС‹Рµ С‡РёС‚Р°С‚РµР»Рё, РјС‹ Р±С‹Р»Рё РѕРґРЅРёРјРё РёР· РїРµСЂРІС‹С… РєС‚Рѕ РЅР°РїРёСЃР°Р» Рѕ РјРµС‚РµРѕСЂРёС‚РЅРѕРј РґРѕР¶РґРµ, РєРѕС‚РѕСЂС‹Р№ РѕР±СЂСѓС€РёР»СЃСЏ РЅР° РЎРІРµСЂРґР»РѕРІСЃРєСѓСЋ Рё Р§РµР»СЏР±РёРЅСЃРєСѓСЋ РѕР±Р»Р°СЃС‚СЊ. Р’РµСЃСЊ РґРµРЅСЊ РјС‹ СЃРѕР±РёСЂР°Р»Рё РїРѕ РєСѓСЃРєР°Рј РґРѕСЃС‚РѕРІРµСЂРЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ РєРѕСЃРјРёС‡РµСЃРєРѕР№ РєР°С‚Р°СЃС‚СЂРѕС„Рµ Рё РїСѓР±Р»РёРєРѕРІР°Р»Рё РµРµ Сѓ СЃРµР±СЏ РЅР° РџРѕСЂС‚Р°Р»Рµ 66.ru. Р§РёС‚Р°Р№С‚Рµ РїРѕРґР±РѕСЂРєСѓ Р»СѓС‡С€РёС… РјР°С‚РµСЂРёР°Р»РѕРІ РїРѕ С‚РµРјРµ. Р¤Р°РєС‚С‹, СЃРІРёРґРµС‚РµР»СЊСЃС‚РІР° РѕС‡РµРІРёРґС†РµРІ, С„РѕС‚Рѕ, РІРёРґРµРѕ, РїСЂРѕРіРЅРѕР·С‹.</p>
 
 
 		<div style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4">
@@ -96,10 +96,10 @@ font-size: 13px; margin-bottom: 0; }
 						<td style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4;vertical-align:top;padding-left:13px;margin-left:118px">
 							<div style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4">
 								<div style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4">
-									<a href="http://66.ru/news/society/132207/" style="padding:0;margin:0;font-size:18px;font-family:arial,sans-serif;line-height:1.4;color:#037dd3;" target="_blank">Хроника пикирующего метеорита. Сборка фото, видео, фактов</a>
+									<a href="http://66.ru/news/society/132207/" style="padding:0;margin:0;font-size:18px;font-family:arial,sans-serif;line-height:1.4;color:#037dd3;" target="_blank">РҐСЂРѕРЅРёРєР° РїРёРєРёСЂСѓСЋС‰РµРіРѕ РјРµС‚РµРѕСЂРёС‚Р°. РЎР±РѕСЂРєР° С„РѕС‚Рѕ, РІРёРґРµРѕ, С„Р°РєС‚РѕРІ</a>
 								</div>
 								<i style="padding:0;margin:0;font-size:11px;font-family:arial,sans-serif;line-height:1.4;color:#666;font-style:normal">15.02.2013 17:30</i>&nbsp;&nbsp;</div>
-							<p style="padding:0;margin:0;font-size:13px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:0">Из массивного потока противоречивой информации мы выбрали для вас только самое важное и интересное.</p>
+							<p style="padding:0;margin:0;font-size:13px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:0">РР· РјР°СЃСЃРёРІРЅРѕРіРѕ РїРѕС‚РѕРєР° РїСЂРѕС‚РёРІРѕСЂРµС‡РёРІРѕР№ РёРЅС„РѕСЂРјР°С†РёРё РјС‹ РІС‹Р±СЂР°Р»Рё РґР»СЏ РІР°СЃ С‚РѕР»СЊРєРѕ СЃР°РјРѕРµ РІР°Р¶РЅРѕРµ Рё РёРЅС‚РµСЂРµСЃРЅРѕРµ.</p>
 						</td>
 						</tr>
 					</table>
@@ -115,10 +115,10 @@ font-size: 13px; margin-bottom: 0; }
 						<td style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4;vertical-align:top;padding-left:13px;margin-left:118px">
 							<div style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4">
 								<div style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4">
-									<a href="http://66.ru/news/society/132207/" style="padding:0;margin:0;font-size:18px;font-family:arial,sans-serif;line-height:1.4;color:#037dd3;" target="_blank">Хроника пикирующего метеорита. Сборка фото, видео, фактов</a>
+									<a href="http://66.ru/news/society/132207/" style="padding:0;margin:0;font-size:18px;font-family:arial,sans-serif;line-height:1.4;color:#037dd3;" target="_blank">РҐСЂРѕРЅРёРєР° РїРёРєРёСЂСѓСЋС‰РµРіРѕ РјРµС‚РµРѕСЂРёС‚Р°. РЎР±РѕСЂРєР° С„РѕС‚Рѕ, РІРёРґРµРѕ, С„Р°РєС‚РѕРІ</a>
 								</div>
 								<i style="padding:0;margin:0;font-size:11px;font-family:arial,sans-serif;line-height:1.4;color:#666;font-style:normal">15.02.2013 17:30</i>&nbsp;&nbsp;</div>
-							<p style="padding:0;margin:0;font-size:13px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:0">Из массивного потока противоречивой информации мы выбрали для вас только самое важное и интересное.</p>
+							<p style="padding:0;margin:0;font-size:13px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:0">РР· РјР°СЃСЃРёРІРЅРѕРіРѕ РїРѕС‚РѕРєР° РїСЂРѕС‚РёРІРѕСЂРµС‡РёРІРѕР№ РёРЅС„РѕСЂРјР°С†РёРё РјС‹ РІС‹Р±СЂР°Р»Рё РґР»СЏ РІР°СЃ С‚РѕР»СЊРєРѕ СЃР°РјРѕРµ РІР°Р¶РЅРѕРµ Рё РёРЅС‚РµСЂРµСЃРЅРѕРµ.</p>
 						</td>
 						</tr>
 					</table>
@@ -134,10 +134,10 @@ font-size: 13px; margin-bottom: 0; }
 						<td style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4;vertical-align:top;padding-left:13px;margin-left:118px">
 							<div style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4">
 								<div style="padding:0;margin:0;font-size:14px;font-family:arial,sans-serif;line-height:1.4">
-									<a href="http://66.ru/news/society/132207/" style="padding:0;margin:0;font-size:18px;font-family:arial,sans-serif;line-height:1.4;color:#037dd3;" target="_blank">Хроника пикирующего метеорита. Сборка фото, видео, фактов</a>
+									<a href="http://66.ru/news/society/132207/" style="padding:0;margin:0;font-size:18px;font-family:arial,sans-serif;line-height:1.4;color:#037dd3;" target="_blank">РҐСЂРѕРЅРёРєР° РїРёРєРёСЂСѓСЋС‰РµРіРѕ РјРµС‚РµРѕСЂРёС‚Р°. РЎР±РѕСЂРєР° С„РѕС‚Рѕ, РІРёРґРµРѕ, С„Р°РєС‚РѕРІ</a>
 								</div>
 								<i style="padding:0;margin:0;font-size:11px;font-family:arial,sans-serif;line-height:1.4;color:#666;font-style:normal">15.02.2013 17:30</i>&nbsp;&nbsp;</div>
-							<p style="padding:0;margin:0;font-size:13px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:0">Из массивного потока противоречивой информации мы выбрали для вас только самое важное и интересное.</p>
+							<p style="padding:0;margin:0;font-size:13px;font-family:arial,sans-serif;line-height:1.4;margin-bottom:0">РР· РјР°СЃСЃРёРІРЅРѕРіРѕ РїРѕС‚РѕРєР° РїСЂРѕС‚РёРІРѕСЂРµС‡РёРІРѕР№ РёРЅС„РѕСЂРјР°С†РёРё РјС‹ РІС‹Р±СЂР°Р»Рё РґР»СЏ РІР°СЃ С‚РѕР»СЊРєРѕ СЃР°РјРѕРµ РІР°Р¶РЅРѕРµ Рё РёРЅС‚РµСЂРµСЃРЅРѕРµ.</p>
 						</td>
 						</tr>
 					</table>
@@ -148,8 +148,8 @@ font-size: 13px; margin-bottom: 0; }
 	</div>
 	
 	<div class="unsubscribe" style="border-top: 1px solid #d8d8d8;padding: 10px 20px 20px;">
-		Для того, чтобы отписаться от данной рассылки, перейдитепо ссылке<br/>
-		<a href="">Вы можете ответить на данное сообщение по email и ответ отобразится новым сообщением в Мегаплане.</a>
+		Р”Р»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РѕС‚РїРёСЃР°С‚СЊСЃСЏ РѕС‚ РґР°РЅРЅРѕР№ СЂР°СЃСЃС‹Р»РєРё, РїРµСЂРµР№РґРёС‚РµРїРѕ СЃСЃС‹Р»РєРµ<br/>
+		<a href="">Р’С‹ РјРѕР¶РµС‚Рµ РѕС‚РІРµС‚РёС‚СЊ РЅР° РґР°РЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РїРѕ email Рё РѕС‚РІРµС‚ РѕС‚РѕР±СЂР°Р·РёС‚СЃСЏ РЅРѕРІС‹Рј СЃРѕРѕР±С‰РµРЅРёРµРј РІ РњРµРіР°РїР»Р°РЅРµ.</a>
 	</div>
 	
 	
@@ -163,5 +163,5 @@ $headers .= "From: Testing system <koropgleb@koropgleb.ru>\r\n";
 $headers .= "Bcc: birthday-archive@example.com\r\n"; 
 
 mail($to, $subject, $message, $headers); 
-die("готово");
+die("РіРѕС‚РѕРІРѕ");
 ?>
