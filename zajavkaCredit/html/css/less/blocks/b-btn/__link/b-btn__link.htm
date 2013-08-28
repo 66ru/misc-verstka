@@ -1,0 +1,1 @@
+<a href="{% renderContent(context, 'href', 'plain') %}" class="{% renderClass(context) %}" {% if context.getAttribute('target') %}target="{% renderContent(context, 'target', 'plain') %}"{% endif %} {% if context.getAttribute('id') %}id="{% renderContent(context, 'id', 'plain') %}"{% endif %}></a>

@@ -1,0 +1,263 @@
+/* =VARIABLES (LESS @variables do not get compiled into the final CSS file)
+   ---------------------------------------------------------------------------------------------------- */
+/*cream*/
+/*purple/grey*/
+/*blue*/
+a {
+  color: #007899;
+}
+a:visited {
+  color: #007899;
+}
+a:hover {
+  color: #ff5400;
+}
+a:active {
+  color: #ff5400;
+}
+.b-link_border_yes {
+  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_border_yes:visited {
+  border-color: rgba(128, 128, 128, 0.30000000000000004);
+}
+.b-link_border_yes:hover {
+  color: #ff5400;
+  border-color: rgba(255, 84, 0, 0.30000000000000004);
+}
+.b-link.b-link_border-style_dotted {
+  border-style: dotted;
+}
+.b-link.b-link_border-style_dotted:hover {
+  border-style: dotted;
+}
+/*ñèíèé*/
+.b-link_color_blue {
+  color: #007899;
+}
+.b-link_color_blue.b-link_border_yes {
+  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+  text-decoration: none;
+  /*âèçèò è õîâåð íà öâåò è áîðäåð*/
+
+}
+.b-link_color_blue.b-link_border_yes:visited {
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_blue.b-link_border_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_blue.b-link_border_yes.b-link_visited_yes {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_blue.b-link_border_yes.b-link_visited_yes:visited {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_blue.b-link_border_yes.b-link_visited_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_blue.b-link_border_yes.b-link_visited_no {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_blue.b-link_border_yes.b-link_visited_no:visited {
+  color: #007899;
+  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+}
+.b-link_color_blue.b-link_border_yes.b-link_visited_no:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+/*çåëåíûé*/
+.b-link_color_green {
+  color: #6a8e16;
+}
+.b-link_color_green.b-link_border_yes {
+  border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
+  text-decoration: none;
+  /*âèçèò è õîâåð íà öâåò è áîðäåð*/
+
+}
+.b-link_color_green.b-link_border_yes:visited {
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_green.b-link_border_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_green.b-link_border_yes.b-link_visited_yes {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_green.b-link_border_yes.b-link_visited_yes:visited {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_green.b-link_border_yes.b-link_visited_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_green.b-link_border_yes.b-link_visited_no {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_green.b-link_border_yes.b-link_visited_no:visited {
+  color: #6a8e16;
+  border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
+}
+.b-link_color_green.b-link_border_yes.b-link_visited_no:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+/*îðàíæåâûé*/
+.b-link_color_orange {
+  color: #ff5400;
+}
+.b-link_color_orange.b-link_border_yes {
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+  /*âèçèò è õîâåð íà öâåò è áîðäåð*/
+
+}
+.b-link_color_orange.b-link_border_yes:visited {
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_orange.b-link_border_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_orange.b-link_border_yes.b-link_visited_yes {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_orange.b-link_border_yes.b-link_visited_yes:visited {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_orange.b-link_border_yes.b-link_visited_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_orange.b-link_border_yes.b-link_visited_no {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_orange.b-link_border_yes.b-link_visited_no:visited {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+}
+.b-link_color_orange.b-link_border_yes.b-link_visited_no:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+/*÷åðíûé*/
+.b-link_color_black {
+  color: #000000;
+}
+.b-link_color_black.b-link_border_yes {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
+  text-decoration: none;
+  /*âèçèò è õîâåð íà öâåò è áîðäåð*/
+
+}
+.b-link_color_black.b-link_border_yes:visited {
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_black.b-link_border_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_black.b-link_border_yes.b-link_visited_yes {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_black.b-link_border_yes.b-link_visited_yes:visited {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_black.b-link_border_yes.b-link_visited_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_black.b-link_border_yes.b-link_visited_no {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_black.b-link_border_yes.b-link_visited_no:visited {
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
+}
+.b-link_color_black.b-link_border_yes.b-link_visited_no:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+/*ñåðûé*/
+.b-link_color_grey {
+  color: #808080;
+}
+.b-link_color_grey.b-link_border_yes {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.30000000000000004);
+  text-decoration: none;
+  /*âèçèò è õîâåð íà öâåò è áîðäåð*/
+
+}
+.b-link_color_grey.b-link_border_yes:visited {
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_grey.b-link_border_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_grey.b-link_border_yes.b-link_visited_yes {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_grey.b-link_border_yes.b-link_visited_yes:visited {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_grey.b-link_border_yes.b-link_visited_yes:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_color_grey.b-link_border_yes.b-link_visited_no {
+  /*âèçèò è õîâåð íà öâåò è áîðäåð è ïîñåùåííîñòü*/
+
+}
+.b-link_color_grey.b-link_border_yes.b-link_visited_no:visited {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
+.b-link_color_grey.b-link_border_yes.b-link_visited_no:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
+.b-link_visited_yes:visited {
+  color: #808080;
+}
+.b-link_visited_no:visited {
+  color: #007899;
+}
+.b-link_visited_no:hover {
+  color: #ff5400;
+}
