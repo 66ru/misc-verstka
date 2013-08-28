@@ -789,6 +789,9 @@ body {
 .b-sep_height_2 {
   height: 2px;
 }
+.b-sep_height_3 {
+  height: 3px;
+}
 .b-sep_height_4 {
   height: 4px;
 }
@@ -1160,3 +1163,15 @@ body {
 .b-footer-seo {
   border-bottom: 1px solid #9cb958;
 }
+.b-container_margin-right_20 {
+	margin-right: 20px;
+}
+.b-container_padding-right_30 {
+	padding-right: 30px;
+}
+.b-container_padding-left_20 {
+	padding-left: 20px;
+}
+#body-wrap {
+    padding: 0 0 140px;
+ }
