@@ -1,35 +1,42 @@
 $(document).ready(function() {			
-	$(".b-header-search__text").on("click", function(e) {
-		$(this).parents(".b-header-search").animate({width: "80%"}, 100);
-		$(this).parents(".b-header-search").css({background: "#fff"});
-		$(this).css({color: "#000"});
+	
+	
+	
+	var searchBlockElement = ".b-header-search";
+	var searchBlock = $(".b-header-search");
+	var searchBlockText = $(".b-header-search__text");
+	var searchBlockSubm = $(".b-header-search__subm");
+	var searchBlockClassActive = "b-header-search_state_active";
+	var searchBlockLabel = "Поиск";
+
+
+	searchBlockText.on("click", function(e) {
+		$(this).parents(searchBlockElement).animate({width: "80%"}, 100);
 		
+		/*$(this).parents(searchBlockElement).css({background: "#fff"});
+		$(this).css({color: "#000"});*/
 		
-		
-		
-		
-		if ($(".b-header-search__text").val() == "Поиск") {
+
+		if (searchBlockText.val() == searchBlockLabel) {
 			$(this).val("");
 		}				
-		
-		
 		
 		var sClick = true;
 		
 		$(document).bind('click.myEvent', function(e) {
-			if (!sClick && $(e.target).closest(".b-header-search").length == 0) {
-				$(".b-header-search").animate({width: "60%"}, 100);
-				$(".b-header-search").css({background: "#afc971"});
-				$(".b-header-search__text").css({color: "#fff"});
+			if (!sClick && $(e.target).closest(searchBlockElement).length == 0) {
+			
+				searchBlock.animate({width: "60%"}, 100);
+				/*searchBlock.css({background: "#afc971"});
+				searchBlockText.css({color: "#fff"});*/
 				
-				if ($(".b-header-search__text").val() == "Поиск") {
-					$(".b-header-search__text").val("Поиск");					
+				if (searchBlockText.val() == searchBlockLabel) {
+					searchBlockText.val(searchBlockLabel);					
 				}
 				
-				$(".b-header-search__subm").removeClass("b-header-search__subm_state_active");
+				searchBlock.removeClass(searchBlockClassActive);
 				
 				
-				console.log("раскликнули");
 				$(document).unbind("click.myEvent");
 			}
 			sClick = false;
@@ -37,7 +44,7 @@ $(document).ready(function() {
 		
 		e.preventDefault();
 		
-		$(".b-header-search__subm").addClass("b-header-search__subm_state_active");
+		searchBlock.addClass(searchBlockClassActive);
 		
 		
 	});
