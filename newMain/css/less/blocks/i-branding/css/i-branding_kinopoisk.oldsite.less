@@ -1,0 +1,241 @@
+	
+	/*конфиг стилей для брендирования*/
+	
+	@pageBgColor: #FFFFFF;
+	
+	@pageRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@pageRepeatHeight: 300px;
+	
+	@pageBgSrc: url(http://s008.radikal.ru/i306/1102/dc/15aea92c4eba.jpg);
+	@pageBgHeight: 1500px;
+	
+	@footerRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@footerRepeatHeight: 300px;
+	
+	@footerBgSrc: url(http://i2.guns.ru/forums/icons/forum_pictures/002015/2015237.jpg);
+	@footerBgHeight: 300px;	
+	
+	@pagePaddingTop: 100px;
+	@contentBgColor: #CCC;/*фон области контента*/
+	@logoBg: #006199;/*фон под логотипом в шапке*/
+	@logoFootBg: #006199;/*фон под логотипом в футере*/
+	@headerBg: rgba(35, 107, 149, 1);/*фон полоски шапки*/
+	@headerBg_IE: rgb(35, 107, 149);
+	@menuCurBg: rgba(0, 97, 153, 1);/*фон выделенного меню 1 уровня*/
+	@menuCurBg_IE: rgb(0, 97, 153);
+	@menuCurColor: #FFFFFF; /*фон выделенного меню 1 уровня*/
+	@headerLinkColor: #FFFFFF;/*цвет пунктов меню 1 уровня, логинилки, и ссылок почты*/
+	@headerSeparatorBg: rgba(255,255,255,1); /*фон сепаратора меню 1 уровня*/
+	@headerSeparatorBg_IE: rgb(255, 255, 255);	
+	@menuDropDownCnr: "";
+	@menuDropDownCnr-: "";
+	@hidemenuItemColor: #3f530c;/*цвет и фон элемента скрытого меню */
+	@hidemenuItemColorHover: #3f530c;
+	@submenuBg_IE: rgb(255, 255, 211);
+	@submenuBg: rgba(255, 255, 211, 1);
+	@submenuColor: #3f530c;
+	@submenuBorderColor: #c1d09f;	
+	@submenuColorHover: #ff5400;
+	@submenuBorderColorHover: #ffcbb2;	
+	@submenuSeparatorColor: rgba(225,239,191,1);
+	@submenuSeparatorColor_IE: rgb(225,239,191);	
+
+	@authTabBg_IE: rgb(160, 188, 96);
+	@authTabBg: rgba(160, 188, 96, 1);		
+	
+	@footerBg_IE: rgb(35, 107, 149);
+	@footerBg: rgba(35, 107, 149, 1);
+	
+	@footerSeoSeparatorColor_IE: rgb(156,185,88);
+	@footerSeoSeparatorColor: rgba(156,185,88, 1);		
+	
+	@footerColorLink: #E1F2BA;
+	@footerColorLinkBgHover_IE:rgb(214, 234, 170);
+	@footerColorLinkBgHover: rgba(214, 234, 170, 1);
+	@footerColorLinkHover: #6A8E16;
+	@footerTextLink: #FFFFFF;		
+	@footerTextLinkHover: #FFFFFF;		
+	
+
+.i-branding {
+
+	.l-branding-top-repeat {
+		position: absolute; 
+		width: 100%; 
+		height: @pageRepeatHeight;
+		left: 0px;
+		top: 0px;
+		display: block; 
+		background: @pageRepeatSrc repeat-x 0 0;
+	}
+	.l-branding-top-bg {
+		position: absolute; 
+		width: 100%; 
+		height: @pageBgHeight;
+		left: 0; 
+		top: 0; 
+		display: block; 
+		background: @pageBgSrc no-repeat center 0;
+	}
+	
+	.l-branding-footer-repeat {
+		position: absolute; 
+		width: 100%; 
+		height: @footerRepeatHeight; 
+		left: 0px;
+		bottom: -140px; 
+		display: block; 
+		background: @footerRepeatSrc repeat-x 0 0;		
+	}
+	.l-branding-footer-bg {
+		position: absolute; 
+		width: 100%; 
+		height: @footerBgHeight;
+		left: 0; 
+		bottom: -140px; 
+		display: block; 
+		background: @footerBgSrc no-repeat center 0;	
+	}
+
+	.l-branding-footer,
+	.l-branding-top,
+	.l-branding,
+	.l-branding .l-width,
+	.l-header-wrap .l-width,
+	.l-body-wrap	{
+		position:relative;
+	}
+	.l-header-wrap .l-width .g48 {
+		z-index: 1000;
+	}
+	/*фон страницы*/
+	/*изменять верхний отступ меню*/
+	.l-header-wrap {
+		padding-top: @pagePaddingTop;
+		background-color: @pageBgColor;
+	}
+	/*фон области контента*/
+	#frame {
+		background-color: @contentBgColor;
+	}
+	/*фон под логотипом в шапке*/
+	.b-header-logo  {
+		background-color: @logoBg;
+	}
+	/*фон под логотипом в футере*/
+	.b-footer-logo {
+		background-color: @logoFootBg;
+	}
+	
+	/*фон полоски шапки*/
+	.l-header-wrap {
+		background-color: @headerBg_IE;
+		background-color: @headerBg;
+	}
+	/*фон выделенного меню 1 уровня*/
+	.cur a.b-header-menu__item__link {
+		background-color: @menuCurBg_IE;
+		background-color: @menuCurBg;
+		color: @menuCurColor;
+	}
+	/*фон меню 2 уровня*/
+	.b-header-menu__item__sub, .b-header-menu__hidemenu {
+		background-color: @submenuBg_IE;
+		background-color: @submenuBg;
+		color: @menuCurColor;	
+	}
+	/*цвет пунктов меню 1 уровня, логинилки, и ссылок почты*/
+	 a.b-header-menu__item__link, a.b-header-auth__tab__logined-user__link, a.b-header-auth__tab__mail-link {
+		color: @headerLinkColor;
+	}
+	a.b-header-menu__item__link:after {
+		background-color: @headerSeparatorBg_IE;
+		background-color: @headerSeparatorBg;
+	}
+	.b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
+		/*background-image: @menuDropDownCnr;*/
+		background-position: right 24px;
+		background-repeat: no-repeat;
+	}
+	.b-header-menu__item_hidemenu_yes.cur .b-header-menu__item__link {
+		/*background-image: @menuDropDownCnr-;*/
+		background-position: right 24px;
+		background-repeat: no-repeat;		
+	}
+	/*цвет и фон элемента скрытого меню */
+	a.b-header-menu__hidemenu__item__link {
+		color: @hidemenuItemColor;
+	}
+	/*цвет и фон элемента скрытого меню при наведении*/
+	a.b-header-menu__hidemenu__item__link:hover {
+		color: @hidemenuItemColorHover;
+	}	
+	/*цвет ссылки меню 2 уровня*/
+	a.b-header-menu__item__sub__wrap__col__list__item__link {
+		color: @submenuColor;
+		border-color: @submenuBorderColor;
+	}
+	/*цвет ссылки меню 2 уровня при наведении*/
+	a.b-header-menu__item__sub__wrap__col__list__item__link:hover {
+		color: @submenuColorHover;
+		border-color: @submenuBorderColorHover;
+	}
+	/*сепаратор между столбцами меню 2 уровня*/
+	.b-header-menu__item__sub__wrap__col {
+		border-color: @submenuSeparatorColor_IE;
+		border-color: @submenuSeparatorColor;
+	}
+	/*фон плашки авторизованного юзера*/
+	.b-header-auth__tab_active_yes {
+		background-color: @authTabBg_IE;
+		background-color: @authTabBg;
+	}
+	.l-footer-bg {
+		background-color: @footerBg_IE;
+		background-color: @footerBg;		
+		position:absolute;
+		left: 0px;
+		width: 100%;
+		height: 140px;
+		z-index: 1;
+	}	
+	.l-footer .l-width {
+		position:relative;
+		z-index: 100;
+	}	
+	/*линия сепаратора в футере*/
+	.b-footer-seo {
+		border-bottom-color: @footerSeoSeparatorColor_IE;
+		border-bottom-color: @footerSeoSeparatorColor;
+	}
+	.b-footer-menu a {
+		color: @footerColorLink;
+	}
+	.b-footer-menu a:hover {
+		background-color: @footerColorLinkBgHover_IE;
+		background-color:@footerColorLinkBgHover;
+		color: @footerColorLinkHover;
+	}
+	/*цвет самых нижних ссылок*/
+	.b-footer-links a {
+		color: @footerTextLink;
+		text-decoration: none;
+	}
+	.b-footer-links a:hover {
+		border-bottom: 1px solid @footerTextLink;
+		color: @footerTextLinkHover;
+	}
+	.l-footer {
+		overflow: visible;
+	}
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
