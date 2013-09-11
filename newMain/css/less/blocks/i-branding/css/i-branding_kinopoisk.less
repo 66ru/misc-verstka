@@ -147,7 +147,7 @@
 		width: 100%; 
 		height: @footerRepeatHeight; 
 		left: 0px;
-		bottom: 0; 
+		bottom: -140px;
 		display: block; 
 		background: @footerRepeatSrc repeat-x 0 0;		
 	}
@@ -156,7 +156,7 @@
 		width: 100%; 
 		height: @footerBgHeight;
 		left: 0; 
-		bottom: 0; 
+		bottom: -140px;
 		display: block; 
 		background: @footerBgSrc no-repeat center 0;	
 	}
@@ -294,11 +294,26 @@
 		background-color: @authTabBg_IE;
 		background-color: @authTabBg;
 	}
+	
+	.l-footer .l-width,
 	.l-footer {
-		background-color: @footerBg_IE;
-		background-color: @footerBg;
 		position:relative;
 	}
+	
+	.l-footer .l-width {
+		position:relative;
+		z-index: 2;
+	}
+	
+	.l-footer-bg {
+		background-color: @footerBg_IE;
+		background-color: @footerBg;	
+		position:absolute;
+		width: 100%;
+		height: 140px;
+		z-index: 1;
+	}
+	
 	/*сдвиг до футера*/
 	.l-push {
 		height: @pageMarginToContent + 140px;
