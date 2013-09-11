@@ -1,11 +1,20 @@
 	
 	/*конфиг стилей для брендирования*/
 	
-	@pageBgImg: "";
 	@pageBgColor: #FFFFFF;
-	@pageBgImgAlignHorisontal: center;
-	@pageBgImgAlignVertical: top;
-	@pageBgRepeat: no-repeat; /*no-repeat|repeat-x|repeat-y*/
+	
+	@pageRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@pageRepeatHeight: 300px;
+	
+	@pageBgSrc: url(http://s008.radikal.ru/i306/1102/dc/15aea92c4eba.jpg);
+	@pageBgHeight: 1500px;
+	
+	@footerRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@footerRepeatHeight: 300px;
+	
+	@footerBgSrc: url(http://i2.guns.ru/forums/icons/forum_pictures/002015/2015237.jpg);
+	@footerBgHeight: 300px;	
+	
 	@pagePaddingTop: 100px;
 	@pageMarginToContent: 0px;/*расстояние от меню до контента и от контента до футера*/
 	@contentBgColor: #FFFFFF;/*фон области контента*/
@@ -58,7 +67,7 @@
 	@footerTextLinkHover: #FFFFFF;
 
 	/*попробовать*/
-	/*@pageBgImg: "http://hollywood.greekreporter.com/files/2013/05/scared.jpg";
+	/*
 	@pageBgColor: #000;
 	@pageBgImgAlignHorisontal: center;
 	@pageBgImgAlignVertical: top;
@@ -114,24 +123,72 @@
 	*/
 .i-branding {
 
-	.l-branding,
-	.l-branding .l-width,
+	.l-branding-top-repeat {
+		position: absolute; 
+		width: 100%; 
+		height: @pageRepeatHeight;
+		left: 0px;
+		top: 0 - @pagePaddingTop; 
+		display: block; 
+		background: @pageRepeatSrc repeat-x 0 0;
+	}
+	.l-branding-top-bg {
+		position: absolute; 
+		width: 100%; 
+		height: @pageBgHeight;
+		left: 0; 
+		top: 0 - @pagePaddingTop; 
+		display: block; 
+		background: @pageBgSrc no-repeat center 0;
+	}
+	
+	.l-branding-footer-repeat {
+		position: absolute; 
+		width: 100%; 
+		height: @footerRepeatHeight; 
+		left: 0px;
+		bottom: 0; 
+		display: block; 
+		background: @footerRepeatSrc repeat-x 0 0;		
+	}
+	.l-branding-footer-bg {
+		position: absolute; 
+		width: 100%; 
+		height: @footerBgHeight;
+		left: 0; 
+		bottom: 0; 
+		display: block; 
+		background: @footerBgSrc no-repeat center 0;	
+	}
+	
+	.l-branding-footer,
+	.l-branding-footer .l-width,
+	.l-branding-top,
+	.l-branding-top .l-width,
 	.l-header-wrap .l-width,
 	.l-body-wrap	{
 		position:relative;
 	}
+	
 	.l-header-wrap .l-width .g48 {
 		z-index: 1000;
 	}
+	
+	.l-branding-footer .l-width .g48 {
+		z-index: -1;
+	}
+	
 	/*фон страницы*/
 	/*изменять верхний отступ меню*/
 	.l-body {
 		padding-top: @pagePaddingTop;
-		background: @pageBgColor @pageBgImg @pageBgImgAlignHorisontal @pageBgImgAlignVertical @pageBgRepeat;
+		background-color: @pageBgColor;
+		position:relative;
 	}
 	/*отступ от меню до контента*/
 	.l-body-wrap {
 		margin-top: @pageMarginToContent;
+		z-index: 1;
 	}	
 	/*фон области контента*/
 	.l-body-wrap .l-width {
@@ -240,6 +297,7 @@
 	.l-footer {
 		background-color: @footerBg_IE;
 		background-color: @footerBg;
+		position:relative;
 	}
 	/*сдвиг до футера*/
 	.l-push {
