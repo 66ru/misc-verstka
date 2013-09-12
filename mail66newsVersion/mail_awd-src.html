@@ -2,16 +2,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta name="viewport" content="width=560, initial scale=1.0"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title></title>
+	<meta name="viewport" content="width=540, initial-scale=1.0" />
 
 	<style type="text/css">
 		body {
 			margin: 0;
 			padding: 0;
-			min-width: 560px;
-			width: 100% !important;
+			min-width: 480px;
 			font-family: Helvetica, Arial, sans-serif;
 			-webkit-text-size-adjust: 100%;
 			-ms-text-size-adjust: 100%;
@@ -45,8 +44,8 @@
 		img {
 			display: block;
 			border: none;
-			-ms-interpolation-mode: bicubic;
 			background: #ccc !important;
+			-ms-interpolation-mode: bicubic;
 		}
 
 		.menu {
@@ -111,6 +110,10 @@
 		}
 
 		@media only screen and (max-device-width: 640px) {
+			body {
+				min-width: 240px !important;
+			}
+
 			.left-col {
 				display: block !important;
 				padding-right: 0 !important;
@@ -161,7 +164,7 @@
 </head>
 <body>
 
-<table style="width: 100% !important; background: #efefef;">
+<table style="width: 100%; background: #efefef;">
 	<tr>
 		<td class="ext-td" style="padding: 5px 10px 40px;">
 			<table class="wrap" style="width: 100%; max-width: 800px; margin: 0 auto; background: url('http://s22.postimg.org/uxe3ns20d/image.png') left top repeat-x #fff;">
@@ -197,7 +200,7 @@
 						<table style="border-bottom: 2px solid #84a830;" width="100%">
 							<tbody class="content">
 								<tr class="content-inner">
-									<td class="left-col" style="width: 70%; padding-right: 16px; border-right: 1px solid #ccc; vertical-align: top;">
+									<td class="left-col" style="padding-right: 16px; border-right: 1px solid #ccc; vertical-align: top;">
 										<h1>Свежие новости на сегодня, 27&nbsp;августа&nbsp;2013</h1>
 										<table style="border-bottom: 1px solid #ccc;" width="100%">
 											<tr>
@@ -265,16 +268,18 @@
 											</tr>
 										</table>
 									</td>
-									<td class="right-col" style="padding-bottom: 20px; padding-left: 16px; vertical-align: top;">
-										<div class="right-col-inner right-col-inner_pr">
-											<h2>Спецпроекты</h2>
-											<a href="#" class="imgwrap"><img src="http://thethingswelike.org/static/images/600/93/93f8d390ab59a366a7aa65a1a209cfaca3855d41.jpg" alt="" width="100%" /></a>
-											<a href="#" class="link">Мы нашли парковочные места в&nbsp;центре города. Вот карта.</a>
-										</div>
-										<div class="right-col-inner">
-											<h2>Спецпроекты</h2>
-											<a href="#" class="imgwrap"><img src="http://deadfix.com/wp-content/uploads/2011/01/32535_1370271489273_1006294144_30849088_5481062_n-500x324.jpg" alt="" width="100%" /></a>
-											<a href="#" class="link">Мы нашли парковочные места в&nbsp;центре города. Вот карта.</a>
+									<td class="right-col" style="width: 30%; padding-bottom: 20px; padding-left: 16px; vertical-align: top;">
+										<div style="min-width: 120px !important;">
+											<div class="right-col-inner right-col-inner_pr">
+												<h2>Спецпроекты</h2>
+												<a href="#" class="imgwrap"><img src="http://thethingswelike.org/static/images/600/93/93f8d390ab59a366a7aa65a1a209cfaca3855d41.jpg" alt="" width="100%" /></a>
+												<a href="#" class="link">Мы нашли парковочные места в&nbsp;центре города. Вот карта.</a>
+											</div>
+											<div class="right-col-inner">
+												<h2>Спецпроекты</h2>
+												<a href="#" class="imgwrap"><img src="http://deadfix.com/wp-content/uploads/2011/01/32535_1370271489273_1006294144_30849088_5481062_n-500x324.jpg" alt="" width="100%" /></a>
+												<a href="#" class="link">Мы нашли парковочные места в&nbsp;центре города. Вот карта.</a>
+											</div>
 										</div>
 									</td>
 								</tr>
