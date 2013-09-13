@@ -74,17 +74,6 @@ a:focus {
 }
 
 
-sup {
-	position: relative;
-	top: -0.4em;
-}
-
-sub {
-	position: relative;
-	bottom: -0.4em;
-}
-
-
 
 
 /* body - bg, c, f, h? */
