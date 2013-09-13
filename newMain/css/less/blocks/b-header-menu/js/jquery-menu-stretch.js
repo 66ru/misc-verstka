@@ -1,51 +1,73 @@
-	var letterWidth = 8; //ширина строчной буквы шрифта в меню
-	
-	function skukogit() {
-		alert("skukojit");
-		var menuSize = jQuery(".b-header-menu > li").not(".hasSub").size() - 1; //количество пунктов
-		element = jQuery(".b-header-menu li").eq(menuSize).html();
-		jQuery(".b-header-menu li").eq(menuSize).remove();
-		jQuery(".b-header-menu__submenu li").eq(0).before("<li>" + element + "</li>");
-	}
-	
-	function raskukogit() {
-		alert("razskukojit");
-		/*var colSize = jQuery(".js-main-col").width();
-		var logoSize = jQuery(".b-header-logo").width();			
-		var menuWidth = jQuery(".js-menu-width").width();
-		var menuSize = jQuery(".b-header-menu > li").not(".hasSub").size() - 1; //количество пунктов
-		lastHiddenElementMenu = jQuery(".b-header-menu__submenu > li").eq(0);//элемент, который надо вернуть в меню 1 уровня
-		var placeWidth = lastHiddenElementMenu.text().length * letterWidth + 20; //ширина вакантного места для возврата
-		if ((logoSize + menuWidth + 45 + placeWidth) <= colSize) {//если слово влезает на вакантное место
-			jQuery(".b-header-menu li").eq(menuSize).after("<li>" + lastHiddenElementMenu.html() + "</li>");
-			lastHiddenElementMenu.remove();
-		}*/
-	}
-	
-	function checkMenu() {
-		var colSize = jQuery(".js-main-col").width();
-		var logoSize = jQuery(".b-header-logo").width();
-		var menuSize = jQuery(".js-header-menu").width();			
-		
-		
-		if ((logoSize + menuSize + 25) > colSize) {
-			do {
-				skukogit();
-			} while (logoSize + menuSize + 45) > colSize);
-		} else {
-			//console.log("123");
-			raskukogit();
+$(function() {
+	$('.js-header-menu').css({overflow: 'hidden'});
+})
+
+$(window).load(function() {
+	var widths = [],
+		lastWidth,
+		maxWidth,
+		margin = 24,
+
+		$menuContainer = $('.js-header-menu'),
+		$menuItems = $('.b-header-menu__item__link'),
+		$hiddenMenuItems = $('.b-header-menu__hidemenu__item'),
+
+		menuWidth = $menuContainer.width(),
+		logoWidth = $('.b-header-logo').outerWidth();
+
+	var reorganizeMenu = function() {
+		var newMenuWidth = $menuContainer.width(),
+			n = widths.length - 1;
+
+		for (n; n >= 0; n--) {
+			if (newMenuWidth - lastWidth - logoWidth > widths[n]) { break;	}
 		}
+
+		$menuItems.each(function(index) {
+			var $this = $(this);
+
+			if (index <= n) {
+				$this.show();
+			} else {
+				$this.hide();
+			}
+
+			if (index == $menuItems.length - 1) {
+				$this.show();
+			}
+		});
+
+		$hiddenMenuItems.each(function(index) {
+			var $this = $(this);
+
+			if (index > n) {
+				$this.show();
+			} else {
+				$this.hide();
+			}
+		});
 	}
-	
-jQuery(document).ready(function() {
-	setTimeout(function() {
-		checkMenu();
-	},1000)
-	
-});	
-	
-	
-jQuery(window).resize(function() {
-	checkMenu();
-}) 	
+
+
+	$menuItems.each(function() {
+		var prev = 0;
+
+		for (var i = 0; i < widths.length; i++) {
+			prev =+ widths[i];
+		}
+
+		lastWidth = $(this).outerWidth();
+		widths.push( $(this).outerWidth() + prev );
+
+	});
+
+	widths.pop();
+	maxWidth = widths[widths.length - 1];
+
+	$(window).on('resize', function() {
+		reorganizeMenu();
+	});
+
+	$menuContainer.css({overflow: 'visible'});
+	reorganizeMenu();
+});

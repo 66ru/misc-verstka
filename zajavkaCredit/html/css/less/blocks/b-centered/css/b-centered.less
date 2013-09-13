@@ -1,0 +1,21 @@
+.b-centered {
+	position: relative;
+	width: 100%;
+}
+
+.b-centered:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.b-centered__toLeft {
+	position: relative;
+	right: 50%;
+	float: right;
+}
+.b-centered__toLeft__toRight  {
+	position: relative;
+	z-index: 1;
+	right: -50%;
+}
