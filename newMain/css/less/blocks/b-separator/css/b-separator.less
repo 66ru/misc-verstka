@@ -1,0 +1,43 @@
+/*пока дублируется в mainpage, оттуда уберем*/
+
+.b-separator {
+	height: 1px;
+	margin: 5px 0;
+}
+
+.b-separator_border_yes {
+	background: @grey-bg;
+}
+.b-separator_border-color_orange {
+	background: @orange-bg;
+}
+
+.b-separator-height (@separator: 1px) {
+	height: @separator;	
+	margin: 0px;
+}
+
+
+.b-separator_height_2 {
+	.b-separator-height(2px);
+}
+
+.b-separator_height_4 {
+	.b-separator-height(4px);
+}
+
+.b-separator_height_7 {
+	.b-separator-height(7px);
+}
+
+.b-separator_height_10 {
+	.b-separator-height(10px);
+}
+
+.b-separator_height_13 {
+	.b-separator-height(13px);
+}
+
+.b-separator_height_17 {
+	.b-separator-height(17px);
+}
