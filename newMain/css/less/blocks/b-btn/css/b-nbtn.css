@@ -1,0 +1,99 @@
+.b-nbtn {
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 1em;
+	height: 30px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 30px;
+	cursor: pointer;
+	position:relative;
+}
+
+.b-nbtn_theme_green {
+	border-width: 0;
+	background: #78a000;
+	background: -moz-linear-gradient(top,  #94b800 0%, #8aaf00 23%, #638e00 80%, #5a8600 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#94b800), color-stop(23%,#8aaf00), color-stop(80%,#638e00), color-stop(100%,#5a8600));
+	background: -webkit-linear-gradient(top,  #94b800 0%,#8aaf00 23%,#638e00 80%,#5a8600 100%);
+	background: -o-linear-gradient(top,  #94b800 0%,#8aaf00 23%,#638e00 80%,#5a8600 100%);
+	background: -ms-linear-gradient(top,  #94b800 0%,#8aaf00 23%,#638e00 80%,#5a8600 100%);
+	background: linear-gradient(to bottom,  #94b800 0%,#8aaf00 23%,#638e00 80%,#5a8600 100%);
+	color: white;
+}
+
+.b-nbtn_theme_green:visited {
+	color: white;
+}
+
+.b-nbtn_theme_green:hover {
+	background: #92af00;
+	background: -moz-linear-gradient(top,  #92af00 0%, #638e00 80%, #5a8600 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#92af00), color-stop(80%,#638e00), color-stop(100%,#5a8600));
+	background: -webkit-linear-gradient(top,  #92af00 0%,#638e00 80%,#5a8600 100%);
+	background: -o-linear-gradient(top,  #92af00 0%,#638e00 80%,#5a8600 100%);
+	background: -ms-linear-gradient(top,  #92af00 0%,#638e00 80%,#5a8600 100%);
+	background: linear-gradient(to bottom,  #92af00 0%,#638e00 80%,#5a8600 100%);
+	color: white;
+}
+
+.b-nbtn_theme_green:active {
+	background: #5a8600;
+	background: -moz-linear-gradient(top,  #5a8600 0%, #638e00 95%, #92af00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5a8600), color-stop(95%,#638e00), color-stop(100%,#92af00));
+	background: -webkit-linear-gradient(top,  #5a8600 0%,#638e00 95%,#92af00 100%);
+	background: -o-linear-gradient(top,  #5a8600 0%,#638e00 95%,#92af00 100%);
+	background: -ms-linear-gradient(top,  #5a8600 0%,#638e00 95%,#92af00 100%);
+	background: linear-gradient(to bottom,  #5a8600 0%,#638e00 95%,#92af00 100%);
+	color: white;
+}
+
+.b-nbtn_theme_orange {
+	border-width: 0;
+	background: #f89500;
+	background: -moz-linear-gradient(top,  #ffab00 0%, #fda300 23%, #f48900 73%, #f17f00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffab00), color-stop(23%,#fda300), color-stop(73%,#f48900), color-stop(100%,#f17f00));
+	background: -webkit-linear-gradient(top,  #ffab00 0%,#fda300 23%,#f48900 73%,#f17f00 100%);
+	background: -o-linear-gradient(top,  #ffab00 0%,#fda300 23%,#f48900 73%,#f17f00 100%);
+	background: -ms-linear-gradient(top,  #ffab00 0%,#fda300 23%,#f48900 73%,#f17f00 100%);
+	background: linear-gradient(to bottom,  #ffab00 0%,#fda300 23%,#f48900 73%,#f17f00 100%);
+	color: white;
+}
+
+.b-nbtn_theme_orange:hover {
+	background: #f9a600;
+	background: -moz-linear-gradient(top,  #f9a600 0%, #f48900 73%, #f17f00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9a600), color-stop(73%,#f48900), color-stop(100%,#f17f00));
+	background: -webkit-linear-gradient(top,  #f9a600 0%,#f48900 73%,#f17f00 100%);
+	background: -o-linear-gradient(top,  #f9a600 0%,#f48900 73%,#f17f00 100%);
+	background: -ms-linear-gradient(top,  #f9a600 0%,#f48900 73%,#f17f00 100%);
+	background: linear-gradient(to bottom,  #f9a600 0%,#f48900 73%,#f17f00 100%);
+}
+
+.b-nbtn_theme_orange:active {
+	background: #f17f00;
+	background: -moz-linear-gradient(top,  #f17f00 0%, #f48900 95%, #f9a600 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f17f00), color-stop(95%,#f48900), color-stop(100%,#f9a600));
+	background: -webkit-linear-gradient(top,  #f17f00 0%,#f48900 95%,#f9a600 100%);
+	background: -o-linear-gradient(top,  #f17f00 0%,#f48900 95%,#f9a600 100%);
+	background: -ms-linear-gradient(top,  #f17f00 0%,#f48900 95%,#f9a600 100%);
+	background: linear-gradient(to bottom,  #f17f00 0%,#f48900 95%,#f9a600 100%);
+}
+
+.b-nbtn_size_l {
+	height: 32px;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.b-nbtn_size_s {
+	height: 22px;
+	font-size: 13px;
+	line-height: 22px;
+}
