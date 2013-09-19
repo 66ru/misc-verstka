@@ -16,6 +16,7 @@
 	@footerBgHeight: 300px;	
 	
 	@pagePaddingTop: 100px;
+	@pageMarginToContent: 20px;/*расстояние от меню до контента и от контента до футера*/
 	@contentBgColor: #CCC;/*фон области контента*/
 	@logoBg: #006199;/*фон под логотипом в шапке*/
 	@logoFootBg: #006199;/*фон под логотипом в футере*/
@@ -111,13 +112,20 @@
 	/*фон страницы*/
 	/*изменять верхний отступ меню*/
 	.l-header-wrap {
-		padding-top: @pagePaddingTop;
+		margin-top: @pagePaddingTop;
 		background-color: @pageBgColor;
 	}
 	/*фон области контента*/
 	#frame {
 		background-color: @contentBgColor;
 	}
+	
+	#v5-body-wrap {
+		padding-bottom: 140px !important;
+		margin-top: @pageMarginToContent;
+	}
+	
+	
 	/*фон под логотипом в шапке*/
 	.b-header-logo  {
 		background-color: @logoBg;
@@ -125,6 +133,18 @@
 	/*фон под логотипом в футере*/
 	.b-footer-logo {
 		background-color: @logoFootBg;
+	}
+	
+	
+	#v5-body {
+		background-color: @contentBgColor;
+		margin-top: 0px !important;
+		padding-top: 15px;
+		margin-bottom: 0px !important;
+	}
+	
+	#v5-body-pad {
+		padding: 0 10px;
 	}
 	
 	/*фон полоски шапки*/
