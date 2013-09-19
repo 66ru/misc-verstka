@@ -27,6 +27,10 @@
 	color: white;
 }
 
+.b-nbtn_theme_green:visited {
+	color: white;
+}
+
 .b-nbtn_theme_green:hover {
 	background: #92af00;
 	background: -moz-linear-gradient(top,  #92af00 0%, #638e00 80%, #5a8600 100%);

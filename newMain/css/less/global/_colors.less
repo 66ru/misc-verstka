@@ -4,7 +4,7 @@
 
 .b-text_color_green {
 	color: @green-text;
-
+	
 	a {
 		color: @black;
 		border-bottom: 1px solid #b2b2b2;
@@ -24,36 +24,36 @@ a {
 
 .b-link_border_yes {
 	border-bottom: 1px solid fadeout(@link-color, 70%);
-	text-decoration: none;
+	text-decoration: none;	
 	&:visited {
 		border-color: fadeout(@grey-text, 70%);
 	}
 	&:hover {
 		color: @orange-text;
 		border-color: fadeout(@orange-text, 70%);
-	}
+	}		
 }
 
 .b-link.b-link_border-style_dotted {
 	border-style: dotted;
-
+	
 	&:hover {
 		border-style: dotted;
 	}
 }
 
 
-/*СЃРёРЅРёР№*/
+/*синий*/
 .b-link_color_blue {
 	color: @link-color;
 
 	&.b-link_border_yes {
 		border-bottom: 1px solid fadeout(@link-color, 70%);
-		text-decoration: none;
-
-		/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ*/
+		text-decoration: none;		
+		
+		/*визит и ховер на цвет и бордер*/
 		&:visited {
-			border-bottom: 1px solid @grey-text;
+			border-bottom: 1px solid @grey-text;		
 		}
 		&:hover {
 			color: @orange-text;
@@ -62,19 +62,19 @@ a {
 		}
 
 		&.b-link_visited_yes {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @grey-text;
-				border-bottom: 1px solid @grey-text;
+				border-bottom: 1px solid @grey-text;		
 			}
 			&:hover {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
+			}		
 		}
 		&.b-link_visited_no {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @link-color;
 				border-bottom: 1px solid fadeout(@link-color, 70%);
@@ -83,24 +83,30 @@ a {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
-		}
+			}		
+		}		
 	}
 }
 
 
+.b-link_border_style_dashed {
+	border-style: dashed;
+}
 
-/*Р·РµР»РµРЅС‹Р№*/
+
+/*зеленый*/
 .b-link_color_green {
 	color: @green-text;
 
 	&.b-link_border_yes {
 		border-bottom: 1px solid fadeout(@green-text, 70%);
-		text-decoration: none;
+		text-decoration: none;		
+		
+		
 
-		/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ*/
+		/*визит и ховер на цвет и бордер*/
 		&:visited {
-			border-bottom: 1px solid @grey-text;
+			border-bottom: 1px solid @grey-text;		
 		}
 		&:hover {
 			color: @orange-text;
@@ -109,19 +115,19 @@ a {
 		}
 
 		&.b-link_visited_yes {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @grey-text;
-				border-bottom: 1px solid @grey-text;
+				border-bottom: 1px solid @grey-text;		
 			}
 			&:hover {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
+			}		
 		}
 		&.b-link_visited_no {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @green-text;
 				border-bottom: 1px solid fadeout(@green-text, 70%);
@@ -130,21 +136,24 @@ a {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
-		}
+			}		
+		}		
 	}
+	
+
+		
 }
 
-/*РѕСЂР°РЅР¶РµРІС‹Р№*/
+/*оранжевый*/
 .b-link_color_orange {
 	color: @orange-text;
-
+	
 	&.b-link_border_yes {
 		border-bottom: 1px solid fadeout(@orange-text, 70%);
-		text-decoration: none;
-		/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ*/
+		text-decoration: none;		
+		/*визит и ховер на цвет и бордер*/
 		&:visited {
-			border-bottom: 1px solid @grey-text;
+			border-bottom: 1px solid @grey-text;		
 		}
 		&:hover {
 			color: @orange-text;
@@ -152,19 +161,19 @@ a {
 			text-decoration: none;
 		}
 		&.b-link_visited_yes {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @grey-text;
-				border-bottom: 1px solid @grey-text;
+				border-bottom: 1px solid @grey-text;		
 			}
 			&:hover {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
+			}		
 		}
 		&.b-link_visited_no {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
@@ -173,22 +182,22 @@ a {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
-		}
+			}		
+		}		
 	}
 }
 
-/*С‡РµСЂРЅС‹Р№*/
+/*черный*/
 .b-link_color_black {
-	color: @black;
+	color: @black;	
 
 	&.b-link_border_yes {
 		border-bottom: 1px solid fadeout(@black, 70%);
-		text-decoration: none;
-
-		/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ*/
+		text-decoration: none;		
+		
+		/*визит и ховер на цвет и бордер*/
 		&:visited {
-			border-bottom: 1px solid @grey-text;
+			border-bottom: 1px solid @grey-text;		
 		}
 		&:hover {
 			color: @orange-text;
@@ -197,43 +206,43 @@ a {
 		}
 
 		&.b-link_visited_yes {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @grey-text;
-				border-bottom: 1px solid @grey-text;
+				border-bottom: 1px solid @grey-text;		
 			}
 			&:hover {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
+			}		
 		}
 		&.b-link_visited_no {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
-				color: @black;
+				color: @black;	
 				border-bottom: 1px solid fadeout(@black, 70%);
 			}
 			&:hover {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
-		}
+			}		
+		}		
 	}
 }
 
-/*СЃРµСЂС‹Р№*/
+/*серый*/
 .b-link_color_grey {
-	color: @grey-text;
+	color: @grey-text;	
 
 	&.b-link_border_yes {
 		border-bottom: 1px solid fadeout(@grey-text, 70%);
-		text-decoration: none;
-
-		/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ*/
+		text-decoration: none;		
+		
+		/*визит и ховер на цвет и бордер*/
 		&:visited {
-			border-bottom: 1px solid @grey-text;
+			border-bottom: 1px solid @grey-text;		
 		}
 		&:hover {
 			color: @orange-text;
@@ -242,29 +251,29 @@ a {
 		}
 
 		&.b-link_visited_yes {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @grey-text;
-				border-bottom: 1px solid @grey-text;
+				border-bottom: 1px solid @grey-text;		
 			}
 			&:hover {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
+			}		
 		}
 		&.b-link_visited_no {
-			/*РІРёР·РёС‚ Рё С…РѕРІРµСЂ РЅР° С†РІРµС‚ Рё Р±РѕСЂРґРµСЂ Рё РїРѕСЃРµС‰РµРЅРЅРѕСЃС‚СЊ*/
+			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @grey-text;
-				border-bottom: 1px solid @grey-text;
+				border-bottom: 1px solid @grey-text;		
 			}
 			&:hover {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
-			}
-		}
+			}		
+		}		
 	}
 }
 
@@ -282,7 +291,7 @@ a {
 	}
 	&:hover {
 		color: @orange-text;
-	}
+	}	
 }
 
 

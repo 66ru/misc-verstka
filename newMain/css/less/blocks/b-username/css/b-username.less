@@ -1,0 +1,39 @@
+.b-username {
+	position:relative;
+	margin-left: 15px;
+}
+
+a.b-username {
+	.b-link_color_blue;
+	.b-link_border_yes;
+}
+
+.username_sex_icon {
+	content:'';
+	display: block;
+	width: 10px;
+	height: 10px;
+	left: -12px;
+	top: 50%;
+	margin-top: -4px;
+	position:absolute;
+}
+
+.b-username_sex_male:before {
+	background: url(./less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
+	.username_sex_icon;
+}
+
+.b-username_sex_female:before {
+	background: url(./less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
+	.username_sex_icon;
+}
+
+.b-username_sex_male.b-username_status_online:before {
+	background: url(./less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
+}
+.b-username_sex_female.b-username_status_online:before {
+	background: url(./less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
+}
+
+
