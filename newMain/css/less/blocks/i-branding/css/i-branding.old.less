@@ -17,6 +17,7 @@
 	
 	
 	@pagePaddingTop: 100px;
+	@pageMarginToContent: 20px;/*расстояние от меню до контента и от контента до футера*/
 	@contentBgColor: #CCC;/*фон области контента*/
 	@logoBg: #006199;/*фон под логотипом в шапке*/
 	@logoFootBg: #006199;/*фон под логотипом в футере*/
@@ -57,9 +58,20 @@
 	@footerTextLink: #FFFFFF;		
 	@footerTextLinkHover: #FFFFFF;		
 	
+	
+	
+body.i-branding {
+	#body {
+		background-color: @contentBgColor;
+		margin-top: @pageMarginToContent;
+		padding-top: 20px;
+	}	
+}
+
 
 .i-branding {
 	
+
 	.l-branding-top-repeat {
 		position: absolute; 
 		width: 100%; 
@@ -98,6 +110,12 @@
 		background: @footerBgSrc no-repeat center 0;	
 	}
 	
+	.l-branding-top .l-width {
+		position:relative;
+	}
+	
+
+	
 	.l-branding-footer,
 	.l-branding-top,
 	.i-branding .l-branding-footer,
@@ -113,7 +131,7 @@
 	/*фон страницы*/
 	/*изменять верхний отступ меню*/
 	.l-header-wrap {
-		padding-top: @pagePaddingTop;
+		margin-top: @pagePaddingTop;
 		background-color: @pageBgColor;
 	}
 	/*фон области контента*/

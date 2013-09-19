@@ -16,7 +16,7 @@
 	@footerBgHeight: 300px;	
 	
 	@pagePaddingTop: 100px;
-	@pageMarginToContent: 0px;/*расстояние от меню до контента и от контента до футера*/
+	@pageMarginToContent: 20px;/*расстояние от меню до контента и от контента до футера*/
 	@contentBgColor: #FFFFFF;/*фон области контента*/
 	@logoBg: #5F7E13;/*фон под логотипом в шапке*/
 	@logoFootBg: #5F7E13;/*фон под логотипом в футере*/
@@ -147,7 +147,7 @@
 		width: 100%; 
 		height: @footerRepeatHeight; 
 		left: 0px;
-		bottom: -140px;
+		bottom: 0px;
 		display: block; 
 		background: @footerRepeatSrc repeat-x 0 0;		
 	}
@@ -156,12 +156,17 @@
 		width: 100%; 
 		height: @footerBgHeight;
 		left: 0; 
-		bottom: -140px;
+		bottom: 0px;
 		display: block; 
 		background: @footerBgSrc no-repeat center 0;	
 	}
 	
-	.l-branding-footer,
+	.l-branding-footer {
+		position:absolute;
+		bottom: 0px;
+		width: 100%;
+	}
+	
 	.l-branding-footer .l-width,
 	.l-branding-top,
 	.l-branding-top .l-width,
@@ -181,10 +186,15 @@
 	/*фон страницы*/
 	/*изменять верхний отступ меню*/
 	.l-body {
-		padding-top: @pagePaddingTop;
+		/*padding-top: @pagePaddingTop;*/
 		background-color: @pageBgColor;
 		position:relative;
 	}
+	
+	.l-branding-top {
+		margin-top: @pagePaddingTop;
+	}
+	
 	/*отступ от меню до контента*/
 	.l-body-wrap {
 		margin-top: @pageMarginToContent;
@@ -193,7 +203,21 @@
 	/*фон области контента*/
 	.l-body-wrap .l-width {
 		background-color: @contentBgColor;
+		position:relative;
 	}
+	
+	.l-body-wrap .l-width:after {
+		background-color: @contentBgColor;
+		content: "";
+		display: block;
+		height: 10000px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		z-index: -1;		
+		
+	}
+	
 	/*фон под логотипом в шапке*/
 	.b-header-logo  {
 		background-color: @logoBg;
