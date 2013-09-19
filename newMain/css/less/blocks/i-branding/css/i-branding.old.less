@@ -96,7 +96,7 @@ body.i-branding {
 		width: 100%; 
 		height: @footerRepeatHeight; 
 		left: 0px;
-		bottom: -140px; 
+		bottom: 0px; 
 		display: block; 
 		background: @footerRepeatSrc repeat-x 0 0;		
 	}
@@ -105,7 +105,7 @@ body.i-branding {
 		width: 100%; 
 		height: @footerBgHeight;
 		left: 0; 
-		bottom: -140px; 
+		bottom: 0px; 
 		display: block; 
 		background: @footerBgSrc no-repeat center 0;	
 	}
@@ -114,8 +114,11 @@ body.i-branding {
 		position:relative;
 	}
 	
+	.l-branding-footer {
+		top: 140px;
+		z-index: -1;	
+	}
 
-	
 	.l-branding-footer,
 	.l-branding-top,
 	.i-branding .l-branding-footer,
@@ -249,6 +252,14 @@ body.i-branding {
 	}
 	.l-footer {
 		overflow: visible;
+	}
+	/*сдвиг до футера*/
+	.l-push {
+		height: 140px;
+	}		
+	.page-grid-wrap {
+		margin-bottom: 0;
+		padding-bottom: 20px;
 	}
 }	
 	
