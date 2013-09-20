@@ -1,27 +1,26 @@
 	
 	/*конфиг стилей для брендирования*/
 	
-	@pageBgColor: #FFFFFF;
+	@pageBgColor: #000;
 	
-	@pageRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@pageRepeatSrc: url(http://lpix.ru/images/logo.png);
 	@pageRepeatHeight: 300px;
 	
-	@pageBgSrc: url(http://s008.radikal.ru/i306/1102/dc/15aea92c4eba.jpg);
+	@pageBgSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
 	@pageBgHeight: 1500px;
 	
-	@footerRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@footerRepeatSrc:url(http://lpix.ru/images/logo.png);
 	@footerRepeatHeight: 300px;
 	
-	@footerBgSrc: url(http://i2.guns.ru/forums/icons/forum_pictures/002015/2015237.jpg);
+	@footerBgSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
 	@footerBgHeight: 300px;	
-	
 	
 	@pagePaddingTop: 100px;
 	@pageMarginToContent: 20px;/*расстояние от меню до контента и от контента до футера*/
 	@contentBgColor: #CCC;/*фон области контента*/
 	@logoBg: #006199;/*фон под логотипом в шапке*/
 	@logoFootBg: #006199;/*фон под логотипом в футере*/
-	@headerBg: rgba(35, 107, 149, 1);/*фон полоски шапки*/
+	@headerBg: rgba(35, 107, 149, 0.8);/*фон полоски шапки*/
 	@headerBg_IE: rgb(35, 107, 149);
 	@menuCurBg: rgba(0, 97, 153, 1);/*фон выделенного меню 1 уровня*/
 	@menuCurBg_IE: rgb(0, 97, 153);
@@ -46,7 +45,7 @@
 	@authTabBg: rgba(160, 188, 96, 1);		
 	
 	@footerBg_IE: rgb(35, 107, 149);
-	@footerBg: rgba(35, 107, 149, 1);
+	@footerBg: rgba(35, 107, 149, 0.8);
 	
 	@footerSeoSeparatorColor_IE: rgb(156,185,88);
 	@footerSeoSeparatorColor: rgba(156,185,88, 1);		
@@ -71,7 +70,10 @@ body.i-branding {
 
 .i-branding {
 	
-
+	.l-branding-top {
+		padding-top: @pagePaddingTop;
+	}	
+	
 	.l-branding-top-repeat {
 		position: absolute; 
 		width: 100%; 
@@ -98,7 +100,7 @@ body.i-branding {
 		left: 0px;
 		bottom: 0px; 
 		display: block; 
-		background: @footerRepeatSrc repeat-x 0 0;		
+		background: @footerRepeatSrc repeat-x 0 bottom;		
 	}
 	.l-branding-footer-bg {
 		position: absolute; 
@@ -131,15 +133,9 @@ body.i-branding {
 	.l-header-wrap .l-width .g48 {
 		z-index: 1000;
 	}
-	/*фон страницы*/
-	/*изменять верхний отступ меню*/
-	.l-header-wrap {
-		margin-top: @pagePaddingTop;
-		background-color: @pageBgColor;
-	}
-	/*фон области контента*/
 	#frame {
-		background-color: @contentBgColor;
+		background-color: @pageBgColor;
+		
 	}
 	/*фон под логотипом в шапке*/
 	.b-header-logo  {
