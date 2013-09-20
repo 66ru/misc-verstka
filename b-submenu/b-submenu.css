@@ -1,0 +1,155 @@
+.b-submenu {
+	display: table;
+	overflow: hidden;
+	background: #f2ffd3;
+	-webkit-box-shadow: 0 0 16px #999;
+	-moz-box-shadow: 0 0 16px #999;
+	box-shadow: 0 0 16px #999;
+	color: #000;
+	table-layout: fixed;
+	line-height: 1;
+}
+
+.b-submenu_paneless {
+	padding: 20px 30px 16px;
+}
+
+.b-submenu__main-pane {
+	position: relative;
+	display: table-cell;
+	padding: 20px 30px 16px;
+	-webkit-box-shadow: 0 0 8px #999;
+	-moz-box-shadow: 0 0 8px #999;
+	box-shadow: 0 0 8px #999;
+	vertical-align: top;
+}
+
+.b-submenu__extra-pane {
+	display: table-cell;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px 30px 16px;
+	max-width: 300px;
+	background: #e1f2bb;
+	vertical-align: top;
+}
+
+.b-submenu__left-column {
+	position: relative;
+	float: left;
+	padding-right: 20px;
+}
+
+.b-submenu__left-column:after {
+	position: absolute;
+	top: -2%;
+	right: 0;
+	z-index: 5;
+	width: 1px;
+	height: 104%;
+	background: #e1eec0;
+	content: '';
+}
+
+.b-submenu__right-column {
+	float: right;
+	padding-left: 20px;
+}
+
+.b-submenu__elem {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.b-submenu__elem_w-indent {
+	margin-top: 22px;
+}
+
+.b-submenu__elem_small {
+	font-size: 14px;
+}
+
+.b-submenu__link {
+	border-bottom: 1px solid #c1d09f;
+	color: #3f530c;
+	text-decoration: none;
+}
+
+.b-submenu__link:hover {
+	border-bottom: 1px solid #ffcbb2;
+}
+
+.b-submenu__count {
+	margin-left: 8px;
+	color: #808080;
+	font-size: 11px;
+}
+
+.b-submenu__button {
+	display: inline-block;
+	margin-left: -12px;
+	padding-right: 12px;
+	padding-left: 12px;
+	height: 30px;
+	background: #ff8f00;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.b-submenu__button:hover {
+	color: #fff;
+}
+
+.b-submenu__extra-heading {
+	margin-bottom: 16px;
+	font-size: 12px;
+}
+
+.b-submenu__notice {
+	max-width: 190px;
+	color: #3f530c;
+	font-style: italic;
+	font-size: 11px;
+	line-height: 1.3;
+}
+
+
+
+
+.b-ads {
+	line-height: 1.5;
+}
+
+.b-ads__elem {
+	margin-bottom: 20px;
+}
+
+.b-ads__desc {
+	margin-left: 50px;
+	font-size: 12px;
+}
+
+.b-ads__img-wrap {
+	float: left;
+	clear: both;
+	overflow: hidden;
+	width: 40px;
+	height: 30px;
+	text-align: center;
+}
+
+.b-ads__img {
+	max-width: 40px;
+	max-height: 30px;
+}
+
+.b-ads__price {
+	margin-top: 2px;
+	margin-left: 50px;
+	font-weight: bold;
+	font-size: 12px;
+}

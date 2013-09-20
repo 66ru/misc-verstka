@@ -1,0 +1,46 @@
+.b-header-menu {
+	position: relative;
+	height: 45px;
+	background: #85a830;
+}
+
+.b-header-menu__elem {
+	float: left;
+	height: 45px;
+	line-height: 45px;
+}
+
+.b-header-menu__link {
+	display: block;
+	padding: 0 10px;
+	background: #85a830;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.b-header-menu__sub {
+	position: absolute;
+	top: -300px;
+	z-index: -1;
+	margin-left: -20px;
+}
+
+.b-header-menu__elem:hover {
+	margin-right: -10px;
+	padding-right: 10px;
+}
+
+.b-header-menu__elem:hover .b-header-menu__link {
+	background: #e1f2bb;
+	color: #3f530c;
+}
+
+.b-header-menu__elem:hover .b-header-menu__sub {
+	top: 45px;
+	-webkit-transition: top .2s ease-out;
+	-moz-transition: top .2s ease-out;
+	-ms-transition: top .2s ease-out;
+	-o-transition: top .2s ease-out;
+	transition: top .2s ease-out;
+}

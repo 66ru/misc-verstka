@@ -1,12 +1,20 @@
 html {
 	font-size: 13px;
 	-webkit-font-smoothing:antialiased;
-	height:100%	
+	height:100%
 }
 
 body {
 	min-width: 950px;
 }
+
+#body-wrap {
+	position:relative;
+	z-index: 1;
+	padding-bottom: 0px;
+}
+
+
 
 .l-body {
 	margin-bottom:-140px;
@@ -25,6 +33,7 @@ body {
 	height: 140px;
 	overflow: hidden;
 	font-family: Arial, Helvetica, Sans-Serif;
+	z-index: 4;
 }
 
 .l-footer_v5 {
@@ -37,10 +46,12 @@ body {
 
 
 
-/*для внутренних страниц сайта*/
+/*РґР»СЏ РІРЅСѓС‚СЂРµРЅРЅРёС… СЃС‚СЂР°РЅРёС† СЃР°Р№С‚Р°*/
 
 #frame {
 	overflow: hidden;
+	margin-bottom: -140px;
+	height: auto !important;
 }
 
 #frame .l-footer {
@@ -58,14 +69,16 @@ body {
 	background: #6a920f;
 	height: 45px;
 	position:relative;
+	z-index: 4;
 }
 
 .l-body-wrap {
-	
+	z-index: 1;
+
 	.l-width {
 		padding-bottom: 27px;
 		padding-top: 16px;
-	}	
+	}
 }
 
 .l-width {
@@ -85,18 +98,18 @@ body {
 
 
 .l-width-vertical-separator {
-	background: #cccccc; 
-	width: 1px; 
-	height: 100%; 
-	position: absolute; 
-	top: 0; 
-	display: block; 
+	background: #cccccc;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: block;
 	right: -2%;
 }
 
 .l-width-col-2-pad {
-	position: relative; 
-	padding-right: 2%; 
+	position: relative;
+	padding-right: 2%;
 	overflow: hidden;
 }
 
@@ -109,7 +122,9 @@ body {
 	margin-top: -16px;
 }
 
-
+.page-col-1-span-15-pad {
+	padding-right: 5px;
+}
 
 
 
