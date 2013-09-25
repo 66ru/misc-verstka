@@ -1,0 +1,52 @@
+html,body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%
+}
+body{
+	background:#f9f9f9 url("/images/bg.png") repeat center 0;
+	font-family: Arial,helvetica,Sans-Serif;
+	font-size:14px;
+	line-height:22px;
+	color:#444;
+	-webkit-font-smoothing:antialiased
+}
+.page-center {
+	height: 100%;
+}
+.l-body{
+    height: auto !important;
+	//height: 100%;
+    margin-bottom: -140px;
+    min-height: 100%;
+    position: relative;
+}
+.l-header{
+	position:relative;
+	background:red;
+	height:45px;
+}
+.l-content {
+	padding-top: 20px;
+}
+.l-width{
+	position:relative;
+	margin:0 auto;
+	min-width: 960px;
+	max-width: 1280px;
+	width:expression(document.body.clientWidth > 1280? "1280px": "auto" )\9; /* ie8 */
+	outline: 1px dashed #000;
+}
+.l-wrap {
+	padding: 0 1%;
+	text-align: left;
+}
+.l-push{
+	height:200px;
+}
+.l-footer{
+	position:relative;
+	height:140px;
+	background: green;
+}
