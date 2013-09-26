@@ -3,38 +3,39 @@
 	
 	@pageBgColor: #FFFFFF;
 	
-	@pageRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@pageRepeatSrc: url(http://lpix.ru/images/logo.png);
 	@pageRepeatHeight: 300px;
 	
-	@pageBgSrc: url(http://s008.radikal.ru/i306/1102/dc/15aea92c4eba.jpg);
+	@pageBgSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
 	@pageBgHeight: 1500px;
 	
-	@footerRepeatSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
+	@footerRepeatSrc:url(http://lpix.ru/images/logo.png);
 	@footerRepeatHeight: 300px;
 	
-	@footerBgSrc: url(http://i2.guns.ru/forums/icons/forum_pictures/002015/2015237.jpg);
+	@footerBgSrc: url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png);
 	@footerBgHeight: 300px;	
 	
-	
-	@pagePaddingTop: 100px;
-	@pageMarginToContent: 20px;/*расстояние от меню до контента и от контента до футера*/
-	@contentBgColor: #CCC;/*фон области контента*/
-	@logoBg: #006199;/*фон под логотипом в шапке*/
-	@logoFootBg: #006199;/*фон под логотипом в футере*/
-	@headerBg: rgba(35, 107, 149, 1);/*фон полоски шапки*/
-	@headerBg_IE: rgb(35, 107, 149);
-	@menuCurBg: rgba(0, 97, 153, 1);/*фон выделенного меню 1 уровня*/
-	@menuCurBg_IE: rgb(0, 97, 153);
-	@menuCurColor: #FFFFFF; /*фон выделенного меню 1 уровня*/
+	@pagePaddingTop: 0px;
+	@pageMarginToContent: 0px;/*расстояние от меню до контента и от контента до футера*/
+	@contentBgColor: #FFFFFF;/*фон области контента*/
+	@logoBg: #5F7E13;/*фон под логотипом в шапке*/
+	@logoFootBg: #5F7E13;/*фон под логотипом в футере*/
+	@headerBg: rgba(106, 146, 15, 1);/*фон полоски шапки*/
+	@headerBg_IE: rgb(106, 146, 15);
+	@menuCurBg: rgba(225, 242, 186, 1);/*фон выделенного меню 1 уровня*/
+	@menuCurBg_IE: rgb(225, 242, 186);
+	@menuCurColor: #3f530c; /*фон выделенного меню 1 уровня*/
 	@headerLinkColor: #FFFFFF;/*цвет пунктов меню 1 уровня, логинилки, и ссылок почты*/
-	@headerSeparatorBg: rgba(255,255,255,1); /*фон сепаратора меню 1 уровня*/
+	@headerSeparatorBg: rgba(255,255,255,0.5); /*фон сепаратора меню 1 уровня*/
 	@headerSeparatorBg_IE: rgb(255, 255, 255);	
-	@menuDropDownCnr: "";
-	@menuDropDownCnr-: "";
+	@menuDropDownCnr: "";/*url("../img/b-header-arr-dwn.png")*//*уголки дропдауна меню 1 уровня*/
+	@menuDropDownCnr-: "";/*url("../img/b-header-arr-dwn-.png")*//*уголки дропдауна меню 1 уровня - ховер*/
+	
+	
 	@hidemenuItemColor: #3f530c;/*цвет и фон элемента скрытого меню */
 	@hidemenuItemColorHover: #3f530c;
-	@submenuBg_IE: rgb(255, 255, 211);
-	@submenuBg: rgba(255, 255, 211, 1);
+	@submenuBg_IE: rgb(242, 255, 211);
+	@submenuBg: rgba(242, 255, 211, 1);
 	@submenuColor: #3f530c;
 	@submenuBorderColor: #c1d09f;	
 	@submenuColorHover: #ff5400;
@@ -44,10 +45,8 @@
 
 	@authTabBg_IE: rgb(160, 188, 96);
 	@authTabBg: rgba(160, 188, 96, 1);		
-	
-	@footerBg_IE: rgb(35, 107, 149);
-	@footerBg: rgba(35, 107, 149, 1);
-	
+	@footerBg_IE: rgb(106, 146, 15);;
+	@footerBg: rgba(106, 146, 15, 1);;				
 	@footerSeoSeparatorColor_IE: rgb(156,185,88);
 	@footerSeoSeparatorColor: rgba(156,185,88, 1);		
 	
@@ -71,7 +70,10 @@ body.i-branding {
 
 .i-branding {
 	
-
+	.l-branding-top {
+		padding-top: @pagePaddingTop;
+	}	
+	
 	.l-branding-top-repeat {
 		position: absolute; 
 		width: 100%; 
@@ -98,7 +100,7 @@ body.i-branding {
 		left: 0px;
 		bottom: 0px; 
 		display: block; 
-		background: @footerRepeatSrc repeat-x 0 0;		
+		background: @footerRepeatSrc repeat-x 0 bottom;		
 	}
 	.l-branding-footer-bg {
 		position: absolute; 
@@ -131,16 +133,22 @@ body.i-branding {
 	.l-header-wrap .l-width .g48 {
 		z-index: 1000;
 	}
-	/*фон страницы*/
-	/*изменять верхний отступ меню*/
-	.l-header-wrap {
-		margin-top: @pagePaddingTop;
-		background-color: @pageBgColor;
-	}
-	/*фон области контента*/
 	#frame {
-		background-color: @contentBgColor;
+		background-color: @pageBgColor;
+		overflow: hidden;
+		margin-bottom: -140px;
+		height: auto !important;		
 	}
+	
+	#frame .l-footer {
+		background: #6a920f;
+		height: 140px;
+		position:absolute;
+		bottom: 0px;
+		top: auto;
+		width: 100%;
+	}		
+	
 	/*фон под логотипом в шапке*/
 	.b-header-logo  {
 		background-color: @logoBg;
@@ -261,6 +269,11 @@ body.i-branding {
 		margin-bottom: 0;
 		padding-bottom: 20px;
 	}
+	
+
+
+
+	
 }	
 	
 	
