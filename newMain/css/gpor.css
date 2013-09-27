@@ -1307,6 +1307,7 @@ a.b-submenu-item__day-theme__link:hover {
 
 }
 .b-header-menu {
+  width: 100%;
   margin: 0px;
   padding: 0px;
   margin-right: -100%;
@@ -1739,16 +1740,4 @@ a.b-submenu-ads__link {
 .b-footer-seo {
   border-bottom: 1px solid #9cb958;
 }
-/*@import "header.less";
 
-
-
-@import "less/blocks/b-teaser-orange-text/css/b-teaser-orange-text.less";
-@import "less/blocks/b-news-item/css/b-news-item.less";
-@import "less/blocks/b-btn/css/b-btn.css";
-
-
-@import "mainpage.less";
-
-
-*/

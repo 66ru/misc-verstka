@@ -1308,6 +1308,7 @@ a.b-submenu-item__day-theme__link:hover {
 }
 .b-header-menu {
   margin: 0px;
+  width: 100%;
   padding: 0px;
   margin-right: -100%;
 }
