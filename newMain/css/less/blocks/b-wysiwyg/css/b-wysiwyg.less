@@ -1,14 +1,15 @@
-.b-wysiwyg p {}
-.b-wysiwyg ul {}
-
 .b-wysiwyg p,
 .b-wysiwyg li {
 	font-size: 14px;
 	line-height: 21px;
-	margin-bottom: 8px;
+	margin-bottom: 0px;
 }
 
-.b-wysiwyg li {
+.b-wysiwyg ul {
+	margin-bottom: 10px;
+}
+
+.b-wysiwyg ul li {
 	list-style: none;
 	position:relative;
 	//z-index: expression(runtimeStyle.zIndex = 1, this.innerHTML = "&ndash;" + this.innerHTML) 
@@ -16,15 +17,25 @@
 
 .b-wysiwyg li:before {
 	position:relative;
-	margin-right: 10px;
-	content: "\2014";
+	margin-right: 4px;
+	content: "\2014"; 
 	left: 0px;
 	top: 0px;
 	display: inline-block;
 }
 	
-.b-wysiwyg h1 {}
-.b-wysiwyg h2 {}
-.b-wysiwyg h3 {}
-.b-wysiwyg h4 {}
-.b-wysiwyg h5 {}
+.b-wysiwyg h3 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 21px;
+	margin: 10px 0 0;
+}
+
+.b-wysiwyg b {
+	font-weight: bold;
+}
+
+.b-wysiwyg i {
+	font-style: italic;
+}
+
