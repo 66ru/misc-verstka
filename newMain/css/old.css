@@ -1601,3 +1601,12 @@ a.b-submenu-ads__link {
 .b-footer-seo {
   border-bottom: 1px solid #9cb958;
 }
+
+
+.v5-body-wrap__pad {
+	moz-box-sizing: border-box;
+	box-sizig: border-box;
+	padding: 0 20px;
+	margin: 0 -20px;
+	background: #fff;
+}
