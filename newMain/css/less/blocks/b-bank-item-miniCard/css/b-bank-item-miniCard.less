@@ -16,7 +16,7 @@
     bottom: 0;
     left: 40px;
     right: 40px;
-    top: 50%;	
+    top: 60%;	
 	box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.6);
     position: absolute;
     z-index: -2;
@@ -122,6 +122,60 @@
 	font-size: 18px;
 	text-decoration: none;
 }
+
+/**/
+
+.b-bank-item-miniCard_layout_1 {
+	padding-bottom: 15px;
+	
+	.b-bank-item-miniCard-table__cell {
+		vertical-align: middle;
+		
+	}
+
+	.b-bank-item-miniCard-table__cell_logo {
+		width: 220px;
+		vertical-align: middle;
+		padding-left: 20px;
+		
+		.b-bank-item-miniCard__logo {
+			width: auto;
+		}
+	}
+	
+	.b-bank-item-miniCard__title, .b-bank-item-miniCard__phones {
+		display: inline-block;
+		font-size: 14px;
+		margin: 0px;
+	}
+	
+}
+
+.b-bank-item-miniCard_layout_1:after {
+	position:absolute;
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	left: 220px;
+	bottom: -5px;
+	z-index: 100;
+	background: #fff;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);	
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

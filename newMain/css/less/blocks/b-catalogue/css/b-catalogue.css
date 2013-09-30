@@ -5,13 +5,14 @@
 	table-layout: fixed;
 }
 
-.b-catalogue_top-border_yes {
-	border-top: 2px solid #ebede0;
-}
-
 .b-catalogue__elem {
 	display: table-row;
 	border-bottom: 2px solid #ebede0;
+}
+
+.b-catalogue_top-border_yes .b-catalogue__elem {
+	border-top: 2px solid #ebede0;
+	border-bottom: none;
 }
 
 .b-catalogue__cell {
