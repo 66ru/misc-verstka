@@ -1,4 +1,6 @@
 (function() {
+	var $ = jQuery;
+
 	$(document).ready(function() {
 		checkAndFix();
 	});
