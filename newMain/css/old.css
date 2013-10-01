@@ -909,6 +909,11 @@ body {
   position: relative;
   z-index: 4;
 }
+
+#v5-body {
+  max-width: 1285px;
+}
+
 .l-body-wrap {
   z-index: 1;
 }
@@ -920,6 +925,8 @@ body {
   max-width: 1324px;
   min-width: 950px;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 1%;
   /*width: 1284px;*/
