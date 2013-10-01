@@ -1,0 +1,121 @@
+/**
+ * @package portal
+ */
+
+/**
+ * Сброс стандартных значений браузеров
+ * Основан на Meyer's reset CSS
+ *
+ * @link http://meyerweb.com/eric/tools/css/reset/
+ * @subpackage reset
+ */
+
+/**
+ * Как 100% неиспользуемые из списка убраны:
+ * abbr, acronym, del, dfn, font, ins, kbd, samp,
+ * tt, var, center
+ */
+ 
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, q, pre,
+a, address, big, cite, code, em, img, s, small,
+strike, strong, sub, sup, u, i, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent none repeat scroll left top;
+	border: 0;
+	font-size: 1em;
+	font-style: normal;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	/*text-align: left; - @from Imelstorn: объясните нафига? таблицы будут плакать! */
+	/*text-decoration: none; - @from Imelstorn: и это нафига? ссылки будут плакать! */ 
+	vertical-align: baseline;
+}
+
+/**
+ * @note Нужно сделать overflow: visible для кнопок. Для простых текстовых
+ *       полей это нельзя делать ни в коем случае! Они начинают разъезжаться
+ *       при переполнении
+ * @see portal.frameIe
+ */
+input, textarea, button, select {
+	font: normal normal 1em 'Arial';
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/**
+ * @bugfix Дополнительный паддинг внутри элементов
+ * @see http://dimox.name/input-submit-vertical-align-in-firefox/
+ * @affected FF
+ * @css-for FF
+ */
+input::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+/**
+ * Основной размер шрифта нужно задавать в %, а не EM, иначе старые IE
+ * при изменении размера шрифта будут сходить с ума
+ */
+body {
+    background: #FFFFFF;
+	color: #000000;
+	font: normal normal 81.3%/1 'Arial';
+	height: 100%;
+}
+
+/**
+ * @bugfix Дрожжание псевдо-fixed блоков
+ * @link http://www.artlebedev.ru/tools/technogrette/html/fixed_in_msie/
+ * @affected IE6
+ * @css-for IE6
+ */
+* html body {
+	background-image: url('dummy');
+	background-attachment: fixed;
+}
+
+ol, ul {
+	list-style: none outside none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+
+a:focus {
+	outline: 1px dotted #000000;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+sup {
+	position: relative;
+	top: -0.4em;
+}
+
+sub {
+	position: relative;
+	bottom: -0.4em;
+}
+
+
