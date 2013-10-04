@@ -26,7 +26,7 @@ time, mark, audio, video {
 	border: 0;
 	vertical-align: baseline;
 	font: inherit;
-	font-size: 13px;
+	font-size: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -63,7 +63,7 @@ a {
 	color: #007899;
 }
 
-a:visited { }
+a:visited {}
 
 a:hover {
 	color: #ff3000;
