@@ -1,5 +1,20 @@
 .b-layout {
 	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.b-layout_height_global {
+	min-height: 100%;
+}
+
+.b-layout_push-top_45 {
+	padding-top: 45px;
+}
+
+.b-layout_push-bottom_140 {
+	padding-bottom: 140px;
 }
 
 .b-layout__base {

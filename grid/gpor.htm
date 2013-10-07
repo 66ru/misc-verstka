@@ -1,87 +1,109 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-	<head>
-		<title>title</title>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width" />
-		
-		<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
-
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/layers.css" />
-		<link rel="stylesheet" href="css/b-layout/css/b-layout.css" />
-		<style>
-			html {
-				height: 100%;
-			}
-		
-			.b-layout__grid-100 {
-				background: yellow;
-				color: #fff;
-			}
-		</style>		
-	</head>
-	<body class="b-page">
-
-		<div class="b-page__wrap">
-			<div class="b-layout b-header">
-				<div class="b-layout__base b-layout__row" style="border: 1px dashed red;">
-					<div class="b-layout__grid-100 b-layout__row">
-						<div class="b-layout__module b-layout__module_span_40 b-layout__module_col_1" style="background: black;">5435345345</div>
-						<div class="b-layout__module b-layout__module_col_45 b-layout__module_span_40" style="background: black;">345345345345</div>
-					</div>
-				</div>
-			</div>
-			<div class="b-layout b-content">
-				<div class="b-layout__base b-layout__row" style="border: 1px dashed red;">
-					<div class="b-layout__grid-100 b-layout__row">
-						<div class="b-layout__module b-layout__module_span_40 b-layout__module_col_1" style="background: orangered;">5435345345</div>
-						<div class="b-layout__module b-layout__module_col_45 b-layout__module_span_40" style="background: orangered;">345345345345</div>
-					</div>
-				</div>
-			</div>
-			<div class="b-footer b-footer__push"></div>
-		</div>
-		
-		<div class="b-layout b-footer">
-			<div class="b-layout__base b-layout__row" style="border: 1px dashed red;">
-				<div class="b-layout__grid-100 b-layout__row">
-					<div class="b-layout__module b-layout__module_span_40 b-layout__module_col_1" style="background: black; color: white;">5435345345</div>
-					<div class="b-layout__module b-layout__module_col_45 b-layout__module_span_40" style="background: black; color: white;">345345345345</div>
-				</div>
-			</div>
-		</div>
+<head>
+	<title>title</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
 
 
+	<link rel="stylesheet" type="text/css" href="../reset.css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../b-layout/css/b-layout.css">
+	<style type="text/css">
+		body * {
+			color: #fff;
+			font-family: Helvetica, Arial, sans-serif;
+		}
 
-		<!--div class="b-layout b-header">
-			<div class="b-layout__base b-layout__row" style="border: 1px dashed red;">
-				<div class="b-layout__grid-100 b-layout__row">
-					<div class="b-layout__module b-layout__module_span_40 b-layout__module_col_1" style="background: orangered;">5435345345</div>
-					<div class="b-layout__module b-layout__module_col_45 b-layout__module_span_40" style="background: orangered;">345345345345</div>
-				</div>
+		.b-layout {
+			border: 1px dashed #444;
+		}
+
+		.b-layout__module:nth-child(2n) {
+			background: #ecc;
+		}
+
+		.b-layout__module:nth-child(2n+1) {
+			background: #cec;
+		}
+
+		.b-header {
+			margin-bottom: -45px;
+			height: 45px;
+			background: #eee;
+		}
+
+		.b-header * {
+			height: 100%;
+		}
+
+		.b-footer {
+			height: 140px;
+			background: #c9c;
+			margin-top: -140px;
+		}
+
+		.b-footer__push {
+			margin-top: 0;
+			background: #99c;
+		}
+	</style>
+</head>
+<body>
+	<div class="b-layout b-header">
+		<div class="b-layout__base b-header__inner">
+			<div class="b-layout__grid-100">
+				<div class="b-layout__module b-layout__module_col_1 b-layout__module_span_25">col1</div>
+				<div class="b-layout__module b-layout__module_col_26 b-layout__module_span_50">col2</div>
+				<div class="b-layout__module b-layout__module_col_76 b-layout__module_span_25">col3</div>
 			</div>
 		</div>
-		
-		<div class="b-layout b-content">
-			<div class="b-layout__base b-layout__row" style="border: 1px dashed red;">
-				<div class="b-layout__grid-100 b-layout__row">
-					<div class="b-layout__module b-layout__module_span_40 b-layout__module_col_1" style="background: orangered;">5435345345</div>
-					<div class="b-layout__module b-layout__module_col_45 b-layout__module_span_40" style="background: orangered;">345345345345</div>
-				</div>
-			</div>
-		</div>		
-		
-		<div class="b-layout b-footer">
-			<div class="b-layout__base b-layout__row" style="border: 1px dashed red;">
-				<div class="b-layout__grid-100 b-layout__row">
-					<div class="b-layout__module b-layout__module_span_40 b-layout__module_col_1" style="background: black; color: white;">5435345345</div>
-					<div class="b-layout__module b-layout__module_col_45 b-layout__module_span_40" style="background: black; color: white;">345345345345</div>
-				</div>
-			</div>
-		</div-->
-	</body>
+	</div>
+
+	<div class="b-layout b-layout_height_global b-layout_push-top_45 b-layout_push-bottom_140">
+		<div class="b-layout__base" style="color: #000;">
+			СЧАСТЬЕ
+
+			Захотелось человеку счастья - купил граммофон. Попала двуспальная кровать - и ее купил: в дому появились клопы. Расстроился человек, купил супоросую свинью.
+			-- Вот кто меня осчастливит.
+			Свинья обманула: троих поросят задавила, троих слопала. Охнул человек, завел граммофон.
+			-- Хоть ты порадуй.
+			В граммофоне захрюкали погибшие поросята. Захворал человек. Лег на двуспальную кровать - клопы окружили. К вечеру начал стонать, а вечером:
+			-- Тихо скончался.
+
+			ЛЮБОВЬ
+
+	
+
+			К обедне Пилюгин не идет. Ложится на Аннушкину постель, одевается Аннушкиным одеялом и мысленно обнимает Аннушку горячими помолодевшими руками. Раскрывается светлая бездна. Лезет старуха из могилы, становится сын поперек, но Пилюгин опрокидывает их, гасит свечи с лампадами, зажигает другие огни и видит только Аннушку - молодую, безбожную. В ней - Солнце и воздух, Земля и Небо и желание прожить еще шестьдесят четыре года.
+
+			ПОЭТУ
+
+			Если хвалят тебя девяносто из сотни - уйди. Если скажет вся сотня восторженно:
+			-- О-о-о!
+			Поступи подмастерьем к сапожнику:
+			-- Ты - не поэт.
+			Если ж сотня озлобленных крикнет в лицо:
+			-- Еретик! Сумасшедший!
+			Улыбнись.
+			-- Читать тебя будут сто первые.
+			СЧАСТЬЕ
+
+			Захотелось человеку счастья - купил граммофон. Попала двуспальная кровать - и ее купил: в дому появились клопы. Расстроился человек, купил супоросую свинью.
+			-- Вот кто меня осчастливит.
+			Свинья обманула: троих поросят задавила, троих слопала. Охнул человек, завел граммофон.
+			-- Хоть ты порадуй.
+			В граммофоне захрюкали погибшие поросята. Захворал человек. Лег на двуспальную кровать - клопы окружили. К вечеру начал стонать, а вечером:
+			-- Тихо скончался.
+
+			ЛЮБОВЬ
+
+
+		</div>
+	</div>
+
+	<div class="b-layout b-footer">footer</div>
+</body>
 </html>
