@@ -869,12 +869,12 @@ a:active {
   padding-left: 180px;
 }
 html {
-  font-size: 13px;
   -webkit-font-smoothing: antialiased;
   height: 100%;
 }
 body {
   min-width: 950px;
+  font-size: 13px;
 }
 #body-wrap {
   position: relative;
