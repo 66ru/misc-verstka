@@ -13,8 +13,8 @@
 	padding-top: 45px;
 }
 
-.b-layout_push-bottom_140 {
-	padding-bottom: 140px;
+.b-layout_pull-bottom_140 {
+	margin-bottom: -140px;
 }
 
 .b-layout__base {
