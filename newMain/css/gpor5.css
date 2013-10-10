@@ -3,6 +3,8 @@
 @import 'less/blocks/b-submenu-ads/css/b-submenu-ads.css';
 
 @import "less/blocks/b-btn/css/b-btn.css";
+
+@import "less/blocks/b-btn/css/b-nbtn.css";
 .g-48 {
   padding-right: 89.53%;
   position: relative;
