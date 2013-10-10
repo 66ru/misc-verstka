@@ -20,7 +20,7 @@
 	width: 100%;
 }
 
-.b-showcase__container_heightlim_460 {
+.b-showcase_lim-height_460 .b-showcase__container {
 	max-height: 460px;
 }
 
