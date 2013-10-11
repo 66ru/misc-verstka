@@ -1,4 +1,5 @@
 .b-nbtn {
+	position:relative;
 	display: inline-block;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -8,12 +9,12 @@
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
+	text-align: center;
 	text-decoration: none;
 	font-size: 14px;
 	font-family: Helvetica, Arial, sans-serif;
 	line-height: 30px;
 	cursor: pointer;
-	position:relative;
 }
 
 .b-nbtn_theme_green {
@@ -84,6 +85,17 @@
 	background: -o-linear-gradient(top,  #f17f00 0%,#f48900 95%,#f9a600 100%);
 	background: -ms-linear-gradient(top,  #f17f00 0%,#f48900 95%,#f9a600 100%);
 	background: linear-gradient(to bottom,  #f17f00 0%,#f48900 95%,#f9a600 100%);
+}
+
+.b-nbtn_theme_grey {
+	border-width: 0;
+	background: #f0f0f0;
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #fafafa 14%, #e1e1e1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(14%,#fafafa), color-stop(100%,#e1e1e1));
+	background: -webkit-linear-gradient(top, #fcfcfc 0%,#fafafa 14%,#e1e1e1 100%);
+	background: -o-linear-gradient(top, #fcfcfc 0%,#fafafa 14%,#e1e1e1 100%);
+	background: -ms-linear-gradient(top, #fcfcfc 0%,#fafafa 14%,#e1e1e1 100%);
+	background: linear-gradient(to bottom, #fcfcfc 0%,#fafafa 14%,#e1e1e1 100%);
 }
 
 .b-nbtn_size_l {
