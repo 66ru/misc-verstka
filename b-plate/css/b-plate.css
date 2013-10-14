@@ -29,18 +29,22 @@
 }
 
 .b-plate_purpose_doska-ad {
-	margin-right: -20px;
+	margin-right: 250px;
 	padding: 0;
-	padding-right: 270px;
+	/*padding-right: 270px;*/
 }
 
 .b-plate_purpose_doska-price {
-	position: absolute;
-	top: 0;
-	right: -270px;
-	padding: 0;
-	padding-left: 20px;
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*right: -270px;*/
+	/*padding: 0;*/
+	/*padding-left: 20px;*/
 	width: 250px;
+	float: right;
+	margin-right: -20px;
+	padding-top: 0;
+	padding-right: 0;
 }
 
 
