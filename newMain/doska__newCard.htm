@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
 
-    <title>ОБЪЯВЛЕНИЕ</title>
+    <title>Главная</title>
 
-	<link rel="stylesheet/less" href="css/gpor5.less">
+	<link rel="stylesheet/less" type="text/css" href="css/gpor5.less" />
 	<link rel="stylesheet/less" href="css/doskaNewCard.less">
+
 
 	<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
 	<script src="https://raw.github.com/less/less.js/master/dist/less-1.4.2.min.js"></script>
@@ -20,7 +21,7 @@
 </head>
 <body>
 
-<div class="xl-body">
+<div class="l-body">
 	<div class="l-header-wrap">
 		<div class="l-width">
 			<div class="g-48">
@@ -308,10 +309,10 @@
 					<div class="g-48">
 						<div class="g-col-1 g-span-24">
 
-							<form action="" class="b-header-search">
+							<!-- <form action="" class="b-header-search">
 								<input class="b-header-search__text" type="text" value="Поиск" placeholder="Поиск" />
 								<input class="b-header-search__subm" type="submit" value=""/>
-							</form>
+							</form> -->
 
 						</div>
 						<div class="g-col-25 g-span-24">
@@ -364,176 +365,197 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="l-push"></div> -->
-</div>
 
-<div class="b-layout__base">
-	<div class="b-grid">
-		<div class="b-grid__module b-grid__module_col_1 b-grid__module_span_80">
-			<form class="b-doska-search" action="#">
-				<div class="b-doska-search__row">
-					<div class="b-doska-search__cell b-doska-search__cell_width_left">
-						<label for="search-input" class="b-doska-search__heading">Поиск</label>
-					</div>
-					<div class="b-doska-search__cell">
-						<input type="text" name="search-input" id="search-input" class="b-doska-search__input">
-					</div>
-					<div class="b-doska-search__cell b-doska-search__cell_width_right">
-						<input type="submit" value="Найти" class="b-doska-search__submit b-nbtn b-nbtn_theme_grey">
-					</div>
-				</div>
-				<div class="b-doska-search__row">
-					<div class="b-doska-search__cell"></div>
-					<div class="b-doska-search__cell">
-						<span class="b-doska-search__example-label">Например:</span><span class="b-doska-search__example">ксенон</span><span class="b-doska-search__example">Индия</span><span class="b-doska-search__example">кроватка</span></div>
-					<div class="b-doska-search__cell"></div>
-				</div>
-			</form>
-			<div class="b-doska-card">
-				<div class="b-doska-card__ad">
-					<script type="text/javascript">
-						var show_adlift = 'http://show.adlift.ru/50c249e149ac176841000010.js';
-						var current_url = window.location;
-						var current_code = '';
-						document.write ("<scr"+"ipt type='text/javascript' src='"+show_adlift);
-						document.write ("?url="+current_url+"&code="+current_code);
-						document.write ("'></scr"+"ipt>");
-					</script>
-				</div>
-				<h2 class="b-doska-card__heading">Panasonic HT-TKX500R</h2>
-				<div class="b-doska-card__info">
-					<div class="b-price-tag">12&thinsp;000&thinsp;000 р.</div>
-					<div class="b-credit-info">
-						<p class="b-credit-info__payment">В кредит: 65&thinsp;000 р./мес.</p>
-						<a href="#" class="b-nbtn b-nbtn_theme_orange b-nbtn_size_small">Подобрать автокредит</a>
-					</div>
-					<dl class="b-card-info b-card-info_mb_yes">
-						<dt class="b-card-info__term">Размещено:</dt>
-						<dd class="b-card-info__desc">07.10.2013</dd>
-					</dl>
-					<dl class="b-card-info">
-						<dt class="b-card-info__term b-card-info__term_newline_yes">Продавец</dt>
-						<dd class="b-card-info__desc">Константин Константинович Римский-Щедрин</dd>
-					</dl>
-					<div class="b-card-phone">
-						<p class="b-card-phone__phone">+7 (343) XXX-XX-XX</p>
-						<span class="b-nbtn b-nbtn_size_s b-nbtn_theme_orange">Показать телефон</span>
-						<span class="b-card-phone__balloon">Скажите, что вы с 66.ru</span>
-					</div>
-					<ul class="b-links-list">
-						<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_email b-link">Отправить письмо автору</a></li>
-						<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_edit b-link">Редактировать</a></li>
-						<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_remove b-link">Удалить</a></li>
-						<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_complain b-link">Пожаловаться</a></li>
-					</ul>
-				</div>
-				<div class="b-doska-card__content">
-					<div class="b-showcase b-showcase_lim-height_460">
-						<a href="#" class="b-showcase__cell">
-							<div class="b-showcase__container">
-								<img src="http://www.desiretoinspire.net/storage/allpostphotos/image5Cromwell%20Road%20South%20Yarra.jpg?__SQUARESPACE_CACHEVERSION=1354127198798" alt="" class="b-showcase__img">
+	<div class="l-body-wrap">
+		<div class="l-width">
+			<div class="g-48">
+				<div class="g-col-2 g-span-36">
+					<form class="b-doska-search" action="#">
+						<div class="b-doska-search__row">
+							<div class="b-doska-search__cell b-doska-search__cell_width_left">
+								<label for="search-input" class="b-doska-search__heading">Поиск</label>
 							</div>
-						</a>
-					</div>
-					<div class="b-properties-table">
-						<div class="b-properties-table__table">
-							<ul class="b-properties-table__row">
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">Год выпуска</dt>
-										<dd class="b-properties-table__desc">2011</dd>
-									</dl>
-								</li>
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">Пробег</dt>
-										<dd class="b-properties-table__desc">255&thinsp;000 км</dd>
-									</dl>
-								</li>
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">Кузов</dt>
-										<dd class="b-properties-table__desc">Универсал</dd>
-									</dl>
-								</li>
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">Цвет</dt>
-										<dd class="b-properties-table__desc">Синий</dd>
-									</dl>
-								</li>
-							</ul>
-							<div class="b-properties-table__separator"></div>
-							<ul class="b-properties-table__row">
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">Двигатель</dt>
-										<dd class="b-properties-table__desc">бензин, инжектор, 2500&nbsp;см³, 330&nbsp;л.с.</dd>
-									</dl>
-								</li>
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">КПП</dt>
-										<dd class="b-properties-table__desc">Механическая</dd>
-									</dl>
-								</li>
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">Привод</dt>
-										<dd class="b-properties-table__desc">Полный</dd>
-									</dl>
-								</li>
-								<li class="b-properties-table__elem">
-									<dl class="b-properties-table__property">
-										<dt class="b-properties-table__label">Руль</dt>
-										<dd class="b-properties-table__desc">Левый</dd>
-									</dl>
-								</li>
+							<div class="b-doska-search__cell">
+								<input type="text" name="search-input" id="search-input" class="b-doska-search__input">
+							</div>
+							<div class="b-doska-search__cell b-doska-search__cell_width_right">
+								<input type="submit" value="Найти" class="b-doska-search__submit b-nbtn b-nbtn_theme_grey">
+							</div>
+						</div>
+						<div class="b-doska-search__row">
+							<div class="b-doska-search__cell"></div>
+							<div class="b-doska-search__cell">
+								<span class="b-doska-search__example-label">Например:</span><span class="b-doska-search__example">ксенон</span><span class="b-doska-search__example">Индия</span><span class="b-doska-search__example">кроватка</span></div>
+							<div class="b-doska-search__cell"></div>
+						</div>
+					</form>
+					<div class="b-doska-card">
+						<div class="b-doska-card__ad">
+							<script type="text/javascript">
+								var show_adlift = 'http://show.adlift.ru/50c249e149ac176841000010.js';
+								var current_url = window.location;
+								var current_code = '';
+								document.write ("<scr"+"ipt type='text/javascript' src='"+show_adlift);
+								document.write ("?url="+current_url+"&code="+current_code);
+								document.write ("'></scr"+"ipt>");
+							</script>
+						</div>
+						<h2 class="b-doska-card__heading">Panasonic HT-TKX500R</h2>
+						<div class="b-doska-card__info">
+							<div class="b-price-tag">12&thinsp;000&thinsp;000 р.</div>
+							<div class="b-credit-info">
+								<p class="b-credit-info__payment">В кредит: 65&thinsp;000 р./мес.</p>
+								<a href="#" class="b-nbtn b-nbtn_theme_orange b-nbtn_size_small">Подобрать автокредит</a>
+							</div>
+							<dl class="b-card-info b-card-info_mb_yes">
+								<dt class="b-card-info__term">Размещено:</dt>
+								<dd class="b-card-info__desc">07.10.2013</dd>
+							</dl>
+							<dl class="b-card-info">
+								<dt class="b-card-info__term b-card-info__term_newline_yes">Продавец</dt>
+								<dd class="b-card-info__desc">Константин Константинович Римский-Щедрин</dd>
+							</dl>
+							<div class="b-card-phone">
+								<p class="b-card-phone__phone">+7 (343) XXX-XX-XX</p>
+								<span class="b-nbtn b-nbtn_size_s b-nbtn_theme_orange">Показать телефон</span>
+								<span class="b-card-phone__balloon">Скажите, что вы с 66.ru</span>
+							</div>
+							<ul class="b-links-list">
+								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_email b-link">Отправить письмо автору</a></li>
+								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_edit b-link">Редактировать</a></li>
+								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_remove b-link">Удалить</a></li>
+								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_complain b-link">Пожаловаться</a></li>
 							</ul>
 						</div>
-					</div>
-					<div class="b-doska-card__text">Автомобиль выпущен в 2007 году,куплен у официального дилера в 2009. 6000км назад был собран мотор в UMC,стоит новый усиленый блок, кованные поршня,черное колено,новые вкладыши.Полный пиздец от турбины.Перепускной клапан Blitz.Аллюминевый радиатор.Установленны новые тормозные диски TAROX,армированые тормазные шланги,тюнинговые стабилизаторы Cusco перед,зад. Установлена короткая кулиса переключения передач.Карбоновая защита днища wrs,аллюминевая защита заднего редуктора,Передняя распорка cusco.установленны новые колесные диски Rays Homura.Машина проклеена.В машине установленна магнитола,NAVI,TV,выход под айфон,USB,4колонки "Alpine R",уселитель 4 канальный "Alpine" сабуфер "Alpine R",моноблок на сабуфер.Стоит руль "DAMOD".Сигнализация с обратной связью.В подарок новое керамическое сцепление,споллер WRS,Брызговики ARMOR RALLY.Оригинальные передние тормозные диски.Автомобиль в самой полной комплектации.Вся история обслуживания автомобиля в UMS. Возможно преобритение в кредит!! тел:89090144433 дмитрий</div>
-					<div class="b-showcase">
-						<a href="#" class="b-showcase__cell">
-							<div class="b-showcase__container">
-								<img src="http://tillwiedeck.com/wp-content/uploads/HelloMe_NadineGoepfert_FurMarbleShine_2.jpg" alt="" class="b-showcase__img">
+						<div class="b-doska-card__content">
+							<div class="b-showcase b-showcase_lim-height_460">
+								<a href="#" class="b-showcase__cell">
+									<div class="b-showcase__container">
+										<img src="http://www.desiretoinspire.net/storage/allpostphotos/image5Cromwell%20Road%20South%20Yarra.jpg?__SQUARESPACE_CACHEVERSION=1354127198798" alt="" class="b-showcase__img">
+									</div>
+								</a>
 							</div>
-						</a>
-					</div>
-					<div class="b-showcase">
-						<a href="#" class="b-showcase__cell">
-							<div class="b-showcase__container">
-								<img src="http://1.bp.blogspot.com/_XhAzekAG0tg/TN0pZO7xbsI/AAAAAAAAF4s/EeNZ3CcUgXs/s1600/09%2BJOHN%2BHARRIS%2BBIG%2BCOMPUTER%2BSHOWING%2BMEMORY%2BSTACKS.jpg" alt="" class="b-showcase__img">
+							<div class="b-properties-table">
+								<div class="b-properties-table__table">
+									<ul class="b-properties-table__row">
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">Год выпуска</dt>
+												<dd class="b-properties-table__desc">2011</dd>
+											</dl>
+										</li>
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">Пробег</dt>
+												<dd class="b-properties-table__desc">255&thinsp;000 км</dd>
+											</dl>
+										</li>
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">Кузов</dt>
+												<dd class="b-properties-table__desc">Универсал</dd>
+											</dl>
+										</li>
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">Цвет</dt>
+												<dd class="b-properties-table__desc">Синий</dd>
+											</dl>
+										</li>
+									</ul>
+									<div class="b-properties-table__separator"></div>
+									<ul class="b-properties-table__row">
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">Двигатель</dt>
+												<dd class="b-properties-table__desc">бензин, инжектор, 2500&nbsp;см³, 330&nbsp;л.с.</dd>
+											</dl>
+										</li>
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">КПП</dt>
+												<dd class="b-properties-table__desc">Механическая</dd>
+											</dl>
+										</li>
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">Привод</dt>
+												<dd class="b-properties-table__desc">Полный</dd>
+											</dl>
+										</li>
+										<li class="b-properties-table__elem">
+											<dl class="b-properties-table__property">
+												<dt class="b-properties-table__label">Руль</dt>
+												<dd class="b-properties-table__desc">Левый</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</a>
+							<div class="b-doska-card__text">Автомобиль выпущен в 2007 году,куплен у официального дилера в 2009. 6000км назад был собран мотор в UMC,стоит новый усиленый блок, кованные поршня,черное колено,новые вкладыши.Полный пиздец от турбины.Перепускной клапан Blitz.Аллюминевый радиатор.Установленны новые тормозные диски TAROX,армированые тормазные шланги,тюнинговые стабилизаторы Cusco перед,зад. Установлена короткая кулиса переключения передач.Карбоновая защита ДНИЩА wrs,аллюминевая защита заднего редуктора,Передняя распорка cusco.установленны новые колесные диски Rays Homura.Машина проклеена.В машине установленна магнитола,NAVI,TV,выход под айфон,USB,4колонки "Alpine R",уселитель 4 канальный "Alpine" сабуфер "Alpine R",моноблок на сабуфер.Стоит руль "DAMOD".Сигнализация с обратной связью.В подарок новое керамическое сцепление,споллер WRS,Брызговики ARMOR RALLY.Оригинальные передние тормозные диски.Автомобиль в самой полной комплектации.Вся история обслуживания автомобиля в UMS. Возможно преобритение в кредит!! тел изменен, как и имя (дмитрий)</div>
+							<div class="b-showcase">
+								<a href="#" class="b-showcase__cell">
+									<div class="b-showcase__container">
+										<img src="http://tillwiedeck.com/wp-content/uploads/HelloMe_NadineGoepfert_FurMarbleShine_2.jpg" alt="" class="b-showcase__img">
+									</div>
+								</a>
+							</div>
+							<div class="b-showcase">
+								<a href="#" class="b-showcase__cell">
+									<div class="b-showcase__container">
+										<img src="http://1.bp.blogspot.com/_XhAzekAG0tg/TN0pZO7xbsI/AAAAAAAAF4s/EeNZ3CcUgXs/s1600/09%2BJOHN%2BHARRIS%2BBIG%2BCOMPUTER%2BSHOWING%2BMEMORY%2BSTACKS.jpg" alt="" class="b-showcase__img">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="g-col-29 g-span-19 g-main-col-2">
+					<div class="g-48">
+						<!-- <div class="b-pushtop-16"></div> -->
+						<div class="g-col-25 g-span-23">
+							<div class="b-doska-search">
+								<div class="b-doska-search__row">
+									<div class="b-doska-search__cell">
+										<a href="#" class="b-nbtn b-nbtn_theme_grey">Подать&nbsp;объявление</a>
+									</div>
+								</div>
+								<div class="b-doska-search__row">
+									<div class="b-doska-search__cell b-doska-search__cell_align_center">
+										<a href="#" class="b-link">Мои объявления</a>
+									</div>
+								</div>
+							</div>
+							<div class="b-banner b-banner_layout_middle-page-4-col">
+								<object width="100%" type="application/x-shockwave-flash" data="http://storage.adlift.ru/banners/51e6538449ac172cf72de77d/51e653ab49ac17426e2de798/swf-1374049195.swf" id="adlift_swf_240_480">
+									<param name="wmode" value="opaque" />
+									<param name="allowScriptAcces" value="always" />
+									<param name="flashvars" value="clickTAG=http://click.adlift.ru/NTFlNjUzYWI0OWFjMTc0MjZlMmRlNzk4fGh0dHA6Ly91cmFsLnBldWdlb3QucnUvMjA4X3ByZXNzLmh0bQ==&amp;clickTARGET=_blank" />
+								</object>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="b-grid__module b-grid__module_col_83 b-grid__module_span_18">
-			<form class="b-doska-search" action="#">
-				<div class="b-doska-search__row">
-					<div class="b-doska-search__cell">
-						<a href="#" class="b-nbtn b-nbtn_theme_grey">Подать&nbsp;объявление</a>
-					</div>
-				</div>
-				<div class="b-doska-search__row">
-					<div class="b-doska-search__cell b-doska-search__cell_align_center">
-						<a href="#" class="b-link">Мои объявления</a>
-					</div>
-				</div>
-			</form>
-		</div>
 	</div>
+	<div class="l-push"></div>
 </div>
 
 <div class="l-footer">
+
 	<div class="l-width">
+
+
 		<div class="g-48">
 			<div class="g-col-2 g-span-47">
+
+
 				<a href="#123" class="b-footer-logo">
 					<img class="b-footer-logo__pic" src="img/b-footer-logo.png" alt=""/>
 				</a>
+
+
 				<ul class="b-footer-menu">
 					<li><a href="#123">Новости</a></li>
 					<li><a href="#123">Банки</a></li>
@@ -549,6 +571,7 @@
 					<li><a href="#123">Конкурсы</a></li>
 					<li><a href="#123">Почта</a></li>
 				</ul>
+
 				<div class="b-footer-seo">
 					<ul class="b-footer-links">
 						<li><a href="#123">О проекте</a></li>
