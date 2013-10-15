@@ -8,8 +8,7 @@ v2.0 | 20110126
 License: none (public domain)
 */
 /* center, tt, strike, big, applet are removed as decprecated */
-html,
-body,
+html, body,
 div,
 span,
 object,
