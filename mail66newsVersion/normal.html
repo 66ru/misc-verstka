@@ -1,0 +1,176 @@
+ 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title>Лента новостей рассылка {{ site.siteName }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body style="padding: 0px;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    background-color: #efefef;
+    font-family: arial,sans-serif;
+    font: 12px/18px Arial, Tahoma, Sans-Serif;">
+    <center>
+    <div class="mail-frame" style="width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: left;">
+        <div class="mail-frame-pad" style="padding: 0 20px 20px;">
+            <table style="border-collapse: collapse;
+    width: 100%;"><tr>
+<td class="w1" style="padding:0px;vertical-align:top;width:1%;">
+                        <a href="http://{{site.siteDomain}}" style="color: #007899;
+    text-decoration: none;
+    border-bottom: 1px solid #007899;"><img class="logo" src="{{ site.logoRss }}" height="45px" alt="{{site.siteName}}" style="display:block;margin-top:-5px;"></a>
+                    </td>
+                    <td style="padding: 0px;
+    vertical-align: top;">
+                        <div class="menu" style="border-bottom: 2px solid #84a830;
+    padding-bottom: 7px;
+    padding-top: 11px;
+    margin-left: 20px;">
+                            {% for item in menu %}
+                                <a class="menu__link" href="{{item.url}}" style="color:#84a830;text-decoration:none;border-bottom:1px solid #007899;font-size:14px;margin-right:20px;border:none;">{{item.label}}</a>
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr></table>
+<div class="welcome-text" style="text-align: left;
+    font-size: 13px;
+    margin-top: 19px;">
+                Здравствуйте{% if subscriber.userName %}, {{ subscriber.userName }}{% endif %}
+            </div>
+            <table style="border-collapse: collapse;
+    width: 100%;"><tr>
+<td class="left-col" style="padding:0px;vertical-align:top;padding-right:0px;width:510px;">
+                        
+                        {% if mainNews %}
+                            {% if mainNews.title %}<h2 style="font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0px;
+    margin-top: 0.7em;
+    margin-bottom: 0.25em;">{{ mainNews.title }}</h2>{% endif %}
+                            <table class="mainNewsTable" style="border-collapse: collapse;
+    width: 100%;"><tr>
+                                    {% for news in mainNews.news %}
+                                    <td width="50%" style="padding:0px;vertical-align:top;padding-right:20px;">
+
+                                        {% set link = news.link|safe ~ '?refid=subscribe' ~ subscribeId %}
+                                        <a href="{{link}}" style="color: #007899;
+    text-decoration: none;
+    border-bottom: 1px solid #007899;"><img src="{{news.image}}" _alt="{{news.title}}" style="max-width: 220px; max-height:130px;display:block;"></a>
+                                        <h3 style="font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0px;
+    margin-top: 0.45em;
+    margin-bottom: 1px;"><a href="{{link}}" style="color: #007899;
+    text-decoration: none;
+    border-bottom: 1px solid #007899;">{{news.title}}</a></h3>
+                                        <p style="font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 0px;
+    margin-top: 0em;
+    margin-bottom: 0.25em;">{{news.annotation}}</p>
+
+                                    </td>
+                                    {% endfor %}
+                                </tr></table>
+                        {% endif %}
+
+                        <div class="secondaryNewsList" style="margin-top: 18px;
+    padding-right: 20px;">
+                            <div class="secondaryNewsListBrd" style="border-top: 1px solid #cccccc;
+    height: 1px;
+    margin-bottom: 16px;"> </div>
+
+                            {% if otherNews %}
+                                {% if otherNews.title %}<h2 style="font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0px;
+    margin-top: 0.7em;
+    margin-bottom: 0.25em;">{{ otherNews.title }}</h2>{% endif %}
+    
+    <table style="border-collapse: collapse;width: 100%;">
+                                {% for news in otherNews.news %}
+                                    <tr><td style="width: 118px;
+    padding:0px;vertical-align:top;">
+
+                                        {% set link = news.link|safe ~ '?refid=subscribe' ~ subscribeId %}
+                                        <a href="{{link}}" style="color: #007899;
+    text-decoration: none;
+    paddin-top:1px;"><img class="newsItemPic" src="{{news.smallImage}}" _alt="{{news.title}}" style="max-width: 100px;"></a>
+    <div style="height: 1.2em; line-height: 1.2em;">
+    </td>
+    <td style="padding:0px;vertical-align:top;">
+    
+                                        <h3 style="font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0px;
+    margin-bottom: 1px;"><a href="{{link}}" style="color: #007899;
+    text-decoration: none;
+    border-bottom: 1px solid #007899;">{{news.title}}</a></h3>
+                                        <p style="font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 0px;
+    margin-top: 0em;
+    margin-bottom: 0.8em;">{{news.annotation}}</p>
+
+                                    </td></tr>
+                                {% endfor %}
+                                </table>
+                            {% endif %}
+                            
+                        </div>
+                    </td>
+                    <td class="right-col" style="padding:0px;vertical-align:top;border-left:1px solid #cccccc;padding-left:30px;">
+                        {% if rightNews %}
+                            {% for newsBlock in rightNews %}
+                                {% if newsBlock %}
+                                    {% if newsBlock.title %}<h2 style="font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0px;
+    margin-top: 0.7em;
+    margin-bottom: 0.25em;">{{ newsBlock.title }}</h2>{% endif %}
+                                    {% for news in newsBlock.news %}
+
+                                        {% set link = news.link|safe ~ '?refid=subscribe' ~ subscribeId %}
+                                        <a href="{{link}}" style="color: #007899;
+    text-decoration: none;
+    border-bottom: 1px solid #007899;"><img src="{{news.image}}" _alt="{{news.title}}" style="max-width: 220px; display: block;"></a>
+                                        <h3 style="font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0px;
+    margin-top: 0.45em;
+    margin-bottom: 1px;"><a href="{{link}}" style="color: #007899;
+    text-decoration: none;
+    border-bottom: 1px solid #007899;">{{news.title}}</a></h3>
+                                        
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </td>
+                </tr></table>
+<table class="footerTable" style="border-collapse:collapse;width:100%;margin-top:30px;padding-top:10px;border-top:2px solid #84A830;"><tr>
+<td style="padding:0px;vertical-align:top;padding-top:10px;color:#999;">
+                        Портал «{{ site.siteName }}» — Современный портал Екатеринбурга.
+                    </td>
+                    <td class="right" style="padding:0px;vertical-align:top;padding-top:10px;color:#999;text-align:right;">
+                        <a href="{{ unsubscribe_link }}" style="color:#999;text-decoration:none;border-bottom:1px solid #007899;border:none;">Отписаться от рассылки</a>
+                    </td>
+                </tr></table>
+</div>
+    </div>
+    </center>
+</body>
+</html>
