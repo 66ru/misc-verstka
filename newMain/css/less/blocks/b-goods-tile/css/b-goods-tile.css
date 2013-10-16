@@ -1,0 +1,69 @@
+.b-goods-tile {
+	font-size: 1em;
+}
+
+.b-goods-tile__row {
+	margin-bottom: 20px;
+}
+
+.b-goods-tile__row:before,
+.b-goods-tile__row:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.b-goods-tile__elem {
+	float: left;
+	margin-left: 1%;
+	width: 24.25%;
+}
+
+.b-goods-tile__elem:first-child {
+	margin-left: 0;
+}
+
+.b-goods-tile__wrap {
+	position: relative;
+	display: block;
+	margin-bottom: 6px;
+	height: 150px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.b-goods-tile__price {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: .3em .3em .1em;
+	background: #f17e00;
+	color: #fff;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 1.08em;
+	line-height: 1.08em;
+}
+
+.b-goods-tile__link {
+	color: #037dd3;
+	font-size: 1.15em;
+	line-height: 1.2;
+}
+
+.b-goods-tile__link:visited {
+	color: #c45da1;
+}
+
+.b-goods-tile__link:hover {
+	color: #7b0101;
+}
+
+.b-goods-tile__date {
+	color: #898989;
+	font-size: .92em;
+}
