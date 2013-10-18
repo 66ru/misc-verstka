@@ -1,0 +1,13 @@
+.b-folded-plate {
+	margin-left: -20px;
+	padding: 10px 20px 0;
+}
+
+.b-folded-plate_unfold_yes {
+	padding: 10px 20px 15px;
+	background: #cfe698;
+}
+
+.b-folded-plate__hidden {
+	display: none;
+}

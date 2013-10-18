@@ -27,6 +27,9 @@
 		$(function() { $('.js-sticky').sticky(); });
 	</script>
 
+	<script src="css/less/blocks/b-folded-plate/js/b-folded-plate.js"></script>
+	<script src="css/less/blocks/b-card-phone/js/b-card-phone.js"></script>
+
 </head>
 <body>
 
@@ -1855,12 +1858,21 @@
 								<dd class="b-card-info__desc">Константин Константинович Римский-Щедрин</dd>
 							</dl>
 							<div class="b-card-phone">
-								<p class="b-card-phone__phone">+7 (343) XXX-XX-XX</p>
+								<p class="b-card-phone__phone" data-phone="+7 (666) 666-66-66">+7 (343) XXX-XX-XX</p>
 								<span class="b-nbtn b-nbtn_size_s b-nbtn_theme_orange">Показать телефон</span>
 								<span class="b-card-phone__balloon">Скажите, что вы с 66.ru</span>
 							</div>
 							<ul class="b-links-list">
-								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_email b-link">Отправить письмо автору</a></li>
+								<li class="b-links-list__elem b-folded-plate">
+									<a href="#" class="b-links-list__link b-links-list__link_icon_email b-link b-folded-plate__trigger" data-toggle-text="Свернуть">Отправить письмо автору</a>
+									<form action="#" class="b-folded-plate__hidden b-mailto-form">
+										<label for="emailto-question" class="b-mailto-form__label">Ваш вопрос:</label>
+										<textarea name="emailto-question" id="emailto-question" cols="30" rows="10" class="b-mailto-form__textarea"></textarea>
+										<label for="emailto-contacts" class="b-mailto-form__label">Как с вами связаться:</label>
+										<input type="text" name="emailto-contacts" id="emailto-contacts" class="b-mailto-form__input">
+										<input type="submit" value="Отправить" class="b-mailto-form__submit b-nbtn b-nbtn_size_s b-nbtn_theme_grey">
+									</form>
+								</li>
 								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_edit b-link">Редактировать</a></li>
 								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_remove b-link">Удалить</a></li>
 								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_complain b-link">Пожаловаться</a></li>
