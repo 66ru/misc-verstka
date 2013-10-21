@@ -50,7 +50,7 @@ a {
 		border-bottom: 1px solid fadeout(@link-color, 70%);
 		text-decoration: none;
 
-		/*визит и ховер на цвет и бордер*/
+		
 		&:visited {
 			border-bottom: 1px solid @grey-text;
 		}
@@ -59,9 +59,8 @@ a {
 			border-bottom: 1px solid fadeout(@orange-text, 70%);
 			text-decoration: none;
 		}
-
+		
 		&.b-link_visited_yes {
-			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @grey-text;
 				border-bottom: 1px solid @grey-text;
@@ -73,7 +72,6 @@ a {
 			}
 		}
 		&.b-link_visited_no {
-			/*визит и ховер на цвет и бордер и посещенность*/
 			&:visited {
 				color: @link-color;
 				border-bottom: 1px solid fadeout(@link-color, 70%);
@@ -82,6 +80,16 @@ a {
 				color: @orange-text;
 				border-bottom: 1px solid fadeout(@orange-text, 70%);
 				text-decoration: none;
+			}
+		}
+		
+		&.b-link_border_style_dotted {
+			&.b-link_visited_no {
+				border-bottom: 1px dotted fadeout(@link-color, 70%);
+				
+				&:hover {
+					border-bottom: 1px dotted fadeout(@orange-text, 70%);
+				}
 			}
 		}
 	}
@@ -292,6 +300,7 @@ a {
 		color: @orange-text;
 	}
 }
+
 
 
 
