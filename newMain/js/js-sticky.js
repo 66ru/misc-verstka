@@ -1,55 +1,81 @@
-$(function(){
-	var $sticky = $('.js-sticky'),
-		$parent = $('.js-sticky-parent'),
+(function ($) {
+	$.fn.sticky = function(opts) {
+		var options = $.extend({}, $.fn.sticky.defaults, opts);
 
-		stickyTop = $sticky.offset().top,
-		stickyLeft = $sticky.offset().left,
-		stickyWidth = $sticky.outerWidth(),
-		stickyHeight = $sticky.outerHeight(),
-		stickyRelLeft = $sticky.position().left,
+		return this.each(function() {
 
-		parentTop = $parent.offset().top,
-		parentHeight = $parent.outerHeight(),
-		parentBottom = parentTop + parentHeight;
+			var $sticky = $(this),
+				$parent = $sticky.parent(),
 
-	$parent.css({
-		position: 'relative'
-	});
+				stickyParams = {},
+				parentParams = {};
 
-	$(window).scroll(function() {
+			stickyParams.top = $sticky.offset().top;
+			stickyParams.left = $sticky.offset().left;
+			stickyParams.width = $sticky.outerWidth();
+			stickyParams.height = $sticky.outerHeight();
+			stickyParams.relLeft = $sticky.position().left;
 
-		var windowTop = $(window).scrollTop();
+			parentParams.top = $parent.offset().top;
+			parentParams.height = $parent.outerHeight();
+			parentParams.bottom = parentParams.top + parentParams.height;
 
-		if (stickyTop < windowTop) {
-			if ((windowTop + stickyHeight) < parentBottom) {
-				$('.js-sticky').css({
-					position: 'fixed',
-					top: 0,
-					left: stickyLeft,
-					width: stickyWidth
+			if (parentParams.height - 50 <= stickyParams.height) {
+				$(window).on('scroll', function() {
+					var windowTop = $(window).scrollTop();
+
+					if (stickyParams.top - options.paddingTop < windowTop) {
+						$sticky.css({
+							position: 'fixed',
+							top: options.paddingTop,
+							left: stickyParams.left,
+							width: stickyParams.width
+						});
+					} else {
+						$sticky.css({
+							position: 'static',
+							width: ''
+						});
+					}
 				});
 			} else {
-				$('.js-sticky').css({
-					position: 'absolute',
-					bottom: 0,
-					top: '',
-					left: stickyRelLeft,
-					width: stickyWidth
+				$(window).on('scroll', function() {
+					var windowTop = $(window).scrollTop();
+
+					$parent.css({
+						position: 'relative'
+					});
+
+					if (stickyParams.top - options.paddingTop < windowTop) {
+						if ((windowTop + stickyParams.height + options.paddingTop) < parentParams.bottom) {
+							$sticky.css({
+								position: 'fixed',
+								top: options.paddingTop,
+								left: stickyParams.left,
+								width: stickyParams.width
+							});
+						} else {
+							$sticky.css({
+								position: 'absolute',
+								bottom: 0,
+								top: '',
+								left: stickyParams.relLeft,
+								width: stickyParams.width
+							});
+						}
+
+					} else {
+						$sticky.css({
+							position: 'static',
+							width: ''
+						});
+					}
 				});
 			}
+		});
+	};
 
-		} else {
-			$('.js-sticky').css({
-				position: 'static',
-				width: ''
-			});
-		}
-
-		// console.log(
-		// 	windowTop,
-		// 	stickyTop,
-		// 	stickyHeight,
-		// 	parentBottom
-		// );
-	});
-});
+	$.fn.sticky.defaults = {
+		paddingTop: 15
+	}
+})(jQuery);

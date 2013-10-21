@@ -1,0 +1,28 @@
+.b-mailto-form__label {
+	display: block;
+	margin-top: 8px;
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+
+.b-mailto-form__textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #7d7d7d;
+	border-right-color: #d4d0c8;
+	border-bottom-color: #d4d0c8;
+}
+
+.b-mailto-form__input {
+	height: 25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #7d7d7d;
+	border-right-color: #d4d0c8;
+	border-bottom-color: #d4d0c8;
+	margin-bottom: 10px;
+}
