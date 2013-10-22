@@ -556,7 +556,6 @@ a:focus {
   width: 510%;
   margin-right: -510%;
   /*overflow: hidden;*/
-
 }
 .g-col-2.g-main-col-1:after {
   content: '';
@@ -741,7 +740,6 @@ a:active {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_blue.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -753,7 +751,6 @@ a:active {
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -766,7 +763,6 @@ a:active {
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -788,7 +784,6 @@ a:active {
   border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_green.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -800,7 +795,6 @@ a:active {
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -813,7 +807,6 @@ a:active {
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_no:visited {
   color: #6a8e16;
@@ -832,7 +825,6 @@ a:active {
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_orange.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -844,7 +836,6 @@ a:active {
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -857,7 +848,6 @@ a:active {
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_no:visited {
   color: #ff5400;
@@ -876,7 +866,6 @@ a:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_black.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -888,7 +877,6 @@ a:active {
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -901,7 +889,6 @@ a:active {
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_no:visited {
   color: #000000;
@@ -920,7 +907,6 @@ a:active {
   border-bottom: 1px solid rgba(128, 128, 128, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_grey.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -932,7 +918,6 @@ a:active {
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -945,7 +930,6 @@ a:active {
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_no:visited {
   color: #808080;
@@ -1071,7 +1055,6 @@ body {
   padding: 0 1%;
   position: relative;
   /*width: 1284px;*/
-
 }
 .l-width-old {
   padding: 0 0%;
@@ -1195,7 +1178,7 @@ a.b-header-menu__item__link:after {
 }
 /*если у айтема есть скрытое меню*/
 .b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
-  background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn.png);
+  background-image: url(less/blocks/b-header-menu/img/b-header-arr-dwn.png);
   background-repeat: no-repeat;
   background-position: right 24px;
   padding-right: 18px;
@@ -1319,7 +1302,6 @@ a.b-submenu-item__day-theme__link:hover {
 /**/
 .js-header-menu {
   /*float: left*/
-
 }
 .b-header-menu {
   margin: 0px;
@@ -1344,7 +1326,7 @@ a.b-submenu-item__day-theme__link:hover {
 /***/
 .b-header-search__subm {
   border: none;
-  background: url(./less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
+  background: url(less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
   width: 27px;
   height: 27px;
   display: block;
@@ -1355,7 +1337,7 @@ a.b-submenu-item__day-theme__link:hover {
   cursor: hand;
 }
 .b-header-search_state_active .b-header-search__subm {
-  background: url(./less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
+  background: url(less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
 }
 input.b-header-search__text {
   border: none;
@@ -1451,7 +1433,7 @@ a.b-header-auth__tab__mail-link {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-  background: url(./less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
+  background: url(less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
   padding-right: 23px;
   margin-right: 5px;
   position: relative;
@@ -1514,13 +1496,13 @@ a.b-header-auth__tab__mail-link_has_new {
   position: relative;
   width: 10px;
   height: 11px;
-  background: url(./less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
   display: inline-block;
   margin-right: 5px;
   top: 1px;
 }
 .b-icon_pic_header-vk {
-  background: url(./less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1528,7 +1510,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-fb {
-  background: url(./less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1536,7 +1518,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-tw {
-  background: url(./less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1544,7 +1526,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon-logout {
-  background: url(./less/blocks/b-icon/img/logout.png);
+  background: url(less/blocks/b-icon/img/logout.png);
   width: 9px;
   height: 9px;
   vertical-align: middle;
@@ -1555,7 +1537,7 @@ a.b-header-auth__tab__mail-link_has_new {
   height: 26px;
   left: 0;
   top: 8px;
-  background: url(./less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
   margin-left: 4px;
 }
 .b-icon_img_weather-0 {
@@ -1574,17 +1556,14 @@ a.b-header-auth__tab__mail-link_has_new {
 a.b-username {
   color: #007899;
   /*визит и ховер на цвет и бордер*/
-
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 a.b-username.b-link_border_yes {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 a.b-username.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -1596,7 +1575,6 @@ a.b-username.b-link_border_yes:hover {
 }
 a.b-username.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -1609,7 +1587,6 @@ a.b-username.b-link_border_yes.b-link_visited_yes:hover {
 }
 a.b-username.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -1624,7 +1601,6 @@ a.b-username.b-link_border_yes {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 a.b-username.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -1636,7 +1612,6 @@ a.b-username.b-link_border_yes:hover {
 }
 a.b-username.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -1649,7 +1624,6 @@ a.b-username.b-link_border_yes.b-link_visited_yes:hover {
 }
 a.b-username.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -1670,7 +1644,6 @@ a.b-username:hover {
 }
 a.b-username.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_visited_yes:visited {
   color: #808080;
@@ -1683,7 +1656,6 @@ a.b-username.b-link_visited_yes:hover {
 }
 a.b-username.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_visited_no:visited {
   color: #007899;
@@ -1704,7 +1676,6 @@ a.b-username:hover {
 }
 a.b-username.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_visited_yes:visited {
   color: #808080;
@@ -1717,7 +1688,6 @@ a.b-username.b-link_visited_yes:hover {
 }
 a.b-username.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_visited_no:visited {
   color: #007899;
@@ -1739,7 +1709,7 @@ a.b-username.b-link_visited_no:hover {
   position: absolute;
 }
 .b-username_sex_male:before {
-  background: url(./less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -1750,7 +1720,7 @@ a.b-username.b-link_visited_no:hover {
   position: absolute;
 }
 .b-username_sex_female:before {
-  background: url(./less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -1761,10 +1731,10 @@ a.b-username.b-link_visited_no:hover {
   position: absolute;
 }
 .b-username_sex_male.b-username_status_online:before {
-  background: url(./less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
 }
 .b-username_sex_female.b-username_status_online:before {
-  background: url(./less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
 }
 .b-submenu-ads {
   line-height: 1.5;
@@ -1889,7 +1859,7 @@ a.b-username.b-link_visited_no:hover {
   text-decoration: none;
 }
 .userToolsSprite {
-  background: url(./less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
 }
 .b-pannel-logined-user {
   background: #f4f4f4;
@@ -1935,7 +1905,7 @@ a.b-username.b-link_visited_no:hover {
   top: 50%;
   left: -20px;
   margin-top: -5px;
-  background: url(./less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
 }
 .b-link_icon_friends-feed:before {
   content: '';
@@ -1946,7 +1916,7 @@ a.b-username.b-link_visited_no:hover {
   top: 50%;
   left: -20px;
   margin-top: -5px;
-  background: url(./less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
   background-position: 0 -25px;
 }
 .b-link_icon_events:before {
@@ -1958,7 +1928,7 @@ a.b-username.b-link_visited_no:hover {
   top: 50%;
   left: -20px;
   margin-top: -6px;
-  background: url(./less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
   background-position: 0 -48px;
 }
 .b-pannel-logined-user__karma {
@@ -2038,7 +2008,6 @@ a:active {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_blue.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -2050,7 +2019,6 @@ a:active {
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -2063,7 +2031,6 @@ a:active {
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -2082,7 +2049,6 @@ a:active {
   border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_green.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -2094,7 +2060,6 @@ a:active {
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -2107,7 +2072,6 @@ a:active {
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_no:visited {
   color: #6a8e16;
@@ -2126,7 +2090,6 @@ a:active {
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_orange.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -2138,7 +2101,6 @@ a:active {
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -2151,7 +2113,6 @@ a:active {
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_no:visited {
   color: #ff5400;
@@ -2170,7 +2131,6 @@ a:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_black.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -2182,7 +2142,6 @@ a:active {
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -2195,7 +2154,6 @@ a:active {
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_no:visited {
   color: #000000;
@@ -2214,7 +2172,6 @@ a:active {
   border-bottom: 1px solid rgba(128, 128, 128, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_grey.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -2226,7 +2183,6 @@ a:active {
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -2239,7 +2195,6 @@ a:active {
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_no:visited {
   color: #808080;
@@ -2272,17 +2227,14 @@ a:active {
 .b-news-item a {
   color: #007899;
   /*визит и ховер на цвет и бордер*/
-
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-news-item a.b-link_border_yes {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-news-item a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -2294,7 +2246,6 @@ a:active {
 }
 .b-news-item a.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -2307,7 +2258,6 @@ a:active {
 }
 .b-news-item a.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -2322,7 +2272,6 @@ a:active {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-news-item a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -2334,7 +2283,6 @@ a:active {
 }
 .b-news-item a.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -2347,7 +2295,6 @@ a:active {
 }
 .b-news-item a.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -2374,7 +2321,6 @@ a:active {
 }
 .b-news-item a.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_visited_yes:visited {
   color: #808080;
@@ -2387,7 +2333,6 @@ a:active {
 }
 .b-news-item a.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_visited_no:visited {
   color: #007899;
@@ -2408,7 +2353,6 @@ a:active {
 }
 .b-news-item a.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_visited_yes:visited {
   color: #808080;
@@ -2421,7 +2365,6 @@ a:active {
 }
 .b-news-item a.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-news-item a.b-link_visited_no:visited {
   color: #007899;
@@ -3087,17 +3030,14 @@ a.b-btn__link,
 .b-header_type_h3 a {
   color: #007899;
   /*визит и ховер на цвет и бордер*/
-
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-header_type_h3 a.b-link_border_yes {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-header_type_h3 a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -3109,7 +3049,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -3122,7 +3061,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -3137,7 +3075,6 @@ a.b-btn__link,
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-header_type_h3 a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -3149,7 +3086,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -3162,7 +3098,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -3183,7 +3118,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_visited_yes:visited {
   color: #808080;
@@ -3196,7 +3130,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_visited_no:visited {
   color: #007899;
@@ -3217,7 +3150,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_visited_yes:visited {
   color: #808080;
@@ -3230,7 +3162,6 @@ a.b-btn__link,
 }
 .b-header_type_h3 a.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-header_type_h3 a.b-link_visited_no:visited {
   color: #007899;
@@ -3261,17 +3192,14 @@ a.b-btn__link,
 .b-text_layout_cluodtag a {
   color: #007899;
   /*визит и ховер на цвет и бордер*/
-
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-text_layout_cluodtag a.b-link_border_yes {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-text_layout_cluodtag a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -3283,7 +3211,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -3296,7 +3223,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -3311,7 +3237,6 @@ a.b-btn__link,
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-text_layout_cluodtag a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -3323,7 +3248,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -3336,7 +3260,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
@@ -3357,7 +3280,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_visited_yes:visited {
   color: #808080;
@@ -3370,7 +3292,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_visited_no:visited {
   color: #007899;
@@ -3391,7 +3312,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_visited_yes:visited {
   color: #808080;
@@ -3404,7 +3324,6 @@ a.b-btn__link,
 }
 .b-text_layout_cluodtag a.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-text_layout_cluodtag a.b-link_visited_no:visited {
   color: #007899;
@@ -3437,7 +3356,7 @@ a.b-btn__link,
 }
 .b-text-valute_dinamic_down:after {
   content: '';
-  background: url(./less/blocks/b-text/img/valute-dinamic.png);
+  background: url(less/blocks/b-text/img/valute-dinamic.png);
   width: 7px;
   height: 7px;
   display: inline-block;
@@ -3450,7 +3369,7 @@ a.b-btn__link,
 }
 .b-text-valute_dinamic_up:after {
   content: '';
-  background: url(./less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
+  background: url(less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
   width: 7px;
   height: 7px;
   display: inline-block;
@@ -3487,7 +3406,7 @@ a.b-text-ad .b-text-ad__shadow {
   display: block;
   position: absolute;
   width: 100%;
-  background: url(./less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
+  background: url(less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
   height: 100%;
 }
 a.b-text-ad:hover .b-text-ad__shadow {
@@ -3557,7 +3476,7 @@ a.b-ad-btn ins {
   display: block;
   width: 24px;
   height: 21px;
-  background: url(./less/blocks/b-text/img/zmey.png) 0 0 no-repeat;
+  background: url(less/blocks/b-text/img/zmey.png) 0 0 no-repeat;
 }
 .b-afisha-main {
   margin-bottom: 5px;
@@ -3575,7 +3494,7 @@ a.b-ad-btn ins {
   display: block;
   position: absolute;
   width: 100%;
-  background: url(./less/blocks/b-afisha-main/img/b-news-gradient-small.png) 0 0 repeat-x;
+  background: url(less/blocks/b-afisha-main/img/b-news-gradient-small.png) 0 0 repeat-x;
   height: 100%;
 }
 .b-afisha__item:hover .b-afisha-item__shadow {
@@ -3587,7 +3506,7 @@ a.b-ad-btn ins {
   margin-top: 2px;
 }
 .b-afisha__item_size_big .b-afisha-item__shadow {
-  background: url(./less/blocks/b-afisha-main/img/b-news-gradient.png) 0 0 repeat-x;
+  background: url(less/blocks/b-afisha-main/img/b-news-gradient.png) 0 0 repeat-x;
 }
 .b-afisha-main__label {
   position: absolute;
@@ -3692,21 +3611,16 @@ a.b-tele-afisha-link-more {
 .b-blog-list li .b-blog-list__theme {
   color: #6a8e16;
   /*визит и ховер на цвет и бордер*/
-
   border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
   /*визит и ховер на цвет и бордер и посещенность*/
-
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes {
   border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -3718,7 +3632,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -3731,7 +3644,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_no:visited {
   color: #6a8e16;
@@ -3746,7 +3658,6 @@ a.b-tele-afisha-link-more {
   border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -3758,7 +3669,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -3771,7 +3681,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_border_yes.b-link_visited_no:visited {
   color: #6a8e16;
@@ -3792,7 +3701,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_yes:visited {
   color: #808080;
@@ -3805,7 +3713,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_no:visited {
   color: #6a8e16;
@@ -3826,7 +3733,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_yes:visited {
   color: #808080;
@@ -3839,7 +3745,6 @@ a.b-tele-afisha-link-more {
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-blog-list li .b-blog-list__theme.b-link_visited_no:visited {
   color: #6a8e16;

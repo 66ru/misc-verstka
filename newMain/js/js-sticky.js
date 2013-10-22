@@ -1,81 +1,103 @@
 (function ($) {
 	$.fn.sticky = function(opts) {
-		var options = $.extend({}, $.fn.sticky.defaults, opts);
 
 		return this.each(function() {
 
 			var $sticky = $(this),
 				$parent = $sticky.parent(),
+				$info = $('.js-info'),
 
-				stickyParams = {},
-				parentParams = {};
+				sticky = {},
+				parent = {},
 
-			stickyParams.top = $sticky.offset().top;
-			stickyParams.left = $sticky.offset().left;
-			stickyParams.width = $sticky.outerWidth();
-			stickyParams.height = $sticky.outerHeight();
-			stickyParams.relLeft = $sticky.position().left;
+				paddingTop = 15,
 
-			parentParams.top = $parent.offset().top;
-			parentParams.height = $parent.outerHeight();
-			parentParams.bottom = parentParams.top + parentParams.height;
+				staticClass = 'js-sticky_is_s',
+				absoluteClass = 'js-sticky_is_a',
+				fixedClass = 'js-sticky_is_f';
 
-			if (parentParams.height - 50 <= stickyParams.height) {
-				$(window).on('scroll', function() {
-					var windowTop = $(window).scrollTop();
-
-					if (stickyParams.top - options.paddingTop < windowTop) {
-						$sticky.css({
-							position: 'fixed',
-							top: options.paddingTop,
-							left: stickyParams.left,
-							width: stickyParams.width
-						});
-					} else {
-						$sticky.css({
-							position: 'static',
-							width: ''
-						});
-					}
+			if ($parent.css('position') === 'static') {
+				$parent.css({
+					position: 'relative'
 				});
-			} else {
-				$(window).on('scroll', function() {
-					var windowTop = $(window).scrollTop();
+			}
 
-					$parent.css({
-						position: 'relative'
-					});
+			sticky.top = $sticky.offset().top;
+			sticky.left = $sticky.offset().left;
+			sticky.width = $sticky.outerWidth();
+			sticky.height = $sticky.outerHeight();
+			sticky.relLeft = $sticky.position().left;
 
-					if (stickyParams.top - options.paddingTop < windowTop) {
-						if ((windowTop + stickyParams.height + options.paddingTop) < parentParams.bottom) {
+			parent.top = $parent.offset().top;
+			parent.height = $parent.outerHeight();
+			parent.bottom = parent.top + parent.height;
+
+			// move( $(window).scrollTop() );
+
+			$(window).on('scroll', function() {
+				sticky.height = $sticky.outerHeight();
+				move( $(window).scrollTop() );
+				updateInfo();
+			});
+
+			// $sticky.on('click', function() {
+			// 	sticky.height = $sticky.outerHeight();
+			// 	move( $(window).scrollTop() );
+			// 	updateInfo();
+			// });
+
+			function move(windowTop) {
+				if (sticky.top - paddingTop < windowTop) {
+					if ((windowTop + sticky.height + paddingTop) < parent.bottom) {
+						if (!$sticky.hasClass(fixedClass)) {
+							$sticky.addClass(fixedClass).removeClass(absoluteClass).removeClass(staticClass);
 							$sticky.css({
 								position: 'fixed',
-								top: options.paddingTop,
-								left: stickyParams.left,
-								width: stickyParams.width
-							});
-						} else {
-							$sticky.css({
-								position: 'absolute',
-								bottom: 0,
-								top: '',
-								left: stickyParams.relLeft,
-								width: stickyParams.width
+								top: paddingTop,
+								bottom: '',
+								left: sticky.left,
+								width: sticky.width
 							});
 						}
-
 					} else {
+						if (!$sticky.hasClass(absoluteClass)) {
+							$sticky.addClass(absoluteClass).removeClass(fixedClass).removeClass(staticClass);
+							$sticky.css({
+								position: 'absolute',
+								top: '',
+								bottom: 0,
+								left: sticky.relLeft,
+								width: sticky.width
+							});
+							// alert('BANG');
+						}
+					}
+				} else {
+					if (!$sticky.hasClass(staticClass)) {
+						$sticky.addClass(staticClass).removeClass(fixedClass).removeClass(absoluteClass);
 						$sticky.css({
 							position: 'static',
+							top: '',
+							bottom: '',
+							left: '',
 							width: ''
 						});
 					}
-				});
+				}
+			}
+
+			function updateInfo() {
+				$info.html('sticky.top: ' + Math.round(sticky.top) + '<br>' +
+					'sticky.left: ' + Math.round(sticky.left) + '<br>' +
+					'sticky.width: ' + Math.round(sticky.width) + '<br>' +
+					'sticky.height: ' + Math.round(sticky.height) + '<br>' +
+					'sticky.relLeft: ' + Math.round($sticky.position().left) + '<br>' +
+					'parent.top: ' + Math.round(parent.top) + '<br>' +
+					'parent.height: ' + Math.round(parent.height) + '<br>' +
+					'parent.bottom: ' + Math.round(parent.bottom) + '<br>' +
+					'window.scroll: ' + Math.round($(window).scrollTop())
+				);
 			}
 		});
 	};
-
-	$.fn.sticky.defaults = {
-		paddingTop: 15
-	}
 })(jQuery);
