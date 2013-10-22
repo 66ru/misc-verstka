@@ -66,9 +66,108 @@
 	
 	<script src="css/less/blocks/b-bank-exchange-table/js/b-bank-exchange-table.js" type="text/javascript"></script>
 	
-
+	<script src="js/js-format-thousands.js" type="text/javascript"></script>
 
 	<!--script src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU&ns=YMaps" type="text/javascript"></script-->
+	
+	
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <!--script src="http://yandex.st/jquery/1.8.0/jquery.min.js" type="text/javascript"></script-->	
+	
+	<script src="css/less/blocks/b-more/js/b-more.js" type="text/javascript"></script>
+	
+	
+	
+<script type="text/javascript">
+ymaps.ready(init);
+
+function init () {
+    var map = new ymaps.Map('map', {
+            center: [55.650625, 37.62708],
+            zoom: 10
+        }),
+
+        counter = 0,
+
+        // Создание макета содержимого балуна.
+        // Макет создается с помощью фабрики макетов с помощью текстового шаблона.
+        BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div class="b-yacard-popup-exchange">' +
+                '<b class="b-yacard-popup-exchange__label">$[properties.label]</b><br />' +
+            	'<a class="b-yacard-popup-exchange__title" href="$[properties.link]">$[properties.name]</a><br />' +
+				'<div class="b-valute-converter b-yacard-popup-exchange-converter"><table class="b-valute-converter__table">' +
+				'<tr class="b-valute-converter__row">' +
+					'<td class="b-valute-converter__cell">' +
+					'<input id="" maxlength="20" size="7" class="b-valute-converter__input js-format-thousands" value="10000" />' +
+					'</td><td class="b-valute-converter__gap">'+
+					'<div class="b-more b-valute-converter-more">' + 
+					'<a class="b-more__visible" href="#">USD</a>' +
+					'<ul class="b-more__popup">' +
+					'<li class="b-more__elem"><a class="b-link" href="#">евро</a></li><li class="b-more__elem"><a class="b-link" href="#">руб.</a></li>' +
+					'</ul></div></td><td class="b-valute-converter__cell b-valute-converter__cell_eqv">' +
+					'<a title="Поменять местами" href="#" class="b-valute-converter__switch">=</a>' +
+					'</td><td class="b-valute-converter__cell">' +
+					'<input id="rInput" maxlength="20" size="7" class="b-valute-converter__input b-valute-converter__input_hidden">' + 
+            		'<span class="b-valute-converter__result">1 064,79</span>' + 
+					'</td><td class="b-valute-converter__gap">' +
+					'<div class="b-more b-valute-converter-more">' + 
+					'<a class="b-more__visible b-more__visible_without_arr" href="#">руб.</a>' + 
+					'<ul class="b-more__popup">' + 
+					'<li class="b-more__elem"><a class="b-link" href="#">USD</a></li><li class="b-more__elem"><a class="b-link" href="#">евро</a></li>' +
+					'</ul></div></td><td colspan="5">&nbsp;</td></tr></table></div>' +
+            	'<div class="b-yacard-popup-exchange__text"><p>$[properties.adress]<br />$[properties.phones]</p><p>$[properties.worktime]</p></div>' +
+            '</div>', {
+
+            // Переопределяем функцию build, чтобы при создании макета начинать
+            // слушать событие click на кнопке-счетчике.
+            build: function () {
+                // Сначала вызываем метод build родительского класса.
+                BalloonContentLayout.superclass.build.call(this);
+                // А затем выполняем дополнительные действия.
+                $('#counter-button').bind('click', this.onCounterClick);
+                $('#count').html(counter);
+            },
+
+            // Аналогично переопределяем функцию clear, чтобы снять
+            // прослушивание клика при удалении макета с карты.
+            clear: function () {
+                // Выполняем действия в обратном порядке - сначала снимаем слушателя,
+                // а потом вызываем метод clear родительского класса.
+                $('#counter-button').unbind('click', this.onCounterClick);
+                BalloonContentLayout.superclass.clear.call(this);
+            },
+
+            onCounterClick: function () {
+                $('#count').html(++counter);
+                if (counter == 5) {
+                    alert('Вы славно потрудились.');
+                    counter = 0;
+                    $('#count').html(counter);
+                }
+            }
+        });
+
+    var placemark = new ymaps.Placemark([55.650625, 37.62708], {
+            label: 'Обменный пункт',
+        	name: '«Банк Восточный Экспресс»',
+        	link: 'http://www.bank.ru/',
+        	adress: 'Екатеринбург, ул. Белинского, 61',
+			phones: '(343) 228-30-87, 228-30-81, 228-30-88, 228-30-85',
+        	worktime: 'Время работы: пн-пт: 09:00-20:00, сб:10:00-17:00',
+        	
+        }, {
+            balloonContentLayout: BalloonContentLayout
+        });
+
+    map.geoObjects.add(placemark);
+}
+</script>	
+	
+	
+	
+	
+	
+	
  </head>
 
  <body class="page-fixed-right i-branding">
@@ -461,11 +560,12 @@
 
 		<div class="b-separator b-separator_height_8"></div>
 		<div class="b-separator b-separator_height_3 b-separator_border-color_orange"></div>
-
+		<div class="b-separator b-separator_height_18"></div>
+	
 		
-		<h1 class="b-bank-item-miniCard__title">ОАО КБ «АГРОПРОМКРЕДИТ»</h1>
+		<h1 class="b-bank-item-miniCard__title">Курсы валют в банках Екатеринбурга на 10 Сентября 2013г.</h1>
 		
-		<div class="b-bank-item-miniCard">
+		<div class="b-bank-item-miniCard b-bank-item-miniCard_without-shadow">
 			<table class="b-bank-item-miniCard-table">
 				<tr>
 
@@ -475,14 +575,15 @@
 							<table class="b-valute-converter__table">
 								<tr class="b-valute-converter__row">
 									<td class="b-valute-converter__cell">
-										<input id="" maxlength="20" size="7" class="b-valute-converter__input">
-										<span class="b-valute-converter__result b-valute-converter__result_hidden">33</span>
+										<input id="" maxlength="20" size="7" class="b-valute-converter__input js-format-thousands" value="100000" />
 									</td>
 									<td class="b-valute-converter__gap">
 									
-										<div class="b-more">
+										<div class="b-more b-valute-converter-more">
 											<a class="b-more__visible" href="#">долларов США</a>
 											<ul class="b-more__popup">
+												<li class="b-more__elem"><a class="b-link" href="#">российский рубль</a></li>
+												<li class="b-more__elem b-more__elem_cur"><a class="b-link" href="#">долларов США</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">евро</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">швейцарского франка</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">британского фунта</a></li>
@@ -495,18 +596,20 @@
 										</div>
 										
 									</td>
-									<td class="b-valute-converter__cell">
+									<td class="b-valute-converter__cell b-valute-converter__cell_eqv">
 										<a title="Поменять местами" href="#" class="b-valute-converter__switch">=</a>
 									</td>
 									<td class="b-valute-converter__cell">
 										<input id="rInput" maxlength="20" size="7" class="b-valute-converter__input b-valute-converter__input_hidden">
-										<span class="b-valute-converter__result">1 064,79</span>
+										<span class="b-valute-converter__result js-format-thousands">1064,79</span>
 									</td>
 									<td class="b-valute-converter__gap">
 									
-										<div class="b-more">
-											<a class="b-more__visible" href="#">долларов США</a>
+										<div class="b-more b-valute-converter-more">
+											<a class="b-more__visible" href="#">российский рубль</a>
 											<ul class="b-more__popup">
+												<li class="b-more__elem"><a class="b-link" href="#">долларов США</a></li>
+												<li class="b-more__elem b-more__elem_cur"><a class="b-link" href="#">российский рубль</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">евро</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">швейцарского франка</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">британского фунта</a></li>
@@ -519,51 +622,65 @@
 										</div>
 										
 									</td>
+									<td>&nbsp;</td>
 								</tr>
 								<tr class="b-valute-converter__row">
-									<td colspan="4">
+									<td colspan="5" class="b-valute-converter__cell b-valute-converter__cell-text">
 										покупка по курсу банка 
 										
-										<div class="b-more">
+										<div class="b-more b-valute-converter-more">
 											<a class="b-more__visible" href="#">ЦБРФ</a>
 											<ul class="b-more__popup">
+												<li class="b-more__elem b-more__elem_cur"><a class="b-link" href="#">ЦБРФ</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">ММВБ</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">МВФ</a></li>
 											</ul>
 										</div>										
 										
-										на сегодня 10.09.2013 (12:59)
+										<span class="b-valute-converter-green">на сегодня 10.09.2013 (12:59)</span>
 										
 									</td>
 								</tr>
 							</table>
 						</div>
+						
+						<div class="b-valute-best-course">
+							<div class="b-valute-best-course__row">
+								<span class="b-valute-best-course__label">Лучший курс покупки:</span>
+								<b class="b-valute-best-course__val">33,3401 рубля</b>
+								<a href="">&laquo;Азиатско-Тихоокеанский Банк&raquo;</a>&nbsp; 
+								<a class="b-nbtn b-nbtn_theme_green b-nbtn_size_xs" href="#">рассчитать</a>
+							</div>
+							<div class="b-valute-best-course__row">
+								<span class="b-valute-best-course__label">Лучший курс продажи:</span>
+								<b class="b-valute-best-course__val">33,3401 рубля</b>
+								<a href="">&laquo;Уральский Сбербанк&raquo;</a>&nbsp; 
+								<a class="b-nbtn b-nbtn_theme_green b-nbtn_size_xs" href="#">рассчитать</a>
+							</div>
+						</div>
+						
+						
 
 					</td>
 					<td class="b-bank-item-miniCard-table__cell b-bank-item-miniCard-table__cell_courses">
-						<div class="b-bank-item-miniCard__courses__title">Курс валют банка «Кольцо Урала» от <ins class="b-bank-item-miniCard-table__cell__courses__title-date">09.09.13</ins></div>
+						<div class="b-bank-item-miniCard__courses__title">Курс валют ЦБРФ<br /><ins class="b-bank-item-miniCard-table__cell__courses__title-date">на сегодня 09.09.13</ins></div>
 						<div class="b-bank-item-miniCard__courses__body">
 							<table class="b-bank-item-miniCard__courses__table">
 								<tr>
-									<th class="b-bank-item-miniCard__courses__table__header"></th>
-									<th class="b-bank-item-miniCard__courses__table__header">Покупка</th>
-									<th class="b-bank-item-miniCard__courses__table__header">Продажа</th>
-								</tr>
-								<tr>
 									<td class="b-bank-item-miniCard__courses__table__body b-bank-item-miniCard__courses__table__body_first"><ins class="b-bank-item-miniCard__courses__label">$</ins></td>
 									<td class="b-bank-item-miniCard__courses__table__body">32.34</td>
-									<td class="b-bank-item-miniCard__courses__table__body">23.34</td>
+									<td class="b-bank-item-miniCard__courses__table__body">
+										<div class="b-bank-item-miniCard__courses__dynamic b-bank-item-miniCard__courses__dynamic_down">0.0134</div>
+									</td>
 								</tr>
 								<tr>
 									<td class="b-bank-item-miniCard__courses__table__body b-bank-item-miniCard__courses__table__body_first"><ins class="b-bank-item-miniCard__courses__label">&euro;</ins></td>
 									<td class="b-bank-item-miniCard__courses__table__body">44.38</td>
-									<td class="b-bank-item-miniCard__courses__table__body">44.39</td>
+									<td class="b-bank-item-miniCard__courses__table__body">
+										<div class="b-bank-item-miniCard__courses__dynamic b-bank-item-miniCard__courses__dynamic_up">0.0134</div>
+									</td>
 								</tr>
 							</table>
-							<div class="b-bank-item-miniCard__courses__links">
-								<a href="">Конвертер валют</a><br />
-								<a href="">Курсы валют всех банков</a>
-							</div>
 						</div>
 					</td>
 				</tr>
@@ -573,7 +690,7 @@
 
 
 
-		<div class="b-separator b-separator_height_35"></div>
+		
 
 		<ul class="b-tabs b-tabs_tabs">
 			<li class="b-tabs__item b-tabs__item_active"><a class="b-tabs__item__link" href="">Курсы валют банков</a></li>
@@ -588,139 +705,136 @@
 						<tr>
 							<th>Название</th>
 							<th><span class="b-bank-exchange-table__th-sort"><b class="b-bank-exchange-table__th-sort__sign">$</b>продажа</span></th>
-							<th><span class="b-bank-exchange-table__th-sort"><b class="b-bank-exchange-table__th-sort__sign">$</b>покупка</span></th>
-							<th><span class="b-bank-exchange-table__th-sort"><b class="b-bank-exchange-table__th-sort__sign">&euro;</b>продажа</span></th>
+							<th><span class="b-bank-exchange-table__th-sort b-bank-exchange-table__th-sort_down"><b class="b-bank-exchange-table__th-sort__sign">$</b>покупка</span></th>
+							<th><span class="b-bank-exchange-table__th-sort b-bank-exchange-table__th-sort_up"><b class="b-bank-exchange-table__th-sort__sign">&euro;</b>продажа</span></th>
 							<th><span class="b-bank-exchange-table__th-sort"><b class="b-bank-exchange-table__th-sort__sign">&euro;</b>покупка</span></th>
 							<th></th>
 						</tr>
 						<tr class="b-bank-exchange-table__row">
-							<td>
+							<td class="b-bank-exchange-table__cell b-bank-exchange-table__cell_first">
 								<span class="b-bank-exchange-table__td-title">Атомпромкредит</span>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<span class="b-bank-exchange-table__td-time">сегодня, 12:55</span>
 							</td>
 						</tr>
 						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_map">
-							<td colspan="6">
-								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);">
-									
-								</div>
+							<td class="b-bank-exchange-table__cell" colspan="6">
+								<div id="map" class="b-bank-exchange-table__map" style="background: url(img/map.jpg);"></div>
 							</td>
 						</tr>						
 						<tr class="b-bank-exchange-table__row">
-							<td>
+							<td class="b-bank-exchange-table__cell b-bank-exchange-table__cell_first">
 								<span class="b-bank-exchange-table__td-title">Азиатско-Тихоокеанский Банк</span>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value b-bank-exchange-table__td-value_best">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<span class="b-bank-exchange-table__td-time">сегодня, 12:55</span>
 							</td>
 						</tr>
 						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_map">
-							<td colspan="6">
-								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);">
-									
-								</div>
+							<td class="b-bank-exchange-table__cell" colspan="6">
+								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);"></div>
 							</td>
 						</tr>						
 						<tr class="b-bank-exchange-table__row">
-							<td>
+							<td class="b-bank-exchange-table__cell b-bank-exchange-table__cell_first">
 								<span class="b-bank-exchange-table__td-title">АйМаниБанк</span>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<span class="b-bank-exchange-table__td-time">сегодня, 12:55</span>
 							</td>
 						</tr>
 						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_map">
-							<td colspan="6">
-								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);">
-									
-								</div>
+							<td class="b-bank-exchange-table__cell" colspan="6">
+								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);"></div>
 							</td>
 						</tr>						
-						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_opened">
-							<td>
+						<tr class="b-bank-exchange-table__row">
+							<td class="b-bank-exchange-table__cell b-bank-exchange-table__cell_first">
 								<span class="b-bank-exchange-table__td-title">АК БАРС Банк</span>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<span class="b-bank-exchange-table__td-time">сегодня, 12:55</span>
 							</td>
 						</tr>
-						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_map b-bank-exchange-table__row_oppened">
-							<td colspan="6">
-								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);">
-									
-								</div>
+						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_map">
+							<td class="b-bank-exchange-table__cell" colspan="6">
+								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);"></div>
 							</td>
 						</tr>
 						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_innactive">
-							<td>
+							<td class="b-bank-exchange-table__cell b-bank-exchange-table__cell_first">
 								<span class="b-bank-exchange-table__td-title">АК БАРС Банк</span>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">33,98</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<b class="b-bank-exchange-table__td-value">36,33</b>
 							</td>
-							<td>
+							<td class="b-bank-exchange-table__cell">
 								<span class="b-bank-exchange-table__td-time">давно</span>
 							</td>
-						</tr>							
+						</tr>	
+						<tr class="b-bank-exchange-table__row b-bank-exchange-table__row_map">
+							<td class="b-bank-exchange-table__cell" colspan="6">
+								<div class="b-bank-exchange-table__map" style="background: url(img/map.jpg);"></div>
+							</td>
+						</tr>						
 					</table>
 					</div>
 				</div>

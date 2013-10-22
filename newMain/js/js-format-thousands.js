@@ -1,6 +1,6 @@
 $(function() {
 	var $inputToFormat = $('.js-format-thousands');
-
+	
 	function formatNumber(s) {
 		return s.split('')
 					.reverse()

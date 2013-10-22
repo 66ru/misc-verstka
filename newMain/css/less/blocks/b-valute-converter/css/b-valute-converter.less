@@ -1,19 +1,39 @@
-.b-valute-converter {}
-.b-valute-converter__table {}
+.b-valute-converter {
+	padding: 6px 20px 14px;
+	
+}
+.b-valute-converter__table {
+	width:auto;
+	
+}
+
 .b-valute-converter__row {}
 .b-valute-converter__cell {
 	padding: 0;
+	width:1%;
 }
+
+.b-valute-converter__cell-text {
+	padding-top:4px;
+	font-size: 14px;;
+}
+
+.b-valute-converter__cell_eqv {
+	vertical-align: top;
+}
+
+
 .b-valute-converter__input {
 	font-size: 21px;
 	font-weight: bold;
+	width: 115px;
 	
 }
 .b-valute-converter__input_hidden {
 	display: none;
 }
 .b-valute-converter__result {
-	font-size: 14px;
+	font-size: 24px;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -21,7 +41,8 @@
 	display: none;
 }
 .b-valute-converter__gap {
-	padding: 0 0 0 5px;
+	padding: 0 0 0 10px;
+	width:1%;
 }
 .b-valute-converter__dropdown {
 	position: relative;
@@ -57,15 +78,86 @@
 	color: #0000CC;
 }
 .b-valute-converter__switch {
-    background: url("//yandex.st/serp/_/tGk4sFKwDl_4d5lvx1Kpci-xMPc.gif") no-repeat scroll 0 0 #FFFFFF;
+    background: url("./less/blocks/b-valute-converter/img/b-valute-converter-eqv.png") no-repeat scroll 0 0 #FFFFFF;
     display: block;
     font: 0px/0 a;
-    height: 24px;
+    height: 32px;
     margin: 0 10px;
     outline: medium none;
     padding: 0;
-    width: 24px;
+    width: 45px;
+	position: relative;
+	top:-2px;
 }
-.b-valute-converter__easteregg {
+
+.b-valute-converter__switch:hover {
+	background-position: 0 -34px;
+}
+
+.b-valute-converter-green {
+	color: @green-text;
+}
+
+
+
+
+.b-valute-converter-more {
+	position: relative;
+
+	.b-more__visible {
+		white-space: nowrap;
+		font-size: 16px;
+		font-weight:bold;
+		
+		.b-link_color_blue;
+		.b-link_border_yes;
+		.b-link_border_style_dotted;
+		.b-link_visited_no;
+		
+		border-bottom-width:1px;
+	}
 	
+	.b-more__elem {
+		margin-bottom: 8px;
+	}
+	
+	.b-link {
+		.b-link_color_blue;
+		.b-link_border_yes;
+		.b-link_border_style_dotted;
+		.b-link_visited_no;		
+	}
 }
+
+.b-valute-converter__gap .b-valute-converter-more {
+	top:-3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

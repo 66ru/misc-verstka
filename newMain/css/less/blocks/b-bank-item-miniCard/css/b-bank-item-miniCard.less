@@ -1,6 +1,6 @@
 .b-bank-item-miniCard {
-	margin-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 15px;
+	padding-bottom: 10px;
 	margin-bottom: 18px;
 	position:relative;
 	background: #fff;
@@ -20,10 +20,16 @@
 	box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.6);
     position: absolute;
     z-index: -2;
-	
+}
 
+.b-bank-item-miniCard_without-shadow {
+	-ms-filter: none;
+    filter: none;	
 	
-	
+}
+
+.b-bank-item-miniCard_without-shadow:before {
+	box-shadow: none;
 }
 
 .b-bank-item-miniCard__logo {
@@ -167,7 +173,36 @@
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);	
 }
 
+.b-bank-item-miniCard__courses__dynamic {
+	color: #808080;
+	font-size: 14px;
+	padding-right: 10px;
+	white-space:nowrap;
+	position: relative;
+	left:-13px;
+}
 
+.b-bank-item-miniCard__courses__dynamic:after {
+	position: absolute;
+	right: 0px;
+	width: 7px;
+	height: 7px;
+	content:"";
+	display:block;
+}
+
+.b-bank-item-miniCard__courses__dynamic_down:after {
+	background-image: url(./less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+	background-position: 0 -9px;
+	background-repeat: no-repeat;
+	top: 7px;
+}
+.b-bank-item-miniCard__courses__dynamic_up:after {
+	background-image: url(./less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+	background-position: 0 0px;
+	background-repeat: no-repeat;
+	top: 4px;
+}
 
 
 

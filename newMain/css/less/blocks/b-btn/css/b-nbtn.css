@@ -115,3 +115,10 @@
 	font-size: 13px;
 	line-height: 22px;
 }
+
+.b-nbtn_size_xs {
+	height: 17px;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0 5px;
+}
