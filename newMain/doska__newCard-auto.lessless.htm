@@ -21,11 +21,6 @@
 	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
 	<script src="css/less/blocks/b-header-search/js/b-header-search.js" type="text/javascript"></script>
 
-	<script src="js/js-sticky.js"></script>
-	<script>
-		$(function() { $('.js-sticky').sticky(); });
-	</script>
-
 	<script src="css/less/blocks/b-folded-plate/js/b-folded-plate.js"></script>
 	<script src="css/less/blocks/b-card-phone/js/b-card-phone.js"></script>
 
@@ -1830,7 +1825,7 @@
 						</div>
 					</form> -->
 
-					<div class="b-doska-ncard js-sticky-parent">
+					<div class="b-doska-ncard">
 						<div class="b-doska-ncard__ad">
 							<script type="text/javascript">
 								var show_adlift = 'http://show.adlift.ru/50c249e149ac176841000010.js';
@@ -1852,10 +1847,9 @@
 								<dt class="b-card-info__term">Размещено:</dt>
 								<dd class="b-card-info__desc">07.10.2013</dd>
 							</dl>
-							<dl class="b-card-info">
-								<dt class="b-card-info__term b-card-info__term_newline_yes">Продавец</dt>
-								<dd class="b-card-info__desc">Константин Константинович Римский-Щедрин</dd>
-							</dl>
+							<p class="b-card-info">
+								<span class="b-card-info__desc">Константин Константинович Римский-Щедрин</span>
+							</p>
 							<div class="b-card-phone">
 								<p class="b-card-phone__phone" data-phone="+7 (666) 666-66-66">+7 (343) XXX-XX-XX</p>
 								<span class="b-nbtn b-nbtn_size_s b-nbtn_theme_orange">Показать телефон</span>
@@ -1863,7 +1857,7 @@
 							</div>
 							<ul class="b-links-list">
 								<li class="b-links-list__elem b-folded-plate">
-									<a href="#" class="b-links-list__link b-links-list__link_icon_email b-link b-folded-plate__trigger" data-toggle-text="Свернуть">Отправить письмо автору</a>
+									<p class="b-links-list__link b-links-list__link_icon_email b-pseudo"><span class="b-pseudo__link b-folded-plate__trigger" data-toggle-text="Свернуть">Отправить письмо автору</span></p>
 									<form action="#" class="b-folded-plate__hidden b-mailto-form">
 										<label for="emailto-question" class="b-mailto-form__label">Ваш вопрос:</label>
 										<textarea name="emailto-question" id="emailto-question" cols="30" rows="10" class="b-mailto-form__textarea"></textarea>
@@ -1881,7 +1875,7 @@
 							<div class="b-showcase b-showcase_lim-height_460 js-center-image">
 								<a href="#" class="b-showcase__cell">
 									<div class="b-showcase__container">
-										<img src="http://steer.ru/archives/210408/bigfut/image_3.jpg" alt="" class="b-showcase__img">
+										<img src="http://steer.ru/archives/210408/bigfut/image_3.jpg" alt="" width="750" height="562" class="b-showcase__img">
 									</div>
 								</a>
 							</div>
@@ -1946,14 +1940,14 @@
 							<div class="b-showcase">
 								<a href="#" class="b-showcase__cell">
 									<div class="b-showcase__container">
-										<img src="http://tillwiedeck.com/wp-content/uploads/HelloMe_NadineGoepfert_FurMarbleShine_2.jpg" alt="" class="b-showcase__img">
+										<img src="http://tillwiedeck.com/wp-content/uploads/HelloMe_NadineGoepfert_FurMarbleShine_2.jpg" alt="" width="695" height="490" class="b-showcase__img">
 									</div>
 								</a>
 							</div>
 							<div class="b-showcase">
 								<a href="#" class="b-showcase__cell">
 									<div class="b-showcase__container">
-										<img src="http://1.bp.blogspot.com/_XhAzekAG0tg/TN0pZO7xbsI/AAAAAAAAF4s/EeNZ3CcUgXs/s1600/09%2BJOHN%2BHARRIS%2BBIG%2BCOMPUTER%2BSHOWING%2BMEMORY%2BSTACKS.jpg" alt="" class="b-showcase__img">
+										<img src="http://1.bp.blogspot.com/_XhAzekAG0tg/TN0pZO7xbsI/AAAAAAAAF4s/EeNZ3CcUgXs/s1600/09%2BJOHN%2BHARRIS%2BBIG%2BCOMPUTER%2BSHOWING%2BMEMORY%2BSTACKS.jpg" alt="" width="1180" height="711" class="b-showcase__img">
 									</div>
 								</a>
 							</div>
@@ -2111,7 +2105,7 @@
 					<div class="g-48">
 						<!-- <div class="b-pushtop-16"></div> -->
 						<div class="g-col-25 g-span-23">
-							<div class="js-sticky">
+							<div class="xjs-sticky">
 								<div class="b-doska-search">
 									<div class="b-doska-search__row">
 										<div class="b-doska-search__cell">

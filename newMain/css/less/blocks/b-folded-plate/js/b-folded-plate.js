@@ -10,7 +10,7 @@
 
 			e.preventDefault();
 
-			$this.siblings('.b-folded-plate__hidden').toggle().parent().toggleClass('b-folded-plate_unfold_yes');
+			$this.parent().siblings('.b-folded-plate__hidden').toggle().parent().toggleClass('b-folded-plate_unfold_yes');
 			$this.data('toggle-text', $this.html()).html(text);
 
 		})
