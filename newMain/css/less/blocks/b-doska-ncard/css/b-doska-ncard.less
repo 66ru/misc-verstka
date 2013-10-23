@@ -1,4 +1,5 @@
 .b-doska-ncard {
+	position: relative;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -28,14 +29,25 @@
 }
 
 .b-doska-ncard__info {
-	position: relative;
+	// position: relative;
 	float: right;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	margin-top: -15px;
 	margin-right: -20px;
-	padding: 0 0 20px 20px;
+	padding: 15px 0 20px 20px;
 	width: 250px;
+}
+
+.b-doska-ncard__info_sticky_top {
+	position: fixed;
+	top: 15px;
+}
+
+.b-doska-ncard__info_sticky_parent-bottom {
+	position: absolute;
+	bottom: 0;
 }
 
 .b-doska-ncard__content {
