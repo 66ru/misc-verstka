@@ -1,176 +1,134 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
-
- <head>
-
-
-
-
-
-
-
-<title>Депутаты предлагают штрафовать тихоходы — Автоновости Екатеринбурга</title>
-
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-
-        <meta name="description" content="По мнению авторов законопроекта, это поможет снизить аварийность на дорогах." />
-
-
+	<head>
+		<title>Депутаты предлагают штрафовать тихоходы — Автоновости Екатеринбурга</title>
+		
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta name="description" content="По мнению авторов законопроекта, это поможет снизить аварийность на дорогах." />
 		<meta property="og:title" content="Депутаты предлагают штрафовать тихоходы"/>
 		<meta property="og:type" content="article"/>
 		<meta property="og:image" content="http://s.66.ru/localStorage/news/ea/c2/76/cd/eac276cd_resizedScaled_200to133.jpg"/>
 		<meta property="og:site_name" content="66.ru"/>
+		
+		<link rel="pingback" href="http://api.66.ru/" />
+		<link href="http://s.66.ru/localStorage/14/b5/cd/20/14b5cd20.ico" type="image/x-icon" rel="icon" />
+		<link href="http://s.66.ru/localStorage/14/b5/cd/20/14b5cd20.ico" type="image/x-icon" rel="shortcut icon" />
+		<link rel="apple-touch-icon" href="http://s.66.ru/localStorage/3f/a4/74/1./3fa4741.png" />
+		<!--link href="http://t.66.ru/b54cd893bb0615fcb97c00460b6a5239da4439c6/1593a1a068c0e0cbe0a0f7320e858994/client.css" rel="stylesheet"  type="text/css" /-->
+		<link href="../../1/client.css" rel="stylesheet"  type="text/css" />
+		<!--script src="http://t.66.ru/b54cd893bb0615fcb97c00460b6a5239da4439c6/1593a1a068c0e0cbe0a0f7320e858994/client.js"  type="text/javascript"></script-->
+		<script src="../../1/client.js"  type="text/javascript"></script>
+		
+		<meta property="twitter:card" content="summary"/>
+		<meta property="twitter:site" content="@66ru"/>
+		<meta property="twitter:url" content="http://66.ru/auto/news/141424/"/>
+		<meta property="twitter:title" content="Депутаты предлагают штрафовать тихоходы"/>
+		<meta property="twitter:description" content="По мнению авторов законопроекта, это поможет снизить аварийность на дорогах."/>
+		<meta property="twitter:image" content="http://s.66.ru/localStorage/news/ea/c2/76/cd/eac276cd_resizedScaled_100to66.jpg"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/banki-exchange.dep.css" />
+		
+		<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-header-menu/js/jquery-menu-stretch.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-header-search/js/b-header-search.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-readmore/js/b-readmore.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-tabs/js/b-tabs.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-job-list/js/b-job-list.js" type="text/javascript"></script>
+		<script src="css/less/blocks/b-bank-exchange-table/js/b-bank-exchange-table.js" type="text/javascript"></script>
+		<script src="js/js-format-thousands.js" type="text/javascript"></script>
+		<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+		<!--script src="http://yandex.st/jquery/1.8.0/jquery.min.js" type="text/javascript"></script-->	
+		<script src="css/less/blocks/b-more/js/b-more.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+		ymaps.ready(init);
 
+		function init () {
+			var map = new ymaps.Map('map', {
+					center: [55.650625, 37.62708],
+					zoom: 10
+				}),
 
-  <link rel="pingback" href="http://api.66.ru/" />
-  <link href="http://s.66.ru/localStorage/14/b5/cd/20/14b5cd20.ico" type="image/x-icon" rel="icon" />
-  <link href="http://s.66.ru/localStorage/14/b5/cd/20/14b5cd20.ico" type="image/x-icon" rel="shortcut icon" />
-  <link rel="apple-touch-icon" href="http://s.66.ru/localStorage/3f/a4/74/1./3fa4741.png" />
+				counter = 0,
 
-  <!--link href="http://t.66.ru/b54cd893bb0615fcb97c00460b6a5239da4439c6/1593a1a068c0e0cbe0a0f7320e858994/client.css" rel="stylesheet"  type="text/css" /-->
-  <link href="../../1/client.css" rel="stylesheet"  type="text/css" />
+				// Создание макета содержимого балуна.
+				// Макет создается с помощью фабрики макетов с помощью текстового шаблона.
+				BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+					'<div class="b-yacard-popup-exchange">' +
+						'<b class="b-yacard-popup-exchange__label">$[properties.label]</b><br />' +
+						'<a class="b-yacard-popup-exchange__title" href="$[properties.link]">$[properties.name]</a><br />' +
+						'<div class="b-valute-converter b-yacard-popup-exchange-converter"><table class="b-valute-converter__table">' +
+						'<tr class="b-valute-converter__row">' +
+							'<td class="b-valute-converter__cell">' +
+							'<input id="" maxlength="20" size="7" class="b-valute-converter__input js-format-thousands" value="10000" />' +
+							'</td><td class="b-valute-converter__gap">'+
+							'<div class="b-more b-valute-converter-more">' + 
+							'<a class="b-more__visible" href="#">USD</a>' +
+							'<ul class="b-more__popup">' +
+							'<li class="b-more__elem"><a class="b-link" href="#">евро</a></li><li class="b-more__elem"><a class="b-link" href="#">руб.</a></li>' +
+							'</ul></div></td><td class="b-valute-converter__cell b-valute-converter__cell_eqv">' +
+							'<a title="Поменять местами" href="#" class="b-valute-converter__switch">=</a>' +
+							'</td><td class="b-valute-converter__cell">' +
+							'<input id="rInput" maxlength="20" size="7" class="b-valute-converter__input b-valute-converter__input_hidden">' + 
+							'<span class="b-valute-converter__result">1 064,79</span>' + 
+							'</td><td class="b-valute-converter__gap">' +
+							'<div class="b-more b-valute-converter-more">' + 
+							'<a class="b-more__visible b-more__visible_without_arr" href="#">руб.</a>' + 
+							'<ul class="b-more__popup">' + 
+							'<li class="b-more__elem"><a class="b-link" href="#">USD</a></li><li class="b-more__elem"><a class="b-link" href="#">евро</a></li>' +
+							'</ul></div></td><td colspan="5">&nbsp;</td></tr></table></div>' +
+						'<div class="b-yacard-popup-exchange__text"><p>$[properties.adress]<br />$[properties.phones]</p><p>$[properties.worktime]</p></div>' +
+					'</div>', {
 
-  <!--script src="http://t.66.ru/b54cd893bb0615fcb97c00460b6a5239da4439c6/1593a1a068c0e0cbe0a0f7320e858994/client.js"  type="text/javascript"></script-->
-  <script src="../../1/client.js"  type="text/javascript"></script>
+					// Переопределяем функцию build, чтобы при создании макета начинать
+					// слушать событие click на кнопке-счетчике.
+					build: function () {
+						// Сначала вызываем метод build родительского класса.
+						BalloonContentLayout.superclass.build.call(this);
+						// А затем выполняем дополнительные действия.
+						$('#counter-button').bind('click', this.onCounterClick);
+						$('#count').html(counter);
+					},
 
+					// Аналогично переопределяем функцию clear, чтобы снять
+					// прослушивание клика при удалении макета с карты.
+					clear: function () {
+						// Выполняем действия в обратном порядке - сначала снимаем слушателя,
+						// а потом вызываем метод clear родительского класса.
+						$('#counter-button').unbind('click', this.onCounterClick);
+						BalloonContentLayout.superclass.clear.call(this);
+					},
 
+					onCounterClick: function () {
+						$('#count').html(++counter);
+						if (counter == 5) {
+							alert('Вы славно потрудились.');
+							counter = 0;
+							$('#count').html(counter);
+						}
+					}
+				});
 
-             <meta property="twitter:card" content="summary"/>
-            <meta property="twitter:site" content="@66ru"/>
-            <meta property="twitter:url" content="http://66.ru/auto/news/141424/"/>
-            <meta property="twitter:title" content="Депутаты предлагают штрафовать тихоходы"/>
-            <meta property="twitter:description" content="По мнению авторов законопроекта, это поможет снизить аварийность на дорогах."/>
-            <meta property="twitter:image" content="http://s.66.ru/localStorage/news/ea/c2/76/cd/eac276cd_resizedScaled_100to66.jpg"/>
+			var placemark = new ymaps.Placemark([55.650625, 37.62708], {
+					label: 'Обменный пункт',
+					name: '«Банк Восточный Экспресс»',
+					link: 'http://www.bank.ru/',
+					adress: 'Екатеринбург, ул. Белинского, 61',
+					phones: '(343) 228-30-87, 228-30-81, 228-30-88, 228-30-85',
+					worktime: 'Время работы: пн-пт: 09:00-20:00, сб:10:00-17:00',
+					
+				}, {
+					balloonContentLayout: BalloonContentLayout
+				});
 
-
-
-	<link rel="stylesheet/less" type="text/css" href="css/banki-exchange.dep.less" />
-	<link rel="stylesheet" href="css/less/blocks/b-catalogue/css/b-catalogue.css" />
-	<!--link rel="stylesheet/less" type="text/css" href="css/less/blocks/i-branding/css/i-branding_kinopoisk.old.less" /-->
-
-	<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
-	<!--script src="https://raw.github.com/less/less.js/master/dist/less-1.4.2.min.js"></script-->
-	<script src="../../1/less-1.4.2.min.js"></script>
-
-	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim.js" type="text/javascript"></script>
-	<script src="css/less/blocks/b-header-menu/js/jquery-menu-stretch.js" type="text/javascript"></script>
-	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
-	<script src="css/less/blocks/b-header-search/js/b-header-search.js" type="text/javascript"></script>
-
-	<script src="css/less/blocks/b-readmore/js/b-readmore.js" type="text/javascript"></script>
-
-	<script src="css/less/blocks/b-tabs/js/b-tabs.js" type="text/javascript"></script>
-	<script src="css/less/blocks/b-job-list/js/b-job-list.js" type="text/javascript"></script>
-	
-	<script src="css/less/blocks/b-bank-exchange-table/js/b-bank-exchange-table.js" type="text/javascript"></script>
-	
-	
-	
-	
-	<script src="js/js-format-thousands.js" type="text/javascript"></script>
-    <script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-    <!--script src="http://yandex.st/jquery/1.8.0/jquery.min.js" type="text/javascript"></script-->	
-	
-	<script src="css/less/blocks/b-more/js/b-more.js" type="text/javascript"></script>
-	
-	
-	
-	
-	
-<script type="text/javascript">
-ymaps.ready(init);
-
-function init () {
-    var map = new ymaps.Map('map', {
-            center: [55.650625, 37.62708],
-            zoom: 10
-        }),
-
-        counter = 0,
-
-        // Создание макета содержимого балуна.
-        // Макет создается с помощью фабрики макетов с помощью текстового шаблона.
-        BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div class="b-yacard-popup-exchange">' +
-                '<b class="b-yacard-popup-exchange__label">$[properties.label]</b><br />' +
-            	'<a class="b-yacard-popup-exchange__title" href="$[properties.link]">$[properties.name]</a><br />' +
-				'<div class="b-valute-converter b-yacard-popup-exchange-converter"><table class="b-valute-converter__table">' +
-				'<tr class="b-valute-converter__row">' +
-					'<td class="b-valute-converter__cell">' +
-					'<input id="" maxlength="20" size="7" class="b-valute-converter__input js-format-thousands" value="10000" />' +
-					'</td><td class="b-valute-converter__gap">'+
-					'<div class="b-more b-valute-converter-more">' + 
-					'<a class="b-more__visible" href="#">USD</a>' +
-					'<ul class="b-more__popup">' +
-					'<li class="b-more__elem"><a class="b-link" href="#">евро</a></li><li class="b-more__elem"><a class="b-link" href="#">руб.</a></li>' +
-					'</ul></div></td><td class="b-valute-converter__cell b-valute-converter__cell_eqv">' +
-					'<a title="Поменять местами" href="#" class="b-valute-converter__switch">=</a>' +
-					'</td><td class="b-valute-converter__cell">' +
-					'<input id="rInput" maxlength="20" size="7" class="b-valute-converter__input b-valute-converter__input_hidden">' + 
-            		'<span class="b-valute-converter__result">1 064,79</span>' + 
-					'</td><td class="b-valute-converter__gap">' +
-					'<div class="b-more b-valute-converter-more">' + 
-					'<a class="b-more__visible b-more__visible_without_arr" href="#">руб.</a>' + 
-					'<ul class="b-more__popup">' + 
-					'<li class="b-more__elem"><a class="b-link" href="#">USD</a></li><li class="b-more__elem"><a class="b-link" href="#">евро</a></li>' +
-					'</ul></div></td><td colspan="5">&nbsp;</td></tr></table></div>' +
-            	'<div class="b-yacard-popup-exchange__text"><p>$[properties.adress]<br />$[properties.phones]</p><p>$[properties.worktime]</p></div>' +
-            '</div>', {
-
-            // Переопределяем функцию build, чтобы при создании макета начинать
-            // слушать событие click на кнопке-счетчике.
-            build: function () {
-                // Сначала вызываем метод build родительского класса.
-                BalloonContentLayout.superclass.build.call(this);
-                // А затем выполняем дополнительные действия.
-                $('#counter-button').bind('click', this.onCounterClick);
-                $('#count').html(counter);
-            },
-
-            // Аналогично переопределяем функцию clear, чтобы снять
-            // прослушивание клика при удалении макета с карты.
-            clear: function () {
-                // Выполняем действия в обратном порядке - сначала снимаем слушателя,
-                // а потом вызываем метод clear родительского класса.
-                $('#counter-button').unbind('click', this.onCounterClick);
-                BalloonContentLayout.superclass.clear.call(this);
-            },
-
-            onCounterClick: function () {
-                $('#count').html(++counter);
-                if (counter == 5) {
-                    alert('Вы славно потрудились.');
-                    counter = 0;
-                    $('#count').html(counter);
-                }
-            }
-        });
-
-    var placemark = new ymaps.Placemark([55.650625, 37.62708], {
-            label: 'Обменный пункт',
-        	name: '«Банк Восточный Экспресс»',
-        	link: 'http://www.bank.ru/',
-        	adress: 'Екатеринбург, ул. Белинского, 61',
-			phones: '(343) 228-30-87, 228-30-81, 228-30-88, 228-30-85',
-        	worktime: 'Время работы: пн-пт: 09:00-20:00, сб:10:00-17:00',
-        	
-        }, {
-            balloonContentLayout: BalloonContentLayout
-        });
-
-    map.geoObjects.add(placemark);
-}
-</script>	
-	
-	
-	
-	
-	
-	
- </head>
-
- <body class="page-fixed-right i-branding">
+			map.geoObjects.add(placemark);
+		}
+		</script>	
+	</head>
+<body class="page-fixed-right i-branding">
 
     <!--[if IE 8]><div id="ie_frame_reflow"><![endif]-->
   <div id="opera_frame_reflow"></div>
@@ -585,6 +543,13 @@ function init () {
 												<li class="b-more__elem"><a class="b-link" href="#">российский рубль</a></li>
 												<li class="b-more__elem b-more__elem_cur"><a class="b-link" href="#">долларов США</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">евро</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">швейцарского франка</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">британского фунта</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">японской иены</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">украинской гривны</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">японской иены</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">казахстанского тенге</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">белорусского рубля</a></li>
 											</ul>
 										</div>
 										
@@ -604,6 +569,13 @@ function init () {
 												<li class="b-more__elem"><a class="b-link" href="#">долларов США</a></li>
 												<li class="b-more__elem b-more__elem_cur"><a class="b-link" href="#">российский рубль</a></li>
 												<li class="b-more__elem"><a class="b-link" href="#">евро</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">швейцарского франка</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">британского фунта</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">японской иены</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">украинской гривны</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">японской иены</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">казахстанского тенге</a></li>
+												<li class="b-more__elem"><a class="b-link" href="#">белорусского рубля</a></li>
 											</ul>
 										</div>
 										
@@ -633,11 +605,15 @@ function init () {
 						<div class="b-valute-best-course">
 							<div class="b-valute-best-course__row">
 								<span class="b-valute-best-course__label">Лучший курс покупки:</span>
-								<b class="b-valute-best-course__val">33,3401 рубля</b> <a href="">&laquo;Азиатско-Тихоокеанский Банк&raquo;</a>&nbsp;<a class="b-nbtn b-nbtn_theme_green b-nbtn_size_xs" href="#">рассчитать</a>
+								<b class="b-valute-best-course__val">33,3401 рубля</b>
+								<a href="">&laquo;Азиатско-Тихоокеанский Банк&raquo;</a>&nbsp; 
+								<a class="b-nbtn b-nbtn_theme_green b-nbtn_size_xs" href="#">рассчитать</a>
 							</div>
 							<div class="b-valute-best-course__row">
 								<span class="b-valute-best-course__label">Лучший курс продажи:</span>
-								<b class="b-valute-best-course__val">33,3401 рубля</b> <a href="">&laquo;Уральский Сбербанк&raquo;</a>&nbsp;<a class="b-nbtn b-nbtn_theme_green b-nbtn_size_xs" href="#">рассчитать</a>
+								<b class="b-valute-best-course__val">33,3401 рубля</b>
+								<a href="">&laquo;Уральский Сбербанк&raquo;</a>&nbsp; 
+								<a class="b-nbtn b-nbtn_theme_green b-nbtn_size_xs" href="#">рассчитать</a>
 							</div>
 						</div>
 						
