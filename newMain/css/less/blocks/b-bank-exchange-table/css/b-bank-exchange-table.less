@@ -16,6 +16,7 @@
 	width: 100%;
 	margin-top: 0px;
 	margin-top: -62px;
+	table-layout: fixed;
 }
 .b-bank-exchange-table__wrap th {
 	height: 34px;
@@ -24,6 +25,10 @@
 	padding-bottom: 15px;
 	font-size:  14px;
 	padding-left: 5px;
+}
+
+.b-bank-exchange-table__wrap th:first-child {
+	width: 280px;
 }
 
 .b-bank-exchange-table__cell {
@@ -188,7 +193,8 @@
 }
 
 .b-bank-exchange-table__map {
-	height: 270px;
+	height: 300px;
+	width: 100%;
 }
 
 .b-bank-exchange-table__cell_first {

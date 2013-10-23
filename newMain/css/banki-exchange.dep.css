@@ -1669,13 +1669,22 @@ a.b-username.b-link_border_style_dotted.b-link_visited_no:hover {
   border-left: 1px solid #ccc;
   padding-right: 0px;
 }
+@media only screen and (max-width: 1100px) {
+  .b-bank-item-miniCard-table__cell_courses {
+    display: none;
+  }
+  .b-bank-item-miniCard-table__cell {
+    padding-right: 0px;
+  }
+}
 .b-bank-item-miniCard-table__cell__courses__title-date {
   color: #84a830;
-  font-size: 11px;
+  font-size: 14px;
   text-decoration: none;
 }
 .b-bank-item-miniCard__courses__table {
   margin-bottom: 12px;
+  margin-top: 10px;
 }
 .b-bank-item-miniCard__courses__table__header {
   font-size: 12px;
@@ -1689,10 +1698,8 @@ a.b-username.b-link_border_style_dotted.b-link_visited_no:hover {
 .b-bank-item-miniCard__courses__title {
   border-bottom: 1px solid #ccc;
   margin-bottom: 5px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-left: 20px;
+  line-height: 17px;
+  padding: 10px 5px 8px 20px;
 }
 .b-bank-item-miniCard__courses__body {
   padding-left: 20px;
@@ -2496,6 +2503,14 @@ a.b-readmore__link {
 }
 .b-more__elem_cur .b-link {
   color: #ff0000 !important;
+}
+.b-more__popup__input-autosuggest {
+  padding: 3px 3px;
+  font-size: 14px;
+}
+.b-more__popup__container-fix-height {
+  height: 200px;
+  overflow-y: auto;
 }
 .b-catalogue {
   display: table;
@@ -3339,6 +3354,7 @@ a.b-btn__link,
   width: 100%;
   margin-top: 0px;
   margin-top: -62px;
+  table-layout: fixed;
 }
 .b-bank-exchange-table__wrap th {
   height: 34px;
@@ -3347,6 +3363,9 @@ a.b-btn__link,
   padding-bottom: 15px;
   font-size: 14px;
   padding-left: 5px;
+}
+.b-bank-exchange-table__wrap th:first-child {
+  width: 280px;
 }
 .b-bank-exchange-table__cell {
   border-bottom: 1px solid #e5e5e5;
@@ -3466,7 +3485,8 @@ a.b-btn__link,
   font-weight: bold;
 }
 .b-bank-exchange-table__map {
-  height: 270px;
+  height: 300px;
+  width: 100%;
 }
 .b-bank-exchange-table__cell_first {
   width: 260px;
@@ -3492,6 +3512,7 @@ a.b-btn__link,
   font-size: 21px;
   font-weight: bold;
   width: 115px;
+  text-align: right;
 }
 .b-valute-converter__input_hidden {
   display: none;
@@ -3835,6 +3856,14 @@ a.b-btn__link,
 .b-more__elem_cur .b-link {
   color: #ff0000 !important;
 }
+.b-more__popup__input-autosuggest {
+  padding: 3px 3px;
+  font-size: 14px;
+}
+.b-more__popup__container-fix-height {
+  height: 200px;
+  overflow-y: auto;
+}
 .b-valute-best-course {
   background: #d6eaaa;
   padding: 10px 20px 12px;
@@ -3857,6 +3886,10 @@ a.b-btn__link,
   padding-top: 3px;
   padding-bottom: 5px;
   line-height: 20px;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .b-yacard-popup-exchange__label {
   font-size: 14px;
@@ -3876,8 +3909,9 @@ a.b-btn__link,
 .b-yacard-popup-exchange-converter .b-valute-converter__input {
   font-size: 14px;
   padding: 2px 0;
-  width: 70px;
+  width: 75px;
   text-indent: 3px;
+  text-align: right;
 }
 .b-yacard-popup-exchange-converter .b-valute-converter-more .b-more__elem {
   margin-bottom: 0px;
@@ -3897,7 +3931,7 @@ a.b-btn__link,
   padding-left: 0px;
 }
 .b-yacard-popup-exchange-converter .b-valute-converter__row td.b-valute-converter__gap {
-  padding-left: 3px;
+  padding-left: 8px;
 }
 .b-yacard-popup-exchange-converter .b-valute-converter__gap .b-valute-converter-more {
   top: 0px;
