@@ -426,7 +426,7 @@
   position: absolute;
   top: 0;
   display: block;
-  right: -3%;
+  right: -4%;
 }
 .g-col-29.g-main-col-2 {
   left: 571%;
@@ -600,8 +600,6 @@ a:active {
 .b-link_color_blue.b-link_border_yes {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
-  /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_blue.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -610,10 +608,6 @@ a:active {
   color: #ff5400;
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
-}
-.b-link_color_blue.b-link_border_yes.b-link_visited_yes {
-  /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_blue.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -624,10 +618,6 @@ a:active {
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
 }
-.b-link_color_blue.b-link_border_yes.b-link_visited_no {
-  /*визит и ховер на цвет и бордер и посещенность*/
-
-}
 .b-link_color_blue.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
@@ -636,6 +626,12 @@ a:active {
   color: #ff5400;
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
+}
+.b-link_color_blue.b-link_border_yes.b-link_border_style_dotted.b-link_visited_no {
+  border-bottom: 1px dotted rgba(0, 120, 153, 0.30000000000000004);
+}
+.b-link_color_blue.b-link_border_yes.b-link_border_style_dotted.b-link_visited_no:hover {
+  border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
 }
 .b-link_border_style_dashed {
   border-style: dashed;
@@ -828,16 +824,17 @@ a:active {
 .b-pushtop-16 {
   margin-top: -16px;
 }
-.push-left {
+/*надо поднять специфичность этих классов*/
+body .push-left {
   float: left;
 }
-.push-right {
+body .push-right {
   float: right;
 }
-.align_center {
+body .align_center {
   text-align: center;
 }
-.float_none {
+body .float_none {
   float: none;
 }
 .css-inline-block,
@@ -1435,14 +1432,10 @@ a.b-username {
   color: #007899;
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
-  /*визит и ховер на цвет и бордер*/
-
 }
 a.b-username.b-link_border_yes {
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
-  /*визит и ховер на цвет и бордер*/
-
 }
 a.b-username.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -1451,10 +1444,6 @@ a.b-username.b-link_border_yes:hover {
   color: #ff5400;
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
-}
-a.b-username.b-link_border_yes.b-link_visited_yes {
-  /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -1465,10 +1454,6 @@ a.b-username.b-link_border_yes.b-link_visited_yes:hover {
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
 }
-a.b-username.b-link_border_yes.b-link_visited_no {
-  /*визит и ховер на цвет и бордер и посещенность*/
-
-}
 a.b-username.b-link_border_yes.b-link_visited_no:visited {
   color: #007899;
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
@@ -1478,6 +1463,12 @@ a.b-username.b-link_border_yes.b-link_visited_no:hover {
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
 }
+a.b-username.b-link_border_yes.b-link_border_style_dotted.b-link_visited_no {
+  border-bottom: 1px dotted rgba(0, 120, 153, 0.30000000000000004);
+}
+a.b-username.b-link_border_yes.b-link_border_style_dotted.b-link_visited_no:hover {
+  border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
+}
 a.b-username:visited {
   border-bottom: 1px solid #808080;
 }
@@ -1485,10 +1476,6 @@ a.b-username:hover {
   color: #ff5400;
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
-}
-a.b-username.b-link_visited_yes {
-  /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 a.b-username.b-link_visited_yes:visited {
   color: #808080;
@@ -1499,10 +1486,6 @@ a.b-username.b-link_visited_yes:hover {
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
 }
-a.b-username.b-link_visited_no {
-  /*визит и ховер на цвет и бордер и посещенность*/
-
-}
 a.b-username.b-link_visited_no:visited {
   color: #007899;
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
@@ -1511,6 +1494,12 @@ a.b-username.b-link_visited_no:hover {
   color: #ff5400;
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
+}
+a.b-username.b-link_border_style_dotted.b-link_visited_no {
+  border-bottom: 1px dotted rgba(0, 120, 153, 0.30000000000000004);
+}
+a.b-username.b-link_border_style_dotted.b-link_visited_no:hover {
+  border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
 }
 .username_sex_icon {
   content: '';
