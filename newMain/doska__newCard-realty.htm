@@ -26,6 +26,7 @@
 	<script src="css/less/blocks/b-card-phone/js/b-card-phone.js"></script>
 	<script src="css/less/blocks/b-doska-ncard/js/sticky-info.js"></script>
 	<script src="css/less/blocks/b-sticky-right-col/js/sticky-right-col.js"></script>
+	<script src="css/less/blocks/b-realty-map/js/toggle-map.js"></script>
 
 </head>
 <body>
@@ -1808,38 +1809,8 @@
 						</div>
 
 
-					<!-- <form class="b-doska-search" action="#">
-						<div class="b-doska-search__row">
-							<div class="b-doska-search__cell b-doska-search__cell_width_left">
-								<label for="search-input" class="b-doska-search__heading">Поиск</label>
-							</div>
-							<div class="b-doska-search__cell">
-								<input type="text" name="search-input" id="search-input" class="b-doska-search__input">
-							</div>
-							<div class="b-doska-search__cell b-doska-search__cell_width_right">
-								<input type="submit" value="Найти" class="b-doska-search__submit b-nbtn b-nbtn_theme_grey">
-							</div>
-						</div>
-						<div class="b-doska-search__row">
-							<div class="b-doska-search__cell"></div>
-							<div class="b-doska-search__cell">
-								<span class="b-doska-search__example-label">Например:</span><span class="b-doska-search__example">ксенон</span><span class="b-doska-search__example">Индия</span><span class="b-doska-search__example">кроватка</span></div>
-							<div class="b-doska-search__cell"></div>
-						</div>
-					</form> -->
-
 					<div class="b-doska-ncard">
-						<div class="b-doska-ncard__ad">
-							<script type="text/javascript">
-								var show_adlift = 'http://show.adlift.ru/50c249e149ac176841000010.js';
-								var current_url = window.location;
-								var current_code = '';
-								document.write ("<scr"+"ipt type='text/javascript' src='"+show_adlift);
-								document.write ("?url="+current_url+"&code="+current_code);
-								document.write ("'></scr"+"ipt>");
-							</script>
-						</div>
-						<h2 class="b-doska-ncard__heading">Panasonic HT-TKX500R</h2>
+						<h2 class="b-doska-ncard__heading">Продам 2-к. квартиру, ул. Гоголя, 120 (Центр)</h2>
 						<div class="b-doska-ncard__info">
 							<div class="b-price-tag b-price-tag_layout_realty">120&thinsp;000&thinsp;000 р.<p class="b-price-tag__details">62 000 р. за м²</p></div>
 							<div class="b-credit-info">
@@ -1855,8 +1826,10 @@
 							</p>
 							<div class="b-card-phone">
 								<p class="b-card-phone__phone" data-phone="+7 (666) 666-66-66">+7 (343) 226-02-98, добавочный 9570</p>
-								<span class="b-nbtn b-nbtn_size_s b-nbtn_theme_orange">Показать телефон</span>
-								<span class="b-card-phone__balloon">Скажите, что вы с 66.ru</span>
+								<div class="b-card-phone__balloon">
+									Автор скрыл свой номер.
+									<span class="b-card-phone__in-balloon-extra">Мы соединим вас через добавочный номер.</span>
+								</div>
 							</div>
 							<ul class="b-links-list">
 								<li class="b-links-list__elem b-folded-plate">
@@ -1874,11 +1847,29 @@
 								<li class="b-links-list__elem b-pseudo b-pseudo_theme_alert"><span class="b-links-list__link b-links-list__link_icon_complain b-pseudo__link">Пожаловаться</span></li>
 							</ul>
 						</div>
+						<div class="b-realty-map">
+							<div class="b-realty-map__header">
+								<div class="b-realty-map__left">
+									<span class="b-realty-map__toggle b-pseudo b-pseudo__link" data-fold-text="Спрятать карту">Показать на карте</span>
+								</div>
+								<div class="b-realty-map__right">
+									Оценка инфраструктуры: <span class="b-realty-map__score">6,49 из 10 <span class="b-realty-map__wtf"><span class="b-realty-map__more">Оценка инфраструктуры проводится по близости объектов: детские сады, спортивные комплексы, магазины, парковки, парки. Смотрите общую карту инфраструктуры Екатеринбурга на странице нашего спецпроекта «Рейтинг Домов»</span></span></span>
+								</div>
+							</div>
+							<div class="b-realty-map__map"></div>
+						</div>
 						<div class="b-doska-ncard__content">
-							<div class="b-showcase b-showcase_lim-height_460 js-center-image">
+							<div class="b-showcase b-showcase_top b-showcase_lim-height_460 js-center-image">
 								<div class="b-showcase__cell">
 									<div class="b-showcase__container">
-										<img src="http://steer.ru/archives/210408/bigfut/image_3.jpg" alt="" width="750" height="562" class="b-showcase__img">
+										<img src="http://www.desiretoinspire.net/storage/allpostphotos/chesterton_MG_8158.jpg?__SQUARESPACE_CACHEVERSION=1312412079754" alt="" width="750" height="500" class="b-showcase__img">
+									</div>
+								</div>
+							</div>
+							<div class="b-showcase">
+								<div class="b-showcase__cell">
+									<div class="b-showcase__container">
+										<img src="http://25.media.tumblr.com/tumblr_lyaa469RXC1qastypo1_500.jpg" alt="" width="500" height="500" class="b-showcase__img">
 									</div>
 								</div>
 							</div>
@@ -1916,14 +1907,21 @@
 							<div class="b-showcase">
 								<div class="b-showcase__cell">
 									<div class="b-showcase__container">
-										<img src="http://tillwiedeck.com/wp-content/uploads/HelloMe_NadineGoepfert_FurMarbleShine_2.jpg" alt="" width="695" height="490" class="b-showcase__img">
+										<img src="http://25.media.tumblr.com/tumblr_lo0ycf7YH71qb62c4o1_500.jpg" alt="" width="344" height="517" class="b-showcase__img">
 									</div>
 								</div>
 							</div>
 							<div class="b-showcase">
 								<div class="b-showcase__cell">
 									<div class="b-showcase__container">
-										<img src="http://1.bp.blogspot.com/_XhAzekAG0tg/TN0pZO7xbsI/AAAAAAAAF4s/EeNZ3CcUgXs/s1600/09%2BJOHN%2BHARRIS%2BBIG%2BCOMPUTER%2BSHOWING%2BMEMORY%2BSTACKS.jpg" alt="" width="1180" height="711" class="b-showcase__img">
+										<img src="http://www.desiretoinspire.net/storage/allpostphotos/chesterton_MG_8103.jpg?__SQUARESPACE_CACHEVERSION=1312411979825" alt="" width="750" height="500" class="b-showcase__img">
+									</div>
+								</div>
+							</div>
+							<div class="b-showcase">
+								<div class="b-showcase__cell">
+									<div class="b-showcase__container">
+										<img src="http://3.bp.blogspot.com/_Hyo-cUbZLVg/TCn143GILXI/AAAAAAAAIj8/UdfWkRWfu44/s1600/q4ljdm836l.jpg" alt="" width="390" height="517" class="b-showcase__img">
 									</div>
 								</div>
 							</div>
