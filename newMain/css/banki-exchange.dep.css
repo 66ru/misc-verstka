@@ -3248,7 +3248,7 @@ a.b-btn__link,
   text-align: center;
   text-decoration: none;
   font-size: 14px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 30px;
   cursor: pointer;
 }
@@ -3301,7 +3301,6 @@ a.b-btn__link,
   color: #fff;
 }
 .b-nbtn_theme_orange:hover {
-  color: #fff;
   background: #f9a600;
   background: -moz-linear-gradient(top, #f9a600 0%, #f48900 73%, #f17f00 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9a600), color-stop(73%, #f48900), color-stop(100%, #f17f00));
@@ -3309,9 +3308,9 @@ a.b-btn__link,
   background: -o-linear-gradient(top, #f9a600 0%, #f48900 73%, #f17f00 100%);
   background: -ms-linear-gradient(top, #f9a600 0%, #f48900 73%, #f17f00 100%);
   background: linear-gradient(to bottom, #f9a600 0%, #f48900 73%, #f17f00 100%);
+  color: #fff;
 }
 .b-nbtn_theme_orange:active {
-  color: #fff;
   background: #f17f00;
   background: -moz-linear-gradient(top, #f17f00 0%, #f48900 95%, #f9a600 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f17f00), color-stop(95%, #f48900), color-stop(100%, #f9a600));
@@ -3319,6 +3318,7 @@ a.b-btn__link,
   background: -o-linear-gradient(top, #f17f00 0%, #f48900 95%, #f9a600 100%);
   background: -ms-linear-gradient(top, #f17f00 0%, #f48900 95%, #f9a600 100%);
   background: linear-gradient(to bottom, #f17f00 0%, #f48900 95%, #f9a600 100%);
+  color: #fff;
 }
 .b-nbtn_theme_grey {
   border-width: 0;
@@ -3341,10 +3341,10 @@ a.b-btn__link,
   line-height: 22px;
 }
 .b-nbtn_size_xs {
+  padding: 0 5px;
   height: 17px;
   font-size: 12px;
   line-height: 16px;
-  padding: 0 5px;
 }
 .b-bank-exchange-table {
   clear: both;
