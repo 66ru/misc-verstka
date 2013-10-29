@@ -23,25 +23,27 @@
 	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
 	<script src="css/less/blocks/b-header-search/js/b-header-search.js" type="text/javascript"></script>
 
+	<script src="js/pageScript.js" type="text/javascript"></script>
+
 </head>
-<body class="i-branding">
+<body class="i-branding-">
 
 <div class="l-body">
 
-	<div class="l-branding-top">
+	<!--div class="l-branding-top">
 		<div class="l-branding-top-repeat"></div>
 		<div class="l-branding-top-bg"></div>
 		<div class="l-width">
 			<div style="position: absolute; width: 300px; height: 300px; left: 0px; top: 0px; display: block; background: #ccc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div>
 			<div style="position: absolute; width: 300px; height: 300px; right: 0px; top: 0px; display: block; background: #dcdcdc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div>
 		</div>
-	</div>
+	</div-->
 
 
 	<div class="l-header-wrap">
 		<div class="l-width">
 			<div class="g-48">
-				<div class="g-col-2 g-span-27 js-main-col">
+				<div class="g-col-1 g-span-28 js-main-col">
 					<a href="#123" class="b-header-logo">
 						<img class="b-header-logo__img" src="img/b-header-logo.png" alt=""/>
 					</a>
@@ -321,12 +323,12 @@
 						</ul>
 					</div>
 				</div>
-				<div class="g-col-29 g-span-19 g-main-col-2">
+				<div class="g-col-30 g-span-19 g-main-col-2">
 					<div class="g-48">
 						<div class="g-col-1 g-span-24">
 
 							<form action="" class="b-header-search">
-								<input class="b-header-search__text" type="text" value="Поиск" placeholder="Поиск" />
+								<input class="b-header-search__text" type="text" value="" placeholder="Поиск" />
 								<input class="b-header-search__subm" type="submit" value=""/>
 							</form>
 
@@ -335,7 +337,7 @@
 
 
 
-							<table class="b-header-auth">
+							<table class="b-header-auth"  style="display: none">
 								<tr>
 									<td class="b-header-auth__tab b-header-auth__tab_active_yes">
 										<div class="b-header-auth__tab__logined-user">
@@ -344,7 +346,6 @@
 													<span class="b-header-auth__tab__logined-user__link__pic" style="background-image: url(img/ava.png);"></span>Островский-тян
 												</a>
 											</div>
-											<a title="Выйти" href="#" class="b-header-auth__tab__logout-link"><img class="b-icon b-icon-logout" src="img/z.gif" alt="" /></a>
 										</div>
 									</td>
 									<td class="b-header-auth__tab">
@@ -355,7 +356,7 @@
 								</tr>
 							</table>
 
-							<table class="b-header-auth"  style="display: none">
+							<table class="b-header-auth">
 								<tr>
 									<td class="b-header-auth__tab">
 										<a href="" class="b-header-auth__tab__link"><ins class="b-icon b-icon_pic_login"></ins>Войти</a>
@@ -385,7 +386,7 @@
 	<div class="l-body-wrap">
 		<div class="l-width">
 			<div class="g-48">
-				<div class="g-col-2 g-span-27 g-main-col-1">
+				<div class="g-col-1 g-span-27 g-main-col-1">
 
 						<div class="g-48">
 
@@ -500,7 +501,7 @@
 								</div>
 
 								<div class="b-news-item b-news-item_layout_photo">
-									«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<a href="" class="b-news-item__activity">(54)</a><ins class="b-news-item-icon b-news-item-icon_img_diagram"></ins>
+									«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<a href="" class="b-news-item__activity">(54)</a>&nbsp;<ins class="b-news-item-icon b-news-item-icon_img_diagram"></ins>
 								</div>
 
 								<div class="b-news-item b-news-item_layout_photo">
@@ -644,18 +645,18 @@
 						</div>
 
 				</div>
-				<div class="g-col-29 g-span-19 g-main-col-2">
+				<div class="g-col-30 g-span-19 g-main-col-2">
 					<div class="g-48">
 						<div class="b-pushtop-16"></div>
 						<div class="g-col-1 g-span-22">
 
-								<div class="b-text b-text_color_grey">
-									<a class="b-link b-link_color_black b-link_border_yes" href="#123456">Погода</a>&nbsp;&nbsp;<ins class="b-icon b-icon_layout_whear-icon b-icon_img_weather-1" title="не ясно"></ins><span class="b-text_color_black">-20</span> завтра:&nbsp;-15
+								<div class="b-text b-main-informer b-main-informer_weather">
+									<a class="b-link b-link_color_black b-link_border_yes" href="#123456">Погода</a>&nbsp;&nbsp;<ins class="b-icon b-icon_layout_whear-icon b-icon_img_weather-1" title="не ясно"></ins><span class="b-text_color_black">-20</span>&nbsp; завтра:&nbsp;-15
 								</div>
-								<div class="b-text">
-									<a class="b-link b-link_color_black b-link_border_yes" href="#1234567">Обмен&nbsp;валют</a> &nbsp;<span class="b-text-valute b-text-valute_dinamic_down">$31,15<ins class="b-text-valute-more">-0.014</ins></span>&nbsp;&nbsp;&nbsp;<span class="b-text-valute b-text-valute_dinamic_up">&euro;41,15<ins class="b-text-valute-more">+0.014</ins></span>
+								<div class="b-text b-main-informer b-main-informer_valute">
+									<a class="b-link b-link_color_black b-link_border_yes" href="#1234567">Обмен&nbsp;валют</a>&nbsp; &nbsp;<span class="b-text-valute b-text-valute_dinamic_down">$31,15<ins class="b-text-valute-more">-0.014</ins></span>&nbsp;&nbsp;&nbsp;<span class="b-text-valute b-text-valute_dinamic_up">&euro;41,15<ins class="b-text-valute-more">+0.014</ins></span>
 								</div>
-								<div class="b-separator b-separator_height_4"></div>
+								<div class="b-separator b-separator_height_5"></div>
 								<h3 class="b-header b-header_type_h3"><a href="#5">Недвижимость</a></h3>
 								<div class="b-text b-text_layout_cluodtag">
 									Снять: <a href="#12">до 20 000 р./месяц</a>, <a href="#12">офис</a>, <a href="#12">Центр</a>, <a href="#12">ЖБИ</a>, <a href="#12">Ботаника</a>
@@ -691,21 +692,33 @@
 								</div>
 								<h3 class="b-header b-header_type_h3"><a href="#5">Афиша</a></h3>
 								<div class="b-afisha-main">
-									<a href="#123" class="b-afisha__item b-afisha__item_size_big" style="background-image: url(img/9.png);">
-										<ins class="b-afisha-item__shadow"></ins>
-										<ins class="b-afisha-main__label">гастроли</ins>
-										<span class="b-afisha-main__title">Юля Волкова<br /><span class="b-afisha-main__deails">12 апреля, 19:00, Цирк</span></span>
-									</a>
-									<a href="#123" class="b-afisha__item" style="background-image: url(img/11.png);">
-										<ins class="b-afisha-item__shadow"></ins>
-										<ins class="b-afisha-main__label">кино</ins>
-										<span class="b-afisha-main__title">Падение Олимпа</span>
-									</a>
-									<a href="#123" class="b-afisha__item b-afisha__item_count_last" style="background-image: url(img/11.png);">
-										<ins class="b-afisha-item__shadow"></ins>
-										<ins class="b-afisha-main__label">кино</ins>
-										<span class="b-afisha-main__title">G.I. Joe: Бросок кобры 2</span>
-									</a>
+									<table class="b-afisha-main__table">
+										<tr>
+											<td colspan="2" class="b-afisha-main__table__cell">
+												<a href="#123" class="b-afisha__item b-afisha__item_size_big" style="background-image: url(img/9.png);">
+													<ins class="b-afisha-item__shadow"></ins>
+													<ins class="b-afisha-main__label">гастроли</ins>
+													<span class="b-afisha-main__title">Юля Волкова<br /><span class="b-afisha-main__deails">12 апреля, 19:00, Цирк</span></span>
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td class="b-afisha-main__table__cell b-afisha-main__table__cell_short">
+												<a href="#123" class="b-afisha__item" style="background-image: url(img/11.png);">
+													<ins class="b-afisha-item__shadow"></ins>
+													<ins class="b-afisha-main__label">кино</ins>
+													<span class="b-afisha-main__title">Падение Олимпа</span>
+												</a>												
+											</td>
+											<td class="b-afisha-main__table__cell b-afisha-main__table__cell_short">
+												<a href="#123" class="b-afisha__item" style="background-image: url(img/11.png);">
+													<ins class="b-afisha-item__shadow"></ins>
+													<ins class="b-afisha-main__label">кино</ins>
+													<span class="b-afisha-main__title">G.I. Joe: Бросок кобры 2</span>
+												</a>												
+											</td>
+										</tr>
+									</table>
 								</div>
 								<div class="b-separator b-separator_height_4"></div>
 								<h3 class="b-header b-header_type_h3"><a href="#5">Работа в Екатеринбурге</a></h3>
@@ -736,6 +749,7 @@
 									<div class="b-separator b-separator_height_10"></div>
 									<a class="b-link b-link_border_yes b-link_icon_events" href="#c">События</a>
 									<div class="b-separator b-separator_height_10"></div>
+									<div class="b-separator b-separator_height_3"></div>
 									<div class="b-pannel-logined-user__bottom">
 										<a class="b-link b-link_color_grey" href="#d">настройки</a> &nbsp; <a class="b-link b-link_color_grey" href="#e">выход</a>
 										<span class="b-pannel-logined-user__karma"><ins class="b-pannel-logined-user__karma__label">карма</ins> <ins title="ваша карма, %username%" class="b-pannel-logined-user__karma__ico">0.1</ins></span>
@@ -772,6 +786,8 @@
 
 								<h3 class="b-header b-header_type_h3 css-inline-block"><a href="#5">В блогах</a></h3>
 								<a class="b-link b-link_color_orange b-link_border_yes b-link_visited_no b-foto-konkurs" href="#123">Фотоконкурс «Мисс Весна66ру»</a>
+								<div style="height: 90px; background-color: #ff0000;"></div>
+
 								<div class="b-separator b-separator_height_2"></div>
 
 
@@ -814,14 +830,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="l-branding-footer">
+	<!--div class="l-branding-footer">
 		<div class="l-branding-footer-repeat"></div>
 		<div class="l-branding-footer-bg"></div>
 		<div class="l-width">
-			<!--div style="position: absolute; width: 300px; height: 300px; left: -75px; bottom: -173px; display: block; background: #ccc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div>
-			<div style="position: absolute; width: 300px; height: 300px; right: -75px; bottom: -223px; display: block; background: #dcdcdc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div-->
+
 		</div>
-	</div>
+	</div-->
 	<div class="l-push"></div>
 </div>
 
@@ -831,7 +846,7 @@
 
 
 		<div class="g-48">
-			<div class="g-col-2 g-span-47">
+			<div class="g-col-1 g-span-48">
 
 
 				<a href="#123" class="b-footer-logo">

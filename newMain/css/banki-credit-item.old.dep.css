@@ -680,6 +680,12 @@ a.b-submenu-item__day-theme__link:hover {
   cursor: pointer;
   cursor: hand;
 }
+.b-header-search_state_active.b-header-search {
+  background-color: #FFF;
+}
+.b-header-search_state_active input.b-header-search__text {
+  color: #000;
+}
 .b-header-search_state_active .b-header-search__subm {
   background: url(./less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
 }
@@ -688,7 +694,7 @@ input.b-header-search__text {
   background: none;
   color: #fff;
   font-size: 12px;
-  height: 24px;
+  height: 22px;
   padding-top: 1px;
   outline: none;
   font-family: Arial, Tahoma, Verdana;
@@ -699,7 +705,7 @@ input.b-header-search__text {
 .b-header-search {
   float: left;
   position: relative;
-  top: 10px;
+  top: 11px;
   width: 60%;
   margin: 0px;
   padding: 0 0 0 6px;
@@ -735,7 +741,7 @@ input.b-header-search__text {
 .b-header-auth__tab__logined-user-ellipsed {
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 88%;
+  width: 120px;
   white-space: nowrap;
   color: #fff;
   position: relative;
@@ -882,7 +888,7 @@ a.b-header-auth__tab__mail-link_has_new {
   left: 0;
   top: 8px;
   background: url(./less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
-  margin-left: 4px;
+  margin-left: 1px;
 }
 .b-icon_img_weather-0 {
   background-position: 0 0;
@@ -1668,7 +1674,7 @@ a.b-ad-btn b {
   width: 18px;
   height: 18px;
   text-align: center;
-  font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial;
   font-weight: bold;
 }
 a.b-ad-btn ins {
@@ -1683,13 +1689,10 @@ a.b-ad-btn ins {
   vertical-align: top;
   position: relative;
 }
-.b-ad-btn:hover {
-  animation: myfirst 5s linear 2s infinite alternate;
-}
 .b-text-ad__title {
   position: absolute;
   bottom: 0px;
-  padding: 5px 5px 1px;
+  padding: 5px 8px 1px;
   font-weight: bold;
 }
 .b-foto-konkurs {
@@ -1756,6 +1759,10 @@ a.b-ad-btn ins {
 }
 .b-separator_height_4 {
   height: 4px;
+  margin: 0px;
+}
+.b-separator_height_5 {
+  height: 5px;
   margin: 0px;
 }
 .b-separator_height_7 {
