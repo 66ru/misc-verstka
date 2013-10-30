@@ -5,15 +5,15 @@
 				$map = $this.parents('.b-realty-map')
 					.children('.b-realty-map__map'),
 
-				foldText = $this.data('fold-text');
+				foldText;
 
 			$this.on('click', function() {
 				$map.toggle();
+				$this.toggleClass('b-realty-map__toggle_unfolded_yes');
 
-				$this.data('fold-text', $this.html());
-				$this.html(foldText)
-
-				console.log(foldText, $this.data('fold-text'));
+				foldText = $this.html();
+				$this.html($this.data('fold-text'));
+				$this.data('fold-text', foldText);
 			});
 		});
 	});
