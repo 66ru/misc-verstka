@@ -1054,6 +1054,9 @@ a.b-header-menu__item__link:after {
   background-color: #e1f2ba;
   color: #3f530c;
 }
+.b-header-menu__item_hidemenu_yes.cur .b-header-menu__item__link {
+  background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn-.png);
+}
 /*если у айтема есть скрытое меню*/
 .b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
   background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn.png);
@@ -2818,11 +2821,10 @@ a.b-tele-afisha-link-more {
   margin-bottom: 7px;
   color: #808080;
 }
-.b-main-informer_weather a.b-link:hover {
-  color: #000000;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
-}
-.b-main-informer_valute a.b-link:hover {
+.b-main-informer_weather a.b-link:hover,
+.b-main-informer_weather a.b-link:visited,
+.b-main-informer_valute a.b-link:hover,
+.b-main-informer_valute a.b-link:visited {
   color: #000000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
 }
