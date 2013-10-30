@@ -1268,6 +1268,9 @@ input.b-header-search__text {
   text-decoration: none;
   margin: 0 2px;
 }
+.b-header-auth__tab__link:hover {
+  color: #fff;
+}
 .b-header-auth__tab__link:visited {
   color: #fff;
 }

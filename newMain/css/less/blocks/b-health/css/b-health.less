@@ -1,0 +1,53 @@
+.b-health {}
+.b-health__pic {
+	float: left;
+	position:relative;
+	top:5px;
+}
+.b-health__text {
+	margin-left: 95px;
+	font-size: 12px;
+}
+a.b-health__text__name {
+	text-decoration: none;
+	line-height: 18px;
+	margin-bottom: 5px;
+	display: inline-block;
+
+}
+.b-health__text__place {
+	display: inline-block;
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+.b-health__links {
+	padding-top:10px;
+	clear:both;
+	line-height: 22px;
+}
+a.b-health__links__item {
+	color: @link-color;
+	border-bottom: 1px solid fadeout(@link-color, 70%);
+	text-decoration: none;	
+
+	&:visited {
+		color: @link-color;
+		border-bottom: 1px solid fadeout(@link-color, 70%);
+	}
+
+	&:hover {
+		color: @orange-text;
+		border-bottom: 1px solid fadeout(@orange-text, 70%);		
+	}
+
+}
+
+.b-health__ico_search {
+	width:16px;
+	height: 16px;
+	display: inline-block;
+	background: url(less/blocks/b-health/img/b-health-ico.png) 0 0 no-repeat;
+	top: 5px;
+	position: relative;
+}
+
