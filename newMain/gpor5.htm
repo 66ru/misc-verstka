@@ -23,25 +23,27 @@
 	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
 	<script src="css/less/blocks/b-header-search/js/b-header-search.js" type="text/javascript"></script>
 
+	<script src="js/pageScript.js" type="text/javascript"></script>
+
 </head>
-<body class="i-branding">
+<body class="i-branding-">
 
 <div class="l-body">
 
-	<div class="l-branding-top">
+	<!--div class="l-branding-top">
 		<div class="l-branding-top-repeat"></div>
 		<div class="l-branding-top-bg"></div>
 		<div class="l-width">
 			<div style="position: absolute; width: 300px; height: 300px; left: 0px; top: 0px; display: block; background: #ccc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div>
 			<div style="position: absolute; width: 300px; height: 300px; right: 0px; top: 0px; display: block; background: #dcdcdc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div>
 		</div>
-	</div>
+	</div-->
 
 
 	<div class="l-header-wrap">
 		<div class="l-width">
 			<div class="g-48">
-				<div class="g-col-2 g-span-27 js-main-col">
+				<div class="g-col-1 g-span-28 js-main-col">
 					<a href="#123" class="b-header-logo">
 						<img class="b-header-logo__img" src="img/b-header-logo.png" alt=""/>
 					</a>
@@ -321,12 +323,12 @@
 						</ul>
 					</div>
 				</div>
-				<div class="g-col-29 g-span-19 g-main-col-2">
+				<div class="g-col-30 g-span-19 g-main-col-2">
 					<div class="g-48">
 						<div class="g-col-1 g-span-24">
 
 							<form action="" class="b-header-search">
-								<input class="b-header-search__text" type="text" value="Поиск" placeholder="Поиск" />
+								<input class="b-header-search__text" type="text" value="" placeholder="Поиск" />
 								<input class="b-header-search__subm" type="submit" value=""/>
 							</form>
 
@@ -335,7 +337,7 @@
 
 
 
-							<table class="b-header-auth">
+							<table class="b-header-auth"  style="display: none">
 								<tr>
 									<td class="b-header-auth__tab b-header-auth__tab_active_yes">
 										<div class="b-header-auth__tab__logined-user">
@@ -344,7 +346,6 @@
 													<span class="b-header-auth__tab__logined-user__link__pic" style="background-image: url(img/ava.png);"></span>Островский-тян
 												</a>
 											</div>
-											<a title="Выйти" href="#" class="b-header-auth__tab__logout-link"><img class="b-icon b-icon-logout" src="img/z.gif" alt="" /></a>
 										</div>
 									</td>
 									<td class="b-header-auth__tab">
@@ -355,7 +356,7 @@
 								</tr>
 							</table>
 
-							<table class="b-header-auth"  style="display: none">
+							<table class="b-header-auth">
 								<tr>
 									<td class="b-header-auth__tab">
 										<a href="" class="b-header-auth__tab__link"><ins class="b-icon b-icon_pic_login"></ins>Войти</a>
@@ -385,7 +386,7 @@
 	<div class="l-body-wrap">
 		<div class="l-width">
 			<div class="g-48">
-				<div class="g-col-2 g-span-27 g-main-col-1">
+				<div class="g-col-1 g-span-27 g-main-col-1">
 
 						<div class="g-48">
 
@@ -404,9 +405,7 @@
 										</td>
 										<td class="b-news-item__text">
 											<h3 class="b-news-item__title">
-												<a href="#">Владимир Крицкий: «Строители ждут аукционов. А их все нет»</a>&nbsp;<a href="" class="b-news-item__activity b-news-item__activity_state_hot">(54)</a>
-												<ins class="b-icon b-icon_img_news-photo"></ins>
-												<ins class="b-news-item-icon b-news-item-icon_img_poll"></ins>
+												<a href="#">Владимир Крицкий: «Строители ждут аукционов. А их все нет»</a>&nbsp;<span class="nowrap"><a href="" class="b-news-item__activity b-news-item__activity_state_hot">(54)</a><ins class="b-icon b-icon_img_news-photo"></ins>&nbsp;<ins class="b-news-item-icon b-news-item-icon_img_poll"></ins></span>
 											</h3>
 										</td>
 									</tr>
@@ -449,27 +448,26 @@
 								<!---->
 							</div>
 							<div class="g-col-33 g-span-16">
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/80/4d/ab/d7/804dabd7_resizedScaled_300to150.jpg);">
+									<a href="#" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">«Дочка» подразделения Реновы «забетонирует» Земскую школу</a>&nbsp;(<a href="#com" class="b-news-item__activity b-news-item__activity_state_hot">54</a>)
+									</span>
+								</div>
 
-									<a class="b-news-item b-news-item_layout_annonce" href="#" style="background-image: url(http://s.66.ru/localStorage/news/80/4d/ab/d7/804dabd7_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											«Дочка» подразделения Реновы «забетонирует» Земскую школу&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/d1/ed/c4/50/d1edc450_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">Марк Марков: «Мэрия вообще могла отключить интернет три года назад»</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>
 
-									<a class="b-news-item b-news-item_layout_annonce" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/d1/ed/c4/50/d1edc450_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											Марк Марков: «Мэрия вообще могла отключить интернет три года назад»&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
-
-									<a class="b-news-item b-news-item_layout_annonce" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/d6/ed/9d/50/d6ed9d50_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											Матчи «Автомобилиста» разбавят танцами сексуальных девочек&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/d6/ed/9d/50/d6ed9d50_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">Матчи «Автомобилиста» разбавят танцами сексуальных девочек</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>
 							</div>
 
 
@@ -494,13 +492,13 @@
 								</div>
 
 								<div class="b-news-item b-news-item_layout_video">
-									Сборная России по <a href="#3">биатлону осталась без медалей</a>&nbsp;<a href="" class="b-news-item__activity">(7)</a>
+									Сборная России по <a href="#3">биатлону осталась без медалей</a>&nbsp;<a href="" class="b-news-item__activity">7</a>
 									<ins class="b-icon b-icon_img_news-infography"></ins>
 									<ins class="b-icon b-icon_img_news-pols"></ins>
 								</div>
 
 								<div class="b-news-item b-news-item_layout_photo">
-									«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<a href="" class="b-news-item__activity">(54)</a><ins class="b-news-item-icon b-news-item-icon_img_diagram"></ins>
+									«Яблоко» предлагает <a href="#">оппозиции объединиться на выборах</a>&nbsp;<a href="" class="b-news-item__activity">(54)</a>&nbsp;<ins class="b-news-item-icon b-news-item-icon_img_diagram"></ins>
 								</div>
 
 								<div class="b-news-item b-news-item_layout_photo">
@@ -527,73 +525,73 @@
 							</div>
 							<div class="g-col-33 g-span-16">
 
-									<a class="b-news-item b-news-item_layout_annonce" href="#" style="background-image: url(http://s.66.ru/localStorage/news/85/d4/81/c7/85d481c7_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											Изнанка бизнеса: тяжеловесам здесь не место&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/85/d4/81/c7/85d481c7_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">Изнанка бизнеса: тяжеловесам здесь не место</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>
 
-									<a class="b-news-item b-news-item_layout_annonce" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/d0/fd/1b/f./d0fd1bf_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											Хоккейный дворец в Екатеринбурге достроят за 1,5 млрд рублей&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/d0/fd/1b/f./d0fd1bf_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">Хоккейный дворец в Екатеринбурге достроят за 1,5 млрд рублей</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>								
 
 							</div>
 						</div>
 						<div class="g-48 b-news-collague">
 							<div class="g-col-1 g-span-32">
-								<a class="b-news-item b-news-item_layout_annonce b-news-item_size_big" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/aa/f1/51/fe/aaf151fe_resizedScaled_460to300.jpg);">
-									<ins class="b-news-item__pic__shadow"></ins>
+								<div class="b-news-item b-news-item_layout_annonce b-news-item_size_big" style="background-image: url(http://s.66.ru/localStorage/news/aa/f1/51/fe/aaf151fe_resizedScaled_460to300.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
 									<span class="b-news-item__title">
-										Вольный путешественник.<br />Все, что нужно знать человеку, который путешествует самостоятельно&nbsp;<span class="b-news-item__activity">(54)</span>
+										<a href="" class="b-news-item__title__link">Вольный путешественник.<br />Все, что нужно знать человеку, который путешествует самостоятельно</a>&nbsp;<a href="#com" class="b-news-item__activity">(54)</a>
 									</span>
-								</a>
+								</div>
 							</div>
 							<div class="g-col-33 g-span-16">
-									<a class="b-news-item b-news-item_layout_annonce" href="#" style="background-image: url(http://s.66.ru/localStorage/news/17/32/2b/6e/17322b6e_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											Портфель частного инвестора. Часть 6: краткий итог за полгода&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
 
-									<a class="b-news-item b-news-item_layout_annonce" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/da/5c/e9/48/da5ce948_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											Автохозяйство заплатит дочери погибшего в ДТП с Мишари...&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/17/32/2b/6e/17322b6e_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">Портфель частного инвестора. Часть 6: краткий итог за полгода</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>	
 
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/da/5c/e9/48/da5ce948_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">Автохозяйство заплатит дочери погибшего в ДТП с Мишари...</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>
 
 							</div>
 						</div>
 						<div class="g-48">
 							<div class="g-col-1 g-span-16">
-									<a class="b-news-item b-news-item_layout_annonce js-etalon-2col-width" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/d5/94/8d/9e/d5948d9e_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											<b>Тест-драйвы 66.ru на радиоволнах:</b><br/>Opel, Subaru и парочка Porsche&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce js-etalon-2col-width" style="background-image: url(http://s.66.ru/localStorage/news/d5/94/8d/9e/d5948d9e_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">Тест-драйвы 66.ru на радиоволнах:</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>
 							</div>
 							<div class="g-col-17 g-span-16">
-									<a class="b-news-item b-news-item_layout_annonce" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/13/d0/0e/7d/13d00e7d_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											<b>«Обзорная экскурсия. Екатеринбург — 9»:</b><br />в предчувствии первых пятилеток&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/13/d0/0e/7d/13d00e7d_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">«Обзорная экскурсия. Екатеринбург — 9»:</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>
 							</div>
 							<div class="g-col-33 g-span-16">
-									<a class="b-news-item b-news-item_layout_annonce" href="#123" style="background-image: url(http://s.66.ru/localStorage/news/29/3f/a6/f8/293fa6f8_resizedScaled_300to150.jpg);">
-										<ins class="b-news-item__pic__shadow"></ins>
-										<span class="b-news-item__title">
-											<b>Григорий Потемкин:</b><br />«Китайская больница — это бизнес-кейс для учебника по менеджменту»&nbsp;<span class="b-news-item__activity">(54)</span>
-										</span>
-									</a>
+								<div class="b-news-item b-news-item_layout_annonce" style="background-image: url(http://s.66.ru/localStorage/news/29/3f/a6/f8/293fa6f8_resizedScaled_300to150.jpg);">
+									<a href="" class="b-news-item__pic__shadow"></a>
+									<span class="b-news-item__title">
+										<a href="" class="b-news-item__title__link">В шкуре Шумахера: пилотируем гоночную «Формулу»:</a>&nbsp;(<a href="#com" class="b-news-item__activity">54</a>)
+									</span>
+								</div>
 							</div>
 						</div>
 						<div class="g-48">
@@ -644,18 +642,18 @@
 						</div>
 
 				</div>
-				<div class="g-col-29 g-span-19 g-main-col-2">
+				<div class="g-col-30 g-span-19 g-main-col-2">
 					<div class="g-48">
 						<div class="b-pushtop-16"></div>
 						<div class="g-col-1 g-span-22">
 
-								<div class="b-text b-text_color_grey">
-									<a class="b-link b-link_color_black b-link_border_yes" href="#123456">Погода</a>&nbsp;&nbsp;<ins class="b-icon b-icon_layout_whear-icon b-icon_img_weather-1" title="не ясно"></ins><span class="b-text_color_black">-20</span> завтра:&nbsp;-15
+								<div class="b-text b-main-informer b-main-informer_weather">
+									<a class="b-link b-link_color_black b-link_border_yes" href="#123456">Погода</a>&nbsp;&nbsp;<ins class="b-icon b-icon_layout_whear-icon b-icon_img_weather-1" title="не ясно"></ins><span class="b-text_color_black">-20</span>&nbsp; завтра:&nbsp;-15
 								</div>
-								<div class="b-text">
-									<a class="b-link b-link_color_black b-link_border_yes" href="#1234567">Обмен&nbsp;валют</a> &nbsp;<span class="b-text-valute b-text-valute_dinamic_down">$31,15<ins class="b-text-valute-more">-0.014</ins></span>&nbsp;&nbsp;&nbsp;<span class="b-text-valute b-text-valute_dinamic_up">&euro;41,15<ins class="b-text-valute-more">+0.014</ins></span>
+								<div class="b-text b-main-informer b-main-informer_valute">
+									<a class="b-link b-link_color_black b-link_border_yes" href="#1234567">Обмен&nbsp;валют</a>&nbsp; &nbsp;<span class="b-text-valute b-text-valute_dinamic_down">$31,15<ins class="b-text-valute-more">-0.014</ins></span>&nbsp;&nbsp;&nbsp;<span class="b-text-valute b-text-valute_dinamic_up">&euro;41,15<ins class="b-text-valute-more">+0.014</ins></span>
 								</div>
-								<div class="b-separator b-separator_height_4"></div>
+								<div class="b-separator b-separator_height_5"></div>
 								<h3 class="b-header b-header_type_h3"><a href="#5">Недвижимость</a></h3>
 								<div class="b-text b-text_layout_cluodtag">
 									Снять: <a href="#12">до 20 000 р./месяц</a>, <a href="#12">офис</a>, <a href="#12">Центр</a>, <a href="#12">ЖБИ</a>, <a href="#12">Ботаника</a>
@@ -691,21 +689,33 @@
 								</div>
 								<h3 class="b-header b-header_type_h3"><a href="#5">Афиша</a></h3>
 								<div class="b-afisha-main">
-									<a href="#123" class="b-afisha__item b-afisha__item_size_big" style="background-image: url(img/9.png);">
-										<ins class="b-afisha-item__shadow"></ins>
-										<ins class="b-afisha-main__label">гастроли</ins>
-										<span class="b-afisha-main__title">Юля Волкова<br /><span class="b-afisha-main__deails">12 апреля, 19:00, Цирк</span></span>
-									</a>
-									<a href="#123" class="b-afisha__item" style="background-image: url(img/11.png);">
-										<ins class="b-afisha-item__shadow"></ins>
-										<ins class="b-afisha-main__label">кино</ins>
-										<span class="b-afisha-main__title">Падение Олимпа</span>
-									</a>
-									<a href="#123" class="b-afisha__item b-afisha__item_count_last" style="background-image: url(img/11.png);">
-										<ins class="b-afisha-item__shadow"></ins>
-										<ins class="b-afisha-main__label">кино</ins>
-										<span class="b-afisha-main__title">G.I. Joe: Бросок кобры 2</span>
-									</a>
+									<table class="b-afisha-main__table">
+										<tr>
+											<td colspan="2" class="b-afisha-main__table__cell">
+												<a href="#123" class="b-afisha__item b-afisha__item_size_big" style="background-image: url(img/9.png);">
+													<ins class="b-afisha-item__shadow"></ins>
+													<ins class="b-afisha-main__label">гастроли</ins>
+													<span class="b-afisha-main__title">Юля Волкова<br /><span class="b-afisha-main__deails">12 апреля, 19:00, Цирк</span></span>
+												</a>												
+											</td>
+										</tr>
+										<tr>
+											<td class="b-afisha-main__table__cell b-afisha-main__table__cell_short">
+												<a href="#123" class="b-afisha__item" style="background-image: url(img/11.png);">
+													<ins class="b-afisha-item__shadow"></ins>
+													<ins class="b-afisha-main__label">кино</ins>
+													<span class="b-afisha-main__title">Падение Олимпа</span>
+												</a>												
+											</td>
+											<td class="b-afisha-main__table__cell b-afisha-main__table__cell_short">
+												<a href="#123" class="b-afisha__item" style="background-image: url(img/11.png);">
+													<ins class="b-afisha-item__shadow"></ins>
+													<ins class="b-afisha-main__label">кино</ins>
+													<span class="b-afisha-main__title">G.I. Joe: Бросок кобры 2</span>
+												</a>												
+											</td>
+										</tr>
+									</table>
 								</div>
 								<div class="b-separator b-separator_height_4"></div>
 								<h3 class="b-header b-header_type_h3"><a href="#5">Работа в Екатеринбурге</a></h3>
@@ -736,6 +746,7 @@
 									<div class="b-separator b-separator_height_10"></div>
 									<a class="b-link b-link_border_yes b-link_icon_events" href="#c">События</a>
 									<div class="b-separator b-separator_height_10"></div>
+									<div class="b-separator b-separator_height_3"></div>
 									<div class="b-pannel-logined-user__bottom">
 										<a class="b-link b-link_color_grey" href="#d">настройки</a> &nbsp; <a class="b-link b-link_color_grey" href="#e">выход</a>
 										<span class="b-pannel-logined-user__karma"><ins class="b-pannel-logined-user__karma__label">карма</ins> <ins title="ваша карма, %username%" class="b-pannel-logined-user__karma__ico">0.1</ins></span>
@@ -772,12 +783,14 @@
 
 								<h3 class="b-header b-header_type_h3 css-inline-block"><a href="#5">В блогах</a></h3>
 								<a class="b-link b-link_color_orange b-link_border_yes b-link_visited_no b-foto-konkurs" href="#123">Фотоконкурс «Мисс Весна66ру»</a>
+								<div style="height: 90px; background-color: #ff0000;"></div>
+
 								<div class="b-separator b-separator_height_2"></div>
 
 
 
 								<ul class="b-blog-list">
-									<li><a class="b-blog-list__theme" href="#21">Под шумок...</a> <span class="b-comments">(<a href="" class="b-comments__count">74</a>)</span> <a href="#31" class="b-username b-username_sex_male b-username_status_online">REDMOTION</a></li>
+									<li><a class="b-blog-list__theme" href="#21">Под шумок...</a>&nbsp;<span class="b-comments">(<a href="" class="b-comments__count">74</a>)</span> <a href="#31" class="b-username b-username_sex_male b-username_status_online">REDMOTION</a></li>
 									<li><a class="b-blog-list__theme" href="#22">Декупажные рукоделки - часики</a> <span class="b-comments">(<a href="" class="b-comments__count">74</a>)</span> <a href="#32" class="b-username b-username_sex_female">as.tochka</a></li>
 									<li><a class="b-blog-list__theme" href="#23">5-ый карман или нужны ли блоги на главной странице с длинным заголовком</a> <span class="b-comments">(<a href="" class="b-comments__count">74</a>)</span> <a href="#33" class="b-username b-username_sex_male">Lokomotiv</a></li>
 									<li><a class="b-blog-list__theme" href="#24">КЛомки по привычке быть свободной</a> <span class="b-comments">(<a href="" class="b-comments__count b-comments__count_status_vip">74</a>)</span> <a href="#33" class="b-username b-username_sex_male">tilitrum</a></li>
@@ -814,14 +827,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="l-branding-footer">
+	<!--div class="l-branding-footer">
 		<div class="l-branding-footer-repeat"></div>
 		<div class="l-branding-footer-bg"></div>
 		<div class="l-width">
-			<!--div style="position: absolute; width: 300px; height: 300px; left: -75px; bottom: -173px; display: block; background: #ccc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div>
-			<div style="position: absolute; width: 300px; height: 300px; right: -75px; bottom: -223px; display: block; background: #dcdcdc url(http://www.clker.com/cliparts/c/8/8/c/1194986592260465101christmas_tree_mo_01.svg.med.png) no-repeat 0 0;"></div-->
+
 		</div>
-	</div>
+	</div-->
 	<div class="l-push"></div>
 </div>
 
@@ -831,7 +843,7 @@
 
 
 		<div class="g-48">
-			<div class="g-col-2 g-span-47">
+			<div class="g-col-1 g-span-48">
 
 
 				<a href="#123" class="b-footer-logo">

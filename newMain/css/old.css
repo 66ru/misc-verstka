@@ -412,13 +412,11 @@
   left: 940%;
 }
 /**/
-.g-col-2.g-main-col-1 {
-  width: 510%;
-  margin-right: -510%;
-  /*overflow: hidden;*/
-
+.g-col-1.g-main-col-1 {
+  width: 545%;
+  margin-right: -545%;
 }
-.g-col-2.g-main-col-1:after {
+.l-body-wrap .g-col-30.g-main-col-2:before {
   content: '';
   background: #cccccc;
   width: 1px;
@@ -426,20 +424,21 @@
   position: absolute;
   top: 0;
   display: block;
-  right: -4%;
+  left: -4.7%;
 }
-.g-col-29.g-main-col-2 {
-  left: 571%;
-  width: 374%;
-  margin-right: -374%;
+/*.g-col-29.g-main-col-2 {
+    left: 571%;
+	width: 374%;
+	margin-right: -374%;
 }
+
 .g-col-38.g-main-col-2 {
-  float: right;
-  left: 0;
-  margin-right: -850%;
-  right: 0;
-  width: 240px;
-}
+    float: right;
+    left: 0;
+    margin-right: -850%;
+    right: 0;
+    width: 240px;
+}*/
 /**/
 .g-restore,
 .g-initial {
@@ -837,6 +836,9 @@ body .align_center {
 body .float_none {
   float: none;
 }
+body .nowrap {
+  white-space: nowrap;
+}
 .css-inline-block,
 .i-inline-block {
   display: inline-block;
@@ -1050,6 +1052,9 @@ a.b-header-menu__item__link:after {
   background-color: #e1f2ba;
   color: #3f530c;
 }
+.b-header-menu__item_hidemenu_yes.cur .b-header-menu__item__link {
+  background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn-.png);
+}
 /*если у айтема есть скрытое меню*/
 .b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
   background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn.png);
@@ -1211,6 +1216,12 @@ a.b-submenu-item__day-theme__link:hover {
   cursor: pointer;
   cursor: hand;
 }
+.b-header-search_state_active.b-header-search {
+  background-color: #FFF;
+}
+.b-header-search_state_active input.b-header-search__text {
+  color: #000;
+}
 .b-header-search_state_active .b-header-search__subm {
   background: url(./less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
 }
@@ -1219,7 +1230,7 @@ input.b-header-search__text {
   background: none;
   color: #fff;
   font-size: 12px;
-  height: 24px;
+  height: 22px;
   padding-top: 1px;
   outline: none;
   font-family: Arial, Tahoma, Verdana;
@@ -1230,7 +1241,7 @@ input.b-header-search__text {
 .b-header-search {
   float: left;
   position: relative;
-  top: 10px;
+  top: 11px;
   width: 60%;
   margin: 0px;
   padding: 0 0 0 6px;
@@ -1266,7 +1277,7 @@ input.b-header-search__text {
 .b-header-auth__tab__logined-user-ellipsed {
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 88%;
+  width: 120px;
   white-space: nowrap;
   color: #fff;
   position: relative;
@@ -1413,7 +1424,7 @@ a.b-header-auth__tab__mail-link_has_new {
   left: 0;
   top: 8px;
   background: url(./less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
-  margin-left: 4px;
+  margin-left: 1px;
 }
 .b-icon_img_weather-0 {
   background-position: 0 0;
