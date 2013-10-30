@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
 
     <title>Главная</title>
 
@@ -25,6 +26,7 @@
 	<script src="css/less/blocks/b-card-phone/js/b-card-phone.js"></script>
 	<script src="css/less/blocks/b-doska-ncard/js/sticky-info.js"></script>
 	<script src="css/less/blocks/b-sticky-right-col/js/sticky-right-col.js"></script>
+	<script src="css/less/blocks/b-modal/js/modal.js"></script>
 
 </head>
 <body>
@@ -1854,9 +1856,9 @@
 								<span class="b-card-info__desc">Константин Константинович Римский-Щедрин</span>
 							</p>
 							<div class="b-card-phone">
-								<p class="b-card-phone__phone" data-phone="+7 (666) 666-66-66">+7 (343) XXX-XX-XX</p>
+								<p class="b-card-phone__phone" data-phone="+7 (666) 666-66-66">+7 (343) ???-??-??</p>
 								<span class="b-nbtn b-nbtn_size_s b-nbtn_theme_orange">Показать телефон</span>
-								<span class="b-card-phone__balloon">Скажите, что вы с 66.ru</span>
+								<div class="b-card-phone__balloon">Скажите, что вы с 66.ru</div>
 							</div>
 							<ul class="b-links-list">
 								<li class="b-links-list__elem b-folded-plate">
@@ -1869,9 +1871,64 @@
 										<input type="submit" value="Отправить" class="b-mailto-form__submit b-nbtn b-nbtn_size_s b-nbtn_theme_grey">
 									</form>
 								</li>
-								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_edit b-link">Редактировать</a></li>
-								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_remove b-link">Удалить</a></li>
-								<li class="b-links-list__elem"><a href="#" class="b-links-list__link b-links-list__link_icon_complain b-link">Пожаловаться</a></li>
+								<li class="b-links-list__elem b-pseudo b-modal">
+									<span class="b-links-list__link b-links-list__link_icon_edit b-pseudo__link b-modal__trigger">Редактировать</span>
+									<div class="b-modal__wrap">
+										<div class="b-modal__plate">
+											<div class="b-modal__header">
+												<h6 class="b-modal__heading">Ошибка в объявлении</h6>
+												<span class="b-modal__close">✕</span>
+											</div>
+											<form class="b-modal__body b-modal-form">
+												<p class="b-modal__fieldset b-modal__fieldset_mb">При подаче объявления вам на почту был отправлен код для его редактирования.</p>
+												<p class="b-modal__fieldset">Введите код, чтобы продолжить.</p>
+												<p class="b-modal__fieldset b-modal__fieldset_mt">
+													<input type="text" name="ad-code" id="ad-code" class="b-modal__input">
+													<input type="submit" value="Отправить" class="b-modal__submit b-nbtn b-nbtn_theme_green">
+												</p>
+												<p class="b-pseudo"><span class="b-pseudo__link">Я забыл код, отправьте мне новый.</span></p>
+											</form>
+										</div>
+									</div>
+								</li>
+								<li class="b-links-list__elem">
+									<a href="#" class="b-links-list__link b-links-list__link_icon_remove b-link">Удалить</a>
+								</li>
+								<li class="b-links-list__elem b-pseudo b-pseudo_theme_alert b-modal">
+									<span class="b-links-list__link b-links-list__link_icon_complain b-pseudo__link b-modal__trigger">Пожаловаться</span>
+									<div class="b-modal__wrap">
+										<div class="b-modal__plate">
+											<div class="b-modal__header">
+												<h6 class="b-modal__heading">Ошибка в объявлении</h6>
+												<span class="b-modal__close">✕</span>
+											</div>
+											<form class="b-modal__body b-modal-form">
+												<p class="b-modal__fieldset">
+													<input type="radio" name="ad-mistake" id="ad-mistake-obsolete" class="b-modal__radio">
+													<label for="ad-mistake-obsolete" class="b-modal__label">Сдано</label>
+												</p>
+												<p class="b-modal__fieldset">
+													<input type="radio" name="ad-mistake" id="ad-mistake-commercial" class="b-modal__radio">
+													<label for="ad-mistake-commercial" class="b-modal__label">Это реклама</label>
+												</p>
+												<p class="b-modal__fieldset">
+													<input type="radio" name="ad-mistake" id="ad-mistake-wrong-price" class="b-modal__radio">
+													<label for="ad-mistake-wrong-price" class="b-modal__label">Неверная цена</label>
+												</p>
+												<p class="b-modal__fieldset">
+													<input type="radio" name="ad-mistake" id="ad-mistake-inaccessible" class="b-modal__radio">
+													<label for="ad-mistake-inaccessible" class="b-modal__label">Невозможно дозвониться</label>
+												</p>
+												<p class="b-modal__fieldset">
+													<input type="radio" name="ad-mistake" id="ad-mistake-something-else" class="b-modal__radio">
+													<label for="ad-mistake-something-else" class="b-modal__label">Другая ошибка</label>
+												</p>
+												<textarea name="ad-mistake-desc" id="ad-mistake-desc" cols="30" rows="10" class="b-modal__textarea"></textarea>
+												<input type="submit" value="Отправить" class="b-modal__submit b-nbtn b-nbtn_theme_green">
+											</form>
+										</div>
+									</div>
+								</li>
 							</ul>
 						</div>
 						<div class="b-doska-ncard__content">
