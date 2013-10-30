@@ -418,7 +418,7 @@
   width: 545%;
   margin-right: -545%;
 }
-.g-col-1.g-main-col-1:after {
+.l-body-wrap .g-col-30.g-main-col-2:before {
   content: '';
   background: #cccccc;
   width: 1px;
@@ -426,7 +426,7 @@
   position: absolute;
   top: 0;
   display: block;
-  right: -3%;
+  left: -4.7%;
 }
 /*.g-col-29.g-main-col-2 {
     left: 571%;
@@ -837,6 +837,9 @@ body .align_center {
 }
 body .float_none {
   float: none;
+}
+body .nowrap {
+  white-space: nowrap;
 }
 .css-inline-block,
 .i-inline-block {
@@ -1864,7 +1867,7 @@ a.b-teaser-orange-text {
   border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
 }
 .b-news-item a.b-news-item__activity_state_hot {
-  color: #ff5400;
+  color: #ff5400 !important;
 }
 .b-news-collague .b-news-item {
   margin-bottom: 4px;
@@ -1969,14 +1972,18 @@ a.b-news-item__activity:hover {
   position: absolute;
   bottom: 4px;
   line-height: 16px;
-  color: #fff;
+  color: #808080;
   z-index: 2;
   padding: 0 8px;
+}
+.b-news-item_layout_annonce .b-news-item__title a.b-news-item__title__link {
+  color: #fff;
 }
 .b-news-item_layout_annonce:hover .b-news-item__pic__shadow {
   opacity: 0.75;
 }
-a.b-news-item_layout_annonce {
+.b-news-item_layout_annonce a,
+.b-news-item_layout_annonce a:hover {
   text-decoration: none;
   border: none;
 }
@@ -1988,8 +1995,9 @@ a.b-news-item_layout_annonce {
   line-height: 24px;
   bottom: 5px;
 }
-.b-news-item_size_big .b-news-item__title .b-news-item__activity {
+.b-news-item_size_big .b-news-item__title a.b-news-item__activity {
   font-size: 14px;
+  color: #808080;
 }
 .b-news-item_size_big .b-news-item__pic__shadow {
   background-image: url(less/blocks/b-news-item/img/b-news-gradient-big.png);
@@ -2809,4 +2817,12 @@ a.b-tele-afisha-link-more {
   line-height: 18px;
   margin-bottom: 7px;
   color: #808080;
+}
+.b-main-informer_weather a.b-link:hover {
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
+}
+.b-main-informer_valute a.b-link:hover {
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
 }

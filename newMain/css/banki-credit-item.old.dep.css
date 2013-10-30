@@ -306,6 +306,9 @@ body .align_center {
 body .float_none {
   float: none;
 }
+body .nowrap {
+  white-space: nowrap;
+}
 .css-inline-block,
 .i-inline-block {
   display: inline-block;
