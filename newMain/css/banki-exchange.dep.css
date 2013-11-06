@@ -602,6 +602,7 @@ a:active {
 }
 .b-link_color_blue.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-link_color_blue.b-link_border_yes:hover {
   color: #ff5400;
@@ -1055,6 +1056,9 @@ a.b-header-menu__item__link:after {
   background-color: #e1f2ba;
   color: #3f530c;
 }
+.b-header-menu__item_hidemenu_yes.cur .b-header-menu__item__link {
+  background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn-.png);
+}
 /*если у айтема есть скрытое меню*/
 .b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
   background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn.png);
@@ -1179,6 +1183,38 @@ a.b-submenu-item__day-theme__link:hover {
   color: #FF5400;
 }
 /**/
+.b-submenu-item__courses {
+  text-align: center;
+  float: left;
+  margin-left: 12px;
+}
+.b-submenu-item__courses__table {
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.b-submenu-item__courses__link {
+  font-size: 13px;
+}
+.b-submenu-item__courses__table__cell-1 {
+  font-size: 13px;
+  line-height: 16px;
+  width: 150px;
+  vertical-align: middle;
+}
+.b-submenu-item__courses__table__cell-2 {
+  vertical-align: top;
+}
+.b-submenu-item__courses .b-bank-item-miniCard__courses__table {
+  margin: -5px 0 0;
+}
+.b-submenu-item__courses .b-bank-item-miniCard__courses__table__body_last {
+  padding-right: 0px;
+}
+.b-submenu-item__courses__important {
+  color: #84A830;
+  text-decoration: none;
+}
 .js-header-menu {
   /*float: left*/
 
@@ -1267,6 +1303,9 @@ input.b-header-search__text {
   font-size: 14px;
   text-decoration: none;
   margin: 0 2px;
+}
+.b-header-auth__tab__link:hover {
+  color: #fff;
 }
 .b-header-auth__tab__link:visited {
   color: #fff;
@@ -1450,6 +1489,7 @@ a.b-username.b-link_border_yes {
 }
 a.b-username.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 a.b-username.b-link_border_yes:hover {
   color: #ff5400;
@@ -1482,6 +1522,7 @@ a.b-username.b-link_border_yes.b-link_border_style_dotted.b-link_visited_no:hove
 }
 a.b-username:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 a.b-username:hover {
   color: #ff5400;
@@ -1611,6 +1652,13 @@ a.b-username.b-link_border_style_dotted.b-link_visited_no:hover {
 .b-footer-seo {
   border-bottom: 1px solid #9cb958;
 }
+.b-footer-counters {
+  float: right;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 0 20px;
+  padding: 11px 0 0;
+}
 .b-bank-item-miniCard {
   margin-top: 15px;
   padding-bottom: 10px;
@@ -1713,6 +1761,9 @@ a.b-username.b-link_border_style_dotted.b-link_visited_no:hover {
 .b-bank-item-miniCard__courses__body {
   padding-left: 20px;
 }
+.b-bank-item-miniCard__courses__table__body:nth-child(3) {
+  padding-left: 0 !important;
+}
 .b-bank-item-miniCard__courses__table__body_first {
   padding-left: 0px;
   padding-right: 0px;
@@ -1767,7 +1818,7 @@ a.b-username.b-link_border_style_dotted.b-link_visited_no:hover {
   padding-right: 10px;
   white-space: nowrap;
   position: relative;
-  left: -13px;
+  float: left;
 }
 .b-bank-item-miniCard__courses__dynamic:after {
   position: absolute;
@@ -1883,8 +1934,6 @@ a.b-tabs__item__link {
 .b-text {
   font-size: 13px;
   line-height: 18px;
-  margin-bottom: 7px;
-  margin-top: 4px;
 }
 .b-text__h1 {
   font: normal 24px/18px Arial, Helvetica, Sans;
@@ -1912,6 +1961,7 @@ a.b-tabs__item__link {
 }
 .b-header_type_h3 a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-header_type_h3 a.b-link_border_yes:hover {
   color: #ff5400;
@@ -1944,6 +1994,7 @@ a.b-tabs__item__link {
 }
 .b-header_type_h3 a:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-header_type_h3 a:hover {
   color: #ff5400;
@@ -2002,6 +2053,7 @@ a.b-tabs__item__link {
 }
 .b-text_layout_cluodtag a.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-text_layout_cluodtag a.b-link_border_yes:hover {
   color: #ff5400;
@@ -2034,6 +2086,7 @@ a.b-tabs__item__link {
 }
 .b-text_layout_cluodtag a:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-text_layout_cluodtag a:hover {
   color: #ff5400;
@@ -2120,8 +2173,6 @@ a.b-text-ad {
   text-decoration: none;
   font-size: 12px;
   border: none;
-  margin-bottom: 20px;
-  margin-top: 7px;
 }
 a.b-text-ad:hover {
   text-decoration: none;
@@ -2278,6 +2329,10 @@ a.b-readmore__link {
 }
 .b-separator_height_13 {
   height: 13px;
+  margin: 0px;
+}
+.b-separator_height_14 {
+  height: 14px;
   margin: 0px;
 }
 .b-separator_height_17 {
@@ -2922,24 +2977,19 @@ a.b-banking-adress__list-link:hover:hover {
   clear: both;
   margin: 18px -50px 0 -4px;
 }
-.b-banner {
-  margin: 8px 0px 20px -5px;
-}
 .b-banner img {
   width: 100%;
   display: block;
 }
 .b-banner_layout_middle-page {
-  margin-top: 3px;
-  margin-bottom: 15px;
   margin-left: 0px;
 }
 .b-banner_layout_middle-page-2-col {
+  margin-top: 7px;
   float: right;
   margin-left: 30px;
 }
 .b-banner_layout_middle-page-3-col {
-  margin-bottom: 15px;
   margin-left: 0px;
 }
 .b-banner_layout_middle-page-3-col object {
@@ -2951,7 +3001,6 @@ a.b-banking-adress__list-link:hover:hover {
   }
 }
 .b-banner_layout_middle-page-4-col {
-  margin-top: 0px;
   margin-left: 0px;
 }
 .b-banner_layout_middle-page-4-col object {
@@ -3611,6 +3660,7 @@ a.b-btn__link,
 }
 .b-valute-converter-more .b-more__visible.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-valute-converter-more .b-more__visible.b-link_border_yes:hover {
   color: #ff5400;
@@ -3643,6 +3693,7 @@ a.b-btn__link,
 }
 .b-valute-converter-more .b-more__visible:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-valute-converter-more .b-more__visible:hover {
   color: #ff5400;
@@ -3706,6 +3757,7 @@ a.b-btn__link,
 }
 .b-valute-converter-more .b-link.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-valute-converter-more .b-link.b-link_border_yes:hover {
   color: #ff5400;
@@ -3738,6 +3790,7 @@ a.b-btn__link,
 }
 .b-valute-converter-more .b-link:visited {
   border-bottom: 1px solid #808080;
+  color: #808080;
 }
 .b-valute-converter-more .b-link:hover {
   color: #ff5400;
