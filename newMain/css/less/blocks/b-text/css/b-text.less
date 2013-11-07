@@ -4,21 +4,21 @@
 }
 
 .b-text__h1 {
-	font: normal 24px/18px Arial, Helvetica, Sans;
 	margin: 13px 0 20px;
+	font: normal 24px/18px Arial, Helvetica, Sans;
 }
 
 .b-text__h3 {
-	font: normal 18px/26px Arial, Helvetica, Sans;
 	margin: 18px 0 10px;
+	font: normal 18px/26px Arial, Helvetica, Sans;
 }
 
 .b-header_type_h3 {
+	margin-top: 5px;
+	margin-bottom: 8px;
+	font-weight: bold;
 	font-size: 18px;
 	font-family: @important-font;
-	font-weight: bold;
-	margin-bottom: 8px;
-	margin-top: 5px;
 	a {
 		.b-link_color_blue;
 		.b-link_border_yes;
@@ -38,8 +38,8 @@
 }
 
 .b-text p {
-	font: normal 14px/21px Arial, Helvatica, Sans;
 	margin: 0px 0 10px;
+	font: normal 14px/21px Arial, Helvatica, Sans;
 }
 
 .b-text_layout_cluodtag {
@@ -53,18 +53,20 @@
 }
 
 .b-text-valute {
+	position:relative;
+	padding-right: 5px;
+	padding-left: 5px;
 	color: @black;
 	white-space: nowrap;
-	position:relative;
 	cursor: default;
 
 	.b-text-valute-more {
 		position: absolute;
 		top: 11px;
 		left: 4px;
-		font-size: 10px;
-		text-decoration: none;
 		visibility: hidden;
+		text-decoration: none;
+		font-size: 10px;
 	}
 
 	&:hover .b-text-valute-more {
@@ -79,14 +81,14 @@
 	}
 
 	&:after {
-		content: '';
-		background: url(./less/blocks/b-text/img/valute-dinamic.png);
-		width: 7px;
-		height: 7px;
-		display: inline-block;
-		margin-left: 2px;
 		position:relative;
 		top: -1px;
+		display: inline-block;
+		margin-left: 2px;
+		width: 7px;
+		height: 7px;
+		background: url(./less/blocks/b-text/img/valute-dinamic.png);
+		content: '';
 	}
 
 }
@@ -96,48 +98,48 @@
 		color: @green-bg;
 	}
 	&:after {
-		content: '';
-		background: url(./less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
-		width: 7px;
-		height: 7px;
-		display: inline-block;
-		margin-left: 2px;
 		position:relative;
 		top: -1px;
+		display: inline-block;
+		margin-left: 2px;
+		width: 7px;
+		height: 7px;
+		background: url(./less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
+		content: '';
 	}
 }
 
 a.b-text-ad {
+	position:relative;
 	display: block;
 	clear: both;
-	height: 110px;
 	width: 100%;
+	height: 110px;
+	border: none;
 	background-position:center center;
-	background-repeat: no-repeat;
 	background-size: 100% auto;
-	position:relative;
+	background-repeat: no-repeat;
 	color: @white;
 	text-decoration: none;
 	font-size: 12px;
-	border: none;
 
 	&:hover {
-		text-decoration: none;
 		border: none;
 		color: @white;
+		text-decoration: none;
 	}
 
 	ins {
-		text-decoration: none;
 		border: none;
+		text-decoration: none;
 	}
 
 	.b-text-ad__shadow {
-		display: block;
 		position:absolute;
+		display: block;
 		width: 100%;
-		background: url(./less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
 		height: 100%;
+		background: url(./less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
 	}
 
 	&:hover {
@@ -152,44 +154,44 @@ a.b-text-ad {
 
 a.b-ad-btn {
 	display: inline-block;
-
-	border: 1px solid @green-bg;
-	outline: none;
-	vertical-align: text-bottom;
-	margin-left: 4px;
 	overflow: hidden;
-	 width: 18px;
-	 height: 18px;
-	 text-decoration: none;
 
 	 margin-right: -100%;
+	margin-left: 4px;
+	 width: 18px;
+	 height: 18px;
+	outline: none;
+
+	border: 1px solid @green-bg;
+	vertical-align: text-bottom;
+	 text-decoration: none;
 
 	b {
-		background: @green-bg;
 		display: inline-block;
-		font-size: 18px;
-		color: @white;
-		height: 18px;
-		line-height: 18px;
-		 vertical-align: top;
 		 width: 18px;
+		height: 18px;
 		 height: 18px;
+		background: @green-bg;
+		color: @white;
+		 vertical-align: top;
 		 text-align: center;
-		 font-family: Helvetica, Arial;
 		 font-weight: bold;
+		font-size: 18px;
+		 font-family: Helvetica, Arial;
+		line-height: 18px;
 	}
 
 	ins {
-		color: @green-text;
-		font-size: 11px;
-		padding: 0 8px;
-		display: inline-block;
-		background: @white;
-		height: 18px;
-		line-height: 18px;
-		text-decoration: none;
-		 vertical-align: top;
 		 position:relative;
+		display: inline-block;
+		padding: 0 8px;
+		height: 18px;
+		background: @white;
+		color: @green-text;
+		 vertical-align: top;
+		text-decoration: none;
+		font-size: 11px;
+		line-height: 18px;
 
 	}
 }
@@ -204,23 +206,23 @@ a.b-ad-btn {
 }
 
 .b-foto-konkurs {
-	font-size: 13px;
-	float: right;
-	margin-right: 34px;
 	position:relative;
+	float: right;
 	margin-top: 6px;
+	margin-right: 34px;
 	outline: none;
+	font-size: 13px;
 	line-height: 18px;
 }
 
 .b-foto-konkurs:after {
-	content: '';
 	position: absolute;
-	right: -29px;
 	top: 50%;
-	margin-top: -12px;
+	right: -29px;
 	display: block;
+	margin-top: -12px;
 	width: 24px;
 	height: 21px;
 	background: url(./less/blocks/b-text/img/zmey.png) 0 0 no-repeat;
+	content: '';
 }

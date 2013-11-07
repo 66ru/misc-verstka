@@ -7,6 +7,7 @@
 
 	$(window).load(function() {
 		checkAndFix();
+		$('.js-header-menu').css({'height' : 'auto'});
 	});
 
 	function checkAndFix() {
