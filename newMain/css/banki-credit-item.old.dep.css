@@ -1014,6 +1014,10 @@ body {
   z-index: 1;
   padding-bottom: 0px;
 }
+#body {
+  margin-bottom: 45px;
+  /* тыцка "Наверх" налазит на навигацию, например здесь: http://66.ru/rabota/vbranch106/ */
+}
 .l-body {
   margin-bottom: -140px;
   min-height: 100%;
@@ -1030,6 +1034,9 @@ body {
   overflow: hidden;
   font-family: Arial, Helvetica, Sans-Serif;
   z-index: 4;
+}
+.l-footer .l-width {
+  z-index: 5;
 }
 .l-footer_v5 {
   margin-top: -140px;
@@ -1241,19 +1248,26 @@ a.b-header-menu__item__link:after {
 .b-header-menu__item__sub__wrap__col__list__item_for_ads {
   padding-left: 12px;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link {
+.b-header-menu__item__sub__wrap__col__list__item__link {
+  color: #000;
+}
+a.b-header-menu__item__sub__wrap__col__list__item__link,
+.b-header-menu__item__sub__wrap__col__list__item__link {
   color: #4d660f;
   text-decoration: none;
   border-bottom: 1px solid #bccd92;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:visited {
+a.b-header-menu__item__sub__wrap__col__list__item__link:visited,
+.b-header-menu__item__sub__wrap__col__list__item__link:visited {
   color: #4d660f;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:hover {
+a.b-header-menu__item__sub__wrap__col__list__item__link:hover,
+.b-header-menu__item__sub__wrap__col__list__item__link:hover {
   color: #FF5400;
   border-bottom: 1px solid #FFCBB2;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link_size_l {
+a.b-header-menu__item__sub__wrap__col__list__item__link_size_l,
+.b-header-menu__item__sub__wrap__col__list__item__link_size_l {
   font-size: 1.385em;
 }
 .b-submenu-item__bank-zajavka {
@@ -1341,7 +1355,7 @@ a.b-submenu-item__day-theme__link:hover {
 }
 .js-header-menu {
   overflow: hidden;
-  height: 50px;
+  height: 45px;
 }
 .b-header-menu {
   margin: 0px;
@@ -1600,80 +1614,13 @@ a.b-header-auth__tab__mail-link_has_new {
   position: relative;
   margin-left: 15px;
 }
-a.b-username {
+a.b-username,
+a.b-username:visited,
+a.b-username:hover,
+a.b-username:active {
   color: #007899;
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
   text-decoration: none;
-}
-a.b-username.b-link_border_yes {
-  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
-  text-decoration: none;
-}
-a.b-username.b-link_border_yes:visited {
-  border-bottom: 1px solid #808080;
-  color: #808080;
-}
-a.b-username.b-link_border_yes:hover {
-  color: #ff5400;
-  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
-  text-decoration: none;
-}
-a.b-username.b-link_border_yes.b-link_visited_yes:visited {
-  color: #808080;
-  border-bottom: 1px solid #808080;
-}
-a.b-username.b-link_border_yes.b-link_visited_yes:hover {
-  color: #ff5400;
-  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
-  text-decoration: none;
-}
-a.b-username.b-link_border_yes.b-link_visited_no:visited {
-  color: #007899;
-  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
-}
-a.b-username.b-link_border_yes.b-link_visited_no:hover {
-  color: #ff5400;
-  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
-  text-decoration: none;
-}
-a.b-username.b-link_border_yes.b-link_border_style_dotted.b-link_visited_no {
-  border-bottom: 1px dotted rgba(0, 120, 153, 0.30000000000000004);
-}
-a.b-username.b-link_border_yes.b-link_border_style_dotted.b-link_visited_no:hover {
-  border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
-}
-a.b-username:visited {
-  border-bottom: 1px solid #808080;
-  color: #808080;
-}
-a.b-username:hover {
-  color: #ff5400;
-  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
-  text-decoration: none;
-}
-a.b-username.b-link_visited_yes:visited {
-  color: #808080;
-  border-bottom: 1px solid #808080;
-}
-a.b-username.b-link_visited_yes:hover {
-  color: #ff5400;
-  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
-  text-decoration: none;
-}
-a.b-username.b-link_visited_no:visited {
-  color: #007899;
-  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
-}
-a.b-username.b-link_visited_no:hover {
-  color: #ff5400;
-  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
-  text-decoration: none;
-}
-a.b-username.b-link_border_style_dotted.b-link_visited_no {
-  border-bottom: 1px dotted rgba(0, 120, 153, 0.30000000000000004);
-}
-a.b-username.b-link_border_style_dotted.b-link_visited_no:hover {
-  border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
 }
 .username_sex_icon {
   content: '';
@@ -3268,6 +3215,8 @@ a.b-banking-adress__list-link:hover:hover {
   float: right;
   margin-top: 7px;
   margin-left: 30px;
+  position: relative;
+  z-index: 100;
 }
 .b-banner_layout_middle-page-3-col {
   margin-left: 0px;
