@@ -1,0 +1,36 @@
+				a.link-go-up {
+					display: block;
+					opacity: 1;
+					position:fixed;
+					bottom: -200px;
+					left: 10px;
+					text-decoration: none;
+					background-color: #779f1a;
+					box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.75);
+					padding: 8px 23px 2px 37px;
+					z-index: 1000;
+					height: 20px;
+					zoom: 1;
+					border: 1px solid red;
+					outline: none;
+				}
+				
+				a.link-go-up:link,
+				a.link-go-up:visited,
+				a.link-go-up:hover,
+				a.link-go-up:active {
+					text-decoration: none;
+					border: none;
+					color: #fff;
+				}
+				
+				.link-go-up-ico {
+					position: absolute;
+					left: 18px;
+					top: 50%;
+					width: 14px;
+					height: 8px;
+					margin-top: -4px;
+					background: url(../img/ticka-arr.png);
+					
+				} 
