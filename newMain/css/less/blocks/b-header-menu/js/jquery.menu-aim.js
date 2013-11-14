@@ -92,7 +92,7 @@
             options = $.extend({
                 rowSelector: "> li",
                 submenuSelector: "*",
-                submenuDirection: "right",
+                submenuDirection: "below",
                 tolerance: 75,  // bigger = more forgivey when entering submenu
                 enter: $.noop,
                 exit: $.noop,
@@ -102,7 +102,7 @@
                 exitOnMouseOut: true
             }, opts);
 
-        var MOUSE_LOCS_TRACKED = 3,  // number of past mouse locations to track
+        var MOUSE_LOCS_TRACKED = 5,  // number of past mouse locations to track
             DELAY = 300;  // ms delay when user appears to be entering submenu
 
         /**
@@ -204,18 +204,18 @@
                 var offset = $menu.offset(),
                     upperLeft = {
                         x: offset.left,
-                        y: offset.top - options.tolerance
+                        y: offset.top// - options.tolerance
                     },
                     upperRight = {
                         x: offset.left + $menu.outerWidth(),
                         y: upperLeft.y
                     },
                     lowerLeft = {
-                        x: offset.left,
-                        y: offset.top + $menu.outerHeight() + options.tolerance
+                        x: offset.left - options.tolerance,
+                        y: offset.top + $menu.outerHeight()// + options.tolerance
                     },
                     lowerRight = {
-                        x: offset.left + $menu.outerWidth(),
+                        x: offset.left + $menu.outerWidth() + options.tolerance,
                         y: lowerLeft.y
                     },
                     loc = mouseLocs[mouseLocs.length - 1],
