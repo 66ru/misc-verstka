@@ -1,0 +1,57 @@
+//что б правую колонку вытянуть верх
+.b-pushtop-16 {
+	margin-top: -16px;
+}
+
+/*надо поднять специфичность этих классов*/
+
+body .push-left {
+	float: left;
+}
+
+body .push-right {
+	float: right;
+}
+
+body .align_center {
+	text-align: center;
+}
+
+body .float_none {
+	float: none;
+}
+
+body .nowrap {
+	white-space: nowrap;
+}
+
+.css-inline-block,
+.i-inline-block {
+	display: inline-block;
+	float: none;
+}
+
+/* new clearfix */
+.context:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/*модификаторы, позволяющие вытолкнуть блок слева*/
+.i-hightlinght_push-left_10 {
+	padding-left: 10px;
+}
+.i-hightlinght_push-left_20 {
+	padding-left: 20px;
+}
+.i-hightlinght_push-left_60 {
+	padding-left: 60px;
+}
+.i-hightlinght_push-left_180 {
+	padding-left: 180px;
+}

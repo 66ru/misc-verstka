@@ -1,0 +1,309 @@
+.b-text_color_grey {
+	color: @grey-text;
+}
+
+.b-text_color_green {
+	color: @green-text;
+
+	a {
+		color: @black;
+		border-bottom: 1px solid #b2b2b2;
+		text-decoration: none;
+
+	}
+}
+
+a {
+	color: @link-color;
+	&:visited { color: @link-color;}
+	&:hover {color: @orange-text;}
+	&:active {color: @orange-text;}
+}
+
+
+.b-link_border_yes {
+	border-bottom: 1px solid fadeout(@link-color, 70%);
+	text-decoration: none;
+	&:visited {
+		border-color: fadeout(@grey-text, 70%);
+	}
+	&:hover {
+		color: @orange-text;
+		border-color: fadeout(@orange-text, 70%);
+	}
+}
+
+.b-link.b-link_border-style_dotted {
+	border-style: dotted;
+
+	&:hover {
+		border-style: dotted;
+	}
+}
+
+
+/*синий*/
+.b-link_color_blue {
+	color: @link-color;
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@link-color, 70%);
+		text-decoration: none;
+
+		
+		&:visited {
+			border-bottom: 1px solid @grey-text;
+			color: @grey-text;
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+		
+		&.b-link_visited_yes {
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+		&.b-link_visited_no {
+			&:visited {
+				color: @link-color;
+				border-bottom: 1px solid fadeout(@link-color, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+		
+		&.b-link_border_style_dotted {
+			&.b-link_visited_no {
+				border-bottom: 1px dotted fadeout(@link-color, 70%);
+				
+				&:hover {
+					border-bottom: 1px dotted fadeout(@orange-text, 70%);
+				}
+			}
+		}
+	}
+}
+
+
+.b-link_border_style_dashed {
+	border-style: dashed;
+}
+
+
+/*зеленый*/
+.b-link_color_green {
+	color: @green-text;
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@green-text, 70%);
+		text-decoration: none;
+
+
+
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @green-text;
+				border-bottom: 1px solid fadeout(@green-text, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+	}
+
+
+
+}
+
+/*оранжевый*/
+.b-link_color_orange {
+	color: @orange-text;
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@orange-text, 70%);
+		text-decoration: none;
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/*черный*/
+.b-link_color_black {
+	color: @black;
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@black, 70%);
+		text-decoration: none;
+
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @black;
+				border-bottom: 1px solid fadeout(@black, 70%);
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/*серый*/
+.b-link_color_grey {
+	color: @grey-text;
+
+	&.b-link_border_yes {
+		border-bottom: 1px solid fadeout(@grey-text, 70%);
+		text-decoration: none;
+
+		/*визит и ховер на цвет и бордер*/
+		&:visited {
+			border-bottom: 1px solid @grey-text;
+		}
+		&:hover {
+			color: @orange-text;
+			border-bottom: 1px solid fadeout(@orange-text, 70%);
+			text-decoration: none;
+		}
+
+		&.b-link_visited_yes {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+		&.b-link_visited_no {
+			/*визит и ховер на цвет и бордер и посещенность*/
+			&:visited {
+				color: @grey-text;
+				border-bottom: 1px solid @grey-text;
+			}
+			&:hover {
+				color: @orange-text;
+				border-bottom: 1px solid fadeout(@orange-text, 70%);
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+
+.b-link_visited_yes {
+	&:visited {
+		color: @grey-text;
+	}
+}
+
+.b-link_visited_no {
+	&:visited {
+		color: @link-color;
+	}
+	&:hover {
+		color: @orange-text;
+	}
+}
+
+
+
+
+
+
