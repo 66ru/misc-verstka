@@ -2327,6 +2327,15 @@ a.b-news-item__activity:hover {
 .b-header_type_h3 a.b-link_border_style_dotted.b-link_visited_no:hover {
   border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
 }
+.b-header_type_h3 a:visited {
+  color: #007899;
+  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+}
+.b-header_type_h3 a:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
+}
 .b-text_offsetLeft_20 {
   margin-left: 20px;
 }
