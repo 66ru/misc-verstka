@@ -644,7 +644,6 @@ a:active {
   border-bottom: 1px solid rgba(106, 142, 22, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_green.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -656,7 +655,6 @@ a:active {
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -669,7 +667,6 @@ a:active {
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_green.b-link_border_yes.b-link_visited_no:visited {
   color: #6a8e16;
@@ -688,7 +685,6 @@ a:active {
   border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_orange.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -700,7 +696,6 @@ a:active {
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -713,7 +708,6 @@ a:active {
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_orange.b-link_border_yes.b-link_visited_no:visited {
   color: #ff5400;
@@ -732,7 +726,6 @@ a:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_black.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -744,7 +737,6 @@ a:active {
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -757,7 +749,6 @@ a:active {
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_black.b-link_border_yes.b-link_visited_no:visited {
   color: #000000;
@@ -776,7 +767,6 @@ a:active {
   border-bottom: 1px solid rgba(128, 128, 128, 0.30000000000000004);
   text-decoration: none;
   /*визит и ховер на цвет и бордер*/
-
 }
 .b-link_color_grey.b-link_border_yes:visited {
   border-bottom: 1px solid #808080;
@@ -788,7 +778,6 @@ a:active {
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_yes {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_yes:visited {
   color: #808080;
@@ -801,7 +790,6 @@ a:active {
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_no {
   /*визит и ховер на цвет и бордер и посещенность*/
-
 }
 .b-link_color_grey.b-link_border_yes.b-link_visited_no:visited {
   color: #808080;
@@ -889,7 +877,6 @@ body {
 #body {
   margin-bottom: 45px;
   /* тыцка "Наверх" налазит на навигацию, например здесь: http://66.ru/rabota/vbranch106/ */
-
 }
 .l-body {
   margin-bottom: -140px;
@@ -939,7 +926,6 @@ body {
   padding: 0 1%;
   position: relative;
   /*width: 1284px;*/
-
 }
 .l-width-old {
   padding: 0 0%;
@@ -1062,11 +1048,11 @@ a.b-header-menu__item__link:after {
   color: #3f530c;
 }
 .b-header-menu__item_hidemenu_yes.cur .b-header-menu__item__link {
-  background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn-.png);
+  background-image: url(less/blocks/b-header-menu/img/b-header-arr-dwn-.png);
 }
 /*если у айтема есть скрытое меню*/
 .b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
-  background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn.png);
+  background-image: url(less/blocks/b-header-menu/img/b-header-arr-dwn.png);
   background-repeat: no-repeat;
   background-position: right 24px;
   padding-right: 18px;
@@ -1138,7 +1124,8 @@ a.b-header-menu__item__sub__wrap__col__list__item__link:hover {
   color: #FF5400;
   border-bottom: 1px solid #FFCBB2;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link_size_l {
+a.b-header-menu__item__sub__wrap__col__list__item__link_size_l,
+.b-header-menu__item__sub__wrap__col__list__item__link_size_l {
   font-size: 1.385em;
 }
 .b-submenu-item__bank-zajavka {
@@ -1249,7 +1236,7 @@ a.b-submenu-item__day-theme__link:hover {
 }
 .b-header-search__subm {
   border: none;
-  background: url(./less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
+  background: url(less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
   width: 27px;
   height: 27px;
   display: block;
@@ -1266,7 +1253,7 @@ a.b-submenu-item__day-theme__link:hover {
   color: #000;
 }
 .b-header-search_state_active .b-header-search__subm {
-  background: url(./less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
+  background: url(less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
 }
 input.b-header-search__text {
   border: none;
@@ -1365,7 +1352,7 @@ a.b-header-auth__tab__mail-link {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-  background: url(./less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
+  background: url(less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
   padding-right: 23px;
   margin-right: 5px;
   position: relative;
@@ -1428,13 +1415,13 @@ a.b-header-auth__tab__mail-link_has_new {
   position: relative;
   width: 10px;
   height: 11px;
-  background: url(./less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
   display: inline-block;
   margin-right: 5px;
   top: 1px;
 }
 .b-icon_pic_header-vk {
-  background: url(./less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1442,7 +1429,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-fb {
-  background: url(./less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1450,7 +1437,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-tw {
-  background: url(./less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1458,7 +1445,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon-logout {
-  background: url(./less/blocks/b-icon/img/logout.png);
+  background: url(less/blocks/b-icon/img/logout.png);
   width: 9px;
   height: 9px;
   vertical-align: middle;
@@ -1469,7 +1456,7 @@ a.b-header-auth__tab__mail-link_has_new {
   height: 26px;
   left: 0;
   top: 8px;
-  background: url(./less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
+  background: url(less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
   margin-left: 1px;
 }
 .b-icon_img_weather-0 {
@@ -1504,7 +1491,7 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_male:before {
-  background: url(./less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -1515,7 +1502,7 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_female:before {
-  background: url(./less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -1526,10 +1513,10 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_male.b-username_status_online:before {
-  background: url(./less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
 }
 .b-username_sex_female.b-username_status_online:before {
-  background: url(./less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
+  background: url(less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
 }
 .b-submenu-ads {
   padding-top: 0;
