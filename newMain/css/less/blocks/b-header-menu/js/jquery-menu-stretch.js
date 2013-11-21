@@ -1,8 +1,7 @@
-(function() {
-	var $ = jQuery;
-
+(function($) {
 	$(document).ready(function() {
 		checkAndFix();
+		$('.js-header-menu').css({overflow: 'hidden'});
 	});
 
 	$(window).load(function() {
@@ -81,4 +80,4 @@
 		$menuContainer.css({overflow: 'visible'});
 		reorganizeMenu();
 	}
-})();
+})(jQuery);
