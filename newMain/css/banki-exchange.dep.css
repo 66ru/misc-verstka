@@ -1112,7 +1112,7 @@ a.b-header-menu__item__link:after {
   padding-left: 12px;
 }
 .b-header-menu__item__sub__wrap__col__list__item__link {
-  color: #000;
+  color: #4d660f;
 }
 a.b-header-menu__item__sub__wrap__col__list__item__link,
 .b-header-menu__item__sub__wrap__col__list__item__link {
@@ -1120,12 +1120,10 @@ a.b-header-menu__item__sub__wrap__col__list__item__link,
   text-decoration: none;
   border-bottom: 1px solid #bccd92;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:visited,
-.b-header-menu__item__sub__wrap__col__list__item__link:visited {
+a.b-header-menu__item__sub__wrap__col__list__item__link:visited {
   color: #4d660f;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:hover,
-.b-header-menu__item__sub__wrap__col__list__item__link:hover {
+a.b-header-menu__item__sub__wrap__col__list__item__link:hover {
   color: #FF5400;
   border-bottom: 1px solid #FFCBB2;
 }
@@ -1594,7 +1592,7 @@ a.b-username:active {
 .b-bank-item-miniCard {
   margin-top: 15px;
   padding-bottom: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   position: relative;
   background: #fff;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#CCCCCC')";
@@ -1809,6 +1807,24 @@ a.b-tabs__item__link {
   background: linear-gradient(to bottom, #ffab00 0%, #f17f00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab00', endColorstr='#f17f00', GradientType=0);
 }
+.b-tabs__item_left {
+  width: 50%;
+  margin-right: 0 !important;
+}
+.b-tabs__item_right {
+  width: 50%;
+  margin-right: 0 !important;
+  position: relative;
+}
+.b-tabs__item_right:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 48px;
+  width: 1px;
+}
 .b-tabs__item__count {
   text-decoration: none;
   color: #666666;
@@ -1956,6 +1972,15 @@ a.b-tabs__item__link {
 }
 .b-header_type_h3 a.b-link_border_style_dotted.b-link_visited_no:hover {
   border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
+}
+.b-header_type_h3 a:visited {
+  color: #007899;
+  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+}
+.b-header_type_h3 a:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
 }
 .b-text_offsetLeft_20 {
   margin-left: 20px;
@@ -3336,7 +3361,7 @@ a.b-btn__link,
 .b-nbtn_size_xs {
   padding: 0 5px;
   height: 17px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 16px;
 }
 .b-bank-exchange-table {
@@ -3778,21 +3803,22 @@ a.b-btn__link,
   top: -3px;
 }
 .b-valute-best-course {
-  background: #d6eaaa;
   padding: 10px 20px 12px;
+  background: #d6eaaa;
 }
 .b-valute-best-course__row {
   font-size: 14px;
   line-height: 21px;
 }
 .b-valute-best-course__label {
-  color: #666666;
   display: inline-block;
   width: 150px;
+  color: #666666;
 }
 .b-valute-best-course__val {
-  color: #6a8e16;
   margin-right: 7px;
+  color: #6a8e16;
+  font-weight: bold;
 }
 .b-yacard-popup-exchange {
   padding: 18px;

@@ -11,7 +11,7 @@
 }
 .b-tabs_pills > .b-tabs__item {
 	float: left;
-	
+
 }
 .b-tabs__item {
 	position:relative;
@@ -29,7 +29,7 @@ a.b-tabs__item__link {
 .b-tabs__item_active .b-tabs__item__link {
 	text-decoration: none;
 	color: #fff;
-	
+
 	background: #ffab00;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYWIwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMTdmMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(top,  #ffab00 0%, #f17f00 100%);
@@ -39,8 +39,30 @@ a.b-tabs__item__link {
 	background: -ms-linear-gradient(top,  #ffab00 0%,#f17f00 100%);
 	background: linear-gradient(to bottom,  #ffab00 0%,#f17f00 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffab00', endColorstr='#f17f00',GradientType=0 );
-	
+
 }
+
+.b-tabs__item_left {
+	width: 50%;
+	margin-right: 0 !important;
+}
+
+.b-tabs__item_right {
+	width: 50%;
+	margin-right: 0 !important;
+	position: relative;
+}
+
+.b-tabs__item_right:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	background: #fff;
+	height: 48px;
+	width: 1px;
+}
+
 
 .b-tabs__item__count {
 	text-decoration: none;
@@ -81,12 +103,12 @@ a.b-tabs__item__link {
 	background: -ms-linear-gradient(top,  #8b907f 0%,#686c5f 100%);
 	background: linear-gradient(to bottom,  #8b907f 0%,#686c5f 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b907f', endColorstr='#686c5f',GradientType=0 );
-	
+
 	color: #fff;
 	text-decoration: none;
-	
+
 	border-radius: 5px 5px 0 0;
-	
+
 	padding-top: 14px;
 	padding-bottom: 13px;
 }
