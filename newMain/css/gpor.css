@@ -860,12 +860,10 @@ a.b-header-menu__item__sub__wrap__col__list__item__link,
   text-decoration: none;
   border-bottom: 1px solid #bccd92;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:visited,
-.b-header-menu__item__sub__wrap__col__list__item__link:visited {
+a.b-header-menu__item__sub__wrap__col__list__item__link:visited {
   color: #4d660f;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:hover,
-.b-header-menu__item__sub__wrap__col__list__item__link:hover {
+a.b-header-menu__item__sub__wrap__col__list__item__link:hover {
   color: #FF5400;
   border-bottom: 1px solid #FFCBB2;
 }

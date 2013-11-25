@@ -2512,7 +2512,7 @@ a.b-btn__link,
 .b-nbtn_size_xs {
   padding: 0 5px;
   height: 17px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 16px;
 }
 .b-banner img {
@@ -2522,19 +2522,29 @@ a.b-btn__link,
 .b-banner_layout_middle-page {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page div,
+.b-banner_layout_middle-page embed {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-2-col {
+  position: relative;
+  z-index: 100;
   float: right;
   margin-top: 7px;
   margin-left: 30px;
-  position: relative;
-  z-index: 100;
 }
 .b-banner_layout_middle-page-3-col {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page-3-col div {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-3-col object {
   width: 100% !important;
   height: 190px;
+}
+.b-banner_layout_middle-page-3-col embed {
+  width: 100% !important;
 }
 @media only screen and (max-width: 1300px) {
   .b-banner_layout_middle-page-3-col object {
@@ -2544,8 +2554,14 @@ a.b-btn__link,
 .b-banner_layout_middle-page-4-col {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page-4-col div {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-4-col object {
   height: 400px;
+}
+.b-banner_layout_middle-page-4-col embed {
+  width: 100% !important;
 }
 @media only screen and (max-width: 1300px) {
   .b-banner_layout_middle-page-4-col object {
@@ -3269,7 +3285,7 @@ a.b-health__links__item:hover {
 .b-bank-item-miniCard {
   margin-top: 15px;
   padding-bottom: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   position: relative;
   background: #fff;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#CCCCCC')";

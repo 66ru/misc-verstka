@@ -552,12 +552,11 @@ a:focus {
   left: 940%;
 }
 /**/
-.g-col-2.g-main-col-1 {
-  width: 510%;
-  margin-right: -510%;
-  /*overflow: hidden;*/
+.g-col-1.g-main-col-1 {
+  width: 545%;
+  margin-right: -545%;
 }
-.g-col-2.g-main-col-1:after {
+.l-body-wrap .g-col-30.g-main-col-2:before {
   content: '';
   background: #cccccc;
   width: 1px;
@@ -565,20 +564,21 @@ a:focus {
   position: absolute;
   top: 0;
   display: block;
-  right: -3%;
+  left: -4.7%;
 }
-.g-col-29.g-main-col-2 {
-  left: 571%;
-  width: 374%;
-  margin-right: -374%;
+/*.g-col-29.g-main-col-2 {
+    left: 571%;
+	width: 374%;
+	margin-right: -374%;
 }
+
 .g-col-38.g-main-col-2 {
-  float: right;
-  left: 0;
-  margin-right: -850%;
-  right: 0;
-  width: 240px;
-}
+    float: right;
+    left: 0;
+    margin-right: -850%;
+    right: 0;
+    width: 240px;
+}*/
 /**/
 .g-restore,
 .g-initial {
@@ -1249,7 +1249,7 @@ a.b-header-menu__item__link:after {
   padding-left: 12px;
 }
 .b-header-menu__item__sub__wrap__col__list__item__link {
-  color: #000;
+  color: #4d660f;
 }
 a.b-header-menu__item__sub__wrap__col__list__item__link,
 .b-header-menu__item__sub__wrap__col__list__item__link {
@@ -1257,12 +1257,10 @@ a.b-header-menu__item__sub__wrap__col__list__item__link,
   text-decoration: none;
   border-bottom: 1px solid #bccd92;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:visited,
-.b-header-menu__item__sub__wrap__col__list__item__link:visited {
+a.b-header-menu__item__sub__wrap__col__list__item__link:visited {
   color: #4d660f;
 }
-a.b-header-menu__item__sub__wrap__col__list__item__link:hover,
-.b-header-menu__item__sub__wrap__col__list__item__link:hover {
+a.b-header-menu__item__sub__wrap__col__list__item__link:hover {
   color: #FF5400;
   border-bottom: 1px solid #FFCBB2;
 }
@@ -1778,7 +1776,7 @@ a.b-username:active {
 .b-bank-item-miniCard {
   margin-top: 15px;
   padding-bottom: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   position: relative;
   background: #fff;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color='#CCCCCC')";
@@ -1993,6 +1991,24 @@ a.b-tabs__item__link {
   background: linear-gradient(to bottom, #ffab00 0%, #f17f00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab00', endColorstr='#f17f00', GradientType=0);
 }
+.b-tabs__item_left {
+  width: 50%;
+  margin-right: 0 !important;
+}
+.b-tabs__item_right {
+  width: 50%;
+  margin-right: 0 !important;
+  position: relative;
+}
+.b-tabs__item_right:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 48px;
+  width: 1px;
+}
 .b-tabs__item__count {
   text-decoration: none;
   color: #666666;
@@ -2140,6 +2156,15 @@ a.b-tabs__item__link {
 }
 .b-header_type_h3 a.b-link_border_style_dotted.b-link_visited_no:hover {
   border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
+}
+.b-header_type_h3 a:visited {
+  color: #007899;
+  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+}
+.b-header_type_h3 a:hover {
+  color: #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.30000000000000004);
+  text-decoration: none;
 }
 .b-text_offsetLeft_20 {
   margin-left: 20px;
@@ -3211,19 +3236,29 @@ a.b-banking-adress__list-link:hover:hover {
 .b-banner_layout_middle-page {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page div,
+.b-banner_layout_middle-page embed {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-2-col {
+  position: relative;
+  z-index: 100;
   float: right;
   margin-top: 7px;
   margin-left: 30px;
-  position: relative;
-  z-index: 100;
 }
 .b-banner_layout_middle-page-3-col {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page-3-col div {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-3-col object {
   width: 100% !important;
   height: 190px;
+}
+.b-banner_layout_middle-page-3-col embed {
+  width: 100% !important;
 }
 @media only screen and (max-width: 1300px) {
   .b-banner_layout_middle-page-3-col object {
@@ -3233,8 +3268,14 @@ a.b-banking-adress__list-link:hover:hover {
 .b-banner_layout_middle-page-4-col {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page-4-col div {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-4-col object {
   height: 400px;
+}
+.b-banner_layout_middle-page-4-col embed {
+  width: 100% !important;
 }
 @media only screen and (max-width: 1300px) {
   .b-banner_layout_middle-page-4-col object {
