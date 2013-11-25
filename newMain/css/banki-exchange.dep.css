@@ -2941,19 +2941,29 @@ a.b-banking-adress__list-link:hover:hover {
 .b-banner_layout_middle-page {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page div,
+.b-banner_layout_middle-page embed {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-2-col {
+  position: relative;
+  z-index: 100;
   float: right;
   margin-top: 7px;
   margin-left: 30px;
-  position: relative;
-  z-index: 100;
 }
 .b-banner_layout_middle-page-3-col {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page-3-col div {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-3-col object {
   width: 100% !important;
   height: 190px;
+}
+.b-banner_layout_middle-page-3-col embed {
+  width: 100% !important;
 }
 @media only screen and (max-width: 1300px) {
   .b-banner_layout_middle-page-3-col object {
@@ -2963,8 +2973,14 @@ a.b-banking-adress__list-link:hover:hover {
 .b-banner_layout_middle-page-4-col {
   margin-left: 0px;
 }
+.b-banner_layout_middle-page-4-col div {
+  width: 100% !important;
+}
 .b-banner_layout_middle-page-4-col object {
   height: 400px;
+}
+.b-banner_layout_middle-page-4-col embed {
+  width: 100% !important;
 }
 @media only screen and (max-width: 1300px) {
   .b-banner_layout_middle-page-4-col object {
