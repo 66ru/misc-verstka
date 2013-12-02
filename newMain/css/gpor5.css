@@ -2840,6 +2840,10 @@ a.b-btn__link,
 .b-text_layout_cluodtag a.b-link_border_style_dotted.b-link_visited_no:hover {
   border-bottom: 1px dotted rgba(255, 84, 0, 0.30000000000000004);
 }
+.b-text_layout_cluodtag a:visited {
+  border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+  color: #007899;
+}
 .b-text-valute {
   position: relative;
   padding-right: 5px;
