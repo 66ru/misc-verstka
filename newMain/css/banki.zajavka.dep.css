@@ -1548,7 +1548,7 @@ body {
   display: block;
   width: 7px;
   height: 15px;
-  background-image: url(less/blocks/b-form/img/b-form-baloon-err-left-arr.png);
+  background-image: url(../css/less/blocks/b-form/img/b-form-baloon-err-left-arr.png);
   left: -7px;
   top: 12px;
 }
@@ -1558,7 +1558,7 @@ body {
   display: block;
   width: 7px;
   height: 15px;
-  background-image: url(less/blocks/b-form/img/b-form-baloon-hint-left-arr.png);
+  background-image: url(../css/less/blocks/b-form/img/b-form-baloon-hint-left-arr.png);
   left: -7px;
   top: 12px;
 }
@@ -1801,7 +1801,7 @@ body {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(less/blocks/b-text/img/valute-dinamic.png);
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png);
   content: '';
 }
 .b-text-valute_dinamic_up .b-text-valute-more {
@@ -1814,7 +1814,7 @@ body {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
   content: '';
 }
 a.b-text-ad {
@@ -1845,7 +1845,7 @@ a.b-text-ad .b-text-ad__shadow {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
+  background: url(../css/less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
 }
 a.b-text-ad:hover .b-text-ad__shadow {
   opacity: 0.85;
@@ -1910,7 +1910,7 @@ a.b-ad-btn ins {
   margin-top: -12px;
   width: 24px;
   height: 21px;
-  background: url(less/blocks/b-text/img/zmey.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-text/img/zmey.png) 0 0 no-repeat;
   content: '';
 }
 .b-banks-logo {
@@ -1945,7 +1945,7 @@ a.b-ad-btn ins {
   font-weight: bold;
 }
 .b-list-step__count {
-  background: url(less/blocks/b-list-step/img/b-list-step.png) 0 -32px no-repeat;
+  background: url(../css/less/blocks/b-list-step/img/b-list-step.png) 0 -32px no-repeat;
   width: 32px;
   height: 28px;
   display: inline-block;
@@ -2005,7 +2005,7 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_male:before {
-  background: url(less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -2016,7 +2016,7 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_female:before {
-  background: url(less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -2027,10 +2027,10 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_male.b-username_status_online:before {
-  background: url(less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
 }
 .b-username_sex_female.b-username_status_online:before {
-  background: url(less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
 }
 .b-footer-logo__pic {
   position: relative;

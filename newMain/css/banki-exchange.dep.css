@@ -1068,12 +1068,12 @@ a.b-header-menu__item__link:after {
   color: #3f530c;
 }
 .b-header-menu__item_hidemenu_yes.cur .b-header-menu__item__link {
-  background-image: url(less/blocks/b-header-menu/img/b-header-arr-dwn-.png);
+  background-image: url(../css/less/blocks/b-header-menu/img/b-header-arr-dwn-.png);
 }
 .b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
   padding-right: 18px;
   border: none;
-  background-image: url(less/blocks/b-header-menu/img/b-header-arr-dwn.png);
+  background-image: url(../css/less/blocks/b-header-menu/img/b-header-arr-dwn.png);
   background-position: right 24px;
   background-repeat: no-repeat;
   text-decoration: none;
@@ -1264,7 +1264,7 @@ a.b-submenu-item__day-theme__link:hover {
 }
 .b-header-search__subm {
   border: none;
-  background: url(less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
+  background: url(../css/less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
   width: 27px;
   height: 27px;
   display: block;
@@ -1281,7 +1281,7 @@ a.b-submenu-item__day-theme__link:hover {
   color: #000;
 }
 .b-header-search_state_active .b-header-search__subm {
-  background: url(less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
+  background: url(../css/less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
 }
 input.b-header-search__text {
   border: none;
@@ -1380,7 +1380,7 @@ a.b-header-auth__tab__mail-link {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-  background: url(less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
+  background: url(../css/less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
   padding-right: 23px;
   margin-right: 5px;
   position: relative;
@@ -1443,13 +1443,13 @@ a.b-header-auth__tab__mail-link_has_new {
   position: relative;
   width: 10px;
   height: 11px;
-  background: url(less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
   display: inline-block;
   margin-right: 5px;
   top: 1px;
 }
 .b-icon_pic_header-vk {
-  background: url(less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1457,7 +1457,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-fb {
-  background: url(less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1465,7 +1465,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-tw {
-  background: url(less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1473,7 +1473,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon-logout {
-  background: url(less/blocks/b-icon/img/logout.png);
+  background: url(../css/less/blocks/b-icon/img/logout.png);
   width: 9px;
   height: 9px;
   vertical-align: middle;
@@ -1484,7 +1484,7 @@ a.b-header-auth__tab__mail-link_has_new {
   height: 26px;
   left: 0;
   top: 8px;
-  background: url(less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-icon/img/v5-weather-icons.png) 0 0 no-repeat;
   margin-left: 1px;
 }
 .b-icon_img_weather-0 {
@@ -1519,7 +1519,7 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_male:before {
-  background: url(less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -1530,7 +1530,7 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_female:before {
-  background: url(less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
   content: '';
   display: block;
   width: 10px;
@@ -1541,10 +1541,10 @@ a.b-username:active {
   position: absolute;
 }
 .b-username_sex_male.b-username_status_online:before {
-  background: url(less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
 }
 .b-username_sex_female.b-username_status_online:before {
-  background: url(less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
 }
 .b-footer-logo__pic {
   position: relative;
@@ -1784,13 +1784,13 @@ a.b-username:active {
   display: block;
 }
 .b-bank-item-miniCard__courses__dynamic_down:after {
-  background-image: url(less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+  background-image: url(../css/less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
   background-position: 0 -9px;
   background-repeat: no-repeat;
   top: 7px;
 }
 .b-bank-item-miniCard__courses__dynamic_up:after {
-  background-image: url(less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+  background-image: url(../css/less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
   background-position: 0 0px;
   background-repeat: no-repeat;
   top: 4px;
@@ -2132,7 +2132,7 @@ a.b-tabs__item__link {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(less/blocks/b-text/img/valute-dinamic.png);
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png);
   content: '';
 }
 .b-text-valute_dinamic_up .b-text-valute-more {
@@ -2145,7 +2145,7 @@ a.b-tabs__item__link {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
   content: '';
 }
 a.b-text-ad {
@@ -2176,7 +2176,7 @@ a.b-text-ad .b-text-ad__shadow {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
+  background: url(../css/less/blocks/b-text/img/b-news-gradient.png) 0 bottom repeat-x;
 }
 a.b-text-ad:hover .b-text-ad__shadow {
   opacity: 0.85;
@@ -2241,7 +2241,7 @@ a.b-ad-btn ins {
   margin-top: -12px;
   width: 24px;
   height: 21px;
-  background: url(less/blocks/b-text/img/zmey.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-text/img/zmey.png) 0 0 no-repeat;
   content: '';
 }
 a.b-readmore__link {
@@ -3497,7 +3497,7 @@ a.b-btn__link,
   display: inline-block;
   width: 9px;
   height: 4px;
-  background: url(less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
+  background: url(../css/less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
   content: '';
   vertical-align: middle;
   position: absolute;
@@ -3510,7 +3510,7 @@ a.b-btn__link,
   display: inline-block;
   width: 9px;
   height: 4px;
-  background: url(less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
+  background: url(../css/less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
   background-position: 0 -5px;
   content: '';
   vertical-align: middle;
@@ -3629,7 +3629,7 @@ a.b-btn__link,
   color: #0000CC;
 }
 .b-valute-converter__switch {
-  background: url("less/blocks/b-valute-converter/img/b-valute-converter-eqv.png") no-repeat scroll 0 0 #ffffff;
+  background: url("../css/less/blocks/b-valute-converter/img/b-valute-converter-eqv.png") no-repeat scroll 0 0 #ffffff;
   display: block;
   font: 0px/0 a;
   height: 32px;
