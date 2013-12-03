@@ -1058,7 +1058,7 @@ input.b-header-search__text {
   padding: 0 10px;
   width: 1%;
 }
-.b-header-auth__tab__link {
+a.b-header-auth__tab__link {
   position: relative;
   top: -1px;
   margin: 0 2px;
@@ -1066,10 +1066,10 @@ input.b-header-search__text {
   text-decoration: none;
   font-size: 14px;
 }
-.b-header-auth__tab__link:visited {
+a.b-header-auth__tab__link:visited {
   color: #fff;
 }
-.b-header-auth__tab__link:hover {
+a.b-header-auth__tab__link:hover {
   color: #fff;
 }
 .b-header-auth__tab__logined-user {
