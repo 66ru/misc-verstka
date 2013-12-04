@@ -5,9 +5,9 @@
 }
 .b-list-step__item {
 	margin: 0px;
+	margin-bottom: 3px;
 	padding: 0px;
 	font: 14px/18px Arial, Helvetica, Sans;
-	margin-bottom: 3px;
 }
 
 .b-list-step__item_state_cur {
@@ -15,19 +15,19 @@
 }
 
 .b-list-step__count {
-	background: url(./less/blocks/b-list-step/img/b-list-step.png) 0 -32px no-repeat;
+	position:relative;
+	top: -1px;
+	display: inline-block;
+	margin-right: 10px;
 	width: 32px;
 	height: 28px;
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 26px;
-	position:relative;
-	font-weight: bold;
+	background: url(../css/less/blocks/b-list-step/img/b-list-step.png) 0 -32px no-repeat;
 	color: #537404;
-	margin-right: 10px;
-	top: -1px;
+	vertical-align: middle;
+	text-align: center;
 	text-indent: 3px;
+	font-weight: bold;
+	line-height: 26px;
 }
 
 .b-list-step__item_state_cur .b-list-step__count {

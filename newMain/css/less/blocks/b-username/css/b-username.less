@@ -7,37 +7,35 @@ a.b-username,
 a.b-username:visited,
 a.b-username:hover,
 a.b-username:active {
-	color: #007899;
   	border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
-  	text-decoration: none;	
+	color: #007899;
+  	text-decoration: none;
 }
 
 .username_sex_icon {
-	content:'';
+	position:absolute;
+	top: 50%;
+	left: -12px;
 	display: block;
+	margin-top: -4px;
 	width: 10px;
 	height: 10px;
-	left: -12px;
-	top: 50%;
-	margin-top: -4px;
-	position:absolute;
+	content:'';
 }
 
 .b-username_sex_male:before {
-	background: url(./less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
 	.username_sex_icon;
+	background: url(../css/less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
 }
 
 .b-username_sex_female:before {
-	background: url(./less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
 	.username_sex_icon;
+	background: url(../css/less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
 }
 
 .b-username_sex_male.b-username_status_online:before {
-	background: url(./less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
+	background: url(../css/less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;
 }
 .b-username_sex_female.b-username_status_online:before {
-	background: url(./less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
+	background: url(../css/less/blocks/b-username/img/user-f.gif) 0 0 no-repeat;
 }
-
-

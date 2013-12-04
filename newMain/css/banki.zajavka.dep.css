@@ -1327,15 +1327,15 @@ body {
   left: 940%;
 }
 .b-form__row .ajax_loader {
-  background: url("../img/indicator.gif") no-repeat scroll center center transparent;
+  position: absolute;
+  top: 0px;
+  right: -27px;
+  z-index: 200;
   display: inline-block;
-  height: 16px;
   margin: 0 5px;
   width: 16px;
-  position: absolute;
-  right: -27px;
-  top: 0px;
-  z-index: 200;
+  height: 16px;
+  background: url("../img/indicator.gif") no-repeat scroll center center transparent;
 }
 /**/
 .b-form {
@@ -1386,20 +1386,20 @@ body {
   border-width: 2px;
 }
 .b-container_border-top_yes {
-  border-left: none !important;
+  border-style: solid;
   border-right: none !important;
   border-bottom: none !important;
-  border-style: solid;
+  border-left: none !important;
 }
 /*СТРОКА ФОРМЫ*/
 .b-form__row {
-  line-height: 18px;
-  margin: 0px;
-  box-sizing: border-box;
   position: relative;
   z-index: 100;
+  box-sizing: border-box;
+  margin: 0px;
   padding: 12px 0;
   padding-left: 190px;
+  line-height: 18px;
 }
 .b-form__row_padding_no {
   padding-left: 0px;
@@ -1410,10 +1410,10 @@ body {
 }
 /*МЕТКА СТРОКИ ФОРМЫ*/
 .b-form__label {
-  font-size: 14px;
-  margin-left: -190px;
   float: left;
+  margin-left: -190px;
   width: 180px;
+  font-size: 14px;
 }
 .b-form__label_bold_yes,
 .b-form__variant__label_bold_yes {
@@ -1431,10 +1431,10 @@ body {
   top: -4px;
 }
 .b-form__select__control {
-  padding: 4px 3px 3px 0px;
-  font-size: 14px;
-  width: 100%;
   box-sizing: border-box;
+  padding: 4px 3px 3px 0px;
+  width: 100%;
+  font-size: 14px;
 }
 .b-form__select__control_bold_yes {
   font-weight: bold;
@@ -1445,12 +1445,12 @@ body {
   top: -4px;
 }
 .b-form__text__control {
+  box-sizing: border-box;
   padding: 4px 3px 3px 0px;
   padding-right: 0px;
-  font-size: 14px;
   width: 100%;
   text-indent: 3px;
-  box-sizing: border-box;
+  font-size: 14px;
 }
 /*ВАРИАНТЫ ФОРМЫ*/
 .b-form__variant {
@@ -1464,26 +1464,26 @@ body {
   font-size: 14px;
 }
 .b-form__variant__checkbox {
-  display: inline-block;
   position: relative;
   top: 1px;
+  display: inline-block;
   margin-right: 5px;
 }
 /**/
 .b-form__variant__radio {
-  display: inline-block;
   position: relative;
   top: 1px;
+  display: inline-block;
 }
 /*TEXTAREA ФОРМЫ*/
 .b-form__textarea {
   position: relative;
 }
 .b-form__textarea__control {
-  padding: 4px 3px 3px 0px;
-  font-size: 14px;
-  width: 100%;
   box-sizing: border-box;
+  padding: 4px 3px 3px 0px;
+  width: 100%;
+  font-size: 14px;
   overflow: hidden;
   resize: none;
   padding-right: 0px;
@@ -1494,13 +1494,13 @@ body {
 }
 /*RULES ФОРМЫ*/
 .b-form__rules {
-  height: 110px;
   overflow-y: scroll;
+  padding: 5px 5px;
+  height: 110px;
   border: 1px solid #d1d1d1;
   background-color: #fff;
-  line-height: 18px;
   font-size: 13px;
-  padding: 5px 5px;
+  line-height: 18px;
 }
 /*ВАЛИДАЦИЯ ФОРМЫ*/
 .b-form_validate_ok {
@@ -1514,17 +1514,17 @@ body {
 }
 /*БАЛУНЫ ФОРМЫ*/
 .b-form__baloon {
-  font-size: 14px;
-  color: #fff;
-  line-height: 18px;
-  border-radius: 3px;
-  padding: 9px 14px;
   position: absolute;
-  left: 0px;
   top: -20px;
-  max-width: 170px;
+  left: 0px;
   float: left;
+  padding: 9px 14px;
+  max-width: 170px;
+  border-radius: 3px;
   box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
 }
 .b-form__baloon_layout_err {
   background: #da6b00;
@@ -1533,34 +1533,34 @@ body {
   background: #84a830;
 }
 .b-form__baloon_position_right {
-  left: auto;
-  right: -208px;
-  margin-right: -8px;
   top: -2px;
+  right: -208px;
+  left: auto;
+  margin-right: -8px;
 }
 .b-form__baloon_position_top {
   top: 0px;
   left: 0;
 }
 .b-form__baloon_layout_err.b-form__baloon_position_right:after {
-  content: '';
   position: absolute;
+  top: 12px;
+  left: -7px;
   display: block;
   width: 7px;
   height: 15px;
   background-image: url(../css/less/blocks/b-form/img/b-form-baloon-err-left-arr.png);
-  left: -7px;
-  top: 12px;
+  content: '';
 }
 .b-form__baloon_layout_hint.b-form__baloon_position_right:after {
-  content: '';
   position: absolute;
+  top: 12px;
+  left: -7px;
   display: block;
   width: 7px;
   height: 15px;
   background-image: url(../css/less/blocks/b-form/img/b-form-baloon-hint-left-arr.png);
-  left: -7px;
-  top: 12px;
+  content: '';
 }
 /*ПРЕДУПРЕЖДЕНИЯ*/
 .b-form-warning {
@@ -1570,8 +1570,8 @@ body {
   color: #930000;
 }
 .b-form-warning p {
-  font: normal 14px/21px Arial, Helvatica, Sans;
   margin: 0px 0 10px;
+  font: normal 14px/21px Arial, Helvatica, Sans;
 }
 .b-text {
   font-size: 13px;
@@ -1937,27 +1937,27 @@ a.b-ad-btn ins {
 }
 .b-list-step__item {
   margin: 0px;
+  margin-bottom: 3px;
   padding: 0px;
   font: 14px/18px Arial, Helvetica, Sans;
-  margin-bottom: 3px;
 }
 .b-list-step__item_state_cur {
   font-weight: bold;
 }
 .b-list-step__count {
-  background: url(../css/less/blocks/b-list-step/img/b-list-step.png) 0 -32px no-repeat;
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  margin-right: 10px;
   width: 32px;
   height: 28px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 26px;
-  position: relative;
-  font-weight: bold;
+  background: url(../css/less/blocks/b-list-step/img/b-list-step.png) 0 -32px no-repeat;
   color: #537404;
-  margin-right: 10px;
-  top: -1px;
+  vertical-align: middle;
+  text-align: center;
   text-indent: 3px;
+  font-weight: bold;
+  line-height: 26px;
 }
 .b-list-step__item_state_cur .b-list-step__count {
   background-position: 0 0;
@@ -1990,41 +1990,41 @@ a.b-username,
 a.b-username:visited,
 a.b-username:hover,
 a.b-username:active {
-  color: #007899;
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+  color: #007899;
   text-decoration: none;
 }
 .username_sex_icon {
-  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
   display: block;
+  margin-top: -4px;
   width: 10px;
   height: 10px;
-  left: -12px;
-  top: 50%;
-  margin-top: -4px;
-  position: absolute;
+  content: '';
 }
 .b-username_sex_male:before {
-  background: url(../css/less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
-  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
   display: block;
+  margin-top: -4px;
   width: 10px;
   height: 10px;
-  left: -12px;
-  top: 50%;
-  margin-top: -4px;
-  position: absolute;
+  content: '';
+  background: url(../css/less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
 }
 .b-username_sex_female:before {
-  background: url(../css/less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
-  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
   display: block;
+  margin-top: -4px;
   width: 10px;
   height: 10px;
-  left: -12px;
-  top: 50%;
-  margin-top: -4px;
-  position: absolute;
+  content: '';
+  background: url(../css/less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
 }
 .b-username_sex_male.b-username_status_online:before {
   background: url(../css/less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;

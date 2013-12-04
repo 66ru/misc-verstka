@@ -1003,14 +1003,14 @@ a.b-submenu-item__day-theme__link:hover {
   margin-bottom: 7px;
 }
 .b-header-search__subm {
-  border: none;
-  background: url(../css/less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  display: block;
   width: 27px;
   height: 27px;
-  display: block;
-  position: absolute;
-  right: 2px;
-  top: -1px;
+  border: none;
+  background: url(../css/less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
   cursor: pointer;
   cursor: hand;
 }
@@ -1052,11 +1052,11 @@ input.b-header-search__text {
   border-top: 1px solid #809352;
 }
 .b-header-auth__tab {
-  white-space: nowrap;
-  height: 45px;
-  vertical-align: middle;
   padding: 0 10px;
   width: 1%;
+  height: 45px;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 a.b-header-auth__tab__link {
   position: relative;
@@ -1076,18 +1076,18 @@ a.b-header-auth__tab__link:hover {
   position: relative;
 }
 .b-header-auth__tab__logined-user-ellipsed {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 120px;
-  white-space: nowrap;
-  color: #fff;
   position: relative;
   top: 1px;
+  overflow: hidden;
+  width: 120px;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .b-header-auth__tab__logout-link {
   position: absolute;
-  right: 3px;
   top: 6px;
+  right: 3px;
 }
 a.b-header-auth__tab__logined-user__link {
   position: relative;
@@ -1097,10 +1097,10 @@ a.b-header-auth__tab__logined-user__link {
   font-size: 14px;
   line-height: 20px;
 }
-a.b-header-auth__tab__logined-user__link:hover {
+a.b-header-auth__tab__logined-user__link:visited {
   color: #fff;
 }
-a.b-header-auth__tab__logined-user__link:visited {
+a.b-header-auth__tab__logined-user__link:hover {
   color: #fff;
 }
 .b-header-auth__tab__logined-user__link__pic {
@@ -1117,32 +1117,32 @@ a.b-header-auth__tab__logined-user__link:visited {
   box-shadow: 0 0 3px #8fa856;
 }
 a.b-header-auth__tab__mail-link {
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  background: url(../css/less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
-  padding-right: 23px;
-  margin-right: 5px;
   position: relative;
   top: 1px;
-}
-a.b-header-auth__tab__mail-link:hover {
+  margin-right: 5px;
+  padding-right: 23px;
+  background: url(../css/less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
   color: #fff;
+  text-decoration: none;
+  font-size: 14px;
 }
 a.b-header-auth__tab__mail-link:visited {
   color: #fff;
 }
+a.b-header-auth__tab__mail-link:hover {
+  color: #fff;
+}
 .b-header-auth__tab__mail-link__count {
   position: absolute;
-  display: none;
-  right: -3px;
   top: -7px;
+  right: -3px;
   z-index: 100;
-  font-size: 10px;
-  background: #ff5400;
+  display: none;
   padding: 2px 2px 1px 1px;
   border-radius: 3px;
+  background: #ff5400;
   box-shadow: 1px 1px 3px 0px #566d1f;
+  font-size: 10px;
 }
 .b-header-auth__tab__mail-link__label {
   text-decoration: none;
@@ -1162,17 +1162,17 @@ a.b-header-auth__tab__mail-link_has_new {
   background: #a0bc60;
 }
 .b-header-auth {
+  position: relative;
   width: 100%;
   border-collapse: collapse;
-  position: relative;
 }
 .page-fixed-right .b-header-auth {
-  width: 240px;
   float: right;
+  width: 240px;
 }
 #v5-frame .b-header-auth {
-  width: 240px;
   float: right;
+  width: 240px;
 }
 /*TODO: привести к общему модификатору img-pic*/
 .b-icon {
@@ -1244,41 +1244,41 @@ a.b-username,
 a.b-username:visited,
 a.b-username:hover,
 a.b-username:active {
-  color: #007899;
   border-bottom: 1px solid rgba(0, 120, 153, 0.30000000000000004);
+  color: #007899;
   text-decoration: none;
 }
 .username_sex_icon {
-  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
   display: block;
+  margin-top: -4px;
   width: 10px;
   height: 10px;
-  left: -12px;
-  top: 50%;
-  margin-top: -4px;
-  position: absolute;
+  content: '';
 }
 .b-username_sex_male:before {
-  background: url(../css/less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
-  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
   display: block;
+  margin-top: -4px;
   width: 10px;
   height: 10px;
-  left: -12px;
-  top: 50%;
-  margin-top: -4px;
-  position: absolute;
+  content: '';
+  background: url(../css/less/blocks/b-username/img/user-m_off.gif) 0 0 no-repeat;
 }
 .b-username_sex_female:before {
-  background: url(../css/less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
-  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
   display: block;
+  margin-top: -4px;
   width: 10px;
   height: 10px;
-  left: -12px;
-  top: 50%;
-  margin-top: -4px;
-  position: absolute;
+  content: '';
+  background: url(../css/less/blocks/b-username/img/user-f_off.gif) 0 0 no-repeat;
 }
 .b-username_sex_male.b-username_status_online:before {
   background: url(../css/less/blocks/b-username/img/user-m.gif) 0 0 no-repeat;

@@ -3,15 +3,15 @@
 
 
 .b-form__row .ajax_loader {
-    background: url("../img/indicator.gif") no-repeat scroll center center transparent;
+	position:absolute;
+	top: 0px;
+	right: -27px;
+	z-index: 200;
     display: inline-block;
-    height: 16px;
     margin: 0 5px;
     width: 16px;
-	position:absolute;
-	right: -27px;
-	top: 0px;
-	z-index: 200;
+    height: 16px;
+    background: url("../img/indicator.gif") no-repeat scroll center center transparent;
 }
 
 
@@ -44,18 +44,18 @@
 
 .b-container_border-color_orange { border-color: #da6b00; }
 .b-container_border-width_2 { border-width: 2px; }
-.b-container_border-top_yes { border-left: none !important; border-right: none !important; border-bottom: none !important; border-style: solid; }
+.b-container_border-top_yes { border-style: solid; border-right: none !important; border-bottom: none !important; border-left: none !important; }
 
 
 /*СТРОКА ФОРМЫ*/
 .b-form__row {
-	line-height: 18px;
-	margin: 0px;
-	box-sizing: border-box;
 	position:relative;
 	z-index: 100;
+	box-sizing: border-box;
+	margin: 0px;
 	padding: @fieldsetMargin;
 	padding-left: 190px;
+	line-height: 18px;
 }
 
 .b-form__row_padding_no {
@@ -69,10 +69,10 @@
 
 /*МЕТКА СТРОКИ ФОРМЫ*/
 .b-form__label {
-	font-size: @inputFontSize;
-	margin-left: -190px; 
 	float: left;
+	margin-left: -190px;
 	width: 180px;
+	font-size: @inputFontSize;
 }
 .b-form__label_bold_yes,
 .b-form__variant__label_bold_yes {
@@ -94,10 +94,10 @@
 	top: @defaultTopOffset;
 }
 .b-form__select__control {
-	padding: @inputPadding;
-	font-size: @inputFontSize;
-	width: 100%;
 	box-sizing: border-box;
+	padding: @inputPadding;
+	width: 100%;
+	font-size: @inputFontSize;
 }
 .b-form__select__control_bold_yes {
 	font-weight: bold;
@@ -110,12 +110,12 @@
 	top: @defaultTopOffset;
 }
 .b-form__text__control {
+	box-sizing: border-box;
 	padding: @inputPadding;
 	padding-right: 0px;
-	font-size: @inputFontSize;
 	width: 100%;
 	text-indent: 3px;
-	box-sizing: border-box;
+	font-size: @inputFontSize;
 }
 
 
@@ -132,21 +132,21 @@
 }
 
 	.b-form__variant__checkbox {
-		display: inline-block;
 		position: relative;
 		top: 1px;
+		display: inline-block;
 		margin-right: 5px;
 	}
-	.b-form__variant__checkbox__control {}
+	.b-form__variant__checkbox__control { }
 
 	/**/
 
 	.b-form__variant__radio {
-		display: inline-block;
 		position: relative;
 		top: 1px;
+		display: inline-block;
 	}
-	.b-form__variant__radio__control {}
+	.b-form__variant__radio__control { }
 
 
 
@@ -156,10 +156,10 @@
 	position:relative;
 }
 .b-form__textarea__control {
-	padding: @inputPadding;
-	font-size: @inputFontSize;
-	width: 100%;
 	box-sizing: border-box;
+	padding: @inputPadding;
+	width: 100%;
+	font-size: @inputFontSize;
 	overflow: hidden;
 	resize: none;
 	padding-right: 0px;
@@ -174,13 +174,13 @@
 
 /*RULES ФОРМЫ*/
 .b-form__rules {
-	height: 110px;
 	overflow-y: scroll;
+	padding: 5px 5px;
+	height: 110px;
 	border: 1px solid #d1d1d1;
 	background-color: #fff;
-	line-height: 18px;
 	font-size:13px;
-	padding: 5px 5px;
+	line-height: 18px;
 }
 
 
@@ -192,18 +192,18 @@
 
 /*БАЛУНЫ ФОРМЫ*/
 .b-form__baloon {
-	font-size: @inputFontSize;
-	
-	color: #fff;
-	line-height: 18px;
-	border-radius: 3px;
-	padding: 9px 14px;
 	position: absolute;
-	left: 0px;
 	top: -20px;
-	max-width: 170px;
+	left: 0px;
 	float: left;
+	padding: 9px 14px;
+	max-width: 170px;
+	border-radius: 3px;
 	box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+
+	color: #fff;
+	font-size: @inputFontSize;
+	line-height: 18px;
 }
 .b-form__baloon_layout_err {
 	background: #da6b00;
@@ -214,10 +214,10 @@
 }
 
 .b-form__baloon_position_right {
-	left: auto;
-	right: -208px;
-	margin-right: -8px;
 	top: -2px;
+	right: -208px;
+	left: auto;
+	margin-right: -8px;
 }
 
 .b-form__baloon_position_top {
@@ -226,25 +226,25 @@
 }
 
 .b-form__baloon_layout_err.b-form__baloon_position_right:after {
-	content: '';
 	position: absolute;
+	top: 12px;
+	left: -7px;
 	display: block;
 	width: 7px;
 	height: 15px;
-	background-image: url(./less/blocks/b-form/img/b-form-baloon-err-left-arr.png);
-	left: -7px;
-	top: 12px;
+	background-image: url(../css/less/blocks/b-form/img/b-form-baloon-err-left-arr.png);
+	content: '';
 }
 
 .b-form__baloon_layout_hint.b-form__baloon_position_right:after {
-	content: '';
 	position: absolute;
+	top: 12px;
+	left: -7px;
 	display: block;
 	width: 7px;
 	height: 15px;
-	background-image: url(./less/blocks/b-form/img/b-form-baloon-hint-left-arr.png);
-	left: -7px;
-	top: 12px;
+	background-image: url(../css/less/blocks/b-form/img/b-form-baloon-hint-left-arr.png);
+	content: '';
 }
 
 /*ПРЕДУПРЕЖДЕНИЯ*/
@@ -258,8 +258,8 @@
 }
 
 .b-form-warning p {
-	font: normal 14px/21px Arial, Helvatica, Sans;
 	margin: 0px 0 10px;
+	font: normal 14px/21px Arial, Helvatica, Sans;
 }
 
 
