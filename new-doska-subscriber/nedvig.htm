@@ -9,12 +9,12 @@
 
   <title>Жилая недвижимость в Екатеринбурге — бесплатные объявления, продать, купить на 66.ru</title>
 
-  
+
           <meta name="description" content="Жилая недвижимость — лента частных бесплатных объявлений о покупке и продаже в Екатеринбурге. Бесплатное размещение объявлений.">
-      
+
 
   <meta name="robots" content="noindex, follow">
-  
+
 
   <link rel="pingback" href="http://api.66.ru/" />
 
@@ -23,18 +23,18 @@
   <link rel="stylesheet" type="text/css" href="http://www.66.ru/static/gen/realty_group.css?6831c1be" />
 
   <link href="css/gpor.css" rel="stylesheet"  type="text/css" />
-    
+
   <script type="text/javascript" src="http://www.66.ru/static/libs/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.66.ru/static/libs/jquery/jquery.cookie.js"></script>
   <script src="http://www.66.ru/static/css/b-header-menu/js/jquery.menu-aim.js" type="text/javascript"></script>
   <script src="http://www.66.ru/static/css/b-header-menu/js/jquery-menu-stretch.js" type="text/javascript"></script>
   <script src="http://www.66.ru/static/css/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
-    
-  
 
-  
 
-  
+
+
+
+
 
 
 
@@ -48,7 +48,7 @@
     $.data(document, 'portal.city', 'Екатеринбург');
   </script>
 
-  
+
   <script type="text/javascript" src="http://www.66.ru/static/js/realty_group_map.js"></script>
 
   <script type="text/javascript">
@@ -58,7 +58,7 @@
       var bunch_data_cookie_name = 'bunch_data_cookie';
       var bunch_data_cookie = $.cookie(bunch_data_cookie_name);
 
-    
+
       var map_to_district = {
         "#7keys": 42,
         "#oldsort": 46,
@@ -372,7 +372,7 @@
         } else {
           popupObj.css("marginLeft", screenWidth / 2 - popupObjHalfWidth - 12 - $("#body").offset().left + "px");
         }
-        
+
 
         topChords = $(window).scrollTop();
         if (topChords < 0) topChords = 0;
@@ -394,7 +394,7 @@
         }
         popupObj.css("top", topChords + "px");
       });
-     
+
       // Метки фильтра
 
       function getPlashkaHtml(groupName, title, id, attrName, json_obj_string, group_label_exist) {
@@ -863,7 +863,7 @@
         }
       });
 
-      
+
         var action_type_buy = 'a#buy';
         var input_action_type_buy = 'input#action_buy';
         var action_type_lease = 'a#lease';
@@ -1054,7 +1054,7 @@
           }
         });
 
-        
+
         $('input#input_owner').click(function (e) {
           e.preventDefault();
           var attr = $(this).attr("checked");
@@ -1066,7 +1066,7 @@
           ga('send', 'event', 'doska', 'clickOwner');
           $('form.b-form').submit();
         });
-        
+
 
         $('select#select_location').change(function (e) {
           e.preventDefault();
@@ -1116,7 +1116,7 @@
 
             });
         });
-      
+
 
       $('#search_filter_btn').click(function(e){
         e.preventDefault();
@@ -1128,7 +1128,7 @@
     });
   </script>
 
-  
+
   <script type="text/javascript" src="http://www.66.ru/static/js/popup-select-city.js"></script>
   <script type="text/javascript"
           src="http://www.66.ru/static/css/b-doska-goods-list/js/b-doska-goods-list.js"></script>
@@ -1136,7 +1136,7 @@
 
 
   <script type="text/javascript">
-    
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-27892770-1']);
       _gaq.push(['_setDomainName', '66.ru']);
@@ -1145,12 +1145,12 @@
 
       _gaq.push(['_setCustomVar', 1, 'logged_in', 'no', 2]);
 
-      
-        
+
+
         _gaq.push(['_setCustomVar', 3, 'section', 'live_realty', 3]);
-          
+
           _gaq.push(['_setCustomVar', 5, 'sub_sub_section', 'kv', 3]);
-          
+
 
       if ($.cookie("from_subscribe")) {
         _gaq.push(['_setCustomVar', 2, 'from_subscribe', 'yes', 2]);
@@ -1163,14 +1163,14 @@
       $('.ga_tracked_bread_crumb').click(function() {
         _gaq.push(['_trackEvent', 'bread_crumbs', 'click', $('title').text()]);
       });
-    
+
 
     $(document).ready(function () {
-      
-  
-  
-  
-        
+
+
+
+
+
           // Клик по кнопке "Подать объявление"
           $('.adv_add_btn').on("click", function() {
             ga('send', 'event', 'doska', 'clickAdvAddBtn');
@@ -1181,12 +1181,12 @@
             ga('send', 'event', 'doska', 'clickMyAdvsBtnLink');
           });
 
-          
+
             // Переход к объявлению из списка объявлений в группе
             $('.link-from-group').on("click", function() {
               ga('send', 'event', 'doska', 'clickAdvFromGroupList', 'live');
             });
-          
+
 
           // Клик по кнопке "Заявка на кредит"
           $('.credit-link').on("click", function() {
@@ -1233,9 +1233,9 @@
 
           // Клик по кнопке "Найти" поиска объявлений барахолки
           $('.stuff_search').on("click", function() {
-            
+
               ga('send', 'event', 'doska', 'clickSearch', 'live');
-            
+
           });
 
           // Клик по чекбоксу "С фотографиями"
@@ -1243,16 +1243,16 @@
             ga('send', 'event', 'doska', 'clickFilterWithPhoto');
           });
 
-          
 
-          
-        
+
+
+
 
         $("a.b-wide-search__wrap__example__item").click(function(event){
           event.preventDefault();
           $('input#search-input').val(this.text);
         });
-      
+
 
 
 
@@ -1277,25 +1277,25 @@
   </script>
 
   <script type="text/javascript">
-    
+
 
     var source = '';
-    
-        
+
+
         var source = 'adv_group_realty;adv_group_live;';
-        
-    
-    
 
 
-  
+
+
+
+
 
 
   </script>
 
 
 
-  
+
 
 </head>
 
@@ -2179,16 +2179,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-  
+
     <div id="opera_frame_reflow"></div>
     <div id="frame" class="context">
-    
+
 
     <div class="l-branding-top">
       <div class="l-branding-top-repeat"></div>
       <div class="l-branding-top-bg"></div>
       <div>
-        
+
       </div>
     </div>
 
@@ -2201,19 +2201,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        src="http://s.66.ru/localStorage/e3/57/b6/4f/e357b64f.png"
        alt="66.ru"/>
 </a>
-            
 
 
 
 
 
 
-  
-  
+
+
+
   <div class="js-header-menu">
 	  <ul class="b-header-menu context">
-    
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
@@ -2221,212 +2221,212 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     			<div class="b-header-menu__item__sub">
     				<div class="l-width">
               <div class="g-48 b-header-menu__item__sub__wrap">
-                
-                  
-                
-                
-                
-                
+
+
+
+
+
+
                   <div class="g-col-1 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/main/">Главные</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/sport/">Спорт</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/health/news/">Здоровье</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-9 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/entertainment/">Безумный мир</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/world">В мире</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/business/news/">Новости компаний</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-17 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/blago/">Благотворительность</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/exclusive/">Наши спецпроекты</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/positive/">Добрые новости</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-25 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/auto/news/">Авто</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/politic/">Политика</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/society/">Общество</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-33 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/business/">Бизнес</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/incident/">Происшествия!</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/internet/">Интернет</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-41 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/freetime/">Отдых</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/hitech/">Наука и техника</a>
                           </li>
-                        
-                      
-                        
-                        
-                      
+
+
+
+
+
                     </ul>
                   </div>
-                  
-                
+
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
           <a rel="nofollow"
              class="b-header-menu__item__link" href="http://66.ru/bank/">Банки</a>
 			    <div class="b-header-menu__item__sub">
 				    <div class="l-width">
 					    <div class="g-48 b-header-menu__item__sub__wrap">
-                
+
                   <div class="g-col-1 g-span-9 b-header-menu__item__sub__wrap__col">
 												<ul class="b-header-menu__item__sub__wrap__col__list">
 													<li class="b-header-menu__item__sub__wrap__col__list__item"><a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/bank/list/">Список банков</a></li>
@@ -2456,28 +2456,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 													<a class="b-submenu-item__day-theme__link" href="#123">Открыть расчетный счет не выходя с работы</a>
 												</div>
 											</div-->
-                
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
              href="http://66.ru/rabota/">Работа</a>
 		    </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
           <a rel="nofollow"
              class="b-header-menu__item__link" href="http://66.ru/doska/">Объявления</a>
 			    <div class="b-header-menu__item__sub">
 				    <div class="l-width">
 					    <div class="g-48 b-header-menu__item__sub__wrap">
-                
-                  
+
+
 <div class="g-col-2 g-span-9 b-header-menu__item__sub__wrap__col b-header-menu__item__sub__wrap__col_separator_no">
   <ul class="b-header-menu__item__sub__wrap__col__list">
     <li class="b-header-menu__item__sub__wrap__col__list__item">
@@ -2491,13 +2491,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="b-submenu-item__bank-zajavka b-submenu-item__bank-zajavka_mt_yes b-submenu-item__bank-zajavka_for_ads">
     <a class="b-submenu-item__bank-zajavka__btn" href="http://66.ru/doska/add-adv/">Подать объявление</a>
   </div>
-  
+
   <ul class="b-header-menu__item__sub__wrap__col__list">
     <li class="b-header-menu__item__sub__wrap__col__list__item b-header-menu__item__sub__wrap__col__list__item_mb_24 b-header-menu__item__sub__wrap__col__list__item_for_ads">
       <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/doska/my/">Мои объявления</a>
     </li>
   </ul>
-  
+
 </div>
 <div class="g-col-11 g-span-8 b-header-menu__item__sub__wrap__col b-header-menu__item__sub__wrap__col_separator_no">
   <ul class="b-header-menu__item__sub__wrap__col__list">
@@ -2519,8 +2519,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul class="b-header-menu__item__sub__wrap__col__list">
     <li class="b-header-menu__item__sub__wrap__col__list__item">
       <ul class="b-submenu-ads">
-        
-          
+
+
           <li class="b-submenu-ads__elem">
             <a href="http://66.ru/doska/obrazovanie/4575188-diplomnyie-kursovyie-kontrolnyie.html" class="b-submenu-ads__img-wrap">
               <img src="http://bart.unistorageserve.ru/52848f07f7c0794e72d7cbfa" alt="Дипломные, курсовые, контрольные." class="b-submenu-ads__img">
@@ -2532,8 +2532,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="b-submenu-ads__price">500&nbsp;р.</p>
             <p></p>
           </li>
-          
-          
+
+
           <li class="b-submenu-ads__elem">
             <a href="http://66.ru/doska/remont/4577609-gazoblok-s-dostavkoj.html" class="b-submenu-ads__img-wrap">
               <img src="http://bart.unistorageserve.ru/52859230e8d7b613eec6e71d" alt="Газоблок с доставкой" class="b-submenu-ads__img">
@@ -2545,7 +2545,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="b-submenu-ads__price">3&nbsp;550&nbsp;р.</p>
             <p></p>
           </li>
-          
+
       </ul>
     </li>
     <li>
@@ -2556,8 +2556,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul class="b-header-menu__item__sub__wrap__col__list">
     <li class="b-header-menu__item__sub__wrap__col__list__item">
       <ul class="b-submenu-ads">
-        
-          
+
+
           <li class="b-submenu-ads__elem">
             <a href="http://66.ru/doska/remont-techniki/4577661-avtoservis-dlya-vas.html" class="b-submenu-ads__img-wrap">
               <img src="http://bart.unistorageserve.ru/5285a942e8d7b613eec6e77e" alt="Автосервис для ВАС" class="b-submenu-ads__img">
@@ -2569,8 +2569,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="b-submenu-ads__price">100&nbsp;р.</p>
             <p></p>
           </li>
-          
-          
+
+
           <li class="b-submenu-ads__elem">
             <a href="http://66.ru/doska/uslugi-krasoty-i-zdoroviya/4576470-svadebnyie-vechernie-pricheski-makiyazhmoskva.html" class="b-submenu-ads__img-wrap">
               <img src="http://maggie.unistorageserve.ru/5284d2dcf7c0794e6fd3294e" alt="Свадебные, вечерние прически. Макияж.Москва" class="b-submenu-ads__img">
@@ -2582,7 +2582,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="b-submenu-ads__price">1&nbsp;000&nbsp;р.</p>
             <p></p>
           </li>
-          
+
       </ul>
     </li>
     <li>
@@ -2593,8 +2593,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul class="b-header-menu__item__sub__wrap__col__list">
     <li class="b-header-menu__item__sub__wrap__col__list__item">
       <ul class="b-submenu-ads">
-        
-          
+
+
           <li class="b-submenu-ads__elem">
             <a href="http://66.ru/doska/krasota/4576641-kupit-golosoobrazuyuschij-apparat.html" class="b-submenu-ads__img-wrap">
               <img src="http://bart.unistorageserve.ru/5285174bf7c0794e72d8507d" alt="Купить голосообразующий аппарат." class="b-submenu-ads__img">
@@ -2606,8 +2606,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="b-submenu-ads__price">12&nbsp;300&nbsp;р.</p>
             <p></p>
           </li>
-          
-          
+
+
           <li class="b-submenu-ads__elem">
             <a href="http://66.ru/doska/mebel-dekor/4577755-stenka-universalnaya.html" class="b-submenu-ads__img-wrap">
               <img src="http://bart.unistorageserve.ru/5285bd39f7c0794e62d1983a" alt="Стенка универсальная" class="b-submenu-ads__img">
@@ -2619,20 +2619,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p class="b-submenu-ads__price">12&nbsp;000&nbsp;р.</p>
             <p></p>
           </li>
-          
+
       </ul>
     </li>
     <li>
     </li>
   </ul>
 </div>
-                
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub cur">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
@@ -2640,131 +2640,131 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     			<div class="b-header-menu__item__sub">
     				<div class="l-width">
               <div class="g-48 b-header-menu__item__sub__wrap">
-                
-                  
-                
-                
-                
-                
+
+
+
+
+
+
                   <div class="g-col-1 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/realty/doska/live/?action_type=buy">Продажа жилья</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/realty/objects/">Новостройки</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/realty/community/">Загородное жилье</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-9 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/realty/news/">Новости</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/bank/hypothec/">Ипотечные программы</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/doska/rate/">Рейтинг домов</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-17 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/realty/doska/live/?action_type=lease">Аренда жилья</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/realty/doska/com/">Коммерческая недвижимость</a>
                           </li>
-                        
-                      
-                        
-                        
-                      
+
+
+
+
+
                     </ul>
                   </div>
-                  
-                
+
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
           <a rel="nofollow"
              class="b-header-menu__item__link" href="http://66.ru/auto/">Авто</a>
 			    <div class="b-header-menu__item__sub">
 				    <div class="l-width">
 					    <div class="g-48 b-header-menu__item__sub__wrap">
-                
+
                   <div class="g-col-17 g-span-8 b-header-menu__item__sub__wrap__col">
     <ul class="b-header-menu__item__sub__wrap__col__list">
-        
+
         <li class="b-header-menu__item__sub__wrap__col__list__item">
             <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/auto/catalog/">Каталог автомобилей</a>
         </li>
 
-        
-        
+
+
         <li class="b-header-menu__item__sub__wrap__col__list__item">
             <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/auto/select/">Подбор автомобиля</a>
         </li>
 
-        
-        
+
+
         <li class="b-header-menu__item__sub__wrap__col__list__item">
             <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/auto/doska/">Объявления</a>
         </li>
@@ -2773,20 +2773,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <div class="g-col-25 g-span-8 b-header-menu__item__sub__wrap__col">
     <ul class="b-header-menu__item__sub__wrap__col__list">
-        
-        
+
+
         <li class="b-header-menu__item__sub__wrap__col__list__item">
             <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/auto/news/">Автоновости</a>
         </li>
 
-        
-        
+
+
         <li class="b-header-menu__item__sub__wrap__col__list__item">
             <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/auto/test-drive/">Тест-драйвы</a>
         </li>
 
-        
-        
+
+
         <li class="b-header-menu__item__sub__wrap__col__list__item">
             <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/bank/autocredit/">Автокредиты</a>
         </li>
@@ -2800,34 +2800,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li class="b-header-menu__item__sub__wrap__col__list__item">
             <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/auto/gibdd/">Оплата штрафов ГИБДД</a>
         </li>
-        
+
             </ul>
 </div>
-                
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
           <a rel="nofollow"
              class="b-header-menu__item__link" href="http://66.ru/talk/">Общение</a>
 			    <div class="b-header-menu__item__sub">
 				    <div class="l-width">
 					    <div class="g-48 b-header-menu__item__sub__wrap">
-                
+
                   <div class="g-col-20 g-span-8 b-header-menu__item__sub__wrap__col">
     <ul class="b-header-menu__item__sub__wrap__col__list">
-    
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/users/">Пользователи</a>
             </li>
-            
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/fulllenta/">Развернутая лента</a>
             </li>
-            
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/photo/">Фото</a>
             </li>
@@ -2838,31 +2838,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     </ul>
 </div>
-                
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
           <a rel="nofollow"
              class="b-header-menu__item__link" href="http://66.ru/afisha/">Афиша</a>
 			    <div class="b-header-menu__item__sub">
 				    <div class="l-width">
 					    <div class="g-48 b-header-menu__item__sub__wrap">
-                
+
                   <div class="g-col-25 g-span-8 b-header-menu__item__sub__wrap__col">
     <ul class="b-header-menu__item__sub__wrap__col__list">
-    
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/afisha/cinema/">Кино</a>
             </li>
-            
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/afisha/event/">События</a>
             </li>
-            
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/afisha/event/photoreportage/">Фотоотчеты</a>
             </li>
@@ -2871,23 +2871,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="g-col-33 g-span-8 b-header-menu__item__sub__wrap__col">
     <ul class="b-header-menu__item__sub__wrap__col__list">
 
-                
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/afisha/tv/">ТВ</a>
             </li>
-            
+
             <li class="b-header-menu__item__sub__wrap__col__list__item">
                 <a class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/news/recenz/">Кинорецензии</a>
             </li>
                 </ul>
 </div>
-                
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
@@ -2895,50 +2895,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     			<div class="b-header-menu__item__sub">
     				<div class="l-width">
               <div class="g-48 b-header-menu__item__sub__wrap">
-                
-                  
-                
-                
-                
-                
+
+
+
+
+
+
                   <div class="g-col-1 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/skidki/company/">Где дают скидки</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/skidki/visa/">Как получить карту</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/skidki/action/">Акции, распродажи</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
@@ -2946,109 +2946,109 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     			<div class="b-header-menu__item__sub">
     				<div class="l-width">
               <div class="g-48 b-header-menu__item__sub__wrap">
-                
-                  
-                
-                
-                
-                
+
+
+
+
+
+
                   <div class="g-col-1 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/hotels/">Гостиницы Екатеринбурга</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/help/price/">Справочник товаров</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/catalog/">Интернет-магазины</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-9 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/skidki/">Дисконтный клуб «УБРиР - Club 66»</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/otvet/">Вопросы и ответы</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/weather/">Погода в Екатеринбурге</a>
                           </li>
-                        
-                      
+
+
                     </ul>
                   </div>
-                  
-                
+
+
                   <div class="g-col-17 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/citymap/">Карта Екатеринбурга</a>
                           </li>
-                        
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/realty/doska/live/?action_type=day">Квартиры посуточно</a>
                           </li>
-                        
-                      
-                        
-                        
-                      
+
+
+
+
+
                     </ul>
                   </div>
-                  
-                
+
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item js-header-menu__sub ">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
@@ -3056,67 +3056,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     			<div class="b-header-menu__item__sub">
     				<div class="l-width">
               <div class="g-48 b-header-menu__item__sub__wrap">
-                
-                  
-                
-                
-                
-                
+
+
+
+
+
+
                   <div class="g-col-1 g-span-8 b-header-menu__item__sub__wrap__col">
                     <ul class="b-header-menu__item__sub__wrap__col__list">
-                      
-                      
-                        
-                        
+
+
+
+
                           <li class="b-header-menu__item__sub__wrap__col__list__item">
                             <a rel="nofollow"
                                class="b-header-menu__item__sub__wrap__col__list__item__link" href="http://66.ru/health/pharmacy/">Поиск лекарств</a>
                           </li>
-                        
-                      
-                        
-                        
-                      
-                        
-                        
-                      
+
+
+
+
+
+
+
+
                     </ul>
                   </div>
-                  
-                
+
+
               </div>
             </div>
           </div>
         </li>
-      
-      
+
+
         <li class="b-header-menu__item">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
              href="http://66.ru/gurman/">Еда</a>
 		    </li>
-      
-      
+
+
         <li class="b-header-menu__item">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
              href="http://66.ru/konkurs/">Конкурсы</a>
 		    </li>
-      
-      
+
+
         <li class="b-header-menu__item">
 			    <a rel="nofollow"
              class="b-header-menu__item__link"
              href="http://mail.66.ru">Почта</a>
 		    </li>
-      
+
     </ul>
   </div>
 
 
           </div>
           <div class="g-col-39 g-span-10 g-main-col-2">
-            
+
   <table class="b-header-auth">
     <tr>
       <td class="b-header-auth__tab">
@@ -3137,16 +3137,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </div>
-  
 
-  
+
+
   <div id="body-wrap" class="ie_layout">
     <!--[if lt IE 7]>
       <div class="ie_max-width_left_frame"></div>
       <div class="ie_max-width_right_frame"></div>
     <![endif]-->
     <div id="body" class="ie_layout">
-      
+
 
       <div class="b-text"></div>
         <div class="page-grid-wrap context">
@@ -3154,7 +3154,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="context">
               <div class="page-col-1-span-15">
                 <div class="b-container context">
-                  
+
   <h1 class="b-header b-header_size_h1 b-header_margin_left-10 b-header_display_inline">
     Жилая недвижимость
   </h1>
@@ -3182,443 +3182,443 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               ﻿<div class="b-doska-rubrics">
   <div class="grid-15 context">
     <div class="context">
-      
-      
-      
-        
+
+
+
+
         <div class="col-1 span-5">
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title" style="margin-bottom: 21px;">
                       <a rel="nofollow" href="/auto/doska/"
                          class="b-link b-link_layout_doska-brd">Продажа автомобилей</a>&nbsp;<span class="b-doska-rubrics__count">
                         6368
                       </span>
                   </h3>
-                
-              
-              
-            
+
+
+
+
             <div class="b-sep b-sep-10"></div>
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
                   Недвижимость
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/realty/doska/live/"
                          class="b-link b-link_layout_doska-brd">Жилая</a>&nbsp;
                       <span class="b-doska-rubrics__count">13749</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/realty/doska/zagorod/"
                          class="b-link b-link_layout_doska-brd">Загородная</a>&nbsp;
                       <span class="b-doska-rubrics__count">4253</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/realty/doska/com/"
                          class="b-link b-link_layout_doska-brd">Коммерческая</a>&nbsp;
                       <span class="b-doska-rubrics__count">1964</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
-                  
+
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/detskiy-mir/"
                          class="b-link b-link_layout_doska-brd">Детский мир</a>&nbsp;
                       <span class="b-doska-rubrics__count">2157</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/jivotniye/"
                          class="b-link b-link_layout_doska-brd">Животные</a>&nbsp;
                       <span class="b-doska-rubrics__count">2210</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/krasota/"
                          class="b-link b-link_layout_doska-brd">Красота и здоровье</a>&nbsp;
                       <span class="b-doska-rubrics__count">886</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/obuv/"
                          class="b-link b-link_layout_doska-brd">Обувь</a>&nbsp;
                       <span class="b-doska-rubrics__count">483</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/odejda-obuv/"
                          class="b-link b-link_layout_doska-brd">Одежда</a>&nbsp;
                       <span class="b-doska-rubrics__count">2439</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/ukrasheniya/"
                          class="b-link b-link_layout_doska-brd">Украшения</a>&nbsp;
                       <span class="b-doska-rubrics__count">279</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
+
         </div>
-      
-        
+
+
         <div class="col-6 span-5">
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
                   Электроника
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/audio/"
                          class="b-link b-link_layout_doska-brd">Аудиотехника</a>&nbsp;
                       <span class="b-doska-rubrics__count">284</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/bytovaya-technika/"
                          class="b-link b-link_layout_doska-brd">Бытовая техника</a>&nbsp;
                       <span class="b-doska-rubrics__count">739</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/photo-video/"
                          class="b-link b-link_layout_doska-brd">Видео- и фототехника</a>&nbsp;
                       <span class="b-doska-rubrics__count">402</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/igroviye-pristavki/"
                          class="b-link b-link_layout_doska-brd">Игровые приставки</a>&nbsp;
                       <span class="b-doska-rubrics__count">227</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/computers/"
                          class="b-link b-link_layout_doska-brd">Компьютеры</a>&nbsp;
                       <span class="b-doska-rubrics__count">1075</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/orgtechnika/"
                          class="b-link b-link_layout_doska-brd">Оргтехника</a>&nbsp;
                       <span class="b-doska-rubrics__count">144</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/telephones/"
                          class="b-link b-link_layout_doska-brd">Телефоны</a>&nbsp;
                       <span class="b-doska-rubrics__count">811</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
                   Дом и сад
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/mebel-dekor/"
                          class="b-link b-link_layout_doska-brd">Мебель и декор</a>&nbsp;
                       <span class="b-doska-rubrics__count">1743</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/produtky-pitaniya/"
                          class="b-link b-link_layout_doska-brd">Продукты питания</a>&nbsp;
                       <span class="b-doska-rubrics__count">280</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/sadovodstvo-rasteniya/"
                          class="b-link b-link_layout_doska-brd">Садоводство и растения</a>&nbsp;
                       <span class="b-doska-rubrics__count">294</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/stroitelstvo-i-remont/"
                          class="b-link b-link_layout_doska-brd">Строительство и ремонт</a>&nbsp;
                       <span class="b-doska-rubrics__count">1837</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/hoztovary/"
                          class="b-link b-link_layout_doska-brd">Хозтовары</a>&nbsp;
                       <span class="b-doska-rubrics__count">249</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
                   Бизнес
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/gotoviy-business/"
                          class="b-link b-link_layout_doska-brd">Готовый бизнес</a>&nbsp;
                       <span class="b-doska-rubrics__count">937</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/kanctovary/"
                          class="b-link b-link_layout_doska-brd">Канцтовары</a>&nbsp;
                       <span class="b-doska-rubrics__count">8</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/promoborudovanie/"
                          class="b-link b-link_layout_doska-brd">Промоборудование</a>&nbsp;
                       <span class="b-doska-rubrics__count">2992</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/syrie-i-materialy/"
                          class="b-link b-link_layout_doska-brd">Сырье и материалы</a>&nbsp;
                       <span class="b-doska-rubrics__count">848</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/torgovoye-oborudovaniye/"
                          class="b-link b-link_layout_doska-brd">Торговое оборудование</a>&nbsp;
                       <span class="b-doska-rubrics__count">458</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
+
         </div>
-      
-        
+
+
         <div class="col-11 span-5">
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
                   Транспорт
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/shiny-i-diski/"
                          class="b-link b-link_layout_doska-brd">Автошины и диски</a>&nbsp;
                       <span class="b-doska-rubrics__count">1186</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/spec-technika/"
                          class="b-link b-link_layout_doska-brd">Грузовики и спецтехника</a>&nbsp;
                       <span class="b-doska-rubrics__count">1608</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/avto-moto-zapchasti/"
                          class="b-link b-link_layout_doska-brd">Мото- и автозапчасти</a>&nbsp;
                       <span class="b-doska-rubrics__count">2805</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/mototehnika/"
                          class="b-link b-link_layout_doska-brd">Мотоциклы и мототехника</a>&nbsp;
                       <span class="b-doska-rubrics__count">68</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
                   Хобби, спорт, отдых
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/antikvariat-kollekcii/"
                          class="b-link b-link_layout_doska-brd">Антиквариат и коллекции</a>&nbsp;
                       <span class="b-doska-rubrics__count">326</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/knigi-jurnaly/"
                          class="b-link b-link_layout_doska-brd">Книги и журналы</a>&nbsp;
                       <span class="b-doska-rubrics__count">304</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/mir-muziki/"
                          class="b-link b-link_layout_doska-brd">Музыкальные инструменты</a>&nbsp;
                       <span class="b-doska-rubrics__count">50</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/ohota-rybalka/"
                          class="b-link b-link_layout_doska-brd">Охота и рыбалка</a>&nbsp;
                       <span class="b-doska-rubrics__count">239</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/sport-sportinventar/"
                          class="b-link b-link_layout_doska-brd">Спортинвентарь</a>&nbsp;
                       <span class="b-doska-rubrics__count">463</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
-            
-              
-                
+
+
+
+
                   <h3 class="b-doska-rubrics__title">
                   Услуги
                   </h3>
-                
-              
-              
+
+
+
                 <ul class="b-doska-rubrics__list context">
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/uslugi-krasoty-i-zdoroviya/"
                          class="b-link b-link_layout_doska-brd">Красота и здоровье</a>&nbsp;
                       <span class="b-doska-rubrics__count">856</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/obrazovanie/"
                          class="b-link b-link_layout_doska-brd">Образование</a>&nbsp;
                       <span class="b-doska-rubrics__count">875</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/predlozhenia-turfirm/"
                          class="b-link b-link_layout_doska-brd">Предложения турфирм</a>&nbsp;
                       <span class="b-doska-rubrics__count">177</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/razvlecheniya/"
                          class="b-link b-link_layout_doska-brd">Развлечения, фото и видео</a>&nbsp;
                       <span class="b-doska-rubrics__count">699</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/remont-techniki/"
                          class="b-link b-link_layout_doska-brd">Ремонт техники</a>&nbsp;
                       <span class="b-doska-rubrics__count">314</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/ritualnye-uslugi/"
                          class="b-link b-link_layout_doska-brd">Ритуальные услуги</a>&nbsp;
                       <span class="b-doska-rubrics__count">39</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/remont/"
                          class="b-link b-link_layout_doska-brd">Строительство и ремонт</a>&nbsp;
                       <span class="b-doska-rubrics__count">2292</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/transportnye-uslugi/"
                          class="b-link b-link_layout_doska-brd">Транспортные услуги</a>&nbsp;
                       <span class="b-doska-rubrics__count">1218</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/uslugi-dlya-biznesa/"
                          class="b-link b-link_layout_doska-brd">Услуги для бизнеса</a>&nbsp;
                       <span class="b-doska-rubrics__count">889</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/finance/"
                          class="b-link b-link_layout_doska-brd">Финансы</a>&nbsp;
                       <span class="b-doska-rubrics__count">571</span>
                     </li>
-                  
+
                     <li>
                       <a rel="nofollow" href="/doska/juridicheskie-uslugi/"
                          class="b-link b-link_layout_doska-brd">Юридические услуги</a>&nbsp;
                       <span class="b-doska-rubrics__count">569</span>
                     </li>
-                  
+
                 </ul>
-              
-            
+
+
             <div class="b-sep b-sep-10"></div>
-          
+
         </div>
-      
+
     </div>
   </div>
 </div>
@@ -3632,20 +3632,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
 
-                  
+
                 </div>
 
-                
-
-                
-
-                
-
-                
 
 
-                
-  
+
+
+
+
+
+
+
+
+
   <div id="realty-quality-check-div" style="display: none;">
       <div class="b-doska-card__error">
         <a href="#" class="b-icon b-icon_img_close-grey jsCloseMessage" id="realty-quality-check-close"></a>
@@ -3658,20 +3658,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
       <div class="b-separator b-separator_size_10"></div>
     </div>
-  
+
 
   <div class="b-container b-container_color_green">
     <div class="b-container__inner">
       <form action="/realty/doska/live/" class="b-form" id="filter_form">
-        
-        
-        
+
+
+
 
         <input type="hidden"
                name="owner"
                id="owner"
                value="yes"
-            
+
                disabled="disabled"
             >
 
@@ -3680,21 +3680,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                name="action_type"
                id="action_buy"
                value="buy"
-            
+
                disabled="disabled"
             >
         <input type="hidden"
                name="action_type"
                id="action_lease"
                value="lease"
-            
+
                disabled="disabled"
             >
         <input type="hidden"
                name="action_type"
                id="action_day"
                value="day"
-            
+
                disabled="disabled"
             >
         <!-- end action_type inputs -->
@@ -3709,14 +3709,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                name="object_type"
                id="type_room"
                value="room"
-            
+
                disabled="disabled"
             >
         <input type="hidden"
                name="object_type"
                id="type_garage"
                value="garage"
-            
+
                disabled="disabled"
             >
         <!-- end object_type inputs -->
@@ -3726,28 +3726,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                name="rooms"
                id="input_room1"
                value="1"
-            
+
                disabled="disabled"
             >
         <input type="hidden"
                name="rooms"
                id="input_room2"
                value="2"
-            
+
                disabled="disabled"
             >
         <input type="hidden"
                name="rooms"
                id="input_room3"
                value="3"
-            
+
                disabled="disabled"
             >
         <input type="hidden"
                name="rooms"
                id="input_room4"
                value="4"
-            
+
                disabled="disabled"
             >
         <!--  end rooms inputs -->
@@ -3774,7 +3774,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <a href="#" id="lease">снять</a>
                           </td>
                           <td class="b-tabs__list__item
-                          
+
                           b-tabs__list__item_position_last" id="form_btn_day">
                             <a href="#" id="day">посуточно</a>
                           </td>
@@ -3791,7 +3791,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           <tr>
                             <!-- object_type buttons -->
                             <td class="b-tabs__list__item
-                            
+
                             b-tabs__list__item_state_current
                             ">
                               <a href="#" id="kv">квартиру</a>
@@ -3815,17 +3815,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <span class="b-form-row__control-shadow">
                           <!-- location select -->
                           <select class="b-form-row__select" name="location" id="select_location">
-                            
+
                               <option value="0"
                                 >
                                 Екатеринбург
                               </option>
-                            
+
                               <option value="1"
                                 >
                                 Область
                               </option>
-                            
+
                           </select>
                           <!-- end location select -->
                         </span>
@@ -4131,8 +4131,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
           </fieldset>
         </div>
-      
-        
+
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4140,10 +4140,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Автовокзал"
                  name="district_select"
                  id="district-1"
-                 
+
                  value="1"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4151,10 +4151,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Ботанический"
                  name="district_select"
                  id="district-3"
-                 
+
                  value="3"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4162,10 +4162,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="ВИЗ"
                  name="district_select"
                  id="district-5"
-                 
+
                  value="5"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4173,10 +4173,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Вокзальный"
                  name="district_select"
                  id="district-6"
-                 
+
                  value="6"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4184,10 +4184,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Втузгородок"
                  name="district_select"
                  id="district-7"
-                 
+
                  value="7"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4195,10 +4195,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Елизавет"
                  name="district_select"
                  id="district-10"
-                 
+
                  value="10"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4206,10 +4206,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="ЖБИ (Комсомольский)"
                  name="district_select"
                  id="district-11"
-                 
+
                  value="11"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4217,10 +4217,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Завокзальный"
                  name="district_select"
                  id="district-12"
-                 
+
                  value="12"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4228,10 +4228,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Заречный"
                  name="district_select"
                  id="district-13"
-                 
+
                  value="13"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4239,10 +4239,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Лечебный"
                  name="district_select"
                  id="district-22"
-                 
+
                  value="22"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4250,10 +4250,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Нижне-Исетский"
                  name="district_select"
                  id="district-25"
-                 
+
                  value="25"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4261,10 +4261,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Новая Сортировка"
                  name="district_select"
                  id="district-26"
-                 
+
                  value="26"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4272,10 +4272,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Парковый"
                  name="district_select"
                  id="district-31"
-                 
+
                  value="31"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4283,10 +4283,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Пионерский"
                  name="district_select"
                  id="district-33"
-                 
+
                  value="33"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4294,10 +4294,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Семь ключей"
                  name="district_select"
                  id="district-42"
-                 
+
                  value="42"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4305,10 +4305,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Сибирский тракт"
                  name="district_select"
                  id="district-43"
-                 
+
                  value="43"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4316,10 +4316,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Синие Камни"
                  name="district_select"
                  id="district-44"
-                 
+
                  value="44"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4327,10 +4327,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Совхозный"
                  name="district_select"
                  id="district-45"
-                 
+
                  value="45"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4338,10 +4338,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Старая Сортировка"
                  name="district_select"
                  id="district-46"
-                 
+
                  value="46"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4349,10 +4349,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Уктус"
                  name="district_select"
                  id="district-49"
-                 
+
                  value="49"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4360,10 +4360,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="УНЦ"
                  name="district_select"
                  id="district-50"
-                 
+
                  value="50"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4371,10 +4371,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Уралмаш"
                  name="district_select"
                  id="district-51"
-                 
+
                  value="51"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4382,10 +4382,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Химмаш"
                  name="district_select"
                  id="district-52"
-                 
+
                  value="52"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4393,10 +4393,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Центр"
                  name="district_select"
                  id="district-55"
-                 
+
                  value="55"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4404,10 +4404,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Вторчермет"
                  name="district_select"
                  id="district-56"
-                 
+
                  value="56"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4415,10 +4415,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Шарташ"
                  name="district_select"
                  id="district-60"
-                 
+
                  value="60"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4426,10 +4426,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Широкая речка"
                  name="district_select"
                  id="district-62"
-                 
+
                  value="62"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4437,10 +4437,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Эльмаш"
                  name="district_select"
                  id="district-64"
-                 
+
                  value="64"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4448,10 +4448,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Юго-Западный"
                  name="district_select"
                  id="district-65"
-                 
+
                  value="65"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4459,10 +4459,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Академический"
                  name="district_select"
                  id="district-158"
-                 
+
                  value="158"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4470,10 +4470,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Арамиль"
                  name="district_select"
                  id="district-200"
-                 
+
                  value="200"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4481,10 +4481,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Березовский"
                  name="district_select"
                  id="district-201"
-                 
+
                  value="201"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4492,10 +4492,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Верхняя Пышма"
                  name="district_select"
                  id="district-202"
-                 
+
                  value="202"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4503,10 +4503,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Горный щит"
                  name="district_select"
                  id="district-203"
-                 
+
                  value="203"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4514,10 +4514,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Изоплит"
                  name="district_select"
                  id="district-204"
-                 
+
                  value="204"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4525,10 +4525,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Исток"
                  name="district_select"
                  id="district-205"
-                 
+
                  value="205"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4536,10 +4536,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Калиновский"
                  name="district_select"
                  id="district-206"
-                 
+
                  value="206"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4547,10 +4547,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Карасьеозерск"
                  name="district_select"
                  id="district-207"
-                 
+
                  value="207"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4558,10 +4558,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Кольцово"
                  name="district_select"
                  id="district-208"
-                 
+
                  value="208"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4569,10 +4569,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Компрессорный"
                  name="district_select"
                  id="district-209"
-                 
+
                  value="209"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4580,10 +4580,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Краснолесье"
                  name="district_select"
                  id="district-210"
-                 
+
                  value="210"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4591,10 +4591,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Малый исток"
                  name="district_select"
                  id="district-211"
-                 
+
                  value="211"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4602,10 +4602,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Полеводство"
                  name="district_select"
                  id="district-212"
-                 
+
                  value="212"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4613,10 +4613,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Птицефабрика"
                  name="district_select"
                  id="district-213"
-                 
+
                  value="213"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4624,10 +4624,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Рудный"
                  name="district_select"
                  id="district-214"
-                 
+
                  value="214"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4635,10 +4635,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Садовый"
                  name="district_select"
                  id="district-215"
-                 
+
                  value="215"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4646,10 +4646,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Северка"
                  name="district_select"
                  id="district-216"
-                 
+
                  value="216"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4657,10 +4657,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Среднеуральск"
                  name="district_select"
                  id="district-217"
-                 
+
                  value="217"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4668,10 +4668,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Чусовское озеро"
                  name="district_select"
                  id="district-218"
-                 
+
                  value="218"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4679,10 +4679,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Шабровский"
                  name="district_select"
                  id="district-219"
-                 
+
                  value="219"
                  style="display: none;"/>
-          
+
           <input type="checkbox"
                  group_id="district_select"
                  group_label="Район:"
@@ -4690,11 +4690,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  label="Шарташский рынок"
                  name="district_select"
                  id="district-220"
-                 
+
                  value="220"
                  style="display: none;"/>
-          
-      
+
+
       <div>
   <ins class="b-popup-rubrics-shadow"></ins>
   <div class="b-popup-rubrics" id="select_city_div">
@@ -4713,15 +4713,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-popup-rubrics__content">
       <table class="b-popup-rubrics__content_table">
         <tr>
-          
-          
-          
-          
-            
+
+
+
+
+
               <td class="b-popup-rubrics__content_table__col-first">
                 <ul class="b-popup-rubrics__content_table__cols">
-                  
-                    
+
+
                       <li>
                         <label for="city-77">
                           <input type="checkbox"
@@ -4732,14 +4732,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-77"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="77" />
                           &nbsp;Алапаевск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-79">
                           <input type="checkbox"
@@ -4750,14 +4750,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-79"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="79" />
                           &nbsp;Артёмовский
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-80">
                           <input type="checkbox"
@@ -4768,14 +4768,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-80"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="80" />
                           &nbsp;Асбест
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-81">
                           <input type="checkbox"
@@ -4786,14 +4786,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-81"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="81" />
                           &nbsp;Белоярский
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-83">
                           <input type="checkbox"
@@ -4804,14 +4804,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-83"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="83" />
                           &nbsp;Бисерть
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-84">
                           <input type="checkbox"
@@ -4822,14 +4822,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-84"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="84" />
                           &nbsp;Богданович
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-85">
                           <input type="checkbox"
@@ -4840,14 +4840,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-85"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="85" />
                           &nbsp;Верхние Серги
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-86">
                           <input type="checkbox"
@@ -4858,14 +4858,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-86"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="86" />
                           &nbsp;Верхний Тагил
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-87">
                           <input type="checkbox"
@@ -4876,14 +4876,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-87"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="87" />
                           &nbsp;Верхний Уфалей
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-89">
                           <input type="checkbox"
@@ -4894,14 +4894,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-89"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="89" />
                           &nbsp;Верхняя Салда
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-90">
                           <input type="checkbox"
@@ -4912,14 +4912,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-90"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="90" />
                           &nbsp;Верхняя Тура
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-92">
                           <input type="checkbox"
@@ -4930,14 +4930,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-92"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="92" />
                           &nbsp;Двуреченск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-93">
                           <input type="checkbox"
@@ -4948,14 +4948,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-93"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="93" />
                           &nbsp;Дегтярск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-94">
                           <input type="checkbox"
@@ -4966,14 +4966,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-94"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="94" />
                           &nbsp;Заречный
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-95">
                           <input type="checkbox"
@@ -4984,21 +4984,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-95"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="95" />
                           &nbsp;Ирбит
                         </label>
                       </li>
-                    
-                  
+
+
                 </ul>
               </td>
-          
-            
+
+
               <td >
                 <ul class="b-popup-rubrics__content_table__cols">
-                  
-                    
+
+
                       <li>
                         <label for="city-96">
                           <input type="checkbox"
@@ -5009,14 +5009,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-96"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="96" />
                           &nbsp;Кадниково
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-97">
                           <input type="checkbox"
@@ -5027,14 +5027,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-97"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="97" />
                           &nbsp;Каменск-Уральский
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-98">
                           <input type="checkbox"
@@ -5045,14 +5045,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-98"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="98" />
                           &nbsp;Камышлов
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-99">
                           <input type="checkbox"
@@ -5063,14 +5063,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-99"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="99" />
                           &nbsp;Кировград
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-101">
                           <input type="checkbox"
@@ -5081,14 +5081,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-101"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="101" />
                           &nbsp;Краснотурьинск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-102">
                           <input type="checkbox"
@@ -5099,14 +5099,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-102"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="102" />
                           &nbsp;Красноуральск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-103">
                           <input type="checkbox"
@@ -5117,14 +5117,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-103"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="103" />
                           &nbsp;Красноуфимск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-104">
                           <input type="checkbox"
@@ -5135,14 +5135,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-104"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="104" />
                           &nbsp;Курган
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-105">
                           <input type="checkbox"
@@ -5153,14 +5153,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-105"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="105" />
                           &nbsp;Кушва
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-106">
                           <input type="checkbox"
@@ -5171,14 +5171,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-106"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="106" />
                           &nbsp;Лесной
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-107">
                           <input type="checkbox"
@@ -5189,14 +5189,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-107"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="107" />
                           &nbsp;Михайловск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-108">
                           <input type="checkbox"
@@ -5207,14 +5207,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-108"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="108" />
                           &nbsp;Невьянск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-109">
                           <input type="checkbox"
@@ -5225,14 +5225,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-109"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="109" />
                           &nbsp;Нижние Серги
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-110">
                           <input type="checkbox"
@@ -5243,14 +5243,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-110"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="110" />
                           &nbsp;Нижний Тагил
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-111">
                           <input type="checkbox"
@@ -5261,21 +5261,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-111"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="111" />
                           &nbsp;Нижняя Салда
                         </label>
                       </li>
-                    
-                  
+
+
                 </ul>
               </td>
-          
-            
+
+
               <td >
                 <ul class="b-popup-rubrics__content_table__cols">
-                  
-                    
+
+
                       <li>
                         <label for="city-112">
                           <input type="checkbox"
@@ -5286,14 +5286,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-112"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="112" />
                           &nbsp;Нижняя Тура
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-113">
                           <input type="checkbox"
@@ -5304,14 +5304,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-113"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="113" />
                           &nbsp;Новоуральск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-114">
                           <input type="checkbox"
@@ -5322,14 +5322,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-114"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="114" />
                           &nbsp;Первоуральск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-115">
                           <input type="checkbox"
@@ -5340,14 +5340,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-115"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="115" />
                           &nbsp;Полевской
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-116">
                           <input type="checkbox"
@@ -5358,14 +5358,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-116"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="116" />
                           &nbsp;Ревда
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-117">
                           <input type="checkbox"
@@ -5376,14 +5376,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-117"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="117" />
                           &nbsp;Реж
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-118">
                           <input type="checkbox"
@@ -5394,14 +5394,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-118"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="118" />
                           &nbsp;Североуральск
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-119">
                           <input type="checkbox"
@@ -5412,14 +5412,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-119"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="119" />
                           &nbsp;Серов
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-121">
                           <input type="checkbox"
@@ -5430,14 +5430,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-121"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="121" />
                           &nbsp;Сухой Лог
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-122">
                           <input type="checkbox"
@@ -5448,14 +5448,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-122"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="122" />
                           &nbsp;Сысерть
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-123">
                           <input type="checkbox"
@@ -5466,14 +5466,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-123"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="123" />
                           &nbsp;Таватуй
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-124">
                           <input type="checkbox"
@@ -5484,14 +5484,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-124"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="124" />
                           &nbsp;Тавда
                         </label>
                       </li>
-                    
-                  
-                    
+
+
+
                       <li>
                         <label for="city-125">
                           <input type="checkbox"
@@ -5502,20 +5502,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                  id="city-125"
                                  name="city_select"
                                  class="js-control-choose"
-                                 
+
                                  value="125" />
                           &nbsp;Талица
                         </label>
                       </li>
-                    
-                  
-                    
-                  
-                    
-                  
+
+
+
+
+
+
                 </ul>
               </td>
-          
+
         </tr>
       </table>
     </div>
@@ -5526,8 +5526,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 
 
-  
-  
+
+
 
   <div class="b-separator b-separator_size_10"></div>
   <div class="b-doska-realty-obj context">
@@ -5536,37 +5536,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div id="form_box_advs"
            style="position: absolute; left: 10px;">
         <div class="b-form-box-choose-row">
-          
+
           <input type="checkbox" id="input_owner"
               >
             &nbsp;<label for="input_owner">Собственники</label>
-          
+
         </div>
       </div>
 
       <div class="b-grey-menu-selectors__right">
         <div class="b-dropdown js-dropdown-menu">
-          
 
-          
-            
-          
 
-            
-              
-              
-            
-            
+
+
+
+
+
+
+
+
+
               <a href="/realty/doska/live/?object_type=kv"
                  class="b-dropdown__current-link">
-            
+
 
             <span class="b-dropdown__current-link__pad">
               <ins class="b-dropdown__current-link__drop"></ins>
               <span>
-                
+
                   Сначала новые
-                
+
               </span>
             </span>
           </a>
@@ -5587,70 +5587,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                         <div class="b-dropdown__bubble__frame__f_c">
                           <ul style="width: 128px;">
-                            
 
-                            
-                              
-                            
 
-                            
+
+
+
+
+
                               <li class="b-dropdown__bubble__item
                                  b-dropdown__bubble__item_state_">
-                                
-                                
-                                  
-                                
-                                
 
 
-                                
+
+
+
+
+
+
                                   <a href="/realty/doska/live/?object_type=kv&sort=oldest-first">
-                                
 
-                                
+
+
                                   Сначала старые
-                                
+
                                 </a>
                               </li>
-                            
+
                               <li class="b-dropdown__bubble__item
                                 ">
-                                
-                                
-                                  
-                                
-                                
 
 
-                                
+
+
+
+
+
+
                                   <a href="/realty/doska/live/?object_type=kv&sort=high-price-first">
-                                
 
-                                
+
+
                                   Сначала дорогие
-                                
+
                                 </a>
                               </li>
-                            
+
                               <li class="b-dropdown__bubble__item
                                 ">
-                                
-                                
-                                  
-                                
-                                
 
 
-                                
+
+
+
+
+
+
                                   <a href="/realty/doska/live/?object_type=kv&sort=low-price-first">
-                                
 
-                                
+
+
                                   <nobr>Сначала дешевые</nobr>
-                                
+
                                 </a>
                               </li>
-                            
+
                           </ul>
                         </div>
                       </div>
@@ -5664,32 +5664,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
 
-  
-  
+
+
   <ul class="b-doska-goods-list2">
-    
+
       <li class="b-doska-goods-list2__item" id="adv_1">
         <div class="b-doska-goods-list2__obj-num">1</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4540295-prodam-2-k-kvartiru-ul-hmeleva-12-uralmash.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 2-к. квартиру, ул. Хмелева, 12 (Уралмаш)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4540295-prodam-2-k-kvartiru-ul-hmeleva-12-uralmash.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://lisa.unistorageserve.ru/5266013cf7c0790e96aa4540"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">2&nbsp;780&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Уралмаш, ул. Хмелева, 12">43 м², жилая: 30 м². Этаж 4 из 4.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -5700,7 +5700,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5266015bdb52615a938aed3e">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -5709,7 +5709,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="5266015bdb52615a938aed3e">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5266015bdb52615a938aed3e">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -5717,32 +5717,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_2">
         <div class="b-doska-goods-list2__obj-num">2</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4576984-sdam-2-k-kvartiru-ul-melnikova-20-viz.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 2-к. квартиру, ул. Мельникова, 20 (ВИЗ)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4576984-sdam-2-k-kvartiru-ul-melnikova-20-viz.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://bart.unistorageserve.ru/527cadc0e8d7b613f0c6765e"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">33&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, ВИЗ, ул. Мельникова, 20">74 м². Этаж 12 из 13.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -5754,7 +5754,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285668ae605db27a5f86091">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -5769,7 +5769,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="5285668ae605db27a5f86091">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285668ae605db27a5f86091">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -5777,24 +5777,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_3">
         <div class="b-doska-goods-list2__obj-num">3</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4576690-sdam-1-k-kvartiru-ul-kunarskaya-32-staraya-sortirovka.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 1-к. квартиру, ул. Кунарская, 32 (Старая Сортировка)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">18&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Старая Сортировка, ул. Кунарская, 32">33 м². Этаж 9 из 9.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -5806,7 +5806,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856464e605db27a5f85c9b">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -5821,7 +5821,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856464e605db27a5f85c9b">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856464e605db27a5f85c9b">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -5829,34 +5829,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_4">
         <div class="b-doska-goods-list2__obj-num">4</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4523272-prodam-1-k-kvartiru-ul-umeltsev-7-vtorchermet.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 1-к. квартиру, ул. Умельцев, 7 (Вторчермет)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4523272-prodam-1-k-kvartiru-ul-umeltsev-7-vtorchermet.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://unistorageserve.ru/524e790bf7c079792619cc8b"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">2&nbsp;290&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Вторчермет, ул. Умельцев, 7">40 м², жилая: 22 м². Этаж 4 из 9.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -5867,7 +5867,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="524d6541db5261782bb7607e">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -5876,7 +5876,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="524d6541db5261782bb7607e">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="524d6541db5261782bb7607e">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -5884,24 +5884,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_5">
         <div class="b-doska-goods-list2__obj-num">5</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577243-sdam-2-k-kvartiru-ul-patrisa-lumumbyi-2-vtorchermet.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 2-к. квартиру, ул. Патриса Лумумбы, 2 (Вторчермет)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">25&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Вторчермет, ул. Патриса Лумумбы, 2">Этаж 3 из 10.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -5913,7 +5913,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285686ee605db27a5f8641c">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -5928,7 +5928,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="5285686ee605db27a5f8641c">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285686ee605db27a5f8641c">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -5936,24 +5936,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_6">
         <div class="b-doska-goods-list2__obj-num">6</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577241-sdam-2-k-kvartiru-ul-akademika-bardina-2k2-yugo-zapadnyij.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 2-к. квартиру, ул. Академика Бардина, 2к2 (Юго-Западный)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">19&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Юго-Западный, ул. Академика Бардина, 2к2">Этаж 5 из 16.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -5965,7 +5965,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285686de605db27a5f8641a">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -5980,7 +5980,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="5285686de605db27a5f8641a">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285686de605db27a5f8641a">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -5988,26 +5988,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_7">
         <div class="b-doska-goods-list2__obj-num">7</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577431-prodam-3-k-kvartiru-ul-borovaya-19-pionerskij.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 3-к. квартиру, ул. Боровая, 19 (Пионерский)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">5&nbsp;180&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Пионерский, ул. Боровая, 19">66 м², жилая: 42 м². Этаж 11 из 12.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6018,7 +6018,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856aa7e605db27a5f8655a">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6027,7 +6027,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856aa7e605db27a5f8655a">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856aa7e605db27a5f8655a">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6035,32 +6035,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_8">
         <div class="b-doska-goods-list2__obj-num">8</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4576832-sdam-1-k-kvartiru-ul-pavla-shamanova-36-akademicheskij.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 1-к. квартиру, ул. Павла Шаманова, 36 (Академический)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4576832-sdam-1-k-kvartiru-ul-pavla-shamanova-36-akademicheskij.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://maggie.unistorageserve.ru/5282c241e8d7b613f0c7b8a0"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">18&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Академический, ул. Павла Шаманова, 36">40 м². Этаж 4 из 9.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6072,7 +6072,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856590e605db27a5f85edf">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6087,7 +6087,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856590e605db27a5f85edf">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856590e605db27a5f85edf">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6095,24 +6095,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_9">
         <div class="b-doska-goods-list2__obj-num">9</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577117-sdam-1-k-kvartiru-ul-soyuznaya-2-avtovokzal.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 1-к. квартиру, ул. Союзная, 2 (Автовокзал)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">28&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Автовокзал, ул. Союзная, 2">42 м². Этаж 4 из 20.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6124,7 +6124,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="528567bde605db27a5f862f6">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6139,7 +6139,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="528567bde605db27a5f862f6">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="528567bde605db27a5f862f6">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6147,32 +6147,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_10">
         <div class="b-doska-goods-list2__obj-num">10</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577720-sdam-1-k-kvartiru-ul-novaya-1-b-aramil.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 1-к. квартиру, ул. Новая, 1-Б (Арамиль)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4577720-sdam-1-k-kvartiru-ul-novaya-1-b-aramil.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://maggie.unistorageserve.ru/5285b4cbe8d7b613efc7a4b1"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">16&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">На проверке</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Арамиль, ул. Новая, 1-Б">35 м². Этаж 3 из 5.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6184,7 +6184,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285b515db526177a906cf25">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6199,7 +6199,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="5285b515db526177a906cf25">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285b515db526177a906cf25">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6207,11 +6207,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
+
         <li>
           <span><!-- Яндекс.Директ -->
 <div id="yandex_ad_live_inlist"></div>
@@ -6247,31 +6247,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window, document, "yandex_context_callbacks");
 </script></span>
         </li>
-        
-      
-    
+
+
+
       <li class="b-doska-goods-list2__item" id="adv_11">
         <div class="b-doska-goods-list2__obj-num">11</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4575676-prodam-1-k-kvartiru-ul-krasnyih-geroev-18-berezovskij.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 1-к. квартиру, ул. Красных Героев, 18 (Березовский)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4575676-prodam-1-k-kvartiru-ul-krasnyih-geroev-18-berezovskij.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://lisa.unistorageserve.ru/5284b00af7c0794e72d7e897"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">2&nbsp;060&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Березовский, ул. Красных Героев, 18">36 м², жилая: 14 м². Этаж 2 из 10.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6282,7 +6282,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5284b0b3db526130f6b15c1c">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6291,7 +6291,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="5284b0b3db526130f6b15c1c">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5284b0b3db526130f6b15c1c">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6299,26 +6299,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_12">
         <div class="b-doska-goods-list2__obj-num">12</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577528-prodam-2-k-kvartiru-ul-chistova-13-verhnyaya-pyishma.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 2-к. квартиру, ул. Чистова, 13 (Верхняя Пышма)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">2&nbsp;420&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Березовский, ул. Красных Героев, 18">44 м², жилая: 28 м². Этаж 3 из 5.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6329,7 +6329,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856af3e605db27a5f865bb">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6338,7 +6338,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856af3e605db27a5f865bb">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856af3e605db27a5f865bb">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6346,32 +6346,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_13">
         <div class="b-doska-goods-list2__obj-num">13</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4576755-sdam-2-k-kvartiru-ul-belinskogo-86-tsentr.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 2-к. квартиру, ул. Белинского, 86 (Центр)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4576755-sdam-2-k-kvartiru-ul-belinskogo-86-tsentr.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://bart.unistorageserve.ru/527c98fce8d7b613eec5b64f"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">53&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Центр, ул. Белинского, 86">75 м². Этаж 4 из 24.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6383,7 +6383,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="528564dae605db27a5f85d4e">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6398,7 +6398,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="528564dae605db27a5f85d4e">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="528564dae605db27a5f85d4e">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6406,26 +6406,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_14">
         <div class="b-doska-goods-list2__obj-num">14</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577554-prodam-2-k-kvartiru-ul-belinskogo-177-avtovokzal.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 2-к. квартиру, ул. Белинского, 177 (Автовокзал)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">6&nbsp;400&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Автовокзал, ул. Белинского, 177">73 м², жилая: 37 м². Этаж 8 из 18.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6436,7 +6436,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856b0de605db27a5f865d5">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6445,7 +6445,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856b0de605db27a5f865d5">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856b0de605db27a5f865d5">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6453,24 +6453,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_15">
         <div class="b-doska-goods-list2__obj-num">15</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4576718-sdam-2-k-kvartiru-ul-lagernaya-14-lechebnyij.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 2-к. квартиру, ул. Лагерная, 14 (Лечебный)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">26&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Лечебный, ул. Лагерная, 14">60 м². Этаж 6 из 10.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6482,7 +6482,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856477e605db27a5f85cb7">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6497,7 +6497,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856477e605db27a5f85cb7">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856477e605db27a5f85cb7">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6505,34 +6505,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_16">
         <div class="b-doska-goods-list2__obj-num">16</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577606-prodam-2-k-kvartiru-ul-gromova-148-yugo-zapadnyij.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 2-к. квартиру, ул. Громова, 148 (Юго-Западный)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4577606-prodam-2-k-kvartiru-ul-gromova-148-yugo-zapadnyij.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://bart.unistorageserve.ru/52858ef3e8d7b613efc7a41d"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">2&nbsp;750&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Юго-Западный, ул. Громова, 148">36 м². Этаж 4 из 9.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6543,7 +6543,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52858f2ae605db435bdfd549">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6552,7 +6552,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52858f2ae605db435bdfd549">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52858f2ae605db435bdfd549">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6560,34 +6560,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_17">
         <div class="b-doska-goods-list2__obj-num">17</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4347814-prodam-2-k-kvartiru-ul-popova-33a-tsentr.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 2-к. квартиру, ул. Попова, 33А (Центр)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4347814-prodam-2-k-kvartiru-ul-popova-33a-tsentr.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://maggie.unistorageserve.ru/5285bcb8f7c0794e72d86a65"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">6&nbsp;365&nbsp;100&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Центр, ул. Попова, 33А">83 м², жилая: 50 м². Этаж 5 из 16.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6598,7 +6598,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="514ab94fdb52614ac001f696">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6607,7 +6607,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="514ab94fdb52614ac001f696">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="514ab94fdb52614ac001f696">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6615,26 +6615,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_18">
         <div class="b-doska-goods-list2__obj-num">18</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577413-prodam-3-k-kvartiru-ul-yakova-sverdlova-31-pos-tavatuj.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 3-к. квартиру, ул. Якова Свердлова, 31 (пос. Таватуй)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">1&nbsp;700&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Центр, ул. Попова, 33А">57 м², жилая: 38 м². Этаж 1 из 3.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6645,7 +6645,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856a81e605db27a5f86548">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6654,7 +6654,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856a81e605db27a5f86548">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856a81e605db27a5f86548">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6662,26 +6662,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_19">
         <div class="b-doska-goods-list2__obj-num">19</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577495-prodam-2-k-kvartiru-ul-emlina-23-pervouralsk.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 2-к. квартиру, ул. Емлина, 23 (Первоуральск)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">2&nbsp;550&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Первоуральск, ул. Емлина, 23">52 м², жилая: 36 м². Этаж 13 из 16.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6692,7 +6692,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856adae605db27a5f8659a">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6701,7 +6701,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856adae605db27a5f8659a">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856adae605db27a5f8659a">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6709,32 +6709,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_20">
         <div class="b-doska-goods-list2__obj-num">20</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577209-sdam-1-k-kvartiru-ul-shevchenko-20-133-tsentr.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 1-к. квартиру, ул. Шевченко, 20 - 133 (Центр)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4577209-sdam-1-k-kvartiru-ul-shevchenko-20-133-tsentr.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://unistorageserve.ru/51d424dff7c0797746b30f0c"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">36&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Центр, ул. Шевченко, 20 - 133">48 м². Этаж 11 из 20.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6746,7 +6746,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856819e605db27a5f863a0">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6761,7 +6761,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856819e605db27a5f863a0">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856819e605db27a5f863a0">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6769,24 +6769,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_21">
         <div class="b-doska-goods-list2__obj-num">21</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4576792-sdam-3-k-kvartiru-pr-lenina-101-vtuzgorodok.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 3-к. квартиру, пр. Ленина, 101 (Втузгородок)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">30&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, Втузгородок, пр. Ленина, 101">75 м². Этаж 3 из 5.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6798,7 +6798,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856526e605db27a5f85dfd">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6813,7 +6813,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856526e605db27a5f85dfd">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856526e605db27a5f85dfd">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6821,26 +6821,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_22">
         <div class="b-doska-goods-list2__obj-num">22</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4577526-prodam-3-k-kvartiru-ul-michurina-108-tsentr.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 3-к. квартиру, ул. Мичурина, 108 (Центр)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">16&nbsp;000&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Центр, ул. Мичурина, 108">160 м², жилая: 75 м². Этаж 9 из 10.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6851,7 +6851,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856af2e605db27a5f865b9">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6860,7 +6860,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52856af2e605db27a5f865b9">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52856af2e605db27a5f865b9">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6868,24 +6868,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_23">
         <div class="b-doska-goods-list2__obj-num">23</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4576907-sdam-2-k-kvartiru-ul-zavodskaya-47-viz.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Сдам 2-к. квартиру, ул. Заводская, 47 (ВИЗ)</a>
         </h4>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">15&nbsp;000&nbsp;р.<span class="b-doska-goods-list2__agency">Агентство</span></p><p class="b-doska-goods-list2__params" data="Екатеринбург, ВИЗ, ул. Заводская, 47">44 м². Этаж 5 из 5.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
             <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
@@ -6897,7 +6897,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285663de605db27a5f85ff0">Сдано</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6912,7 +6912,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="5285663de605db27a5f85ff0">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="5285663de605db27a5f85ff0">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6920,34 +6920,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_24">
         <div class="b-doska-goods-list2__obj-num">24</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4538792-prodam-2-k-kvartiru-ul-yubilejnaya-2-verhnyaya-pyishma.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 2-к. квартиру, ул. Юбилейная, 2 (Верхняя Пышма)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4538792-prodam-2-k-kvartiru-ul-yubilejnaya-2-verhnyaya-pyishma.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://lisa.unistorageserve.ru/5267445af7c0790e99aa5fb6"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">2&nbsp;400&nbsp;000&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Верхняя Пышма, ул. Юбилейная, 2">44 м². Этаж 1 из 5.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -6958,7 +6958,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52638556e605db399fe25212">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -6967,7 +6967,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52638556e605db399fe25212">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52638556e605db399fe25212">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -6975,34 +6975,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
       <li class="b-doska-goods-list2__item" id="adv_25">
         <div class="b-doska-goods-list2__obj-num">25</div>
         <h4 class="b-doska-goods-list2__heading">
           <a href="/realty/doska/live/4509740-prodam-3-k-kvartiru-ul-roschinskaya-46-uktus.html"
              class="b-doska-goods-list2__title b-link_layout_doska-brd">Продам 3-к. квартиру, ул. Рощинская, 46 (Уктус)</a>
         </h4>
-        
-          
-            
-          
+
+
+
+
           <a href="/realty/doska/live/4509740-prodam-3-k-kvartiru-ul-roschinskaya-46-uktus.html"
              class="b-doska-goods-list2__img-link"><img
               src="http://79.172.49.155/52395b1af7c0791e548c5d4b"
               alt=""></a>
-        
+
 
         <div class="b-doska-goods-list2__desc">
           <p class="b-doska-goods-list2__date">cегодня</p>
           <p class="b-doska-goods-list2__price">4&nbsp;348&nbsp;050&nbsp;р.</p><p class="b-doska-goods-list2__params" data="Екатеринбург, Уктус, ул. Рощинская, 46">85 м², жилая: 47 м². Этаж 6 из 10.</p>
-          
+
           <div class="b-doska-goods-list__item__body__events-more">
-            
+
               <div class="b-complaint-popup" style="display: none;">
   <div class="b-complaint-popup__frame">
     <a class="b-complaint-popup__close-link" href="#"></a>
@@ -7013,7 +7013,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="b-complaint-popup__right-line"></div>
       <div class="b-complaint-popup__text">
         <ul class="b-complaint-popup__text__list">
-          
+
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52395b48db52615369ca0da8">Неверная цена</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
@@ -7022,7 +7022,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                  itemid="52395b48db52615369ca0da8">Это спам</a></li>
           <li><a href="#" class="b-link b-link_border_yes send_complaint_group"
                  itemid="52395b48db52615369ca0da8">Неактуально</a></li>
-          
+
         </ul>
       </div>
     </div>
@@ -7030,16 +7030,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-complaint-popup__blc-cn b-complaint-popup__blc-br"></div>
   </div>
 </div>
-            
+
           </div>
         </div>
       </li>
-      
-    
+
+
   </ul>
 
 
-  
+
     <span><!-- Яндекс.Директ -->
 <div id="yandex_ad_live_endlist"></div>
 <script type="text/javascript">
@@ -7075,9 +7075,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="b-pager__left inactive">
           <div class="b-pager__left__key"><b>←</b>&nbsp;Ctrl</div>
           <div class="b-pager__left__text">
-            
+
               Предыдущая
-            
+
           </div>
         </div>
         <div class="b-pager__pad">
@@ -7086,47 +7086,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="b-pager__center-3">
                 <div class="b-pager__frame">
                   <ul>
-                    
-                      
+
+
                         <li class="b-pager__item b-pager__item_state_current">1</li>
-                      
-                    
-                      
-                        
-                        
-                          
-                        
-                        
+
+
+
+
+
+
+
+
                           <li class="b-pager__item">
                               <a href="/realty/doska/live/?object_type=kv&page=2">2</a>
                           </li>
-                        
-                      
-                    
-                      
-                        
-                        
-                          
-                        
-                        
+
+
+
+
+
+
+
+
+
                           <li class="b-pager__item">
                               <a href="/realty/doska/live/?object_type=kv&page=3">3</a>
                           </li>
-                        
-                      
-                    
-                      
-                        
-                        
-                          
-                        
-                        
+
+
+
+
+
+
+
+
+
                           <li class="b-pager__item">
                               <a href="/realty/doska/live/?object_type=kv&page=4">...</a>
                           </li>
-                        
-                      
-                    
+
+
+
                   </ul>
                 </div>
               </div>
@@ -7136,26 +7136,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="b-pager__right">
           <div class="b-pager__right__key">Ctrl&nbsp;<b>→</b></div>
           <div class="b-pager__right__text">
-            
+
                 <a id="next_arrow" href="/realty/doska/live/?object_type=kv&page=2">
-            
+
               Следующая
             </a>
           </div>
         </div>
       </div>
     </div>
-  
 
-  
-  
+
+
+
     <div style="margin-top: 10px;">
-      
-        
-      
+
+
+
       <span></span>
     </div>
-  
+
 
   </div>
   <div class="b-doska-realty-obj_col-2">
@@ -7169,19 +7169,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="b-container__inner"></div>
   </div>
 
-  
+
     <div class="b-separator b-separator_layout_solid-orange"></div>
     <div class="b-container context">
       <div class="b-container__inner">
         <div class="b-markup b-markup_layout_seo-receiver context">
-          
+
             <span></span>
-          
+
 
         </div>
       </div>
     </div>
-  
+
 
 
 
@@ -7192,15 +7192,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
               </div>
               <div class="page-col-16-span-5">
-                
+
                   <div class="b-separator b-separator_size_40"></div>
                   <div class="b-separator b-separator_size_3"></div>
                   <div class="b-doska-place-ad">
-                    
-                      
-                        
-                      
-                    
+
+
+
+
+
                     <div class="b-btn">
                       <ins class="b-btn__crn-left"></ins>
                       <ins class="b-btn__crn-right"></ins>
@@ -7217,29 +7217,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                   </div>
 
-                  
-  
+
+
 <script type="text/javascript">
     var group_slug = 'live';
     var ajax_subscribe_emaili_url = '/ajax/rss/email_subscribe/';
-    
-      
+
+
         var feed_link_url = 'http://66.ru/realty/doska/live/rss/?object_type=kv';
-      
-    
+
+
 </script>
 <script src="http://www.66.ru/static/js/blocks/b-subscr-popup-doska/subscribe.js" type="text/javascript"></script>
 
 <div class="b-separator b-separator_size_10 above-subscribe-block"></div>
 
 
-  
-    
-  
+
+
+
 
 
 <div class="b-subscr-popup-doska minimized" id="linkSubscr">
-112
   <!--div class="b-subscr-popup-doska__frame">
     <a class="doska-subscribe-box__open-link" href=""></a>
     <a class="doska-subscribe-box__close" href=""></a>
@@ -7252,7 +7251,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="doska-subscribe-box__title">Подпишитесь</div>
             <p>
               На новые объявления квартир
-              
+
             </p>
           </div>
           <div class="doska-subscribe-box__body">
@@ -7274,9 +7273,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </form>
             <div class="doska-subscribe-box__info" style="text-align: left;"></div>
             <div class="doska-subscribe-box__subscribed_list" style="text-align: left;">
-                
+
                     <li class="inline-block w33">из раздела &laquo;Жилая недвижимость&raquo;</li>
-                
+
             </div>
             <div class="doska-subscribe-box__preloader"></div>
           </div>
@@ -7288,14 +7287,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-                  
+
 
                   <div class="above-right-banner-block"></div>
                       <div id="right-banner-block">
-              
+
 
                         <div class="b-separator b-separator_size_10"></div>
-                        <div class="b-separator b-separator_size_3"></div>              
+                        <div class="b-separator b-separator_size_3"></div>
 
                         <div class="b-doska-subscribe b-doska-subscribe_display_link">
                             <div class="js-doska-subscribe-step-1">
@@ -7318,67 +7317,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <span class="b-doska-subscribe__mail b-doska-subscribe__mail_size_big">petroviche@gmail.com</span>
                                 <span class="b-doska-subscribe__title b-doska-subscribe__title_size_big">Спасибо за доверие! Мы не подведём!</span>
                                 <span class="b-separator b-separator_height_18"></span>
-                                <span class="b-doska-subscribe__sub">Как только по вашему запросу появятся обновления, вы об этом узнаете</span>            
-                            </div>            
+                                <span class="b-doska-subscribe__sub">Как только по вашему запросу появятся обновления, вы об этом узнаете</span>
+                            </div>
                             <div class="js-doska-subscribe-step-4" style="display: none;">
                                 <span class="b-doska-subscribe__title">Вы подписаны на<br />новые объявления</span>
                                 <span class="b-separator b-separator_height_10"></span>
                                 <span class="b-doska-subscribe__sub">Купить/снять квартиру, 1,2,3,4+ комнат, Районы: Центр, Юга-Западный, 0 – 4400 000 р.</span>
                                 <span class="b-separator b-separator_height_10"></span>
-                                <span class="b-doska-subscribe__mail">petroviche@gmail.com</span>            
-                            </div>            
+                                <span class="b-doska-subscribe__mail">petroviche@gmail.com</span>
+                            </div>
                         </div>
 
   <script>
     $(document).ready(function() {
 
-        var doskaSubscrStep1Class = ".js-doska-subscribe-step-1";
-        var doskaSubscrStep2Class = ".js-doska-subscribe-step-2";
-        var doskaSubscrStep3Class = ".js-doska-subscribe-step-3";
-        var doskaSubscrStep4Class = ".js-doska-subscribe-step-4";
+        var $dSubStep1 = $('.js-doska-subscribe-step-1'),
+            $dSubStep2 = $('.js-doska-subscribe-step-2'),
+            $dSubStep3 = $('.js-doska-subscribe-step-3'),
+            $dSubStep4 = $('.js-doska-subscribe-step-4');
 
         var doskaSubscrWidth = $(".page-col-16-span-5").width();
 
-        $(doskaSubscrStep1Class).on("click", function() {
-            var obj = $(this).parent();
-            obj.animate({width: "780px", height: "124px", "marginLeft": "-780px"}, {
-                duration: 100,
-                easing: "swing"
-            });
-            $(this).hide();
-            $(doskaSubscrStep2Class).show();
-            obj.removeClass("b-doska-subscribe_display_link");
-        });
+        var $window = $(window),
+            $subscribe = $('.b-doska-subscribe').first();
 
-        $(".js-doska-subscribe__close").on("click", function() {
-            var obj = $(this).parent().parent();
-            $(this).parent().hide();
-            $(doskaSubscrStep1Class).show();
-            obj.animate({
-                width: doskaSubscrWidth + "px", 
-                height: "88px"
-              }, {
-                duration: 100,
-                easing: "swing"
-            });
+        var shown = false,
+            shownAndHidden = false,
+            revealHeight = $(document).height() / 2 - $window.height(),
+            hideHeight = ($(document).height() + $window.height()) / 2;
 
+        function show2() {
+            $dSubStep1.hide();
+            $dSubStep2.show();
+            $subscribe.removeClass("b-doska-subscribe_display_link");
+            $subscribe.addClass('b-doska-subscribe_unfold');
+        }
 
-            obj.addClass("b-doska-subscribe_display_link");
-        });
+        function show1() {
+            $dSubStep2.hide();
+            $dSubStep1.show();
+            $subscribe.addClass("b-doska-subscribe_display_link");
+            $subscribe.removeClass('b-doska-subscribe_unfold');
+            shown = true;
+            shownAndHidden = true;
+        }
+
+        $dSubStep1.on("click", show2);
+
+        $(".js-doska-subscribe__close").on("click", show1);
 
         $(".js-doska-subscribe__submit").on("click", function() {
-            $(doskaSubscrStep2Class).hide();
-            $(doskaSubscrStep3Class).show();
+            $dSubStep2.hide();
+            $dSubStep3.show();
+            shown = true;
+            shownAndHidden = true;
         });
 
         $(".js-doska-subscribe__close-total").on("click", function() {
-            var obj = $(this).parent().parent();
-            $(this).parent().hide();
-            $(doskaSubscrStep4Class).show();
-            obj.animate({width: doskaSubscrWidth + "px", height: "151px"}, 100);
+            $dSubStep3.hide();
+            $dSubStep4.show();
+            $subscribe.removeClass('b-doska-subscribe_unfold');
+            $subscribe.addClass('b-doska-subscribe_done');
         });
+
+        $window.on('scroll', function() {
+            if ( !shown && ( $window.scrollTop() > revealHeight ) && ( $window.scrollTop() < hideHeight ) ) {
+              show2();
+              shown = true;
+            }
+
+            if (!shownAndHidden && shown) {
+              if (( $window.scrollTop() < revealHeight ) || ( $window.scrollTop() > hideHeight )) {
+                show1();
+              }
+            }
+
+            console.log(shownAndHidden, $(window).scrollTop(), $(document).height(), $(window).height(), revealHeight, hideHeight);
+        })
     });
-    </script>                        
+    </script>
 
                         <!--div class="b-doska-subscribe">
                             <div class="js-doska-subscribe-step-1">
@@ -7393,19 +7410,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <span class="b-separator b-separator_height_10"></span>
                                 <span class="b-doska-subscribe__sub">Купить/снять квартиру, 1,2,3,4+ комнат, Районы: Центр, Юга-Западный, 0 – 4400 000 р.</span>
                                 <span class="b-separator b-separator_height_10"></span>
-                                <span class="b-doska-subscribe__mail">petroviche@gmail.com</span>            
-                            </div>                    
+                                <span class="b-doska-subscribe__mail">petroviche@gmail.com</span>
+                            </div>
                         </div-->
 
-        
+
 
                            <div class="b-separator b-separator_size_10"></div>
                            <div class="b-separator b-separator_size_3"></div>
 
-                    
-                      
+
+
                         <div class="content-block" style="line-height: 0; border: 0; clear: both;">
-                          
+
                             <span><script type="text/javascript">
 function fixedEncodeURI(str){
      return encodeURI(str).replace(/[!'()]/g, escape).replace(/\*/g, "%2A");
@@ -7419,10 +7436,10 @@ document.write ("<scr"+"ipt type='text/javascript' src='"+show_adlift);
 document.write ("?url="+current_url+"&code="+current_code);
 document.write ("'></scr"+"ipt>");
 </script></span>
-                          
+
                         </div>
-                      
-                    <div class="content-block" style="line-height: 0; border: 0;"><span><div style="height:10px;"> </div>		    		
+
+                    <div class="content-block" style="line-height: 0; border: 0;"><span><div style="height:10px;"> </div>
         <script type="text/javascript">
 function fixedEncodeURI(str){
      return encodeURI(str).replace(/[!'()]/g, escape).replace(/\*/g, "%2A");
@@ -7434,8 +7451,8 @@ function fixedEncodeURI(str){
         document.write ("?url="+current_url+"&code="+current_code);
         document.write ("'></scr"+"ipt>");
         </script>
- <div style="height:10px;"> </div>   
-		    		
+ <div style="height:10px;"> </div>
+
         <script type="text/javascript">
         var show_adlift = 'http://show.adlift.ru/515942a849ac1767191db40b.js';
         var current_url = fixedEncodeURI(window.location);
@@ -7444,13 +7461,13 @@ function fixedEncodeURI(str){
         document.write ("?url="+current_url+"&code="+current_code);
         document.write ("'></scr"+"ipt>");
         </script>
-    
+
 		    	</span></div>
                       <div class="content-block" style="line-height: 0; border: 0;"><span></span></div>
-                    
+
                     <div class="b-separator b-separator_size_3"></div>
-                  
-                
+
+
                 </div>
               </div>
             </div>
@@ -7458,7 +7475,7 @@ function fixedEncodeURI(str){
         </div>
 
     </div>
-    
+
       <div class="l-branding-footer">
           <div class="l-branding-footer-repeat"></div>
           <div class="l-branding-footer-bg"></div>
@@ -7466,13 +7483,13 @@ function fixedEncodeURI(str){
           </div>
         </div>
   </div>
-  
+
 </div>
 
 
 
   <div class="l-footer">
-  
+
     <script type="text/javascript">
      (function() {
          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -7488,7 +7505,7 @@ function fixedEncodeURI(str){
     ga('create', 'UA-27892770-3', '66.ru');
     ga('send', 'pageview');
   </script>
-  
+
   <script type="text/javascript">
     $(document).ready(function () {
       var bunch_data_cookie_name = 'bunch_data_cookie';
@@ -7514,72 +7531,72 @@ function fixedEncodeURI(str){
                  alt="66.ru"/>
           </a>
 
-          
 
 
 
 
 
 
-  
+
+
   <ul class="b-footer-menu">
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/news/">Новости</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/bank/">Банки</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/rabota/">Работа</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/doska/">Объявления</a></li>
-  
+
     <li class="cur">
       <a rel="nofollow"
          href="http://66.ru/realty/">Недвижимость</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/auto/">Авто</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/talk/">Общение</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/afisha/">Афиша</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/skidki/">«Клуб 66»</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/help/">Справка</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/health/">Здоровье</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/gurman/">Еда</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://66.ru/konkurs/">Конкурсы</a></li>
-  
+
     <li >
       <a rel="nofollow"
          href="http://mail.66.ru">Почта</a></li>
-  
+
   </ul>
 
 
