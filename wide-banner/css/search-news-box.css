@@ -1,0 +1,39 @@
+.searchNewsBox {
+	margin: 0 0 10px 0;
+    background: url("../img/searchBoxBg.png") repeat-x scroll 0 bottom #93B700;
+}
+.searchNewsBoxPad {
+    padding: 10px 20px 15px;
+}
+.searchNewsBoxControll {
+	position: relative;
+	padding-right: 45px;
+}
+.searchBoxLabel {
+	display: block;
+	margin-bottom: 10px;
+	font: 18px/16px Arial, Tahoma, Sans-Serif;
+	color: #fff;
+	position: relative;
+	//top: 3px;
+}
+.seacrhNewsBoxSubm {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+    background: url("../img/searchNewsSubm.png") no-repeat scroll 0 0 transparent;
+    height: 32px;
+    width: 33px;
+	text-indent: -9999px;
+}
+.searchNewsControl {
+	padding: 2px 0 3px;
+	margin: 0px;
+	width: 100%;
+    font-size: 18px;
+    text-indent: 5px;
+}
+* html>body .searchNewsControl {
+	margin-left: -2px;
+}
+
