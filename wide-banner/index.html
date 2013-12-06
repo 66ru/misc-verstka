@@ -342,6 +342,8 @@ _V_.options.flash.swf = "http://t.66demo.ru/external/video-js/video-js.swf?13860
 
 <script src="http://t.66demo.ru/37764c088e4d12536a510744ff794688f0549303/87c704ba02478b1268ff8aa2ce81a9bd/b-subscriber.js"  type="text/javascript"></script>
 
+<link rel="stylesheet" href="css/$sticky.css" />
+<script src="js/$sticky.js"></script>
 
 
 
@@ -1206,7 +1208,7 @@ $_menuContainer.css({'height' : 'auto'})
 
 
     <div id="body-wrap" class="ie_layout">
-        <div id="body" class="ie_layout">
+        <div id="body" class="ie_layout sticky__parent">
 
     <div class="submenu_items context"><div class="submenu_items__item "><a class="submenu_items__item-link" href="/news/main/">Главные</a></div><div class="menu_bubbles"><div style="visibility: hidden"></div></div></div>
  <div class="page-grid-wrap page-grid-wrap_w-fluid context">
@@ -2221,10 +2223,10 @@ app.module.register( 'subscribeWidget', b_subscriber, {
 
 	<!-- wide banner -->
 
-    <div class="page-col-11-span-9">
+    <div class="page-col-11-span-9 sticky__after">
 
-		<div class="b-fluid-fixed__global">
-			<img src="http://std3.ru/68/6a/1386209011-686a3284b21265890257f946c311feaa.gif" alt="" width="100%" height="400" style="cursor: pointer;" />
+		<div class="b-fluid-fixed__global sticky__content">
+			<img src="http://25.media.tumblr.com/tumblr_mako6i0I5R1qzi6z7o1_500.jpg" alt="" width="100%" height="400" style="cursor: pointer;" />
 		</div>
 
 
@@ -2359,50 +2361,50 @@ app.module.register( 'subscribeWidget', b_subscriber, {
         	</style>
 
         	<script type="text/javascript">
-        		jQuery.fn.fixbanner = function (options) {
-        			var options = jQuery.extend({
-        				rightRelativeContainer:'.page-col-16-span-5', //если id - "#"; если class - ".";
-        				top:'10px'
-        			}, options);
-        			var dh = $(document).height();
-        			var fh = $(".l-footer").height();
-        			var fp = $(".l-footer").offset().top;
+        	// 	jQuery.fn.fixbanner = function (options) {
+        	// 		var options = jQuery.extend({
+        	// 			rightRelativeContainer:'.page-col-16-span-5', //если id - "#"; если class - ".";
+        	// 			top:'10px'
+        	// 		}, options);
+        	// 		var dh = $(document).height();
+        	// 		var fh = $(".l-footer").height();
+        	// 		var fp = $(".l-footer").offset().top;
 
-        			return this.each(function () {
-        				var $this = jQuery(this);
-        				var relativeBox = jQuery(options.rightRelativeContainer);
-        				var positionScreen = jQuery(window).scrollTop();
-        				var rightBlockHeight = relativeBox.height() + relativeBox.offset().top;
-        				var position = jQuery(options.rightRelativeContainer).offset();
-        				if (rightBlockHeight < positionScreen) {
-        					$this.css("position", "fixed");
-        					$this.css("left", position.left + "px");
-        					var bh =$this.height() + positionScreen+parseInt(options.top);
-        					if(bh<fp){
-        						$this.css("top", options.top);
-        					} else {
-        						$this.css("top", fp-positionScreen-$this.height());
-        					}
-        				} else {
-        					$this.css("left", "0px");
-        					$this.css("top", "0px");
-        					$this.css("position", "relative");
-        				}
+        	// 		return this.each(function () {
+        	// 			var $this = jQuery(this);
+        	// 			var relativeBox = jQuery(options.rightRelativeContainer);
+        	// 			var positionScreen = jQuery(window).scrollTop();
+        	// 			var rightBlockHeight = relativeBox.height() + relativeBox.offset().top;
+        	// 			var position = jQuery(options.rightRelativeContainer).offset();
+        	// 			if (rightBlockHeight < positionScreen) {
+        	// 				$this.css("position", "fixed");
+        	// 				$this.css("left", position.left + "px");
+        	// 				var bh =$this.height() + positionScreen+parseInt(options.top);
+        	// 				if(bh<fp){
+        	// 					$this.css("top", options.top);
+        	// 				} else {
+        	// 					$this.css("top", fp-positionScreen-$this.height());
+        	// 				}
+        	// 			} else {
+        	// 				$this.css("left", "0px");
+        	// 				$this.css("top", "0px");
+        	// 				$this.css("position", "relative");
+        	// 			}
 
-        			});
-        		};
+        	// 		});
+        	// 	};
 
-        	$(document).ready(function() {
-        	$("#runBanner").fixbanner({ rightRelativeContainer: ".page-col-16-span-5", top: "10px"});
-        	});
+        	// $(document).ready(function() {
+        	// $("#runBanner").fixbanner({ rightRelativeContainer: ".page-col-16-span-5", top: "10px"});
+        	// });
 
-        	$(window).resize(function() {
-        	$("#runBanner").fixbanner({ rightRelativeContainer : ".page-col-16-span-5", top: "10px"});
-        	});
+        	// $(window).resize(function() {
+        	// $("#runBanner").fixbanner({ rightRelativeContainer : ".page-col-16-span-5", top: "10px"});
+        	// });
 
-        	$(window).scroll(function() {
-        	$("#runBanner").fixbanner({ rightRelativeContainer : ".page-col-16-span-5", top: "10px"});
-        	});
+        	// $(window).scroll(function() {
+        	// $("#runBanner").fixbanner({ rightRelativeContainer : ".page-col-16-span-5", top: "10px"});
+        	// });
         	</script>
 
         	<script type="text/javascript">
