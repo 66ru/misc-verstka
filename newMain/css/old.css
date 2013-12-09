@@ -1126,6 +1126,7 @@ a.b-header-menu__item__link:after {
   margin-bottom: 12px;
   padding: 0px;
   list-style: none;
+  line-height: 1.3;
 }
 .b-header-menu__item__sub__wrap__col__list__item_mb_24 {
   margin-bottom: 24px;
