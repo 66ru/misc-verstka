@@ -137,6 +137,9 @@ a:hover {
 a:focus {
   outline: 1px dotted #000000;
 }
+b {
+  font-weight: bold;
+}
 .g-48 {
   padding-right: 89.53%;
   position: relative;

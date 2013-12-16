@@ -76,3 +76,7 @@ a:hover {
 a:focus {
 	outline: 1px dotted #000000;
 }
+
+b {
+	font-weight: bold;
+}
