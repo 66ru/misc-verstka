@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Банкоматы</title>
+	<link rel="stylesheet/less" href="css/banks-atm.less">
+	<script src="../bower_components/jquery/jquery.js"></script>
+	<script src="js/less-1.4.2.min.js"></script>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="js/banks-atm-controllers.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1-dev/?load=package.standard&lang=ru-RU"></script>
+</head>
+<body>
+<div class="layout__base">
+	<div class="grid">
+		<div class="grid__module grid__module_col_1 grid__module_span_90 map-list" ng-app="atmApp">
+			<form action="#" class="b-search">
+				<div class="b-search__row">
+					<span class="b-search__input-wrap">
+						<input type="text" name="atm-search-name" id="atm-search-name" class="b-search__input" placeholder="Начните вводить название банка">
+						<ul class="suggests">
+							<li class="suggests__elem">Мясо</li>
+							<li class="suggests__elem">Почта России</li>
+							<li class="suggests__elem">Сумерки: Рассвет</li>
+							<li class="suggests__elem">Burial: Come Down to Us</li>
+							<li class="suggests__elem">3 Мушкетера</li>
+							<li class="suggests__elem">Мясо</li>
+							<li class="suggests__elem">Почта России</li>
+							<li class="suggests__elem">Сумерки: Рассвет</li>
+							<li class="suggests__elem">Burial: Come Down to Us</li>
+							<li class="suggests__elem">3 Мушкетера</li>
+						</ul>
+					</span>
+					<input type="button" value="Выбрать районы" class="b-search__button button button_color_grey">
+					<input type="checkbox" name="atm-search-cash-in" id="atm-search-cash-in" class="b-search__checkbox">
+					<label for="atm-search-cash-in" class="b-search__label">Cash-in</label>
+					<input type="checkbox" name="atm-search-are-working" id="atm-search-are-working" class="b-search__checkbox">
+					<label for="atm-search-are-working" class="b-search__label">Работают сейчас</label>
+				</div>
+				<div class="b-search__bank-names">
+					<span class="b-search__list-label">Банки:</span>
+					<ul class="tags tags_entity_banks">
+						<li class="tags__tag">Альфа банк<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Банк Петрокоммерц<span class="tags__close">✕</span></li>
+						<li class="tags__tag">СМП-Банк<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Банк Антонокоммерц<span class="tags__close">✕</span></li>
+						<li class="tags__tag">БФГ Банк<span class="tags__close">✕</span></li>
+						<li class="tags__tag">УБРиР<span class="tags__close">✕</span></li>
+						<li class="tags__tag">ФАК Банк<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Сбербанк<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Шпротбанк<span class="tags__close">✕</span></li>
+					</ul>
+				</div>
+				<div class="b-search__bank-names">
+					<span class="b-search__list-label">Районы:</span>
+					<ul class="tags">
+						<li class="tags__tag">Центр<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Ботаника<span class="tags__close">✕</span></li>
+						<li class="tags__tag">ВИЗ<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Уралмаш<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Химмаш<span class="tags__close">✕</span></li>
+						<li class="tags__tag">Заречный<span class="tags__close">✕</span></li>
+					</ul>
+				</div>
+			</form>
+			<ul class="b-atms" ng-controller="ATMListCtrl">
+				<li class="b-atms__atm" ng-repeat="atm in atms">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">{{atm.name}}</p>
+					<p class="b-atms__address">{{atm.address}}</p>
+					<p class="b-atms__time">{{atm.workTime[0] + ':00—' + atm.workTime[1] + ':00'}}</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> {{atm.currency}}. <b>{{atm.cashIn}}</b></p>
+					<ul class="b-services">
+						<li ng-repeat="service in atm.services" class="b-services__elem b-services__elem_type_{{service}}">{{service}}</li>
+					</ul>
+					<div class="b-atms__placemark">{{atm.placemark}}</div>
+				</li>
+				<!-- <li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Банк Уралсиб</p>
+					<p class="b-atms__address">ул. Карла Либкнехта, 23</p>
+					<p class="b-atms__time">Работает до 23:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> рубли.</p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_mc">Master Card</li>
+						<li class="b-services__elem b-services__elem_type_ae">American Express</li>
+						<li class="b-services__elem b-services__elem_type_discover">Discover</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">62</div>
+				</li>
+				<li class="b-atms__atm b-atms__atm_active">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Уралтрансбанк</p>
+					<p class="b-atms__address">ст. метро «Геологическая»</p>
+					<p class="b-atms__time b-atms__time_off-time_yes">9:00—21:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> доллары, рубли.</p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_mc">Master Card</li>
+						<li class="b-services__elem b-services__elem_type_ae">American Express</li>
+						<li class="b-services__elem b-services__elem_type_discover">Discover</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">31</div>
+				</li>
+				<li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Банк Уралсиб</p>
+					<p class="b-atms__address">ул. Карла Либкнехта, 23</p>
+					<p class="b-atms__time">Работает до 23:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> рубли. <b>Cash in.</b></p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">1</div>
+				</li>
+				<li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Уралтрансбанк</p>
+					<p class="b-atms__address">ст. метро «Площадь 1905 г.»</p>
+					<p class="b-atms__time b-atms__time_off-time_yes">5:00—19:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> доллары, рубли.</p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_mc">Master Card</li>
+						<li class="b-services__elem b-services__elem_type_ae">American Express</li>
+						<li class="b-services__elem b-services__elem_type_discover">Discover</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">151</div>
+				</li>
+				<li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Банк Петрокоммерц</p>
+					<p class="b-atms__address">Пр-т Космонавтов, 104 (ГУЗ ОБВЛ «Озеро «Чусовское»)</p>
+					<p class="b-atms__time">Работает до 23:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> доллары, рубли. <b>Cash in.</b></p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_mc">Master Card</li>
+						<li class="b-services__elem b-services__elem_type_ae">American Express</li>
+						<li class="b-services__elem b-services__elem_type_discover">Discover</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">87</div>
+				</li>
+				<li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Банк Уралсиб</p>
+					<p class="b-atms__address">ул. Карла Либкнехта, 23</p>
+					<p class="b-atms__time">Работает до 23:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> рубли.</p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_mc">Master Card</li>
+						<li class="b-services__elem b-services__elem_type_ae">American Express</li>
+						<li class="b-services__elem b-services__elem_type_discover">Discover</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">62</div>
+				</li>
+				<li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Уралтрансбанк</p>
+					<p class="b-atms__address">ст. метро «Геологическая»</p>
+					<p class="b-atms__time b-atms__time_off-time_yes">9:00—21:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> доллары, рубли.</p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_mc">Master Card</li>
+						<li class="b-services__elem b-services__elem_type_ae">American Express</li>
+						<li class="b-services__elem b-services__elem_type_discover">Discover</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">31</div>
+				</li>
+				<li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Банк Уралсиб</p>
+					<p class="b-atms__address">ул. Карла Либкнехта, 23</p>
+					<p class="b-atms__time">Работает до 23:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> рубли. <b>Cash in.</b></p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">1</div>
+				</li>
+				<li class="b-atms__atm">
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">Уралтрансбанк</p>
+					<p class="b-atms__address">ст. метро «Площадь 1905 г.»</p>
+					<p class="b-atms__time b-atms__time_off-time_yes">5:00—19:00</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> доллары, рубли.</p>
+					<ul class="b-services">
+						<li class="b-services__elem b-services__elem_type_visa">Visa</li>
+						<li class="b-services__elem b-services__elem_type_mc">Master Card</li>
+						<li class="b-services__elem b-services__elem_type_ae">American Express</li>
+						<li class="b-services__elem b-services__elem_type_discover">Discover</li>
+						<li class="b-services__elem b-services__elem_type_maestro">Maestro</li>
+					</ul>
+					<div class="b-atms__placemark">151</div>
+				</li> -->
+			</ul>
+			<div class="map-list__map">
+				<div id="map" style="width: 100%;height: 100%;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var myMap;
+
+	function mapInit() {
+		myMap = new ymaps.Map ("map", {
+			center: [56.841379, 60.603059],
+			zoom: 13,
+		});
+	}
+
+	$(function() {
+		var $map = $('.map-list__map'),
+			$atms = $('.b-atms');
+
+		$map.height($(window).height() - $map.offset().top);
+		$atms.height($(window).height() - $atms.offset().top);
+
+		ymaps.ready(mapInit);
+	});
+
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
