@@ -169,32 +169,37 @@
 	outline: 1px dotted #999;
 }
 
+.b-search__input-wrap .dropdown-menu,
 .suggests {
 	position: absolute;
 	top: 30px;
 	left: 0;
-	display: none;
+	z-index: 2;
+	overflow-y: scroll;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 90%;
 	background-color: #fff;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
 	font-size: 13px;
+	/*max-height: 200px;*/
+	width: 90%;
 }
 
+.b-search__input-wrap .dropdown-menu li,
 .suggests__elem {
+	overflow: hidden;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
 	height: 20px;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	line-height: 20px;
 	cursor: pointer;
 }
 
-.b-search__input:focus + .suggests {
-	display: block;
-}
-
+.b-search__input-wrap .dropdown-menu li.active,
 .suggests__elem:hover {
 	background-color: #fbf290;
 }
@@ -222,8 +227,11 @@
 
 .b-search__bank-names {
 	display: inline-block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	margin-top: 12px;
 	margin-right: 24px;
+	padding-right: 10px;
 	width: 30%;
 	vertical-align: top;
 }
@@ -235,7 +243,6 @@
 
 .tags {
 	margin-left: 55px;
-	/*width: 1px;*/
 }
 
 .tags_entity_banks {
@@ -243,26 +250,39 @@
 }
 
 .tags__tag {
+	position: relative;
 	display: inline-block;
+	overflow: hidden;
 	margin-right: 5px;
 	margin-bottom: 7px;
-	padding: 0 5px;
+	padding-right: 20px;
+	padding-left: 5px;
+	max-width: 100%;
 	height: 21px;
 	border-radius: 2px;
 	background-color: #bcc1ac;
 	color: #fff;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	white-space: nowrap;
 	font-size: 13px;
 	line-height: 21px;
-	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .tags__close {
+	position: absolute;
+	top: 0;
+	right: 0;
 	margin-left: 5px;
+	width: 20px;
+	height: 21px;
+	text-align: center;
 	font-weight: bold;
 	font-size: 12px;
-}
-
-.tags__tag:hover .tags__close {
-	/*color: #f00;*/
+	line-height: 21px;
+	cursor: pointer;
 }

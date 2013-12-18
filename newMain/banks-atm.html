@@ -7,32 +7,31 @@
 	<script src="../bower_components/jquery/jquery.js"></script>
 	<script src="js/less-1.4.2.min.js"></script>
 	<script src="../bower_components/angular/angular.js"></script>
+	<script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap-custom-tpls-0.7.0.min.js"></script>
 	<script src="js/banks-atm-controllers.js"></script>
 	<script src="http://api-maps.yandex.ru/2.1-dev/?load=package.standard&lang=ru-RU"></script>
 </head>
 <body>
 <div class="layout__base">
 	<div class="grid">
-		<div class="grid__module grid__module_col_1 grid__module_span_90 map-list" ng-app="atmApp">
+		<div class="grid__module grid__module_col_1 grid__module_span_90 map-list" ng-app="atmApp" ng-controller="BankListCtrl">
 			<form action="#" class="b-search">
 				<div class="b-search__row">
 					<span class="b-search__input-wrap">
-						<input type="text" name="atm-search-name" id="atm-search-name" class="b-search__input" placeholder="Начните вводить название банка">
-						<ul class="suggests">
-							<li class="suggests__elem">Мясо</li>
-							<li class="suggests__elem">Почта России</li>
-							<li class="suggests__elem">Сумерки: Рассвет</li>
-							<li class="suggests__elem">Burial: Come Down to Us</li>
-							<li class="suggests__elem">3 Мушкетера</li>
-							<li class="suggests__elem">Мясо</li>
-							<li class="suggests__elem">Почта России</li>
-							<li class="suggests__elem">Сумерки: Рассвет</li>
-							<li class="suggests__elem">Burial: Come Down to Us</li>
-							<li class="suggests__elem">3 Мушкетера</li>
-						</ul>
+						<input
+							ng-model="bankQuery.name"
+							typeahead="bank.name for bank in banks | filter:$viewValue | limitTo:15"
+							typeahead-wait-ms="200"
+							typeahead-on-select="tpy()"
+							type="text"
+							name="atm-search-name"
+							id="atm-search-name"
+							class="b-search__input"
+							placeholder="Начните вводить название банка"
+							autocomplete="off">
 					</span>
 					<input type="button" value="Выбрать районы" class="b-search__button button button_color_grey">
-					<input type="checkbox" name="atm-search-cash-in" id="atm-search-cash-in" class="b-search__checkbox">
+					<input type="checkbox" name="atm-search-cash-in" class="b-search__checkbox">
 					<label for="atm-search-cash-in" class="b-search__label">Cash-in</label>
 					<input type="checkbox" name="atm-search-are-working" id="atm-search-are-working" class="b-search__checkbox">
 					<label for="atm-search-are-working" class="b-search__label">Работают сейчас</label>
@@ -40,15 +39,7 @@
 				<div class="b-search__bank-names">
 					<span class="b-search__list-label">Банки:</span>
 					<ul class="tags tags_entity_banks">
-						<li class="tags__tag">Альфа банк<span class="tags__close">✕</span></li>
-						<li class="tags__tag">Банк Петрокоммерц<span class="tags__close">✕</span></li>
-						<li class="tags__tag">СМП-Банк<span class="tags__close">✕</span></li>
-						<li class="tags__tag">Банк Антонокоммерц<span class="tags__close">✕</span></li>
-						<li class="tags__tag">БФГ Банк<span class="tags__close">✕</span></li>
-						<li class="tags__tag">УБРиР<span class="tags__close">✕</span></li>
-						<li class="tags__tag">ФАК Банк<span class="tags__close">✕</span></li>
-						<li class="tags__tag">Сбербанк<span class="tags__close">✕</span></li>
-						<li class="tags__tag">Шпротбанк<span class="tags__close">✕</span></li>
+						<li ng-repeat="bank in banks" ng-show="bank.show" class="tags__tag">{{bank.name}}<span ng-click="bank.show=false" class="tags__close">✕</span></li>
 					</ul>
 				</div>
 				<div class="b-search__bank-names">
@@ -63,8 +54,9 @@
 					</ul>
 				</div>
 			</form>
-			<ul class="b-atms" ng-controller="ATMListCtrl">
-				<li class="b-atms__atm" ng-repeat="atm in atms">
+			<input ng-repeat="bank in banks" ng-model="bank.show" type="checkbox" name="bank" id="bank{{$index}}"><br>
+			<ul class="b-atms">
+				<li class="b-atms__atm" ng-repeat="atm in atms | filter:selected">
 					<p class="b-atms__entity">Банкомат</p>
 					<p class="b-atms__bank">{{atm.name}}</p>
 					<p class="b-atms__address">{{atm.address}}</p>
