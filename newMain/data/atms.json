@@ -6,7 +6,7 @@
 	"currency": "$, r",
 	"cashIn": true,
 	"services": ["visa", "mc", "ae", "discover", "maestro"]
-},{
+}, {
 	"bank": "УБРиР",
 	"address": "ул. Толмачева, 23",
 	"coords": [56.840879, 60.608547],
@@ -52,7 +52,7 @@
 	"coords": [56.844522, 60.619674],
 	"workTime": "пн-пт 09:00-19:00, сб 09:00-17:00, вс 09:00-15:00",
 	"currency": "r",
-	"cashIn": false,
+	"cashIn": true,
 	"services": ["visa", "mc", "ae", "discover", "maestro"]
 }, {
 	"bank": "РОСБАНК",
@@ -84,7 +84,7 @@
 	"coords": [56.830880, 60.616646],
 	"workTime": "круглосуточно",
 	"currency": "r",
-	"cashIn": false,
+	"cashIn": true,
 	"services": ["visa", "mc", "ae", "discover", "maestro"]
 }, {
 	"bank": "УБРиР",
