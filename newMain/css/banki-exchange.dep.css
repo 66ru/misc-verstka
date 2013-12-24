@@ -3498,7 +3498,7 @@ a.b-btn__link,
   display: inline-block;
   width: 9px;
   height: 4px;
-  background: url(less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
+  background: url(../css/less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
   content: '';
   vertical-align: middle;
   position: absolute;
@@ -3511,7 +3511,7 @@ a.b-btn__link,
   display: inline-block;
   width: 9px;
   height: 4px;
-  background: url(less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
+  background: url(../css/less/blocks/b-bank-exchange-table/img/b-bank-exchange-table-arr.png);
   background-position: 0 -5px;
   content: '';
   vertical-align: middle;
