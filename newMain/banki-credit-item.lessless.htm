@@ -56,6 +56,7 @@ _V_.options.flash.swf = "http://t.66.ru/external/video-js/video-js.swf?137518631
 	<!--link rel="stylesheet/less" type="text/css" href="css/less/blocks/i-branding/css/i-branding_kinopoisk.old.less" /-->
 
 	<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
+
 	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim.js" type="text/javascript"></script>
 	<script src="css/less/blocks/b-header-menu/js/jquery-menu-stretch.js" type="text/javascript"></script>
 	<script src="css/less/blocks/b-header-menu/js/jquery.menu-aim-init.js" type="text/javascript"></script>
@@ -75,6 +76,7 @@ _V_.options.flash.swf = "http://t.66.ru/external/video-js/video-js.swf?137518631
 
 
 	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU&ns=YMaps" type="text/javascript"></script>
+	<script src="js/js-format-thousands.js"></script>
  </head>
 
  <body class="page-fixed-right i-branding">
@@ -485,6 +487,39 @@ _V_.options.flash.swf = "http://t.66.ru/external/video-js/video-js.swf?137518631
 
 
 		<div class="b-bank-item-creditDetails">
+
+
+			<!-- credit-calculator -->
+			<form action="#" class="b-cc">
+				<div class="b-cc__wrap">
+					<p class="b-cc__header">Кредитный калькулятор</p>
+					<p class="b-cc__subheader">«Образовательный кредит с&nbsp;государственным субсидированием»</p>
+					<div class="b-cc__inner">
+						<label for="cc-amount" class="b-cc__label">Требуемая сумма</label>
+						<input type="text" name="cc-amount" id="cc-amount" class="b-cc__input js-format-thousands" />
+						<select name="cc-currency" id="cc-currency" class="b-cc__select b-cc__select_short">
+							<option value="0">рублей</option>
+							<option value="1">долларов</option>
+							<option value="2">евро</option>
+						</select>
+						<label for="cc-period" class="b-cc__label">Срок кредита</label>
+						<select name="cc-period" id="cc-period" class="b-cc__select">
+							<option value="0">от 1 до 3 месяцев</option>
+							<option value="1">от 3 до 6 месяцев</option>
+							<option value="2">от 6 месяцев до 1 года</option>
+							<option value="3">от 1 до 2 лет</option>
+							<option value="4">от 2 до 3 лет</option>
+							<option value="5">более 3 лет</option>
+						</select>
+						<p class="b-cc__info"><span class="b-cc__info b-cc__labl">Выплата в месяц</span>45&thinsp;300 долл.</p>
+						<p class="b-cc__info"><span class="b-cc__info b-cc__labl">Переплата</span>345&thinsp;300 долл.</p>
+					</div>
+					<input type="submit" value="Оформить заявку" class="button button_color_green" /><br />
+					<a href="#" class="b-cc__go-another">Подобрать другой кредит</a>
+				</div>
+			</form>
+			<!-- /credit-calculator -->
+
 			<div class="b-bank-item-creditDetails__row">
 				<div class="b-bank-item-creditDetails__col1 b-bank-item-creditDetails__label">Сумма кредита</div>
 				<div class="b-bank-item-creditDetails__col2 b-bank-item-creditDetails__text">от 1 000 000 до 5 000 000 рублей<br />от 3000 долларов до 10 000 долларов</div>
@@ -807,7 +842,7 @@ _V_.options.flash.swf = "http://t.66.ru/external/video-js/video-js.swf?137518631
 
 
 
-
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>

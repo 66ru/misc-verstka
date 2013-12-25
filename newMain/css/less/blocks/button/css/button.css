@@ -90,3 +90,16 @@
 	background: linear-gradient(to bottom, #f17f00 0%,#f48900 95%, #f9a600 100%);
 	color: white;
 }
+
+.button_color_green {
+	border-top: 1px solid #93b700;
+	border-bottom: 1px solid #5a8600;
+	background: #94b800;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#94b800), color-stop(100%,#5a8600));
+	background: -webkit-linear-gradient(top,  #94b800 0%,#5a8600 100%);
+	background: -o-linear-gradient(top,  #94b800 0%,#5a8600 100%);
+	background: -webkit-linear-gradient(top, #94b800 0%, #5a8600 100%);
+	background: -o-linear-gradient(top, #94b800 0%, #5a8600 100%);
+	background: linear-gradient(to bottom,  #94b800 0%,#5a8600 100%);
+	color: #fff;
+}

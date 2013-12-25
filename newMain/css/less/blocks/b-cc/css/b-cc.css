@@ -1,0 +1,96 @@
+.b-cc {
+	float: right;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: -1px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background-color: #fff;
+}
+
+.b-cc__wrap {
+	padding: 15px 10px;
+	padding-bottom: 15px;
+	width: 270px;
+	background-color: #e1f2ba;
+	text-align: center;
+}
+
+.b-cc__header {
+	margin-bottom: 6px;
+	font-size: 18px;
+}
+
+.b-cc__subheader {
+	margin: 0 10px;
+	font-size: 12px;
+}
+
+a.b-cc__go-another {
+	color: #55750c;
+}
+
+.b-cc .button {
+	margin-bottom: 10px;
+	width: 200px;
+	height: 31px;
+	font-size: 18px;
+}
+
+.b-cc__inner {
+	margin: 10px 0;
+	padding: 10px 20px 5px;
+	background-color: #fff;
+	text-align: left;
+}
+
+.b-cc__label {
+	display: block;
+	margin-bottom: 6px;
+	color: #737373;
+	font-size: 12px;
+}
+
+.b-cc__input {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	width: 107px;
+	height: 26px;
+	vertical-align: top;
+	text-align: right;
+	font-size: 18px;
+}
+
+.b-cc__select {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	height: 26px;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+.b-cc__select_short {
+	width: 90px;
+}
+
+.b-cc__info {
+	clear: both;
+	margin-bottom: 10px;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 18px;
+}
+
+.b-cc__labl {
+	float: left;
+	color: #737373;
+	font-size: 12px;
+	line-height: 18px;
+}
