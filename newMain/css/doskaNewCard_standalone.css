@@ -118,6 +118,7 @@
   line-height: 1.2;
 }
 .b-doska-ncard__info {
+  z-index: 1;
   float: right;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
