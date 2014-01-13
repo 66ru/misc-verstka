@@ -81,16 +81,22 @@ a.b-cc__go-another {
 }
 
 .b-cc__info {
-	clear: both;
 	margin-bottom: 10px;
 	text-align: right;
 	white-space: nowrap;
 	font-size: 18px;
+	line-height: 18px;
+}
+
+.b-cc__info:after {
+	display: block;
+	clear: both;
+	content: '';
 }
 
 .b-cc__labl {
 	float: left;
+	margin: 0;
 	color: #737373;
 	font-size: 12px;
-	line-height: 18px;
 }
