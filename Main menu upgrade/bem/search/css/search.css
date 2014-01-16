@@ -1,0 +1,78 @@
+.search {
+	position: relative;
+	padding-top: 10px;
+}
+
+.search__input {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 30px;
+	padding-left: 5px;
+	width: 60%;
+	height: 25px;
+	border: none;
+	border-radius: 4px;
+	background-color: #afc971;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .4);
+	color: #6c7c46;
+	font-size: 12px;
+	line-height: 25px;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.search__input:focus {
+	width: 90%;
+	outline: none;
+	background-color: #fff;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .4);
+	color: #222;
+}
+
+.search__input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.search__input::-moz-placeholder {
+	color: #fff;
+}
+
+.search__input:-ms-input-placeholder {
+	color: #fff;
+}
+
+.search__input::-ms-clear {
+	width: 0;
+}
+
+.search__submit {
+	position: absolute;
+	right: 40%;
+	bottom: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 25px;
+	border: none;
+	border-radius: 0 4px 4px 0;
+	background: none center center no-repeat #6a920f;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAAt0lEQVR4AW3NoUqDYRhH8T+aRAzaBLMYDBbXbZ+b6UuCzS4Gr2FGi81gcpegV+ANGISZLG8YBm0KOvgZtpcPZf9TnsMJT7rZdOMbjGyLRGUfPLl0C466uOoLPbHn2JoXbNV4NU9xgaFl3Nf4qaj3Dk5cs5TZVjJO3TjnmaSk/vTuTf7wTD1P0delXdxVGYB2bgeYWp9J4wfw4dEEUz2JOAS0zryiGNoQiQYwkP8E0JdF8UHRyCJ+AVUr836HVOzzAAAAAElFTkSuQmCC);
+	color: #fff;
+	text-indent: -9999px;
+	font-size: 10px;
+	cursor: pointer;
+	-webkit-transition: right .3s;
+	-o-transition: right .3s;
+	transition: right .3s;
+}
+
+.search__input:focus + .search__submit {
+	right: 10%;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABJ0lEQVQoz2NgwALS+kUkM3rFZmX2iP4C4v9g3Cu2NLtXRI0BF8jqETaFK+4RvZjZK9oGpOfBxDJ6RXwwNJV0i3MDJb+DFfQJm4EN6hI1yOgWiUjqFOEFit8EyeV2CsmgaMzoEetD1gQREymG2tYauoqBGcTO6hbdiqIRKPgNiJ9g+LlHWANsYI9IdFav6GQQG10jSHIPNr9ndIvmZfeKO2d2i5Zj0/gOKPGKAQ/I7BG7iqExo1c0CSSY3ivqhd1WcR2wH3vElqCa1i3iDQt2oGQQSjT1ijhC5f5ktvMLIiT6RD2Agr+R4hCE3wPj8UhWj+gLmCbkEAf5zRNZA8g2IJ0LxPehYk9A0ZHcxyeEbhPCFqBzGYgByJpwBQoujdtATgHZzEACAACCN6riv0DonwAAAABJRU5ErkJggg==);
+}

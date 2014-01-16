@@ -1,0 +1,27 @@
+.flat-menu__elem {
+	height: 32px;
+	white-space: nowrap;
+	line-height: 32px;
+}
+
+.flat-menu__link {
+	display: block;
+	padding-right: 30px;
+	padding-left: 10px;
+	color: #3f530c;
+	text-decoration: none;
+}
+
+.flat-menu__link:link {
+	color: #3f530c;
+	text-decoration: none;
+}
+
+.flat-menu__link:visited {
+	color: #3f530c;
+}
+
+.flat-menu__link:hover {
+	background: #e1f2ba;
+	color: #3f530c;
+}
