@@ -39,7 +39,7 @@
 
 		function initMenu() {
 			domMenu.removeClass(classes.menuNoJs);
-			moreWidth = domMore.outerWidth();
+			moreWidth = domMore.outerWidth() + 11;
 		}
 
 
