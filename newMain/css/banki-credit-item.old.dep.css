@@ -2097,7 +2097,7 @@ a.b-tabs__item__link {
   line-height: 18px;
 }
 .b-text__h1 {
-  margin: 13px 0 20px;
+  margin: 20px 0 15px;
   font: normal 24px/18px Arial, Helvetica, Sans;
 }
 .b-text__h3 {
@@ -3811,6 +3811,9 @@ a.b-btn__link,
 a.b-cc__go-another {
   color: #55750c;
 }
+.b-cc__promo {
+  color: #55750c;
+}
 .b-cc .button {
   margin-bottom: 10px;
   width: 200px;
@@ -3829,12 +3832,23 @@ a.b-cc__go-another {
   color: #737373;
   font-size: 12px;
 }
+.b-cc__postlabel {
+  margin-left: -4px;
+  font-size: 13px;
+  line-height: 26px;
+}
+.b-cc__checklabel {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
 .b-cc__input {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 0;
   width: 107px;
   height: 26px;
@@ -3846,8 +3860,9 @@ a.b-cc__go-another {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 0;
+  max-width: 80%;
   height: 26px;
   vertical-align: top;
   font-size: 16px;
@@ -3872,4 +3887,11 @@ a.b-cc__go-another {
   margin: 0;
   color: #737373;
   font-size: 12px;
+}
+.b-cc__labl_warning {
+  text-align: left;
+  white-space: normal;
+}
+.b-cc__checkbox {
+  margin: 0 6px 0 0;
 }
