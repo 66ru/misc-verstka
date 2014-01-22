@@ -5,11 +5,12 @@
 	<title>Банкоматы</title>
 	<link rel="stylesheet/less" href="css/banks-atm.less">
 	<script src="../bower_components/jquery/jquery.js"></script>
-	<script src="js/less-1.4.2.min.js"></script>
+	<script src="../bower_components/less.js/dist/less-1.6.1.min.js"></script>
+	<!-- // <script src="https://raw2.github.com/typicaljoe/taffydb/master/taffy-min.js"></script> -->
 	<script src="../bower_components/angular/angular.js"></script>
 	<script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap-custom-tpls-0.7.0.min.js"></script>
-	<script src="js/banks-atm-controllers.js"></script>
 	<script src="http://api-maps.yandex.ru/2.1.3/?load=package.standard,package.clusters&lang=ru-RU"></script>
+	<script src="js/atms-app.js"></script>
 </head>
 <body>
 <div class="layout__base">
@@ -58,17 +59,17 @@
 			</form>
 
 			<ul class="b-atms" ng-cloak>
-				<li class="b-atms__atm" ng-repeat="atm in atms | filter:selectedBanks | filter:bankQuery.cashIn" yam-elem>
+				<!-- <li class="b-atms__atm" ng-repeat="atm in listedAtms" listed> | filter:selectedBanks | filter:bankQuery.cashIn" listed-placemarks>
 					<p class="b-atms__entity">Банкомат</p>
-					<p class="b-atms__bank">{{atm.bank}}</p>
-					<p class="b-atms__address">{{atm.address}}</p>
-					<p class="b-atms__time">{{atm.workTime}}</p>
-					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> {{atm.currency}}. <b>{{atm.cashIn}}</b></p>
+					<p class="b-atms__bank">{{atm.atmData.bank}}</p>
+					<p class="b-atms__address">{{atm.atmData.address}}</p>
+					<p class="b-atms__time">{{atm.atmData.workTime}}</p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> {{atm.atmData.currency}}. <b>{{atm.atmData.cashIn}}</b></p>
 					<ul class="b-services">
-						<li ng-repeat="service in atm.services" class="b-services__elem b-services__elem_type_{{service}}">{{service}}</li>
+						<li ng-repeat="service in atm.atmData.services" class="b-services__elem b-services__elem_type_{{service}}">{{service}}</li>
 					</ul>
 					<div class="b-atms__placemark">{{$index + 1}}</div>
-				</li>
+				</li> -->
 				<!-- <li class="b-atms__atm">
 					<p class="b-atms__entity">Банкомат</p>
 					<p class="b-atms__bank">Банк Уралсиб</p>
@@ -206,33 +207,7 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	var map, clusterer;
 
-	function mapInit() {
-		map = new ymaps.Map ("map", {
-			center: [56.841379, 60.603059],
-			zoom: 13,
-		});
-
-		clusterer = new ymaps.Clusterer({
-			preset: 'islands#darkGreenClusterIcons',
-			iconColor: '#587f02'
-		});
-		map.geoObjects.add(clusterer);
-	}
-
-	$(function() {
-		var $map = $('.map-list__map'),
-			$atms = $('.b-atms');
-
-		$map.height($(window).height() - $map.offset().top);
-		$atms.height($(window).height() - $atms.offset().top);
-
-		ymaps.ready(mapInit);
-	});
-
-</script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

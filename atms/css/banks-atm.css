@@ -1933,7 +1933,7 @@ a.b-teaser-orange-text {
 .b-news-item {
   font-size: 13px;
   line-height: 18px;
-  background: url(less/blocks/b-news-item/img/b-news-item-sprite.png);
+  background: url(../css/less/blocks/b-news-item/img/b-news-item-sprite.png);
   background-position: -211px 6px;
   background-repeat: no-repeat;
   padding-left: 18px;
@@ -2111,7 +2111,7 @@ a.b-news-item__activity:hover {
 }
 .b-news-item_layout_annonce .b-news-item__pic__shadow {
   display: block;
-  background: url(less/blocks/b-news-item/img/b-news-gradient.png) 0 bottom repeat-x;
+  background: url(../css/less/blocks/b-news-item/img/b-news-gradient.png) 0 bottom repeat-x;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2152,11 +2152,11 @@ a.b-news-item__activity:hover {
   color: #808080;
 }
 .b-news-item_size_big .b-news-item__pic__shadow {
-  background-image: url(less/blocks/b-news-item/img/b-news-gradient-big.png);
+  background-image: url(../css/less/blocks/b-news-item/img/b-news-gradient-big.png);
 }
 .b-news-item-icon {
   display: inline-block;
-  background: url(less/blocks/b-news-item/img/b-news-item-sprite.png);
+  background: url(../css/less/blocks/b-news-item/img/b-news-item-sprite.png);
   margin: 0 3px;
   position: relative;
   top: 2px;
@@ -2675,7 +2675,7 @@ a.b-btn__link,
   line-height: 18px;
 }
 .b-text__h1 {
-  margin: 13px 0 20px;
+  margin: 20px 0 15px;
   font: normal 24px/18px Arial, Helvetica, Sans;
 }
 .b-text__h3 {
@@ -3510,14 +3510,21 @@ a.b-health__links__item:hover {
   position: relative;
   padding: 10px 20px;
   border-top: 1px solid #cacaca;
+  cursor: pointer;
 }
 .b-atms__atm:first-child {
   border-top-color: transparent;
+}
+.b-atms__atm:hover {
+  background-color: #f8f8f8;
 }
 .b-atms__atm_active {
   border-top-color: transparent;
   background: #fbf290;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.b-atms__atm_active:hover {
+  background-color: #fbf290;
 }
 .b-atms__atm_active + .b-atms__atm {
   border-top-color: transparent;
@@ -3644,29 +3651,34 @@ a.b-health__links__item:hover {
 .b-search__input:focus {
   outline: 1px dotted #999;
 }
+.b-search__input-wrap .dropdown-menu,
 .suggests {
   position: absolute;
   top: 30px;
   left: 0;
-  display: none;
+  z-index: 2;
+  overflow-y: scroll;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 90%;
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
   font-size: 13px;
 }
+.b-search__input-wrap .dropdown-menu li,
 .suggests__elem {
+  overflow: hidden;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 10px;
   height: 20px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   line-height: 20px;
   cursor: pointer;
 }
-.b-search__input:focus + .suggests {
-  display: block;
-}
+.b-search__input-wrap .dropdown-menu li.active,
 .suggests__elem:hover {
   background-color: #fbf290;
 }
@@ -3689,8 +3701,11 @@ a.b-health__links__item:hover {
 }
 .b-search__bank-names {
   display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 12px;
   margin-right: 24px;
+  padding-right: 10px;
   width: 30%;
   vertical-align: top;
 }
@@ -3700,30 +3715,43 @@ a.b-health__links__item:hover {
 }
 .tags {
   margin-left: 55px;
-  /*width: 1px;*/
 }
 .tags_entity_banks {
   margin-left: 45px;
 }
 .tags__tag {
+  position: relative;
   display: inline-block;
+  overflow: hidden;
   margin-right: 5px;
   margin-bottom: 7px;
-  padding: 0 5px;
+  padding-right: 20px;
+  padding-left: 5px;
+  max-width: 100%;
   height: 21px;
   border-radius: 2px;
   background-color: #bcc1ac;
   color: #fff;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 13px;
   line-height: 21px;
-  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .tags__close {
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-left: 5px;
+  width: 20px;
+  height: 21px;
+  text-align: center;
   font-weight: bold;
   font-size: 12px;
-}
-.tags__tag:hover .tags__close {
-  /*color: #f00;*/
+  line-height: 21px;
+  cursor: pointer;
 }

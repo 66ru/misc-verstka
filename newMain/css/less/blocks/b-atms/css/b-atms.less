@@ -10,16 +10,25 @@
 	position: relative;
 	padding: 10px 20px;
 	border-top: 1px solid #cacaca;
+	cursor: pointer;
 }
 
 .b-atms__atm:first-child {
 	border-top-color: transparent;
 }
 
+.b-atms__atm:hover {
+	background-color: #f8f8f8;
+}
+
 .b-atms__atm_active {
 	border-top-color: transparent;
 	background: #fbf290;
 	box-shadow: inset 0 0 4px rgba(0, 0, 0, .1);
+}
+
+.b-atms__atm_active:hover {
+	background-color: #fbf290;
 }
 
 .b-atms__atm_active + .b-atms__atm {
@@ -178,10 +187,10 @@
 	overflow-y: scroll;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	width: 90%;
 	background-color: #fff;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
 	font-size: 13px;
-	width: 90%;
 }
 
 .b-search__input-wrap .dropdown-menu li,
