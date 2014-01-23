@@ -1,0 +1,12 @@
+.flat-sub:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.flat-sub__elem {
+	display: inline-block;
+	margin-right: 40px;
+	padding-bottom: 15px;
+	vertical-align: top;
+}

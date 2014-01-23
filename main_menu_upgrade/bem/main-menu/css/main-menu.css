@@ -54,6 +54,7 @@
 
 .main-menu__more {
 	position: relative;
+	display: block;
 	padding: 0 10px;
 	height: 100%;
 	color: #fff;
@@ -126,6 +127,10 @@
 	background: #f2ffd3;
 	box-shadow: 0 17px 13px rgba(0, 0, 0, .2);
 	line-height: 1;
+}
+
+.main-menu__sub_padding-bottom_no {
+	padding-bottom: 0;
 }
 
 .main-menu__sub_more {

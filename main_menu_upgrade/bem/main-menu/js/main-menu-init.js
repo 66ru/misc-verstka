@@ -5,17 +5,13 @@
 			domElems = domMenu.find('.main-menu__elem'),
 			domMore = domMenu.find('.main-menu__more'),
 			domGlobalWidthSubs = domMenu.find('.main-menu__sub_width_global'),
-			domMoreSubElems = domMore.find('.flat-menu__elem'),
+			domMoreSubElems = $('.flat-sub__elem'),
 
-			menuWidth,
-			moreWidth,
-
-			widths = [],
-			classes = {};
+			menuWidth, moreWidth,
+			widths = [], classes = {};
 
 		classes.currentElem = 'main-menu__elem_current';
 		classes.menuNoJs = 'main-menu_js_no';
-
 
 		function activate(row) {
 			var $this = $(row);
@@ -39,7 +35,7 @@
 
 		function initMenu() {
 			domMenu.removeClass(classes.menuNoJs);
-			moreWidth = domMore.outerWidth() + 11;
+			moreWidth = domMore.outerWidth() + 11; // + arrow image width
 		}
 
 
