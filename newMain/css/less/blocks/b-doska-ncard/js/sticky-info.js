@@ -1,4 +1,4 @@
-(function() {
+(function($) {
 var isMobile = {
 	Android: function() {
 		return navigator.userAgent.match(/Android/i) ? true : false;
@@ -18,7 +18,7 @@ var isMobile = {
 };
 
 if (!isMobile.any()) {
-	jQuery(window).on('load', function () {
+	jQuery(document).on('ready', function () {
 		$('.b-doska-ncard__info').each(function() {
 
 			var $window = $(window),
@@ -38,6 +38,12 @@ if (!isMobile.any()) {
 			});
 
 			$window.on('resize', function() {
+				makeStatic();
+				getParams();
+				repos($window.scrollTop());
+			});
+
+			$window.on('load', function() {
 				makeStatic();
 				getParams();
 				repos($window.scrollTop());
@@ -95,4 +101,4 @@ if (!isMobile.any()) {
 		});
 	});
 }
-})();
+})(jQuery);
