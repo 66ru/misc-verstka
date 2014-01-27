@@ -3,9 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Банкоматы</title>
-	<link rel="stylesheet/less" href="css/banks-atm.less">
+	<link rel="stylesheet" href="css/banks-atm.css">
 	<script src="../bower_components/jquery/jquery.js"></script>
-	<script src="../bower_components/less.js/dist/less-1.6.1.min.js"></script>
 	<!-- // <script src="https://raw2.github.com/typicaljoe/taffydb/master/taffy-min.js"></script> -->
 	<script src="../bower_components/angular/angular.js"></script>
 	<script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap-custom-tpls-0.7.0.min.js"></script>
@@ -59,7 +58,7 @@
 			</form>
 
 			<ul class="b-atms" ng-cloak>
-				<!-- <li class="b-atms__atm" ng-repeat="atm in listedAtms" listed> | filter:selectedBanks | filter:bankQuery.cashIn" listed-placemarks>
+				<li class="b-atms__atm" ng-repeat="atm in listedAtms | filter:visible | limitTo:20" listed> <!-- | filter:selectedBanks | filter:bankQuery.cashIn" listed-placemarks> -->
 					<p class="b-atms__entity">Банкомат</p>
 					<p class="b-atms__bank">{{atm.atmData.bank}}</p>
 					<p class="b-atms__address">{{atm.atmData.address}}</p>
@@ -69,7 +68,7 @@
 						<li ng-repeat="service in atm.atmData.services" class="b-services__elem b-services__elem_type_{{service}}">{{service}}</li>
 					</ul>
 					<div class="b-atms__placemark">{{$index + 1}}</div>
-				</li> -->
+				</li>
 				<!-- <li class="b-atms__atm">
 					<p class="b-atms__entity">Банкомат</p>
 					<p class="b-atms__bank">Банк Уралсиб</p>
@@ -202,7 +201,7 @@
 			</ul>
 
 			<div class="map-list__map">
-				<div id="map" style="width: 100%;height: 100%;"></div>
+				<div id="map" style="width: 100%; height: 100%;" atm-map></div>
 			</div>
 		</div>
 	</div>
