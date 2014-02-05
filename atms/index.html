@@ -7,7 +7,7 @@
 	<script src="../bower_components/jquery/jquery.js"></script>
 	<script src="../bower_components/angular/angular.js"></script>
 	<script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap-custom-tpls-0.7.0.min.js"></script>
-	<script src="http://api-maps.yandex.ru/2.1.3/?load=package.standard,package.clusters&lang=ru-RU"></script>
+	<script src="https://api-maps.yandex.ru/2.1.3/?load=package.standard,package.clusters,package.traffic&lang=ru-RU"></script>
 	<script src="js/atms-app.js"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
 							ng-model="bankQuery.name"
 							typeahead="bank.name for bank in banks | filter:$viewValue | limitTo:15"
 							typeahead-wait-ms="200"
-							typeahead-on-select="addBankToFilter()"
+							typeahead-on-select="addBankToFilter();updateMap()"
 							type="text"
 							name="atm-search-name"
 							id="atm-search-name"
@@ -29,33 +29,34 @@
 							placeholder="Начните вводить название банка"
 							autocomplete="off">
 					</span>
-					<input ng-model="bankQuery.cashIn" type="checkbox" id="atm-search-cash-in" class="b-search__checkbox">
+					<input ng-model="bankQuery.cashIn" ng-change="updateMap()" type="checkbox" id="atm-search-cash-in" class="b-search__checkbox">
 					<label for="atm-search-cash-in" class="b-search__label">Cash-in</label>
-					<input type="checkbox" name="atm-search-are-working" id="atm-search-are-working" class="b-search__checkbox">
+					<input ng-model="bankQuery.isOpen" ng-change="updateMap()" type="checkbox" name="atm-search-are-working" id="atm-search-are-working" class="b-search__checkbox">
 					<label for="atm-search-are-working" class="b-search__label">Работают сейчас</label>
 				</div>
 
 				<div class="b-search__bank-names">
 					<span class="b-search__list-label" ng-show="showBanksLabel()">Банки:</span>
 					<ul class="tags tags_entity_banks">
-						<li ng-repeat="bank in banks" ng-show="showBankTag(bank.name)" class="tags__tag">{{bank.name}}<span ng-click="hideBankTag(bank.name)" class="tags__close">✕</span></li>
+						<li ng-repeat="bank in banks" ng-show="showBankTag(bank.name)" class="tags__tag">{{bank.name}}<span ng-click="hideBankTag(bank.name);updateMap()" class="tags__close">✕</span></li>
 					</ul>
 				</div>
 			</form>
 
 			<button ng-click="increaseListLimit()">Показать больше</button><br>
 			<ul class="b-atms" ng-cloak>
-				<li class="b-atms__atm" ng-repeat="placemark in placemarksList | filter:placemarkIsVisible | limitTo:listLimit" atm-list-elem>
+				<li class="b-atms__atm" ng-repeat="placemark in listedPlacemarks | filter:placemarkIsVisible | limitTo:listLimit" atm-list-elem>
 					<p class="b-atms__entity">Банкомат</p>
 					<p class="b-atms__bank">{{placemark.atmData.bank}}</p>
 					<p class="b-atms__address">{{placemark.atmData.address}}</p>
-					<p class="b-atms__time" ng-bind="parseWorktime(placemark.atmData.workTime)"></p>
-					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> руб.{{parseCurrency(placemark.atmData.currency)}}<b ng-show="placemark.atmData.cashIn"> Cash-in</b></p>
+					<p class="b-atms__time" ng-class="workingNowClass(placemark.atmData.isOpen)" ng-bind="parseWorktime(placemark.atmData.workTime)"></p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> <span class="b-atms__rub">рубли</span>{{parseCurrency(placemark.atmData.currency)}}<b class="b-atms__b" ng-show="placemark.atmData.cashIn">, Cash-in</b></p>
 					<div class="b-atms__placemark">{{$index + 1}}</div>
 				</li>
 			</ul>
 
 			<div class="map-list__map">
+				<!-- <span class="map-list__toggle"></span> -->
 				<div id="map" style="width: 100%; height: 100%;" atm-map></div>
 			</div>
 		</div>
@@ -64,7 +65,23 @@
 
 <script>
 	$(function() {
+		var jqWindow = $(window),
+			jqMapList = $('.map-list'),
+			jqList = jqMapList.find('.b-atms'),
+			jqMap = jqMapList.find('.map-list__map');
+			// jqToggle = jqMapList.find('.map-list__toggle');
 
+		function recalcHeights() {
+			jqList.height(jqWindow.height() - jqList.offset().top);
+			jqMap.height(jqWindow.height() - jqMap.offset().top);
+		}
+
+		// jqToggle.on('click', function() {
+		// 	jqMap.toggleClass('map-list__map_expand_yes');
+		// });
+
+		jqWindow.on('resize', recalcHeights);
+		recalcHeights();
 	});
 </script>
 
