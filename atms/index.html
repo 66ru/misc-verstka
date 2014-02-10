@@ -47,7 +47,7 @@
 			<ul class="b-atms" ng-cloak>
 				<li class="b-atms__atm" ng-repeat="placemark in listedPlacemarks | filter:placemarkIsVisible | limitTo:listLimit" atm-list-elem>
 					<p class="b-atms__entity">Банкомат</p>
-					<p class="b-atms__bank">{{placemark.atmData.bank}}</p>
+					<p class="b-atms__bank">{{placemark.atmData.name}}</p>
 					<p class="b-atms__address">{{placemark.atmData.address}}</p>
 					<p class="b-atms__time" ng-class="workingNowClass(placemark.atmData.isOpen)" ng-bind="parseWorktime(placemark.atmData.workTime)"></p>
 					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> <span class="b-atms__rub">рубли</span>{{parseCurrency(placemark.atmData.currency)}}<b class="b-atms__b" ng-show="placemark.atmData.cashIn">, Cash-in</b></p>

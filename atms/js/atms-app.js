@@ -1,21 +1,37 @@
 var atmsApp = angular.module('atms', ['ui.bootstrap']);
 
-var ppp;
+atmsApp.factory('listSettings', function() {
+	return {
+		initialListLimit: 20,
+		listLimitStep: 20
+	};
+});
 
-atmsApp.controller('Ctrl', ['$scope', '$http', function($scope, $http) {
-	var initialListLimit = 20,
-		listLimitStep = 20,
+atmsApp.factory('mapSettings', function() {
+	return {
+		placemarkOptions: {
+			iconLayout: 'default#imageWithContent',
+			iconImageHref: 'img/placemark_green.svg',
+            iconImageSize: [27, 31],
+            iconImageOffset: [-13, -31]
+		}
+	};
+});
 
-		banksFilter = [];
+atmsApp.controller('Ctrl', ['$scope', '$http', '$location', 'listSettings', function($scope, $http, $location, listSettings) {
 
-	$scope.listLimit = initialListLimit;
+	$scope.$location = $location;
+
+	var banksFilter = [];
+
+	$scope.listLimit = listSettings.initialListLimit;
 	$scope.filteredPlacemarks = [];
 
 	$scope.mayRecompileList = true;
 
 	$scope.bankQuery = {
-		cashIn: false,
-		isOpen: false
+		cashIn: $location.search().cashin ? ($location.search().cashin !== 'false') : false,
+		isOpen: $location.search().isopen ? ($location.search().isopen !== 'false') : true
 	};
 
 	$http.get('data/atms.json').success(function(data) {
@@ -27,11 +43,15 @@ atmsApp.controller('Ctrl', ['$scope', '$http', function($scope, $http) {
 	});
 
 	$scope.resetListLimit = function() {
-		$scope.listLimit = initialListLimit;
+		$scope.listLimit = listSettings.initialListLimit;
 	};
 
 	$scope.increaseListLimit = function() {
-		$scope.listLimit += listLimitStep;
+		if ($scope.listLimit + listSettings.listLimitStep <= 99) {
+			$scope.listLimit += listSettings.listLimitStep;
+		} else {
+			$scope.listLimit = 99;
+		}
 	};
 
 	$scope.workingNowClass = function(isOpen) {
@@ -93,10 +113,13 @@ atmsApp.controller('Ctrl', ['$scope', '$http', function($scope, $http) {
 		}
 	};
 
+	// TODO: refactor this
 	$scope.updateMap = function() {
 		$scope.filterPlacemarks();
+		$location.search('banks', banksFilter.join(','));
+		$location.search('cashin', $scope.bankQuery.cashIn);
+		$location.search('isopen', $scope.bankQuery.isOpen);
 
-		// TODO: optimize this
 		$scope.clusterer.removeAll();
 		$scope.clusterer.add($scope.filteredPlacemarks);
 
@@ -115,6 +138,8 @@ atmsApp.controller('Ctrl', ['$scope', '$http', function($scope, $http) {
 		for (i=0; i<l; i++) {
 			var pl = $scope.filteredPlacemarks[i];
 
+			pl.atmData.index = i;
+
 			if (isInBounds(pl.geometry.getCoordinates(), bounds)) {
 				$scope.listedPlacemarks.push(pl);
 			}
@@ -127,7 +152,7 @@ atmsApp.controller('Ctrl', ['$scope', '$http', function($scope, $http) {
 	 * @return {Boolean}
 	 */
 	function okBankName(pl) {
-		return !banksFilter.length || ~banksFilter.indexOf(pl.atmData.bank);
+		return !banksFilter.length || ~banksFilter.indexOf(pl.atmData.name);
 	}
 
 	function okCashIn(pl) {
@@ -150,7 +175,7 @@ atmsApp.controller('Ctrl', ['$scope', '$http', function($scope, $http) {
 	}
 }]);
 
-atmsApp.directive('atmMap', function() {
+atmsApp.directive('atmMap', ['mapSettings', function(mapSettings) {
 	function link(scope, element, attrs) {
 		ymaps.ready(function() {
 			var clustererOptions = {
@@ -167,20 +192,20 @@ atmsApp.directive('atmMap', function() {
 				openBalloonOnClick: true,
 			};
 
-			var collectionOptions = {
-				groupByCoordinates: true,
-				gridSize: 8,
-				minClusterSize: 1,
-				clusterIcons: [{
-					href: 'img/placemark_green.svg',
-					size: [27, 31],
-					offset: [-13, -31]
-				}],
-				viewportMargin: 0,
-				clusterDisableClickZoom: true,
-				openBalloonOnClick: true,
-				zIndex: 999
-			};
+			// var collectionOptions = {
+			// 	groupByCoordinates: true,
+			// 	gridSize: 8,
+			// 	minClusterSize: 1,
+			// 	clusterIcons: [{
+			// 		href: 'img/placemark_green.svg',
+			// 		size: [27, 31],
+			// 		offset: [-13, -31]
+			// 	}],
+			// 	viewportMargin: 0,
+			// 	clusterDisableClickZoom: true,
+			// 	openBalloonOnClick: true,
+			// 	zIndex: 999
+			// };
 
 			scope.map = initMap();
 
@@ -206,49 +231,63 @@ atmsApp.directive('atmMap', function() {
 				if (scope.mayRecompileList) {
 					scope.$apply(scope.recompileList);
 				}
+
+				scope.$apply(function() {
+					scope.$location.search('lat', scope.map.getCenter()[0]);
+					scope.$location.search('long', scope.map.getCenter()[1]);
+					scope.$location.search('zoom', scope.map.getZoom());
+				});
 			});
 
-			scope.clusterer.events.add('balloonopen', function(e) {
+			scope.clusterer.events.add('balloonopen', function() {
 				scope.mayRecompileList = false;
 			});
 
-			scope.clusterer.events.add('balloonclose', function(e) {
+			scope.clusterer.events.add('balloonclose', function() {
 				scope.mayRecompileList = true;
+				$('.b-atms__atm_active').removeClass('b-atms__atm_active');
+				scope.$apply(scope.recompileList);
 			});
 
 			scope.collection.events.add('balloonopen', function(e) {
 				scope.mayRecompileList = false;
+				$('.b-atms__atm').eq(scope.listedPlacemarks.indexOf(e.originalEvent.target)).addClass('b-atms__atm_active');
 			});
 
-			scope.collection.events.add('balloonclose', function(e) {
+			scope.collection.events.add('balloonclose', function() {
 				scope.mayRecompileList = true;
+				$('.b-atms__atm_active').removeClass('b-atms__atm_active');
+				scope.$apply(scope.recompileList);
 			});
+
+			function initMap() {
+				var map = new ymaps.Map (element.attr('id'), {
+					center: [
+						scope.$location.search().lat || 56.841379,
+						scope.$location.search().long || 60.603059
+					],
+					zoom: scope.$location.search().zoom || 14
+				}, {
+					autoFitToViewport: 'always',
+					maxZoom: 16,
+					minZoom: 12
+				});
+
+				addControls(map);
+				return map;
+			}
 		});
-
-		function initMap() {
-			var map = new ymaps.Map (element.attr('id'), {
-				center: [56.841379, 60.603059],
-				zoom: 14
-			}, {
-				autoFitToViewport: 'always',
-				maxZoom: 16,
-				minZoom: 12
-			});
-
-			addControls(map);
-			return map;
-		}
 
 		function initPlacemarks() {
 			var i, l = scope.atms.length;
 			scope.allPlacemarks = [];
 
-			for(i=0; i<l; i++) { //dev
+			for(i=0; i<l; i++) {
 				var atm = scope.atms[i];
 				var placemark = new ymaps.Placemark(atm.coords, {
 					balloonContentBody: compileContentBody(atm),
-					clusterCaption: atm.bank
-				}, {});
+					clusterCaption: atm.name
+				}, mapSettings.placemarkOptions);
 
 				placemark.atmData = atm;
 				scope.allPlacemarks.push(placemark);
@@ -258,43 +297,56 @@ atmsApp.directive('atmMap', function() {
 		}
 
 		function compileContentBody(atm) {
-			return '<p class="b-atms__bank">' + atm.bank + '</p>\
+			return '<p class="b-atms__bank">' + atm.name + '</p>\
 					<p class="b-atms__address">' + atm.address + '</p>\
 					<p class="b-atms__time">' + scope.parseWorktime(atm.workTime) + '</p>\
 					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> <span class="b-atms__rub">рубли</span>' + scope.parseCurrency(atm.currency) + '<b class="b-atms__b">' + (atm.cashIn ? ', Cash-in' : '') + '</b></p>\
-					<p class="b-atms__address">' + '8-800-2000-600&nbsp;&nbsp;&nbsp;&nbsp;<a href="http:/66.ru/go/htpp://66.ru/">www.66.ru</a>' + '</p>';
+					<p class="b-atms__address">' + scope.banks[atm.bank].phone + '&nbsp;&nbsp;&nbsp;&nbsp;' + '<a href="' + scope.banks[atm.bank].href + '">' + scope.banks[atm.bank].href.replace(/^(http|https):\/\//, '') + '</a></p>';
 		}
 	}
 
 	return {
 		link: link
 	};
-});
+}]);
 
 atmsApp.directive('atmListElem', function() {
 	function link(scope, element, attrs) {
-		var placemark = scope.placemark;
+		var pl = scope.placemark;
 
-		placemark.properties.set({iconContent: scope.$index + 1});
-		if (scope.$index == 1) ppp = placemark;
+		pl.properties.set({iconContent: scope.$index + 1});
+		scope.$watch('$index', function() {
+			pl.properties.set({iconContent: scope.$index + 1});
+		});
 
-		scope.clusterer.remove(placemark);
-		scope.collection.add(placemark);
+		scope.$watch('listedPlacemarks', function() {
+			if (scope.filteredPlacemarks.indexOf(pl) !== -1) {
+				scope.clusterer.remove(pl);
+			}
+		});
+
+		scope.clusterer.remove(pl);
+		scope.collection.add(pl);
 
 		element.on('$destroy', function() {
-			scope.clusterer.add(placemark);
-			scope.collection.remove(placemark);
+			scope.collection.remove(pl);
+			if (scope.filteredPlacemarks.indexOf(pl) !== -1) {
+				scope.clusterer.add(pl);
+			}
+
+			console.log(scope.filteredPlacemarks.indexOf(pl));
 		});
 
 		element.on('click', function() {
 			$('.b-atms__atm_active').removeClass('b-atms__atm_active');
 			element.addClass('b-atms__atm_active');
 
-			var balloon = placemark.balloon;
+			var balloon = pl.balloon;
 			if (!balloon.isOpen()) {
 				balloon.open();
 			} else {
 				balloon.close();
+				element.removeClass('b-atms__atm_active');
 			}
 		});
 	}
