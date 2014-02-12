@@ -297,7 +297,7 @@ atmsApp.directive('atmMap', ['mapSettings', function(mapSettings) {
 
 			scope.collection.events.add('balloonclose', function() {
 				scope.mayRecompileList = true;
-				// $('.b-atms__atm_active').removeClass('b-atms__atm_active');
+				$('.b-atms__atm_active').removeClass('b-atms__atm_active');
 				// scope.$apply(scope.recompileList);
 			});
 
