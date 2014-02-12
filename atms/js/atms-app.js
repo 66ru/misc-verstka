@@ -43,7 +43,11 @@ atmsApp.controller('Ctrl', ['$scope', '$http', '$location', 'listSettings', func
 	});
 
 	$scope.resetListLimit = function() {
-		$scope.listLimit = listSettings.initialListLimit;
+		// if ($scope.map.getZoom() === 16) {
+			// $scope.listLimit = 99;
+		// } else {
+			$scope.listLimit = listSettings.initialListLimit;
+		// }
 	};
 
 	$scope.increaseListLimit = function() {
@@ -113,7 +117,7 @@ atmsApp.controller('Ctrl', ['$scope', '$http', '$location', 'listSettings', func
 		}
 	};
 
-	// TODO: refactor this
+	// TODO: refactor this shit
 	$scope.updateMap = function() {
 		$scope.filterPlacemarks();
 		$location.search('banks', banksFilter.join(','));
@@ -125,6 +129,56 @@ atmsApp.controller('Ctrl', ['$scope', '$http', '$location', 'listSettings', func
 
 		if ($scope.mayRecompileList) {
 			$scope.recompileList();
+		}
+	};
+
+	$scope.arrangePlacemarks = function() {
+		var i, j, k, m,
+			l = $scope.listedPlacemarks.length,
+			map = $scope.map,
+			convert = map.converter,
+			projection = map.options.get('projection'),
+			sameplaced;
+
+		for (i=0; i<l; i++) {
+			sameplaced = [];
+			sameplaced.push($scope.listedPlacemarks[i]);
+
+			if (!$scope.listedPlacemarks[i].isMarked) {
+				for (j=i+1; j<l; j++) {
+					if (($scope.listedPlacemarks[i].atmData.coords[0] == $scope.listedPlacemarks[j].atmData.coords[0]) && ($scope.listedPlacemarks[i].atmData.coords[1] == $scope.listedPlacemarks[j].atmData.coords[1])) {
+						$scope.listedPlacemarks[j].isMarked = true;
+						sameplaced.push($scope.listedPlacemarks[j]);
+					}
+				}
+			}
+
+			m = sameplaced.length;
+			if (m > 1) {
+
+				for (k=1; k<m; k++) {
+					var pl = sameplaced[k],
+						x = pl.atmData.coords[0],
+						y = pl.atmData.coords[1],
+
+						pageCoords = convert.globalToPage(
+							projection.toGlobalPixels(
+								[x, y],
+								map.getZoom()
+							)
+						),
+
+						newGlobalCoords = projection.fromGlobalPixels(
+							convert.pageToGlobal([
+								pageCoords[0] - Math.sin(Math.PI * 2 / 10 * (m - k)) * 30,
+								pageCoords[1] - Math.cos(Math.PI * 2 / 10 * (m - k)) * 30
+							]),
+							map.getZoom()
+						);
+
+					pl.geometry.setCoordinates(newGlobalCoords);
+				}
+			}
 		}
 	};
 
@@ -144,6 +198,8 @@ atmsApp.controller('Ctrl', ['$scope', '$http', '$location', 'listSettings', func
 				$scope.listedPlacemarks.push(pl);
 			}
 		}
+
+		$scope.arrangePlacemarks();
 	};
 
 	/**
@@ -170,8 +226,9 @@ atmsApp.controller('Ctrl', ['$scope', '$http', '$location', 'listSettings', func
 	 * @return {Boolean}  true if coordinates are in bounds.
 	 */
 	function isInBounds(coords, bounds) {
-		return (coords[0] > bounds[0][0] + 0.002) && (coords[0] < bounds[1][0] - 0.002) &&
-			(coords[1] > bounds[0][1] + 0.002) && (coords[1] < bounds[1][1] - 0.002);
+		var z = $scope.map.getZoom();
+		return (coords[0] > bounds[0][0] + (0.01/z)) && (coords[0] < bounds[1][0] - (0.01/z)) &&
+			(coords[1] > bounds[0][1] + (0.01/z)) && (coords[1] < bounds[1][1] - (0.01/z));
 	}
 }]);
 
@@ -192,26 +249,10 @@ atmsApp.directive('atmMap', ['mapSettings', function(mapSettings) {
 				openBalloonOnClick: true,
 			};
 
-			// var collectionOptions = {
-			// 	groupByCoordinates: true,
-			// 	gridSize: 8,
-			// 	minClusterSize: 1,
-			// 	clusterIcons: [{
-			// 		href: 'img/placemark_green.svg',
-			// 		size: [27, 31],
-			// 		offset: [-13, -31]
-			// 	}],
-			// 	viewportMargin: 0,
-			// 	clusterDisableClickZoom: true,
-			// 	openBalloonOnClick: true,
-			// 	zIndex: 999
-			// };
-
 			scope.map = initMap();
 
 			scope.clusterer = new ymaps.Clusterer(clustererOptions);
 			scope.collection = new ymaps.GeoObjectCollection({}, {
-				// hasBalloon: false,
 				hasHint: false,
 				zIndex: 999
 			});
@@ -245,19 +286,19 @@ atmsApp.directive('atmMap', ['mapSettings', function(mapSettings) {
 
 			scope.clusterer.events.add('balloonclose', function() {
 				scope.mayRecompileList = true;
-				$('.b-atms__atm_active').removeClass('b-atms__atm_active');
-				scope.$apply(scope.recompileList);
+				// scope.$apply(scope.recompileList);
 			});
 
 			scope.collection.events.add('balloonopen', function(e) {
 				scope.mayRecompileList = false;
-				$('.b-atms__atm').eq(scope.listedPlacemarks.indexOf(e.originalEvent.target)).addClass('b-atms__atm_active');
+				$('.b-atms__atm').eq(scope.listedPlacemarks.indexOf(e.get('target'))).addClass('b-atms__atm_active');
+				console.log(e);
 			});
 
 			scope.collection.events.add('balloonclose', function() {
 				scope.mayRecompileList = true;
-				$('.b-atms__atm_active').removeClass('b-atms__atm_active');
-				scope.$apply(scope.recompileList);
+				// $('.b-atms__atm_active').removeClass('b-atms__atm_active');
+				// scope.$apply(scope.recompileList);
 			});
 
 			function initMap() {
@@ -266,7 +307,8 @@ atmsApp.directive('atmMap', ['mapSettings', function(mapSettings) {
 						scope.$location.search().lat || 56.841379,
 						scope.$location.search().long || 60.603059
 					],
-					zoom: scope.$location.search().zoom || 14
+					zoom: scope.$location.search().zoom || 14,
+					controls: []
 				}, {
 					autoFitToViewport: 'always',
 					maxZoom: 16,
@@ -300,7 +342,7 @@ atmsApp.directive('atmMap', ['mapSettings', function(mapSettings) {
 			return '<p class="b-atms__bank">' + atm.name + '</p>\
 					<p class="b-atms__address">' + atm.address + '</p>\
 					<p class="b-atms__time">' + scope.parseWorktime(atm.workTime) + '</p>\
-					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> <span class="b-atms__rub">рубли</span>' + scope.parseCurrency(atm.currency) + '<b class="b-atms__b">' + (atm.cashIn ? ', Cash-in' : '') + '</b></p>\
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> <span class="b-atms__rub">рубли</span>' + scope.parseCurrency(atm.currency) + '<b class="b-atms__b">' + (atm.cashIn ? ' Cash-in' : '') + '</b></p>\
 					<p class="b-atms__address">' + scope.banks[atm.bank].phone + '&nbsp;&nbsp;&nbsp;&nbsp;' + '<a href="' + scope.banks[atm.bank].href + '">' + scope.banks[atm.bank].href.replace(/^(http|https):\/\//, '') + '</a></p>';
 		}
 	}
@@ -329,12 +371,11 @@ atmsApp.directive('atmListElem', function() {
 		scope.collection.add(pl);
 
 		element.on('$destroy', function() {
+			pl.geometry.setCoordinates(pl.atmData.coords);
 			scope.collection.remove(pl);
 			if (scope.filteredPlacemarks.indexOf(pl) !== -1) {
 				scope.clusterer.add(pl);
 			}
-
-			console.log(scope.filteredPlacemarks.indexOf(pl));
 		});
 
 		element.on('click', function() {
@@ -342,12 +383,20 @@ atmsApp.directive('atmListElem', function() {
 			element.addClass('b-atms__atm_active');
 
 			var balloon = pl.balloon;
-			if (!balloon.isOpen()) {
-				balloon.open();
-			} else {
+			if (balloon.isOpen()) {
 				balloon.close();
 				element.removeClass('b-atms__atm_active');
+			} else {
+				balloon.open();
 			}
+		});
+
+		element.on('mouseenter', function() {
+			pl.options.set('iconImageHref', 'img/placemark_orange.svg');
+		});
+
+		element.on('mouseleave', function() {
+			pl.options.set('iconImageHref', 'img/placemark_green.svg');
 		});
 	}
 

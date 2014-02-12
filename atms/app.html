@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Банкоматы</title>
+	<link rel="stylesheet" href="css/banks-atm.css">
+	<script src="../bower_components/jquery/jquery.js"></script>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap-custom-tpls-0.7.0.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1.4/?load=package.full&lang=ru-RU"></script>
+	<script src="js/atms-app.js"></script>
+</head>
+<body>
+<div class="layout__base">
+	<div class="grid">
+		<div class="grid__module grid__module_col_1 grid__module_span_90 map-list" id="ng-app" ng-app="atms" ng-controller="Ctrl">
+			<form action="#" class="b-atm-search" ng-cloak>
+				<div class="b-atm-search__row">
+					<span class="b-atm-search__input-wrap">
+						<input
+							ng-model="bankQuery.name"
+							typeahead="bank.name for bank in banks | filter:{name:$viewValue} | limitTo:15"
+							typeahead-wait-ms="200"
+							typeahead-on-select="addBankToFilter();updateMap()"
+							type="text"
+							name="atm-search-name"
+							id="atm-search-name"
+							class="b-atm-search__input"
+							placeholder="Начните вводить название банка"
+							autocomplete="off">
+					</span>
+					<input ng-model="bankQuery.cashIn" ng-change="updateMap()" type="checkbox" id="atm-search-cash-in" class="b-atm-search__checkbox">
+					<label for="atm-search-cash-in" class="b-atm-search__label">Cash-in</label>
+					<input ng-model="bankQuery.isOpen" ng-change="updateMap()" type="checkbox" name="atm-search-are-working" id="atm-search-are-working" class="b-atm-search__checkbox">
+					<label for="atm-search-are-working" class="b-atm-search__label">Работают сейчас</label>
+				</div>
+
+				<div class="b-atm-search__bank-names">
+					<span class="b-atm-search__list-label" ng-show="showBanksLabel()">Банки:</span>
+					<ul class="tags tags_entity_banks">
+						<li ng-repeat="bank in banks" ng-show="showBankTag(bank.name)" class="tags__tag">{{bank.name}}<span ng-click="hideBankTag(bank.name);updateMap()" class="tags__close">✕</span></li>
+					</ul>
+				</div>
+			</form>
+
+			<ul class="b-atms" ng-cloak>
+				<li class="b-atms__atm" ng-repeat="placemark in listedPlacemarks | filter:placemarkIsVisible | limitTo:listLimit" atm-list-elem>
+					<p class="b-atms__entity">Банкомат</p>
+					<p class="b-atms__bank">{{placemark.atmData.name}}</p>
+					<p class="b-atms__address">{{placemark.atmData.address}}</p>
+					<p class="b-atms__time" ng-class="workingNowClass(placemark.atmData.isOpen)" ng-bind="parseWorktime(placemark.atmData.workTime)"></p>
+					<p class="b-atms__currency"><span class="b-atms__label">Валюта:</span> <span class="b-atms__rub">рубли</span>{{parseCurrency(placemark.atmData.currency)}}<b class="b-atms__b" ng-show="placemark.atmData.cashIn"> Cash-in</b></p>
+					<div class="b-atms__placemark">{{$index + 1}}</div>
+				</li>
+				<li class="b-atms__more">
+					<span class="button button_color_grey" ng-click="increaseListLimit();arrangePlacemarks()">Показать больше</span><br>
+				</li>
+			</ul>
+
+			<div class="map-list__map">
+				<!-- <span class="map-list__toggle"></span> -->
+				<div id="map" style="width: 100%; height: 100%;" atm-map></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function() {
+		var jqWindow = $(window),
+			jqMapList = $('.map-list'),
+			jqList = jqMapList.find('.b-atms'),
+			jqMap = jqMapList.find('.map-list__map');
+
+		function recalcHeights() {
+			jqList.height(jqWindow.height() - jqList.offset().top);
+			jqMap.height(jqWindow.height() - jqMap.offset().top);
+		}
+
+
+		jqWindow.on('resize', recalcHeights);
+		recalcHeights();
+	});
+</script>
+
+<script>
+	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+</body>
+</html>

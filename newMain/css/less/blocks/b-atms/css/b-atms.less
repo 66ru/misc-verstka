@@ -104,6 +104,22 @@
 	margin-left: 25px;
 }
 
+.b-atms__time:before {
+	position: absolute;
+	top: 0;
+	left: -22px;
+
+	display: block;
+
+	width: 17px;
+	height: 17px;
+
+	content: '';
+
+	background: none left top no-repeat transparent;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAACTElEQVQ4y31U2W7aUBD1x1Qtn8az38mP5KHNE6h5wEAfENmEINCwWGCWJBDARew7iB1fpnNuawSkzUgj29yZMzPnzEVRziybzX6Jx+Oq1+vV3G636fF4LDzZNZ/Pp6ZSKYfykeVyOaff79c5mHRdp3q9Lr3VapFpmpRIJIjB9UAg4PwnQCaTcXGy4Eo0GAyk93o9ur+/p3K5TJPJRHqn06FoNCo41vWug2AwKPL5PA2HQ2q32zQajWi9Xsvq3W6X9vs9bbdb6QAPhUKCc/50lE6nPzEHOoIBgIDVaiWTYHjf7XZkG0a7ubmRHYXDYV1yVCgUVP6QhwA5Tji3arVKt7e3NB6P5Xez2cS3CjW0ZDIpDzabzUkSuoFblkXFYpEeHh5osVgczhHPDWgKq2A+Pz/L+e0RbNtxZ7XHR/p+fU088rsiMKbDBIhVq9WklNyVJPRQiat+u7igH1dXJI4KNBoNGQsFmQ4L45jYAVSZz+cnnPQ56OvlJbWDQVpzom3oGrF4Il9hWTXswfkothI/n57Ims1oEArRpt8/4QtArI6mGIahgjRIeW5YPHQpR2MAAO2mU9r/lR4yc4yqRCKRzwyio+pxN3gHT8fgKx5pwBLPWckpg7EgOjfhsFfeWSqVBNYayUKIA+Dr6yvZv2+Zr75hUPPujn6ZpsCmn6w+c+N6e3sTWDjswnK5tPdAjoT5UR2AlVxO5A3D9d9bzCTrGANgMyYU8uMq2JcP5y8vL84P/w5isZiDZ1U5WKtUKpDf4nU3uUuNR1MPHBzZb6nIeInuogLrAAAAAElFTkSuQmCC);
+}
+
 .b-atms__time:after {
 	// position: absolute;
 	top: 0;
@@ -140,6 +156,19 @@
 
 .b-atms__b {
 	margin-left: .4em;
+}
+
+.b-atms__more {
+	padding: 15px 0 20px;
+
+	text-align: center;
+
+	border-top: 1px dashed #cacaca;
+}
+
+.b-atms__more .button {
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .b-services:before,
@@ -211,32 +240,40 @@
 	background: #698c15;
 }
 
-.b-search {
- -moz-box-sizing: border-box;
-      box-sizing: border-box;
+.b-atm-search {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	margin-bottom: 10px;
-	padding: 10px 20px;
+	padding: 20px 20px 10px;
 
 	background-color: #eef3dd;
 }
 
-.b-search__input-wrap {
+.b-atm-search__input-wrap {
 	position: relative;
 
 	display: inline-block;
 
- -moz-box-sizing: border-box;
-      box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 30%;
 	margin-right: 20px;
 }
 
-.b-search__input {
+.b-atm-search__input-wrap a {
+	text-decoration: none;
+}
+
+.b-atm-search__input-wrap a:hover {
+	color: #007899;
+}
+
+.b-atm-search__input {
 	font-size: 13px;
 	line-height: 28px;
 
- -moz-box-sizing: border-box;
-      box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 100%;
 	height: 28px;
 	margin-top: 0;
@@ -244,11 +281,11 @@
 	padding-left: 4px;
 }
 
-.b-search__input:focus {
+.b-atm-search__input:focus {
 	outline: 1px dotted #999;
 }
 
-.b-search__input-wrap .dropdown-menu,
+.b-atm-search__input-wrap .dropdown-menu,
 .suggests {
 	font-size: 13px;
 
@@ -267,37 +304,37 @@
 	box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
 }
 
-.b-search__input-wrap .dropdown-menu li,
+.b-atm-search__input-wrap .dropdown-menu li,
 .suggests__elem {
 	line-height: 20px;
 
 	overflow: hidden;
 
- -moz-box-sizing: border-box;
-      box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	height: 20px;
 	padding-left: 10px;
 
 	cursor: pointer;
 	white-space: nowrap;
-     text-overflow: ellipsis;
- -ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
 }
 
-.b-search__input-wrap .dropdown-menu li.active,
+.b-atm-search__input-wrap .dropdown-menu li.active,
 .suggests__elem:hover {
 	background-color: #fbf290;
 }
 
-.b-search__button {
+.b-atm-search__button {
 	margin-right: 20px;
 }
 
-.b-search__checkbox {
+.b-atm-search__checkbox {
 	cursor: pointer;
 }
 
-.b-search__label {
+.b-atm-search__label {
 	font-size: 14px;
 	line-height: 28px;
 
@@ -308,15 +345,15 @@
 	cursor: pointer;
 }
 
-.b-search .button {
+.b-atm-search .button {
 	height: 29px;
 }
 
-.b-search__bank-names {
+.b-atm-search__bank-names {
 	display: inline-block;
 
- -moz-box-sizing: border-box;
-      box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 30%;
 	margin-top: 12px;
 	margin-right: 24px;
@@ -325,7 +362,7 @@
 	vertical-align: top;
 }
 
-.b-search__list-label {
+.b-atm-search__list-label {
 	line-height: 21px;
 
 	float: left;
@@ -355,13 +392,13 @@
 	padding-right: 20px;
 	padding-left: 5px;
 
- -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	white-space: nowrap;
-     text-overflow: ellipsis;
- -ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
 
 	color: #fff;
 	border-radius: 2px;
