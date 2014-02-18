@@ -1,0 +1,35 @@
+.m-layout {
+	position: relative;
+	left: 0;
+
+	min-height: 100%;
+
+	-webkit-transition: left .3s;
+	-o-transition: left .3s;
+	transition: left .3s;
+}
+
+.m-layout_show-menu_yes {
+	left: 260px;
+}
+
+.m-layout__close-global {
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	display: none;
+}
+
+.m-layout__close-global_on {
+	display: block;
+}
+
+@media (max-width: 319px) {
+	.m-layout_show-menu_yes {
+		left: 180px;
+	}
+}

@@ -1,0 +1,40 @@
+.m-menu {
+	position: relative;
+
+	height: 50px;
+
+	background: #698c15;
+}
+
+.m-menu__button {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+
+	width: 40px;
+	height: 30px;
+
+	border-radius: 5px;
+	background: #78982d;
+}
+
+
+
+
+
+html {
+	height: 100%;
+
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	overflow-x: hidden;
+
+	height: auto;
+	min-height: 100%;
+	margin: 0;
+}

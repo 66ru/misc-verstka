@@ -1,0 +1,91 @@
+.m-sidemenu {
+	font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+
+	position: absolute;
+	top: 0;
+	right: 100%;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 260px;
+	min-height: 100%;
+	margin: 0;
+	padding: 10px 20px 40px;
+
+	list-style: none;
+
+	background: #577411;
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, .3);
+}
+
+.m-sidemenu__section {
+	padding-top: 10px;
+	padding-bottom: 5px;
+
+	border-bottom: 1px solid #abba88;
+}
+
+.m-sidemenu__link {
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.m-sidemenu__link:visited {
+	color: #fff;
+}
+
+.m-sidemenu__heading {
+	font-size: 30px;
+	font-weight: bold;
+
+	margin-bottom: 10px;
+}
+
+.m-sidemenu__elems-wrap:before,
+.m-sidemenu__elems-wrap:after {
+	display: block;
+	clear: both;
+
+	content: '';
+}
+
+.m-sidemenu__elems {
+	float: left;
+
+	width: 50%;
+	padding: 0;
+
+	list-style: none;
+}
+
+.m-sidemenu__elems:last-child {
+	position: relative;
+	right: -5%;
+}
+
+.m-sidemenu__elem {
+	font-size: 18px;
+	font-weight: normal;
+
+	margin-bottom: 10px;
+}
+
+.m-sidemenu__elem_hilite_yes {
+	font-weight: bold;
+}
+
+
+@media (max-width: 319px) {
+	.m-sidemenu {
+		width: 180px;
+	}
+
+	.m-sidemenu__elems {
+		width: 100%;
+	}
+
+	.m-sidemenu__elems:last-child {
+		right: 0;
+	}
+}
