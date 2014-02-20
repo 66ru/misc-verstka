@@ -106,6 +106,20 @@
 .m-menu__weather-tomorrow {
   font-size: 9px;
 }
+.m-menu__full-ver {
+  font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100px;
+  height: 42px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #fff;
+}
 html {
   height: 100%;
   -webkit-text-size-adjust: 100%;
