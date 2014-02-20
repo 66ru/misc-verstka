@@ -3,19 +3,81 @@
 
 	height: 50px;
 
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
 	background: #698c15;
 }
 
 .m-menu__button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+
 	position: absolute;
 	top: 10px;
 	left: 10px;
 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 40px;
 	height: 30px;
+	padding-left: 4px;
 
+	color: #fff;
 	border-radius: 5px;
-	background: #78982d;
+	background: none 5px center no-repeat #78982d;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAOCAQAAABwM3/LAAAAbklEQVR4AZXQQQqBYRQF0Fd+GxBlICtRSlmVoqRYl7IRRRaBQ5n9E9+9d/BGZ3Bf9eNvqteAzB0MVUt/p3PBKSFHXI3aydrb00K1kqkHNsn8iTt2CSkrr2+XKpm/x804IQPn9MllZqvLSAXzc/IBwi3PEm92zbsAAAAASUVORK5CYII=');
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyNSAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPm1lbnUtMy1saW5lczwvdGl0bGU+PGcgc2tldGNoOnR5cGU9Ik1TUGFnZSIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZmZiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgZD0iTTggMGgxN3YyaC0xN3oiLz48cGF0aCBmaWxsPSIjZmZmIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBkPSJNOCA2aDE3djJoLTE3eiIvPjxwYXRoIGZpbGw9IiNmZmYiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiIGQ9Ik04IDEyaDE3djJoLTE3eiIvPjxwYXRoIGQ9Ik00Ljk3IDIuNzk5bC0zLjA5MSA0LjE4OSAzLjA5MSA0LjE4OSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L2c+PC9zdmc+'), none;
+}
+
+.m-menu__logo-wrap {
+	overflow: hidden;
+
+	height: 50px;
+	margin-right: 100px;
+	margin-left: 60px;
+
+	text-align: center;
+}
+
+.m-menu__logo {
+	line-height: 50px;
+}
+
+.m-menu__weather-wrap {
+	font-family: Arial, Helvetica, sans-serif;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	overflow: hidden;
+
+	width: 90px;
+	height: 50px;
+
+	color: #fff;
+}
+
+.m-menu__weather-icon {
+	float: left;
+
+	height: 50px;
+	margin-right: 4px;
+}
+
+.m-menu__weather-now {
+	font-size: 18px;
+	line-height: 18px;
+
+	margin-top: 10px;
+}
+
+.m-menu__weather-tomorrow {
+	font-size: 9px;
 }
 
 
@@ -32,9 +94,18 @@ html {
 }
 
 body {
-	overflow-x: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
-	height: auto;
-	min-height: 100%;
+	height: 100%;
 	margin: 0;
+
+	background: #000;
+}
+
+img {
+	border: none;
 }
