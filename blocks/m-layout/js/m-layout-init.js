@@ -8,7 +8,6 @@
 			closeGlobalOnClass = 'm-layout__close-global_on';
 
 		$menuButton.on('click', function() {
-			$('.m-sidemenu').show();
 			$mainContainer.toggleClass(menuShowMenuClass);
 			$closeGlobal.addClass(closeGlobalOnClass);
 		});
@@ -17,6 +16,17 @@
 			$mainContainer.removeClass(menuShowMenuClass);
 			$closeGlobal.removeClass(closeGlobalOnClass);
 		});
+
+
+		// Hammer.gestures.Drag.defaults.drag_lock_to_axis = true;
+
+		// var elem = document.body;
+		// Hammer(elem).on('dragleft', function(ev) {
+		// 	ev.gesture.preventDefault();
+		// 	// $mainContainer.removeClass(menuShowMenuClass);
+		// 	// $closeGlobal.removeClass(closeGlobalOnClass);
+		// 	$('#t').html(ev.gesture.deltaX);
+		// });
 	});
 })();
 
@@ -33,6 +43,16 @@
 			$('.m-new-comment').hide();
 			$('.m-authorize').show();
 			return false;
+		});
+	});
+
+	$(function() {
+		$('.m-comment, .m-authorize').hide();
+
+		$('#show-comments').on('click', function(ev) {
+			ev.preventDefault();
+			$(this).addClass('m-button_activated');
+			$('.m-comment, .m-authorize').show();
 		});
 	});
 })();

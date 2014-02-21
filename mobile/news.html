@@ -7,16 +7,17 @@
 <link rel="stylesheet" href="css/news.css">
 <link rel="stylesheet" href="css/foo.css">
 <script src="../bower_components/zepto/zepto.min.js"></script>
+<script src="../bower_components/hammerjs/hammer.min.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
 </head>
-<body>
+<body id="b">
 <ul class="m-sidemenu">
 	<li class="m-sidemenu__section">
 		<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
 		<div class="m-sidemenu__elems-wrap">
 			<ul class="m-sidemenu__elems">
 				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
-				<li class="m-sidemenu__elem"><a href="http://jsfiddle.net/tw16/NtjK7/" class="m-sidemenu__link">Общество</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
 				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
 				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
 				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
@@ -72,6 +73,7 @@
 		<a href="#" class="m-button m-button_center m-button_group_3">Афиша</a>
 		<a href="#" class="m-button m-button_right m-button_group_3">Объявления</a>
 	</div>
+	<!-- <div id="t">0</div> -->
 	<a href="#" class="img-link"><img src="http://img.ffffound.com/static-data/assets/6/8907b1048a037faf7aa9dac83bac9d443b2b56d5_m.jpg" alt="" class="img-link__img"><span class="img-link__desc">Михалков спродюсировал, а&nbsp;Бондарчук снял ремейк «Пианиста»</span></a>
 	<a href="#" class="block-link"><span class="news-piece">По-собянински: питерский губернатор придумал, как остаться молодым еще 50&nbsp;лет<span class="news-piece__activity">8</span></span></a>
 	<a href="#" class="block-link"><span class="news-piece news-piece_icon_photo">Василий Сигарев ищет «девушку» в&nbsp;Екатеринбурге для&nbsp;съемок нового фильма<span class="news-piece__activity">11</span></span></a>
@@ -91,45 +93,6 @@
 	<a href="#" class="block-link"><span class="news-piece">Новым главой администрации Куйвашева назначен Сергей Полонский<span class="news-piece__activity">31</span></span></a>
 	<div class="m-block">
 		<a href="#" class="m-button">Еще свежие новости</a>
-	</div>
-	<div class="m-comment">
-		<div class="m-comment__header"><span class="m-comment__author">Салтыков+Щедрин</span><span class="m-comment__date">вчера, 15:35</span></div>
-		<div class="m-comment__body">Господа, гоу общаться, я создал!</div>
-		<a href="#" class="m-comment__reply">ответить</a>
-	</div>
-	<div class="m-comment m-comment_lvl2">
-		<div class="m-comment__header"><span class="m-comment__author">LOLKingPL</span><span class="m-comment__date">вчера, 15:55</span></div>
-		<div class="m-comment__body">мамку твою гоу я тебя чом вычислю выылда нуб adc or troll в рот егал самое худшее</div>
-		<a href="#" class="m-comment__reply">ответить</a>
-	</div>
-	<div class="m-comment m-comment_lvl2">
-		<div class="m-comment__header"><span class="m-comment__author">Власор</span><span class="m-comment__date">вчера, 16:69</span></div>
-		<div class="m-comment__body">Ты делала? Чего ты тут... Чего ты... Чего ты размудохалась? Чего сидишь? Хули ты... чего ты тут... Стоять! Там делала? Ты чего? Сюда иди. Сюда иди. Сюда иди. Ты что делала? Ты зачем? Мне что... опять идти? Сидеть, сидеть. Сидеть, сидеть. На... Ну...</div>
-		<a href="#" class="m-comment__reply">ответить</a>
-	</div>
-	<div class="m-comment">
-		<div class="m-comment__header"><span class="m-comment__author">Котлета</span><span class="m-comment__date">вчера, 17:33</span></div>
-		<div class="m-comment__body">Давайте будемьте терпиминее вежливо к друг к Друженьке относится</div>
-		<a href="#" class="m-comment__reply">ответить</a>
-	</div>
-	<div class="m-comment m-comment_lvl2">
-		<div class="m-comment__header"><span class="m-comment__author">Губернатор</span><span class="m-comment__date">вчера, 17:45</span></div>
-		<div class="m-comment__body">Нет.</div>
-		<a href="#" class="m-comment__reply">ответить</a>
-	</div>
-	<div class="m-comment m-comment_lvl2">
-		<div class="m-comment__header"><span class="m-comment__author">Салтыков+Щедрин</span><span class="m-comment__date">вчера, 19:34</span></div>
-		<div class="m-comment__body">Ох.</div>
-		<a href="#" class="m-comment__reply">ответить</a>
-	</div>
-	<div class="m-authorize">Авторизуйтесь на&nbsp;сайте,<br>чтобы оставлять комментарии<a href="#" class="m-authorize__button">Авторизоваться</a></div>
-	<div class="m-new-comment">
-		<div class="m-new-comment__header"><span class="m-new-comment__name">Крыжовник</span><a href="#" class="m-new-comment__close">Выход</a></div>
-		<div class="m-new-comment__body">
-			<textarea name="new-comment-text" id="new-comment-text" cols="30" rows="10" class="m-new-comment__textarea"></textarea>
-			<a href="#" class="m-new-comment__button">Отправить</a>
-			<a href="#" class="m-new-comment__button m-new-comment__button_cancel">Отмена</a>
-		</div>
 	</div>
 	<div class="m-menu">
 		<div class="m-menu__button"></div>
