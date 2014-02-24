@@ -14,6 +14,8 @@
 	transition: left .3s;
 
 	background-color: #fff;
+
+	-webkit-overflow-scrolling: touch;
 }
 
 .m-layout_show-menu_yes {
