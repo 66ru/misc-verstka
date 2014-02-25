@@ -22,6 +22,7 @@
   -o-transition: left .3s;
   transition: left .3s;
   background-color: #fff;
+  -webkit-overflow-scrolling: touch;
 }
 .m-layout_show-menu_yes {
   left: 260px;
@@ -159,6 +160,7 @@ img {
   transition: left .3s;
   background: #577411;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+  -webkit-overflow-scrolling: touch;
 }
 .m-sidemenu__section {
   padding-top: 10px;

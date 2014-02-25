@@ -18,17 +18,49 @@
 		});
 
 
+
+
+		// var elem = document.getElementById('main'),
+		// 	dragThreshold = 15;
+
 		// Hammer.gestures.Drag.defaults.drag_lock_to_axis = true;
 
-		// var elem = document.body;
-		// Hammer(elem).on('dragleft', function(ev) {
-		// 	ev.gesture.preventDefault();
-		// 	// $mainContainer.removeClass(menuShowMenuClass);
-		// 	// $closeGlobal.removeClass(closeGlobalOnClass);
-		// 	$('#t').html(ev.gesture.deltaX);
+		// Hammer(elem).on('drag', function(e) {
+		// 	var absDeltaX = Math.abs(e.gesture.deltaX),
+		// 		toRight = e.gesture.deltaX > 0;
+
+		// 	$('#t').html(e.gesture.deltaX + ' ' + $mainContainer.css('left')) + ' ' + ($mainContainer.css('left') - absDeltaX);
+
+		// 	if (absDeltaX > dragThreshold) {
+		// 		e.gesture.preventDefault();
+
+		// 		var newLeft = toRight ? absDeltaX : parseInt($mainContainer.css('left')) - absDeltaX;
+
+		// 		if (newLeft < 0) newLeft = 0;
+		// 		if (newLeft > 260) newLeft = 260;
+
+		// 		$mainContainer.css({
+		// 			left: newLeft
+		// 		});
+		// 	}
+		// });
+
+		// Hammer(elem).on('dragend', function(e) {
+		// 	var d = parseInt($mainContainer.css('left'));
+		// 	if (d > 130) {
+		// 		$mainContainer.addClass(menuShowMenuClass);
+		// 	} else {
+		// 		$mainContainer.removeClass(menuShowMenuClass);
+		// 	}
+
+		// 	$mainContainer.css({
+		// 		left: null
+		// 	});
 		// });
 	});
 })();
+
+
 
 
 (function() {

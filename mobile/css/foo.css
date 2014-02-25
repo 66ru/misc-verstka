@@ -178,11 +178,16 @@
 
 	position: absolute;
 	top: 0;
-	left: 7px;
+	left: 10px;
 
-	content: '◂';
+	width: 4px;
+	height: 30px;
+
+	content: '';
 
 	color: #698c15;
+	background: none left center no-repeat transparent;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgNCA4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj48dGl0bGU+U2xpY2UgMTwvdGl0bGU+PHBhdGggZD0iTTQgMHY4bC00LTQgNC00eiIgZmlsbD0iIzY5OEMxNSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjwvc3ZnPg=='), none;
 }
 
 .m-button_left {
