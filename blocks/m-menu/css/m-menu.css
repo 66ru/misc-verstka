@@ -103,15 +103,6 @@
 
 
 
-html {
-	height: 100%;
-
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 body {
 	position: fixed;
 	top: 0;
@@ -120,11 +111,4 @@ body {
 	left: 0;
 
 	height: 100%;
-	margin: 0;
-
-	background: #000;
-}
-
-img {
-	border: none;
 }
