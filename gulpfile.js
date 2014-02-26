@@ -29,5 +29,5 @@ gulp.task('mobile', function() {
 gulp.task('watch', function() {
 	gulp.watch('./newMain/css/less/**/*.less', ['mainmenuupgrade', 'atms', 'mobile']);
 	gulp.watch('./blocks/**/*.css', ['mobile']);
-	gulp.watch('./mobile/css/*.less', ['mobile']);
+	gulp.watch(['./mobile/css/*.less', './mobile/css/foo.css'], ['mobile']);
 });

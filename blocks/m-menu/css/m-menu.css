@@ -2,6 +2,7 @@
 	position: relative;
 
 	height: 50px;
+	margin-bottom: 12px;
 
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -9,6 +10,10 @@
 	user-select: none;
 
 	background: #698c15;
+}
+
+.m-menu_bottom {
+	margin-bottom: 0;
 }
 
 .m-menu__button {

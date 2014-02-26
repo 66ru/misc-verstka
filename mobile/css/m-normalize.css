@@ -85,9 +85,7 @@ a {
 	background: transparent;
 }
 
-a:active,
-a:hover {
-	color: #ff5400;
+a:focus {
 	outline: 0;
 }
 
@@ -332,6 +330,7 @@ input {
 
 input[type='checkbox'],
 input[type='radio'] {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box; /* 1 */
 	padding: 0; /* 2 */
 }
@@ -353,8 +352,7 @@ input[type='number']::-webkit-outer-spin-button {
 *    (include `-moz` to future-proof).
 */
 
-input[type='search'] {
-	-webkit-box-sizing: content-box; /* 2 */
+input[type='search'] { /* 2 */
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 
@@ -421,18 +419,33 @@ table {
 	border-collapse: collapse;
 }
 
-th {
-	color: #fff;
-	background-color: #8a8f7e;
+tr:nth-child(2n+1) {
+	background-color: #f1f5e7;
 }
 
 td,
 th {
-	padding: 5px 10px;
+	padding: 5px;
 
+	text-align: left;
 	vertical-align: top;
 }
 
-tr:nth-child(2n+1) {
-	background-color: #f1f5e7;
+td:first-child,
+th:first-child {
+	padding-left: 10px;
+}
+
+th {
+	font-weight: normal;
+
+	color: #fff;
+	background-color: #8a8f7e;
+}
+
+blockquote {
+	font-style: italic;
+
+	margin: 0;
+	margin-bottom: 24px;
 }

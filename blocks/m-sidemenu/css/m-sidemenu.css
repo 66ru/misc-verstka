@@ -51,6 +51,7 @@
 .m-sidemenu__heading {
 	font-size: 30px;
 	font-weight: bold;
+	line-height: normal;
 
 	margin-bottom: 10px;
 }
@@ -80,6 +81,7 @@
 .m-sidemenu__elem {
 	font-size: 18px;
 	font-weight: normal;
+	line-height: normal;
 
 	margin-bottom: 10px;
 }
