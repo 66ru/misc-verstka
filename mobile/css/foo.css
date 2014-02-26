@@ -271,10 +271,30 @@
 .m-comment__header {
 	line-height: 24px;
 
+	position: relative;
+
 	height: 24px;
 	padding: 0 10px;
 
 	background-color: #e1f2ba;
+}
+
+.m-comment__header:before {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+
+	display: block;
+
+	width: 0;
+	height: 0;
+
+	content: '';
+
+	border-right: 4px solid #e1f2ba;
+	border-bottom: 4px solid #fff;
+	border-left: 4px solid #e1f2ba;
+	background-color: #fff;
 }
 
 .m-comment__author {
