@@ -10,7 +10,7 @@
 			menuWidth, moreWidth,
 			widths = [], classes = {},
 
-			SUBMENU_SHOW_DELAY = 250;
+			SUBMENU_DELAY = 250;
 
 		classes.currentElem = 'main-menu__elem_current';
 		classes.menuNoJs = 'main-menu_js_no';
@@ -56,6 +56,20 @@
 					.css({left: -$menu.offset().left});
 		}
 
+		function closeSub() {
+			$elems.removeClass(classes.currentElem);
+		}
+
+		function setSubmenuTimeout(fun) {
+			$menu.data('timer', setTimeout(fun, SUBMENU_DELAY));
+		}
+
+		jQuery.extend(jQuery.fn, {
+			within: function(pSelector) {
+				return $(this).closest(pSelector).length;
+			}
+		});
+
 		initMenu();
 		getMenuWidth();
 		getElemWidths();
@@ -68,22 +82,35 @@
 			setGlobalsWidths();
 		});
 
+
 		$elems
 			.on('mouseenter', function() {
 				var $this = $(this);
 
-				$menu.data('timer', setTimeout(function() {
-					$elems.removeClass(classes.currentElem);
+				clearTimeout($menu.data('timer'));
+
+				setSubmenuTimeout(function() {
+					closeSub();
 					$this.addClass(classes.currentElem);
-				}, SUBMENU_SHOW_DELAY));
+				});
 			})
 			.on('mouseleave', function() {
 				clearTimeout($menu.data('timer'));
 			});
 
-		$menu.on('mouseleave', function() {
-			clearTimeout($menu.data('timer'));
-			$elems.removeClass(classes.currentElem);
+		$menu.on('mouseleave', function(e) {
+			var x = e.clientX, y = e.clientY,
+				$elementMouseIsOver = $(document.elementFromPoint(x, y));
+
+			// Submenu should disappear with delay when mouse is still on the header...
+			if ($elementMouseIsOver.within($header)) {
+				setSubmenuTimeout(function() {
+					closeSub();
+				});
+			// ...but it should disappear instantly when mouse moves on page content.
+			} else {
+				closeSub();
+			}
 		});
 	});
 })(jQuery);
