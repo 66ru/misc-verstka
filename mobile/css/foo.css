@@ -617,6 +617,8 @@
 }
 
 .time-table {
+	line-height: 13px;
+
 	margin: 0;
 	padding: 0;
 
@@ -645,14 +647,14 @@
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
-	padding-top: 3px;
+	padding-top: 2px;
 
 	text-align: center;
 	text-decoration: none;
 }
 
 .time-table__time {
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 
 	display: block;
@@ -675,10 +677,29 @@
 	color: #000;
 }
 
+.time-table_no-links .time-table__elem {
+	height: auto;
+
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.time-table_no-links .time-table__link {
+	padding: 0;
+
+	text-align: left;
+}
+
+
+.time-table_no-links .time-table__time {
+	color: #000;
+}
+
 
 
 
 p ins {
-	text-decoration: none;
 	font-style: italic;
+
+	text-decoration: none;
 }
