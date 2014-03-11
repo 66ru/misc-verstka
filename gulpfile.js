@@ -31,6 +31,8 @@ gulp.task('watch', function() {
 	gulp.watch([
 		'./mobile/css/*.less',
 		'./mobile/css/foo.css',
+		'./mobile/css/m-normalize.css',
+		'./mobile/css/m-old-compat.css',
 		'./blocks/**/*.css'
 		], ['mobile']);
 });

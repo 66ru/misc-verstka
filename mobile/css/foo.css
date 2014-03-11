@@ -292,6 +292,7 @@
 	padding: 0 10px;
 
 	background-color: #e1f2ba;
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, .1);
 }
 
 .m-comment__header:before {
@@ -478,9 +479,9 @@
 	font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
-	line-height: 28px;
+	line-height: 30px;
 
-	margin: 12px 0 8px;
+	margin: 10px 0;
 }
 
 .m-text__h3 {
@@ -510,13 +511,14 @@
 .m-text__h6 {
 	font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
 	font-size: 18px;
+	line-height: 20px;
 
-	margin: 18px 0 5px;
+	margin: 20px 0 5px;
 }
 
 .m-text__p {
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 20px;
 
 	margin: 10px 0;
 }
@@ -537,8 +539,9 @@
 
 .m-text__date {
 	font-size: 12px;
+	line-height: 20px;
 
-	margin-bottom: 12px;
+	margin: 10px 0;
 
 	color: #595959;
 }
@@ -555,14 +558,6 @@
 
 .m-caption__bad {
 	color: #9b1f05;
-}
-
-.pic-with-cite img {
-	display: none;
-}
-
-.pic-with-cite p {
-	margin: 0;
 }
 
 
@@ -693,13 +688,4 @@
 
 .time-table_no-links .time-table__time {
 	color: #000;
-}
-
-
-
-
-p ins {
-	font-style: italic;
-
-	text-decoration: none;
 }

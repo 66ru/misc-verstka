@@ -1,5 +1,5 @@
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   height: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -11,7 +11,7 @@ html {
 */
 body {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   margin: 0;
 }
 /* HTML5 display definitions
@@ -61,6 +61,9 @@ audio:not([controls]) {
 [hidden],
 template {
   display: none;
+}
+p {
+  margin: 0 0 20px;
 }
 /* Links
 ========================================================================== */
@@ -357,7 +360,7 @@ th {
 blockquote {
   font-style: italic;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 @font-face {
   font-family: 'PT Sans Narrow';
@@ -824,6 +827,7 @@ body {
   height: 24px;
   padding: 0 10px;
   background-color: #e1f2ba;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
 }
 .m-comment__header:before {
   position: absolute;
@@ -958,8 +962,8 @@ body {
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: normal;
-  line-height: 28px;
-  margin: 12px 0 8px;
+  line-height: 30px;
+  margin: 10px 0;
 }
 .m-text__h3 {
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
@@ -982,11 +986,12 @@ body {
 .m-text__h6 {
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
   font-size: 18px;
-  margin: 18px 0 5px;
+  line-height: 20px;
+  margin: 20px 0 5px;
 }
 .m-text__p {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   margin: 10px 0;
 }
 .m-text__quote {
@@ -1001,7 +1006,8 @@ body {
 }
 .m-text__date {
   font-size: 12px;
-  margin-bottom: 12px;
+  line-height: 20px;
+  margin: 10px 0;
   color: #595959;
 }
 .m-caption {
@@ -1013,12 +1019,6 @@ body {
 }
 .m-caption__bad {
   color: #9b1f05;
-}
-.pic-with-cite img {
-  display: none;
-}
-.pic-with-cite p {
-  margin: 0;
 }
 .m-poster {
   display: block;
@@ -1108,7 +1108,74 @@ body {
 .time-table_no-links .time-table__time {
   color: #000;
 }
-p ins {
+.m-old-compat p {
+  line-height: 20px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.m-old-compat h2 {
+  font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+.m-old-compat table + h2 {
+  margin-top: 30px;
+}
+.m-old-compat table {
+  max-width: 100%;
+  margin: 0 0 20px;
+  table-layout: fixed;
+}
+.m-old-compat th,
+.m-old-compat th:first-child {
+  overflow: hidden;
+  padding: 0;
+}
+.m-old-compat td,
+.m-old-compat td:first-child {
+  padding: 10px 0;
+}
+.m-old-compat th img {
+  display: block;
+}
+.m-old-compat th iframe {
+  display: block;
+}
+.m-old-compat td p {
+  margin-bottom: 0;
+}
+.m-old-compat div td,
+.m-old-compat div th {
+  padding: 10px 0 10px 5px;
+}
+.m-old-compat div td:first-child,
+.m-old-compat div th:first-child {
+  padding: 10px 0 10px 10px;
+}
+.m-old-compat p ins {
   font-style: italic;
   text-decoration: none;
+}
+.m-old-compat .pic-with-cite-header {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 20px 0 10px;
+  padding: 0 10px;
+}
+.m-old-compat .pic-with-cite img {
+  display: none;
+}
+.m-old-compat .pic-with-cite p {
+  margin: 0;
+}
+.m-old-compat .pic-without-cite-header {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 20px 0 10px;
+  padding: 0 10px;
+}
+.m-old-compat .pic-without-cite-header + p {
+  margin-top: 0;
 }

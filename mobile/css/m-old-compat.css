@@ -1,0 +1,95 @@
+.m-old-compat p {
+	line-height: 20px;
+
+	overflow: hidden;
+
+	padding: 0 10px;
+}
+
+.m-old-compat h2 {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+
+	margin: 20px 0;
+	padding: 0 10px;
+}
+
+.m-old-compat table + h2 {
+	margin-top: 30px;
+}
+
+.m-old-compat table {
+	max-width: 100%;
+	margin: 0 0 20px;
+
+	table-layout: fixed;
+}
+
+.m-old-compat th,
+.m-old-compat th:first-child {
+	overflow: hidden;
+
+	padding: 0;
+}
+
+.m-old-compat td,
+.m-old-compat td:first-child {
+	padding: 10px 0;
+}
+
+.m-old-compat th img {
+	display: block;
+}
+
+.m-old-compat th iframe {
+	display: block;
+}
+
+.m-old-compat td p {
+	margin-bottom: 0;
+}
+
+.m-old-compat div td,
+.m-old-compat div th {
+	padding: 10px 0 10px 5px;
+}
+
+.m-old-compat div td:first-child,
+.m-old-compat div th:first-child {
+	padding: 10px 0 10px 10px;
+}
+
+.m-old-compat p ins {
+	font-style: italic;
+
+	text-decoration: none;
+}
+
+.m-old-compat .pic-with-cite-header {
+	font-size: 18px;
+	line-height: 20px;
+
+	margin: 20px 0 10px;
+	padding: 0 10px;
+}
+
+.m-old-compat .pic-with-cite img {
+	display: none;
+}
+
+.m-old-compat .pic-with-cite p {
+	margin: 0;
+}
+
+.m-old-compat .pic-without-cite-header {
+	font-size: 18px;
+	line-height: 20px;
+
+	margin: 20px 0 10px;
+	padding: 0 10px;
+}
+
+.m-old-compat .pic-without-cite-header + p {
+	margin-top: 0;
+}
