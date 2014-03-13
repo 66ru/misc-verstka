@@ -23,24 +23,24 @@
 		// var elem = document.getElementById('main'),
 		// 	dragThreshold = 15;
 
-		// Hammer.gestures.Drag.defaults.drag_lock_to_axis = true;
+		// // Hammer.gestures.Drag.defaults.drag_lock_to_axis = true;
 
 		// Hammer(elem).on('drag', function(e) {
 		// 	var absDeltaX = Math.abs(e.gesture.deltaX),
 		// 		toRight = e.gesture.deltaX > 0;
 
-		// 	$('#t').html(e.gesture.deltaX + ' ' + $mainContainer.css('left')) + ' ' + ($mainContainer.css('left') - absDeltaX);
+		// 	$('#that').html(e.gesture.deltaX + ' ' + $mainContainer.css('transform')) + ' ' + ($mainContainer.css('transform') - absDeltaX);
 
 		// 	if (absDeltaX > dragThreshold) {
 		// 		e.gesture.preventDefault();
 
-		// 		var newLeft = toRight ? absDeltaX : parseInt($mainContainer.css('left')) - absDeltaX;
+		// 		var newLeft = toRight ? absDeltaX : parseInt($mainContainer.css('transform')) - absDeltaX;
 
 		// 		if (newLeft < 0) newLeft = 0;
 		// 		if (newLeft > 260) newLeft = 260;
 
 		// 		$mainContainer.css({
-		// 			left: newLeft
+		// 			transform: 'translationX(newLeft)'
 		// 		});
 		// 	}
 		// });

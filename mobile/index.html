@@ -6,6 +6,8 @@
 <title>Новости</title>
 <link rel="stylesheet" href="css/news.css">
 <script src="../bower_components/zepto/zepto.min.js"></script>
+<!-- <script src="../bower_components/fastclick/lib/fastclick.js"></script> -->
+<!-- <script src="../bower_components/hammerjs/hammer.min.js"></script> -->
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
 </head>
 <body>
@@ -61,13 +63,16 @@
 			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="74" height="50"></a>
 		</div>
 		<div class="m-menu__weather-wrap">
-			<img src="img/8.svg" alt="" class="m-menu__weather-icon" width="25" height="25">
+			<span class="m-menu__weather-icon m-menu__weather-icon_9"></span>
 			<div class="m-menu__weather-now">&#8722;20°</div>
 			<div class="m-menu__weather-tomorrow">завтра &#8722;15°</div>
 		</div>
 	</div>
 	<div class="m-text clearfix">
 		<a href="#" class="m-button m-button_back">Спорт</a>
+	</div>
+	<div class="m-text clearfix" id="that">
+		0
 	</div>
 	<div class="m-text">
 		<h1 class="m-text__h2">Итоги Олимпиады-2014: нас не&nbsp;догнали!</h1>
