@@ -6,8 +6,8 @@
 <title>Новости</title>
 <link rel="stylesheet" href="css/news.css">
 <script src="../bower_components/zepto/zepto.min.js"></script>
-<!-- <script src="../bower_components/fastclick/lib/fastclick.js"></script> -->
-<!-- <script src="../bower_components/hammerjs/hammer.min.js"></script> -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../bower_components/hammerjs/hammer.min.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
 </head>
 <body>
@@ -56,7 +56,7 @@
 		</div>
 	</li>
 </ul>
-<div class="m-layout" id="main">
+<div class="m-layout m-layout_transition" id="main">
 	<div class="m-menu">
 		<div class="m-menu__button"></div>
 		<div class="m-menu__logo-wrap">
@@ -334,7 +334,13 @@
 		<div class="m-comment__body">Ох.</div>
 		<a href="#" class="m-comment__reply">ответить</a>
 	</div>
-	<div class="m-authorize">Авторизуйтесь на&nbsp;сайте,<br>чтобы оставлять комментарии<a href="#" class="m-authorize__button">Авторизоваться</a></div>
+	<form class="m-login" action="#">
+		<div class="m-login__desc">Авторизуйтесь на&nbsp;сайте,<br>чтобы оставлять комментарии</div>
+		<input type="text" name="mlg-login" id="mlg-login" class="m-login__username" placeholder="Имя">
+		<input type="password" name="mlg-password" id="mlg-password" class="m-login__password" placeholder="Пароль">
+		<div class="m-login__error">Неправильное имя или пароль</div>
+		<input type="submit" value="Авторизоваться" class="m-login__submit">
+	</form>
 	<div class="m-new-comment">
 		<div class="m-new-comment__header"><span class="m-new-comment__name">Господин Крыжовник</span><a href="#" class="m-new-comment__close">Выход</a></div>
 		<div class="m-new-comment__body">

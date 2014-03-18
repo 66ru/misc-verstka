@@ -378,22 +378,26 @@ blockquote {
 }
 .m-layout {
   width: 100%;
-  -webkit-transition: transform .3s;
-  -o-transition: transform .3s;
-  transition: transform .3s;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
   background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   /*-webkit-overflow-scrolling: touch;*/
-  /*-ms-touch-action: pan-y;
-	touch-action: pan-y;*/
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.m-layout_transition {
+  -webkit-transition: -webkit-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform .3s;
 }
 .m-layout_show-menu_yes {
   -webkit-transform: translateX(260px);
-  /*left: 260px;*/
   -ms-transform: translateX(260px);
+  -o-transform: translateX(260px);
+  transform: translateX(260px);
 }
 .m-layout__close-global {
   position: absolute;
@@ -402,7 +406,6 @@ blockquote {
   right: 0;
   bottom: 0;
   display: none;
-  /*left: 260px;*/
   -webkit-transform: translateX(260px);
 }
 .m-layout__close-global_on {
@@ -503,7 +506,6 @@ blockquote {
   -o-transition: left .3s;
   transition: left .3s;
   background: #577411;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
   /*-webkit-overflow-scrolling: touch;*/
   -o-user-select: none;
 }
@@ -603,6 +605,80 @@ blockquote {
 }
 .m-select::-ms-expand {
   display: none;
+}
+.m-login {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 12px 10px;
+  text-align: center;
+  background-color: #e1f2ba;
+}
+.m-login__desc {
+  margin-bottom: 10px;
+}
+.m-login__submit {
+  font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #698c15;
+  border: 1px solid #698c15;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.m-login__username,
+.m-login__password {
+  font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding-left: 6px;
+  border: 1px solid #698c15;
+  background-color: #fff;
+  -webkit-appearance: none;
+}
+.m-login__username {
+  border-radius: 6px 6px 0 0;
+}
+.m-login__password {
+  margin-bottom: 10px;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+.m-login__error {
+  color: #a44;
+}
+.m-login__username::-webkit-input-placeholder {
+  color: #999;
+}
+.m-login__username::-moz-placeholder {
+  color: #999;
+}
+.m-login__username:-ms-input-placeholder {
+  color: #999;
+}
+.m-login__username::-ms-clear {
+  color: #999;
+}
+.m-login__password::-webkit-input-placeholder {
+  color: #999;
+}
+.m-login__password::-moz-placeholder {
+  color: #999;
+}
+.m-login__password:-ms-input-placeholder {
+  color: #999;
+}
+.m-login__password::-ms-clear {
+  color: #999;
 }
 .weather__now {
   font-size: 18px;
@@ -971,26 +1047,6 @@ blockquote {
 }
 .m-new-comment__button_cancel {
   background-color: #909d75;
-}
-.m-authorize {
-  font-size: 12px;
-  line-height: 18px;
-  padding: 12px 30px;
-  text-align: center;
-  background-color: #e1f2ba;
-}
-.m-authorize__button {
-  font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  display: block;
-  height: 30px;
-  margin-top: 8px;
-  text-decoration: none;
-  color: #698c15;
-  border: 1px solid #698c15;
-  border-radius: 6px;
-  background-color: #fff;
 }
 .m-text {
   padding: 0 10px;

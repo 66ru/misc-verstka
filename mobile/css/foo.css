@@ -434,35 +434,6 @@
 	background-color: #909d75;
 }
 
-.m-authorize {
-	font-size: 12px;
-	line-height: 18px;
-
-	padding: 12px 30px;
-
-	text-align: center;
-
-	background-color: #e1f2ba;
-}
-
-.m-authorize__button {
-	font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-
-	display: block;
-
-	height: 30px;
-	margin-top: 8px;
-
-	text-decoration: none;
-
-	color: #698c15;
-	border: 1px solid #698c15;
-	border-radius: 6px;
-	background-color: #fff;
-}
-
 .m-text {
 	padding: 0 10px;
 }
