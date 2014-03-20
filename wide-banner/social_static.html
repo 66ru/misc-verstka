@@ -1,13 +1,16 @@
  
 <style type="text/css">
+.news-single-explorer {
+display: none;
+}
+
 #shareWrap {
 margin-top: 20px;
 margin-bottom: 20px;
-padding-left: 20px;
-padding-bottom: 10px;
+padding-left: 10px;
 overflow: hidden;
 background: #fff;
--webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.75);
+-webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.75);а
 -moz-box-shadow:    0px 2px 12px 0px rgba(50, 50, 50, 0.75);
 box-shadow:         0px 2px 12px 0px rgba(50, 50, 50, 0.75);
 background-color: rgb(233, 239, 219);
@@ -17,12 +20,15 @@ background-color: rgb(233, 239, 219);
 margin: 0 auto;
 position: relative;
 padding: 6px 0 0 0;
+background: url('') right top no-repeat;
 }
 
 .shareWrap__el__photo {
-top: 5px;
+top: 0px;
 right: 5px;
 position: absolute;
+width: 320px;
+height: 120px;
 }
 
 
@@ -40,6 +46,7 @@ font-style: italic;
 
 #ya_share {
 padding-top: 10px;
+padding-bottom: 10px;
 }
 
 </style>
@@ -53,105 +60,127 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var editors = {
-'16' : {
+var editors = [
+{
+    'id' : 16,
     'name' : 'Артем Очеретин',
     'post' : 'журналист, раздел Недвижимость',
     'text' : 'Нравится материал? Мне тоже! Давай поделимся им с друзьями. Согласись, они должны это знать',
     'photo' : 'http://maggie.unistorageserve.ru/530ec4b3f7c0796bbc546369',
     'userIds' : [33609]
 },
-'23' : {
+{
+    'id' : 23,
     'name' : 'Дмитрий Шлыков',
     'post' : 'заместитель главного редактора',
     'text' : 'Если мне нравится статья, я жму на Like двумя большими пальцами. А ты какими?',
     'photo' : 'http://maggie.unistorageserve.ru/530ec4f6e8d7b60d4b29e33a',
     'userIds' : [265750, 265071, 203105]
 },
-'6' : {
+{
+    'id' : 6,
     'name' : 'Ирина Кузнецова',
     'post' : 'журналист, раздел Общество',
-    'text' : 'Я знаю, что тебе понравился мой материал. Нажми на кнопку, чтобы я перестала на тебя ТАК смотреть',
+    'text' : ' Ставь лайк, чтобы я перестала на тебя ТАК смотреть',
     'photo' : 'http://maggie.unistorageserve.ru/530ec4bff7c0796bbd5468dd',
     'userIds' : [4987]
 },
-'22' : {
+{
+    'id' : 22,
     'name' : 'Мария Демидова',
     'post' : 'редактор спецпроектов',
     'text' : 'Нажми на кнопку &mdash; спаси Машеньку от медведя',
     'photo' : 'http://lisa.unistorageserve.ru/530ec4cce8d7b60d4429a362',
     'userIds' : [1046]
 },
-'29' : {
+{
+    'id' : 29,
     'name' : 'Валерий Кунщиков',
     'post' : 'журналист Службы Новостей',
     'text' : 'Если ты не поделишься этой ссылкой, мир пойдет прахом: его завоюют инопланетяне и съедят всех живьем',
     'photo' : 'http://maggie.unistorageserve.ru/530ec4fef7c0796bc154aecc',
     'userIds' : [231239]
 },
-'31' : {
+{
+    'id' : 31,
     'name' : 'Мария Лейва',
     'post' : 'журналист Службы новостей',
     'text' : 'Жми сюда, помоги мне заработать на новые туфли!',
     'photo' : 'http://maggie.unistorageserve.ru/530ec4c5e8d7b60d4a29cabc',
     'userIds' : [232184]
 },
-'2' : {
+{
+    'id' : 2,
     'name' : 'Сергей Панин',
     'post' : 'журналист, раздел Бизнес',
     'text' : 'Дружище, каждый твой лайк - это рубль к моей премии и стопицот к твоей карме',
     'photo' : 'http://bart.unistorageserve.ru/530ec4e4f7c0796bc0549052',
     'userIds' : [2529]
 },
-'7' : {
+/*
+{
+    'id' : 7,
     'name' : 'Наталия Попова',
     'post' : 'выпускающий редактор Службы Новостей',
     'text' : 'Если женщина просит, надо взять и сделать. И всего-то &mdash; кнопку нажать',
     'photo' : 'http://maggie.unistorageserve.ru/530da15ae8d7b60d4a29b36d',
     'userIds' : [234453, 25570]
 },
-'21' : {
+*/
+{
+    'id' : 21,
     'name' : 'Мария Захарова',
     'post' : 'журналист Службы Новостей',
     'text' : 'Важная новость? Нажми на кнопку, пусть знают все',
     'photo' : 'http://lisa.unistorageserve.ru/5322ee87f7c0796bc056e996',
     'userIds' : [209711]
 },
-'11' : {
+{
+    'id' : 11,
     'name' : 'Богдан Кульчицкий',
     'post' : 'главный редактор',
     'text' : 'Мы работаем не за деньги, а за славу. Нажми на кнопку, дай нам ее',
     'photo' : 'http://lisa.unistorageserve.ru/530f0505e8d7b60d4329a25c',
     'userIds' : [281]
 },
-'36' : {
+{
+    'id' : 36,
     'name' : 'Евгений Лобанов',
     'post' : 'журналист, раздел «Происшествия»',
     'text' : 'Ты стал свидетелем происшествия?! Нажми на кнопку и напиши о нем в любой соцсети с хэштегом #66',
     'photo' : 'http://lisa.unistorageserve.ru/5316ff82f7c0796bba548e76',
     'userIds' : [13790]
 },
-'37' : {
+{
+    'id' : 37,
     'name' : 'Андрей Щербов',
     'post' : 'журналист, раздел «Финансы»',
     'text' : 'Вон там кнопки. Нажав на любую, ты покажешь своим друзьям, что читаешь хорошие новости',
     'photo' : 'http://lisa.unistorageserve.ru/5316ff6ff7c0796bc056083a',
     'userIds' : [265750]
 },
-'default' : {
-    'name' : 'Дмитрий Шлыков',
-    'post' : 'заместитель главного редактора',
-    'text' : 'Если мне нравится статья, я жму на Like двумя большими пальцами. А ты какими?',
-    'photo' : 'http://maggie.unistorageserve.ru/530ec4f6e8d7b60d4b29e33a',
-    'userIds' : [265071, 203105]
+{
+    'id' : 'default',
+    'name' : '66.ru',
+    'post' : 'городской портал Екатеринбурга',
+    'text' : 'Считаешь эту страницу интересной? Поделись со всеми',
+    'photo' : 'http://lisa.unistorageserve.ru/53295190f7c0796bc159050b',
+    'userIds' : []
 }
-};
+];
 
 var editor = false;
-if (socialzationBlockParams['options'] && socialzationBlockParams['options'] ) {
+if (socialzationBlockParams['options'] && socialzationBlockParams['options']['sectionId'] ) {
     var editorId = socialzationBlockParams['options']['editorId'];
-    if (editorId) {
-        editor = editors[editorId] ? editors[editorId] : editors['default'];
+    for (i in editors) {
+        if (editors[i]['id'] == editorId) {
+            editor = editors[i];
+            break;
+        }
+        else if (editors[i]['id'] == 'default' && socialzationBlockParams['options']['sectionId'] == 1) {
+            editor = editors[i];
+            break;
+        }
     }
     if (!editor) {
         if (socialzationBlockParams['options']['authorId']) {
@@ -172,80 +201,92 @@ if (socialzationBlockParams['options'] && socialzationBlockParams['options'] ) {
         editor = editors[getRandomInt(0, (editors.length-1) )];
     }
 }
-
-console.log(editor);
+else {
+    for (i in editors) {
+        if (editors[i]['id'] == 'default' ) {
+            editor = editors[i];
+            break;
+        }
+    }
+}
 
 var isMobile = {
-	Android: function() {
-		return navigator.userAgent.match(/Android/i) ? true : false;
-	},
-	BlackBerry: function() {
-		return navigator.userAgent.match(/BlackBerry/i) ? true : false;
-	},
-	iOS: function() {
-		return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
-	},
-	Windows: function() {
-		return navigator.userAgent.match(/IEMobile/i) ? true : false;
-	},
-	any: function() {
-		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
-	}
+    Android: function() {
+        return navigator.userAgent.match(/Android/i) ? true : false;
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) ? true : false;
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
 };
 
 if (editor && !isMobile.any()) {
-	var shareWrapDivId = "shareWrap";
-	var shareDivId = "ya_share";
-	var socialBlockInitalized = false;
+    var shareWrapDivId = "shareWrap";
+    var shareDivId = "ya_share";
+    var socialBlockInitalized = false;
+    var targetSelectors = ['.news_single-view', '.b-afisha-event-seances', '#eventCard', '.realty-social-block__title'];
 
-	var initalizeSocialBlock = function() {
-	new Ya.share({
-	        element: shareDivId,
-	            theme: 'counter',
-	            elementStyle: {
-	                'type': 'none',
-	                'border': false,
-	                'quickServices': ['yaru', 'twitter', 'facebook', 'vkontakte']
-	            },
-	            link: socialzationBlockParams['link'],
-	            title: socialzationBlockParams['linkText'],
-	            description: socialzationBlockParams['annotation'],
-	            image: socialzationBlockParams['imageUrl'],
-	            serviceSpecific: {
-	                twitter: {
-	                    title: socialzationBlockParams['linkText']
-	               }
-	        }
-	});
+    var initalizeSocialBlock = function() {
+    new Ya.share({
+            element: shareDivId,
+                theme: 'counter',
+                elementStyle: {
+                    'type': 'none',
+                    'border': false,
+                    'quickServices': ['yaru', 'twitter', 'facebook', 'vkontakte']
+                },
+                link: socialzationBlockParams['link'],
+                title: socialzationBlockParams['linkText'],
+                description: socialzationBlockParams['annotation'],
+                image: socialzationBlockParams['imageUrl'],
+                serviceSpecific: {
+                    twitter: {
+                        title: socialzationBlockParams['linkText']
+                   }
+            }
+        });
+    };
 
-	var targetDiv = $(".b-news-feed-supplement");
-	if (targetDiv.length) {
-		var div = $("<div>");
-		div.attr("id", shareWrapDivId);
+    var targetDiv = false;
+    for (i in targetSelectors) {
+        targetDiv = $(targetSelectors[i]).first();
+        if (targetDiv.length) {
+            break;
+        }
+    }
+    if (targetDiv.length) {
+        var div = $("<div>");
+        div.attr("id", shareWrapDivId);
 
-		var div2 = $("<div>");
-		div2.attr("class", "shareWrap__el");
-		div2.html('<div class="shareWrap__el__photo"><img src="'+editor['photo']+'" height="120"></div>');
+        var div2 = $("<div>");
+        div2.attr("class", "shareWrap__el");
+        div2.css({'background-image' : 'url('+editor['photo']+')'});
 
-		var span = $("<div>");
-		span.attr("class", "shareWrap__el__text");
+        var span = $("<div>");
+        span.attr("class", "shareWrap__el__text");
 
-		span.html(editor['text'] + '<br><span class="shareWrap__el__podpis">'+editor['name']+', '+editor['post']+'</span>');
+        span.html(editor['text'] + '<br><span class="shareWrap__el__podpis">'+editor['name']+', '+editor['post']+'</span>');
 
-		var span2 = $("<div>");
-		span2.attr("id", shareDivId);
+        var span2 = $("<div>");
+        span2.attr("id", shareDivId);
 
-		$(div2).append(span);
-		$(div2).append(span2);
-		$(div).append(div2);
+        $(div2).append(span);
+        $(div2).append(span2);
+        $(div).append(div2);
 
-		targetDiv.after(div);
-		var shareDiv = $("body").find("#"+shareDivId);
-	    var init = false;
-	    initalizeSocialBlock();
-	}
-
-	}
+        targetDiv.after(div);
+        var shareDiv = $("body").find("#"+shareDivId);
+        var init = false;
+        initalizeSocialBlock();
+    }
 
 }
 
