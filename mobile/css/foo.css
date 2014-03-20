@@ -157,6 +157,8 @@
 	font-weight: bold;
 	line-height: 30px;
 
+	position: relative;
+
 	display: block;
 	float: left;
 
@@ -255,9 +257,23 @@
 .m-button_activated {
 	margin-bottom: 5px;
 
+	cursor: default;
+
 	color: #000;
 	border-color: transparent;
 }
+
+.m-button_loading {
+	color: #fff;
+}
+
+.m-button_loading .m-button__extra {
+	color: #fff;
+}
+
+
+
+
 
 .m-block:before,
 .m-block:after {
@@ -659,4 +675,103 @@
 
 .time-table_no-links .time-table__time {
 	color: #000;
+}
+
+
+
+
+
+
+
+
+.m-button .spinner {
+	line-height: 30px;
+
+	position: absolute;
+	top: 10px;
+	top: -2px;
+	left: 50%;
+
+	display: inline-block;
+
+	width: 100px;
+	height: 30px;
+	margin-left: -50px;
+
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
+
+	opacity: 0;
+}
+
+.m-button_loading .spinner {
+	opacity: 1;
+}
+
+.spinner__bounce {
+	display: inline-block;
+
+	width: 10px;
+	height: 10px;
+
+	-webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+	-o-animation: bouncedelay 1.4s infinite ease-in-out;
+	animation: bouncedelay 1.4s infinite ease-in-out;
+
+	border-radius: 100%;
+	background-color: #698c15;
+
+	-webkit-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.spinner__bounce_1 {
+	-webkit-animation-delay: -.32s;
+	-o-animation-delay: -.32s;
+	animation-delay: -.32s;
+}
+
+.spinner__bounce_2 {
+	-webkit-animation-delay: -.16s;
+	-o-animation-delay: -.16s;
+	animation-delay: -.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(.0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+	}
+}
+
+@-o-keyframes bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(.0);
+		-o-transform: scale(.0);
+		transform: scale(.0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+@keyframes bouncedelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(.0);
+		-ms-transform: scale(.0);
+		-o-transform: scale(.0);
+		transform: scale(.0);
+	}
+	40% {
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		transform: scale(1.0);
+	}
 }
