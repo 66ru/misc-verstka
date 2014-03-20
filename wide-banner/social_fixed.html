@@ -1,0 +1,303 @@
+ 
+<style type="text/css">
+#shareWrap {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 60px;
+background: #fff;
+z-index: 10000;
+display: none;
+-webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 2px 12px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 2px 12px 0px rgba(50, 50, 50, 0.75);
+background-color: rgb(233, 239, 219);
+}
+
+.shareWrap__el {
+margin: 0 auto;
+max-width: 1280px;
+padding: 0 1%;
+position: relative;
+padding: 6px 0 0 0;
+}
+
+.shareWrap__el__photo {
+top: 0;
+right: 0;
+position: absolute;
+}
+
+
+.shareWrap__el__text {
+line-height: 24px;
+padding-right: 180px;
+font-size: 1.2em;
+float: right;
+}
+
+.shareWrap__el__podpis {
+font-size: .8em;
+font-style: italic;
+}
+
+
+#ya_share {
+float: left;
+padding-top: 10px;
+}
+
+</style>
+
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var editors = {
+'16' : {
+    'name' : 'Артем Очеретин',
+    'post' : 'журналист, раздел Недвижимость',
+    'text' : 'Нравится материал? Мне тоже! Давай поделимся им с друзьями. Согласись, они должны это знать',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4b3f7c0796bbc546369',
+    'userIds' : [33609]
+},
+'23' : {
+    'name' : 'Дмитрий Шлыков',
+    'post' : 'заместитель главного редактора',
+    'text' : 'Если мне нравится статья, я жму на Like двумя большими пальцами. А ты какими?',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4f6e8d7b60d4b29e33a',
+    'userIds' : [265750, 265071, 203105]
+},
+'6' : {
+    'name' : 'Ирина Кузнецова',
+    'post' : 'журналист, раздел Общество',
+    'text' : 'Я знаю, что тебе понравился мой материал. Нажми на кнопку, чтобы я перестала на тебя ТАК смотреть',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4bff7c0796bbd5468dd',
+    'userIds' : [4987]
+},
+'22' : {
+    'name' : 'Мария Демидова',
+    'post' : 'редактор спецпроектов',
+    'text' : 'Нажми на кнопку &mdash; спаси Машеньку от медведя',
+    'photo' : 'http://lisa.unistorageserve.ru/530ec4cce8d7b60d4429a362',
+    'userIds' : [1046]
+},
+'29' : {
+    'name' : 'Валерий Кунщиков',
+    'post' : 'журналист Службы Новостей',
+    'text' : 'Если ты не поделишься этой ссылкой, мир пойдет прахом: его завоюют инопланетяне и съедят всех живьем',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4fef7c0796bc154aecc',
+    'userIds' : [231239]
+},
+'31' : {
+    'name' : 'Мария Лейва',
+    'post' : 'журналист Службы новостей',
+    'text' : 'Жми сюда, помоги мне заработать на новые туфли!',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4c5e8d7b60d4a29cabc',
+    'userIds' : [232184]
+},
+'2' : {
+    'name' : 'Сергей Панин',
+    'post' : 'журналист, раздел Бизнес',
+    'text' : 'Дружище, каждый твой лайк - это рубль к моей премии и стопицот к твоей карме',
+    'photo' : 'http://bart.unistorageserve.ru/530ec4e4f7c0796bc0549052',
+    'userIds' : [2529]
+},
+'7' : {
+    'name' : 'Наталия Попова',
+    'post' : 'выпускающий редактор Службы Новостей',
+    'text' : 'Если женщина просит, надо взять и сделать. И всего-то &mdash; кнопку нажать',
+    'photo' : 'http://maggie.unistorageserve.ru/530da15ae8d7b60d4a29b36d',
+    'userIds' : [234453, 25570]
+},
+'21' : {
+    'name' : 'Мария Захарова',
+    'post' : 'журналист Службы Новостей',
+    'text' : 'Важная новость? Нажми на кнопку, пусть знают все',
+    'photo' : 'http://lisa.unistorageserve.ru/5322ee87f7c0796bc056e996',
+    'userIds' : [209711]
+},
+'11' : {
+    'name' : 'Богдан Кульчицкий',
+    'post' : 'главный редактор',
+    'text' : 'Мы работаем не за деньги, а за славу. Нажми на кнопку, дай нам ее',
+    'photo' : 'http://lisa.unistorageserve.ru/530f0505e8d7b60d4329a25c',
+    'userIds' : [281]
+},
+'36' : {
+    'name' : 'Евгений Лобанов',
+    'post' : 'журналист, раздел «Происшествия»',
+    'text' : 'Ты стал свидетелем происшествия?! Нажми на кнопку и напиши о нем в любой соцсети с хэштегом #66',
+    'photo' : 'http://lisa.unistorageserve.ru/5316ff82f7c0796bba548e76',
+    'userIds' : [13790]
+},
+'37' : {
+    'name' : 'Андрей Щербов',
+    'post' : 'журналист, раздел «Финансы»',
+    'text' : 'Вон там кнопки. Нажав на любую, ты покажешь своим друзьям, что читаешь хорошие новости',
+    'photo' : 'http://lisa.unistorageserve.ru/5316ff6ff7c0796bc056083a',
+    'userIds' : [265750]
+},
+'default' : {
+    'name' : 'Дмитрий Шлыков',
+    'post' : 'заместитель главного редактора',
+    'text' : 'Если мне нравится статья, я жму на Like двумя большими пальцами. А ты какими?',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4f6e8d7b60d4b29e33a',
+    'userIds' : [265071, 203105]
+}
+};
+
+var editor = false;
+if (socialzationBlockParams['options'] && socialzationBlockParams['options'] ) {
+    var editorId = socialzationBlockParams['options']['editorId'];
+    if (editorId) {
+        editor = editors[editorId] ? editors[editorId] : editors['default'];
+    }
+    if (!editor) {
+        if (socialzationBlockParams['options']['authorId']) {
+            var _e = false;
+            for (i in editors) {
+                _e = editors[i];
+                if(_e['userIds'] && _e['userIds'].length) {
+                    for (_i in _e['userIds']) {
+                        if (_e['userIds'][_i] == socialzationBlockParams['options']['authorId']) {
+                            editor = _e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if (!editor) {
+        editor = editors[getRandomInt(0, (editors.length-1) )];
+    }
+}
+
+var isMobile = {
+	Android: function() {
+		return navigator.userAgent.match(/Android/i) ? true : false;
+	},
+	BlackBerry: function() {
+		return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+	},
+	iOS: function() {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+	},
+	Windows: function() {
+		return navigator.userAgent.match(/IEMobile/i) ? true : false;
+	},
+	any: function() {
+		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+	}
+};
+
+if (editor && !isMobile.any()) {
+//console.log(editor['name']);
+	var shareWrapDivId = "shareWrap";
+	var shareDivId = "ya_share";
+	var socialBlockInitalized = false;
+
+	var div = $("<div>");
+	div.attr("id", shareWrapDivId);
+
+	var div2 = $("<div>");
+	div2.attr("class", "shareWrap__el");
+	div2.html('<div class="shareWrap__el__photo"><img src="'+editor['photo']+'" height="120"></div>');
+
+	var span = $("<div>");
+	span.attr("class", "shareWrap__el__text");
+
+	span.html(editor['text'] + '<br><span class="shareWrap__el__podpis">'+editor['name']+', '+editor['post']+'</span>');
+
+	var span2 = $("<div>");
+	span2.attr("id", shareDivId);
+
+	$(div2).append(span);
+	$(div2).append(span2);
+	$(div).append(div2);
+	$("body").append(div);
+
+	var shareDiv = $("body").find("#"+shareDivId);
+
+	var initalizeSocialBlock = function() {
+	new Ya.share({
+	        element: shareDivId,
+	            theme: 'counter',
+	            elementStyle: {
+	                'type': 'none',
+	                'border': false,
+	                'quickServices': ['yaru', 'twitter', 'facebook', 'vkontakte']
+	            },
+	            link: socialzationBlockParams['link'],
+	            title: socialzationBlockParams['linkText'],
+	            description: socialzationBlockParams['annotation'],
+	            image: socialzationBlockParams['imageUrl'],
+	            serviceSpecific: {
+	                twitter: {
+	                    title: socialzationBlockParams['linkText']
+	               }
+	        }
+	});
+	}
+
+	    var init = false;
+	    var fixBox = jQuery("#"+shareWrapDivId);
+	    var topOffset = 500;
+	    var topOffset = 500;
+	    var offsetEl = $("#comments");
+	    if (offsetEl.length) {
+	        topOffset = offsetEl.offset().top - 800 > 500 ? offsetEl.offset().top - 800 : 500;
+	    }
+
+	    jQuery(window).scroll(function () {
+	        var showing = false;
+	        var hiding = false;
+	        if (jQuery(window).scrollTop() > topOffset - 200 && !socialBlockInitalized) {
+	            initalizeSocialBlock();
+	        }
+
+	        if (jQuery(window).scrollTop() > topOffset) {
+	            if (!init) {
+	                if (hiding) {
+	                    fixBox.stop();
+	                    hiding = false;
+	                }
+
+	                showing = true;
+	                fixBox.css({"top": "-100px"});
+	                fixBox.toggle();
+$(".sticky__content_sticky").css({'top' : '130px'})
+	                fixBox.animate({"top": "0px"}, 300, function () {
+	                    showing = false;
+	                });
+	                init = true;
+	            }
+	        } else {
+				if (init) {
+		            if (showing) {
+		                fixBox.stop();
+		                showing = false;
+		            }
+
+		            hiding = true;
+		            fixBox.animate({"top": "-100px"}, 300, function () {
+		                fixBox.toggle();
+$(".sticky__content_sticky").css({'top' : '20px'})
+		                fixBox.css({"top": "0px"});
+		                hiding = false;
+		            });
+		            init = false;
+		        }
+	        }
+	    });
+}
+
+});
+
+</script>
