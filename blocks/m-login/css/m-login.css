@@ -1,0 +1,100 @@
+.m-login {
+	font-size: 12px;
+	line-height: 18px;
+
+	padding: 12px 10px;
+
+	text-align: center;
+
+	background-color: #e1f2ba;
+}
+
+.m-login__desc {
+	margin-bottom: 10px;
+}
+
+.m-login__submit {
+	font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+
+	display: block;
+
+	width: 100%;
+	height: 30px;
+	margin-top: 15px;
+
+	text-decoration: none;
+
+	color: #698c15;
+	border: 1px solid #698c15;
+	border-radius: 6px;
+	background-color: #fff;
+}
+
+.m-login__username,
+.m-login__password {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+
+	display: block;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 30px;
+	padding-left: 6px;
+
+	border: 1px solid #698c15;
+	background-color: #fff;
+
+	-webkit-appearance: none;
+}
+
+.m-login__username {
+	border-radius: 6px 6px 0 0;
+}
+
+.m-login__password {
+	margin-bottom: 10px;
+
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+}
+
+.m-login__error {
+	color: #a44;
+}
+
+.m-login__username::-webkit-input-placeholder {
+	color: #999;
+}
+
+.m-login__username::-moz-placeholder {
+	color: #999;
+}
+
+.m-login__username:-ms-input-placeholder {
+	color: #999;
+}
+
+.m-login__username::-ms-clear {
+	color: #999;
+}
+
+.m-login__password::-webkit-input-placeholder {
+	color: #999;
+}
+
+.m-login__password::-moz-placeholder {
+	color: #999;
+}
+
+.m-login__password:-ms-input-placeholder {
+	color: #999;
+}
+
+.m-login__password::-ms-clear {
+	color: #999;
+}

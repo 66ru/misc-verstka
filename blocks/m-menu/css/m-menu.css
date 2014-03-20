@@ -52,39 +52,6 @@
 	line-height: 50px;
 }
 
-.m-menu__weather-wrap {
-	font-family: Arial, Helvetica, sans-serif;
-
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	overflow: hidden;
-
-	width: 90px;
-	height: 50px;
-
-	color: #fff;
-}
-
-.m-menu__weather-icon {
-	float: left;
-
-	height: 50px;
-	margin-right: 4px;
-}
-
-.m-menu__weather-now {
-	font-size: 18px;
-	line-height: 18px;
-
-	margin-top: 10px;
-}
-
-.m-menu__weather-tomorrow {
-	font-size: 9px;
-}
-
 .m-menu__full-ver {
 	font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
 	font-size: 18px;
@@ -105,15 +72,15 @@
 	color: #fff;
 }
 
-
-
-
-body {
-	position: fixed;
+.m-menu__weather {
+	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 0;
-	left: 0;
 
-	height: 100%;
+	overflow: hidden;
+
+	width: 90px;
+	height: 50px;
+
+	color: #fff;
 }

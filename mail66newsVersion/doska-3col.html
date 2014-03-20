@@ -48,58 +48,70 @@
 			line-height: 1px;
 		}
 
-		.gapMobile {
-			display: none;
+		.gap640 {
+			width: 10px;
+		}
+
+		table.gapMobile {
+			display: table;
+			width: 10px;
+		}
+
+		.gapDesktop {
+			max-height: 0;
 		}
 
 		.clearDesktop {
-			clear: both;
+			display: none;
 		}
 
-		@media only screen and (max-width: 640px) {
+		.bgtopbot {
+			background-color: #efefef;
+		}
+
+		@media only screen and (min-width: 640px) {
 			.clearDesktop {
-				display: none;
+				clear: both !important;
+				display: block !important;
 			}
 
-			table.gapDesktop {
-				display: none !important;
+			.gapDesktop {
+				max-height: 5px !important;
+			}
+
+			.gap640 {
+				width: 15px !important;
 			}
 
 			table.gapMobile {
-				display: table !important;
-				width: 10px !important;
-			}
-
-			table.gap640 {
-				width: 10px !important;
+				display: none !important;
 			}
 
 			table.devicewidth {
-				width: 450px !important;
+				width: 580px !important;
 				text-align: center !important;
 			}
 
 			table.devicewidth-inner {
-				width: 430px !important;
+				width: 540px !important;
 				text-align: center !important;
 			}
 
 			img.col3img {
-				width: 210px !important;
-				height: 142px !important;
+				width: 170px !important;
 			}
 		}
 
 		@media only screen and (max-width: 480px) {
 			.clearDesktop {
-				display: none;
-			}
-
-			table.gapDesktop {
 				display: none !important;
 			}
 
-			table.gap640 {
+			.gapDesktop {
+				display: none !important;
+			}
+
+			.gap640 {
 				display: none !important;
 			}
 
@@ -119,7 +131,10 @@
 
 			img.col3img {
 				width: 280px !important;
-				height: 189px !important;
+			}
+
+			.bgtopbot {
+				background-color: #ffffff !important;
 			}
 		}
 	</style>
@@ -129,11 +144,20 @@
 	<tbody>
 		<tr>
 			<td>
-				<table cellspacing="0" cellpadding="0" width="580" bgcolor="#ffffff" align="center" border="0" class="devicewidth">
+				<table cellspacing="0" cellpadding="0" width="450" bgcolor="#ffffff" align="center" border="0" class="devicewidth">
 					<tbody>
 						<tr>
 							<td>
-								<table cellpadding="0" cellspacing="0" border="0" width="540" class="devicewidth-inner" align="center">
+								<table cellpadding="0" cellspacing="0" border="0" width="450" class="devicewidth bgtopbot" align="center">
+									<tr>
+										<td height="15" class="gap">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" width="430" class="devicewidth-inner" align="center">
 									<tbody>
 										<tr>
 											<td>
@@ -162,14 +186,14 @@
 						</tr>
 						<tr>
 							<td>
-								<table cellpadding="0" cellspacing="0" border="0" width="540" class="devicewidth-inner" align="center">
+								<table cellpadding="0" cellspacing="0" border="0" width="430" class="devicewidth-inner" align="center">
 									<tbody>
 										<tr>
 											<td>
 												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="170" src="http://muttmotorcycles.com/files/thumb/58bd2914c04fbf2/1200/800/xfit.pagespeed.ic.Vrv0FWpHDJ.jpg" alt=""></a></td>
+															<td width="170"><a href="#"><img class="col3img" width="210" src="http://muttmotorcycles.com/files/thumb/58bd2914c04fbf2/1200/800/xfit.pagespeed.ic.Vrv0FWpHDJ.jpg" alt=""></a></td>
 														</tr>
 														<tr>
 															<td class="gap" height="8">&nbsp;</td>
@@ -190,17 +214,11 @@
 														</tr>
 													</tbody>
 												</table>
-												<table cellpadding="0" cellspacing="0" border="0" width="15" class="gap640 fl">
-													<tbody>
-														<tr>
-															<td>&nbsp;</td>
-														</tr>
-													</tbody>
-												</table>
+												<div class="gap640 fl">&nbsp;</div>
 												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="170" src="http://img.ffffound.com/static-data/assets/6/09b3b2fa6fea35b108277496885338a3fd4af12a_m.jpg" alt=""></a></td>
+															<td width="170"><a href="#"><img class="col3img" width="210" src="http://img.ffffound.com/static-data/assets/6/09b3b2fa6fea35b108277496885338a3fd4af12a_m.jpg" alt=""></a></td>
 														</tr>
 														<tr>
 															<td class="gap" height="8">&nbsp;</td>
@@ -221,17 +239,11 @@
 														</tr>
 													</tbody>
 												</table>
-												<table cellpadding="0" cellspacing="0" border="0" width="15" class="gap640 gapDesktop fl">
-													<tbody>
-														<tr>
-															<td>&nbsp;</td>
-														</tr>
-													</tbody>
-												</table>
+												<div width="10" class="gap640 gapDesktop fl">&nbsp;</div>
 												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="170" src="http://25.media.tumblr.com/tumblr_lu1qk1VbyY1qcvxkso1_500.jpg" alt=""></a></td>
+															<td width="170"><a href="#"><img class="col3img" width="210" src="http://25.media.tumblr.com/tumblr_lu1qk1VbyY1qcvxkso1_500.jpg" alt=""></a></td>
 														</tr>
 														<tr>
 															<td class="gap" height="8">&nbsp;</td>
@@ -265,7 +277,7 @@
 												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="170" src="http://allanpeters.com/blog/wp-content/uploads/fameshirt_02.jpg" alt=""></a></td>
+															<td width="170"><a href="#"><img class="col3img" width="210" src="http://allanpeters.com/blog/wp-content/uploads/fameshirt_02.jpg" alt=""></a></td>
 														</tr>
 														<tr>
 															<td class="gap" height="8">&nbsp;</td>
@@ -286,17 +298,11 @@
 														</tr>
 													</tbody>
 												</table>
-												<table cellpadding="0" cellspacing="0" border="0" width="15" class="gap640 gapDesktop fl">
-													<tbody>
-														<tr>
-															<td>&nbsp;</td>
-														</tr>
-													</tbody>
-												</table>
+												<div width="10" class="gap640 gapDesktop fl">&nbsp;</div>
 												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="170" src="http://25.media.tumblr.com/tumblr_lb9m6iP30W1qzrblzo1_500.jpg" alt=""></a></td>
+															<td width="170"><a href="#"><img class="col3img" width="210" src="http://25.media.tumblr.com/tumblr_lb9m6iP30W1qzrblzo1_500.jpg" alt=""></a></td>
 														</tr>
 														<tr>
 															<td class="gap" height="8">&nbsp;</td>
@@ -317,17 +323,11 @@
 														</tr>
 													</tbody>
 												</table>
-												<table cellpadding="0" cellspacing="0" border="0" width="15" class="gap640 fl">
-													<tbody>
-														<tr>
-															<td>&nbsp;</td>
-														</tr>
-													</tbody>
-												</table>
+												<div class="gap640 fl">&nbsp;</div>
 												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="170" src="http://img.ffffound.com/static-data/assets/6/fdd7500edca5fc672b2fbd9abf5c04b905249e9b_m.jpg" alt=""></a></td>
+															<td width="170"><a href="#"><img class="col3img" width="210" src="http://img.ffffound.com/static-data/assets/6/fdd7500edca5fc672b2fbd9abf5c04b905249e9b_m.jpg" alt=""></a></td>
 														</tr>
 														<tr>
 															<td class="gap" height="8">&nbsp;</td>
@@ -354,13 +354,22 @@
 											<td style="color: #999; vertical-align: top; padding: 12px 0 24px; border-top: 2px solid #84a830;" valign="top">
 												<table style="width: 100%; border-collapse: collapse; background-color: #fff; padding: 0;" bgcolor="#fff">
 													<tr>
-														<td style="font-size: 12px; vertical-align: top; padding: 0;" valign="top"><a href="#" style="color: #999; text-decoration: none; font-size: 12px !important;">Портал «66.ru» — современный портал Екатеринбурга</a></td>
-														<td style="font-size: 12px; text-align: right; vertical-align: top; padding: 0;" align="right" valign="top"><a href="#" style="color: #999; text-decoration: none; font-size: 12px !important;">Отписаться от рассылки</a></td>
+														<td style="font-size: 12px; vertical-align: top; padding: 0;" valign="top"><a href="#" style="color: #999; text-decoration: none; font-size: 12px !important;">Портал «66.ru»&nbsp;— современный портал Екатеринбурга</a></td>
+														<td style="font-size: 12px; text-align: right; vertical-align: top; padding: 0;" align="right" valign="top"><a href="#" style="color: #999; text-decoration: none; font-size: 12px !important;">Отписаться от&nbsp;рассылки</a></td>
 													</tr>
 												</table>
 											</td>
 										</tr>
 									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" width="450" class="devicewidth bgtopbot" align="center">
+									<tr>
+										<td height="15" class="gap">&nbsp;</td>
+									</tr>
 								</table>
 							</td>
 						</tr>
