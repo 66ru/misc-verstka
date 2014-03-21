@@ -64,13 +64,14 @@
 				if ((absDeltaX > 100) || (e.gesture.velocityX > 0.3)) {
 					$mainContainer.removeClass(menuIsVisibleClass);
 				}
-			} else if ((absDeltaX > 130) || (e.gesture.velocityX > 0.3)) {
+			} else if ((e.gesture.direction == 'right') && (absDeltaX > 130) || (e.gesture.velocityX > 0.3)) {
 				$mainContainer.addClass(menuIsVisibleClass);
 			}
 
+			console.log(e.gesture.direction)
+
 			$mainContainer.css(getTransformCssObject());
 
-			displayCurrentValue(e, absDeltaX);
 			$mainContainer.addClass(transitionClass);
 
 			setTimeout(function() {
@@ -81,10 +82,6 @@
 		$('a').on('click', function() {
 			if (isDragging) return false;
 		});
-
-		function displayCurrentValue(e) {
-			$('#that').html(Math.floor(e.gesture.deltaX) + ', ' + Math.floor(e.gesture.velocityX*100)/100 + ', ' + e.gesture.direction);
-		}
 
 		function getTransformCssObject(val) {
 			var cssVal = val ? 'translateX(' + val + 'px)' : null;
