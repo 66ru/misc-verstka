@@ -2,21 +2,26 @@
 	$(function() {
 		var $menuButton = $('.m-menu__button'),
 			$mainContainer = $('.m-layout'),
-			domMainContainer = $mainContainer[0],
 			$closeGlobal = $('.m-layout__close-global'),
 
-			menuShowMenuClass = 'm-layout_show-menu_yes',
+			domMainContainer = $mainContainer[0],
+
+			menuIsVisibleClass = 'm-layout_show-menu_yes',
 			transitionClass = 'm-layout_transition',
-			closeGlobalOnClass = 'm-layout__close-global_on';
+			closeGlobalOnClass = 'm-layout__close-global_on',
+
+			viewportWidth = $(window).width(),
+			layoutWidthChangePoint = 319;
+
 
 		$menuButton.on('click', function() {
-			$mainContainer.toggleClass(menuShowMenuClass);
-			// $closeGlobal.addClass(closeGlobalOnClass);
+			$mainContainer.toggleClass(menuIsVisibleClass);
+			$closeGlobal.addClass(closeGlobalOnClass);
 		});
 
 		$closeGlobal.on('click', function() {
-			$mainContainer.removeClass(menuShowMenuClass);
-			// $closeGlobal.removeClass(closeGlobalOnClass);
+			$mainContainer.removeClass(menuIsVisibleClass);
+			$closeGlobal.removeClass(closeGlobalOnClass);
 		});
 
 
@@ -28,44 +33,26 @@
 
 		var isDragging = false;
 
-		Hammer(domMainContainer, hammerOptions).on('dragright', function(e) {
+		Hammer(domMainContainer, hammerOptions).on('dragright dragleft', function(e) {
+			var deltaX = e.gesture.deltaX,
+				currentX = 0,
+				newX = 0;
+
 			isDragging = true;
 			e.gesture.preventDefault();
 
-			var absDeltaX = Math.abs(e.gesture.deltaX);
-
 			$mainContainer.removeClass(transitionClass);
 
-			if (!$mainContainer.hasClass(menuShowMenuClass)) {
-				$mainContainer.css({
-					'-ms-transform': 'translateX(' + absDeltaX + 'px)',
-					'-moz-transform': 'translateX(' + absDeltaX + 'px)',
-					'-webkit-transform': 'translateX(' + absDeltaX + 'px)',
-					'transform': 'translateX(' + absDeltaX + 'px)'
-				});
-			}
+			if (!$mainContainer.hasClass(menuIsVisibleClass)) {
+				currentX = 0;
+			} else currentX = 260;
 
-			displayCurrentValue(e, absDeltaX);
-		});
+			newX = currentX + deltaX;
 
-		Hammer(domMainContainer, hammerOptions).on('dragleft', function(e) {
-			isDragging = true;
-			e.gesture.preventDefault();
+			if (newX > 260) newX = 260;
+			if (newX < 0) newX = 0;
 
-			var absDeltaX = Math.abs(e.gesture.deltaX);
-
-			$mainContainer.removeClass(transitionClass);
-
-			if ($mainContainer.hasClass(menuShowMenuClass)) {
-				$mainContainer.css({
-					'-ms-transform': 'translateX(' + (260 - absDeltaX) + 'px)',
-					'-moz-transform': 'translateX(' + (260 - absDeltaX) + 'px)',
-					'-webkit-transform': 'translateX(' + (260 - absDeltaX) + 'px)',
-					'transform': 'translateX(' + (260 - absDeltaX) + 'px)'
-				});
-			}
-
-			displayCurrentValue(e, absDeltaX);
+			$mainContainer.css(getTransformCssObject(newX));
 		});
 
 		Hammer(domMainContainer).on('dragend', function(e) {
@@ -73,20 +60,15 @@
 
 			var absDeltaX = Math.abs(e.gesture.deltaX);
 
-			if ($mainContainer.hasClass(menuShowMenuClass)) {
+			if ($mainContainer.hasClass(menuIsVisibleClass)) {
 				if ((absDeltaX > 100) || (e.gesture.velocityX > 0.3)) {
-					$mainContainer.removeClass(menuShowMenuClass);
+					$mainContainer.removeClass(menuIsVisibleClass);
 				}
 			} else if ((absDeltaX > 130) || (e.gesture.velocityX > 0.3)) {
-				$mainContainer.addClass(menuShowMenuClass);
+				$mainContainer.addClass(menuIsVisibleClass);
 			}
 
-			$mainContainer.css({
-				'-ms-transform': null,
-				'-moz-transform': null,
-				'-webkit-transform': null,
-				'transform': null
-			});
+			$mainContainer.css(getTransformCssObject());
 
 			displayCurrentValue(e, absDeltaX);
 			$mainContainer.addClass(transitionClass);
@@ -101,10 +83,29 @@
 		});
 
 		function displayCurrentValue(e) {
-			$('#that').html(Math.floor(e.gesture.deltaX) + ', ' + Math.floor(e.gesture.velocityX*100)/100);
+			$('#that').html(Math.floor(e.gesture.deltaX) + ', ' + Math.floor(e.gesture.velocityX*100)/100 + ', ' + e.gesture.direction);
+		}
+
+		function getTransformCssObject(val) {
+			var cssVal = val ? 'translateX(' + val + 'px)' : null;
+
+			return {
+				'-ms-transform': cssVal,
+				'-moz-transform': cssVal,
+				'-webkit-transform': cssVal,
+				'transform': cssVal
+			};
 		}
 	});
+
+
+	window.addEventListener('load', function() {
+	    new FastClick(document.body);
+	}, false);
 })();
+
+
+
 
 
 
@@ -141,7 +142,3 @@
 		});
 	});
 })();
-
-window.addEventListener('load', function() {
-    new FastClick(document.body);
-}, false);

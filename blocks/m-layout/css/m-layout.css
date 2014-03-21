@@ -28,15 +28,14 @@
 }
 
 .m-layout__close-global {
-	position: absolute;
+	position: fixed;
 	z-index: 2;
 	top: 0;
 	right: 0;
 	bottom: 0;
+	left: 260px;
 
 	display: none;
-
-	-webkit-transform: translateX(260px);
 }
 
 .m-layout__close-global_on {
@@ -45,10 +44,13 @@
 
 @media (max-width: 319px) {
 	.m-layout_show-menu_yes {
-		left: 180px;
+		-webkit-transform: translateX(180px);
+		-ms-transform: translateX(180px);
+		-o-transform: translateX(180px);
+		transform: translateX(180px);
 	}
 
-	.m-layout__close-global {
+	/*.m-layout__close-global {
 		left: 180px;
-	}
+	}*/
 }
