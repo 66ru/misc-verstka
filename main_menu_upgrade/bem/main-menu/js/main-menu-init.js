@@ -51,9 +51,10 @@
 		}
 
 		function setGlobalsWidths() {
-			$globalWidthSubs
-				.width($header.width())
-					.css({left: -$menu.offset().left});
+			if ($menu.length > 0)
+				$globalWidthSubs
+					.width($header.width())
+						.css({left: -$menu.offset().left});
 		}
 
 		function closeSub() {
