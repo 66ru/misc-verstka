@@ -686,6 +686,34 @@ blockquote {
 .m-login__password::-ms-clear {
   color: #999;
 }
+.m-rubric {
+  font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  margin: 0 10px 5px;
+  padding: 0 10px;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.m-rubric_hilite {
+  font-size: 30px;
+}
+.m-rubric__amount {
+  font-size: 12px;
+  float: right;
+  color: #808080;
+}
+.m-rubric__new {
+  font-size: 12px;
+  float: right;
+  margin-right: 6px;
+  color: #698c15;
+}
 .weather__now {
   font-size: 18px;
   line-height: 18px;

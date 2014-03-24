@@ -1,5 +1,6 @@
 .m-layout {
 	width: 100%;
+	min-height: 100%;
 
 	-webkit-transform: translateX(0);
 	-ms-transform: translateX(0);
