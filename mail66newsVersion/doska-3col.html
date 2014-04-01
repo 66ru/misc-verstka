@@ -14,7 +14,7 @@
 		img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
 		a img {border:none;}
 		.image_fix {display:block;}
-		p {margin: 0px 0px !important;}
+		p {margin: 0px 0px !important; mso-table-lspace:0pt; mso-table-rspace:0pt;}
 
 		table td {border-collapse: collapse;}
 		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
@@ -43,48 +43,22 @@
 			font-size: 14px;
 		}
 
-		.gap {
+		.separator {
 			font-size: 1px;
 			line-height: 1px;
-		}
-
-		.gap640 {
-			width: 10px;
-		}
-
-		table.gapMobile {
-			display: table;
-			width: 10px;
-		}
-
-		.gapDesktop {
-			max-height: 0;
-		}
-
-		.clearDesktop {
-			display: none;
 		}
 
 		.bgtopbot {
 			background-color: #efefef;
 		}
 
+		.hideMid {
+			display: none;
+		}
+
 		@media only screen and (min-width: 640px) {
-			.clearDesktop {
-				clear: both !important;
-				display: block !important;
-			}
-
-			.gapDesktop {
-				max-height: 5px !important;
-			}
-
-			.gap640 {
-				width: 15px !important;
-			}
-
-			table.gapMobile {
-				display: none !important;
+			.gap {
+				width: 13px !important;
 			}
 
 			table.devicewidth {
@@ -97,28 +71,28 @@
 				text-align: center !important;
 			}
 
+			table.resp-elem {
+				width: 168px !important;
+			}
+
 			img.col3img {
-				width: 170px !important;
+				width: 168px !important;
+			}
+
+			.hideWide {
+				display: none !important;
+			}
+
+			.hideMid {
+				display: block !important;
+			}
+
+			table.hideMid {
+				display: table !important;
 			}
 		}
 
 		@media only screen and (max-width: 480px) {
-			.clearDesktop {
-				display: none !important;
-			}
-
-			.gapDesktop {
-				display: none !important;
-			}
-
-			.gap640 {
-				display: none !important;
-			}
-
-			table.gapMobile {
-				display: none !important;
-			}
-
 			table.devicewidth {
 				width: 100% !important;
 				text-align: center !important;
@@ -136,6 +110,18 @@
 			.bgtopbot {
 				background-color: #ffffff !important;
 			}
+
+			table.hideWide {
+				display: table !important;
+			}
+
+			table.hideMid {
+				display: table !important;
+			}
+
+			table.hideSmall {
+				display: none !important;
+			}
 		}
 	</style>
 </head>
@@ -150,7 +136,7 @@
 							<td>
 								<table cellpadding="0" cellspacing="0" border="0" width="450" class="devicewidth bgtopbot" align="center">
 									<tr>
-										<td height="15" class="gap">&nbsp;</td>
+										<td height="15" class="separator">&nbsp;</td>
 									</tr>
 								</table>
 							</td>
@@ -190,171 +176,219 @@
 									<tbody>
 										<tr>
 											<td>
-												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
+
+
+												<table align="left" cellpadding="0" cellspacing="0" border="0" width="208" class="fl resp-elem" style="border:1px solid #ffffff;">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="210" src="http://muttmotorcycles.com/files/thumb/58bd2914c04fbf2/1200/800/xfit.pagespeed.ic.Vrv0FWpHDJ.jpg" alt=""></a></td>
+															<td bgcolor="ffffff" width="208"><p>
+																<a href="#"><img class="col3img" width="208" src="http://img.ffffound.com/static-data/assets/6/09b3b2fa6fea35b108277496885338a3fd4af12a_m.jpg" alt=""></a>
+															</p></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
+															<td bgcolor="ffffff"><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td width="170">
-																Сдается однокомнатная квартира,мебель вся необходимая имеется,из бытовой техники холодильник,стиральная машина, телевизор.Коммунальные включены в стоимость
-															</td>
-														</tr>
-														<tr>
-															<td class="gap" height="32">&nbsp;</td>
-														</tr>
-													</tbody>
-												</table>
-												<div class="gap640 fl">&nbsp;</div>
-												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
-													<tbody>
-														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="210" src="http://img.ffffound.com/static-data/assets/6/09b3b2fa6fea35b108277496885338a3fd4af12a_m.jpg" alt=""></a></td>
-														</tr>
-														<tr>
-															<td class="gap" height="8">&nbsp;</td>
-														</tr>
-														<tr>
-															<td><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
-														</tr>
-														<tr>
-															<td class="gap" height="8">&nbsp;</td>
-														</tr>
-														<tr>
-															<td width="170">
+															<td bgcolor="ffffff" width="208">
 																Сдам на длительный срок однокомнатную квартиру. Летом сделан косметический ремонт, стоят пластиковые окна, в коридоре большой зеркальный шкаф-купе, есть необходимая мебель и бытовая техника (стиральная машина, посудомоечная машина, телевизор, холодильник, микроволновая печь) дополнительно оплачиваются коммунальные услуги. Просмотры в вечернее время. Страховой депозит. Собственник!
 															</td>
 														</tr>
 														<tr>
-															<td class="gap" height="32">&nbsp;</td>
+															<td bgcolor="ffffff" class="separator" height="32">&nbsp;</td>
 														</tr>
 													</tbody>
 												</table>
-												<div width="10" class="gap640 gapDesktop fl">&nbsp;</div>
-												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
+												<table align="left" cellpadding="0" cellspacing="0" border="0" class="gap hideSmall fl" style="background-color: #0ff; border: 1px solid #ffffff;" width="8">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="210" src="http://25.media.tumblr.com/tumblr_lu1qk1VbyY1qcvxkso1_500.jpg" alt=""></a></td>
+															<td><p>&nbsp;</p></td>
+														</tr>
+													</tbody>
+												</table>
+												<table align="left" cellpadding="0" cellspacing="0" border="0" width="208" class="fl resp-elem" style="border: 1px solid #ffffff;">
+													<tbody>
+														<tr>
+															<td bgcolor="#ffffff" width="208"><p>
+																<a href="#"><img class="col3img" width="208" src="http://muttmotorcycles.com/files/thumb/58bd2914c04fbf2/1200/800/xfit.pagespeed.ic.Vrv0FWpHDJ.jpg" alt=""></a>
+															</p></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
+															<td bgcolor="#ffffff"><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td width="170">
+															<td bgcolor="#ffffff" width="208">
+																Сдается однокомнатная квартира,мебель вся необходимая имеется,из бытовой техники холодильник,стиральная машина, телевизор.Коммунальные включены в стоимость
+															</td>
+														</tr>
+														<tr>
+															<td bgcolor="#ffffff" class="separator" height="32">&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+
+
+												<table cellpadding="0" cellspacing="0" border="0" width="13" class="gap hideMid hideSmall fl" style="background-color: #f00; border: 1px solid #ffffff;">
+													<tbody>
+														<tr>
+															<td><p>&nbsp;</p></td>
+														</tr>
+													</tbody>
+												</table>
+												<br clear="all" class="hideWide hideSmall">
+
+
+												<table align="left" cellpadding="0" cellspacing="0" border="0" width="208" class="fl resp-elem" style="border:1px solid #ffffff;">
+													<tbody>
+														<tr>
+															<td bgcolor="ffffff" width="208"><p>
+																<a href="#"><img class="col3img" width="208" src="http://25.media.tumblr.com/tumblr_lu1qk1VbyY1qcvxkso1_500.jpg" alt=""></a>
+															</p></td>
+														</tr>
+														<tr>
+															<td bgcolor="ffffff" class="separator" height="8">&nbsp;</td>
+														</tr>
+														<tr>
+															<td bgcolor="ffffff"><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
+														</tr>
+														<tr>
+															<td bgcolor="ffffff" class="separator" height="8">&nbsp;</td>
+														</tr>
+														<tr>
+															<td bgcolor="ffffff" width="208">
 																Сдам однокомнатную квартиру в новом доме. Установлена электроплита. Квартира без мебели, возможна установка. Окна на южную сторону. Собственник. Цена 15000 + коммунальные платежи
 															</td>
 														</tr>
 														<tr>
-															<td class="gap" height="32">&nbsp;</td>
+															<td bgcolor="ffffff" class="separator" height="32">&nbsp;</td>
 														</tr>
 													</tbody>
 												</table>
-
-												<div class="clearDesktop"></div>
-
-												<table cellpadding="0" cellspacing="0" border="0" width="15" class="gapMobile fl">
+												<br class="hideMid hideSmall" style="clear: both;">
+												<table align="left" cellpadding="0" cellspacing="0" border="0" class="gap hideWide hideSmall fl" style="background-color: #0ff; border: 1px solid #ffffff;" width="8">
 													<tbody>
 														<tr>
-															<td>&nbsp;</td>
+															<td><p>&nbsp;</p></td>
 														</tr>
 													</tbody>
 												</table>
-												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
+												<table align="left" cellpadding="0" cellspacing="0" border="0" width="208" class="resp-elem fl" style="border: 1px solid #ffffff;">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="210" src="http://allanpeters.com/blog/wp-content/uploads/fameshirt_02.jpg" alt=""></a></td>
+															<td bgcolor="#ffffff" width="208"><p>
+																<a href="#"><img class="col3img" width="208" src="http://allanpeters.com/blog/wp-content/uploads/fameshirt_02.jpg" alt=""></a>
+															</p></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
+															<td bgcolor="#ffffff"><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td width="170">
+															<td bgcolor="#ffffff" width="208">
 																Квартира после ремонта, дом 2009 года постройки, закрытый двор, удобная парковка, рядом магазины. Есть все необходимое (кровать, кресла, шкафы, телевизор, холодильник, телефон, встроеная кухня, стиральная машина). Отличный вид из окон. Требования к квартросъемщикам: русские, без детей и животных. Коммунальные платежи оплачиваются отдельно. При заселении оплата за 1 и последний месяцы. Смотреть можно в любое время. Собствнник
 															</td>
 														</tr>
 														<tr>
-															<td class="gap" height="32">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="32">&nbsp;</td>
 														</tr>
 													</tbody>
 												</table>
-												<div width="10" class="gap640 gapDesktop fl">&nbsp;</div>
-												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
+
+
+												<table cellpadding="0" cellspacing="0" border="0" width="13" class="gap hideMid hideSmall fl" style="background-color: #f0f; border: 1px solid #ffffff;">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="210" src="http://25.media.tumblr.com/tumblr_lb9m6iP30W1qzrblzo1_500.jpg" alt=""></a></td>
+															<td><p>&nbsp;</p></td>
+														</tr>
+													</tbody>
+												</table>
+												<br clear="all" class="hideWide hideSmall">
+
+
+												<table align="left" cellpadding="0" cellspacing="0" border="0" width="208" class="resp-elem fl" style="border:1px solid #ffffff;">
+													<tbody>
+														<tr>
+															<td bgcolor="ffffff" width="208"><p>
+																<a href="#"><img class="col3img" width="208" src="http://25.media.tumblr.com/tumblr_lb9m6iP30W1qzrblzo1_500.jpg" alt=""></a>
+															</p></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
+															<td bgcolor="ffffff"><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td width="170">
+															<td bgcolor="ffffff" width="208">
 																Сдам квартиру на длительный срок. Все включено! Собственник!
 															</td>
 														</tr>
 														<tr>
-															<td class="gap" height="32">&nbsp;</td>
+															<td bgcolor="ffffff" class="separator" height="32">&nbsp;</td>
 														</tr>
 													</tbody>
 												</table>
-												<div class="gap640 fl">&nbsp;</div>
-												<table cellpadding="0" cellspacing="0" border="0" width="170" class="fl">
+												<table align="left" cellpadding="0" cellspacing="0" border="0" class="gap hideSmall fl" style="background-color: #ff0; border: 1px solid #ffffff;" width="8">
 													<tbody>
 														<tr>
-															<td width="170"><a href="#"><img class="col3img" width="210" src="http://img.ffffound.com/static-data/assets/6/fdd7500edca5fc672b2fbd9abf5c04b905249e9b_m.jpg" alt=""></a></td>
+															<td><p>&nbsp;</p></td>
+														</tr>
+													</tbody>
+												</table>
+												<table align="left" cellpadding="0" cellspacing="0" border="0" width="208" class="resp-elem fl" style="border: 1px solid #ffffff;">
+													<tbody>
+														<tr>
+															<td bgcolor="#ffffff" width="208"><p>
+																<a href="#"><img class="col3img" width="208" src="http://img.ffffound.com/static-data/assets/6/fdd7500edca5fc672b2fbd9abf5c04b905249e9b_m.jpg" alt=""></a>
+															</p></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
+															<td bgcolor="#ffffff"><a href="#" class="ad-heading">1-к. квартира, ул. Московская, 214к1 (Юго-Западный)</a></td>
 														</tr>
 														<tr>
-															<td class="gap" height="8">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="8">&nbsp;</td>
 														</tr>
 														<tr>
-															<td width="170">
+															<td bgcolor="#ffffff" width="208">
 																Долгосрочно сдается уютная новая 1-комнатная квартира в закрытом клубном доме "Западный". Эл-во и вода оплачиваются дополнительно. Новые диван, шкаф-купе, кухня, холодильник.
 															</td>
 														</tr>
 														<tr>
-															<td class="gap" height="32">&nbsp;</td>
+															<td bgcolor="#ffffff" class="separator" height="32">&nbsp;</td>
 														</tr>
 													</tbody>
 												</table>
+
+
 											</td>
 										</tr>
 										<tr>
 											<td style="color: #999; vertical-align: top; padding: 12px 0 24px; border-top: 2px solid #84a830;" valign="top">
 												<table style="width: 100%; border-collapse: collapse; background-color: #fff; padding: 0;" bgcolor="#fff">
 													<tr>
-														<td style="font-size: 12px; vertical-align: top; padding: 0;" valign="top"><a href="#" style="color: #999; text-decoration: none; font-size: 12px !important;">Портал «66.ru»&nbsp;— современный портал Екатеринбурга</a></td>
+														<td style="font-size: 12px; vertical-align: top; padding: 0;" valign="top"><a href="#" style="color: #999; text-decoration: none; font-size: 12px !important;">66.ru&nbsp;— современный портал Екатеринбурга</a></td>
 														<td style="font-size: 12px; text-align: right; vertical-align: top; padding: 0;" align="right" valign="top"><a href="#" style="color: #999; text-decoration: none; font-size: 12px !important;">Отписаться от&nbsp;рассылки</a></td>
 													</tr>
 												</table>
@@ -368,7 +402,7 @@
 							<td>
 								<table cellpadding="0" cellspacing="0" border="0" width="450" class="devicewidth bgtopbot" align="center">
 									<tr>
-										<td height="15" class="gap">&nbsp;</td>
+										<td height="15" class="separator">&nbsp;</td>
 									</tr>
 								</table>
 							</td>
