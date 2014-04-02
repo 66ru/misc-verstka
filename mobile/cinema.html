@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Новости</title>
+<link rel="stylesheet" href="css/news.css">
+<script src="../bower_components/zepto/zepto.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="js/foo.js"></script>
+</head>
+<body>
+<ul class="m-sidemenu">
+	<li class="m-sidemenu__section">
+		<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
+		<div class="m-sidemenu__elems-wrap">
+			<ul class="m-sidemenu__elems">
+				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
+			</ul>
+			<ul class="m-sidemenu__elems">
+				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
+			</ul>
+		</div>
+	</li>
+	<li class="m-sidemenu__section">
+		<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
+	</li>
+	<li class="m-sidemenu__section">
+		<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
+		<div class="m-sidemenu__elems-wrap">
+			<ul class="m-sidemenu__elems">
+				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
+			</ul>
+			<ul class="m-sidemenu__elems">
+				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
+				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
+			</ul>
+		</div>
+	</li>
+</ul>
+<div class="m-layout">
+	<div class="m-menu">
+		<div class="m-menu__button"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="74" height="50"></a>
+		</div>
+		<div class="m-menu__weather">
+			<span class="weather__icon weather__icon_9"></span>
+			<div class="weather__now">&#8722;20°</div>
+			<div class="weather__tomorrow">завтра &#8722;15°</div>
+		</div>
+	</div>
+	<div class="m-text clearfix">
+		<a href="#" class="m-button m-button_back">Список кинотеатров</a>
+	</div>
+	<div class="m-text clearfix">
+		<h1 class="m-text__h2">Киномакс 3D Мегаполис</h1>
+		<div class="m-cinema-info">
+			<a href="http://kinomax.ru" class="m-cinema-info__logo-wrap"><img src="img/kinomax.png" width="100" height="42" alt="" class="m-cinema-info__logo"></a>
+			<a href="tel:+73433850513" class="m-cinema-info__tel">+7 (343) 385-05-13</a><br>
+			<a href="http://kinomax.ru" class="m-cinema-info__site">kinomax.ru</a><br>
+			<a href="http://maps.yandex.ru/?text=Россия%2C%20Свердловская%20область%2C%20Екатеринбург%2C%20улица%208%20Марта%2C%20149&sll=60.611964%2C56.807141&ll=60.611964%2C56.807141&spn=0.079823%2C0.042093&z=14&l=map" class="m-cinema-info__address">8 Марта, 149</a>
+		</div>
+	</div>
+	<div class="m-text clearfix">
+		<h2 class="m-text__h3">Сеансы</h2>
+		<select name="sdf" id="sdf" class="m-select">
+			<option class="m-select__opt">Сегодня, 29 ноября, воскресенье</option>
+			<option class="m-select__opt">Завтра, 30 ноября, понедельник</option>
+			<option class="m-select__opt">31 ноября, вторник</option>
+			<option class="m-select__opt">32 ноября, четверг</option>
+			<option class="m-select__opt">33 ноября, суббота</option>
+		</select>
+	</div>
+	<div class="block-link block-link_no-more">
+		<a href="#" class="m-text__h4">Паранормальное явление: метка диавола</a>
+		<div class="m-text__date">Ужасы, триллер</div>
+		<ul class="time-table clearfix">
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">15:50</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">18:20</span><span class="time-table__extra">350 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">20:50</span><span class="time-table__extra">500 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">23:20</span><span class="time-table__extra">550 р.</span></a></li>
+		</ul>
+	</div>
+	<div class="block-link block-link_no-more">
+		<a href="#" class="m-text__h4">47 ронинов</a>
+		<div class="m-text__date">Фэнтези, боевик, приключения</div>
+		<ul class="time-table clearfix">
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">11:50</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">13:20</span><span class="time-table__extra">350 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">14:50</span><span class="time-table__extra">500 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">16:20</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">17:50</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">18:20</span><span class="time-table__extra">350 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">20:50</span><span class="time-table__extra">500 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">23:20</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">0:50</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">1:20</span><span class="time-table__extra">350 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">3:20</span><span class="time-table__extra">550 р.</span></a></li>
+		</ul>
+	</div>
+	<div class="block-link block-link_no-more">
+		<a href="#" class="m-text__h4">Невероятная жизнь Уолтера Митти</a>
+		<div class="m-text__date">Фэнтези, драма, комедия, приключения</div>
+		<ul class="time-table time-table_no-links clearfix">
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">15:50</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">18:20</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">20:50</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">23:20</span></span></li>
+		</ul>
+	</div>
+	<div class="block-link block-link_no-more">
+		<a href="#" class="m-text__h4">Любовь в большом городе 3</a>
+		<div class="m-text__date">Ужасы, абсурд</div>
+		<ul class="time-table clearfix">
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">15:50</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">18:20</span><span class="time-table__extra">350 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">20:50</span><span class="time-table__extra">500 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">23:20</span><span class="time-table__extra">550 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">0:50</span><span class="time-table__extra">500 р.</span></a></li>
+			<li class="time-table__elem"><a href="#" class="time-table__link"><span class="time-table__time">3:20</span><span class="time-table__extra">550 р.</span></a></li>
+		</ul>
+	</div>
+	<div class="block-link block-link_no-more">
+		<a href="#" class="m-text__h4">Паранормальное явление: метка диавола</a>
+		<div class="m-text__date">Ужасы, триллер</div>
+		<ul class="time-table time-table_no-links clearfix">
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">11:50</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">13:20</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">14:50</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">16:20</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">17:50</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">18:20</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">20:50</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">23:20</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">0:50</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">1:20</span></span></li>
+			<li class="time-table__elem"><span href="#" class="time-table__link"><span class="time-table__time">3:20</span></span></li>
+		</ul>
+	</div>
+	<div class="m-menu m-menu_bottom">
+		<div class="m-menu__button"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="72" height="50"></a>
+		</div>
+		<a href="http://66.ru" class="m-menu__full-ver">полная версия&nbsp;сайта</a>
+	</div>
+</div>
+<div class="m-layout__close-global"></div>
+</body>
+</html>
