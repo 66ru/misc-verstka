@@ -737,6 +737,80 @@
 
 
 
+.m-lenta {
+	font-size: 0;
+
+	position: relative;
+
+	overflow: hidden;
+	overflow-x: scroll;
+
+	height: 75px;
+
+	white-space: nowrap;
+	/*-webkit-overflow-scrolling: touch;*/
+}
+
+.m-lenta__elem {
+	display: inline-block;
+	overflow: hidden;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 75px;
+}
+
+.m-lenta__elem_video {
+	position: relative;
+}
+
+.m-lenta__elem_video:before {
+	font-size: 24px;
+	color: #fff;
+	line-height: 75px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+
+	content: '▶';
+	text-align: center;
+
+	background-color: rgba(0, 0, 0, .25);
+}
+
+.m-lenta__elem_video:after {
+	position: absolute;
+	top: 15px;
+	bottom: 15px;
+	left: 50%;
+
+	display: block;
+
+	width: 70px;
+	margin-left: -35px;
+
+	content: '';
+
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+
+.m-lenta__img {
+	display: block;
+
+	height: 75px;
+}
+
+
+
+
+
+
 .spinner__bounce {
 	display: inline-block;
 
