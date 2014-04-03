@@ -14,14 +14,14 @@
 	display: block;
 	float: left;
 
-	width: 25px;
-	height: 25px;
+	width: 26px;
+	height: 26px;
 	margin-top: 12px;
 	margin-right: 4px;
 
 	background: none center center no-repeat transparent;
-	-webkit-background-size: 25px;
-	background-size: 25px;
+	-webkit-background-size: 26px;
+	background-size: 26px;
 }
 
 .weather__icon_0 {
