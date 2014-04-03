@@ -41,7 +41,7 @@
 
 .block-link .m-text__h4 {
 	margin: 0;
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 }
 
 .img-link {
@@ -692,7 +692,11 @@
 }
 
 .time-table_no-links .time-table__elem {
+	line-height: 18px;
+
 	height: auto;
+
+	vertical-align: top;
 
 	border-color: transparent;
 	background-color: transparent;
@@ -700,14 +704,32 @@
 
 .time-table_no-links .time-table__link {
 	padding: 0;
-
-	text-align: left;
 }
-
 
 .time-table_no-links .time-table__time {
 	color: #000;
 }
+
+.time-table__elem_no-link {
+	line-height: 28px;
+
+	height: 28px;
+
+	vertical-align: top;
+
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.time-table__elem_no-link .time-table__link {
+	padding: 0;
+}
+
+.time-table__elem_no-link .time-table__time {
+	color: #000;
+}
+
+
 
 
 
