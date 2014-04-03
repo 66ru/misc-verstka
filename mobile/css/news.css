@@ -16,6 +16,7 @@ body {
   line-height: 20px;
   overflow-x: hidden;
   margin: 0;
+  background: #577411;
 }
 /* HTML5 display definitions
 ========================================================================== */
@@ -435,6 +436,7 @@ blockquote {
   background: #698c15;
 }
 .m-menu_bottom {
+  margin-top: 20px;
   margin-bottom: 0;
 }
 .m-menu__button {
@@ -500,7 +502,6 @@ blockquote {
   box-sizing: border-box;
   width: 260px;
   max-height: 100%;
-  overflow: hidden;
   margin: 0;
   padding: 10px 20px 40px;
   list-style: none;
@@ -1102,7 +1103,9 @@ blockquote {
 .m-text__h4 {
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
   font-size: 20px;
+  font-weight: bold;
   margin: 18px 0 12px;
+  text-decoration: none;
 }
 .pic-with-cite-header,
 .pic-without-cite-header,
@@ -1138,6 +1141,9 @@ blockquote {
   line-height: 20px;
   margin: 10px 0;
   color: #595959;
+}
+.block-link .m-text__date {
+  margin: 3px 0 5px 0;
 }
 .m-caption {
   padding: 12px 12px;
@@ -1254,6 +1260,85 @@ blockquote {
 }
 .m-button_loading .spinner {
   opacity: 1;
+}
+.m-lenta {
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+  overflow-x: scroll;
+  height: 75px;
+  white-space: nowrap;
+  /*-webkit-overflow-scrolling: touch;*/
+}
+.m-lenta__elem {
+  display: inline-block;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 75px;
+}
+.m-lenta__elem_video {
+  position: relative;
+}
+.m-lenta__elem_video:before {
+  font-size: 24px;
+  line-height: 75px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '▶';
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.m-lenta__elem_video:after {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 50%;
+  display: block;
+  width: 70px;
+  margin-left: -35px;
+  content: '';
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+.m-lenta__img {
+  display: block;
+  height: 75px;
+}
+.m-cinema-info {
+  position: relative;
+  margin-bottom: 20px;
+}
+.m-cinema-info__tel {
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000;
+}
+.m-cinema-info__site,
+.m-cinema-info__address {
+  line-height: 24px;
+  text-decoration: none;
+}
+.m-cinema-info__logo-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+}
+.m-cinema-info__logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .spinner__bounce {
   display: inline-block;
