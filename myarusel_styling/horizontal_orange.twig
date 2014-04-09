@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>{{client.name}}</title>
+
+	<link rel="stylesheet" href="/css/default.css" />
+	<link rel="stylesheet" href="/css/horizontal_orange.css" />
+
+	{% set gradientColors = client.getGradient() %}
+	{% set topColor = gradientColors[0] %}
+	{% set bottomColor = gradientColors[1] %}
+	<style type="text/css">
+		.b-popular__item-price-content
+		{
+			background-image: linear-gradient(top, rgb({{topColor.r}},{{topColor.g}},{{topColor.b}}) 45%, rgb({{bottomColor.r}},{{bottomColor.g}},{{bottomColor.b}}) 73%);
+			background-image: -o-linear-gradient(top, rgb({{topColor.r}},{{topColor.g}},{{topColor.b}}) 45%, rgb({{bottomColor.r}},{{bottomColor.g}},{{bottomColor.b}}) 73%);
+			background-image: -moz-linear-gradient(top, rgb({{topColor.r}},{{topColor.g}},{{topColor.b}}) 45%, rgb({{bottomColor.r}},{{bottomColor.g}},{{bottomColor.b}}) 73%);
+			background-image: -ms-linear-gradient(top, rgb({{topColor.r}},{{topColor.g}},{{topColor.b}}) 45%, rgb({{bottomColor.r}},{{bottomColor.g}},{{bottomColor.b}}) 73%);
+			background-image: -webkit-linear-gradient(top, rgb({{topColor.r}},{{topColor.g}},{{topColor.b}}) 45%, rgb({{bottomColor.r}},{{bottomColor.g}},{{bottomColor.b}}) 73%);
+
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0.45, rgb({{topColor.r}},{{topColor.g}},{{topColor.b}})),
+				color-stop(0.73, rgb({{bottomColor.r}},{{bottomColor.g}},{{bottomColor.b}}))
+			);
+			/* For Internet Explorer 8 */
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{{topColor.hex}}, endColorstr=#{{bottomColor.hex}})";
+		}
+	</style>
+
+	<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="/js/b-popular.js"></script>
+	<script type="text/javascript" src="/js/jquery.lazyload.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	window.onPage = {{onPage}};
+</script>
+<div class="ekabu-goods-feed">
+	<div class="ekabu-goods-feed-card">
+		<a href="{{ createMyarouselLink(client.url, urlPrefix, urlPostfix) }}" target="blank"><img class="ekabu-goods-feed__img" src="{{client.getResizedLogoUrl(logoSize)}}" alt="{{client.name}}"/></a>
+	</div>
+
+	<div class="ekabu-goods-feed__descr">{{client.caption}}</div>
+
+	<div class="b-popular">
+		<div class="b-popular-inner">
+			<ins class="b-popular-ltcnr"></ins>
+			<ins class="b-popular-lbcnr"></ins>
+			<ins class="b-popular-rtcnr"></ins>
+			<ins class="b-popular-rbcnr"></ins>
+
+			<div class="b-popular__global-wrapper">
+				<i class="b-popular__control b-popular__control_prev"></i>
+				<div class="b-popular__items-wrapper">
+					<!-- Максимум 100 элементов! -->
+					<ul class="b-popular__items">
+						{% for item in items if loop.index0 < 100 %}
+						<li class="b-popular__items-item">
+							<div class="b-popular__item">
+								<div class="b-popular__item-title-wrapper">
+									<a href="{{ createMyarouselLink(item.url, urlPrefix, urlPostfix) }}" class="b-popular__item-title" target="_blank">
+										<span class="b-popular__item-image-wrapper"><img class="b-popular__item-image lazy" src="/images/empty.gif" data-original="{{item.getResizedImageUrl(thumbSize)}}" alt="{{item.title}}" /></span>
+										<div class="b-popular__item-title-text">
+										{{item.title}}
+										</div>
+									</a>
+								</div>
+								<div class="b-popular__item-price-wrapper">
+									<a href="{{ createMyarouselLink(item.url, urlPrefix, urlPostfix) }}" class="b-popular__item-title" target="_blank">
+										<div class="b-popular__item-price">
+											<div class="b-popular__item-price-content">{{item.price|replace({' ':'&nbsp;'})|raw}}</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<i class="b-popular__control b-popular__control_next"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
