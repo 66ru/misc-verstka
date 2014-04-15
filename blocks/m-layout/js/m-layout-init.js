@@ -1,118 +1,72 @@
-(function() {
-	$(function() {
-		var $menuButton = $('.m-menu__button'),
-			$mainContainer = $('.m-layout'),
-			$closeGlobal = $('.m-layout__close-global'),
+$(function() {
+	var layoutClass = 'm-layout',
+		layoutBodyClass = layoutClass + '__body',
+		layoutMainClass = layoutClass + '__main',
+		layoutMenuClass = layoutClass + '__menu',
+		layoutMenuInnerClass = layoutClass + '__menu-inner',
 
-			domMainContainer = $mainContainer[0],
+		layoutBodyStopScrollClass = layoutBodyClass + '_stop-scroll',
+		layoutMainOpenMenuClass = layoutMainClass + '_menu-open',
 
-			menuIsVisibleClass = 'm-layout_show-menu_yes',
-			transitionClass = 'm-layout_transition',
-			closeGlobalOnClass = 'm-layout__close-global_on',
+		$window = $(window),
+		$layoutBody = $('.' + layoutBodyClass),
+		$layoutMain = $('.' + layoutMainClass),
+		$layoutMenuInner = $('.' + layoutMenuInnerClass),
 
-			viewportWidth = $(window).width(),
-			layoutWidthChangePoint = 319;
+		isMenuOpen = false,
+		menuWidth = 260,
+		menuHeight = $layoutMenuInner.height(),
+		scrollTop = $window.scrollTop(),
+		scrollingTimeout,
+		mayScroll = true;
 
-
-		$menuButton.on('click', function() {
-			$mainContainer.toggleClass(menuIsVisibleClass);
-			$closeGlobal.addClass(closeGlobalOnClass);
-		});
-
-		$closeGlobal.on('click', function() {
-			$mainContainer.removeClass(menuIsVisibleClass);
-			$closeGlobal.removeClass(closeGlobalOnClass);
-		});
-
-
-		var hammerOptions = {
-			drag: true,
-			drag_lock_to_axis: true,
-			drag_min_distance: 15
-		};
-
-		var isDragging = false,
-			scrollTopBeforeDrag;
-
-		Hammer(domMainContainer, hammerOptions).on('dragright dragleft swipeleft swiperight', function(e) {
-			var deltaX = e.gesture.deltaX,
-				currentX = 0,
-				newX = 0;
-
-			isDragging = true;
-			e.gesture.preventDefault();
-			if (e.type == 'swipeleft' || e.type == 'swiperight') { return; }
-
-			$mainContainer.removeClass(transitionClass);
-
-			if (!$mainContainer.hasClass(menuIsVisibleClass)) {
-				currentX = 0;
-			} else currentX = 260;
-
-			newX = currentX + deltaX;
-
-			if (newX > 260) newX = 260;
-			if (newX < 0) newX = 0;
-
-			$mainContainer.css(getTransformCssObject(newX));
-
-			displayCurrentValue(e);
-		});
-
-		Hammer(domMainContainer).on('dragstart', function(e) {
-			scrollTopBeforeDrag = $mainContainer.scrollTop();
-		});
-
-		Hammer(domMainContainer).on('dragend', function(e) {
-			e.stopPropagation();
-
-			if (scrollTopBeforeDrag != $mainContainer.scrollTop()) {
-				return;
+	$window.on('scroll', function() {
+		clearTimeout(scrollingTimeout);
+		scrollingTimeout = setTimeout(function() {
+			if (mayScroll) {
+				scrollTop = $window.scrollTop();
+				if (scrollTop < 0) scrollTop = 0;
+				$layoutMenuInner.css(getTransformCssObjectY(scrollTop));
 			}
+		}, 100);
+	});
 
-			var absDeltaX = Math.abs(e.gesture.deltaX);
-
-			if ($mainContainer.hasClass(menuIsVisibleClass)) {
-				if ((absDeltaX > 100) || (e.gesture.velocityX > 0.3)) {
-					$mainContainer.removeClass(menuIsVisibleClass);
-				}
-			} else if ((e.gesture.direction == 'right') && ((absDeltaX > 130) || (e.gesture.velocityX > 0.3))) {
-				$mainContainer.addClass(menuIsVisibleClass);
-			}
-
-			console.log(e.gesture.direction)
-
-			$mainContainer.css(getTransformCssObject());
-
-			$mainContainer.addClass(transitionClass);
-
-			setTimeout(function() {
-				isDragging = false;
-			}, 100);
-		});
-
-		$('a').on('click', function() {
-			if (isDragging) return false;
-		});
-
-		function getTransformCssObject(val) {
-			var cssVal = val ? 'translateX(' + val + 'px)' : null;
-
-			return {
-				'-ms-transform': cssVal,
-				'-moz-transform': cssVal,
-				'-webkit-transform': cssVal,
-				'transform': cssVal
-			};
+	$('input').on('click', function() {
+		if (isMenuOpen) {
+			scrollTop = $layoutMain.scrollTop();
+			mayScroll = false;
+			$layoutMain.removeClass(layoutMainOpenMenuClass);
+			isMenuOpen = false;
+			$layoutBody.removeClass(layoutBodyStopScrollClass);
+			$window.scrollTop(scrollTop);
+			mayScroll = true;
+		} else {
+			$layoutMain.addClass(layoutMainOpenMenuClass);
+			isMenuOpen = true;
+			$layoutBody.addClass(layoutBodyStopScrollClass);
+			$layoutMain.scrollTop(scrollTop);
 		}
 	});
 
+	function getTransformCssObject(val) {
+		var cssVal = val ? 'translateX(' + val + 'px)' : null;
 
-	window.addEventListener('load', function() {
-	    new FastClick(document.body);
-	}, false);
-
-	function displayCurrentValue(e) {
-		$('#rrr').html(Math.floor(e.gesture.deltaX) + ', ' + Math.floor(e.gesture.velocityX*100)/100 + ', ' + e.gesture.direction);
+		return {
+			'-ms-transform': cssVal,
+			'-moz-transform': cssVal,
+			'-webkit-transform': cssVal,
+			'transform': cssVal
+		};
 	}
-})();
+
+	function getTransformCssObjectY(val) {
+		var cssVal = val ? 'translateY(' + val + 'px)' : null;
+
+		return {
+			'-ms-transform': cssVal,
+			'-moz-transform': cssVal,
+			'-webkit-transform': cssVal,
+			'transform': cssVal
+		};
+	}
+});
