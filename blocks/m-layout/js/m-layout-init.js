@@ -31,15 +31,17 @@
 			drag_min_distance: 15
 		};
 
-		var isDragging = false;
+		var isDragging = false,
+			scrollTopBeforeDrag;
 
-		Hammer(domMainContainer, hammerOptions).on('dragright dragleft', function(e) {
+		Hammer(domMainContainer, hammerOptions).on('dragright dragleft swipeleft swiperight', function(e) {
 			var deltaX = e.gesture.deltaX,
 				currentX = 0,
 				newX = 0;
 
 			isDragging = true;
 			e.gesture.preventDefault();
+			if (e.type == 'swipeleft' || e.type == 'swiperight') { return; }
 
 			$mainContainer.removeClass(transitionClass);
 
@@ -53,10 +55,20 @@
 			if (newX < 0) newX = 0;
 
 			$mainContainer.css(getTransformCssObject(newX));
+
+			displayCurrentValue(e);
+		});
+
+		Hammer(domMainContainer).on('dragstart', function(e) {
+			scrollTopBeforeDrag = $mainContainer.scrollTop();
 		});
 
 		Hammer(domMainContainer).on('dragend', function(e) {
 			e.stopPropagation();
+
+			if (scrollTopBeforeDrag != $mainContainer.scrollTop()) {
+				return;
+			}
 
 			var absDeltaX = Math.abs(e.gesture.deltaX);
 
@@ -64,7 +76,7 @@
 				if ((absDeltaX > 100) || (e.gesture.velocityX > 0.3)) {
 					$mainContainer.removeClass(menuIsVisibleClass);
 				}
-			} else if ((e.gesture.direction == 'right') && (absDeltaX > 130) || (e.gesture.velocityX > 0.3)) {
+			} else if ((e.gesture.direction == 'right') && ((absDeltaX > 130) || (e.gesture.velocityX > 0.3))) {
 				$mainContainer.addClass(menuIsVisibleClass);
 			}
 
@@ -99,4 +111,8 @@
 	window.addEventListener('load', function() {
 	    new FastClick(document.body);
 	}, false);
+
+	function displayCurrentValue(e) {
+		$('#rrr').html(Math.floor(e.gesture.deltaX) + ', ' + Math.floor(e.gesture.velocityX*100)/100 + ', ' + e.gesture.direction);
+	}
 })();
