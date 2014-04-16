@@ -1,11 +1,6 @@
 html {
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 
-	overflow-x: hidden;
-
-	width: 100%;
-	height: 100%;
-
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
@@ -20,11 +15,7 @@ body {
 	font-size: 14px;
 	line-height: 20px;
 
-	overflow-x: hidden;
-
 	margin: 0;
-
-	background: #577411;
 }
 
 /* HTML5 display definitions
