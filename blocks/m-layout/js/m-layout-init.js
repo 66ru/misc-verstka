@@ -1,72 +1,53 @@
-$(function() {
-	var layoutClass = 'm-layout',
-		layoutBodyClass = layoutClass + '__body',
-		layoutMainClass = layoutClass + '__main',
-		layoutMenuClass = layoutClass + '__menu',
-		layoutMenuInnerClass = layoutClass + '__menu-inner',
+(function() {
+	$(function() {
+		var layoutClass = 'm-layout',
+			layoutMainClass = layoutClass + '__main',
+			layoutMainOpenMenuClass = layoutMainClass + '_menu-open',
+			layoutMenuWrapClass = layoutClass + '__menu-wrap',
+			layoutMenuToggleClass = layoutClass + '__toggle-menu',
+			layoutOverlayClass = layoutClass + '__overlay',
 
-		layoutBodyStopScrollClass = layoutBodyClass + '_stop-scroll',
-		layoutMainOpenMenuClass = layoutMainClass + '_menu-open',
+			$layoutMain = $('.' + layoutMainClass),
+			$layoutMenuWrap = $('.' + layoutMenuWrapClass),
+			$layoutMenuToggle = $('.' + layoutMenuToggleClass),
+			$layoutOverlay = $('.' + layoutOverlayClass),
 
-		$window = $(window),
-		$layoutBody = $('.' + layoutBodyClass),
-		$layoutMain = $('.' + layoutMainClass),
-		$layoutMenuInner = $('.' + layoutMenuInnerClass),
+			isMenuOpen = false,
+			MENU_TRANSITION_TIME = 400;
 
-		isMenuOpen = false,
-		menuWidth = 260,
-		menuHeight = $layoutMenuInner.height(),
-		scrollTop = $window.scrollTop(),
-		scrollingTimeout,
-		mayScroll = true;
+			console.log($layoutOverlay)
 
-	$window.on('scroll', function() {
-		clearTimeout(scrollingTimeout);
-		scrollingTimeout = setTimeout(function() {
-			if (mayScroll) {
-				scrollTop = $window.scrollTop();
-				if (scrollTop < 0) scrollTop = 0;
-				$layoutMenuInner.css(getTransformCssObjectY(scrollTop));
-			}
-		}, 100);
-	});
-
-	$('.m-layout__menu-toggle').on('click', function() {
-		if (isMenuOpen) {
-			scrollTop = $layoutMain.scrollTop();
-			mayScroll = false;
-			$layoutMain.removeClass(layoutMainOpenMenuClass);
-			isMenuOpen = false;
-			$layoutBody.removeClass(layoutBodyStopScrollClass);
-			$window.scrollTop(scrollTop);
-			mayScroll = true;
-		} else {
+		function openMenu() {
+			$layoutMenuWrap.show();
 			$layoutMain.addClass(layoutMainOpenMenuClass);
+			$layoutOverlay.show();
 			isMenuOpen = true;
-			$layoutBody.addClass(layoutBodyStopScrollClass);
-			$layoutMain.scrollTop(scrollTop);
 		}
+
+		function closeMenu() {
+			$layoutMain.removeClass(layoutMainOpenMenuClass);
+			$layoutOverlay.hide();
+			setTimeout(function() {
+				$layoutMenuWrap.hide();
+			}, MENU_TRANSITION_TIME);
+			isMenuOpen = false;
+		}
+
+
+		$layoutMenuToggle.on('click', function() {
+			if (isMenuOpen) {
+				closeMenu();
+			} else {
+				openMenu();
+			}
+		});
+
+		$layoutOverlay.on('click', function() {
+			closeMenu();
+		});
 	});
 
-	function getTransformCssObject(val) {
-		var cssVal = val ? 'translateX(' + val + 'px)' : null;
-
-		return {
-			'-ms-transform': cssVal,
-			'-moz-transform': cssVal,
-			'-webkit-transform': cssVal,
-			'transform': cssVal
-		};
-	}
-
-	function getTransformCssObjectY(val) {
-		var cssVal = val ? 'translateY(' + val + 'px)' : null;
-
-		return {
-			'-ms-transform': cssVal,
-			'-moz-transform': cssVal,
-			'-webkit-transform': cssVal,
-			'transform': cssVal
-		};
-	}
-});
+	window.addEventListener('load', function() {
+	    new FastClick(document.body);
+	}, false);
+})();
