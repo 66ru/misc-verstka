@@ -31,7 +31,7 @@ $(function() {
 		}, 100);
 	});
 
-	$('input').on('click', function() {
+	$('.m-layout__menu-toggle').on('click', function() {
 		if (isMenuOpen) {
 			scrollTop = $layoutMain.scrollTop();
 			mayScroll = false;
