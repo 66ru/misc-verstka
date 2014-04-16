@@ -13,6 +13,12 @@
 }
 
 .m-menu_bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	height: 50px;
 	margin-top: 20px;
 	margin-bottom: 0;
 }

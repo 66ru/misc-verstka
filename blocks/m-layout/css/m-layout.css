@@ -7,6 +7,8 @@
 
 .m-layout__body {
 	overflow-x: hidden;
+
+	min-height: 100%;
 }
 
 .m-layout__menu-wrap {
@@ -20,6 +22,8 @@
 	overflow-y: scroll;
 
 	background: #577411;
+
+	-webkit-overflow-scrolling: touch;
 }
 
 .m-layout__menu {
@@ -30,10 +34,13 @@
 }
 
 .m-layout__main {
-	position: relative;
+	position: absolute;
 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 100%;
 	min-height: 100%;
+	padding-bottom: 65px;
 
 	-webkit-transition: -webkit-transform .3s;
 	-o-transition: -o-transform .3s;

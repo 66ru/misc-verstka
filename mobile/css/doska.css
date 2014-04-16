@@ -380,6 +380,7 @@ blockquote {
 }
 .m-layout__body {
   overflow-x: hidden;
+  min-height: 100%;
 }
 .m-layout__menu-wrap {
   position: fixed;
@@ -390,6 +391,7 @@ blockquote {
   display: none;
   overflow-y: scroll;
   background: #577411;
+  -webkit-overflow-scrolling: touch;
 }
 .m-layout__menu {
   overflow-y: scroll;
@@ -397,9 +399,12 @@ blockquote {
   max-height: 100%;
 }
 .m-layout__main {
-  position: relative;
+  position: absolute;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   min-height: 100%;
+  padding-bottom: 65px;
   -webkit-transition: -webkit-transform 0.3s;
   -o-transition: -o-transform 0.3s;
   transition: transform .3s;
@@ -449,6 +454,11 @@ blockquote {
   background: #698c15;
 }
 .m-menu_bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
   margin-top: 20px;
   margin-bottom: 0;
 }
