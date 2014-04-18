@@ -15,8 +15,6 @@
 			isMenuOpen = false,
 			MENU_TRANSITION_TIME = 400;
 
-			console.log($layoutOverlay)
-
 		function openMenu() {
 			$layoutMenuWrap.show();
 			$layoutMain.addClass(layoutMainOpenMenuClass);

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="m-layout">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -8,55 +8,58 @@
 <script src="../bower_components/zepto/zepto.min.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
 </head>
-<body>
-<ul class="m-sidemenu">
-	<li class="m-sidemenu__section">
-		<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
-		<div class="m-sidemenu__elems-wrap">
-			<ul class="m-sidemenu__elems">
-				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
-			</ul>
-			<ul class="m-sidemenu__elems">
-				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
-			</ul>
-		</div>
-	</li>
-	<li class="m-sidemenu__section">
-		<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
-	</li>
-	<li class="m-sidemenu__section">
-		<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
-		<div class="m-sidemenu__elems-wrap">
-			<ul class="m-sidemenu__elems">
-				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
-			</ul>
-			<ul class="m-sidemenu__elems">
-				<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
-				<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
-			</ul>
-		</div>
-	</li>
-</ul>
-<div class="m-layout">
+<body class="m-layout__body">
+<div class="m-layout__menu-wrap">
+	<ul class="m-layout__menu m-sidemenu">
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="m-layout__main">
+	<div class="m-layout__overlay"></div>
 	<div class="m-menu">
-		<div class="m-menu__button"></div>
+		<div class="m-menu__button m-layout__toggle-menu"></div>
 		<div class="m-menu__logo-wrap">
 			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="74" height="50"></a>
 		</div>
@@ -92,13 +95,12 @@
 		<a href="#" class="m-button">Еще свежие новости</a>
 	</div>
 	<div class="m-menu m-menu_bottom">
-		<div class="m-menu__button"></div>
+		<div class="m-menu__button m-layout__toggle-menu"></div>
 		<div class="m-menu__logo-wrap">
 			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="72" height="50"></a>
 		</div>
 		<a href="http://66.ru" class="m-menu__full-ver">полная версия&nbsp;сайта</a>
 	</div>
 </div>
-<div class="m-layout__close-global"></div>
 </body>
 </html>
