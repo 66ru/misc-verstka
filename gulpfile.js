@@ -31,8 +31,15 @@ gulp.task('watch', function() {
 	gulp.watch([
 		'./mobile/css/*.less',
 		'./mobile/css/foo.css',
+		'./mobile/css/foo-doska.css',
 		'./mobile/css/m-normalize.css',
 		'./mobile/css/m-old-compat.css',
 		'./blocks/**/*.css'
 		], ['mobile']);
+});
+
+gulp.task('newmain', function() {
+	return gulp.src('./newMain/css/*.less')
+		.pipe(less(lessOptions))
+		.pipe(gulp.dest('./newMain/css'));
 });

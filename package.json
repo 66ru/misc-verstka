@@ -14,7 +14,7 @@
     "karma": "~0.10.9",
     "karma-safari-launcher": "~0.1.1",
     "gulp-util": "~2.2.12",
-    "gulp": "~3.5.0",
+    "gulp": ">3.5.0",
     "gulp-less": "~1.1.10",
     "gulp-watch": "~0.5.0",
     "browser-sync": "~0.5.7"
