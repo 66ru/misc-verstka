@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="m-layout">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Новости</title>
+<link rel="stylesheet" href="css/doska.css">
+<link rel="stylesheet" href="../fonts/PT Sans Narrow.css">
+<script src="../bower_components/zepto/zepto.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../blocks/m-layout/js/m-layout-init.js"></script>
+<script src="js/foo-doska.js"></script>
+</head>
+<body class="m-layout__body">
+<div class="m-layout__menu-wrap">
+	<ul class="m-layout__menu m-sidemenu">
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="m-layout__main" id="main">
+	<div class="m-layout__overlay"></div>
+	<div class="m-menu">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.png" alt="" width="77" height="50"></a>
+		</div>
+		<div class="m-menu__weather">
+			<span class="weather__icon weather__icon_9"></span>
+			<div class="weather__now">&#8722;20°</div>
+			<div class="weather__tomorrow">завтра &#8722;15°</div>
+		</div>
+	</div>
+	<div class="m-text clearfix">
+		<a href="#" class="m-button m-button_back">Вся жилая недвижимость</a>
+	</div>
+	<div class="m-text">
+		<h1 class="m-text__h1">Аренда квартир</h1>
+		<select name="sdf" id="sdf" class="m-select m-select_big">
+			<option class="m-select__opt">Екатеринбург</option>
+			<option class="m-select__opt">Область</option>
+			<option class="m-select__opt">Пригород</option>
+		</select>
+		<div class="m-doska-filter">
+			<div class="m-doska-filter__head">
+				<div class="m-doska-filter__heading">Выберите районы</div>
+				<div class="m-doska-filter__settings">
+					<div class="m-doska-filter__clear"></div>
+					<ul class="m-doska-filter__elems">
+						<li class="m-doska-filter__elem">Вторчермет</li>
+						<li class="m-doska-filter__elem">Ботаничеcкий</li>
+						<li class="m-doska-filter__elem">Автовокзал</li>
+						<li class="m-doska-filter__elem">Пионерский</li>
+						<li class="m-doska-filter__elem">Заречный</li>
+					</ul>
+				</div>
+			</div>
+			<div class="m-doska-filter__body">
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch0" id="ch0" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch0" class="m-doska-filter__label">ВИЗ</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch1" id="ch1" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch1" class="m-doska-filter__label">Вторчермет</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch2" id="ch2" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch2" class="m-doska-filter__label">ЖБИ</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch3" id="ch3" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch3" class="m-doska-filter__label">Ботанический</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch4" id="ch4" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch4" class="m-doska-filter__label">Автовокзал</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch5" id="ch5" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch5" class="m-doska-filter__label">Пионерский</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch6" id="ch6" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch6" class="m-doska-filter__label">Заречный</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch7" id="ch7" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch7" class="m-doska-filter__label">Центр</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch8" id="ch8" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch8" class="m-doska-filter__label">Юго-западный</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch9" id="ch9" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch9" class="m-doska-filter__label">Уктус</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch10" id="ch10" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch10" class="m-doska-filter__label">Уралмаш</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch11" id="ch11" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch11" class="m-doska-filter__label">Химмаш</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch12" id="ch12" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch12" class="m-doska-filter__label">Эльмаш</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch13" id="ch13" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch13" class="m-doska-filter__label">Сортировка</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="ch14" id="ch14" class="m-checkbox m-doska-filter__checkbox">
+					<label for="ch14" class="m-doska-filter__label">Северка</label>
+				</div>
+				<a href="#" class="m-doska-filter__more">Показать все районы</a>
+			</div>
+		</div>
+		<div class="m-doska-filter">
+			<div class="m-doska-filter__head">
+				<div class="m-doska-filter__heading">Количество комнат</div>
+			</div>
+			<div class="m-doska-filter__body">
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="rooms1" id="rooms1" class="m-checkbox m-doska-filter__checkbox">
+					<label for="rooms1" class="m-doska-filter__label">1</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="rooms2" id="rooms2" class="m-checkbox m-doska-filter__checkbox">
+					<label for="rooms2" class="m-doska-filter__label">2</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="rooms3" id="rooms3" class="m-checkbox m-doska-filter__checkbox">
+					<label for="rooms3" class="m-doska-filter__label">3</label>
+				</div>
+				<div class="m-doska-filter__row">
+					<input type="checkbox" name="rooms4" id="rooms4" class="m-checkbox m-doska-filter__checkbox">
+					<label for="rooms4" class="m-doska-filter__label">4+</label>
+				</div>
+			</div>
+		</div>
+		<div class="m-doska-filter m-doska-filter_the-last">
+			<div class="m-doska-filter__head">
+				<div class="m-doska-filter__heading">Цена</div>
+			</div>
+			<div class="m-doska-filter__body">
+				<input type="text" class="m-doska-filter__input"> — <input type="text" class="m-doska-filter__input"> тыс. р.
+			</div>
+		</div>
+		<div class="m-center"><input type="checkbox" name="owners-only" id="owners-only" class="m-checkbox"><label for="owners-only" class="m-label">Только собственники</label></div>
+		<div class="gap gap_30"></div>
+		<a href="#" class="m-doska-button">Показать предложения</a>
+		<div class="gap gap_10"></div>
+		<a href="#" class="m-doska-button m-doska-button_secondary">Сбросить фильтр</a>
+		<div class="gap gap_40"></div>
+	</div>
+	<div class="m-menu m-menu_bottom">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="72" height="50"></a>
+		</div>
+		<a href="http://66.ru" class="m-menu__full-ver">полная версия&nbsp;сайта</a>
+	</div>
+</div>
+</body>
+</html>

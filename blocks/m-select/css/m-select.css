@@ -31,9 +31,25 @@
 .m-select:hover,
 .m-select:active,
 .m-select:focus {
+	outline: none;
 	background-color: transparent;
 }
 
 .m-select::-ms-expand {
 	display: none;
+}
+
+.m-select_big {
+	font-size: 24px;
+	font-weight: normal;
+
+	width: 100%;
+	height: 40px;
+	padding-left: 15px;
+
+	color: #000;
+	border-color: #bbc89c;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDE0IDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT50cmlhbmdsZSBhcnJvdzwvdGl0bGU+PHBhdGggZD0iTTAgMGgxNGwtNyA3LTctN3oiIGZpbGw9IiM2OThDMTUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L3N2Zz4=');
+	background-position: right 10px center;
+	/*box-shadow: 0 2px 3px #abb299;*/
 }

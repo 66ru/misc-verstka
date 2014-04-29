@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Новости</title>
 <link rel="stylesheet" href="css/doska.css">
-<link rel="stylesheet" href="../fonts/PT Sans Narrow.css">
 <script src="../bower_components/zepto/zepto.min.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../bower_components/hammerjs/hammer.min.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
 <script src="js/foo.js"></script>
 </head>
@@ -73,12 +73,11 @@
 		</div>
 	</div>
 	<div class="m-text clearfix">
-		<span class="m-button m-button_left m-button_group_3">Новости</span>
-		<a href="#" class="m-button m-button_center m-button_group_3">Афиша</a>
-		<a href="#" class="m-button m-button_right m-button_group_3 m-button_current">Объявления</a>
+		<a href="#" class="m-button m-button_back">Вся недвижимость</a>
 	</div>
 	<div class="m-text">
-		<h1 class="m-text__h2">Недвижимость</h1>
+		<h1 class="m-text__h2">Жилая недвижимость</h1>
+		<h1 class="m-text__h3">Продажа</h1>
 	</div>
 	<a href="#" class="m-rubric">
 		<span class="m-rubric__name">Жилая</span>
@@ -96,84 +95,34 @@
 		<span class="m-rubric__new">+6</span>
 	</a>
 	<div class="m-text">
-		<h1 class="m-text__h2">Транспорт</h1>
+		<h1 class="m-text__h3">Аренда</h1>
 	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Легковые автомобили</span>
+		<span class="m-rubric__name">Квартиры</span>
 		<span class="m-rubric__amount">706</span>
 		<span class="m-rubric__new">+26</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Автошины и диски</span>
+		<span class="m-rubric__name">Комнаты</span>
 		<span class="m-rubric__amount">111</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Грузовики и спецтехника</span>
+		<span class="m-rubric__name">Гаражи</span>
 		<span class="m-rubric__amount">201</span>
 		<span class="m-rubric__new">+67</span>
 	</a>
+	<div class="m-text">
+		<h1 class="m-text__h3">Посуточная аренда</h1>
+	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Мото и автозапчасти</span>
+		<span class="m-rubric__name">Квартиры</span>
 		<span class="m-rubric__amount">112</span>
 		<span class="m-rubric__new">+6</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Автошины и диски</span>
+		<span class="m-rubric__name">Комнаты</span>
 		<span class="m-rubric__amount">250</span>
 		<span class="m-rubric__new">+8</span>
-	</a>
-	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Мотоциклы и техника</span>
-		<span class="m-rubric__amount">665</span>
-		<span class="m-rubric__new">+26</span>
-	</a>
-	<div class="m-text">
-		<h1 class="m-text__h2">Электроника</h1>
-	</div>
-	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Аудиотехника</span>
-		<span class="m-rubric__amount">706</span>
-	</a>
-	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Бытовая техника</span>
-		<span class="m-rubric__amount">250</span>
-	</a>
-	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Видео и фототехника</span>
-		<span class="m-rubric__amount">201</span>
-	</a>
-	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Игровые приставки</span>
-		<span class="m-rubric__amount">112</span>
-		<span class="m-rubric__new">+1</span>
-	</a>
-	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Компьютеры</span>
-		<span class="m-rubric__amount">250</span>
-	</a>
-	<a href="#" class="m-rubric m-rubric_hilite">
-		<span class="m-rubric__name">Легковые автомобили</span>
-		<span class="m-rubric__amount">706</span>
-	</a>
-	<a href="#" class="m-rubric m-rubric_hilite">
-		<span class="m-rubric__name">Автошины и диски</span>
-		<span class="m-rubric__amount">250</span>
-	</a>
-	<a href="#" class="m-rubric m-rubric_hilite">
-		<span class="m-rubric__name">Грузовики и спецтехника</span>
-		<span class="m-rubric__amount">135</span>
-	</a>
-	<a href="#" class="m-rubric m-rubric_hilite">
-		<span class="m-rubric__name">Мото и автозапчасти</span>
-		<span class="m-rubric__amount">233</span>
-	</a>
-	<a href="#" class="m-rubric m-rubric_hilite">
-		<span class="m-rubric__name">Автошины и диски</span>
-		<span class="m-rubric__amount">71</span>
-	</a>
-	<a href="#" class="m-rubric m-rubric_hilite">
-		<span class="m-rubric__name">Мотоциклы и техника</span>
-		<span class="m-rubric__amount">99</span>
 	</a>
 	<div class="m-menu m-menu_bottom">
 		<div class="m-menu__button m-layout__toggle-menu"></div>
