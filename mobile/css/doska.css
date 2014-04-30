@@ -2000,14 +2000,25 @@ blockquote {
   background-color: #909c77;
 }
 .params {
-  margin: 20px 0 10px;
+  font-size: 14px;
   display: table;
-  table-layout: fixed;
   width: 100%;
+  margin: 20px 0 15px;
+  table-layout: fixed;
+  border-collapse: collapse;
 }
 .params__row {
   display: table-row;
-  border-bottom: #7f7f7f;
+}
+.params__cell {
+  display: table-cell;
+  height: 24px;
+  vertical-align: middle;
+  border-bottom: 1px solid #bfbfbf;
+}
+.params__cell_hilite {
+  font-weight: bold;
+  width: 55%;
 }
 .m-old-compat p {
   line-height: 20px;
