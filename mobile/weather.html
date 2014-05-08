@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Новости</title>
 <link rel="stylesheet" href="css/doska.css">
+<link rel="stylesheet" href="../fonts/PT Sans Narrow.css">
+<link rel="stylesheet" href="css/forecast-font.css">
 <script src="../bower_components/zepto/zepto.min.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
@@ -71,40 +73,230 @@
 			<div class="weather__tomorrow">завтра &#8722;15°</div>
 		</div>
 	</div>
-	<div class="m-text">
+	<div class="m-text clearfix">
 		<h1 class="m-text__h2">Погода в Екатеринбурге</h1>
-		<div class="weather-col">
-			<div class="weather-col__time">Ночь</div>
-			<div class="weather-col__temp">&#8722;20°</div>
-			<div class="weather-col__cloudiness">Переменная облачность</div>
-			<div class="weather-col__extra">734 мм.</div>
-			<div class="weather-col__extra">74%</div>
-			<div class="weather-col__extra">сз 4 м/с</div>
+		<div class="m-weather-when"><span class="m-weather-when__label">сейчас</span><span class="m-weather-when__date">Пятница, 21 марта, 13:20</span></div>
+		<div class="m-weather-now">
+			<span class="m-weather-now__temp">&#8722;2°</span>
+			<span class="m-weather-now__icon icon-basecloud icon-sunny"></span>
+			<span class="m-weather-now__desc">Переменная<br>облачность</span>
 		</div>
-		<div class="weather-col">
-			<div class="weather-col__time">Утро</div>
-			<div class="weather-col__temp">&#8722;20°</div>
-			<div class="weather-col__cloudiness">Переменная облачность</div>
-			<div class="weather-col__extra">734 мм.</div>
-			<div class="weather-col__extra">74%</div>
-			<div class="weather-col__extra">сз 4 м/с</div>
+		<div class="m-weather">
+			<div class="m-weather__row m-weather__row_heading">
+				<div class="m-weather__cell">Ночь</div>
+				<div class="m-weather__cell">Утро</div>
+				<div class="m-weather__cell">День</div>
+				<div class="m-weather__cell">Вечер</div>
+			</div>
+			<div class="m-weather__row m-weather__row_main">
+				<div class="m-weather__cell">&#8722;2°</div>
+				<div class="m-weather__cell">5°</div>
+				<div class="m-weather__cell">10°</div>
+				<div class="m-weather__cell">12°</div>
+			</div>
+			<div class="m-weather__row m-weather__row_icon">
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-sunny"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-sunny"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-frosty"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-sun"></span></div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">Переменная облачность</div>
+				<div class="m-weather__cell">Переменная облачность</div>
+				<div class="m-weather__cell">Снег</div>
+				<div class="m-weather__cell">Ясно</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+			</div>
 		</div>
-		<div class="weather-col">
-			<div class="weather-col__time">День</div>
-			<div class="weather-col__temp">&#8722;20°</div>
-			<div class="weather-col__cloudiness">Ясно</div>
-			<div class="weather-col__extra">734 мм.</div>
-			<div class="weather-col__extra">74%</div>
-			<div class="weather-col__extra">сз 4 м/с</div>
+	</div>
+	<div class="m-text clearfix">
+		<div class="m-weather-when"><span class="m-weather-when__label">завтра</span><span class="m-weather-when__date">Суббота, 22 марта</span></div>
+		<div class="m-weather">
+			<div class="m-weather__row m-weather__row_heading">
+				<div class="m-weather__cell">Ночь</div>
+				<div class="m-weather__cell">Утро</div>
+				<div class="m-weather__cell">День</div>
+				<div class="m-weather__cell">Вечер</div>
+			</div>
+			<div class="m-weather__row m-weather__row_main">
+				<div class="m-weather__cell">&#8722;2°</div>
+				<div class="m-weather__cell">5°</div>
+				<div class="m-weather__cell">10°</div>
+				<div class="m-weather__cell">12°</div>
+			</div>
+			<div class="m-weather__row m-weather__row_icon">
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-sunny"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-sunny"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-frosty"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-sun"></span></div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">Переменная облачность</div>
+				<div class="m-weather__cell">Переменная облачность</div>
+				<div class="m-weather__cell">Снег</div>
+				<div class="m-weather__cell">Ясно</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+			</div>
 		</div>
-		<div class="weather-col">
-			<div class="weather-col__time">Ночь</div>
-			<div class="weather-col__temp">&#8722;20°</div>
-			<div class="weather-col__cloudiness">Снег</div>
-			<div class="weather-col__extra">734 мм.</div>
-			<div class="weather-col__extra">74%</div>
-			<div class="weather-col__extra">сз 4 м/с</div>
+	</div>
+	<div class="m-text clearfix">
+		<div class="m-weather-when"><span class="m-weather-when__label">воскресение</span><span class="m-weather-when__date">23 марта</span></div>
+		<div class="m-weather">
+			<div class="m-weather__row m-weather__row_heading">
+				<div class="m-weather__cell">Ночь</div>
+				<div class="m-weather__cell">Утро</div>
+				<div class="m-weather__cell">День</div>
+				<div class="m-weather__cell">Вечер</div>
+			</div>
+			<div class="m-weather__row m-weather__row_main">
+				<div class="m-weather__cell">&#8722;2°</div>
+				<div class="m-weather__cell">5°</div>
+				<div class="m-weather__cell">10°</div>
+				<div class="m-weather__cell">12°</div>
+			</div>
+			<div class="m-weather__row m-weather__row_icon">
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-sunny"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-sunny"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-basecloud icon-frosty"></span></div>
+				<div class="m-weather__cell"><span class="m-weather__icon icon-sun"></span></div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">Переменная облачность</div>
+				<div class="m-weather__cell">Переменная облачность</div>
+				<div class="m-weather__cell">Снег</div>
+				<div class="m-weather__cell">Ясно</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+				<div class="m-weather__cell">Давление</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+				<div class="m-weather__cell">734 мм</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+				<div class="m-weather__cell">Влажность</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+				<div class="m-weather__cell">74%</div>
+			</div>
+			<div class="m-weather__row m-weather__row_label">
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+				<div class="m-weather__cell">Ветер</div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+				<div class="m-weather__cell">4 м/с</div>
+			</div>
 		</div>
+	</div>
+	<div class="m-text clearfix">
+		<div class="m-weather-when"><span class="m-weather-when__label">понедельник</span><span class="m-weather-when__date">24 марта</span></div>
+		<div class="m-weather m-weather_cols_2">
+			<div class="m-weather__row m-weather__row_heading">
+				<div class="m-weather__cell">Ночь</div>
+				<div class="m-weather__cell">День</div>
+			</div>
+			<div class="m-weather__row m-weather__row_main">
+				<div class="m-weather__cell"><span class="m-weather__main-left">&#8722;2°</span><span class="m-weather__icon icon-basecloud icon-sunny"></div>
+				<div class="m-weather__cell"><span class="m-weather__main-left">10°</span><span class="m-weather__icon icon-basecloud icon-frosty"></span></div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell"><span class="m-weather__left">Давление</span><span class="m-weather__indent">734 мм</span></div>
+				<div class="m-weather__cell"><span class="m-weather__left">Давление</span><span class="m-weather__indent">734 мм</span></div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell"><span class="m-weather__left">Влажность</span><span class="m-weather__indent">74%</span></div>
+				<div class="m-weather__cell"><span class="m-weather__left">Влажность</span><span class="m-weather__indent">74%</span></div>
+			</div>
+			<div class="m-weather__row">
+				<div class="m-weather__cell"><span class="m-weather__left">Ветер</span><span class="m-weather__indent">4 м/с</span></div>
+				<div class="m-weather__cell"><span class="m-weather__left">Ветер</span><span class="m-weather__indent">4 м/с</span></div>
+			</div>
 	</div>
 	<div class="m-menu m-menu_bottom">
 		<div class="m-menu__button m-layout__toggle-menu"></div>

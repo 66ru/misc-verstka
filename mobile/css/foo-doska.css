@@ -226,16 +226,6 @@
 	margin: auto;
 }
 
-.weather-col {
-	float: left;
-
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 25%;
-
-	border-left: 1px solid #ced8b3;
-}
-
 
 .m-text_doska {
 	padding-right: 10px;
