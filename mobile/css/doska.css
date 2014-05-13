@@ -1539,7 +1539,7 @@ blockquote {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 25%;
-  padding: 0 1% 10px 2%;
+  padding: 0 1% 7px 2%;
   vertical-align: middle;
   border-left: 1px solid #ced8b3;
 }
@@ -1573,6 +1573,34 @@ blockquote {
 }
 .m-weather_cols_2 .m-weather__icon {
   margin-left: 45px;
+}
+@media (min-width: 480px) {
+  .m-weather {
+    font-size: 12px;
+  }
+  .m-weather__row_main {
+    font-size: 24px;
+  }
+  .m-weather__row_label {
+    font-size: 10px;
+  }
+  .m-weather__icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+  }
+  .m-weather__left {
+    font-size: 10px;
+  }
+  .m-weather__indent {
+    margin-left: 65px;
+  }
+  .m-weather_cols_2 .m-weather__row_main .m-weather__cell {
+    line-height: 48px;
+  }
+  .m-weather_cols_2 .m-weather__icon {
+    margin-left: 60px;
+  }
 }
 .m-weather-when {
   margin-top: 20px;
