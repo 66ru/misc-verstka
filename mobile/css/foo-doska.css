@@ -119,11 +119,13 @@
 
 @media (min-width: 480px) {
 	.m-goods-card {
-		float: left;
 		display: block;
+		float: left;
 
 		width: 42%;
+		margin-top: 20px;
 		margin-right: 8%;
+		margin-bottom: 20px;
 	}
 
 	.m-goods-card__img {
@@ -134,7 +136,6 @@
 		display: block;
 
 		padding-top: 10px;
-		padding-bottom: 20px;
 		padding-left: 0;
 	}
 }
