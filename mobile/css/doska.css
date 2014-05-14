@@ -1728,9 +1728,6 @@ blockquote {
   margin-bottom: 20px;
   table-layout: fixed;
 }
-.m-goods-card__row {
-  display: table-row;
-}
 .m-goods-card__img {
   display: table-cell;
   width: 120px;
@@ -1740,6 +1737,23 @@ blockquote {
   display: table-cell;
   padding-left: 10px;
   vertical-align: middle;
+}
+@media (min-width: 480px) {
+  .m-goods-card {
+    float: left;
+    display: block;
+    width: 42%;
+    margin-right: 8%;
+  }
+  .m-goods-card__img {
+    display: block;
+  }
+  .m-goods-card__desc {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
 }
 .m-goods-card__heading {
   font-size: 20px;
