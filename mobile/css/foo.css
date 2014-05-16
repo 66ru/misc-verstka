@@ -151,10 +151,11 @@
 }
 
 .news-piece_icon_pie:before {
-	width: 15px;
-	height: 15px;
 	top: 5px;
 	left: -2px;
+
+	width: 15px;
+	height: 15px;
 
 	border-radius: 0;
 	background: none left top no-repeat transparent;
@@ -1115,7 +1116,8 @@
 }
 
 .m-weather_cols_2 .m-weather__icon {
-	margin-left: 45px;
+	height: 24px;
+	margin-left: 20px;
 }
 
 @media (min-width: 480px) {
@@ -1151,7 +1153,8 @@
 	}
 
 	.m-weather_cols_2 .m-weather__icon {
-		margin-left: 60px;
+		margin-left: 25px;
+		height: 32px;
 	}
 }
 
@@ -1197,8 +1200,6 @@
 	font-size: 72px;
 	line-height: 50px;
 
-	display: inline-block;
-
 	width: 100px;
 	height: 50px;
 
@@ -1212,6 +1213,8 @@
 
 	display: inline-block;
 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 100px;
 	height: 50px;
 	padding-top: 10px;
