@@ -110,3 +110,15 @@
 
 	color: #fff;
 }
+
+.m-menu__weather-now {
+	font-size: 18px;
+	line-height: 18px;
+
+	margin-top: 10px;
+}
+
+.m-menu__weather-tomorrow {
+	font-size: 9px;
+	line-height: 9px;
+}
