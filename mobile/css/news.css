@@ -498,9 +498,23 @@ blockquote {
   position: absolute;
   top: 0;
   right: 0;
-  overflow: hidden;
-  width: 90px;
+  width: 100px;
   height: 50px;
+  color: #fff;
+}
+.m-menu__weather .weather-icon {
+  font-size: 36px;
+  line-height: 36px;
+  display: block;
+  float: left;
+  width: 36px;
+  height: 36px;
+  margin-top: 9px;
+}
+.m-menu__weather .weather-icon:before,
+.m-menu__weather .weather-icon:after {
+  left: -2px;
+  text-align: left;
   color: #fff;
 }
 .m-sidemenu {
@@ -858,10 +872,10 @@ blockquote {
   background-size: 100% 100%;
 }
 .news-piece_icon_pie:before {
-  width: 15px;
-  height: 15px;
   top: 5px;
   left: -2px;
+  width: 15px;
+  height: 15px;
   border-radius: 0;
   background: none left top no-repeat transparent;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPnBpZS1jaGFydCBidWxsZXQ8L3RpdGxlPjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iMTAwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiM5MUU4MDkiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjNjlDQjFEIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCB4MT0iNTAlIiB5MT0iMTAwJSIgeDI9IjUwJSIgeTI9IjAlIiBpZD0iYiI+PHN0b3Agc3RvcC1jb2xvcj0iIzJFOURFOCIgb2Zmc2V0PSIwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiMzOUE5RUQiIG9mZnNldD0iMTAwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiM0Q0JERjUiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiIGlkPSJjIj48c3RvcCBzdG9wLWNvbG9yPSIjRkZDMDBEIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRUQzQiIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSIgaWQ9ImQiPjxzdG9wIHN0b3AtY29sb3I9IiNERTNCMUQiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkM3NTI3IiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBza2V0Y2g6dHlwZT0iTVNMYXllckdyb3VwIiBmaWxsPSJub25lIj48cGF0aCBkPSJNNy41IDE0LjVjMy44NjYgMCA3LTMuMTM0IDctN3MtMy4xMzQtNy03LTciIGZpbGw9InVybCgjYSkiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48cGF0aCBkPSJNLjUgNy41YzAgMy44NjYgMy4xMzQgNyA3IDcgMi40NDEgMCA0LjU5MS0xLjI1IDUuODQzLTMuMTQ0bC01Ljg0My0zLjg1NiIgZmlsbD0idXJsKCNiKSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjxwYXRoIGQ9Ik03LjUuNWMtMy44NjYgMC03IDMuMTM0LTcgNyAwIDIuNjk0IDEuNTIyIDUuMDMzIDMuNzUzIDYuMjAzbDMuMjQ3LTYuMjAzIiBmaWxsPSJ1cmwoI2MpIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIi8+PHBhdGggZD0iTTcuNSA3LjV2LTdjLTMuMTQ2IDAtNS44MDggMi4wNzYtNi42OSA0LjkzMyIgZmlsbD0idXJsKCNkKSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjxjaXJjbGUgZmlsbD0iI2ZmZiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgY3g9IjcuNSIgY3k9IjcuNSIgcj0iMi41Ii8+PC9nPjwvc3ZnPg=='), none;
@@ -1550,7 +1564,8 @@ blockquote {
   vertical-align: middle;
 }
 .m-weather_cols_2 .m-weather__icon {
-  margin-left: 45px;
+  height: 24px;
+  margin-left: 20px;
 }
 @media (min-width: 480px) {
   .m-weather {
@@ -1577,7 +1592,8 @@ blockquote {
     line-height: 48px;
   }
   .m-weather_cols_2 .m-weather__icon {
-    margin-left: 60px;
+    margin-left: 25px;
+    height: 32px;
   }
 }
 .m-weather-when {
@@ -1607,7 +1623,6 @@ blockquote {
 .m-weather-now__icon {
   font-size: 72px;
   line-height: 50px;
-  display: inline-block;
   width: 100px;
   height: 50px;
   vertical-align: top;
@@ -1617,6 +1632,8 @@ blockquote {
   font-weight: bold;
   line-height: 15px;
   display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100px;
   height: 50px;
   padding-top: 10px;

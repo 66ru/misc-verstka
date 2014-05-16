@@ -84,10 +84,29 @@
 	top: 0;
 	right: 0;
 
-	overflow: hidden;
-
-	width: 90px;
+	width: 100px;
 	height: 50px;
+
+	color: #fff;
+}
+
+.m-menu__weather .weather-icon {
+	font-size: 36px;
+	line-height: 36px;
+
+	display: block;
+	float: left;
+
+	width: 36px;
+	height: 36px;
+	margin-top: 9px;
+}
+
+.m-menu__weather .weather-icon:before,
+.m-menu__weather .weather-icon:after {
+	left: -2px;
+
+	text-align: left;
 
 	color: #fff;
 }
