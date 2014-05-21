@@ -4,19 +4,389 @@
 <meta charset="utf-8">
 <title>Weathrererwe</title>
 <link rel="stylesheet" href="../reset.css/reset.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/logo.css">
+<link rel="stylesheet" href="../newMain/css/gpor5.css" />
+<link rel="stylesheet" href="../main_menu_upgrade/bem/header/css/header.css">
+<link rel="stylesheet" href="../main_menu_upgrade/css/bem-styles.css">
 <link rel="stylesheet" href="css/weather-desktop.css">
+<link rel="stylesheet" href="../blocks/wind-icon/css/wind-icon.css">
+<link rel="stylesheet" href="../blocks/weather-icon/css/weather-icon.css">
 </head>
 <body>
 <div class="layout">
+	<div class="header">
+		<div class="layout__base">
+			<div class="grid">
+				<div class="grid__module grid__module_col_1 grid__module_span_102">
+					<div class="logo"></div>
+					<ul class="main-menu main-menu_js_no">
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">Новости</a>
+							<div class="main-menu__sub main-menu__sub_width_global sub">
+								<div class="layout">
+									<div class="layout__base">
+										<div class="grid">
+											<ul class="sub__list sub__list_separator_left grid__module grid__module_col_1 grid__module_span_17">
+												<li class="sub__elem sub__elem_size_l ">
+													<a href="#" class="sub__link">Все новости</a>
+												</li>
+												<li class="sub__elem sub__elem_size_l ">
+													<a href="#" class="sub__link">Главные</a>
+												</li>
+												<li class="sub__elem sub__elem_size_l sub__elem_hilite_yes">
+													<a href="#" class="sub__link">Происшествия</a>
+												</li>
+												<li class="sub__elem sub__elem_size_l ">
+													<a href="#" class="sub__link">Авто</a>
+												</li>
+											</ul>
+											<ul class="sub__list grid__module grid__module_col_21 grid__module_span_15">
+												<li class="sub__elem sub__elem_hilite_yes">
+													<a href="#" class="sub__link">Благотворительность</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Авто</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Благотворительность</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Политика</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Спорт</a>
+												</li>
+											</ul>
+											<div class="grid__module grid__module_col_38 grid__module_span_90">
+												<a href="#" class="case" style="background-image: url(http://img.ffffound.com/static-data/assets/6/b2d36a4dbae2a50fbfc965fe9fbd1f2231b98c65_m.png);">
+												<span class="case__desc">Бэтмен уже не тот. Восьмидесятилетний Брюс Уэйн с трудом стоит на ногах&nbsp;<span class="case__comments">(54)</span></span>
+												</a>
+												<a href="#" class="case" style="background-image: url(http://img.ffffound.com/static-data/assets/6/2ffa5fb1a7bc7f1225225aa151159057a4432d94_m.jpg);">
+												<span class="case__desc">Дневник предпринимателя. После вуза сразу в космос&nbsp;<span class="case__comments">(68)</span></span>
+												</a>
+												<a href="#" class="case" style="background-image: url(http://img.ffffound.com/static-data/assets/6/5e9331574b0e7f74d3fd75821da6883190681a37_m.jpg);">
+												<span class="case__desc">Обычный герой: «Вместо нас в детсадах будут работать нянечки-роботы и бабушки»&nbsp;<span class="case__comments">(14)</span></span>
+												</a>
+												<a href="#" class="case" style="background-image: url(http://img.ffffound.com/static-data/assets/6/b2d36a4dbae2a50fbfc965fe9fbd1f2231b98c65_m.png);">
+												<span class="case__desc">Бэтмен уже не тот. Восьмидесятилетний Брюс Уэйн с трудом стоит на ногах&nbsp;<span class="case__comments">(54)</span></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Банки</a>
+							<div class="main-menu__sub main-menu__sub_width_global sub">
+								<div class="layout">
+									<div class="layout__base">
+										<div class="grid">
+											<ul class="sub__list sub__list_separator_left sub__list_tight_yes grid__module grid__module_col_1 grid__module_span_21">
+												<li class="sub__elem sub__elem_size_l">
+													<a href="#" class="sub__link">Политика</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Бизнес</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Интернет</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Общество</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Все новости</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Добрые новости</a>
+												</li>
+											</ul>
+											<ul class="sub__list sub__list_separator_left grid__module grid__module_col_23 grid__module_span_28">
+												<li class="sub__elem sub__elem_size_l">
+													<a href="#" class="sub__link">Благотворительность</a>
+												</li>
+												<li class="sub__elem">
+													<div class="grid">
+														<ul class="sub__list sub__list_tight_yes grid__module grid__module_col_1 grid__module_span_60">
+															<li class="sub__elem">
+																<a href="#" class="sub__link">Безумный мир</a>
+															</li>
+															<li class="sub__elem">
+																<a href="#" class="sub__link">Общество</a>
+															</li>
+															<li class="sub__elem">
+																<a href="#" class="sub__link">Авто</a>
+															</li>
+														</ul>
+														<ul class="sub__list sub__list_tight_yes grid__module grid__module_col_65 grid__module_span_60">
+															<li class="sub__elem">
+																<a href="#" class="sub__link">Благотворительность</a>
+															</li>
+															<li class="sub__elem">
+																<a href="#" class="sub__link">Все новости</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="button button_color_orange">Заполнить заявку на кредит</a>
+												</li>
+											</ul>
+											<ul class="sub__list sub__list_separator_left sub__list_tight_yes grid__module grid__module_col_51 grid__module_span_23">
+												<li class="sub__elem sub__elem_size_l">
+													<a href="#" class="sub__link">Отдых</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Общество</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Политика</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Общество</a>
+												</li>
+											</ul>
+											<ul class="sub__list sub__list_separator_left sub__list_tight_yes grid__module grid__module_col_74 grid__module_span_17">
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Общество</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Общество</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Новости компаний</a>
+												</li>
+												<li class="sub__elem">
+													<a href="#" class="sub__link">Здоровье</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Работа</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Объявления</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Недвижимость</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Авто</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Общение</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Афиша</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Справка</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Здоровье</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Еда</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Конкурсы</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<a href="#" class="main-menu__link">
+							Почта</a>
+							<div class="main-menu__sub main-menu__sub_width_global">
+								<div class="layout">
+								</div>
+							</div>
+						</li>
+						<li class="main-menu__elem">
+							<span class="main-menu__more">Еще<span class="main-menu__arrow-img"></span></span>
+							<div class="main-menu__sub main-menu__sub_width_global main-menu__sub_padding-bottom_no">
+								<div class="layout">
+									<div class="layout__base">
+										<ul class="flat-sub">
+											<li class="flat-sub__elem">
+											</li>
+											<li class="flat-sub__elem">
+											</li>
+											<li class="flat-sub__elem">
+											</li>
+											<li class="flat-sub__elem">
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Недвижимость</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Валенки</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Энциклопедия</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Саночки</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Поллюции</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Лед</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Лиственница</a></li>
+												</ul>
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Авто</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Динозавр</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Почкование</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Тесто</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Синий</a></li>
+												</ul>
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Общение</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Стабильность</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Зима</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Весло</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Нагнетать</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Криминал</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Маркетинг</a></li>
+												</ul>
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Афиша</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Николай Второй</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Печать</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Сегменты</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Память</a></li>
+												</ul>
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Справка</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Спуск</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Валенки</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Энциклопедия</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Поллюции</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Лед</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Лиственница</a></li>
+												</ul>
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Еда</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Динозавр</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Почкование</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Тесто</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Стабильность</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Синий</a></li>
+												</ul>
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Конкурсы</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Зима</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Весло</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Нагнетать</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Криминал</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Маркетинг</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Николай Второй</a></li>
+												</ul>
+											</li>
+											<li class="flat-sub__elem">
+												<ul class="sub__list sub__list_separator_left">
+													<li class="sub__elem sub__elem_size_l"><a href="#" class="sub__link">Почта</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Печать</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Сегменты</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Спуск</a></li>
+													<li class="sub__elem"><a href="#" class="sub__link">Память</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="layout">
 	<div class="layout__base">
+		<div style="height: 25px;"></div>
 		<div class="grid">
+			<div class="grid__module grid__module_col_105 grid__module_span_24">
+				<img width="498" height="800" style="width: 100%; height: auto;" src="http://www.milanofixed.com/wp-content/uploads/2013/11/IMG-20131117-WA0000.jpg" alt="">
+			</div>
+			<div class="grid__module grid__module_col_1 grid__module_span_17">
+				<div style="height: 40px;"></div>
+				<ul class="simple-ll">
+					<li class="simple-ll__elem simple-ll__elem_current">Екатеринбург</li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Нижний Тагил</a></li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Серов</a></li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Ивдель</a></li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Каменск-Уральский</a></li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Невьянск</a></li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Ирбит</a></li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Качканар</a></li>
+					<li class="simple-ll__elem"><a href="#" class="simple-ll__link">Первоуральск</a></li>
+				</ul>
+			</div>
 			<div class="grid__module grid__module_col_21 grid__module_span_82">
-			<div class="weather weather_primary">
+				<div class="weather weather_primary">
 					<div class="weather__row weather__row_main">
 						<div class="weather__cell weather__cell_label"><span class="weather__date-label">Сейчас</span></div>
-						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>13°</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>20°</div>
 						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_sunny"></span></div>
 						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
 						<div class="weather__cell weather__cell_pressure"></div>
@@ -39,25 +409,25 @@
 						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind weather__wind_n"></span>4 м/с</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind wind-icon wind-icon_n"></span>4 м/с</div>
 					</div>
 					<div class="weather__row">
 						<div class="weather__cell weather__cell_label">Утро</div>
-						<div class="weather__cell weather__cell_temp"><span class="weather__sign"></span>21°</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign"></span>19°</div>
 						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_sun"></span></div>
 						<div class="weather__cell weather__cell_desc">Ясно</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">юв</span><span class="weather__wind weather__wind_se"></span>4 м/с</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">юв</span><span class="weather__wind wind-icon wind-icon_se"></span>4 м/с</div>
 					</div>
 					<div class="weather__row">
 						<div class="weather__cell weather__cell_label">День</div>
-						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>1°</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>21°</div>
 						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_snowy"></span></div>
 						<div class="weather__cell weather__cell_desc">Снег</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind weather__wind_e"></span>4 м/с</div>
+						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind wind-icon wind-icon_e"></span>4 м/с</div>
 					</div>
 					<div class="weather__row">
 						<div class="weather__cell weather__cell_label">Вечер</div>
@@ -66,13 +436,69 @@
 						<div class="weather__cell weather__cell_desc">Пасмурно</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell"><span class="weather__wind-direction">св</span><span class="weather__wind weather__wind_ne"></span>4 м/с</div>
+						<div class="weather__cell"><span class="weather__wind-direction">св</span><span class="weather__wind wind-icon wind-icon_ne"></span>4 м/с</div>
 					</div>
 				</div>
-				<div class="weather">
+				<div class="weather weather_collapsed">
 					<div class="weather__row weather__row_main">
-						<div class="weather__cell weather__cell_label"><span class="weather__date-label">28 сентября</span>четверг</div>
+						<div class="weather__cell weather__cell_label"><span class="weather__expand"></span><span class="weather__date-label">завтра</span>четверг</div>
 						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>13°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_sun"></span></div>
+						<div class="weather__cell weather__cell_desc">Ясно</div>
+						<div class="weather__cell weather__cell_pressure"></div>
+						<div class="weather__cell weather__cell_humidity"></div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__expand"></span></div>
+					</div>
+					<div class="weather__row weather__row_header">
+						<div class="weather__cell weather__cell_label"></div>
+						<div class="weather__cell weather__cell_temp"></div>
+						<div class="weather__cell weather__cell_icon"></div>
+						<div class="weather__cell weather__cell_desc"></div>
+						<div class="weather__cell weather__cell_pressure">Давление</div>
+						<div class="weather__cell weather__cell_humidity">Влажность</div>
+						<div class="weather__cell weather__cell_wind">Ветер</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">Ночь</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>23°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_sunny"></span></div>
+						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind wind-icon wind-icon_n"></span>4 м/с</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">Утро</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign"></span>21°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_sun"></span></div>
+						<div class="weather__cell weather__cell_desc">Ясно</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">юв</span><span class="weather__wind wind-icon wind-icon_se"></span>4 м/с</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">День</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>1°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_snowy"></span></div>
+						<div class="weather__cell weather__cell_desc">Снег</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind wind-icon wind-icon_e"></span>4 м/с</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">Вечер</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>20°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_cloud"></span></div>
+						<div class="weather__cell weather__cell_desc">Пасмурно</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell"><span class="weather__wind-direction">св</span><span class="weather__wind wind-icon wind-icon_ne"></span>4 м/с</div>
+					</div>
+				</div>
+				<div class="weather weather_collapsed">
+					<div class="weather__row weather__row_main">
+						<div class="weather__cell weather__cell_label"><span class="weather__expand"></span><span class="weather__date-label">29 сентября</span>четверг</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>22°</div>
 						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_sunny"></span></div>
 						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
 						<div class="weather__cell weather__cell_pressure"></div>
@@ -95,7 +521,7 @@
 						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind weather__wind_n"></span>4 м/с</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind wind-icon wind-icon_n"></span>4 м/с</div>
 					</div>
 					<div class="weather__row">
 						<div class="weather__cell weather__cell_label">Утро</div>
@@ -104,7 +530,7 @@
 						<div class="weather__cell weather__cell_desc">Ясно</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">юв</span><span class="weather__wind weather__wind_se"></span>4 м/с</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">юв</span><span class="weather__wind wind-icon wind-icon_se"></span>4 м/с</div>
 					</div>
 					<div class="weather__row">
 						<div class="weather__cell weather__cell_label">День</div>
@@ -113,7 +539,7 @@
 						<div class="weather__cell weather__cell_desc">Снег</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind weather__wind_e"></span>4 м/с</div>
+						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind wind-icon wind-icon_e"></span>4 м/с</div>
 					</div>
 					<div class="weather__row">
 						<div class="weather__cell weather__cell_label">Вечер</div>
@@ -122,12 +548,129 @@
 						<div class="weather__cell weather__cell_desc">Пасмурно</div>
 						<div class="weather__cell weather__cell_pressure">734 мм</div>
 						<div class="weather__cell weather__cell_humidity">74%</div>
-						<div class="weather__cell"><span class="weather__wind-direction">св</span><span class="weather__wind weather__wind_ne"></span>4 м/с</div>
+						<div class="weather__cell"><span class="weather__wind-direction">св</span><span class="weather__wind wind-icon wind-icon_ne"></span>4 м/с</div>
+					</div>
+				</div>
+				<div class="weather weather_collapsed">
+					<div class="weather__row weather__row_main">
+						<div class="weather__cell weather__cell_label"><span class="weather__expand"></span><span class="weather__date-label">30 сентября</span>четверг</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>25°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_snowy"></span></div>
+						<div class="weather__cell weather__cell_desc">Снег</div>
+						<div class="weather__cell weather__cell_pressure"></div>
+						<div class="weather__cell weather__cell_humidity"></div>
+						<div class="weather__cell weather__cell_wind"></div>
+					</div>
+					<div class="weather__row weather__row_header">
+						<div class="weather__cell weather__cell_label"></div>
+						<div class="weather__cell weather__cell_temp"></div>
+						<div class="weather__cell weather__cell_icon"></div>
+						<div class="weather__cell weather__cell_desc"></div>
+						<div class="weather__cell weather__cell_pressure">Давление</div>
+						<div class="weather__cell weather__cell_humidity">Влажность</div>
+						<div class="weather__cell weather__cell_wind">Ветер</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">Ночь</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>23°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_sunny"></span></div>
+						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind wind-icon wind-icon_n"></span>4 м/с</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">День</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>1°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_snowy"></span></div>
+						<div class="weather__cell weather__cell_desc">Снег</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind wind-icon wind-icon_e"></span>4 м/с</div>
+					</div>
+				</div>
+				<div class="weather weather_collapsed">
+					<div class="weather__row weather__row_main">
+						<div class="weather__cell weather__cell_label"><span class="weather__expand"></span><span class="weather__date-label">1 октября</span>четверг</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>33°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_cloud"></span></div>
+						<div class="weather__cell weather__cell_desc">Пасмурно</div>
+						<div class="weather__cell weather__cell_pressure"></div>
+						<div class="weather__cell weather__cell_humidity"></div>
+						<div class="weather__cell weather__cell_wind"></div>
+					</div>
+					<div class="weather__row weather__row_header">
+						<div class="weather__cell weather__cell_label"></div>
+						<div class="weather__cell weather__cell_temp"></div>
+						<div class="weather__cell weather__cell_icon"></div>
+						<div class="weather__cell weather__cell_desc"></div>
+						<div class="weather__cell weather__cell_pressure">Давление</div>
+						<div class="weather__cell weather__cell_humidity">Влажность</div>
+						<div class="weather__cell weather__cell_wind">Ветер</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">Ночь</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>23°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_sunny"></span></div>
+						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind wind-icon wind-icon_n"></span>4 м/с</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">День</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>1°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_snowy"></span></div>
+						<div class="weather__cell weather__cell_desc">Снег</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind wind-icon wind-icon_e"></span>4 м/с</div>
+					</div>
+				</div>
+				<div class="weather weather_collapsed">
+					<div class="weather__row weather__row_main">
+						<div class="weather__cell weather__cell_label"><span class="weather__expand"></span><span class="weather__date-label">2 октября</span>четверг</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>41°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_frosty"></span></div>
+						<div class="weather__cell weather__cell_desc">Снежище</div>
+						<div class="weather__cell weather__cell_pressure"></div>
+						<div class="weather__cell weather__cell_humidity"></div>
+						<div class="weather__cell weather__cell_wind"></div>
+					</div>
+					<div class="weather__row weather__row_header">
+						<div class="weather__cell weather__cell_label"></div>
+						<div class="weather__cell weather__cell_temp"></div>
+						<div class="weather__cell weather__cell_icon"></div>
+						<div class="weather__cell weather__cell_desc"></div>
+						<div class="weather__cell weather__cell_pressure">Давление</div>
+						<div class="weather__cell weather__cell_humidity">Влажность</div>
+						<div class="weather__cell weather__cell_wind">Ветер</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">Ночь</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>23°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_sunny"></span></div>
+						<div class="weather__cell weather__cell_desc">Переменная облачность</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell weather__cell_wind"><span class="weather__wind-direction">с</span><span class="weather__wind wind-icon wind-icon_n"></span>4 м/с</div>
+					</div>
+					<div class="weather__row">
+						<div class="weather__cell weather__cell_label">День</div>
+						<div class="weather__cell weather__cell_temp"><span class="weather__sign">&#8722;</span>1°</div>
+						<div class="weather__cell weather__cell_icon"><span class="weather__icon weather-icon weather-icon_basecloud weather-icon_snowy"></span></div>
+						<div class="weather__cell weather__cell_desc">Снег</div>
+						<div class="weather__cell weather__cell_pressure">734 мм</div>
+						<div class="weather__cell weather__cell_humidity">74%</div>
+						<div class="weather__cell"><span class="weather__wind-direction">в</span><span class="weather__wind wind-icon wind-icon_e"></span>4 м/с</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<script src="../bower_components/jquery-1.9.1/jquery.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/main-menu-init.js"></script>
 </body>
 </html>

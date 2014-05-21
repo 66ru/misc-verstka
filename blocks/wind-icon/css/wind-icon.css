@@ -1,0 +1,67 @@
+.wind-icon {
+	display: inline-block;
+
+	width: 13px;
+	height: 17px;
+
+	vertical-align: middle;
+
+	background: none center center no-repeat transparent;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMyAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPndpbmQgYXJyb3c8L3RpdGxlPjxwYXRoIGQ9Ik0yIDEzLjg2bDQuNTAyLTExLjk3MiA0LjQ5OCAxMi4xMTJzLTIuNjk1LTEuOTYzLTQuNDk4LTEuOTk4Yy0xLjgwMi0uMDM1LTQuNTAyIDEuODU4LTQuNTAyIDEuODU4eiIgZmlsbD0iIzZBOTExMCIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjwvc3ZnPg==');
+}
+
+.wind-icon_n {
+	-webkit-transform: translate(0, -3px);
+	-ms-transform: translate(0, -3px);
+	-o-transform: translate(0, -3px);
+	transform: translate(0, -3px);
+}
+
+.wind-icon_ne {
+	-webkit-transform: translate(3px, -3px) rotate(45deg);
+	-ms-transform: translate(3px, -3px) rotate(45deg);
+	-o-transform: translate(3px, -3px) rotate(45deg);
+	transform: translate(3px, -3px) rotate(45deg);
+}
+
+.wind-icon_e {
+	-webkit-transform: translate(3px, 1px) rotate(90deg);
+	-ms-transform: translate(3px, 1px) rotate(90deg);
+	-o-transform: translate(3px, 1px) rotate(90deg);
+	transform: translate(3px, 1px) rotate(90deg);
+}
+
+.wind-icon_se {
+	-webkit-transform: translate(3px, 4px) rotate(135deg);
+	-ms-transform: translate(3px, 4px) rotate(135deg);
+	-o-transform: translate(3px, 4px) rotate(135deg);
+	transform: translate(3px, 4px) rotate(135deg);
+}
+
+.wind-icon_s {
+	-webkit-transform: translate(0, 5px) rotate(180deg);
+	-ms-transform: translate(0, 5px) rotate(180deg);
+	-o-transform: translate(0, 5px) rotate(180deg);
+	transform: translate(0, 5px) rotate(180deg);
+}
+
+.wind-icon_sw {
+	-webkit-transform: translate(-2px, 4px) rotate(225deg);
+	-ms-transform: translate(-2px, 4px) rotate(225deg);
+	-o-transform: translate(-2px, 4px) rotate(225deg);
+	transform: translate(-2px, 4px) rotate(225deg);
+}
+
+.wind-icon_w {
+	-webkit-transform: translate(-2px, 1px) rotate(270deg);
+	-ms-transform: translate(-2px, 1px) rotate(270deg);
+	-o-transform: translate(-2px, 1px) rotate(270deg);
+	transform: translate(-2px, 1px) rotate(270deg);
+}
+
+.wind-icon_nw {
+	-webkit-transform: translate(-2px, -3px) rotate(315deg);
+	-ms-transform: translate(-2px, -3px) rotate(315deg);
+	-o-transform: translate(-2px, -3px) rotate(315deg);
+	transform: translate(-2px, -3px) rotate(315deg);
+}
