@@ -1117,7 +1117,7 @@
 
 .m-weather_cols_2 .m-weather__icon {
 	height: 24px;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 @media (min-width: 480px) {
@@ -1153,7 +1153,7 @@
 	}
 
 	.m-weather_cols_2 .m-weather__icon {
-		margin-left: 25px;
+		margin-left: 55px;
 		height: 32px;
 	}
 }
