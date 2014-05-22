@@ -6,7 +6,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
-	/*padding-top: 20px;*/
 	padding-right: 4%;
 
 	table-layout: fixed;
@@ -17,9 +16,9 @@
 }
 
 .weather:hover {
-	background-image: -webkit-linear-gradient(top, #fff, #efefef);
-	background-image: -o-linear-gradient(top, #fff, #efefef);
-	background-image: linear-gradient(top, #fff, #efefef);
+	background-image: -webkit-linear-gradient(top, #fff, #f7f7f7);
+	background-image: -o-linear-gradient(top, #fff, #f7f7f7);
+	background-image: linear-gradient(top, #fff, #f7f7f7);
 }
 
 .weather__row {

@@ -26,15 +26,22 @@ gulp.task('mobile', function() {
 		.pipe(gulp.dest('./mobile/css'));
 });
 
+gulp.task('mobile', function() {
+	return gulp.src('./weather/css/*.less')
+		.pipe(less(lessOptions))
+		.pipe(gulp.dest('./weather/css'));
+});
+
 gulp.task('watch', function() {
-	gulp.watch('./newMain/css/less/**/*.less', ['mainmenuupgrade', 'atms', 'mobile']);
+	gulp.watch('./newMain/css/less/**/*.less', ['mainmenuupgrade', 'atms', 'mobile', 'weather']);
 	gulp.watch([
 		'./mobile/css/*.less',
 		'./mobile/css/foo.css',
 		'./mobile/css/foo-doska.css',
 		'./mobile/css/m-normalize.css',
 		'./mobile/css/m-old-compat.css',
-		'./blocks/**/*.css'
+		'./blocks/**/*.css',
+		'./weather/css/*.less'
 		], ['mobile']);
 });
 
