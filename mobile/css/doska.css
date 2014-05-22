@@ -825,6 +825,7 @@ blockquote {
 }
 .weather-icon_rainy:before {
   content: '\f107';
+  color: #3993f2;
 }
 .weather-icon_mist:before {
   content: '\f108';
@@ -841,6 +842,7 @@ blockquote {
 }
 .weather-icon_sleet:before {
   content: '\f10c';
+  color: #88d8f5;
 }
 .weather-icon_moon:before {
   content: '\f10d';
@@ -850,6 +852,7 @@ blockquote {
 }
 .weather-icon_hail:before {
   content: '\f10f';
+  color: #979797;
 }
 .weather-icon_sunset:before {
   content: '\f110';
@@ -866,6 +869,7 @@ blockquote {
 }
 .weather-icon_thunder:before {
   content: '\f114';
+  color: #fcd33f;
 }
 .weather-icon_windy:before {
   content: '\f115';
@@ -1503,69 +1507,6 @@ blockquote {
   right: 0;
   bottom: 0;
   margin: auto;
-}
-.spinner__bounce {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
-  -o-animation: bouncedelay 1.4s infinite ease-in-out;
-  animation: bouncedelay 1.4s infinite ease-in-out;
-  border-radius: 100%;
-  background-color: #698c15;
-  -webkit-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.spinner__bounce_1 {
-  -webkit-animation-delay: -0.32s;
-  -o-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-.spinner__bounce_2 {
-  -webkit-animation-delay: -0.16s;
-  -o-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-}
-@-webkit-keyframes bouncedelay {
-  0%,
-  80%,
-  100% {
-    -webkit-transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-  }
-}
-@-o-keyframes bouncedelay {
-  0%,
-  80%,
-  100% {
-    -webkit-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes bouncedelay {
-  0%,
-  80%,
-  100% {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
 }
 .m-center {
   text-align: center;

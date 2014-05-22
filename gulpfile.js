@@ -26,7 +26,7 @@ gulp.task('mobile', function() {
 		.pipe(gulp.dest('./mobile/css'));
 });
 
-gulp.task('mobile', function() {
+gulp.task('weather', function() {
 	return gulp.src('./weather/css/*.less')
 		.pipe(less(lessOptions))
 		.pipe(gulp.dest('./weather/css'));

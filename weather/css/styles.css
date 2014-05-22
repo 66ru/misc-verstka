@@ -327,7 +327,8 @@
   content: '\f106';
 }
 .weather-icon_rainy:before {
-  content: '\f107';
+  content: '\f1';
+  color: #88d8f5;
 }
 .weather-icon_mist:before {
   content: '\f108';
