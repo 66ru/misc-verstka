@@ -327,8 +327,8 @@
   content: '\f106';
 }
 .weather-icon_rainy:before {
-  content: '\f1';
-  color: #88d8f5;
+  content: '\f107';
+  color: #3993f2;
 }
 .weather-icon_mist:before {
   content: '\f108';
@@ -345,6 +345,7 @@
 }
 .weather-icon_sleet:before {
   content: '\f10c';
+  color: #88d8f5;
 }
 .weather-icon_moon:before {
   content: '\f10d';
@@ -354,6 +355,7 @@
 }
 .weather-icon_hail:before {
   content: '\f10f';
+  color: #979797;
 }
 .weather-icon_sunset:before {
   content: '\f110';
@@ -370,6 +372,7 @@
 }
 .weather-icon_thunder:before {
   content: '\f114';
+  color: #fcd33f;
 }
 .weather-icon_windy:before {
   content: '\f115';
