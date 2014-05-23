@@ -6721,10 +6721,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <style>
                     .loader {
                       position: absolute;
-                      top: -40px;
-                      bottom: -40px;
-                      right: 0;
-                      width: 167%;
+                      top: -20px;
+                      bottom: -20px;
                       background-color: rgba(255, 255, 255, .8);
                       z-index: 999;
                       height: 0;
@@ -6733,6 +6731,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       -webkit-transition: opacity .2s ease-in;
                       -o-transition: opacity .2s ease-in;
                       transition: opacity .2s ease-in;
+                    }
+
+                    .loader_map {
+                      width: 100%;
+                      right: 0;
+                    }
+
+                    .loader_list {
+                      width: 67%;
+                      right: 100%;
                     }
 
                     .loader_opaque {
@@ -6782,7 +6790,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                   <div class="b-doska-realty-obj-map-container" style="overflow: visible;">
                       <div id="ya-map-search" style="width: 100%; z-index: 2;">
-                        <div class="loader">
+                        <div class="loader loader_list">
+                          <span class="spinner">
+                            <span class="spinner__bounce spinner__bounce_1"></span>
+                            <span class="spinner__bounce spinner__bounce_2"></span>
+                            <span class="spinner__bounce spinner__bounce_3"></span>
+                          </span>
+                        </div>
+                        <div class="loader loader_map">
                           <span class="spinner">
                             <span class="spinner__bounce spinner__bounce_1"></span>
                             <span class="spinner__bounce spinner__bounce_2"></span>
