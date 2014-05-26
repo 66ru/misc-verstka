@@ -16,6 +16,10 @@
 	animation-fill-mode: both;
 }
 
+.spinner_color_white .spinner__bounce {
+	background-color: #fff;
+}
+
 .spinner__bounce_1 {
 	-webkit-animation-delay: -.32s;
 	-o-animation-delay: -.32s;

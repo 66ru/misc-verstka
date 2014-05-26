@@ -32,6 +32,12 @@ gulp.task('weather', function() {
 		.pipe(gulp.dest('./weather/css'));
 });
 
+gulp.task('newmain', function() {
+	return gulp.src('./newMain/css/*.less')
+		.pipe(less(lessOptions))
+		.pipe(gulp.dest('./newMain/css'));
+});
+
 gulp.task('watch', function() {
 	gulp.watch('./newMain/css/less/**/*.less', ['mainmenuupgrade', 'atms', 'mobile', 'weather']);
 	gulp.watch([
@@ -43,10 +49,4 @@ gulp.task('watch', function() {
 		'./blocks/**/*.css',
 		'./weather/css/*.less'
 		], ['mobile']);
-});
-
-gulp.task('newmain', function() {
-	return gulp.src('./newMain/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./newMain/css'));
 });
