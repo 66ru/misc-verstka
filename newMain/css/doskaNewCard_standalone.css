@@ -375,8 +375,8 @@
 }
 .b-goods-tile__elem {
   float: left;
-  margin-left: 1%;
   width: 24.25%;
+  margin-left: 1%;
 }
 .b-goods-tile__elem:first-child {
   margin-left: 0;
@@ -384,31 +384,30 @@
 .b-goods-tile__wrap {
   position: relative;
   display: block;
-  margin-bottom: 6px;
   height: 150px;
-  background-position: center center;
-  background-repeat: no-repeat;
+  margin-bottom: 6px;
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .b-goods-tile__price {
+  font-size: 1.08em;
+  font-weight: bold;
+  line-height: 1.08em;
   position: absolute;
   bottom: 0;
   left: 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: .3em .3em .1em;
-  background: #f17e00;
-  color: #fff;
   white-space: nowrap;
-  font-weight: bold;
-  font-size: 1.08em;
-  line-height: 1.08em;
+  color: #fff;
+  background: #f17e00;
 }
 .b-goods-tile__link {
-  color: #037dd3;
   font-size: 1.15em;
   line-height: 1.2;
+  color: #037dd3;
 }
 .b-goods-tile__link:visited {
   color: #c45da1;
@@ -417,8 +416,16 @@
   color: #7b0101;
 }
 .b-goods-tile__date {
-  color: #898989;
   font-size: .92em;
+  color: #898989;
+}
+.b-goods-tile_small .b-goods-tile__wrap {
+  height: 80px;
+}
+.b-goods-tile_small .b-goods-tile__price {
+  height: 15px;
+  font-size: 11px;
+  line-height: 11px;
 }
 .b-folded-plate {
   margin-left: -20px;

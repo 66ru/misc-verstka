@@ -3493,3 +3493,6 @@ a.b-health__links__item:hover {
   background-position: 0 0px;
   background-repeat: no-repeat;
 }
+.b-main-informer_weather .weather-icon {
+  width: 18px;
+}

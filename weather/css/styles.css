@@ -221,9 +221,9 @@
   white-space: normal;
 }
 .weather__expand-all-text {
+  line-height: 22px;
   color: #6b9120;
   border-bottom: 1px dashed #6b9120;
-  line-height: 22px;
 }
 .weather__expand-all-text:hover {
   color: #fc551f;
