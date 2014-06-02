@@ -13,7 +13,7 @@
 .weather:hover {
   background-image: -webkit-linear-gradient(top, #ffffff, #f7f7f7);
   background-image: -o-linear-gradient(top, #ffffff, #f7f7f7);
-  background-image: linear-gradient(top, #ffffff, #f7f7f7);
+  background-image: linear-gradient(to bottom, #ffffff, #f7f7f7);
 }
 .weather__row {
   display: table-row;
