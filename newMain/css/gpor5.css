@@ -3494,7 +3494,8 @@ a.b-health__links__item:hover {
   background-repeat: no-repeat;
 }
 .b-main-informer_weather .weather-icon {
-  width: 18px;
+  font-size: 20px;
+  width: 20px;
   height: 18px;
   vertical-align: bottom;
 }
