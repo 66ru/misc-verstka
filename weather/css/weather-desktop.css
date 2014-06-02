@@ -148,7 +148,6 @@
 
 .weather__row_main .weather__icon {
 	font-size: 48px;
-	/*height: 35px;*/
 }
 
 .weather__row_main .weather__sign {
@@ -156,8 +155,8 @@
 }
 
 .weather_primary .weather__row_date .weather__cell {
-	padding-bottom: 10px;
 	height: 20px;
+	padding-bottom: 10px;
 
 	border-bottom: none;
 }
@@ -292,3 +291,30 @@
 .simple-ll__link {
 	color: #6b9120;
 }
+
+.weather__expand-all {
+	font-size: 16px;
+
+	position: absolute;
+	bottom: -78px;
+	left: -23%;
+
+	width: 19%;
+
+	cursor: pointer;
+	text-align: left;
+	white-space: normal;
+
+}
+
+.weather__expand-all-text {
+	color: #6b9120;
+	border-bottom: 1px dashed #6b9120;
+	line-height: 22px;
+}
+
+.weather__expand-all-text:hover {
+	color: #fc551f;
+	border-color: #fc551f;
+}
+
