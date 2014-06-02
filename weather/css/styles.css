@@ -110,6 +110,16 @@
 .weather__row_main .weather__sign {
   width: 25px;
 }
+.weather_primary .weather__row_date .weather__cell {
+  padding-bottom: 10px;
+  height: 20px;
+  border-bottom: none;
+}
+.weather_primary .weather__row_date .weather__cell_temp {
+  font-size: 18px;
+  line-height: 18px;
+  color: #70785d;
+}
 .weather__date-label {
   font-weight: bold;
   display: block;

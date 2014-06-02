@@ -38,8 +38,17 @@ gulp.task('newmain', function() {
 		.pipe(gulp.dest('./newMain/css'));
 });
 
+gulp.task('realty', function() {
+	return gulp.src('./doska/realty/css/*.less')
+		.pipe(less(lessOptions))
+		.pipe(gulp.dest('./doska/realty/css'));
+});
+
 gulp.task('watch', function() {
-	gulp.watch('./newMain/css/less/**/*.less', ['mainmenuupgrade', 'atms', 'mobile', 'weather']);
+	gulp.watch([
+		'./newMain/css/less/**/*.less',
+		'./newMain/css/less/**/*.css'
+		], ['mainmenuupgrade', 'atms', 'mobile', 'weather', 'realty']);
 	gulp.watch([
 		'./mobile/css/*.less',
 		'./mobile/css/foo.css',
@@ -47,6 +56,8 @@ gulp.task('watch', function() {
 		'./mobile/css/m-normalize.css',
 		'./mobile/css/m-old-compat.css',
 		'./blocks/**/*.css',
-		'./weather/css/*.less'
-		], ['mobile']);
+		'./weather/css/*.less',
+		'./weather/css/weather-desktop.css'
+		], ['mobile', 'weather']);
+	gulp.watch('./doska/realty/**/*.less', ['realty']);
 });
