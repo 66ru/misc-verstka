@@ -1816,7 +1816,7 @@ a.b-username:active {
   text-decoration: none;
 }
 .userToolsSprite {
-  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url('../css/less/blocks/b-pannel-logined-user/img/user-tools-sprite.png') 0 0 no-repeat;
 }
 .b-pannel-logined-user {
   background: #f4f4f4;
@@ -1863,7 +1863,7 @@ a.b-username:active {
   top: 50%;
   left: -24px;
   margin-top: -5px;
-  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url('../css/less/blocks/b-pannel-logined-user/img/user-tools-sprite.png') 0 0 no-repeat;
 }
 .b-link_icon_friends-feed:before {
   content: '';
@@ -1874,7 +1874,7 @@ a.b-username:active {
   top: 50%;
   left: -24px;
   margin-top: -5px;
-  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url('../css/less/blocks/b-pannel-logined-user/img/user-tools-sprite.png') 0 0 no-repeat;
   background-position: 0 -25px;
 }
 .b-link_icon_events:before {
@@ -1886,7 +1886,7 @@ a.b-username:active {
   top: 50%;
   left: -24px;
   margin-top: -6px;
-  background: url(less/blocks/b-pannel-logined-user/img/user-tools-sprite.png) 0 0 no-repeat;
+  background: url('../css/less/blocks/b-pannel-logined-user/img/user-tools-sprite.png') 0 0 no-repeat;
   background-position: 0 -48px;
 }
 .b-pannel-logined-user__karma {
@@ -1927,7 +1927,7 @@ a.b-teaser-orange-text {
 .b-news-item {
   font-size: 13px;
   line-height: 18px;
-  background: url(less/blocks/b-news-item/img/b-news-item-sprite.png);
+  background: url(../css/less/blocks/b-news-item/img/b-news-item-sprite.png);
   background-position: -211px 6px;
   background-repeat: no-repeat;
   padding-left: 18px;
@@ -2105,7 +2105,7 @@ a.b-news-item__activity:hover {
 }
 .b-news-item_layout_annonce .b-news-item__pic__shadow {
   display: block;
-  background: url(less/blocks/b-news-item/img/b-news-gradient.png) 0 bottom repeat-x;
+  background: url(../css/less/blocks/b-news-item/img/b-news-gradient.png) 0 bottom repeat-x;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2146,11 +2146,11 @@ a.b-news-item__activity:hover {
   color: #808080;
 }
 .b-news-item_size_big .b-news-item__pic__shadow {
-  background-image: url(less/blocks/b-news-item/img/b-news-gradient-big.png);
+  background-image: url(../css/less/blocks/b-news-item/img/b-news-gradient-big.png);
 }
 .b-news-item-icon {
   display: inline-block;
-  background: url(less/blocks/b-news-item/img/b-news-item-sprite.png);
+  background: url(../css/less/blocks/b-news-item/img/b-news-item-sprite.png);
   margin: 0 3px;
   position: relative;
   top: 2px;
@@ -3029,7 +3029,7 @@ a.b-ad-btn ins {
   display: block;
   position: absolute;
   width: 100%;
-  background: url(less/blocks/b-afisha-main/img/b-news-gradient-small.png) 0 0 repeat-x;
+  background: url('../css/less/blocks/b-afisha-main/img/b-news-gradient-small.png') 0 0 repeat-x;
   height: 100%;
 }
 .b-afisha__item:hover .b-afisha-item__shadow {
@@ -3043,7 +3043,7 @@ a.b-ad-btn ins {
   margin-top: 2px;
 }
 .b-afisha__item_size_big .b-afisha-item__shadow {
-  background: url(less/blocks/b-afisha-main/img/b-news-gradient.png) 0 0 repeat-x;
+  background: url(../css/less/blocks/b-afisha-main/img/b-news-gradient.png) 0 0 repeat-x;
 }
 .b-afisha-main__label {
   position: absolute;
@@ -3299,7 +3299,7 @@ a.b-health__links__item:hover {
   width: 16px;
   height: 16px;
   display: inline-block;
-  background: url(less/blocks/b-health/img/b-health-ico.png) 0 0 no-repeat;
+  background: url(../css/less/blocks/b-health/img/b-health-ico.png) 0 0 no-repeat;
   top: 5px;
   position: relative;
 }

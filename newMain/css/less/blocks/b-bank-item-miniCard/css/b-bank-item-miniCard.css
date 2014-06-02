@@ -168,13 +168,13 @@
   display: block;
 }
 .b-bank-item-miniCard__courses__dynamic_down:after {
-  background-image: url(./less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+  background-image: (../css/less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
   background-position: 0 -9px;
   background-repeat: no-repeat;
   top: 7px;
 }
 .b-bank-item-miniCard__courses__dynamic_up:after {
-  background-image: url(./less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
+  background-image: (../css/less/blocks/b-bank-item-miniCard/img/valute-dinamic.png);
   background-position: 0 0px;
   background-repeat: no-repeat;
   top: 4px;

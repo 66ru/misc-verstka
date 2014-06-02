@@ -476,7 +476,7 @@ a.b-header-menu__item__link:after {
 }
 /*если у айтема есть скрытое меню*/
 .b-header-menu__item_hidemenu_yes .b-header-menu__item__link {
-  background-image: url(./less/blocks/b-header-menu/img/b-header-arr-dwn.png);
+  background-image: (../css/less/blocks/b-header-menu/img/b-header-arr-dwn.png);
   background-repeat: no-repeat;
   background-position: right 24px;
   padding-right: 18px;
@@ -598,7 +598,7 @@ a.b-submenu-item__day-theme__link:hover {
 /***/
 .b-header-search__subm {
   border: none;
-  background: url(./less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
+  background: (../css/less/blocks/b-header-search/img/b-header-search-btn.png) center center no-repeat;
   width: 27px;
   height: 27px;
   display: block;
@@ -609,7 +609,7 @@ a.b-submenu-item__day-theme__link:hover {
   cursor: hand;
 }
 .b-header-search__subm_state_active {
-  background: url(./less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
+  background: (../css/less/blocks/b-header-search/img/b-header-search-btn-.png) center center no-repeat;
 }
 input.b-header-search__text {
   border: none;
@@ -693,7 +693,7 @@ a.b-header-auth__tab__mail-link {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-  background: url(./less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
+  background: (../css/less/blocks/b-header-auth/img/b-header-mail.png) right -44px no-repeat;
   padding-right: 23px;
   margin-right: 5px;
   position: relative;
@@ -752,13 +752,13 @@ a.b-header-auth__tab__mail-link_has_new {
   position: relative;
   width: 10px;
   height: 11px;
-  background: url(./less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
+  background: (../css/less/blocks/b-icon/img/b-header-login.png) 0 0 no-repeat;
   display: inline-block;
   margin-right: 5px;
   top: 1px;
 }
 .b-icon_pic_header-vk {
-  background: url(./less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
+  background: (../css/less/blocks/b-icon/img/b-header-vk-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -766,7 +766,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-fb {
-  background: url(./less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
+  background: (../css/less/blocks/b-icon/img/b-header-fb-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -774,7 +774,7 @@ a.b-header-auth__tab__mail-link_has_new {
   top: 3px;
 }
 .b-icon_pic_header-tw {
-  background: url(./less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
+  background: (../css/less/blocks/b-icon/img/b-header-tw-ico.png) 0 0 no-repeat;
   width: 16px;
   height: 16px;
   display: inline-block;
