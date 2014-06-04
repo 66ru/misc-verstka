@@ -14,6 +14,7 @@
 
 .m-menu_bottom {
 	position: absolute;
+	top: auto;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -81,25 +82,30 @@
 
 .m-menu__weather {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 7px;
+	right: 10px;
 
-	width: 100px;
-	height: 50px;
+	width: auto;
+	height: 36px;
+
+	white-space: nowrap;
 
 	color: #fff;
+	border-radius: 5px;
+	background-color: #799735;
 }
 
 .m-menu__weather .weather-icon {
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 30px;
 
 	display: block;
 	float: left;
 
 	width: 36px;
 	height: 36px;
-	margin-top: 9px;
+	margin-top: 4px;
+	margin-left: 2px;
 }
 
 .m-menu__weather .weather-icon:before,
@@ -115,10 +121,15 @@
 	font-size: 18px;
 	line-height: 18px;
 
-	margin-top: 10px;
+	margin-top: 3px;
+	margin-right: 4px;
+	margin-left: 40px;
 }
 
 .m-menu__weather-tomorrow {
 	font-size: 9px;
 	line-height: 9px;
+
+	margin-right: 4px;
+	margin-left: 40px;
 }
