@@ -1092,8 +1092,12 @@
 
 
 .m-weather-now {
+	overflow: hidden;
+
 	height: 50px;
 	margin: 20px 0 10px;
+
+	white-space: nowrap;
 }
 
 .m-weather-now__temp {
@@ -1125,4 +1129,5 @@
 	padding-top: 10px;
 
 	vertical-align: top;
+	white-space: normal;
 }

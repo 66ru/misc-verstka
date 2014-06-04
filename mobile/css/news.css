@@ -1702,8 +1702,10 @@ blockquote {
   background-color: #6a8b22;
 }
 .m-weather-now {
+  overflow: hidden;
   height: 50px;
   margin: 20px 0 10px;
+  white-space: nowrap;
 }
 .m-weather-now__temp {
   font-size: 50px;
@@ -1727,6 +1729,7 @@ blockquote {
   height: 50px;
   padding-top: 10px;
   vertical-align: top;
+  white-space: normal;
 }
 .m-old-compat p {
   line-height: 20px;
