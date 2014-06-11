@@ -4,9 +4,12 @@
 	position: relative;
 	z-index: 1;
 
+	overflow: hidden;
+
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 310px;
+	margin-bottom: 30px;
 	padding: 10px;
 
 	background: none left top no-repeat #e8eeda;
@@ -18,7 +21,15 @@
 	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
-.share:before {
+.share_theme_2 {
+	background-image: url('../img/2.jpg');
+}
+
+.share_theme_3 {
+	background-image: url('../img/3.jpg');
+}
+
+.share:after {
 	position: absolute;
 	z-index: -1;
 	top: 0;
@@ -69,7 +80,7 @@
 
 .share__left {
 	position: absolute;
-	right: 50%;
+	right: 51%;
 	bottom: 0;
 
 	display: block;
@@ -82,7 +93,7 @@
 .share__right {
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 47%;
 
 	display: block;
 
@@ -105,6 +116,7 @@
 .share__name {
 	font-family: PT Serif, serif;
 	font-size: 26px;
+
 	margin-bottom: -5px;
 }
 
