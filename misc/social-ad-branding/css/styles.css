@@ -1,0 +1,115 @@
+.share {
+	line-height: 1;
+
+	position: relative;
+	z-index: 1;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 310px;
+	padding: 10px;
+
+	background: none left top no-repeat #e8eeda;
+	background-image: -webkit-linear-gradient(top, #e8eeda, #fff);
+	background-image: -o-linear-gradient(top, #e8eeda, #fff);
+	background-image: linear-gradient(to bottom, #e8eeda, #fff);
+	background-image: url('../img/1.jpg');
+	background-size: 100% 100%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.share:before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 15px;
+
+	display: block;
+
+	width: 265px;
+	height: 135px;
+
+	content: '';
+
+	background: none left top no-repeat transparent;
+	background-image: url('../img/66.png');
+}
+
+.share__main {
+	font-size: 16px;
+	line-height: 1.2;
+
+	margin-bottom: 10px;
+}
+
+.share__extra {
+	font-style: italic;
+
+	margin-bottom: 20px;
+}
+
+.share__social {
+	display: block;
+}
+
+.share__brand {
+	display: block;
+
+	text-decoration: none;
+
+	color: #000;
+}
+
+.share__wrap {
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+	left: 0;
+}
+
+.share__left {
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+
+	display: block;
+
+	padding-right: 7%;
+
+	vertical-align: bottom;
+}
+
+.share__right {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+
+	display: block;
+
+	padding-right: 15px;
+
+	vertical-align: bottom;
+}
+
+.share__logo {
+	margin-bottom: 8px;
+}
+
+.share__phone {
+	font-family: PT Sans Caption, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 27px;
+
+	white-space: nowrap;
+}
+
+.share__name {
+	font-family: PT Serif, serif;
+	font-size: 26px;
+	margin-bottom: -5px;
+}
+
+.share__about {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+}
