@@ -1,0 +1,507 @@
+ 
+<style type="text/css">
+.news-single-explorer {
+display: none;
+}
+
+#shareWrap {
+margin-top: 20px;
+margin-bottom: 20px;
+padding-left: 10px;
+overflow: hidden;
+background: #fff;
+-webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.75);а
+-moz-box-shadow:    0px 2px 12px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 2px 12px 0px rgba(50, 50, 50, 0.75);
+background-color: rgb(233, 239, 219);
+}
+
+.shareWrap__el {
+margin: 0 auto;
+position: relative;
+padding: 6px 0 0 0;
+background: url('') right top no-repeat;
+}
+
+.shareWrap__el__photo {
+top: 0px;
+right: 5px;
+position: absolute;
+width: 320px;
+height: 120px;
+}
+
+
+.shareWrap__el__text {
+line-height: 24px;
+padding-right: 140px;
+font-size: 1.2em;
+}
+
+.shareWrap__el__podpis {
+font-size: .8em;
+font-style: italic;
+}
+
+
+#ya_share {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+.share {
+	line-height: 1;
+
+	position: relative;
+	z-index: 1;
+
+	overflow: hidden;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 310px;
+	margin-bottom: 30px;
+	padding: 10px;
+
+	background: none left top no-repeat #e8eeda;
+	background-image: -webkit-linear-gradient(top, #e8eeda, #fff);
+	background-image: -o-linear-gradient(top, #e8eeda, #fff);
+	background-image: linear-gradient(to bottom, #e8eeda, #fff);
+	background-image: url('http://lisa.unistorageserve.ru/539eb245e8d7b604689a1edf');
+	background-size: 100% 100%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.share_theme_2 {
+	background-image: url('http://lisa.unistorageserve.ru/539eb252f7c0797c8a6877fd');
+}
+
+.share_theme_3 {
+	background-image: url('http://maggie.unistorageserve.ru/539eb25ae8d7b60470a2bf5a');
+}
+
+.share:after {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 15px;
+
+	display: block;
+
+	width: 265px;
+	height: 135px;
+
+	content: '';
+
+	background: none left top no-repeat transparent;
+	background-image: url('http://bart.unistorageserve.ru/539eb262f7c0797caa673e15');
+}
+
+.share__main {
+	font-size: 16px;
+	line-height: 1.2;
+
+	margin-bottom: 10px;
+}
+
+.share__extra {
+	font-style: italic;
+
+	margin-bottom: 20px;
+}
+
+.share__social {
+	display: block;
+}
+
+.share__brand {
+	display: block;
+
+	text-decoration: none;
+
+	color: #000;
+}
+
+.share__wrap {
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+	left: 0;
+}
+
+.share__left {
+	position: absolute;
+	right: 51%;
+	bottom: 0;
+
+	display: block;
+
+	padding-right: 7%;
+
+	vertical-align: bottom;
+	color: #000;
+}
+
+.share__right {
+	position: absolute;
+	bottom: 0;
+	left: 47%;
+
+	display: block;
+
+	padding-right: 15px;
+
+	vertical-align: bottom;
+	color: #000;
+}
+
+.share__logo {
+	margin-bottom: 8px;
+}
+
+.share__phone {
+	font-family: PT Sans Caption, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 27px;
+
+	white-space: nowrap;
+}
+
+.share__name {
+	font-family: PT Serif, serif;
+	font-size: 26px;
+
+	margin-bottom: -5px;
+}
+
+.share__about {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+
+</style>
+
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var editors = [
+{
+    'id' : 16,
+    'name' : 'Артем Очеретин',
+    'post' : 'журналист, раздел Недвижимость',
+    'text' : 'Нравится материал? Мне тоже! Давай поделимся им с друзьями. Согласись, они должны это знать',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4b3f7c0796bbc546369',
+    'userIds' : []
+//    'userIds' : [33609]
+},
+{
+    'id' : 23,
+    'name' : 'Дмитрий Шлыков',
+    'post' : 'заместитель главного редактора',
+    'text' : 'Если мне нравится статья, я жму на Like двумя большими пальцами. А ты какими?',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4f6e8d7b60d4b29e33a',
+    'userIds' : [265750, 265071, 203105]
+},
+{
+    'id' : 6,
+    'name' : 'Ирина Кузнецова',
+    'post' : 'журналист, раздел Общество',
+    'text' : ' Ставь лайк, чтобы я перестала на тебя ТАК смотреть',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4bff7c0796bbd5468dd',
+    'userIds' : []
+},
+{
+    'id' : 22,
+    'name' : 'Мария Демидова',
+    'post' : 'редактор спецпроектов',
+    'text' : 'Нажми на кнопку &mdash; спаси Машеньку от медведя',
+    'photo' : 'http://lisa.unistorageserve.ru/530ec4cce8d7b60d4429a362',
+    'userIds' : [1046]
+},
+{
+    'id' : 29,
+    'name' : 'Валерий Кунщиков',
+    'post' : 'журналист Службы Новостей',
+    'text' : 'Если ты не поделишься этой ссылкой, мир пойдет прахом: его завоюют инопланетяне и съедят всех живьем',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4fef7c0796bc154aecc',
+    'userIds' : [231239]
+},
+{
+    'id' : 31,
+    'name' : 'Мария Лейва',
+    'post' : 'журналист Службы новостей',
+    'text' : 'Жми сюда, помоги мне заработать на новые туфли!',
+    'photo' : 'http://maggie.unistorageserve.ru/530ec4c5e8d7b60d4a29cabc',
+    'userIds' : [232184]
+},
+{
+    'id' : 2,
+    'name' : 'Сергей Панин',
+    'post' : 'журналист, раздел Бизнес',
+    'text' : 'Дружище, каждый твой лайк &mdash; это рубль к моей премии и стопицот к твоей карме',
+    'photo' : 'http://bart.unistorageserve.ru/530ec4e4f7c0796bc0549052',
+    'userIds' : [2529]
+},
+/*
+{
+    'id' : 7,
+    'name' : 'Наталия Попова',
+    'post' : 'выпускающий редактор Службы Новостей',
+    'text' : 'Если женщина просит, надо взять и сделать. И всего-то &mdash; кнопку нажать',
+    'photo' : 'http://maggie.unistorageserve.ru/530da15ae8d7b60d4a29b36d',
+    'userIds' : [25570]
+},
+*/
+{
+    'id' : 21,
+    'name' : 'Мария Захарова',
+    'post' : 'журналист Службы Новостей',
+    'text' : 'Важная новость? Нажми на кнопку, пусть знают все',
+    'photo' : 'http://lisa.unistorageserve.ru/5322ee87f7c0796bc056e996',
+    'userIds' : [209711]
+},
+{
+    'id' : 11,
+    'name' : 'Богдан Кульчицкий',
+    'post' : 'главный редактор',
+    'text' : 'Мы работаем не за деньги, а за славу. Нажми на кнопку, дай нам ее',
+    'photo' : 'http://lisa.unistorageserve.ru/530f0505e8d7b60d4329a25c',
+    'userIds' : [281]
+},
+{
+    'id' : 36,
+    'name' : 'Евгений Лобанов',
+    'post' : 'журналист, раздел «Происшествия»',
+    'text' : 'Ты стал свидетелем происшествия?! Нажми на кнопку и напиши о нем в любой соцсети с хэштегом #66',
+    'photo' : 'http://lisa.unistorageserve.ru/5316ff82f7c0796bba548e76',
+    'userIds' : [13790]
+},
+{
+    'id' : 37,
+    'name' : 'Андрей Щербов',
+    'post' : 'журналист, раздел «Финансы»',
+    'text' : 'Вон там кнопки. Нажав на любую, ты покажешь своим друзьям, что читаешь хорошие новости',
+    'photo' : 'http://lisa.unistorageserve.ru/5316ff6ff7c0796bc056083a',
+    'userIds' : [265750]
+},
+{
+    'id' : 34,
+    'name' : 'Марина Шулева',
+    'post' : 'журналист, служба новостей',
+    'text' : 'Я не знаю, зачем нужны эти кнопки. А ты? Давай понажимаем',
+    'photo' : 'http://bart.unistorageserve.ru/532a9f57f7c0796bc057816d',
+    'userIds' : [234453]
+},
+{
+    'id' : 4,
+    'name' : 'Кирилл Зайцев',
+    'post' : 'журналист, раздел «Авто»',
+    'text' : 'Знаете, с  репостом этой статьи ваша лента  будет еще зажигательнее',
+    'photo' : 'http://bart.unistorageserve.ru/532bb9ddf7c0796bbc550954',
+    'photo2' : 'http://lisa.unistorageserve.ru/532bb9ece8d7b60d4b2dd3a8',
+    'userIds' : [281]
+},
+/*
+{
+    'id' : 38,
+    'name' : 'Алюминий',
+    'post' : 'самый бесполезный сотрудник',
+    'text' : 'Тыкай в кнопки и все нормально будет!',
+    'photo' : 'http://bart.unistorageserve.ru/533a4158f7c0796bbf5766cc',
+    'userIds' : [281]
+},
+*/
+{
+    'id' : 38,
+    'name' : 'Mango-telecom',
+    'post' : '',
+    'text' : '',
+    'photo' : '',
+    'userIds' : [],
+    'branded' : 'mango',
+},
+{
+    'id' : 39,
+    'name' : 'Ольга Яволова',
+    'post' : 'журналист, служба новостей',
+    'text' : 'Когда ты нажимаешь на эти кнопочки, где-то в мире улыбаются котики',
+    'photo' : 'http://lisa.unistorageserve.ru/5386e366f7c0797cab66f47a',
+    'userIds' : [281]
+},
+{
+    'id' : 40,
+    'name' : 'Юнна Зузенкова',
+    'post' : 'журналист, служба новостей',
+    'text' : 'Говорят, что эти кнопки боятся щекотки! Давай проверим?',
+    'photo' : 'http://bart.unistorageserve.ru/538c2190f7c0797cac6cc96c',
+    'userIds' : [281]
+},
+{
+    'id' : 'default',
+    'name' : '66.ru',
+    'post' : 'городской портал Екатеринбурга',
+    'text' : 'Считаешь эту страницу интересной? Поделись со всеми',
+    'photo' : 'http://lisa.unistorageserve.ru/53295190f7c0796bc159050b',
+    'userIds' : []
+}
+];
+
+var editor = false;
+if (socialzationBlockParams['options'] && socialzationBlockParams['options']['sectionId'] ) {
+    var editorId = socialzationBlockParams['options']['editorId'];
+    for (i in editors) {
+        if (editors[i]['id'] == editorId) {
+            editor = editors[i];
+            break;
+        }
+        else if (editors[i]['id'] == 'default' && socialzationBlockParams['options']['sectionId'] == 1) {
+            editor = editors[i];
+            break;
+        }
+    }
+    if (!editor) {
+        if (socialzationBlockParams['options']['authorId']) {
+            var _e = false;
+            for (i in editors) {
+                _e = editors[i];
+                if(_e['userIds'] && _e['userIds'].length) {
+                    for (_i in _e['userIds']) {
+                        if (_e['userIds'][_i] == socialzationBlockParams['options']['authorId']) {
+                            editor = _e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if (!editor) {
+
+    for (i in editors) {
+        if (editors[i]['id'] == 'default' ) {
+            editor = editors[i];
+            break;
+        }
+    }
+//        editor = editors[getRandomInt(0, (editors.length-1) )];
+    }
+}
+else {
+    for (i in editors) {
+        if (editors[i]['id'] == 'default' ) {
+            editor = editors[i];
+            break;
+        }
+    }
+}
+
+var isMobile = {
+	Android: function() {
+		return navigator.userAgent.match(/Android/i) ? true : false;
+	},
+	BlackBerry: function() {
+		return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+	},
+	iOS: function() {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+	},
+	Windows: function() {
+		return navigator.userAgent.match(/IEMobile/i) ? true : false;
+	},
+	any: function() {
+		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+	}
+};
+
+if (editor && !isMobile.any()) {
+	var shareWrapDivId = "shareWrap";
+	var shareDivId = "ya_share";
+	var socialBlockInitalized = false;
+	var targetSelectors = ['.news_single-view', '.b-afisha-event-seances', '#eventCard', '.realty-social-block__title'];
+
+	var initalizeSocialBlock = function(options) {
+	new Ya.share({
+	        element: options['shareDivId'],
+	            theme: 'counter',
+	            elementStyle: {
+	                'type': 'none',
+	                'border': false,
+	                'quickServices': ['yaru', 'twitter', 'facebook', 'vkontakte']
+	            },
+	            link: socialzationBlockParams['link'],
+	            title: socialzationBlockParams['linkText'],
+	            description: socialzationBlockParams['annotation'],
+	            image: socialzationBlockParams['imageUrl'],
+	            serviceSpecific: {
+	                twitter: {
+	                    title: socialzationBlockParams['linkText']
+	               }
+	        }
+		});
+	};
+
+	var brandingThemes = {
+		'mango' : {
+			'html' : '<div class="share"><div class="share__main">Считаешь эту страницу интересной? Поделись со&nbsp;всеми</div><div class="share__extra">66.ru, городской портал Екатеринбурга</div><div class="share__social" id="ya_share"></div><div class="share__brand"><a href="#" target="_blank" class="share__wrap"><div class="share__left"><img src="http://bart.unistorageserve.ru/539eb26ce8d7b60470a2bf84" alt="Mango Telecom" class="share__logo"><div class="share__phone">8&thinsp;800&thinsp;555&thinsp;55&thinsp;22</div></div><div class="share__right"><div class="share__name">Технологии для&nbsp;бизнеса</div><br><div class="share__about">Свыше 30&nbsp;000 предприятий-клиентов<br>13 лет на&nbsp;рынке<br>Филиалы в&nbsp;9&nbsp;городах России</div></div></a></div></div>'
+		}
+	};
+
+
+	var targetDiv = false;
+	for (i in targetSelectors) {
+	    targetDiv = $(targetSelectors[i]).first();
+	    if (targetDiv.length) {
+	        break;
+	    }
+	}
+	if (targetDiv.length) {
+		if (typeof editor['branded'] != 'undefined' && editor['branded'] && brandingThemes[editor['branded']]) {
+			var theme = brandingThemes[editor['branded']];
+			var div = $("<div>");
+			div.attr("id", shareWrapDivId+'Branded');
+			div.html(theme['html']);
+
+			targetDiv.after(div);
+			var shareDiv = $("body").find("#"+shareWrapDivId+'Branded');
+		    var init = false;
+		    initalizeSocialBlock({'shareDivId' : shareDivId});
+		}
+		else {
+			var div = $("<div>");
+			div.attr("id", shareWrapDivId);
+
+			var div2 = $("<div>");
+			div2.attr("class", "shareWrap__el");
+			div2.css({'background-image' : 'url('+editor['photo']+')'});
+
+			var span = $("<div>");
+			span.attr("class", "shareWrap__el__text");
+
+			span.html(editor['text'] + '<br><span class="shareWrap__el__podpis">'+editor['name']+', '+editor['post']+'</span>');
+
+			var span2 = $("<div>");
+			span2.attr("id", shareDivId);
+
+			$(div2).append(span);
+			$(div2).append(span2);
+			$(div).append(div2);
+
+			targetDiv.after(div);
+			var shareDiv = $("body").find("#"+shareDivId);
+		    var init = false;
+		    initalizeSocialBlock({'shareDivId' : shareDivId});
+		}
+	}
+
+}
+
+});
+
+</script>
