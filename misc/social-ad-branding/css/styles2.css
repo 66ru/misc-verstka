@@ -72,7 +72,7 @@
 
 	background: none right bottom no-repeat #fff;
 	background-image: url('../img/goalkeeper.jpg');
-	text-shadow: 1px 1px rgba(255, 255, 255, .5);
+	text-shadow: 1px 1px rgba(255, 255, 255, .8);
 }
 
 .t-share__left {
@@ -130,6 +130,14 @@
 	color: #fff;
 	border-radius: 3px;
 	background-color: #1fb7fc;
+	background-image: -webkit-linear-gradient(top, #20bffc, #1ca7fc);
+	background-image: -o-linear-gradient(top, #20bffc, #1ca7fc);
 	background-image: linear-gradient(to bottom, #20bffc, #1ca7fc);
 	text-shadow: none;
+}
+
+.t-share__wrap:hover .t-share__button {
+	background-image: -webkit-linear-gradient(top, #40dfff, #2cb7ff);
+	background-image: -o-linear-gradient(top, #40dfff, #2cb7ff);
+	background-image: linear-gradient(to bottom, #40dfff, #2cb7ff);
 }
