@@ -1,0 +1,135 @@
+.t-share {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1;
+
+	position: relative;
+	z-index: 1;
+
+	overflow: hidden;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 450px;
+	margin-bottom: 30px;
+	padding: 15px;
+
+	background: none left top no-repeat #e9efdb;
+	background-size: 100% 100%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+
+.t-share:after {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 15px;
+
+	display: block;
+
+	width: 265px;
+	height: 135px;
+
+	content: '';
+
+	background: none left top no-repeat transparent;
+	background-image: url('../img/66.png');
+}
+
+.t-share__main {
+	font-size: 16px;
+	line-height: 1.2;
+
+	margin-bottom: 10px;
+}
+
+.t-share__extra {
+	font-style: italic;
+
+	margin-bottom: 20px;
+}
+
+.t-share__social {
+	display: block;
+}
+
+.t-share__brand {
+	display: block;
+
+	text-decoration: none;
+
+	color: #000;
+}
+
+.t-share__wrap {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	padding-top: 20px;
+	padding-bottom: 15px;
+
+	background: none right bottom no-repeat #fff;
+	background-image: url('../img/goalkeeper.jpg');
+	text-shadow: 1px 1px rgba(255, 255, 255, .5);
+}
+
+.t-share__left {
+	margin-left: 15px;
+
+	color: #000;
+}
+
+.t-share__right {
+	margin-left: 15px;
+
+	color: #000;
+}
+
+.t-share__logo {
+	margin-bottom: 15px;
+}
+
+.t-share__phone {
+	font-size: 18px;
+	line-height: 1.2;
+
+	white-space: nowrap;
+}
+
+.t-share__name {
+	font-size: 42px;
+	line-height: 38px;
+
+	text-shadow: 1px 1px #fff;
+}
+
+.t-share__name-under {
+	font-size: 34px;
+}
+
+.t-share__about {
+	font-size: 16px;
+	line-height: 1.2;
+
+	margin-bottom: 15px;
+}
+
+.t-share__button {
+	font-size: 16px;
+	line-height: 24px;
+
+	position: absolute;
+	right: 20%;
+	bottom: 15px;
+
+	height: 24px;
+	padding: 0 10px;
+
+	color: #fff;
+	border-radius: 3px;
+	background-color: #1fb7fc;
+	background-image: linear-gradient(to bottom, #20bffc, #1ca7fc);
+	text-shadow: none;
+}
