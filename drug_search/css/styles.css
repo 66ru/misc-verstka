@@ -1,0 +1,264 @@
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 27px;
+  padding: 0 .8em;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.button_color_grey {
+  color: #666;
+  border-top: 1px solid #f4f4f4;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #c3c3c3;
+  border-left: 1px solid #e5e5e5;
+  background-color: #ededed;
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #e2e2e2);
+  background-image: -o-linear-gradient(top, #f8f8f8, #e2e2e2);
+  background-image: linear-gradient(to bottom, #f8f8f8, #e2e2e2);
+}
+.button_color_grey:hover {
+  background-color: #fdfdfd;
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #e2e2e2);
+  background-image: -o-linear-gradient(top, #fdfdfd, #e2e2e2);
+  background-image: linear-gradient(to bottom, #fdfdfd, #e2e2e2);
+}
+.button_color_grey:active {
+  color: #595959;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #d9d9d9;
+  background-color: #e5e5e5;
+  background-image: -webkit-linear-gradient(top, #e5e5e5, #e8e8e8);
+  background-image: -o-linear-gradient(top, #e5e5e5, #e8e8e8);
+  background-image: linear-gradient(to bottom, #e5e5e5, #e8e8e8);
+}
+.button_color_orange {
+  color: white;
+  border-top: 1px solid #fed274;
+  border-right: 1px solid #ed9248;
+  border-bottom: 1px solid #c87418;
+  border-left: 1px solid #ed9248;
+  background-color: #faa40c;
+  background-image: -webkit-linear-gradient(top, #feb00c, #f1870c);
+  background-image: -o-linear-gradient(top, #feb00c, #f1870c);
+  background-image: linear-gradient(to bottom, #feb00c, #f1870c);
+}
+.button_color_orange:hover {
+  color: white;
+  background-color: #f5930c;
+  background-image: -webkit-linear-gradient(top, #f9a600, #f48900 73%, #f17f00);
+  background-image: -o-linear-gradient(top, #f9a600, #f48900 73%, #f17f00);
+  background-image: linear-gradient(to bottom, #f9a600, #f48900 73%, #f17f00);
+}
+.button_color_orange:active {
+  color: white;
+  background-color: #f17f00;
+  background-image: -webkit-linear-gradient(top, #f17f00, #f48900 95%, #f9a600);
+  background-image: -o-linear-gradient(top, #f17f00, #f48900 95%, #f9a600);
+  background-image: linear-gradient(to bottom, #f17f00, #f48900 95%, #f9a600);
+}
+.button_color_green {
+  color: #fff;
+  border-top: 1px solid #93b700;
+  border-bottom: 1px solid #5a8600;
+  background-color: #94b800;
+  background-image: -webkit-linear-gradient(top, #94b800, #5a8600);
+  background-image: -o-linear-gradient(top, #94b800, #5a8600);
+  background-image: linear-gradient(to bottom, #94b800, #5a8600);
+}
+.button_color_green:hover {
+  background-color: #a6c427;
+  background-image: -webkit-linear-gradient(top, #a6c427, #5c8516);
+  background-image: -o-linear-gradient(top, #a6c427, #5c8516);
+  background-image: linear-gradient(top, #a6c427, #5c8516);
+}
+.button_color_green:active {
+  background-color: #588315;
+  background-image: -webkit-linear-gradient(top, #588315, #5b8516);
+  background-image: -o-linear-gradient(top, #588315, #5b8516);
+  background-image: linear-gradient(top, #588315, #5b8516);
+}
+.button_color_green.button_with-spinner:active {
+  background-color: #94b800;
+  background-image: -webkit-linear-gradient(top, #94b800, #5a8600);
+  background-image: -o-linear-gradient(top, #94b800, #5a8600);
+  background-image: linear-gradient(to bottom, #94b800, #5a8600);
+}
+.button_size_ml {
+  font-size: 18px;
+  line-height: 31px;
+  height: 32px;
+}
+.button_size_l {
+  font-size: 20px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 1.2em;
+}
+.button_size_l .spinner {
+  line-height: 40px;
+}
+.button__text {
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform .3s;
+}
+.button__spinner {
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform .3s;
+}
+.button_loading .button__text,
+.button_loading .button__spinner {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.drug-search {
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 40px;
+  padding: 20px 15px;
+  text-align: center;
+  background-color: #f1f5e8;
+}
+.drug-search:after {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 92%;
+  height: 20px;
+  margin-left: -46%;
+  content: '';
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.45);
+}
+.drug-search__heading {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.drug-search__subscript {
+  font-size: 11px;
+  margin-bottom: 20px;
+  color: #607d1f;
+}
+.drug-search__input-row {
+  margin-bottom: 20px;
+}
+.drug-search__main-wrap {
+  display: inline-block;
+  width: 40%;
+  height: 40px;
+  margin-right: 15px;
+}
+.drug-search__main-input {
+  font-size: 21px;
+  line-height: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+}
+.drug-search__tags-row {
+  margin-bottom: 20px;
+}
+.drug-search__tag {
+  line-height: 22px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 21%;
+  height: 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  padding-right: 25px;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+  background: #bcc1ae;
+}
+.drug-search__tag:after {
+  font-weight: bold;
+  line-height: 23px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 22px;
+  content: '✕';
+  text-align: center;
+}
+.drug-search__tag:hover:after {
+  color: #fc551f;
+}
+.drug-search__label {
+  line-height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.drug-search__input {
+  font-size: 16px;
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 110px;
+  height: 30px;
+  margin-right: 5px;
+  padding: 0 5px;
+  text-align: right;
+}
+.drug-search__checkbox {
+  margin-right: 5px;
+  margin-left: 25px;
+}
+.inline-list {
+  font-size: 14px;
+  line-height: 22px;
+}
+.inline-list:before,
+.inline-list:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.inline-list__elem {
+  float: left;
+  white-space: normal;
+}
+.inline-list__number {
+  color: #666;
+  margin-right: 10px;
+}
+.inline-list__number:before {
+  content: '(';
+}
+.inline-list__number:after {
+  content: '),';
+}
+.inline-list__elem:last-child .inline-list__number:after {
+  content: ')';
+}
+.inline-list__elem .link {
+  margin-right: 5px;
+}
+.link_color_green {
+  color: #607d1f;
+}

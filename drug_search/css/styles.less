@@ -1,0 +1,189 @@
+@import (less) url('../../newMain/css/less/blocks/button/css/button.css');
+
+
+
+
+.drug-search {
+	font-size: 14px;
+	line-height: 1;
+
+	position: relative;
+
+	margin-bottom: 40px;
+	padding: 20px 15px;
+
+	text-align: center;
+
+	background-color: #f1f5e8;
+}
+
+.drug-search:after {
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	left: 50%;
+
+	display: block;
+
+	width: 92%;
+	height: 20px;
+	margin-left: -46%;
+
+	content: '';
+
+	box-shadow: 0 5px 35px rgba(0, 0, 0, .45);
+}
+
+.drug-search__heading {
+	font-size: 30px;
+
+	margin-bottom: 5px;
+}
+
+.drug-search__subscript {
+	font-size: 11px;
+
+	margin-bottom: 20px;
+
+	color: #607d1f;
+}
+
+.drug-search__input-row {
+	margin-bottom: 20px;
+}
+
+.drug-search__main-wrap {
+	display: inline-block;
+
+	width: 40%;
+	height: 40px;
+	margin-right: 15px;
+}
+
+.drug-search__main-input {
+	font-size: 21px;
+	line-height: 40px;
+
+	box-sizing: border-box;
+	width: 100%;
+	height: 40px;
+	padding-left: 5px;
+}
+
+.drug-search__tags-row {
+	margin-bottom: 20px;
+}
+
+.drug-search__tag {
+	line-height: 22px;
+
+	position: relative;
+
+	display: inline-block;
+	overflow: hidden;
+
+	max-width: 21%;
+	height: 22px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0 5px;
+	padding-right: 25px;
+
+	cursor: pointer;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	color: #fff;
+	background: #bcc1ae;
+}
+
+.drug-search__tag:after {
+	font-weight: bold;
+	line-height: 23px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	display: block;
+
+	width: 20px;
+	height: 22px;
+
+	content: '✕';
+	text-align: center;
+}
+
+.drug-search__tag:hover:after {
+	color: #fc551f;
+}
+
+.drug-search__label {
+	line-height: 30px;
+
+	margin-right: 5px;
+
+	cursor: pointer;
+}
+
+.drug-search__input {
+	font-size: 16px;
+	line-height: 30px;
+
+	box-sizing: border-box;
+	width: 110px;
+	height: 30px;
+	margin-right: 5px;
+	padding: 0 5px;
+
+	text-align: right;
+}
+
+.drug-search__checkbox {
+	margin-right: 5px;
+	margin-left: 25px;
+}
+
+.inline-list {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.inline-list:before,
+.inline-list:after {
+	display: block;
+	clear: both;
+
+	content: '';
+}
+
+.inline-list__elem {
+	float: left;
+	white-space: normal;
+}
+
+.inline-list__number {
+	color: #666;
+	margin-right: 10px;
+}
+
+.inline-list__number:before {
+	content: '(';
+}
+
+.inline-list__number:after {
+	content: '),';
+}
+
+.inline-list__elem:last-child .inline-list__number:after {
+	content: ')';
+}
+
+.inline-list__elem .link {
+	margin-right: 5px;
+}
+
+.link_color_green {
+	color: #607d1f;
+}
