@@ -11,17 +11,24 @@ html {
 .d-half {
 	float: left;
 
-	width: 46%;
-	margin-right: 20px;
-	margin-left: 10px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	padding-right: 2%;
+}
+
+.d-half__wrap {
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .d-h2 {
 	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 24px;
+	line-height: 30px;
 
-	margin-top: 20px;
-	margin-bottom: 10px;
+	// margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .d-hyphotec {
@@ -105,7 +112,7 @@ html {
 }
 
 .d-hyphotec .button {
-	font-size: 17px;
+	font-size: 15px;
 
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -169,6 +176,7 @@ html {
 	float: left;
 
 	width: 30%;
+	margin-bottom: 10px;
 }
 
 .realty-list_wide {
@@ -177,6 +185,8 @@ html {
 
 .realty-list__elem {
 	margin-bottom: 5px;
+
+	white-space: nowrap;
 }
 
 .realty-list__elem_split {
@@ -206,4 +216,74 @@ html {
 .link:hover {
 	color: #fc551f;
 	border-bottom: 1px solid #feccbc;
+}
+
+
+.hr {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.hr_gray {
+	border: none;
+	border-bottom: 1px solid #d7d6d5;
+}
+
+
+
+.realty-carousel {
+	position: relative;
+
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding: 10px;
+	padding-bottom: 15px;
+	// background-color: #f1f5e8;
+}
+
+.realty-carousel .d-h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.realty-carousel .b-goods-tile__row {
+	margin-bottom: 0;
+}
+
+.realty-carousel__button {
+	position: absolute;
+	z-index: 2;
+	bottom: 15px;
+
+	display: none;
+
+	width: 16px;
+	height: 80px;
+
+	cursor: pointer;
+
+	background: none center no-repeat #c8d6a8;
+	background-size: 6px auto;
+}
+
+.realty-carousel__button:hover {
+	background-color: #d2dfb8;
+}
+
+.realty-carousel__button_prev {
+	display: none;
+}
+
+.realty-carousel__button_next {
+	right: 20px;
+
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDggMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT50cmlhbmdsZSBhcnJvdzwvdGl0bGU+PHBhdGggZD0iTS41IDE0LjV2LTE0bDcgNy03IDd6IiBmaWxsPSIjZmZmIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIi8+PC9zdmc+');
+}
+
+.realty-carousel .b-goods-tile__row {
+	overflow: hidden;
+
+	height: 80px;
 }
