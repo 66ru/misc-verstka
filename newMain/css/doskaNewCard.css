@@ -907,11 +907,11 @@
   padding-bottom: 0;
 }
 .b-properties-table__table {
+  line-height: 1.1;
   display: table;
   width: 100%;
-  border-collapse: collapse;
   table-layout: fixed;
-  line-height: 1.1;
+  border-collapse: collapse;
 }
 .b-properties-table__row {
   display: table-row;
@@ -924,8 +924,6 @@
 .b-properties-table__elem {
   display: table-cell;
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 25%;
   border-left: 1px solid #e3e7d8;
@@ -943,9 +941,9 @@
   padding: 0 11% 15px;
 }
 .b-properties-table__label {
+  font-size: 14px;
   margin-bottom: 2px;
   color: #666;
-  font-size: 14px;
 }
 .b-properties-table__desc {
   font-size: 18px;
@@ -1141,8 +1139,11 @@
   left: 0;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 100%;
   padding: .3em .3em .1em;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
   color: #fff;
   background: #f17e00;
 }
@@ -1164,10 +1165,18 @@
 .b-goods-tile_small .b-goods-tile__wrap {
   height: 80px;
 }
+.b-goods-tile_small .b-goods-tile__elem {
+  width: 23%;
+  margin-right: 2.5%;
+  margin-left: 0;
+}
+.b-goods-tile_small .b-goods-tile__elem:last-child {
+  margin-right: 0;
+}
 .b-goods-tile_small .b-goods-tile__price {
-  height: 15px;
   font-size: 11px;
-  line-height: 11px;
+  line-height: 10px;
+  height: 15px;
 }
 .b-folded-plate {
   margin-left: -20px;
@@ -1434,4 +1443,53 @@
 }
 .b-modal__submit {
   margin-left: 20px;
+}
+.card-props {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  padding-right: 0;
+  padding-bottom: 0;
+  list-style: none;
+  white-space: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.card-props__elem {
+  box-sizing: border-box;
+  width: 50%;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  list-style: none;
+  text-align: left;
+  white-space: normal;
+}
+@media (min-width: 1100px) {
+  .card-props__elem {
+    width: 33%;
+  }
+}
+@media (min-width: 1280px) {
+  .card-props__elem {
+    width: 25%;
+  }
+}
+.card-props__label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+.card-props__desc {
+  font-size: 18px;
+}
+.card-props + .b-doska-ncard__text {
+  padding-top: 0;
 }

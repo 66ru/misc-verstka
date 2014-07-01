@@ -3324,7 +3324,7 @@ a.b-banking-adress__list-link:hover:hover {
 .button {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 27px;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -3416,6 +3416,11 @@ a.b-banking-adress__list-link:hover:hover {
   background-image: -webkit-linear-gradient(top, #94b800, #5a8600);
   background-image: -o-linear-gradient(top, #94b800, #5a8600);
   background-image: linear-gradient(to bottom, #94b800, #5a8600);
+}
+.button_size_ml {
+  font-size: 18px;
+  line-height: 31px;
+  height: 32px;
 }
 .button_size_l {
   font-size: 20px;

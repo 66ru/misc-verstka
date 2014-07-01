@@ -86,14 +86,18 @@
 }
 
 .b-goods-tile_small .b-goods-tile__elem {
-	width: 21%;
+	width: 23%;
 	margin-right: 2.5%;
 	margin-left: 0;
 }
 
+.b-goods-tile_small .b-goods-tile__elem:last-child {
+	margin-right: 0;
+}
+
 .b-goods-tile_small .b-goods-tile__price {
 	font-size: 11px;
-	line-height: 11px;
+	line-height: 10px;
 
 	height: 15px;
 }
