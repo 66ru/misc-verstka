@@ -232,6 +232,7 @@
 .inline-list {
   font-size: 14px;
   line-height: 22px;
+  margin-bottom: 30px;
 }
 .inline-list:before,
 .inline-list:after {
@@ -244,8 +245,8 @@
   white-space: normal;
 }
 .inline-list__number {
-  color: #666;
   margin-right: 10px;
+  color: #666;
 }
 .inline-list__number:before {
   content: '(';
