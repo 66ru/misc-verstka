@@ -191,3 +191,315 @@
 .link_color_green {
 	color: #607d1f;
 }
+
+.link_color_green:visited {
+	color: #607d1f;
+}
+
+.link_color_green:hover {
+	color: #f65737;
+}
+
+.link_color_green:active {
+	color: #f65737;
+}
+
+
+
+.suggests-box {
+	font-size: 12px;
+
+	position: relative;
+}
+
+.suggests-box__list {
+	position: absolute;
+	z-index: 2;
+	top: 39px;
+
+	display: table;
+	display: none;
+
+	width: 40%;
+
+	text-align: left;
+
+	border: 1px solid #668f18;
+	background-color: #fff;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.suggests-box__elem {
+	display: table-row;
+	overflow: hidden;
+
+	padding: 7px;
+	padding-left: 45px;
+
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.suggests-box__elem:hover {
+	background-color: #dbfc8e;
+}
+
+.suggests-box__add {
+	display: table-cell;
+
+	width: 30px;
+	padding: 5px;
+
+	vertical-align: middle;
+}
+
+.suggests-box__name {
+	line-height: 15px;
+
+	display: table-cell;
+
+	padding: 5px;
+
+	vertical-align: middle;
+	white-space: normal;
+}
+
+.suggests-box__price {
+	display: table-cell;
+
+	padding: 5px;
+
+	text-align: right;
+	vertical-align: middle;
+
+	color: #666;
+}
+
+
+.suggests-box__button {
+	font-size: 22px;
+	line-height: 20px;
+
+	display: inline-block;
+
+	width: 30px;
+	height: 20px;
+
+	text-align: center;
+
+	color: #fff;
+	border-radius: 5px;
+	background-color: #c5cfae;
+}
+
+.suggests-box__button:hover {
+	background-image: -webkit-linear-gradient(top, #95b623, #5a8416);
+	background-image: -o-linear-gradient(top, #95b623, #5a8416);
+	background-image: linear-gradient(to bottom, #95b623, #5a8416);
+}
+
+.suggests-box__name-wrap {
+	display: block;
+	overflow: hidden;
+
+	max-height: 30px;
+
+	text-overflow: ellipsis;
+}
+
+
+
+
+.b-text__h1 {
+	line-height: 1.3;
+}
+
+
+
+
+.drug-card {
+	font-size: 14px;
+
+	margin-bottom: 20px;
+}
+
+.drug-card__img {
+	float: left;
+
+	width: 150px;
+	height: 110px;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+
+.drug-card__price {
+	font-size: 18px;
+	font-weight: bold;
+
+	margin-bottom: 10px;
+}
+
+.drug-card__desc {
+	line-height: 20px;
+
+	overflow: hidden;
+
+	height: 40px;
+	max-height: 40px;
+	margin-bottom: 5px;
+
+	text-overflow: ellipsis;
+}
+
+.drug-card__more {
+	display: inline;
+
+	cursor: pointer;
+
+	color: #157fd0;
+	border-bottom: 1px dotted #157fd0;
+}
+
+.drug-card__more:hover {
+	color: #fc551f;
+	border-bottom-color: #fc551f;
+}
+
+.drug-card__more:active {
+	color: #fc551f;
+	border-bottom-color: #fc551f;
+}
+
+.drug-card__extra {
+	clear: both;
+
+	margin-top: 15px;
+}
+
+
+
+
+
+.drugs-map:before,
+.drugs-map:after {
+	display: block;
+	clear: both;
+
+	content: '';
+}
+
+.drugs-map__map {
+	float: left;
+
+	width: 47%;
+	height: 600px;
+	margin-right: 3%;
+
+	background-color: #eee;
+}
+
+.drugs-map__heading {
+	font-size: 18px;
+
+	margin-bottom: 10px;
+}
+
+.drugs-map__table {
+	font-size: 14px;
+	line-height: 18px;
+
+	display: table;
+
+	width: 50%;
+
+	table-layout: fixed;
+}
+
+.drugs-map__row {
+	display: table-row;
+
+	cursor: pointer;
+}
+
+.drugs-map__row:hover .drugs-map__cell {
+	background-image: linear-gradient(to bottom, #fbfbfb, #ebebeb);
+}
+
+.drugs-map__cell {
+	display: table-cell;
+
+	padding: 7px 0;
+
+	vertical-align: middle;
+}
+
+.drugs-map__row_header .drugs-map__cell {
+	font-size: 14px;
+
+	height: 30px;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	white-space: nowrap;
+
+	background-color: #efefef;
+}
+
+.drugs-map__row_header .drugs-map__cell_placemark {
+	width: 50px;
+}
+
+.drugs-map__cell_placemark {
+	box-sizing: border-box;
+	width: 50px;
+	padding-left: 10px;
+}
+
+.drugs-map__cell_price {
+	font-size: 18px;
+
+	width: 75px;
+	padding-right: 10px;
+	padding-left: 5px;
+
+	text-align: right;
+}
+
+.drugs-map__link {
+	text-decoration: none;
+
+	color: #157fd0;
+	border-bottom: 1px solid #99c8e8;
+}
+
+.drugs-map__link:visited {
+	color: #157fd0;
+}
+
+.drugs-map__link:hover {
+	color: #f9562d;
+	border-bottom: 1px solid #feccbc;
+}
+
+.drugs-map__link:active {
+	color: #f9562d;
+	border-bottom: 1px solid #feccbc;
+}
+
+
+
+.placemark {
+	line-height: 26px;
+
+	display: inline-block;
+
+	width: 27px;
+	height: 31px;
+
+	text-align: center;
+
+	background: none left top no-repeat transparent;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT5wbGFjZW1hcmtfZ3JlZW4gMTwvdGl0bGU+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiIGlkPSJhIj48c3RvcCBzdG9wLWNvbG9yPSIjNkQ5NzAwIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzRGNzYwMyIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgc2tldGNoOnR5cGU9Ik1TUGFnZSIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTUuMDE0IDI0aC0uMDE0bDguNSA3IDguNS03aC0uMDE0YzMuMDU4LTIuNDc1IDUuMDE0LTYuMjU5IDUuMDE0LTEwLjUgMC03LjQ1Ni02LjA0NC0xMy41LTEzLjUtMTMuNXMtMTMuNSA2LjA0NC0xMy41IDEzLjVjMCA0LjI0MSAxLjk1NiA4LjAyNSA1LjAxNCAxMC41eiIgZmlsbD0idXJsKCNhKSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjxjaXJjbGUgZmlsbD0iI2ZmZiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgY3g9IjEzLjUiIGN5PSIxMy41IiByPSIxMC41Ii8+PC9nPjwvc3ZnPg==');
+	background-size: 100%;
+}

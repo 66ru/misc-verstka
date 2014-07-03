@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="../main_menu_upgrade/css/bem-styles.css">
 
 <link rel="stylesheet" href="css/styles.css">
+
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 <div class="layout">
@@ -371,7 +373,64 @@
 				<div class="drug-search">
 					<h1 class="drug-search__heading">Поиск лекарств в аптеках Екатеринбурга</h1>
 					<div class="drug-search__subscript">База обновлена 5-го мая в 14:55</div>
-					<div class="drug-search__input-row"><div class="drug-search__main-wrap"><input type="text" name="drug-search" id="drug-search" class="drug-search__main-input" placeholder="Начните вводить название"></div><input type="submit" value="Найти" class="drug-search__submit button button_color_green button_size_l"></div>
+					<div class="drug-search__input-row suggests-box">
+						<div class="drug-search__main-wrap">
+							<input type="text" name="drug-search" id="drug-search" class="drug-search__main-input" placeholder="Начните вводить название">
+							<ul class="suggests-box__list">
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Ромашка латекс</span></div>
+									<div class="suggests-box__price">120&ndash;140 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Курносики латекс 6-18 мес (13125)</span></div>
+									<div class="suggests-box__price">3520&ndash;3890 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска латекс Курносики 0+ мес. (12125)</span></div>
+									<div class="suggests-box__price">250&ndash;380 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Авент (86140) силик. Классика 6-18 месяцев 2 шт. BPA-4511-231</span></div>
+									<div class="suggests-box__price">250 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Авент (86140) силик. Животный мир 0-6 месяцев 2 шт. BPA-4511-231</span></div>
+									<div class="suggests-box__price">6652&ndash;9930 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Бусинка (466)силик с кольцом круглая Бабочка 0-6 мес.</span></div>
+									<div class="suggests-box__price">221 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска латекс Курносики 0+ мес. (12125)</span></div>
+									<div class="suggests-box__price">250&ndash;380 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Авент (86140) силик. Классика 6-18 месяцев 2 шт. BPA-4511-231</span></div>
+									<div class="suggests-box__price">250 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Авент (86140) силик. Животный мир 0-6 месяцев 2 шт. BPA-4511-231</span></div>
+									<div class="suggests-box__price">6652-9930 руб.</div>
+								</li>
+								<li class="suggests-box__elem">
+									<div class="suggests-box__add"><span class="suggests-box__button">+</span></div>
+									<div class="suggests-box__name"><span class="suggests-box__name-wrap">Соска-пустышка Бусинка (466)силик с кольцом круглая Бабочка 0-6 мес.</span></div>
+									<div class="suggests-box__price">221 руб.</div>
+								</li>
+							</ul>
+						</div>
+						<input type="submit" value="Найти" class="drug-search__submit button button_color_green button_size_l">
+					</div>
 					<ul class="drug-search__tags-row">
 						<li class="drug-search__tag">Сальбутамол (Алтайпрезфарммед)</li>
 						<li class="drug-search__tag">Уголь активированный</li>
@@ -382,6 +441,112 @@
 						<label for="max-price" class="drug-search__label">руб.</label>
 						<input type="checkbox" name="now-open" id="now-open" class="drug-search__checkbox">
 						<label for="now-open" class="drug-search__label">Искать в аптеках, которые работают сейчас</label>
+					</div>
+				</div>
+				<div class="grid">
+					<div class="grid__module grid__module_col_1 grid__module_span_120">
+						<h1 class="b-text__h1">Пластырь Омнифилм фиксирующий на пленочной основе 2,5см*5м (1 шт. Omnifilm а.900521) Хартманн</h1>
+						<div class="drug-card">
+							<img src="http://img.ffffound.com/static-data/assets/6/3aeed0143b0781433e7d31da41121644eb024641_m.jpg" alt="" class="drug-card__img">
+							<div class="drug-card__price">от 110 руб.</div>
+							<div class="drug-card__desc">Omnifilm / Омнифильм Фиксирующий пластырь из прозрачной пленки Фиксирующий гипоаллергенный пластырь для чувствительной кожи из пористой прозрачной пленки. Применяется для влагостойкой и прозрачной</div>
+							<div class="drug-card__more">подробное описание</div>
+							<div class="drug-card__extra">Есть в наличии 80 аптеках Екатеринбурга (Цены и наличие препаратов уточняйте по телефонам аптек)</div>
+						</div>
+
+						<div class="drugs-map">
+							<div class="drugs-map__map" id="map"></div>
+							<div class="drugs-map__wrap">
+								<div class="drugs-map__heading">Наличие в аптеках города</div>
+								<ul class="drugs-map__table">
+									<li class="drugs-map__row drugs-map__row_header">
+										<div class="drugs-map__cell drugs-map__cell_placemark">Аптека</div>
+										<div class="drugs-map__cell drugs-map__cell_name"></div>
+										<div class="drugs-map__cell drugs-map__cell_price">Цена, р.</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">1</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Аптечный мир (Опалихинская, 15)</a>
+											<div class="drugs-map__extra">Опалихинская, 15, 286-38-02</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">110.00</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">2</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Медицина для Вас</a>
+											<div class="drugs-map__extra">Волгоградская,190, 234-46-46</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">114.00</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">3</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Классика (Опалихинская , 42)</a>
+											<div class="drugs-map__extra">Опалихинская , 42, 383-14-67</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">116.00</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">4</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Фармек (Волгоградская 189 литер А)</a>
+											<div class="drugs-map__extra">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)7315905</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">116.00</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">5</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Аптечный мир (Опалихинская, 15)</a>
+											<div class="drugs-map__extra">Опалихинская, 15, 286-38-02</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">120.00</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">6</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Медицина для Вас</a>
+											<div class="drugs-map__extra">Волгоградская,190, 234-46-46</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">124.00</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">7</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Классика (Опалихинская , 42)</a>
+											<div class="drugs-map__extra">Опалихинская , 42, 383-14-67</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">128.00</div>
+									</li>
+									<li class="drugs-map__row">
+										<div class="drugs-map__cell drugs-map__cell_placemark">
+											<span class="placemark">8</span>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_name">
+											<a href="#" class="drugs-map__link">Фармек (Волгоградская 189 литер А)</a>
+											<div class="drugs-map__extra">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)7315905</div>
+										</div>
+										<div class="drugs-map__cell drugs-map__cell_price">129.00</div>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="grid">
@@ -462,5 +627,15 @@
 </div>
 <script src="../bower_components/jquery-1.9.1/jquery.js"></script>
 <script src="../weather/js/main-menu-init.js"></script>
+
+<script type="text/javascript">
+    ymaps.ready(function() {
+    	var map = new ymaps.Map("map", {
+    		center: [56.84, 60.61],
+            zoom: 12
+        });
+    });
+</script>
+
 </body>
 </html>
