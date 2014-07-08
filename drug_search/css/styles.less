@@ -684,6 +684,9 @@
 .drugs-results__elem {
 	padding: 13px 10px;
 	padding-left: 20px;
+
+	background-image: -webkit-linear-gradient(top, #fff 0%, #fff 50%, #ececec 100%);
+	background-image: -o-linear-gradient(top, #fff 0%, #fff 50%, #ececec 100%);
 	background-image: linear-gradient(to bottom, #fff 0%, #fff 50%, #ececec 100%);
 }
 
@@ -703,7 +706,6 @@
 .drugs-results__link {
 	font-size: 18px;
 	line-height: 24px;
-
 
 	text-decoration: none;
 
@@ -740,4 +742,41 @@
 
 .drugs-results__img-link {
 	float: left;
+}
+
+.drugs-results__switch {
+	height: 30px;
+	padding-left: 20px;
+
+	background-color: #efefef;
+}
+
+.drugs-results__option {
+	line-height: 30px;
+
+	float: left;
+
+	padding: 0 10px;
+
+	cursor: pointer;
+
+	color: #666;
+}
+
+.drugs-results__option-text {
+	border-bottom: 1px dotted #bbb;
+}
+
+.drugs-results__option:hover .drugs-results__option-text {
+	color: #000;
+	border-bottom-color: #666;
+}
+
+.drugs-results__option_current {
+	cursor: default;
+
+	color: #fff;
+	background-image: -webkit-linear-gradient(top, #92b13d, #5b831e);
+	background-image: -o-linear-gradient(top, #92b13d, #5b831e);
+	background-image: linear-gradient(to bottom, #92b13d, #5b831e);
 }
