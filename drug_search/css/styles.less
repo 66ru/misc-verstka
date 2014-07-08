@@ -90,7 +90,6 @@
 	padding: 0 5px;
 	padding-right: 25px;
 
-	cursor: pointer;
 	text-align: left;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -99,7 +98,7 @@
 	background: #bcc1ae;
 }
 
-.drug-search__tag:after {
+.drug-search__tag-remove {
 	font-weight: bold;
 	line-height: 23px;
 
@@ -112,11 +111,15 @@
 	width: 20px;
 	height: 22px;
 
-	content: '✕';
+	cursor: pointer;
 	text-align: center;
 }
 
-.drug-search__tag:hover:after {
+.drug-search__tag-remove:hover {
+	color: #fc551f;
+}
+
+.drug-search__tag-remove:active {
 	color: #fc551f;
 }
 
@@ -310,8 +313,14 @@
 
 
 
-.b-text__h1 {
+.drugs__h1 {
+	font-size: 24px;
 	line-height: 1.3;
+
+	margin-bottom: 15px;
+	padding-top: 20px;
+
+	border-top: 3px solid #ef7e22;
 }
 
 
@@ -380,6 +389,10 @@
 
 
 
+.drugs-map {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
 
 .drugs-map:before,
 .drugs-map:after {
@@ -390,11 +403,8 @@
 }
 
 .drugs-map__map {
-	float: left;
-
-	width: 47%;
 	height: 600px;
-	margin-right: 3%;
+	margin-right: 420px;
 
 	background-color: #eee;
 }
@@ -405,36 +415,33 @@
 	margin-bottom: 10px;
 }
 
+.drugs-map__table-wrap {
+	float: right;
+
+	width: 400px;
+	height: 600px;
+}
+
 .drugs-map__table {
 	font-size: 14px;
 	line-height: 18px;
 
-	display: table;
+	overflow-y: scroll;
 
-	width: 50%;
+	width: 100%;
+	height: 570px;
+}
+
+.drugs-map__table-header {
+	display: table;
+	float: right;
+
+	width: 100%;
 
 	table-layout: fixed;
 }
 
-.drugs-map__row {
-	display: table-row;
-
-	cursor: pointer;
-}
-
-.drugs-map__row:hover .drugs-map__cell {
-	background-image: linear-gradient(to bottom, #fbfbfb, #ebebeb);
-}
-
-.drugs-map__cell {
-	display: table-cell;
-
-	padding: 7px 0;
-
-	vertical-align: middle;
-}
-
-.drugs-map__row_header .drugs-map__cell {
+.drugs-map__table-header .drugs-map__cell {
 	font-size: 14px;
 
 	height: 30px;
@@ -446,8 +453,24 @@
 	background-color: #efefef;
 }
 
-.drugs-map__row_header .drugs-map__cell_placemark {
-	width: 50px;
+.drugs-map__row {
+	display: table-row;
+
+	cursor: pointer;
+}
+
+.drugs-map__row:hover .drugs-map__cell {
+	background-image: -webkit-linear-gradient(top, #fbfbfb, #ebebeb);
+	background-image: -o-linear-gradient(top, #fbfbfb, #ebebeb);
+	background-image: linear-gradient(to bottom, #fbfbfb, #ebebeb);
+}
+
+.drugs-map__cell {
+	display: table-cell;
+
+	padding: 7px 0;
+
+	vertical-align: middle;
 }
 
 .drugs-map__cell_placemark {
@@ -459,12 +482,16 @@
 .drugs-map__cell_price {
 	font-size: 18px;
 
-	width: 95px;
+	width: 75px;
 	padding-right: 10px;
 	padding-left: 5px;
 
 	text-align: right;
 	white-space: nowrap;
+}
+
+.drugs-map__cell_price-smaller {
+	font-size: 14px;
 }
 
 .drugs-map__link {
@@ -488,6 +515,18 @@
 	border-bottom: 1px solid #feccbc;
 }
 
+.drugs-map__sort-arr {
+	display: inline-block;
+
+	width: 9px;
+	height: 10px;
+	margin-left: 5px;
+
+	background: none center bottom no-repeat transparent;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMyAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPndpbmQgYXJyb3c8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxwYXRoIGQ9Ik0xMiAxLjE0bC01LjUwMyAxMS45NzItNS40OTctMTIuMTEyczMuMjk0IDEuOTYzIDUuNDk3IDEuOTk4YzIuMjAyLjAzNSA1LjUwMy0xLjg1OCA1LjUwMy0xLjg1OHoiIGZpbGw9IiMwMDAiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L3N2Zz4=');
+	background-size: 100%;
+}
+
 
 
 .placemark {
@@ -505,6 +544,105 @@
 	background-size: 100%;
 }
 
+.drugs-map__row_active .placemark {
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT5wbGFjZW1hcmxfZ3JlZW4uc3ZnPC90aXRsZT48ZGVmcz48bGluZWFyR3JhZGllbnQgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGOTg4MDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjQzU0RDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyBza2V0Y2g6dHlwZT0iTVNQYWdlIiBmaWxsPSJub25lIj48cGF0aCBkPSJNNS4wMTQgMjRoLS4wMTRsOC41IDcgOC41LTdoLS4wMTRjMy4wNTgtMi40NzUgNS4wMTQtNi4yNTkgNS4wMTQtMTAuNSAwLTcuNDU2LTYuMDQ0LTEzLjUtMTMuNS0xMy41cy0xMy41IDYuMDQ0LTEzLjUgMTMuNWMwIDQuMjQxIDEuOTU2IDguMDI1IDUuMDE0IDEwLjV6IiBmaWxsPSJ1cmwoI2EpIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIi8+PGNpcmNsZSBmaWxsPSIjZmZmIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBjeD0iMTMuNSIgY3k9IjEzLjUiIHI9IjEwLjUiLz48L2c+PC9zdmc+');
+}
+
 .rubl {
 	font-family: ALSRubl Arial, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+
+.cat-open {
+	font-size: 14px;
+	line-height: 32px;
+
+	position: relative;
+
+	display: inline-block;
+
+	height: 32px;
+	padding-right: 28px;
+	padding-left: 10px;
+
+	cursor: pointer;
+	white-space: nowrap;
+
+	color: #607d1f;
+	border: 1px solid #d1e5a4;
+	border-radius: 5px;
+}
+
+.cat-open:after {
+	position: absolute;
+	top: 0;
+	top: 0;
+	right: 10px;
+	right: 10px;
+
+	display: block;
+
+	width: 10px;
+	height: 32px;
+
+	content: '';
+
+	background: none center center no-repeat transparent;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxOCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPmxlZnQgYXJyb3c8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxnIHNrZXRjaDp0eXBlPSJNU1BhZ2UiIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0zLjIzNyAyNy4xNjNsOS44MTgtMTIuMzkyLTkuNzM2LTExLjg2NCIgc3Ryb2tlPSIjNjA3RDFFIiBzdHJva2Utd2lkdGg9IjciIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L2c+PC9zdmc+');
+	background-size: 10px 32px;
+}
+
+.cat-open:hover,
+.cat-open:active {
+	color: #f65737;
+	border-color: #fdccbd;
+}
+
+.cat-open:hover:after,
+.cat-open:active:after {
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxOCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPmxlZnQgYXJyb3c8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxnIHNrZXRjaDp0eXBlPSJNU1BhZ2UiIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0zLjIzNyAyNy4xNjNsOS44MTgtMTIuMzkyLTkuNzM2LTExLjg2NCIgc3Ryb2tlPSIjRjY1NzM3IiBzdHJva2Utd2lkdGg9IjciIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L2c+PC9zdmc+');
+}
+
+
+
+
+.drugs-also {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.drugs-also__heading {
+	font-size: 18px;
+
+	margin-bottom: 10px;
+}
+
+.drugs-also__links {
+	margin-bottom: 20px;
+}
+
+.drugs-also__elem {
+	margin-bottom: 5px;
+}
+
+.drugs-also__link {
+	text-decoration: none;
+
+	color: #157fd0;
+	border-bottom: 1px solid #99c8e8;
+}
+
+.drugs-also__link:visited {
+	color: #157fd0;
+}
+
+.drugs-also__link:hover {
+	color: #f9562d;
+	border-bottom: 1px solid #feccbc;
+}
+
+.drugs-also__link:active {
+	color: #f9562d;
+	border-bottom: 1px solid #feccbc;
 }
