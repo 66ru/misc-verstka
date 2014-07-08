@@ -419,14 +419,12 @@
 .drugs-map__table-wrap {
   float: right;
   width: 400px;
-  height: 600px;
 }
 .drugs-map__table {
   font-size: 14px;
   line-height: 18px;
-  overflow-y: scroll;
   width: 100%;
-  height: 570px;
+  margin-bottom: 30px;
 }
 .drugs-map__table-header {
   display: table;
@@ -496,6 +494,26 @@
   background: none center bottom no-repeat transparent;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMyAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPndpbmQgYXJyb3c8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxwYXRoIGQ9Ik0xMiAxLjE0bC01LjUwMyAxMS45NzItNS40OTctMTIuMTEyczMuMjk0IDEuOTYzIDUuNDk3IDEuOTk4YzIuMjAyLjAzNSA1LjUwMy0xLjg1OCA1LjUwMy0xLjg1OHoiIGZpbGw9IiMwMDAiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L3N2Zz4=');
   background-size: 100%;
+}
+.drugs-map__tags {
+  margin-bottom: 10px;
+}
+.drugs-map__tag {
+  height: 25px;
+  margin-bottom: 5px;
+}
+.drugs-map__tag-text {
+  font-size: 14px;
+  line-height: 25px;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+  background-color: #bcc1ae;
 }
 .placemark {
   line-height: 26px;
@@ -577,4 +595,54 @@
 .drugs-also__link:active {
   color: #f9562d;
   border-bottom: 1px solid #feccbc;
+}
+.drugs-results__heading {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.drugs-results__elem {
+  padding: 13px 10px;
+  padding-left: 20px;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #ececec 100%);
+}
+.drugs-results__name {
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.drugs-results__elem_no-img .drugs-results__name {
+  margin-left: 0;
+}
+.drugs-results__elem_no-img .drugs-results__price {
+  margin-left: 0;
+}
+.drugs-results__link {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #157fd0;
+  border-bottom: 1px solid #99c8e8;
+}
+.drugs-results__link:visited {
+  color: #157fd0;
+}
+.drugs-results__link:hover {
+  color: #f9562d;
+  border-bottom: 1px solid #feccbc;
+}
+.drugs-results__link:active {
+  color: #f9562d;
+  border-bottom: 1px solid #feccbc;
+}
+.drugs-results__price {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 70px;
+  color: #666;
+}
+.drugs-results__price-hilite {
+  color: #000;
+}
+.drugs-results__img-link {
+  float: left;
 }
