@@ -220,8 +220,8 @@
 	z-index: 2;
 	top: 39px;
 
-	display: table;
-	display: none;
+	display: block;
+	// display: none;
 
 	width: 40%;
 
@@ -233,11 +233,13 @@
 }
 
 .suggests-box__elem {
-	display: table-row;
+	display: table;
+	width: 100%;
+	box-sizing: border-box;
 	overflow: hidden;
 
-	padding: 7px;
-	padding-left: 45px;
+	padding: 3px;
+	// padding-left: 45px;
 
 	cursor: pointer;
 	white-space: nowrap;

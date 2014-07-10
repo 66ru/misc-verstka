@@ -287,8 +287,7 @@
   position: absolute;
   z-index: 2;
   top: 39px;
-  display: table;
-  display: none;
+  display: block;
   width: 40%;
   text-align: left;
   border: 1px solid #668f18;
@@ -296,10 +295,11 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 .suggests-box__elem {
-  display: table-row;
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
   overflow: hidden;
-  padding: 7px;
-  padding-left: 45px;
+  padding: 3px;
   cursor: pointer;
   white-space: nowrap;
 }
