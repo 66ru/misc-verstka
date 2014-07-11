@@ -11,7 +11,8 @@
 
 <link rel="stylesheet" href="css/styles.css">
 
-<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="../bower_components/jquery-1.9.1/jquery.js"></script>
+<script src="../weather/js/main-menu-init.js"></script>
 </head>
 <body>
 <div class="layout">
@@ -514,17 +515,5 @@
 		</div>
 	</div>
 </div>
-<script src="../bower_components/jquery-1.9.1/jquery.js"></script>
-<script src="../weather/js/main-menu-init.js"></script>
-
-<script type="text/javascript">
-    ymaps.ready(function() {
-    	var map = new ymaps.Map("map", {
-    		center: [56.84, 60.61],
-            zoom: 12
-        });
-    });
-</script>
-
 </body>
 </html>

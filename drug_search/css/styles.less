@@ -1,4 +1,5 @@
 @import (less) url('../../newMain/css/less/blocks/button/css/button.css');
+@import (less) url('../../blocks/spinner/css/spinner.css');
 @import (less) url('../../fonts/ALSRubl.css');
 
 
@@ -392,6 +393,8 @@
 
 
 .drugs-map {
+	position: relative;
+
 	margin-top: 30px;
 	margin-bottom: 40px;
 }
@@ -553,6 +556,24 @@
 	background-color: #bcc1ae;
 }
 
+.drugs-map__overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background-color: rgba(255, 255, 255, .7);
+}
+
+.drugs-map__overlay .spinner {
+	position: absolute;
+	top: 250px;
+	left: 30%;
+}
+
+
+
 
 .placemark {
 	line-height: 26px;
@@ -693,7 +714,9 @@
 }
 
 .drugs-results__elem:first-child {
-	border-top: 1px solid #f0f0f0;
+	background-image: -webkit-linear-gradient(top, #f6f6f6 0%, #fff 20%, #fff 50%, #ececec 100%);
+	background-image: -o-linear-gradient(top, #f6f6f6 0%, #fff 20%, #fff 50%, #ececec 100%);
+	background-image: linear-gradient(to bottom, #f6f6f6 0%, #fff 20%, #fff 50%, #ececec 100%);
 }
 
 .drugs-results__name {
@@ -883,6 +906,8 @@
 	background: #ffa300;
 	background: -webkit-linear-gradient(to bottom, #fda227, #ff7200);
 	background: -o-linear-gradient(to bottom, #fda227, #ff7200);
+	background: -webkit-linear-gradient(top, #fda227, #ff7200);
+	background: -o-linear-gradient(top, #fda227, #ff7200);
 	background: linear-gradient(to bottom, #fda227, #ff7200);
 }
 
