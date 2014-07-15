@@ -622,19 +622,17 @@
 
 .cat-open:after {
 	position: absolute;
+	right: 0;
 	top: 0;
-	top: 0;
-	right: 10px;
-	right: 10px;
 
 	display: block;
 
-	width: 10px;
+	width: 32px;
 	height: 32px;
 
 	content: '';
 
-	background: none center center no-repeat transparent;
+	background: none center no-repeat transparent;
 	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxOCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPmxlZnQgYXJyb3c8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxnIHNrZXRjaDp0eXBlPSJNU1BhZ2UiIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0zLjIzNyAyNy4xNjNsOS44MTgtMTIuMzkyLTkuNzM2LTExLjg2NCIgc3Ryb2tlPSIjNjA3RDFFIiBzdHJva2Utd2lkdGg9IjciIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L2c+PC9zdmc+');
 	background-size: 10px 32px;
 }
@@ -648,6 +646,17 @@
 .cat-open:hover:after,
 .cat-open:active:after {
 	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxOCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPmxlZnQgYXJyb3c8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxnIHNrZXRjaDp0eXBlPSJNU1BhZ2UiIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0zLjIzNyAyNy4xNjNsOS44MTgtMTIuMzkyLTkuNzM2LTExLjg2NCIgc3Ryb2tlPSIjRjY1NzM3IiBzdHJva2Utd2lkdGg9IjciIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L2c+PC9zdmc+');
+}
+
+.cat-open__expanded:after {
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAzMiAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPlNsaWNlIDE8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxwYXRoIGQ9Ik0zLjgzNyAzLjIzN2wxMi4zOTIgOS44MTggMTEuODY0LTkuNzM2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZT0iIzYwN0QxRSIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==');
+	background-size: 18px 10px;
+}
+
+.cat-open__expanded:hover:after,
+.cat-open__expanded:active:after {
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAzMiAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPlNsaWNlIDE8L3RpdGxlPjxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPjxwYXRoIGQ9Ik0zLjgzNyAzLjIzN2wxMi4zOTIgOS44MTggMTEuODY0LTkuNzM2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBzdHJva2Utd2lkdGg9IjciIHN0cm9rZT0iI0Y2NTczNyIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==');
+	background-size: 18px 10px;
 }
 
 
