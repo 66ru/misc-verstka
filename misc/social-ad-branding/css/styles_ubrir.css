@@ -1,0 +1,117 @@
+.t-share-ubrir {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1;
+
+	position: relative;
+	z-index: 1;
+
+	overflow: hidden;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 336px;
+	margin-bottom: 30px;
+	padding: 15px;
+
+	background: none left top no-repeat #e9efdb;
+	background-size: 100% 100%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+
+.t-share-ubrir:after {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 15px;
+
+	display: block;
+
+	width: 265px;
+	height: 135px;
+
+	content: '';
+
+	background: none left top no-repeat transparent;
+	background-image: url('../img/66.png');
+}
+
+.t-share-ubrir__main {
+	font-size: 16px;
+	line-height: 1.2;
+
+	margin-bottom: 10px;
+}
+
+.t-share-ubrir__extra {
+	font-style: italic;
+
+	margin-bottom: 20px;
+}
+
+.t-share-ubrir__social {
+	display: block;
+}
+
+.t-share-ubrir__brand {
+	display: block;
+
+	text-decoration: none;
+
+	color: #000;
+}
+
+.t-share-ubrir__wrap {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	padding-top: 20px;
+	padding-bottom: 15px;
+
+	background: none left top no-repeat #fff;
+	background-image: url('../img/ubrir_bg.png');
+}
+
+.t-share-ubrir__img {
+	position:absolute; left: 50%; top: 0; width: 327px; height: 226px; background-image: url('../img/ubrir_logo.png');	
+}
+
+.t-share-ubrir__left {
+	margin-left: 15px;
+	height: 190px;
+	color: #fff;
+}
+
+.t-share-ubrir__name {
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: bold;
+	display: inline-block;
+	padding-top: 30px;
+}
+
+.t-share-ubrir__name-under {
+	font-size: 46px;
+	line-height: 58px;
+	display: inline-block;
+}
+
+.t-share-ubrir__button {
+	color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+	border-bottom: 1px solid #fff;
+
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+
+	line-height: 21px;
+}
+
+.t-share-ubrir__wrap:hover .t-share-ubrir__button {
+	border: none;
+	line-height: 22px;
+}
