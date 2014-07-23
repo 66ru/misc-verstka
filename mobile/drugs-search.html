@@ -1,0 +1,249 @@
+<!doctype html>
+<html class="m-layout">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Новости</title>
+<link rel="stylesheet" href="css/doska.css">
+<link rel="stylesheet" href="../fonts/PT Sans Narrow.css">
+<link rel="stylesheet" href="../fonts/ALSRubl.css">
+<script src="../bower_components/zepto/zepto.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../blocks/m-layout/js/m-layout-init.js"></script>
+<script src="js/foo.js"></script>
+</head>
+<body class="m-layout__body">
+<div class="m-layout__menu-wrap">
+	<ul class="m-layout__menu m-sidemenu">
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="m-layout__main" id="main">
+	<div class="m-layout__overlay"></div>
+	<div class="m-menu">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.png" alt="" width="77" height="50"></a>
+		</div>
+		<div class="m-menu__weather">
+			<span class="weather-icon weather-icon_basecloud weather-icon_sunny"></span>
+			<div class="m-menu__weather-now">&#8722;20°</div>
+			<div class="m-menu__weather-tomorrow">завтра &#8722;15°</div>
+		</div>
+	</div>
+	<div class="m-text m-text_green">
+		<h1 class="m-text__h1">Поиск лекарств в&nbsp;аптеках Екатеринбурга</h1>
+		<input type="text" name="drugs-search" id="drugs-search" class="m-doska-search__input" placeholder="Начните вводить название">
+		<div class="gap gap_10"></div>
+		<div class="m-center"><label for="open-only" class="m-label">Цена, до</label><input type="text" name="drugs-price" id="drugs-price" class="m-doska-search__input m-doska-search__input_small"><label for="open-only" class="m-label rub_verdana">Р</label></div>
+		<div class="gap gap_10"></div>
+		<div class="m-center"><input type="checkbox" name="open-only" id="open-only" class="m-checkbox"><label for="open-only" class="m-label m-label_small">В аптеках, которые работают сейчас</label></div>
+		<div class="gap gap_10"></div>
+		<a href="#" class="m-doska-button">Искать</a>
+	</div>
+	<div class="m-text">
+		<h2 class="m-text__h2">Лекарственные средства</h2>
+	</div>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Препараты</span>
+		<span class="m-rubric__amount">16&thinsp;907</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Витамины и микроэлементы</span>
+		<span class="m-rubric__amount">772</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Инфузионные растворы и питание</span>
+		<span class="m-rubric__amount">476</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Прочие препараты</span>
+		<span class="m-rubric__amount">119</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Гомеопатия</span>
+		<span class="m-rubric__amount">379</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Целебные травы</span>
+		<span class="m-rubric__amount">176</span>
+	</a>
+	<div class="m-text">
+		<h2 class="m-text__h2">Детские товары</h2>
+	</div>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Все для самых маленьких</span>
+		<span class="m-rubric__amount">402</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Все для кормления малыша</span>
+		<span class="m-rubric__amount">176</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Все для купания малыша</span>
+		<span class="m-rubric__amount">88</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Детская косметика</span>
+		<span class="m-rubric__amount">5</span>
+	</a>
+	<div class="m-text">
+		<h2 class="m-text__h2">Биологически активные добавки</h2>
+	</div>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">При заболеваниях</span>
+		<span class="m-rubric__amount">475</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для лечения зависимостей</span>
+		<span class="m-rubric__amount">95</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для женщин</span>
+		<span class="m-rubric__amount">663</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для мужчин</span>
+		<span class="m-rubric__amount">76</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для снижения веса</span>
+		<span class="m-rubric__amount">117</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Общетонизирующие</span>
+		<span class="m-rubric__amount">7&thinsp;476</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Витамины, минералы</span>
+		<span class="m-rubric__amount">476</span>
+	</a>
+	<div class="m-text">
+		<h2 class="m-text__h2">Лекарственные средства</h2>
+	</div>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Препараты</span>
+		<span class="m-rubric__amount">16&thinsp;907</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Витамины и микроэлементы</span>
+		<span class="m-rubric__amount">772</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Инфузионные растворы и питание</span>
+		<span class="m-rubric__amount">476</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Прочие препараты</span>
+		<span class="m-rubric__amount">119</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Гомеопатия</span>
+		<span class="m-rubric__amount">379</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Целебные травы</span>
+		<span class="m-rubric__amount">176</span>
+	</a>
+	<div class="m-text">
+		<h2 class="m-text__h2">Детские товары</h2>
+	</div>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Все для самых маленьких</span>
+		<span class="m-rubric__amount">402</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Все для кормления малыша</span>
+		<span class="m-rubric__amount">176</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Все для купания малыша</span>
+		<span class="m-rubric__amount">88</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Детская косметика</span>
+		<span class="m-rubric__amount">5</span>
+	</a>
+	<div class="m-text">
+		<h2 class="m-text__h2">Биологически активные добавки</h2>
+	</div>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">При заболеваниях</span>
+		<span class="m-rubric__amount">475</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для лечения зависимостей</span>
+		<span class="m-rubric__amount">95</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для женщин</span>
+		<span class="m-rubric__amount">663</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для мужчин</span>
+		<span class="m-rubric__amount">76</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Для снижения веса</span>
+		<span class="m-rubric__amount">117</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Общетонизирующие</span>
+		<span class="m-rubric__amount">7&thinsp;476</span>
+	</a>
+	<a href="#" class="m-rubric">
+		<span class="m-rubric__name">Витамины, минералы</span>
+		<span class="m-rubric__amount">476</span>
+	</a>
+	<div class="m-menu m-menu_bottom">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="72" height="50"></a>
+		</div>
+		<a href="http://66.ru" class="m-menu__full-ver">полная версия&nbsp;сайта</a>
+	</div>
+</div>
+</body>
+</html>

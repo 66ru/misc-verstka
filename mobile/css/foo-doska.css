@@ -9,7 +9,6 @@
 	font-size: 24px;
 	line-height: 40px;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 40px;
@@ -24,6 +23,13 @@
 	border-radius: 6px;
 
 	-webkit-appearance: none;
+}
+
+.m-doska-search__input_small {
+	width: 30%;
+	margin-right: 5px;
+	margin-left: 10px;
+	padding-right: 10px;
 }
 
 .m-doska-search__input:focus {
@@ -68,7 +74,6 @@
 	top: 0;
 	right: 0;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 46px;
 	height: 40px;
@@ -302,7 +307,6 @@
 .m-doska-owner__link_secondary {
 	display: inline-block;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin-right: 10px;
 	padding: 0 10px;
@@ -367,7 +371,6 @@
 
 	display: inline-block;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 40px;
 	padding-top: 8px;
@@ -433,7 +436,6 @@
 .m-doska-owner__textarea {
 	font-size: 14px;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 90px;
@@ -451,7 +453,6 @@
 .m-doska-owner__input {
 	font-size: 14px;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 30px;
@@ -474,7 +475,6 @@
 
 	overflow: hidden;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 30px;
 	height: 30px;
@@ -518,7 +518,6 @@
 	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 24px;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin-bottom: 10px;
 
@@ -666,7 +665,6 @@
 }
 
 .m-doska-filter__input {
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 37%;
 	height: 40px;

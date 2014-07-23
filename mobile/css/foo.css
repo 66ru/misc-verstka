@@ -39,6 +39,30 @@
 	content: none;
 }
 
+.block-link_like-table {
+	display: table;
+
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.block-link__desc {
+	display: table-cell;
+}
+
+.block-link__price {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+
+	display: table-cell;
+
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	color: #000;
+}
+
 .block-link .m-text__h4 {
 	margin: 0;
 	margin-bottom: 8px;
@@ -195,7 +219,6 @@
 	display: block;
 	float: left;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 30px;
@@ -267,6 +290,10 @@
 
 .m-button_current + .m-button {
 	border-left: none;
+}
+
+.m-button_group_2 {
+	width: 50%;
 }
 
 .m-button_group_3 {
@@ -453,7 +480,6 @@
 .m-new-comment__textarea {
 	font-size: 14px;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 60px;
@@ -491,6 +517,18 @@
 	padding: 0 10px;
 }
 
+.m-text_green {
+	margin-top: -15px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+
+	background-color: #f1f5e8;
+}
+
+.m-text_no-mb {
+	margin-bottom: -20px;
+}
+
 .clearfix:before,
 .clearfix:after {
 	display: block;
@@ -514,7 +552,7 @@
 	font-weight: normal;
 	line-height: 30px;
 
-	margin: 10px 0;
+	margin: 20px 0 10px;
 }
 
 .m-text__h3 {
@@ -678,7 +716,6 @@
 .time-table__link {
 	display: block;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
@@ -806,7 +843,6 @@
 	display: inline-block;
 	overflow: hidden;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 75px;
 }
@@ -913,6 +949,10 @@
 	line-height: 30px;
 }
 
+.m-label_small {
+	font-size: 18px;
+}
+
 .gap {
 	display: block;
 
@@ -948,7 +988,6 @@
 
 	float: left;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 25%;
 	margin-bottom: 20px;
@@ -1122,7 +1161,6 @@
 
 	display: inline-block;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100px;
 	height: 50px;
@@ -1130,4 +1168,161 @@
 
 	vertical-align: top;
 	white-space: normal;
+}
+
+
+
+
+
+.m-drugs__name {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+
+	display: block;
+
+	color: #607d1f;
+}
+
+.m-drugs__price {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+
+	color: #000;
+}
+
+.m-drugs__extra {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+
+	color: #666;
+}
+
+
+
+
+.m-tags {
+	margin: 10px 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.m-tags__elem {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+
+	position: relative;
+
+	display: inline-block;
+	overflow: hidden;
+
+	box-sizing: border-box;
+	max-width: 100%;
+	height: 25px;
+	margin-bottom: 7px;
+	padding-right: 32px;
+	padding-left: 10px;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	color: #fff;
+	border-radius: 4px;
+	background-color: #b3b3b3;
+}
+
+.m-tags__link {
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.m-tags__close {
+	font-size: 12px;
+	font-weight: bold;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	display: block;
+
+	width: 25px;
+	height: 25px;
+
+	text-align: center;
+
+	background-color: #bbc89c;
+}
+
+.m-tags__close:active {
+	background-color: #6b8a2b;
+}
+
+
+
+
+.m-add-list {
+	font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+
+	margin: 0 -10px 10px;
+	padding: 0;
+
+	list-style: none;
+
+	border-bottom: 1px solid #bdc9a2;
+}
+
+.m-add-list__elem {
+	display: table;
+
+	width: 100%;
+}
+
+.m-add-list__cell {
+	display: table-cell;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	vertical-align: middle;
+
+	border-top: 1px solid #bdc9a2;
+}
+
+.m-add-list__cell_add {
+	box-sizing: border-box;
+	width: 50px;
+	padding-left: 10px;
+}
+
+.m-add-list__cell_name {
+	padding-right: 10px;
+}
+
+.m-add-list__cell_price {
+	padding-right: 10px;
+
+	text-align: right;
+	white-space: nowrap;
+
+	color: #666;
+}
+
+.m-add-list__add {
+	font-size: 25px;
+	line-height: 25px;
+
+	display: inline-block;
+
+	width: 30px;
+	height: 25px;
+
+	text-align: center;
+
+	color: #fff;
+	border-radius: 4px;
+	background-color: #bbc89c;
 }

@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="m-layout">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Новости</title>
+<link rel="stylesheet" href="css/doska.css">
+<link rel="stylesheet" href="../fonts/PT Sans Narrow.css">
+<link rel="stylesheet" href="../fonts/ALSRubl.css">
+<script src="../bower_components/zepto/zepto.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../blocks/m-layout/js/m-layout-init.js"></script>
+<script src="js/foo.js"></script>
+</head>
+<body class="m-layout__body">
+<div class="m-layout__menu-wrap">
+	<ul class="m-layout__menu m-sidemenu">
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="m-layout__main" id="main">
+	<div class="m-layout__overlay"></div>
+	<div class="m-menu">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.png" alt="" width="77" height="50"></a>
+		</div>
+		<div class="m-menu__weather">
+			<span class="weather-icon weather-icon_basecloud weather-icon_sunny"></span>
+			<div class="m-menu__weather-now">&#8722;20°</div>
+			<div class="m-menu__weather-tomorrow">завтра &#8722;15°</div>
+		</div>
+	</div>
+	<div class="m-text m-text_green m-text_no-mb">
+		<h1 class="m-text__h1">Поиск лекарств в&nbsp;аптеках Екатеринбурга</h1>
+		<input type="text" name="drugs-search" id="drugs-search" class="m-doska-search__input" placeholder="Начните вводить название">
+		<ul class="m-tags">
+			<li class="m-tags__elem"><a href="#" class="m-tags__link">Соска пустышка Курносики латекс 6-18 месяцев соска пустышка латекс</a><span class="m-tags__close">✕</span></li>
+			<li class="m-tags__elem"><a href="#" class="m-tags__link">Аспирин упса</a><span class="m-tags__close">✕</span></li>
+		</ul>
+		<ul class="m-add-list">
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Ромашка латекс</div>
+				<div class="m-add-list__cell m-add-list__cell_price">120 &ndash; 140 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Курносики латекс 6-18 мес (13125)</div>
+				<div class="m-add-list__cell m-add-list__cell_price">3 520 &ndash; 3 890 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска латекс Курносики 0+ мес (12125)</div>
+				<div class="m-add-list__cell m-add-list__cell_price">250 &ndash; 380 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Авент (86140) силик.Классика 6-18 мес.2 шт/ВРА-FRE</div>
+				<div class="m-add-list__cell m-add-list__cell_price">221 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Авент (86140) силик.Классика 6-18 мес.2 шт/ВРА-FRE соска латекс пустышка курносики</div>
+				<div class="m-add-list__cell m-add-list__cell_price">6 652 &ndash; 9 930 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Ромашка латекс</div>
+				<div class="m-add-list__cell m-add-list__cell_price">120 &ndash; 140 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Курносики латекс 6-18 мес (13125)</div>
+				<div class="m-add-list__cell m-add-list__cell_price">3 520 &ndash; 3 890 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска латекс Курносики 0+ мес (12125)</div>
+				<div class="m-add-list__cell m-add-list__cell_price">250 &ndash; 380 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Авент (86140) силик.Классика 6-18 мес.2 шт/ВРА-FRE</div>
+				<div class="m-add-list__cell m-add-list__cell_price">221 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Авент (86140) силик.Классика 6-18 мес.2 шт/ВРА-FRE соска латекс пустышка курносики</div>
+				<div class="m-add-list__cell m-add-list__cell_price">6 652 &ndash; 9 930 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Ромашка латекс</div>
+				<div class="m-add-list__cell m-add-list__cell_price">120 &ndash; 140 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Курносики латекс 6-18 мес (13125)</div>
+				<div class="m-add-list__cell m-add-list__cell_price">3 520 &ndash; 3 890 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска латекс Курносики 0+ мес (12125)</div>
+				<div class="m-add-list__cell m-add-list__cell_price">250 &ndash; 380 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Авент (86140) силик.Классика 6-18 мес.2 шт/ВРА-FRE</div>
+				<div class="m-add-list__cell m-add-list__cell_price">221 р.</div>
+			</li>
+			<li class="m-add-list__elem">
+				<div class="m-add-list__cell m-add-list__cell_add"><span class="m-add-list__add">+</span></div>
+				<div class="m-add-list__cell m-add-list__cell_name">Соска пустышка Авент (86140) силик.Классика 6-18 мес.2 шт/ВРА-FRE соска латекс пустышка курносики</div>
+				<div class="m-add-list__cell m-add-list__cell_price">6 652 &ndash; 9 930 р.</div>
+			</li>
+		</ul>
+		<div class="gap gap_10"></div>
+		<div class="m-center"><label for="open-only" class="m-label">Цена, до</label><input type="text" name="drugs-price" id="drugs-price" class="m-doska-search__input m-doska-search__input_small"><label for="open-only" class="m-label rub_verdana">Р</label></div>
+		<div class="gap gap_10"></div>
+		<div class="m-center"><input type="checkbox" name="open-only" id="open-only" class="m-checkbox"><label for="open-only" class="m-label m-label_small">В аптеках, которые работают сейчас</label></div>
+		<div class="gap gap_10"></div>
+		<a href="#" class="m-doska-button">Искать</a>
+	</div>
+	<div class="m-menu m-menu_bottom">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="72" height="50"></a>
+		</div>
+		<a href="http://66.ru" class="m-menu__full-ver">полная версия&nbsp;сайта</a>
+	</div>
+</div>
+</body>
+</html>
