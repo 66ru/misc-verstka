@@ -99,6 +99,22 @@
 	background: #bcc1ae;
 }
 
+.drug-search__tag-link {
+	color: #fff;
+}
+
+.drug-search__tag-link:visited {
+	color: #fff;
+}
+
+.drug-search__tag-link:hover {
+	color: #eee;
+}
+
+.drug-search__tag-link:active {
+	color: #eee;
+}
+
 .drug-search__tag-remove {
 	font-weight: bold;
 	line-height: 23px;
@@ -221,7 +237,6 @@
 	z-index: 2;
 	top: 39px;
 
-	display: block;
 	display: none;
 
 	width: 40%;
@@ -231,6 +246,10 @@
 	border: 1px solid #668f18;
 	background-color: #fff;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.suggests-box_show-suggests .suggests-box__list {
+	display: block;
 }
 
 .suggests-box__elem {
@@ -563,6 +582,8 @@
 	bottom: 0;
 	left: 0;
 
+	display: none;
+
 	background-color: rgba(255, 255, 255, .7);
 }
 
@@ -572,6 +593,9 @@
 	left: 30%;
 }
 
+.drugs-map__loading .drugs-map__overlay {
+	display: block;
+}
 
 
 
@@ -622,8 +646,8 @@
 
 .cat-open:after {
 	position: absolute;
-	right: 0;
 	top: 0;
+	right: 0;
 
 	display: block;
 
