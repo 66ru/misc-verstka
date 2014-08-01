@@ -1,0 +1,43 @@
+.m-drugs-map {
+	margin-bottom: 50px;
+}
+
+.m-drugs-map__list-wrap {
+	position: relative;
+	top: 10px;
+}
+
+.m-drugs-map__map-wrap {
+	position: relative;
+	top: -40px;
+
+	display: none;
+}
+
+.m-drugs-map_show-map .m-drugs-map__map-wrap {
+	display: block;
+}
+
+.m-drugs-map_show-map .m-drugs-map__list-wrap {
+	display: none;
+}
+
+.m-drugs-map__map {
+	height: 100%;
+}
+
+.m-drugs-map .block-link:last-child {
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.m-drugs-map .m-button {
+	position: relative;
+	z-index: 4;
+	top: 10px;
+
+	background-color: #fff;
+}
+
+.m-drugs-map .m-button_current {
+	background-color: #698c15;
+}

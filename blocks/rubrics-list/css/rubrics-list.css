@@ -1,0 +1,16 @@
+.rubrics-list__elem {
+	font-size: 14px;
+
+	margin-bottom: 10px;
+}
+
+.rubrics-list__elem_separate {
+	margin-bottom: 20px;
+}
+
+.rubrics-list__extra {
+	margin-left: 5px;
+	font-size: 12px;
+
+	color: #8a8f7f;
+}

@@ -937,6 +937,7 @@ blockquote {
 }
 .block-link__desc {
   display: table-cell;
+  padding-right: 20px;
 }
 .block-link__price {
   font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -1308,6 +1309,8 @@ blockquote {
 .m-text__h3 {
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
   font-size: 22px;
+  font-weight: normal;
+  line-height: 26px;
   margin: 19px 0 15px;
 }
 .m-text__h4 {

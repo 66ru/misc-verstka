@@ -74,5 +74,8 @@ gulp.task('watch', function() {
 		], ['mobile', 'weather']);
 
 	gulp.watch('./doska/realty/**/*.less', ['realty']);
-	gulp.watch('./drug_search/**/*.less', ['drugsearch']);
+	gulp.watch([
+		'./blocks/**/*.css',
+		'./drug_search/**/*.less'
+		], ['drugsearch']);
 });

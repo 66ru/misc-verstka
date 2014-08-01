@@ -8,6 +8,8 @@
 <script src="../bower_components/zepto/zepto.min.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
+<script src="../blocks/m-drugs-map/js/m-drugs-map.js"></script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark,control.ZoomControl"></script>
 </head>
 <body class="m-layout__body">
 <div class="m-layout__menu-wrap">
@@ -74,67 +76,143 @@
 		<div class="m-button m-button_back">Новый поиск</div>
 	</div>
 	<div class="m-text clearfix">
-		<h2 class="m-text__h2">По запросу «Соска анальгин» 133 результата</h2>
+		<h2 class="m-text__h3">Аптеки, в которых есть Соска и анальгин (133 результата)</h2>
+	</div>
+	<div class="m-drugs-map">
+		<div class="m-text clearfix">
+			<a href="#" class="m-button m-button_left m-button_group_2 m-button_current m-drugs-map__list-button">Список аптек</a>
+			<a href="#" class="m-button m-button_right m-button_group_2 m-drugs-map__map-button">На карте</a>
+		</div>
+		<div class="m-drugs-map__map-wrap">
+			<div class="m-drugs-map__map"></div>
+		</div>
+		<div class="m-drugs-map__list-wrap">
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Аптечный мир (Опалихинская, 15)</span>
+					<span class="m-drugs__price">Опалихинская, 15, 286-38-02</span>
+				</span>
+				<span class="block-link__price">110,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Медицина для Вас</span>
+					<span class="m-drugs__price">Волгоградская,190, 234-46-46</span>
+				</span>
+				<span class="block-link__price">114,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Классика (Опалихинская , 42)</span>
+					<span class="m-drugs__price">Опалихинская , 42, 383-14-67</span>
+				</span>
+				<span class="block-link__price">116,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Фармек (Волгоградская 189 литер А)</span>
+					<span class="m-drugs__price">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)&nbsp;7315905</span></span>
+				<span class="block-link__price">1&thinsp;316,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Аптечный мир (Опалихинская, 15)</span>
+					<span class="m-drugs__price">Опалихинская, 15, 286-38-02</span>
+				</span>
+				<span class="block-link__price">110,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Медицина для Вас</span>
+					<span class="m-drugs__price">Волгоградская,190, 234-46-46</span>
+				</span>
+				<span class="block-link__price">114,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Классика (Опалихинская , 42)</span>
+					<span class="m-drugs__price">Опалихинская , 42, 383-14-67</span>
+				</span>
+				<span class="block-link__price">116,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Фармек (Волгоградская 189 литер А)</span>
+					<span class="m-drugs__price">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)&nbsp;7315905</span>
+				</span>
+				<span class="block-link__price">1&thinsp;316,00 <span class="rub_verdana">Р</span></span>
+			</a>
+		</div>
 	</div>
 	<div class="m-text clearfix">
-		<a href="#" class="m-button m-button_left m-button_group_2 m-button_current">Список аптек</a>
-		<a href="#" class="m-button m-button_right m-button_group_2">На карте</a>
+		<h2 class="m-text__h3">Аптеки, в которых есть Соска пустышка (14 результатов)</h2>
 	</div>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Аптечный мир (Опалихинская, 15)</span>
-			<span class="m-drugs__price">Опалихинская, 15, 286-38-02</span>
-		</span>
-		<span class="block-link__price">110,00 <span class="rub_verdana">Р</span></span>
-	</a>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Медицина для Вас</span>
-			<span class="m-drugs__price">Волгоградская,190, 234-46-46</span>
-		</span>
-		<span class="block-link__price">114,00 <span class="rub_verdana">Р</span></span>
-	</a>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Классика (Опалихинская , 42)</span>
-			<span class="m-drugs__price">Опалихинская , 42, 383-14-67</span>
-		</span>
-		<span class="block-link__price">116,00 <span class="rub_verdana">Р</span></span>
-	</a>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Фармек (Волгоградская 189 литер А)</span>
-			<span class="m-drugs__price">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)  7315905</span></span>
-		<span class="block-link__price">1&thinsp;316,00 <span class="rub_verdana">Р</span></span>
-	</a>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Аптечный мир (Опалихинская, 15)</span>
-			<span class="m-drugs__price">Опалихинская, 15, 286-38-02</span>
-		</span>
-		<span class="block-link__price">110,00 <span class="rub_verdana">Р</span></span>
-	</a>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Медицина для Вас</span>
-			<span class="m-drugs__price">Волгоградская,190, 234-46-46</span>
-		</span>
-		<span class="block-link__price">114,00 <span class="rub_verdana">Р</span></span>
-	</a>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Классика (Опалихинская , 42)</span>
-			<span class="m-drugs__price">Опалихинская , 42, 383-14-67</span>
-		</span>
-		<span class="block-link__price">116,00 <span class="rub_verdana">Р</span></span>
-	</a>
-	<a href="#" class="block-link block-link_no-more block-link_like-table">
-		<span class="block-link__desc">
-			<span class="m-drugs__name">Фармек (Волгоградская 189 литер А)</span>
-			<span class="m-drugs__price">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)  7315905</span>
-		</span>
-		<span class="block-link__price">1&thinsp;316,00 <span class="rub_verdana">Р</span></span>
-	</a>
+	<div class="m-drugs-map">
+		<div class="m-text clearfix">
+			<a href="#" class="m-button m-button_left m-button_group_2 m-button_current m-drugs-map__list-button">Список аптек</a>
+			<a href="#" class="m-button m-button_right m-button_group_2 m-drugs-map__map-button">На карте</a>
+		</div>
+		<div class="m-drugs-map__map-wrap">
+			<div class="m-drugs-map__map"></div>
+		</div>
+		<div class="m-drugs-map__list-wrap">
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Аптечный мир (Опалихинская, 15)</span>
+					<span class="m-drugs__price">Опалихинская, 15, 286-38-02</span>
+				</span>
+				<span class="block-link__price">110,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Медицина для Вас</span>
+					<span class="m-drugs__price">Волгоградская,190, 234-46-46</span>
+				</span>
+				<span class="block-link__price">114,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Классика (Опалихинская , 42)</span>
+					<span class="m-drugs__price">Опалихинская , 42, 383-14-67</span>
+				</span>
+				<span class="block-link__price">116,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Фармек (Волгоградская 189 литер А)</span>
+					<span class="m-drugs__price">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)&nbsp;7315905</span></span>
+				<span class="block-link__price">1&thinsp;316,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Аптечный мир (Опалихинская, 15)</span>
+					<span class="m-drugs__price">Опалихинская, 15, 286-38-02</span>
+				</span>
+				<span class="block-link__price">110,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Медицина для Вас</span>
+					<span class="m-drugs__price">Волгоградская,190, 234-46-46</span>
+				</span>
+				<span class="block-link__price">114,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Классика (Опалихинская , 42)</span>
+					<span class="m-drugs__price">Опалихинская , 42, 383-14-67</span>
+				</span>
+				<span class="block-link__price">116,00 <span class="rub_verdana">Р</span></span>
+			</a>
+			<a href="#" class="block-link block-link_no-more block-link_like-table">
+				<span class="block-link__desc">
+					<span class="m-drugs__name">Фармек (Волгоградская 189 литер А)</span>
+					<span class="m-drugs__price">Волгоградская 189 А (ГКБ №40 хирург.корп) 269-33-53, (952)&nbsp;7315905</span>
+				</span>
+				<span class="block-link__price">1&thinsp;316,00 <span class="rub_verdana">Р</span></span>
+			</a>
+		</div>
+	</div>
 	<div class="m-menu m-menu_bottom">
 		<div class="m-menu__button m-layout__toggle-menu"></div>
 		<div class="m-menu__logo-wrap">

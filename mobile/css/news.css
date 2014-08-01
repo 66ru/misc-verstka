@@ -938,6 +938,39 @@ blockquote {
     transform: scale(1);
   }
 }
+.m-drugs-map {
+  margin-bottom: 50px;
+}
+.m-drugs-map__list-wrap {
+  position: relative;
+  top: 10px;
+}
+.m-drugs-map__map-wrap {
+  position: relative;
+  top: -40px;
+  display: none;
+}
+.m-drugs-map_show-map .m-drugs-map__map-wrap {
+  display: block;
+}
+.m-drugs-map_show-map .m-drugs-map__list-wrap {
+  display: none;
+}
+.m-drugs-map__map {
+  height: 100%;
+}
+.m-drugs-map .block-link:last-child {
+  border-bottom: 1px solid #f1f1f1;
+}
+.m-drugs-map .m-button {
+  position: relative;
+  z-index: 4;
+  top: 10px;
+  background-color: #fff;
+}
+.m-drugs-map .m-button_current {
+  background-color: #698c15;
+}
 @font-face {
   font-family: ALSRubl Arial;
   font-weight: 400;
@@ -990,6 +1023,7 @@ blockquote {
 }
 .block-link__desc {
   display: table-cell;
+  padding-right: 20px;
 }
 .block-link__price {
   font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -1361,6 +1395,8 @@ blockquote {
 .m-text__h3 {
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
   font-size: 22px;
+  font-weight: normal;
+  line-height: 26px;
   margin: 19px 0 15px;
 }
 .m-text__h4 {
