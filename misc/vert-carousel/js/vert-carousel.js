@@ -4,6 +4,7 @@
 			strapClassName = 'vert-carousel__strap',
 			buttonPrevClassName = 'vert-carousel__arrow_prev',
 			buttonNextClassName = 'vert-carousel__arrow_next',
+			buttonInactiveClassName = 'vert-carousel__arrow_inactive',
 
 			$block = $('.' + blockClassName),
 			$strap = $('.' + strapClassName),
@@ -31,6 +32,10 @@
 			} else {
 				$strap.css(getTransformCss(-(currentElem - 1) * ELEM_HEIGHT));
 				currentElem -= 1;
+
+				if (currentElem === 0) {
+					$(this).addClass(buttonInactiveClassName);
+				}
 			}
 		});
 
@@ -40,6 +45,10 @@
 			} else {
 				$strap.css(getTransformCss(-(currentElem + 1) * ELEM_HEIGHT));
 				currentElem += 1;
+
+				if (currentElem === elemsCount-1) {
+					$(this).addClass(buttonInactiveClassName);
+				}
 			}
 		});
 	});

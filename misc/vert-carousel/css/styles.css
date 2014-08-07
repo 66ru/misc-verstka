@@ -167,3 +167,7 @@
 	background: none center center no-repeat transparent;
 	background-image: url('../img-base64/arrow-down.svg');
 }
+
+.vert-carousel__arrow_inactive {
+	background: #000;
+}
