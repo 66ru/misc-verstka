@@ -56,6 +56,12 @@ gulp.task('newmain', function() {
 		.pipe(gulp.dest('./newMain/css'));
 });
 
+gulp.task('realty-elems', function() {
+	return gulp.src('./doska/realty-elems/css/*.less')
+		.pipe(less(lessOptions))
+		.pipe(gulp.dest('./doska/realty-elems/css'));
+});
+
 gulp.task('watch', function() {
 	gulp.watch([
 		'./newMain/css/less/**/*.less',
@@ -71,9 +77,9 @@ gulp.task('watch', function() {
 		'./blocks/**/*.css',
 		'./weather/css/*.less',
 		'./weather/css/weather-desktop.css'
-		], ['mobile', 'weather']);
+		], ['mobile', 'weather', 'realty-elems']);
 
-	gulp.watch('./doska/realty/**/*.less', ['realty']);
+	gulp.watch('./doska/**/*.less', ['realty', 'realty-elems']);
 	gulp.watch([
 		'./blocks/**/*.css',
 		'./drug_search/**/*.less'

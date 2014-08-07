@@ -938,6 +938,43 @@ blockquote {
     transform: scale(1);
   }
 }
+.double-bounce1,
+.double-bounce2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+  opacity: .6;
+  border-radius: 50%;
+  background-color: #6b9120;
+}
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 .m-drugs-map {
   margin-bottom: 50px;
 }
@@ -1913,6 +1950,57 @@ blockquote {
   color: #fff;
   border-radius: 4px;
   background-color: #bbc89c;
+}
+.placemark {
+  font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  margin-left: -50%;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #4f7513;
+  background-image: -webkit-linear-gradient(top, #729b1b, #4f7513);
+  background-image: -o-linear-gradient(top, #729b1b, #4f7513);
+  background-image: linear-gradient(to bottom, #729b1b, #4f7513);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+}
+.placemark:after {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  content: '';
+  border-top: 6px solid #4f7513;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+.placemark_active {
+  background-color: #c65e19;
+  background-image: -webkit-linear-gradient(top, #ef8c23, #c65e19);
+  background-image: -o-linear-gradient(top, #ef8c23, #c65e19);
+  background-image: linear-gradient(to bottom, #ef8c23, #c65e19);
+}
+.placemark_active:after {
+  border-top-color: #c65e19;
+}
+.placemark_fade {
+  background-color: #868882;
+  background-image: -webkit-linear-gradient(top, #bac79c, #868882);
+  background-image: -o-linear-gradient(top, #bac79c, #868882);
+  background-image: linear-gradient(to bottom, #bac79c, #868882);
+}
+.placemark_fade:after {
+  border-top-color: #868882;
 }
 .m-old-compat p {
   line-height: 20px;

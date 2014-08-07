@@ -9,7 +9,7 @@
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
 <script src="../blocks/m-drugs-map/js/m-drugs-map.js"></script>
-<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark,control.ZoomControl"></script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark,control.ZoomControl,templateLayoutFactory"></script>
 </head>
 <body class="m-layout__body">
 <div class="m-layout__menu-wrap">
@@ -222,5 +222,49 @@
 	</div>
 </div>
 <div class="m-layout__close-global"></div>
+<script>
+$(function() {
+	$('.m-drugs-map__map').each(function() {
+		var $this = $(this);
+
+		ymaps.ready(function() {
+			var map = new ymaps.Map($this[0], {
+				center: [56.84, 60.61],
+				zoom: 12
+			});
+
+			var zoomControl = new ymaps.control.ZoomControl({
+				options: {
+					size: "small",
+					position: {
+						top: 90,
+						right: 10
+					}
+				}
+			});
+			map.controls.add(zoomControl);
+
+			var placemarkLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark placemark_{{ properties.mod }}">{{ properties.price|raw }}</div>');
+
+			var squarePlacemark = new ymaps.Placemark(
+				[56.836076, 60.614539], {
+					price: '99&thinsp;999,00',
+					mod: '' // or 'active', or 'fade'
+				}, {
+					iconOffset: [-30, -29],
+					iconLayout: placemarkLayout,
+						iconShape: {
+							type: 'Rectangle',
+							coordinates: [
+							[-30, -29], [30, -5]
+							]
+						},
+			        }
+				);
+			map.geoObjects.add(squarePlacemark);
+		});
+	});
+});
+</script>
 </body>
 </html>

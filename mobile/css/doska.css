@@ -1828,6 +1828,57 @@ blockquote {
   border-radius: 4px;
   background-color: #bbc89c;
 }
+.placemark {
+  font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  margin-left: -50%;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #4f7513;
+  background-image: -webkit-linear-gradient(top, #729b1b, #4f7513);
+  background-image: -o-linear-gradient(top, #729b1b, #4f7513);
+  background-image: linear-gradient(to bottom, #729b1b, #4f7513);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+}
+.placemark:after {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  content: '';
+  border-top: 6px solid #4f7513;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+.placemark_active {
+  background-color: #c65e19;
+  background-image: -webkit-linear-gradient(top, #ef8c23, #c65e19);
+  background-image: -o-linear-gradient(top, #ef8c23, #c65e19);
+  background-image: linear-gradient(to bottom, #ef8c23, #c65e19);
+}
+.placemark_active:after {
+  border-top-color: #c65e19;
+}
+.placemark_fade {
+  background-color: #868882;
+  background-image: -webkit-linear-gradient(top, #bac79c, #868882);
+  background-image: -o-linear-gradient(top, #bac79c, #868882);
+  background-image: linear-gradient(to bottom, #bac79c, #868882);
+}
+.placemark_fade:after {
+  border-top-color: #868882;
+}
 .m-doska-search {
   position: relative;
   margin: 0 10px 20px;

@@ -18,12 +18,14 @@
 				$listButton = $this.find('.' + showListButtonClassName),
 				$mapButton = $this.find('.' + showMapButtonClassName),
 
-				windowHeight = $(window).height();
+				windowHeight = $(window).height(),
+				mapOffsetTop = $mapButton.offset().top -10;
 
 			$listButton.on('click', function(ev) {
 				$this.removeClass(mainBlockMapShownClassName);
 				$listButton.addClass(currentButtonClassName);
 				$mapButton.removeClass(currentButtonClassName);
+
 				ev.preventDefault();
 				ev.stopPropagation();
 			});
@@ -32,29 +34,14 @@
 				$this.addClass(mainBlockMapShownClassName);
 				$mapButton.addClass(currentButtonClassName);
 				$listButton.removeClass(currentButtonClassName);
+
+				$(window).scrollTop(mapOffsetTop);
+
 				ev.preventDefault();
 				ev.stopPropagation();
 			});
 
 			$mapWrap.height(windowHeight);
-
-			ymaps.ready(function() {
-				var map = new ymaps.Map($map[0], {
-					center: [56.84, 60.61],
-					zoom: 12
-				});
-
-				var zoomControl = new ymaps.control.ZoomControl({
-					options: {
-						size: "small",
-						position: {
-							top: 90,
-							right: 10
-						}
-					}
-				});
-				map.controls.add(zoomControl);
-			});
 		});
 	});
 })();
