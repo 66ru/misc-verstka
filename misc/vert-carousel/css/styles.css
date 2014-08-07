@@ -7,6 +7,11 @@
 	box-sizing: border-box;
 	height: 650px;
 	margin: 20px 0;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .vert-carousel__header {
@@ -103,6 +108,7 @@
 	text-decoration: none;
 
 	color: #ba0b13;
+	color: #ba0b13 !important;
 }
 
 .vert-carousel__name {
@@ -114,7 +120,15 @@
 
 	text-align: center;
 	text-decoration: none;
+
 	color: #000;
+	color: #000 !important;
+}
+
+.vert-carousel__img-wrap:hover ~ .vert-carousel__name,
+.vert-carousel__price:hover + .vert-carousel__name,
+.vert-carousel__name:hover {
+	text-decoration: underline;
 }
 
 .vert-carousel__arrow {
