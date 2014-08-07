@@ -36,6 +36,8 @@
 				if (currentElem === 0) {
 					$(this).addClass(buttonInactiveClassName);
 				}
+
+				$buttonNext.removeClass(buttonInactiveClassName);
 			}
 		});
 
@@ -49,6 +51,8 @@
 				if (currentElem === elemsCount-1) {
 					$(this).addClass(buttonInactiveClassName);
 				}
+
+				$buttonPrev.removeClass(buttonInactiveClassName);
 			}
 		});
 	});
