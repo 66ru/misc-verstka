@@ -23,6 +23,7 @@
 	height: 100px;
 
 	background: url('../img/header.png') center top no-repeat transparent;
+	background-size: 100% 100px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
@@ -36,6 +37,7 @@
 
 	background: url('../img/footer.png') center top no-repeat transparent;
 	background-color: #eef;
+	background-size: 100% 50px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
@@ -63,6 +65,15 @@
 	box-sizing: border-box;
 	height: 500px;
 	padding-top: 40px;
+}
+
+.vert-carousel__elem-link {
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	text-decoration: none;
 }
 
 .vert-carousel__img-wrap {
@@ -105,10 +116,8 @@
 
 	text-align: center;
 	white-space: nowrap;
-	text-decoration: none;
 
 	color: #ba0b13;
-	color: #ba0b13 !important;
 }
 
 .vert-carousel__name {
@@ -119,15 +128,11 @@
 	display: block;
 
 	text-align: center;
-	text-decoration: none;
 
 	color: #000;
-	color: #000 !important;
 }
 
-.vert-carousel__img-wrap:hover ~ .vert-carousel__name,
-.vert-carousel__price:hover + .vert-carousel__name,
-.vert-carousel__name:hover {
+.vert-carousel__elem-link:hover .vert-carousel__name {
 	text-decoration: underline;
 }
 
@@ -177,7 +182,7 @@
 	content: '';
 
 	background: none center center no-repeat transparent;
-	background-image: url('../img-base64/arrow-up.svg');
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyOCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+bXlhcnVzZWwgYXJyb3cgMjwvdGl0bGU+PGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+PGcgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTI2LjE2MyAxMS44MUwxMy43NyAzLjk1NmwtMTEuODY0IDcuNzkiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0Ii8+PC9nPjwvc3ZnPg==');
 }
 
 .vert-carousel__arrow_next {
@@ -203,7 +208,7 @@
 	content: '';
 
 	background: none center center no-repeat transparent;
-	background-image: url('../img-base64/arrow-down.svg');
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAyOCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+bXlhcnVzZWwgYXJyb3cgMjwvdGl0bGU+PGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+PHBhdGggZD0iTTEuODM3IDIuMTlsMTIuMzkyIDcuODU0IDExLjg2My03Ljc5IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==');
 }
 
 .vert-carousel__arrow_inactive {
