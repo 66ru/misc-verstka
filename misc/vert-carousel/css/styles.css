@@ -63,10 +63,13 @@
 .vert-carousel__img-wrap {
 	position: relative;
 
+	display: block;
 	overflow: hidden;
 
 	height: 330px;
 	margin-bottom: 15px;
+
+	text-decoration: none;
 }
 
 .vert-carousel__img {
@@ -75,6 +78,8 @@
 	right: -9999px;
 	bottom: -9999px;
 	left: -9999px;
+
+	display: block;
 
 	width: auto;
 	max-width: 100%;
@@ -89,10 +94,13 @@
 	font-weight: bold;
 	line-height: 1;
 
+	display: block;
+
 	margin: 15px 0 10px;
 
 	text-align: center;
 	white-space: nowrap;
+	text-decoration: none;
 
 	color: #ba0b13;
 }
@@ -102,7 +110,11 @@
 	font-size: 16px;
 	line-height: 1;
 
+	display: block;
+
 	text-align: center;
+	text-decoration: none;
+	color: #000;
 }
 
 .vert-carousel__arrow {
