@@ -6,6 +6,7 @@
 
 	box-sizing: border-box;
 	height: 650px;
+	margin: 20px 0;
 }
 
 .vert-carousel__header {
