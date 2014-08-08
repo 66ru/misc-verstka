@@ -447,7 +447,7 @@
 .inline-list {
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .inline-list:before,
 .inline-list:after {
@@ -516,6 +516,9 @@
 }
 .suggests-box__elem:hover {
   background-color: #dbfc8e;
+}
+.suggests-box__elem a {
+  text-decoration: none;
 }
 .suggests-box__add {
   display: table-cell;
