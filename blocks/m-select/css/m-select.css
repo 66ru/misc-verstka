@@ -4,7 +4,6 @@
 	font-weight: bold;
 	line-height: 30px;
 
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 30px;
 	margin-bottom: 10px;
@@ -33,6 +32,7 @@
 .m-select:focus {
 	outline: none;
 	background-color: transparent;
+
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	-webkit-tap-highlight-color: transparent;
 }
@@ -76,4 +76,18 @@
 	border-style: solid;
 	border-color: #999;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.m-select_white {
+	background-color: #fff;
+}
+
+.m-select:hover,
+.m-select:active,
+.m-select:focus {
+	outline: none;
+	background-color: #fff;
+
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
 }

@@ -251,6 +251,10 @@
 }
 
 
+.m-text_center {
+	text-align: center;
+}
+
 .m-text_doska {
 	padding-right: 10px;
 	padding-left: 20px;
@@ -302,6 +306,17 @@
 .m-doska-owner__link_activated {
 	color: #6a8b22;
 	background-color: #fff;
+}
+
+.m-doska-owner__link_short {
+	display: inline-block;
+
+	width: 105px;
+	margin-right: 20px;
+}
+
+.m-doska-owner__link_grey {
+	background-color: #909c77;
 }
 
 .m-doska-owner__link_secondary {

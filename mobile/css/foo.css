@@ -843,12 +843,16 @@
     /*-webkit-overflow-scrolling: touch;*/
 }
 
+.m-lenta_big {
+	height: 175px;
+}
+
 .m-lenta__elem {
 	display: inline-block;
 	overflow: hidden;
 
 	box-sizing: border-box;
-	height: 75px;
+	height: 100%;
 }
 
 .m-lenta__elem_video {
@@ -874,6 +878,10 @@
 	background-color: rgba(0, 0, 0, .25);
 }
 
+.m-lenta_big .m-lenta__elem_video:before {
+	line-height: 175px;
+}
+
 .m-lenta__elem_video:after {
 	position: absolute;
 	top: 15px;
@@ -894,7 +902,7 @@
 .m-lenta__img {
 	display: block;
 
-	height: 75px;
+	height: 100%;
 }
 
 

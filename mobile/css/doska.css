@@ -618,7 +618,6 @@ blockquote {
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 30px;
   margin-bottom: 10px;
@@ -677,6 +676,17 @@ blockquote {
   border-style: solid;
   border-color: #999;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.m-select_white {
+  background-color: #fff;
+}
+.m-select:hover,
+.m-select:active,
+.m-select:focus {
+  outline: none;
+  background-color: #fff;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 .m-login {
   font-size: 12px;
@@ -1496,11 +1506,14 @@ blockquote {
   white-space: nowrap;
   /*-webkit-overflow-scrolling: touch;*/
 }
+.m-lenta_big {
+  height: 175px;
+}
 .m-lenta__elem {
   display: inline-block;
   overflow: hidden;
   box-sizing: border-box;
-  height: 75px;
+  height: 100%;
 }
 .m-lenta__elem_video {
   position: relative;
@@ -1519,6 +1532,9 @@ blockquote {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.25);
 }
+.m-lenta_big .m-lenta__elem_video:before {
+  line-height: 175px;
+}
 .m-lenta__elem_video:after {
   position: absolute;
   top: 15px;
@@ -1533,7 +1549,7 @@ blockquote {
 }
 .m-lenta__img {
   display: block;
-  height: 75px;
+  height: 100%;
 }
 .m-cinema-info {
   position: relative;
@@ -2062,6 +2078,9 @@ blockquote {
   height: auto;
   margin: auto;
 }
+.m-text_center {
+  text-align: center;
+}
 .m-text_doska {
   padding-right: 10px;
   padding-left: 20px;
@@ -2098,6 +2117,14 @@ blockquote {
 .m-doska-owner__link_activated {
   color: #6a8b22;
   background-color: #fff;
+}
+.m-doska-owner__link_short {
+  display: inline-block;
+  width: 105px;
+  margin-right: 20px;
+}
+.m-doska-owner__link_grey {
+  background-color: #909c77;
 }
 .m-doska-owner__link_secondary {
   display: inline-block;

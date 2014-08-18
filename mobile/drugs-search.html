@@ -75,7 +75,13 @@
 	</div>
 	<div class="m-text m-text_green">
 		<h1 class="m-text__h1">Поиск лекарств в&nbsp;аптеках Екатеринбурга</h1>
-		<input type="text" name="drugs-search" id="drugs-search" class="m-doska-search__input" placeholder="Начните вводить название">
+		<div class="spinner__wrap spinner__wrap_loading">
+			<input type="text" name="drugs-search" id="drugs-search" class="m-doska-search__input" placeholder="Начните вводить название">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>
 		<div class="gap gap_10"></div>
 		<div class="m-center"><label for="open-only" class="m-label">Цена, до</label><input type="text" name="drugs-price" id="drugs-price" class="m-doska-search__input m-doska-search__input_small"><label for="open-only" class="m-label rub_verdana">Р</label></div>
 		<div class="gap gap_10"></div>
