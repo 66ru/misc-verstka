@@ -20,7 +20,7 @@
 				$listButton = $this.find('.' + showListButtonClassName),
 				$mapButton = $this.find('.' + showMapButtonClassName),
 
-				windowHeight = $window.height(),
+				windowHeight = $window.height() + 60,
 				mapOffsetTop = $mapButton.offset().top -10;
 
 			$listButton.on('click', function(ev) {
@@ -45,14 +45,14 @@
 
 			$mapWrap.height(windowHeight);
 
-			$window.on('resize', function() {
-				windowHeight = $window.height();
-				$mapWrap.height(windowHeight);
+			// $window.on('resize', function() {
+			// 	windowHeight = $window.height();
+			// 	$mapWrap.height(windowHeight);
 
-				if ($this.hasClass(mainBlockMapShownClassName)) {
-					$(window).scrollTop(mapOffsetTop);
-				}
-			});
+			// 	if ($this.hasClass(mainBlockMapShownClassName)) {
+			// 		$(window).scrollTop(mapOffsetTop);
+			// 	}
+			// });
 		});
 	});
 })();

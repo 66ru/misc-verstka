@@ -5,7 +5,6 @@
 
 	display: block;
 	overflow: hidden;
-	overflow: hidden;
 
 	height: 40px;
 	margin: 0 10px 5px;
@@ -42,4 +41,19 @@
 	margin-right: 6px;
 
 	color: #698c15;
+}
+
+.m-rubric_more-content {
+	font-size: 16px;
+}
+
+.m-rubric_more-content .m-rubric__name {
+	line-height: 1.0;
+
+	display: table-cell;
+
+	height: 40px;
+
+	vertical-align: middle;
+	white-space: normal;
 }
