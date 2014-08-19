@@ -79,6 +79,7 @@
 	height: 100%;
 
 	-webkit-animation: bounce 2.0s infinite ease-in-out;
+	-o-animation: bounce 2.0s infinite ease-in-out;
 	animation: bounce 2.0s infinite ease-in-out;
 
 	opacity: .6;
@@ -88,6 +89,7 @@
 
 .double-bounce2 {
 	-webkit-animation-delay: -1.0s;
+	-o-animation-delay: -1.0s;
 	animation-delay: -1.0s;
 }
 
@@ -100,13 +102,41 @@
 	}
 }
 
-@keyframes bounce {
+@-o-keyframes bounce {
 	0%, 100% {
 		-webkit-transform: scale(.0);
+		-o-transform: scale(.0);
 		transform: scale(.0);
 	}
 	50% {
 		-webkit-transform: scale(1.0);
+		-o-transform: scale(1.0);
 		transform: scale(1.0);
 	}
+}
+
+@keyframes bounce {
+	0%, 100% {
+		-webkit-transform: scale(.0);
+		-o-transform: scale(.0);
+		transform: scale(.0);
+	}
+	50% {
+		-webkit-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+.spinner__wrap {
+	position: relative;
+}
+
+.spinner__wrap .spinner {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	width: 24px;
+	height: 24px;
 }

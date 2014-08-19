@@ -7,7 +7,9 @@
 
 			showListButtonClassName = 'm-drugs-map__list-button',
 			showMapButtonClassName = 'm-drugs-map__map-button',
-			currentButtonClassName = 'm-button_current';
+			currentButtonClassName = 'm-button_current',
+
+			$window = $(window);
 
 		$('.' + mainBlockClassName).each(function() {
 			var $this = $(this),
@@ -18,7 +20,7 @@
 				$listButton = $this.find('.' + showListButtonClassName),
 				$mapButton = $this.find('.' + showMapButtonClassName),
 
-				windowHeight = $(window).height(),
+				windowHeight = $window.height(),
 				mapOffsetTop = $mapButton.offset().top -10;
 
 			$listButton.on('click', function(ev) {
@@ -42,6 +44,15 @@
 			});
 
 			$mapWrap.height(windowHeight);
+
+			$window.on('resize', function() {
+				windowHeight = $window.height();
+				$mapWrap.height(windowHeight);
+
+				if ($this.hasClass(mainBlockMapShownClassName)) {
+					$(window).scrollTop(mapOffsetTop);
+				}
+			});
 		});
 	});
 })();
