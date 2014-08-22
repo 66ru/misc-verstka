@@ -67,10 +67,11 @@
 }
 
 .drug-search__spinner {
-	display: none;
 	position: absolute;
 	top: 8px;
 	right: 8px;
+
+	display: none;
 
 	width: 24px;
 	height: 24px;
@@ -438,6 +439,7 @@
 
 
 
+
 .drugs-map {
 	position: relative;
 
@@ -521,6 +523,10 @@
 	padding: 7px 0;
 
 	vertical-align: middle;
+}
+
+.drugs-map__cell_name {
+	padding-left: 10px;
 }
 
 .drugs-map__cell_placemark {
@@ -625,6 +631,21 @@
 .drugs-map__loading .drugs-map__overlay {
 	display: block;
 }
+
+.drugs-map__extra_fade {
+	color: #777;
+}
+
+.drugs-map__row_active .drugs-map__cell {
+	background: #e0f8d8;
+}
+
+.drugs-map__row_active:hover .drugs-map__cell {
+	cursor: default;
+
+	background: #e0f8d8;
+}
+
 
 
 
