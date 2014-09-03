@@ -201,6 +201,7 @@
   width: 100%;
   height: 100%;
   -webkit-animation: bounce 2s infinite ease-in-out;
+  -o-animation: bounce 2s infinite ease-in-out;
   animation: bounce 2s infinite ease-in-out;
   opacity: .6;
   border-radius: 50%;
@@ -208,6 +209,7 @@
 }
 .double-bounce2 {
   -webkit-animation-delay: -1s;
+  -o-animation-delay: -1s;
   animation-delay: -1s;
 }
 @-webkit-keyframes bounce {
@@ -219,16 +221,41 @@
     -webkit-transform: scale(1);
   }
 }
-@keyframes bounce {
+@-o-keyframes bounce {
   0%,
   100% {
     -webkit-transform: scale(0);
+    -o-transform: scale(0);
     transform: scale(0);
   }
   50% {
     -webkit-transform: scale(1);
+    -o-transform: scale(1);
     transform: scale(1);
   }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.spinner__wrap {
+  position: relative;
+}
+.spinner__wrap .spinner {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
 }
 .rubrics-popup {
   display: inline-block;
@@ -354,10 +381,10 @@
   margin-right: 15px;
 }
 .drug-search__spinner {
-  display: none;
   position: absolute;
   top: 8px;
   right: 8px;
+  display: none;
   width: 24px;
   height: 24px;
 }
@@ -670,6 +697,9 @@
   padding: 7px 0;
   vertical-align: middle;
 }
+.drugs-map__cell_name {
+  padding-left: 10px;
+}
 .drugs-map__cell_placemark {
   box-sizing: border-box;
   width: 50px;
@@ -747,6 +777,16 @@
 }
 .drugs-map__loading .drugs-map__overlay {
   display: block;
+}
+.drugs-map__extra_fade {
+  color: #777;
+}
+.drugs-map__row_active .drugs-map__cell {
+  background: #e0f8d8;
+}
+.drugs-map__row_active:hover .drugs-map__cell {
+  cursor: default;
+  background: #e0f8d8;
 }
 .placemark {
   line-height: 26px;

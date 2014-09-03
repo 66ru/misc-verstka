@@ -10,6 +10,7 @@
 			$strap = $('.' + strapClassName),
 			$buttonPrev = $('.' + buttonPrevClassName),
 			$buttonNext = $('.' + buttonNextClassName),
+			$buttonInactive = $('.' + buttonInactiveClassName),
 
 			elemsCount = $strap.children().length,
 			currentElem = 0,
@@ -25,34 +26,27 @@
 			};
 		}
 
+		$buttonInactive.removeClass(buttonInactiveClassName);
+
 
 		$buttonPrev.on('click', function() {
 			if (currentElem === 0) {
-				return false;
+				$strap.css(getTransformCss(-(elemsCount - 1) * ELEM_HEIGHT));
+				currentElem = elemsCount - 1;
 			} else {
 				$strap.css(getTransformCss(-(currentElem - 1) * ELEM_HEIGHT));
 				currentElem -= 1;
-
-				if (currentElem === 0) {
-					$(this).addClass(buttonInactiveClassName);
-				}
-
-				$buttonNext.removeClass(buttonInactiveClassName);
 			}
 		});
 
 		$buttonNext.on('click', function() {
 			if (currentElem === elemsCount-1) {
-				return false;
+				$strap.css(getTransformCss(0));
+				currentElem = 0;
+
 			} else {
 				$strap.css(getTransformCss(-(currentElem + 1) * ELEM_HEIGHT));
 				currentElem += 1;
-
-				if (currentElem === elemsCount-1) {
-					$(this).addClass(buttonInactiveClassName);
-				}
-
-				$buttonPrev.removeClass(buttonInactiveClassName);
 			}
 		});
 	});

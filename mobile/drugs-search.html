@@ -10,6 +10,7 @@
 <script src="../bower_components/zepto/zepto.min.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
+<script src="../blocks/m-rubric/js/m-rubric-init.js"></script>
 <script src="js/foo.js"></script>
 </head>
 <body class="m-layout__body">
@@ -75,7 +76,13 @@
 	</div>
 	<div class="m-text m-text_green">
 		<h1 class="m-text__h1">Поиск лекарств в&nbsp;аптеках Екатеринбурга</h1>
-		<input type="text" name="drugs-search" id="drugs-search" class="m-doska-search__input" placeholder="Начните вводить название">
+		<div class="spinner__wrap spinner__wrap_loading">
+			<input type="text" name="drugs-search" id="drugs-search" class="m-doska-search__input" placeholder="Начните вводить название">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>
 		<div class="gap gap_10"></div>
 		<div class="m-center"><label for="open-only" class="m-label">Цена, до</label><input type="text" name="drugs-price" id="drugs-price" class="m-doska-search__input m-doska-search__input_small"><label for="open-only" class="m-label rub_verdana">Р</label></div>
 		<div class="gap gap_10"></div>
@@ -87,155 +94,155 @@
 		<h2 class="m-text__h2">Лекарственные средства</h2>
 	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Препараты</span>
 		<span class="m-rubric__amount">16&thinsp;907</span>
+		<span class="m-rubric__name">Препараты</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Витамины и микроэлементы</span>
 		<span class="m-rubric__amount">772</span>
+		<span class="m-rubric__name">Витамины и микроэлементы</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Инфузионные растворы и питание</span>
 		<span class="m-rubric__amount">476</span>
+		<span class="m-rubric__name">Влияющие на гуморальные факторы регуляции обмена веществ</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Прочие препараты</span>
 		<span class="m-rubric__amount">119</span>
+		<span class="m-rubric__name">Прочие препараты</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Гомеопатия</span>
 		<span class="m-rubric__amount">379</span>
+		<span class="m-rubric__name">Гомеопатия</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Целебные травы</span>
 		<span class="m-rubric__amount">176</span>
+		<span class="m-rubric__name">Целебные травы</span>
 	</a>
 	<div class="m-text">
 		<h2 class="m-text__h2">Детские товары</h2>
 	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Все для самых маленьких</span>
 		<span class="m-rubric__amount">402</span>
+		<span class="m-rubric__name">Все для самых маленьких</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Все для кормления малыша</span>
 		<span class="m-rubric__amount">176</span>
+		<span class="m-rubric__name">Все для кормления малыша</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Все для купания малыша</span>
 		<span class="m-rubric__amount">88</span>
+		<span class="m-rubric__name">Все для купания малыша</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Детская косметика</span>
 		<span class="m-rubric__amount">5</span>
+		<span class="m-rubric__name">Детская косметика</span>
 	</a>
 	<div class="m-text">
 		<h2 class="m-text__h2">Биологически активные добавки</h2>
 	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">При заболеваниях</span>
 		<span class="m-rubric__amount">475</span>
+		<span class="m-rubric__name">При заболеваниях</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для лечения зависимостей</span>
 		<span class="m-rubric__amount">95</span>
+		<span class="m-rubric__name">Для лечения зависимостей</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для женщин</span>
 		<span class="m-rubric__amount">663</span>
+		<span class="m-rubric__name">Для женщин</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для мужчин</span>
 		<span class="m-rubric__amount">76</span>
+		<span class="m-rubric__name">Для мужчин</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для снижения веса</span>
 		<span class="m-rubric__amount">117</span>
+		<span class="m-rubric__name">Для снижения веса</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Общетонизирующие</span>
 		<span class="m-rubric__amount">7&thinsp;476</span>
+		<span class="m-rubric__name">Общетонизирующие</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Витамины, минералы</span>
 		<span class="m-rubric__amount">476</span>
+		<span class="m-rubric__name">Витамины, минералы</span>
 	</a>
 	<div class="m-text">
 		<h2 class="m-text__h2">Лекарственные средства</h2>
 	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Препараты</span>
 		<span class="m-rubric__amount">16&thinsp;907</span>
+		<span class="m-rubric__name">Препараты</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Витамины и микроэлементы</span>
 		<span class="m-rubric__amount">772</span>
+		<span class="m-rubric__name">Витамины и микроэлементы</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Инфузионные растворы и питание</span>
 		<span class="m-rubric__amount">476</span>
+		<span class="m-rubric__name">Инфузионные растворы и питание</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Прочие препараты</span>
 		<span class="m-rubric__amount">119</span>
+		<span class="m-rubric__name">Прочие препараты</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Гомеопатия</span>
 		<span class="m-rubric__amount">379</span>
+		<span class="m-rubric__name">Гомеопатия</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Целебные травы</span>
 		<span class="m-rubric__amount">176</span>
+		<span class="m-rubric__name">Целебные травы</span>
 	</a>
 	<div class="m-text">
 		<h2 class="m-text__h2">Детские товары</h2>
 	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Все для самых маленьких</span>
 		<span class="m-rubric__amount">402</span>
+		<span class="m-rubric__name">Все для самых маленьких</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Все для кормления малыша</span>
 		<span class="m-rubric__amount">176</span>
+		<span class="m-rubric__name">Все для кормления малыша</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Все для купания малыша</span>
 		<span class="m-rubric__amount">88</span>
+		<span class="m-rubric__name">Все для купания малыша</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Детская косметика</span>
 		<span class="m-rubric__amount">5</span>
+		<span class="m-rubric__name">Детская косметика</span>
 	</a>
 	<div class="m-text">
 		<h2 class="m-text__h2">Биологически активные добавки</h2>
 	</div>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">При заболеваниях</span>
 		<span class="m-rubric__amount">475</span>
+		<span class="m-rubric__name">При заболеваниях</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для лечения зависимостей</span>
 		<span class="m-rubric__amount">95</span>
+		<span class="m-rubric__name">Для лечения зависимостей</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для женщин</span>
 		<span class="m-rubric__amount">663</span>
+		<span class="m-rubric__name">Для женщин</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для мужчин</span>
 		<span class="m-rubric__amount">76</span>
+		<span class="m-rubric__name">Для мужчин</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Для снижения веса</span>
 		<span class="m-rubric__amount">117</span>
+		<span class="m-rubric__name">Для снижения веса</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Общетонизирующие</span>
 		<span class="m-rubric__amount">7&thinsp;476</span>
+		<span class="m-rubric__name">Общетонизирующие</span>
 	</a>
 	<a href="#" class="m-rubric">
-		<span class="m-rubric__name">Витамины, минералы</span>
 		<span class="m-rubric__amount">476</span>
+		<span class="m-rubric__name">Витамины, минералы</span>
 	</a>
 	<div class="m-menu m-menu_bottom">
 		<div class="m-menu__button m-layout__toggle-menu"></div>
