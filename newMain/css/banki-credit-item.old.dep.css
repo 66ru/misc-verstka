@@ -2317,7 +2317,7 @@ a.b-tabs__item__link {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(../css/less/blocks/b-text/img/valute-dinamic.png);
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
   content: '';
 }
 .b-text-valute_dinamic_up .b-text-valute-more {
@@ -2330,7 +2330,7 @@ a.b-tabs__item__link {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(../css/less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png);
   content: '';
 }
 a.b-text-ad {
