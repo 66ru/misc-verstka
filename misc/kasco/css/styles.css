@@ -1,0 +1,107 @@
+.finist_250_250 p {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+  font-size: 20px !important;
+  font-weight: normal !important;
+
+  margin-bottom: 10px !important;
+}
+
+#finist_calcKasko_firstStep div {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+  font-size: 13px !important;
+}
+
+#finist_calcKasko {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  line-height: 27px !important;
+
+  position: relative !important;
+
+  display: inline-block !important;
+  overflow: hidden !important;
+
+  box-sizing: border-box !important;
+  height: 27px !important;
+  padding: 0 .8em !important;
+
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+
+  color: #fff !important;
+  border: 1px solid transparent !important;
+  border-top: 1px solid #93b700 !important;
+  border-bottom: 1px solid #5a8600 !important;
+  border-radius: 4px !important;
+  background-color: #fff !important;
+  background-color: #94b800 !important;
+  background-image: -webkit-linear-gradient(top, #94b800, #5a8600) !important;
+  background-image: -o-linear-gradient(top, #94b800, #5a8600) !important;
+  background-image: linear-gradient(to bottom,  #94b800, #5a8600) !important;
+  box-shadow: none !important;
+}
+
+#finist_calcKasko:hover {
+  color: #fff !important;
+  background-color: #a6c427 !important;
+  background-image: -webkit-linear-gradient(top, #a6c427, #5c8516) !important;
+  background-image: -o-linear-gradient(top, #a6c427, #5c8516) !important;
+  background-image: linear-gradient(top, #a6c427, #5c8516) !important;
+}
+
+#finist_calcKasko:active {
+  color: #fff !important;
+  background-color: #588315 !important;
+  background-image: -webkit-linear-gradient(top, #588315, #5b8516) !important;
+  background-image: -o-linear-gradient(top, #588315, #5b8516) !important;
+  background-image: linear-gradient(top, #588315, #5b8516) !important;
+}
+
+#iDiv {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+#iFrameHead {
+  width: 735px !important;
+  padding-left: 25px !important;
+
+  color: #fff !important;
+  background-color: #6a920f !important;
+}
+
+#iFrameHead #iFrameTitle {
+  font-size: 20px !important;
+}
+
+#iFrameClose {
+  position: relative !important;
+  z-index: 1;
+}
+
+#iFrameClose:after {
+  font-size: 18px;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: '✕';
+  text-align: center;
+
+  color: #fff;
+}
+
+#iFrameClose:active:after,
+#iFrameClose:hover:after {
+  opacity: .7;
+}
+
+#iFrameClose img {
+  opacity: 0;
+}
