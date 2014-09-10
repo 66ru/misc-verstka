@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Оценка инфраструктуры дома. Специальный проект 66.ru</title>
+	<meta name="robots" content="none"/>
+	<meta name="viewport" content="width=480px,initial-scale=0.4,user-scalable=1" />
+
+	<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+
+	<link href="http://s.66.ru/localStorage/14/b5/cd/20/14b5cd20.ico" type="image/x-icon" rel="icon"/>
+	<link href="http://s.66.ru/localStorage/14/b5/cd/20/14b5cd20.ico" type="image/x-icon" rel="shortcut icon"/>
+	<script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?9" charset="windows-1251"></script>
+
+	<link rel="stylesheet" type="text/css" href="http://66.ru/static/css/build/infrastructure_rate_07142942535579363669.min.css" />
+	<script src="http://66.ru/static/bower_components/requirejs/require.js"
+	data-main="http://66.ru/static/js/build/infrastructure_rate_07142942535579363669.min.js"
+	type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-27892770-1']);
+		_gaq.push(['_setDomainName', '66.ru']);
+		window.map_type = 'infrastructure_rate'
+	</script>
+</head>
+
+<body>
+	<div id="map" style="width: 100%; height: 100%"></div>
+
+	<div class="b-calc-placement">
+		<div class="b-calc-placement__header">
+			<a href="http://66.ru" target="_blank" class="logo66"></a>
+			<b>Оценка инфраструктуры</b>
+		</div>
+		<div class="b-calc-placement__body">
+			<label class="b-calc-placement__label" for="textPlace">Введите адрес</label>
+
+			<form action="http://66.ru/doska/rate/">
+				<div class="b-calc-placement__form">
+					<link rel="stylesheet" href="../../newMain/css/less/blocks/button/css/button.css">
+					<fieldset class="b-calc-placement__form__row">
+						<input type="text" value="" placeholder="Например: Ленина 5" name="address" id="address"/>
+					</fieldset>
+					<span class="button button_color_green">Узнать оценку</span>
+					<div class="b-btn b-btn_color_green">
+						<ins class="b-btn__crn-left"></ins>
+						<ins class="b-btn__crn-right"></ins>
+						<input type="submit" value="" name="rate_btn" id="rate_btn" class="b-btn__submit">
+						<span class="b-btn__text">Узнать оценку</span>
+					</div>
+				</div>
+				<div class="b-calc-placement__errMessage" style="display: none;">Адрес не найден</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="b-calc-placement" style="top: 160px;" id="rate_result">
+		<ins class="triangle"></ins>
+		<div class="b-calc-placement__header b-calc-placement__header_layout_result">
+			Оценка дома: <b>
+			<ins class="color_yellow" id="infrastructure_rate_text">8,2</ins>
+			из 10</b>
+
+			<span class="b-social-block">
+				<a href="http://vkontakte.ru/share.php?url=http%3A%2F%2F66.ru%2Fdoska%2Frate%2F&amp;title=%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB%D0%B5%2066.ru&amp;description=8%2C2%20%D0%B8%D0%B7%2010%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%BE%D0%B5%D0%B3%D0%BE%20%D0%B4%D0%BE%D0%BC%D0%B0%20%D0%BD%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%205.%20%D0%9E%D1%86%D0%B5%D0%BD%D0%B8%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%B4%D0%BE%D0%BC!" target="_blank" class="b-social-btn b-social-btn_layout_vk"></a>
+				<a href="https://www.facebook.com/sharer.php?s=100&amp;p[title]=%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB%D0%B5%2066.ru&amp;p[summary]=8%2C2%20%D0%B8%D0%B7%2010%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%BE%D0%B5%D0%B3%D0%BE%20%D0%B4%D0%BE%D0%BC%D0%B0%20%D0%BD%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%205.%20%D0%9E%D1%86%D0%B5%D0%BD%D0%B8%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%B4%D0%BE%D0%BC!&amp;p[url]=http%3A%2F%2F66.ru%2Fdoska%2Frate%2F" target="_blank" class="b-social-btn b-social-btn_layout_fb"></a>
+				<a href="https://twitter.com/share?url=http%3A%2F%2F66.ru%2Fdoska%2Frate%2F&amp;text=8%2C2%20%D0%B8%D0%B7%2010%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%BE%D0%B5%D0%B3%D0%BE%20%D0%B4%D0%BE%D0%BC%D0%B0%20%D0%BD%D0%B0%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%205.%20%D0%9E%D1%86%D0%B5%D0%BD%D0%B8%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%B4%D0%BE%D0%BC!" target="_blank" class="b-social-btn b-social-btn_layout_tw"></a>
+			</span>
+
+		</div>
+		<div class="b-calc-placement__body" id="sell-lease-box" style="">
+
+			<div class="b-calc-placement-title">Средняя цена квартир в этом районе</div>
+
+			<link rel="stylesheet" href="../../blocks/info-table/css/info-table.css">
+			<link rel="stylesheet" href="../../fonts/ALSRubl.css">
+			<div class="info-table" style="font-size: 13px;">
+				<div class="info-table__row info-table__row_heading">
+					<div class="info-table__cell info-table__cell_mid info-table__cell_120"></div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">1-к.</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">2-к.</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">3-к.</div>
+				</div>
+				<div class="info-table__row">
+					<div class="info-table__cell info-table__cell_mid info-table__cell_120">Продажа, <span class="rub rub_arial">Р</span> за м²</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">87&thinsp;700</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">83&thinsp;261</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">85&thinsp;613</div>
+				</div>
+				<div class="info-table__row">
+					<div class="info-table__cell info-table__cell_mid info-table__cell_120">Аренда, <span class="rub rub_arial">Р</span> в мес.</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">20&thinsp;658</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">30&thinsp;158</div>
+					<div class="info-table__cell info-table__cell_mid info-table__cell_55">48&thinsp;970</div>
+				</div>
+			</div>
+
+			<!-- <div class="b-calc-placement-box" id="sell-box" style="">
+				<div class="b-calc-placement-box__subj">Продажа</div>
+				<table class="b-calc-placement-box__table">
+					<tbody><tr id="sell-1" style="">
+						<td>Однокомнатные:</td>
+						<td><a href="/realty/doska/live/?action_type=buy&amp;district_select=55&amp;object_type=kv&amp;rooms=1" target="_blank">87 700 р. за м²</a>&nbsp;
+							<ins class="count">126</ins>
+						</td>
+					</tr>
+					<tr id="sell-2" style="">
+						<td>Двухкомнатные:</td>
+						<td><a href="/realty/doska/live/?action_type=buy&amp;district_select=55&amp;object_type=kv&amp;rooms=2" target="_blank">83 261 р. за м²</a>&nbsp;
+							<ins class="count">189</ins>
+						</td>
+					</tr>
+					<tr id="sell-3" style="">
+						<td>Трехкомнатные:</td>
+						<td><a href="/realty/doska/live/?action_type=buy&amp;district_select=55&amp;object_type=kv&amp;rooms=3" target="_blank">85 613 р. за м²</a>&nbsp;
+							<ins class="count">180</ins>
+						</td>
+					</tr>
+				</tbody></table>
+			</div> -->
+
+			<!-- <div class="b-calc-placement-box" id="lease-box" style="">
+				<div class="b-calc-placement-box__subj">Аренда</div>
+				<table class="b-calc-placement-box__table">
+					<tbody><tr id="lease-1" style="">
+						<td>Однокомнатные:</td>
+						<td><a href="/realty/doska/live/?action_type=lease&amp;district_select=55&amp;object_type=kv&amp;rooms=1" target="_blank">20 658 р. в мес.</a>&nbsp;
+							<ins class="count">6</ins>
+						</td>
+					</tr>
+					<tr id="lease-2" style="">
+						<td>Двухкомнатные:</td>
+						<td><a href="/realty/doska/live/?action_type=lease&amp;district_select=55&amp;object_type=kv&amp;rooms=2" target="_blank">30 158 р. в мес.</a>&nbsp;
+							<ins class="count">9</ins>
+						</td>
+					</tr>
+					<tr id="lease-3" style="">
+						<td>Трехкомнатные:</td>
+						<td><a href="/realty/doska/live/?action_type=lease&amp;district_select=55&amp;object_type=kv&amp;rooms=3" target="_blank">48 970 р. в мес.</a>&nbsp;
+							<ins class="count">4</ins>
+						</td>
+					</tr>
+				</tbody></table>
+			</div> -->
+
+		</div>
+
+		<div class="gisLogo">
+			<a href="http://api.2gis.ru" target="_blank" class="gisLogoText">Работает на API 2GIS</a>
+			<a href="http://api.2gis.ru" target="_blank" class="gisLogoPic"></a>
+		</div>
+
+	</div>
+
+	<div style="position: fixed; left: -9999px;">
+	</div>
+</body>
+</html>
