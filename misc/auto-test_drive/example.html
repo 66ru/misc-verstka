@@ -1,0 +1,41 @@
+ 
+<style type="text/css">
+.testdrive_block {color: #bbdaed;background: #4a9fd5 url("http://t.66.ru/auto/testdrive/newTeaserBg.jpg") 0 0 repeat-x;}
+.testdrive_block .wrapper {padding: 0.7em 0.7em 0 0.7em;}
+.testdrive_block .testdrive_header a {line-height: 1.4em;text-decoration: none;border-bottom: 1px solid #bbdaed;}
+.testdrive_block .testdrive_header {margin: 0 0.7em 0.7em 0;}
+.wrapperBot {background: url("http://t.66.ru/auto/testdrive/newTeaserBgBot.jpg") 0 bottom repeat-x;}
+.testdrive_block a:link,
+.testdrive_block a:visited,
+.testdrive_block a:hover,
+.testdrive_block a:active {color: #fff;}
+.gaspromTeaser {border-bottom: 1px solid #60a8d4;margin-bottom: 14px;padding: 0 10px 8px;font-size: 11px;line-height: 14px;}
+.gaspromTeaser:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.gaspromTeaserLogo {background: url("http://t.66.ru/auto/testdrive/gaspromTeaserLogo.png") 0 0 no-repeat;width: 92px;height: 33px;float: right;}
+.gaspromTeaser p {float: left;margin: 8px 0 0;font-size: 11px;line-height: 14px;}
+.gaspromOurPlasticCard {font-size: 11px;line-height: 14px;margin-bottom: 6px;height: 80px;}
+.gaspromOurPlasticCard h3 {position: absolute;top: 3px;left: 100px;}
+.gaspromOurPlasticCardLink {position: absolute;left: 100px;top: 41px;}
+.gaspromOurPlasticCardPad {position: relative;}
+.gaspromOurPlasticCardPic {background: url("http://t.66.ru/auto/testdrive/gaspromCard.png") no-repeat scroll 0 0 transparent;height: 50px;position: absolute;left: 10px;top: 4px;width: 79px;}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var jsonUrl = 'http://66.ru/json/news/test_drive/latest.json';
+    $.getJSON( jsonUrl, function( data ) {
+        if (data && data.length) {
+
+        function getRandomArbitary(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        testDrive = data[getRandomArbitary(0, data.length-1)];
+
+        var html = '<div class="testdrive_block"><div class="wrapperBot clearfix"><div class="wrapper"><div class="testdrive_header"><span style="font-weight: bold; line-height: 1.2em;">Тест-драйв:</span><br><a href="' + testDrive['link'] + '">' + testDrive['title'] + '</a></div><a href="' + testDrive['link'] + '"><img style="width:100%; height: 95px; background: url(\'' + testDrive['_parsedSpecImage'] + '\') center 0px" border="0" src="http://t.66.ru/19baa2cf9ec9d1681bc3607af6a3b6986ff5fff2/auto/pixel.gif" alt=""></a></div><div class="gaspromTeaser"><a target="_blank" href="http://www.66.ru/go/eburg.gazprom-neft.ru/" class="gaspromTeaserLogo"></a><p>На тест-драйвах<br>используем топливо</p></div><div class="gaspromOurPlasticCard"><div class="gaspromOurPlasticCardPad"><div class="gaspromOurPlasticCardPic"></div><h3><img alt="" src="http://t.66.ru/auto/gasprom/gaspromBonusH.gif"></h3><a class="gaspromOurPlasticCardLink" target="_blank" href="http://www.66.ru/go/www.gpnbonus.ru/on_the_way/">Как получить<br>бонусную карту?</a></div></div></div></div>';
+        $("#testDriveBlock").html(html);
+            }
+    });
+});
+</script>
+<div id="testDriveBlock"></div>
