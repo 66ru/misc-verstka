@@ -1089,7 +1089,6 @@ i {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 27px;
   padding: 0 .8em;
@@ -1161,18 +1160,21 @@ i {
   background-image: linear-gradient(to bottom, #94b800, #5a8600);
 }
 .button_color_green:hover {
+  color: #fff;
   background-color: #a6c427;
   background-image: -webkit-linear-gradient(top, #a6c427, #5c8516);
   background-image: -o-linear-gradient(top, #a6c427, #5c8516);
   background-image: linear-gradient(top, #a6c427, #5c8516);
 }
 .button_color_green:active {
+  color: #fff;
   background-color: #588315;
   background-image: -webkit-linear-gradient(top, #588315, #5b8516);
   background-image: -o-linear-gradient(top, #588315, #5b8516);
   background-image: linear-gradient(top, #588315, #5b8516);
 }
 .button_color_green.button_with-spinner:active {
+  color: #fff;
   background-color: #94b800;
   background-image: -webkit-linear-gradient(top, #94b800, #5a8600);
   background-image: -o-linear-gradient(top, #94b800, #5a8600);
