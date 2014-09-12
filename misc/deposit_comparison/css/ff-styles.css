@@ -1,0 +1,8 @@
+.compare_table_box_ff-fixes .compare_table_out {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+.compare_table_box_ff-fixes .compare_table .headcol {
+  position: static !important;
+}
