@@ -1795,7 +1795,7 @@ body {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(../css/less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png);
   content: '';
 }
 .b-text-valute_dinamic_up .b-text-valute-more {
@@ -1808,7 +1808,7 @@ body {
   margin-left: 2px;
   width: 7px;
   height: 7px;
-  background: url(../css/less/blocks/b-text/img/valute-dinamic.png);
+  background: url(../css/less/blocks/b-text/img/valute-dinamic.png) 0 -9px;
   content: '';
 }
 a.b-text-ad {
