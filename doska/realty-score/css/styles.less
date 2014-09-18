@@ -1,6 +1,7 @@
 @import (less) url('../../../reset.css/reset.css');
 @import (less) url('../../../fonts/ALSRubl.css');
 @import (less) url('../../../blocks/link/css/link.css');
+@import (less) url('../../../blocks/icon/css/icon.less');
 @import (less) url('../../../blocks/info-table/css/info-table.css');
 @import (less) url('../../../newMain/css/less/blocks/button/css/button.css');
 
@@ -11,20 +12,21 @@
   top: 20px;
   left: 20px;
 
-  overflow: hidden;
-
   width: 340px;
+  padding-bottom: 5px;
 
   border-radius: 6px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
-.realty-score__header {
-  font-size: 18px;
-  line-height: 40px;
+.realty-score_info {
+  top: 190px;
+}
 
-  overflow: hidden;
+.realty-score__header {
+  font-size: 22px;
+  line-height: 40px;
 
   height: 40px;
   padding: 0 10px;
@@ -35,7 +37,32 @@
   user-select: none;
 
   color: #fff;
+  border-radius: 6px 6px 0 0;
   background-color: #5e8816;
+}
+
+.realty-score_info .realty-score__header {
+  font-size: 17px;
+
+  position: relative;
+}
+
+.realty-score_info .realty-score__header:after {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  display: block;
+
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+
+  content: '';
+
+  border-right: 10px solid transparent;
+  border-bottom: 11px solid #5e8816;
+  border-left: 10px solid transparent;
 }
 
 .realty-score__form {
@@ -45,14 +72,20 @@
 .realty-score__score {
   font-size: 22px;
 
-  padding: 10px;
-
-  color: #fff;
-  background-color: #5e8816;
+  padding: 0 10px 10px;
 }
 
 .realty-score__info {
-  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.realty-score__social {
+  font-size: 22px;
+
+  float: right;
+
+  margin-right: 10px;
 }
 
 .realty-score__title {
@@ -95,12 +128,41 @@
 }
 
 .realty-score__points {
-  color: #ffdb4c;
+  color: #ff5b37;
 }
 
 .realty-score__info-title {
   font-size: 15px;
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 25px 10px 15px;
+}
+
+.realty-score__header + .realty-score__info-title {
+  margin-top: 15px;
+}
+
+.realty-score__info-label {
+  display: inline-block;
+
+  width: 105px;
+  margin-left: 10px;
+}
+
+.realty-score__data {
+  font-size: 14px;
+
+  margin-right: 5px;
+}
+
+.realty-score__extra {
+  font-size: 11px;
+
+  text-decoration: none;
+
+  color: #bbb;
+  border-bottom: 1px solid #eee;
+}
+
+.realty-score__extra:hover {
+  border-bottom-color: #fed3e0;
 }
