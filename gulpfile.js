@@ -38,6 +38,12 @@ gulp.task('newmain', function() {
 		.pipe(gulp.dest('./newMain/css'));
 });
 
+gulp.task('news', function() {
+	return gulp.src('./news/css/*.less')
+		.pipe(less(lessOptions))
+		.pipe(gulp.dest('./news/css'));
+});
+
 gulp.task('realty', function() {
 	return gulp.src('./doska/realty/css/*.less')
 		.pipe(less(lessOptions))
@@ -78,7 +84,7 @@ gulp.task('watch', function() {
 	gulp.watch([
 		'./newMain/css/less/**/*.less',
 		'./newMain/css/less/**/*.css'
-		], ['mainmenuupgrade', 'atms', 'mobile', 'weather', 'realty', 'newmain']);
+		], ['mainmenuupgrade', 'atms', 'mobile', 'weather', 'realty', 'newmain', 'social', 'news']);
 
 	gulp.watch([
 		'./mobile/css/*.less',
@@ -93,8 +99,13 @@ gulp.task('watch', function() {
 		], ['mobile', 'weather', 'realty-elems', 'madv']);
 
 	gulp.watch('./doska/**/*.less', ['realty', 'realty-elems', 'realty-score']);
+
 	gulp.watch([
 		'./blocks/**/*.css',
 		'./drug_search/**/*.less'
 		], ['drugsearch']);
+
+	gulp.watch([
+		'./news/**/*.less'
+		], ['news']);
 });

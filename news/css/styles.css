@@ -1,0 +1,194 @@
+body {
+  width: 1000px;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.news-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.news-grid__elem {
+  width: 32%;
+  margin-left: 2%;
+}
+.news-grid__elem_2x {
+  width: 66%;
+}
+.news-grid__elem_3x {
+  width: 100%;
+}
+.news-grid__elem:first-child {
+  margin-left: 0;
+}
+.news-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.news-image_minor {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin-top: 20px;
+  box-shadow: none;
+}
+.news-image__img {
+  position: absolute;
+  z-index: -1;
+  top: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.news-image_minor > .news-image__img {
+  width: 140%;
+  min-width: 90px;
+  height: auto;
+  min-height: 90px;
+}
+.news-case {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  height: 280px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.news-case__img {
+  position: absolute;
+  z-index: -1;
+  top: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.news-case__text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 70px 40px 15px 35px;
+  background: none transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+}
+.news-case__heading {
+  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.news-case__info {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.news-case__info_photo {
+  padding-left: 26px;
+  background: none left top no-repeat transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg width="23" height="19" viewBox="0 0 23 19" xmlns="http://www.w3.org/2000/svg"><title>Slice 2</title><desc>Created with Sketch.</desc><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#89BD13" offset="0%"/><stop stop-color="#608013" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path d="M16.5 4h3.505C21.098 4 22 4.898 22 6.006v9.988c0 1.11-.893 2.006-1.995 2.006H2.995C1.902 18 1 17.102 1 15.994V6.006C1 4.896 1.893 4 2.995 4H6.5l1.056-2.112C7.8 1.398 8.45 1 9.003 1h4.994c.565 0 1.202.397 1.447.888L16.5 4zm-5 11c2.485 0 4.5-2.015 4.5-4.5S13.985 6 11.5 6 7 8.015 7 10.5 9.015 15 11.5 15zm0-2c1.38 0 2.5-1.12 2.5-2.5S12.88 8 11.5 8 9 9.12 9 10.5s1.12 2.5 2.5 2.5z" fill="url(#a)"/></g></svg>');
+  background-size: auto 16px;
+}
+.news-piece {
+  line-height: 1.4;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-top: 1px solid #dfe5d1;
+}
+.news-piece_major {
+  padding-top: 0;
+  border-top: none;
+}
+.news-piece_after-image {
+  margin-top: 15px;
+  margin-left: 90px;
+  padding-right: 20px;
+}
+.news-piece__date {
+  font-size: 13px;
+  margin-right: .4em;
+  color: #eb6400;
+}
+.news-piece__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+.news-piece__extra {
+  font-size: 16px;
+  margin-left: .4em;
+  color: #666;
+}
+.news-piece__extra_hilite {
+  color: #eb6400;
+}
+.news-piece__extra:before {
+  content: '(';
+}
+.news-piece__extra:after {
+  content: ')';
+}
+.news-piece_major .news-piece__date,
+.news-piece_major .news-piece__extra {
+  font-size: 17px;
+}
+.news-piece_major .news-piece__link {
+  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+.news-image:hover + .news-piece > .news-piece__link {
+  color: #ff3000;
+}
+.submenu {
+  overflow: hidden;
+  height: 45px;
+  margin-bottom: 30px;
+  background-color: #f2fed5;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.submenu__elem {
+  float: left;
+  height: 100%;
+}
+.submenu__link {
+  font-size: 14px;
+  line-height: 45px;
+  display: block;
+  height: 45px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #3f530c;
+}
+.submenu__link:hover,
+.submenu__link:active {
+  color: #fff;
+  background-color: #6b9120;
+}
+.submenu__elem_current .submenu__link {
+  font-weight: bold;
+}
+.submenu__elem_current:hover .submenu__link,
+.submenu__elem_current:active .submenu__link {
+  color: #3f530c;
+  background-color: #f2fed5;
+}
