@@ -1,0 +1,46 @@
+.case {
+  font-size: 13px;
+
+  position: relative;
+
+  display: block;
+  float: left;
+
+  width: 22%;
+  height: 130px;
+  margin-right: 1%;
+
+  -o-transition: box-shadow .5s;
+     transition: box-shadow .5s;
+
+  background: none center center no-repeat transparent;
+  box-shadow: inset 0 -50px 50px rgba(0, 0, 0, .7);
+}
+
+.case:hover {
+  -o-transition: none;
+     transition: none;
+
+  box-shadow: inset 0 -40px 40px rgba(0, 0, 0, .4);
+}
+
+.case__desc {
+  line-height: 1.3;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 5px 10px 5px 7px;
+
+  color: #fff;
+  background-color: #6a920f;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.case__comments {
+  font-size: 11px;
+
+  color: #bbb;
+}
