@@ -1,10 +1,3 @@
-body {
-  width: 1000px;
-  margin: auto;
-
-  -webkit-font-smoothing: antialiased;
-}
-
 .clearfix:before,
 .clearfix:after {
   display: block;
@@ -17,7 +10,7 @@ body {
 
 
 .news-grid {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .news-grid__elem {
@@ -51,7 +44,7 @@ body {
   height: 200px;
   margin-bottom: 10px;
 
-  box-shadow: inset 0 0 30px rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, .3);
 }
 
 .news-image__img {
@@ -66,6 +59,7 @@ body {
 
   width: 100%;
   height: auto;
+  min-height: 100%;
   margin: auto;
 }
 
@@ -80,7 +74,7 @@ body {
   overflow: hidden;
 
   height: 280px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   text-decoration: none;
 
@@ -96,20 +90,35 @@ body {
   left: -9999px;
 
   width: 100%;
+  min-height: 100%;
   height: auto;
   margin: auto;
 }
 
 .news-case__text {
   position: absolute;
+  z-index: 1;
   right: 0;
   bottom: 0;
   left: 0;
 
   padding: 70px 40px 15px 35px;
+}
+
+// :after for gradient, to apply transition
+.news-case__text:after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: '';
+  transition: opacity .5s;
 
   background: none transparent;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
 }
 
 .news-case__heading {
@@ -133,6 +142,21 @@ body {
   background-size: auto 16px;
 }
 
+.news-case:hover .news-case__text {
+  color: #fff;
+}
+
+.news-case:hover .news-case__text:after {
+  transition-duration: .1s;
+
+  opacity: .7;
+}
+
+@media (max-width: 1100px) {
+  .news-case__heading {
+    font-size: 28px;
+  }
+}
 
 
 
@@ -141,7 +165,7 @@ body {
 
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
 
@@ -159,20 +183,31 @@ body {
   padding-left: 100px;
 }
 
+.news-piece__link {
+  font-size: 16px;
+
+  padding-bottom: 3px;
+
+  text-decoration: none;
+
+  color: #000;
+}
+
+.news-piece_major {
+  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.news-piece_major .news-piece__link {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .news-piece__date {
   font-size: 13px;
 
   margin-right: .4em;
 
   color: #eb6400;
-}
-
-.news-piece__link {
-  font-size: 16px;
-
-  text-decoration: none;
-
-  color: #000;
 }
 
 .news-piece__extra {
@@ -195,6 +230,11 @@ body {
   content: ')';
 }
 
+.news-piece_major .news-piece__date,
+.news-piece_major .news-piece__extra {
+  font-size: 17px;
+}
+
 .news-piece__img-link {
   position: absolute;
   top: 20px;
@@ -215,19 +255,37 @@ body {
   height: auto;
 }
 
-.news-piece_major .news-piece__date,
-.news-piece_major .news-piece__extra {
-  font-size: 17px;
-}
-
-.news-piece_major .news-piece__link {
-  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-}
-
 .news-image:hover + .news-piece > .news-piece__link {
   color: #ff5400;
+}
+
+@media (max-width: 1100px) {
+  .news-piece {
+    padding-left: 0;
+  }
+
+  .news-piece_with-image {
+    padding-left: 100px;
+  }
+
+  .news-piece__link,
+  .news-piece__date,
+  .news-piece__extra {
+    line-height: 1.3;
+    font-size: 14px;
+  }
+
+  .news-piece_major .news-piece__link {
+    line-height: 1.3;
+    font-size: 20px;
+  }
+
+  .news-piece_with-image .news-piece__link,
+  .news-piece_with-image .news-piece__date,
+  .news-piece_with-image .news-piece__extra {
+    line-height: 1.4;
+    font-size: 13px;
+  }
 }
 
 
@@ -241,6 +299,8 @@ body {
 
   background-color: #f2fed5;
   box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .submenu__elem {
@@ -271,10 +331,40 @@ body {
 
 .submenu__elem_current .submenu__link {
   font-weight: bold;
+  cursor: default;
 }
 
 .submenu__elem_current:hover .submenu__link,
 .submenu__elem_current:active .submenu__link {
   color: #3f530c;
   background-color: #f2fed5;
+}
+
+
+
+
+.pbutton {
+  display: inline-block;
+
+  text-decoration: none;
+
+  color: #698c15;
+  border: 1px solid #698c15;
+  border-radius: 4px;
+}
+
+.pbutton:hover,
+.pbutton:active {
+  border-color: #ff5400;
+}
+
+.pbutton_huge {
+  font-size: 30px;
+  line-height: 52px;
+
+  height: 54px;
+  padding: 0 1em;
+
+  border-width: 2px;
+  border-radius: 8px;
 }
