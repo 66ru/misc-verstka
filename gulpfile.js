@@ -106,6 +106,6 @@ gulp.task('watch', function() {
 		], ['drugsearch']);
 
 	gulp.watch([
-		'./news/**/*.less'
+		'./news/css/*.less'
 		], ['news']);
 });
