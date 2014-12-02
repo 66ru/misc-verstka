@@ -22,8 +22,10 @@
 .layout__main {
   box-sizing: border-box;
   min-height: 100%;
-  margin: -45px auto -140px;
-  padding: 45px 0 140px;
+  margin-top: -45px;
+  margin-bottom: -140px;
+  padding-top: 45px;
+  padding-bottom: 140px;
 }
 
 .layout__footer {
@@ -33,9 +35,6 @@
 }
 
 .layout__etui {
-  overflow: hidden;
-
   max-width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }

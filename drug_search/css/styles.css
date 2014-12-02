@@ -27,6 +27,7 @@
   background-image: linear-gradient(to bottom, #f8f8f8, #e2e2e2);
 }
 .button_color_grey:hover {
+  color: #666;
   background-color: #fdfdfd;
   background-image: -webkit-linear-gradient(top, #fdfdfd, #e2e2e2);
   background-image: -o-linear-gradient(top, #fdfdfd, #e2e2e2);
