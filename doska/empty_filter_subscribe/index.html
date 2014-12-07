@@ -5395,32 +5395,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     margin-bottom: 10px;
                   }
 
+                  .empty-filter-subscribe__text_subscribed {
+                    display: none;
+                  }
+
                   .empty-filter-subscribe__email {
                     box-sizing: border-box;
                     height: 27px;
                     padding: 0 5px;
                     width: 250px;
                     margin: 0;
-                    vertical-align: bottom;
-                    margin-right: 10px;
+                    vertical-align: top;
+                    margin-right: 7px;
+                    margin-bottom: 10px;
+                    max-width: 49%;
+                    transition: all .4s;
                   }
 
-                  .hidden {
+                  .empty-filter-subscribe__btn_change {
                     display: none;
+                  }
+
+                  .empty-filter-subscribe_subscribed .empty-filter-subscribe__text {
+                    display: none;
+                  }
+
+                  .empty-filter-subscribe_subscribed .empty-filter-subscribe__text_subscribed {
+                    display: block;
+                  }
+
+                  .empty-filter-subscribe_subscribed .empty-filter-subscribe__btn {
+                    display: none;
+                  }
+
+                  .empty-filter-subscribe_subscribed .empty-filter-subscribe__btn_change {
+                    display: inline-block;
+                  }
+
+                  .empty-filter-subscribe_subscribed .empty-filter-subscribe__email {
+                    width: 0;
+                    opacity: 0;
+                    padding: 0;
+                    margin-right: -.5em;
                   }
 
                 </style>
 
                 <form action="#" class="empty-filter-subscribe">
                   <div class="empty-filter-subscribe__text">По&nbsp;выбранным параметрам квартир сейчас нет. Подпишитесь на&nbsp;этот фильтр и&nbsp;получайте все новые объявления по&nbsp;почте.</div>
+                  <div class="empty-filter-subscribe__text empty-filter-subscribe__text_subscribed">По&nbsp;выбранным параметрам квартир сейчас нет. Новые объявления будут приходить на&nbsp;anton.boyarskikh@gmail.com</div>
                   <input type="email" name="empty_filter_subscribe_email" id="empty_filter_subscribe_email" class="empty-filter-subscribe__email" placeholder="Почта">
                   <input type="submit" value="Подписаться " class="empty-filter-subscribe__btn button button_color_grey">
+                  <input type="submit" value="Изменить почту" class="empty-filter-subscribe__btn empty-filter-subscribe__btn_change button button_color_grey">
                 </form>
 
-                <form action="#" class="empty-filter-subscribe hidden">
-                  <div class="empty-filter-subscribe__text">По&nbsp;выбранным параметрам квартир сейчас нет. Новые объявления будут приходить на&nbsp;anton.boyarskikh@gmail.com</div>
-                  <input type="submit" value="Изменить почту" class="empty-filter-subscribe__btn button button_color_grey">
-                </form>
 
                 <script>
                   $(function() {
@@ -5429,7 +5457,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     $btn.on('click', function(e) {
                       e.preventDefault();
-                      $els.toggleClass('hidden');
+                      $els.toggleClass('empty-filter-subscribe_subscribed');
                     });
                   });
                 </script>
