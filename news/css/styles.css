@@ -127,6 +127,8 @@
 .news-piece_with-image {
   padding-top: 15px;
   padding-left: 100px;
+  min-height: 90px;
+  padding-bottom: 10px;
 }
 .news-piece__link {
   font-size: 16px;
@@ -166,7 +168,7 @@
 }
 .news-piece__img-link {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 0;
   overflow: hidden;
   width: 90px;
