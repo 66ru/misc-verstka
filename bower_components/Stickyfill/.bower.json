@@ -1,0 +1,35 @@
+{
+  "name": "Stickyfill",
+  "version": "1.1.1",
+  "homepage": "http://wd.dizaina.net/en/scripts/stickyfill/",
+  "authors": [
+    "Oleg Korsunsky <wd@dizaina.net>"
+  ],
+  "description": "`position: sticky` polyfill",
+  "main": [
+    "dist/stickyfill.min.js"
+  ],
+  "keywords": [
+    "sticky",
+    "polyfill",
+    "framework-agnostic",
+    "library-agnostic"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "_release": "1.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.1",
+    "commit": "8c90eee64a9f2c7d3fa692cd9abe4c94fc8cf45a"
+  },
+  "_source": "git://github.com/wilddeer/stickyfill.git",
+  "_target": "~1.1.1",
+  "_originalSource": "Stickyfill",
+  "_direct": true
+}
