@@ -1193,6 +1193,26 @@ i {
 .news-content p {
   margin-bottom: 24px;
 }
+.news-content h1,
+.news-content h2,
+.news-content h3,
+.news-content h4,
+.news-content h5,
+.news-content h6 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.news-content strong {
+  font-weight: bold;
+}
+.news-content em {
+  font-style: italic;
+}
+.news-content strike {
+  text-decoration: line-through;
+}
 .news-content .news_single_content__photo {
   position: relative;
   z-index: 1;
@@ -1228,6 +1248,7 @@ i {
   text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .news-content .pic-without-cite-header {
+  font-size: 18px;
   font-weight: bold;
   margin: 36px 0 12px;
 }
@@ -1248,6 +1269,7 @@ i {
   content: '';
 }
 .news-content .pic-with-cite-header {
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 12px;
 }
@@ -1292,6 +1314,51 @@ i {
   box-sizing: border-box;
   width: 75.6%;
   height: 100%;
+  padding: 20px 5%;
+  color: #4c4c4c;
+  background-color: #f2ffd3;
+}
+.news-content table.simple-picture_vertical {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.news-content table.simple-picture_vertical p {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.news-content table.positive_picture {
+  width: 100%;
+  margin-bottom: 24px;
+  table-layout: fixed;
+}
+.news-content table.positive_picture a {
+  display: block;
+  width: 100%;
+}
+.news-content table.positive_picture img {
+  display: block;
+  width: 100%;
+}
+.news-content table.positive_picture .table-picture-ico {
+  display: none;
+  overflow: hidden;
+  width: 0;
+}
+.news-content table.positive_picture tbody td:last-child {
+  padding: 0;
+}
+.news-content table.positive_picture tbody td:last-child {
+  width: 100%;
+  background-color: #f00;
+}
+.news-content table.positive_picture strong {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4;
+  display: block;
+  width: 190%;
   padding: 20px 5%;
   color: #4c4c4c;
   background-color: #f2ffd3;
@@ -1390,7 +1457,6 @@ i {
 .news-piece-layout__left {
   float: left;
   width: 18%;
-  min-width: 170px;
   padding-bottom: 600px;
 }
 .news-piece-layout__dummy {
