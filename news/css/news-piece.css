@@ -1193,6 +1193,9 @@ i {
 .news-content p {
   margin-bottom: 24px;
 }
+.news-content p br {
+  margin-bottom: 24px;
+}
 .news-content h1,
 .news-content h2,
 .news-content h3,
