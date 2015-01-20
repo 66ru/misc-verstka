@@ -1,0 +1,117 @@
+.photorep {
+  position: relative;
+
+  overflow: hidden;
+
+  height: 400px;
+}
+
+.photorep__elem:first-child {
+  width: auto;
+  height: 400px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.photorep__elem {
+  float: left;
+  overflow: hidden;
+
+  width: 190px;
+  height: 195px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.photorep__caption {
+  display: none;
+}
+
+
+
+
+.phtrep {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+
+  height: 400px;
+}
+
+.phtrep__elem {
+  display: none;
+}
+
+.phtrep__elem:first-child {
+  position: relative;
+
+  display: block;
+
+  height: 100%;
+}
+
+.phtrep__elem:first-child .phtrep__thumbnail {
+  position: absolute;
+  top: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.phtrep__text {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 70px 40px 15px 35px;
+
+  color: #fff;
+}
+
+.phtrep__text:after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: '';
+  transition: opacity .5s;
+
+  background: none transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+}
+
+.phtrep:hover .phtrep__text:after {
+  transition-duration: .1s;
+
+  opacity: .7;
+}
+
+.phtrep__heading {
+  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.phtrep__info {
+  font-size: 16px;
+  line-height: 20px;
+
+  margin-bottom: 5px;
+  padding-left: 26px;
+
+  background: none left top no-repeat transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg width="23" height="19" viewBox="0 0 23 19" xmlns="http://www.w3.org/2000/svg"><title>Slice 2</title><desc>Created with Sketch.</desc><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#89BD13" offset="0%"/><stop stop-color="#608013" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path d="M16.5 4h3.505C21.098 4 22 4.898 22 6.006v9.988c0 1.11-.893 2.006-1.995 2.006H2.995C1.902 18 1 17.102 1 15.994V6.006C1 4.896 1.893 4 2.995 4H6.5l1.056-2.112C7.8 1.398 8.45 1 9.003 1h4.994c.565 0 1.202.397 1.447.888L16.5 4zm-5 11c2.485 0 4.5-2.015 4.5-4.5S13.985 6 11.5 6 7 8.015 7 10.5 9.015 15 11.5 15zm0-2c1.38 0 2.5-1.12 2.5-2.5S12.88 8 11.5 8 9 9.12 9 10.5s1.12 2.5 2.5 2.5z" fill="url(#a)"/></g></svg>');
+  background-size: auto 16px;
+}
