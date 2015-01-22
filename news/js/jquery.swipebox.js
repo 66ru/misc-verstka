@@ -197,8 +197,14 @@
 					$( '#swipebox-slider' ).append( '<div class="slide"></div>' );
 				} );
 
-				$.each( elements,  function() {
-					$( '#swipebox-dots' ).append( '<span class="swipebox-dot"></span>' );
+				$.each( elements,  function(index) {
+					$( '<span class="swipebox-dot"></span>' ).appendTo( '#swipebox-dots' )
+						.on('click', function() {
+							$this.setSlide(index);
+							$this.preloadMedia(index);
+							$('.swipebox-dot').removeClass('swipebox-dot_current');
+							$(this).addClass('swipebox-dot_current');
+						});
 				} );
 
 				$this.setDim();
@@ -560,6 +566,16 @@
 				} else if ( index === elements.length - 1 ) {
 					$( '#swipebox-next' ).addClass( 'disabled' );
 				}
+
+				this.setDot( index );
+			},
+
+			/**
+			 * Set current dot
+			 */
+			setDot : function ( index ) {
+				$( '#swipebox-dots .swipebox-dot' ).removeClass( 'swipebox-dot_current' );
+				$( '#swipebox-dots .swipebox-dot' ).eq( index ).addClass( 'swipebox-dot_current' );
 			},
 
 			/**
