@@ -110,14 +110,14 @@
   bottom: 90px;
   left: 0;
   box-sizing: border-box;
-  height: 40px;
+  height: 36px;
   padding: 10px 0;
   text-align: center;
 }
 .swipebox-dot {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
   cursor: pointer;
   transition: opacity .4s;
