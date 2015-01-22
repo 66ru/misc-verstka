@@ -33,8 +33,8 @@
 			/* jshint multistr: true */
 			html = '\
 			<div id="swipebox-overlay">\
-				<div class="layout__etui" style="position: relative; height: 100%;">\
-					<div style="position: absolute; top: 0; right: 0; bottom: 130px; left: 0; overflow: hidden;">\
+				<div id="swipebox__etui" class="layout-etui">\
+					<div id="swipebox-main">\
 						<div id="swipebox-slider"></div>\
 						<div id="swipebox-caption"></div>\
 						<div id="swipebox-action">\
