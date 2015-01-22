@@ -46,8 +46,7 @@
 					<div id="swipebox-dots"></div>\
 					<div id="swipebox-ad"></div>\
 				</div>\
-			</div>',
-			dot = '<span class="swipebox-dot"></span>';
+			</div>';
 
 		plugin.settings = {};
 
