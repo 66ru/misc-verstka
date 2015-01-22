@@ -703,13 +703,16 @@
 						$( '#swipebox-slider' ).removeClass( 'rightSpring' );
 					}, 500 );
 				}
+
+				$this.getNextDot();
 			},
 
 			/**
 			 * Get previous slide
 			 */
 			getPrev : function () {
-				var index = $( '#swipebox-slider .slide' ).index( $( '#swipebox-slider .slide.current' ) );
+				var $this = this,
+				  index = $( '#swipebox-slider .slide' ).index( $( '#swipebox-slider .slide.current' ) );
 				if ( index > 0 ) {
 					index--;
 					this.setSlide( index );
@@ -721,6 +724,28 @@
 						$( '#swipebox-slider' ).removeClass( 'leftSpring' );
 					}, 500 );
 				}
+
+				$this.getPrevDot();
+			},
+
+			/**
+			 * Get next dot
+			 */
+			getNextDot : function () {
+				var $this = this,
+					index = $( '#swipebox-dots .swipebox-dots' ).index ( $( '#swipebox-dots .swipebox-dot_current' ) );
+
+				console.log(index);
+			},
+
+			/**
+			 * Get prev dot
+			 */
+			getPrevDot : function () {
+				var $this = this,
+					index = $( '#swipebox-dots .swipebox-dots' ).index ( $( '#swipebox-dots .swipebox-dot_current' ) );
+
+				console.log(index);
 			},
 
 			/**

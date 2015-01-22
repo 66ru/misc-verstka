@@ -116,3 +116,6 @@
   opacity: 1;
   transition: none;
 }
+.swipebox-dot_active {
+  background-color: #6a920f;
+}
