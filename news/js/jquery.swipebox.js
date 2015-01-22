@@ -34,7 +34,7 @@
 			html = '\
 			<div id="swipebox-overlay">\
 				<div class="layout__etui" style="position: relative; height: 100%;">\
-					<div style="position: absolute; top: 0; right: 0; bottom: 90px; left: 0; overflow: hidden;">\
+					<div style="position: absolute; top: 0; right: 0; bottom: 130px; left: 0; overflow: hidden;">\
 						<div id="swipebox-slider"></div>\
 						<div id="swipebox-caption"></div>\
 						<div id="swipebox-action">\
@@ -43,9 +43,11 @@
 							<a id="swipebox-next"></a>\
 						</div>\
 					</div>\
-					<div style="height: 90px; background-color: red; position: absolute; right: 0; bottom: 0; left: 0;"></div>\
+					<div id="swipebox-dots"></div>\
+					<div id="swipebox-ad"></div>\
 				</div>\
-			</div>';
+			</div>',
+			dot = '<span class="swipebox-dot"></span>';
 
 		plugin.settings = {};
 
@@ -193,6 +195,10 @@
 
 				$.each( elements,  function() {
 					$( '#swipebox-slider' ).append( '<div class="slide"></div>' );
+				} );
+
+				$.each( elements,  function() {
+					$( '#swipebox-dots' ).append( '<span class="swipebox-dot"></span>' );
 				} );
 
 				$this.setDim();
