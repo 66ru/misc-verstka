@@ -210,28 +210,110 @@
 
 
 
-.submenuX {
+.secondary-menu {
   overflow: hidden;
 
   height: 45px;
   margin-bottom: 30px;
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
   background-color: #f2fed5;
   box-shadow: 0 0 15px rgba(0, 0, 0, .2);
 }
 
-.submenuX__elem {
+.secondary-menu__menu {
+  overflow: hidden;
+
+  height: 100%;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.secondary-menu__search {
+  position: relative;
+  z-index: 1;
+
+  float: right;
+
+  width: 19%;
+  height: 100%;
+}
+
+.secondary-menu__input {
+  font-size: 14px;
+  line-height: 45px;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  padding-right: 35px;
+  padding-left: 10px;
+
+  color: #3f530c;
+  border: none;
+  background-color: #e3f0c4;
+}
+
+.secondary-menu__input:focus {
+  outline: none;
+}
+
+.secondary-menu__submit {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+
+  width: 35px;
+  height: 45px;
+
+  cursor: pointer;
+  -o-transition: opacity .4s;
+  transition: opacity .4s;
+
+  border: none;
+  background: none center no-repeat transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>magnifier</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M24 31c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C15.716 1 9 7.716 9 16c0 8.284 6.716 15 15 15zm0-5c5.523 0 10-4.477 10-10S29.523 6 24 6s-10 4.477-10 10 4.477 10 10 10z" fill="#3F5213"/><rect fill="#3F5213" transform="rotate(-315 9 31)" x="5" y="22" width="8" height="18" rx="3"/></g></svg>');
+  background-size: 16px;
+}
+
+.secondary-menu__submit:hover {
+  -o-transition: none;
+  transition: none;
+
+  opacity: .7;
+}
+
+.secondary-menu__input::-webkit-input-placeholder {
+  font-style: italic;
+
+  color: #7d8c5d;
+}
+.secondary-menu__input::-moz-placeholder {
+  font-style: italic;
+
+  color: #7d8c5d;
+}
+.secondary-menu__input:-ms-input-placeholder {
+  font-style: italic;
+
+  color: #7d8c5d;
+}
+.secondary-menu__input::-ms-clear {
+  font-style: italic;
+
+  color: #7d8c5d;
+}
+
+.secondary-menu__elem {
   float: left;
 
   height: 100%;
 }
 
-.submenuX__link {
+.secondary-menu__link {
   font-size: 14px;
   line-height: 45px;
 
@@ -245,20 +327,20 @@
   color: #3f530c;
 }
 
-.submenuX__link:hover,
-.submenuX__link:active {
+.secondary-menu__link:hover,
+.secondary-menu__link:active {
   color: #fff;
   background-color: #6b9120;
 }
 
-.submenuX__elem_current .submenuX__link {
+.secondary-menu__elem_current .secondary-menu__link {
   font-weight: bold;
 
   cursor: default;
 }
 
-.submenuX__elem_current:hover .submenuX__link,
-.submenuX__elem_current:active .submenuX__link {
+.secondary-menu__elem_current:hover .secondary-menu__link,
+.secondary-menu__elem_current:active .secondary-menu__link {
   color: #3f530c;
   background-color: #f2fed5;
 }
