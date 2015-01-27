@@ -1,0 +1,64 @@
+.b-afisha-event-seances__row__cell__time a:hover,
+.b-afisha-event-seances__row__cell__time a:active {
+  color: #ff5400;
+}
+
+
+
+
+.b-afisha-event-seances__row__cell__time.movie-tag {
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag_3d {
+  width: 62px;
+  width: 62.5px;
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag_imax-3d {
+  width: 90px;
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag a:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 62px;
+  height: 16px;
+
+  content: '';
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag a:after {
+  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+
+  position: absolute;
+  bottom: 0;
+  left: 36px;
+
+  height: 14px;
+
+  content: '3D';
+  text-align: center;
+
+  color: #607d1f;
+  border-radius: 4px;
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag_3d a:after {
+  content: '3D';
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag_imax-3d a:after {
+  content: 'IMAX-3D';
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag a:hover:after,
+.b-afisha-event-seances__row__cell__time.movie-tag a:active:after {
+  color: #6a920f;
+}
