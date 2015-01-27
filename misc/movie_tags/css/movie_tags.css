@@ -17,6 +17,11 @@
   width: 62.5px;
 }
 
+.b-afisha-event-seances__row__cell__time.movie-tag_imax {
+  width: 62px;
+  width: 62.5px;
+}
+
 .b-afisha-event-seances__row__cell__time.movie-tag_imax-3d {
   width: 90px;
 }
@@ -39,11 +44,10 @@
 
   position: absolute;
   bottom: 0;
-  left: 36px;
+  left: 35px;
 
   height: 14px;
 
-  content: '3D';
   text-align: center;
 
   color: #607d1f;
@@ -52,6 +56,10 @@
 
 .b-afisha-event-seances__row__cell__time.movie-tag_3d a:after {
   content: '3D';
+}
+
+.b-afisha-event-seances__row__cell__time.movie-tag_imax a:after {
+  content: 'IMAX';
 }
 
 .b-afisha-event-seances__row__cell__time.movie-tag_imax-3d a:after {
