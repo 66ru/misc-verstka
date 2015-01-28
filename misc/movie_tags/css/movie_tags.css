@@ -37,6 +37,7 @@
   content: '';
 }
 
+.b-afisha-event-seances__row__cell__time.movie-tag span:after,
 .b-afisha-event-seances__row__cell__time.movie-tag a:after {
   font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 10px;
@@ -54,14 +55,17 @@
   border-radius: 4px;
 }
 
+.b-afisha-event-seances__row__cell__time.movie-tag_3d span:after,
 .b-afisha-event-seances__row__cell__time.movie-tag_3d a:after {
   content: '3D';
 }
 
+.b-afisha-event-seances__row__cell__time.movie-tag_imax span:after,
 .b-afisha-event-seances__row__cell__time.movie-tag_imax a:after {
   content: 'IMAX';
 }
 
+.b-afisha-event-seances__row__cell__time.movie-tag_imax-3d span:after,
 .b-afisha-event-seances__row__cell__time.movie-tag_imax-3d a:after {
   content: 'IMAX-3D';
 }
