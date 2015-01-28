@@ -120,7 +120,7 @@
   bottom: -9999px;
   left: -9999px;
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
   min-height: 100%;
   margin: auto;
