@@ -222,6 +222,7 @@
   }
 }
 .secondary-menu {
+  z-index: 4;
   overflow: hidden;
   height: 45px;
   margin-bottom: 30px;
