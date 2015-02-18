@@ -119,6 +119,9 @@
   height: 40px;
   margin-right: 110px;
 }
+.exrate__controls_map {
+  margin-right: 0;
+}
 .exrate__name-wrap {
   position: absolute;
   top: 0;
@@ -140,9 +143,33 @@
   font-size: 14px;
 }
 .exrate__price {
+  position: relative;
   float: right;
+  box-sizing: border-box;
   width: 50px;
   text-align: center;
+}
+.exrate__price_asc,
+.exrate__price_desc {
+  padding-right: 8px;
+}
+.exrate__price_asc:after,
+.exrate__price_desc:after {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  display: block;
+  width: 7px;
+  height: 30px;
+  content: '';
+  background: none center no-repeat transparent;
+  background-size: 7px;
+}
+.exrate__price_asc:after {
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="7" viewBox="0 0 14 7" xmlns="http://www.w3.org/2000/svg"><title>triangle arrow</title><desc></desc><g fill="none" fill-rule="evenodd"><path d="M0 0h14L7 7 0 0z" fill="#777"/></g></svg>');
+}
+.exrate__price_desc:after {
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="7" viewBox="0 0 14 7" xmlns="http://www.w3.org/2000/svg"><title>triangle arrow</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M14 7H0l7-7 7 7z" fill="#777"/></g></svg>');
 }
 .exrate__price_best {
   font-weight: bold;
@@ -173,6 +200,13 @@
   background: none center no-repeat transparent;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50"><path fill="#004a60" d="M25 42.5l-.8-.9C23.7 41.1 12 27.3 12 19c0-7.2 5.8-13 13-13s13 5.8 13 13c0 8.3-11.7 22.1-12.2 22.7l-.8.8zM25 8c-6.1 0-11 4.9-11 11 0 6.4 8.4 17.2 11 20.4 2.6-3.2 11-14 11-20.4 0-6.1-4.9-11-11-11z"/><path fill="#004a60" d="M25 24c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z"/></svg>');
 }
+.exrate__controls_map .link {
+  margin-left: 12px;
+}
+.exrate__controls_map .link:before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" enable-background="new 0 0 20 20"><path fill="#004a60" d="M14.4 9H8.6c-.552 0-.6.447-.6 1s.048 1 .6 1h5.8c.552 0 .6-.447.6-1s-.048-1-.6-1zm2 5H8.6c-.552 0-.6.447-.6 1s.048 1 .6 1h7.8c.552 0 .6-.447.6-1s-.048-1-.6-1zM8.6 6h7.8c.552 0 .6-.447.6-1s-.048-1-.6-1H8.6c-.552 0-.6.447-.6 1s.048 1 .6 1zM5.4 9H3.6c-.552 0-.6.447-.6 1s.048 1 .6 1h1.8c.552 0 .6-.447.6-1s-.048-1-.6-1zm0 5H3.6c-.552 0-.6.447-.6 1s.048 1 .6 1h1.8c.552 0 .6-.447.6-1s-.048-1-.6-1zm0-10H3.6c-.552 0-.6.447-.6 1s.048 1 .6 1h1.8c.552 0 .6-.447.6-1s-.048-1-.6-1z"/></svg>');
+  background-size: 12px;
+}
 .exrate__controls .m-select {
   font-size: 11px;
   font-weight: normal;
@@ -182,6 +216,7 @@
   height: 16px;
   margin-top: 7px;
   margin-bottom: 0;
+  margin-left: 10px;
   padding-right: 20px;
   background-position: right 4px center;
   background-size: 10px;

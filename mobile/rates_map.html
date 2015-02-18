@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="m-layout">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Новости</title>
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/exrates.css">
+<link rel="stylesheet" href="../fonts/PT Sans Narrow.css">
+<script src="../bower_components/zepto/zepto.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../blocks/m-layout/js/m-layout-init.js"></script>
+<script src="js/foo.js"></script>
+<script src="js/exrates.js"></script>
+
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map" type="text/javascript"></script>
+</head>
+<body class="m-layout__body" style="overflow-x: visible;">
+<div class="m-layout__menu-wrap">
+	<ul class="m-layout__menu m-sidemenu">
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="m-layout__main">
+	<div class="m-menu">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.png" alt="" width="77" height="50"></a>
+		</div>
+		<div class="m-menu__weather">
+			<span class="weather-icon weather-icon_basecloud weather-icon_sunny"></span>
+			<div class="m-menu__weather-now">&#8722;20°</div>
+			<div class="m-menu__weather-tomorrow">завтра &#8722;15°</div>
+		</div>
+	</div>
+
+	<div class="m-text clearfix" id="map-header">
+		<h1 class="m-text__h2">Курсы валют в банках Екатеринбурга</h1>
+
+		<div class="exrate exrate_head clearfix">
+			<div class="exrate__controls exrate__controls_map">
+				<select name="operation" id="operation" class="m-select m-select_thin">
+					<option value="0">Покупка</option>
+					<option value="1">Продажа</option>
+				</select>
+				<select name="currency" id="currency" class="m-select m-select_thin">
+					<option value="0">Доллар</option>
+					<option value="1">Евро</option>
+				</select>
+				<a href="#" class="link">Показать список банков</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="map"></div>
+</div>
+
+
+<script>
+	$(function() {
+		var height = $(window).height() - $('#map-header').height() - $('.m-menu').height();
+
+		$('#map').height(height);
+
+		ymaps.ready(function() {
+			var map = new ymaps.Map("map", {
+		      center: [56.838587, 60.606364],
+		      zoom: 13
+		    });
+		});
+	});
+</script>
+</body>
+</html>
