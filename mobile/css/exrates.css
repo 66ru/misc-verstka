@@ -134,44 +134,38 @@
   top: 2px;
   right: -18px;
   display: block;
-  width: 16px;
-  height: 40px;
-  content: '';
+  width: 18px;
+  height: 38px;
   background: none center no-repeat transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50"><path fill="#666" d="M25 32.4l-9.7-9.7 1.4-1.4 8.3 8.3 8.3-8.3 1.4 1.4z"/></svg>');
 }
 .exrate__name_long {
   font-size: 14px;
 }
 .exrate__price {
-  position: relative;
   float: right;
   box-sizing: border-box;
   width: 50px;
   text-align: center;
 }
-.exrate__price_asc,
-.exrate__price_desc {
-  padding-right: 8px;
-}
-.exrate__price_asc:after,
-.exrate__price_desc:after {
-  position: absolute;
-  top: 0;
-  right: 3px;
-  display: block;
-  width: 7px;
+.exrate__filter_asc:after,
+.exrate__filter_desc:after {
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: bottom;
+  width: 16px;
   height: 30px;
   content: '';
   background: none center no-repeat transparent;
-  background-size: 7px;
+  background-size: 8px;
 }
-.exrate__price_asc:after {
-  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="7" viewBox="0 0 14 7" xmlns="http://www.w3.org/2000/svg"><title>triangle arrow</title><desc></desc><g fill="none" fill-rule="evenodd"><path d="M0 0h14L7 7 0 0z" fill="#777"/></g></svg>');
+.exrate__filter_asc:after {
+  background-image: url('data:image/svg+xml;utf8,<svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg"><title>Untitled 2</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M10 11.4L.3.3h19.4L10 11.4z" fill="#777"/></g></svg>');
 }
-.exrate__price_desc:after {
-  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="7" viewBox="0 0 14 7" xmlns="http://www.w3.org/2000/svg"><title>triangle arrow</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M14 7H0l7-7 7 7z" fill="#777"/></g></svg>');
+.exrate__filter_desc:after {
+  background-image: url('data:image/svg+xml;utf8,<svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg"><title>Untitled 2</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M10 .3l9.7 11.1H.3L10 .3z" fill="#777"/></g></svg>');
 }
-.exrate__price_best {
+.exrate__filter_best {
   font-weight: bold;
   line-height: 30px;
   height: 30px;

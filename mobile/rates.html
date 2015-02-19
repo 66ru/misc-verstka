@@ -95,16 +95,23 @@
 
 
 		<h1 class="m-text__h2">Курсы валют в банках Екатеринбурга</h1>
+	</div>
 
+	<div class="m-text clearfix">
+		<a href="#" class="m-button m-button_left m-button_group_2 m-button_current">Список банков</a>
+		<a href="#" class="m-button m-button_right m-button_group_2">На карте</a>
+	</div>
+
+	<div class="m-text clearfix">
 		<div class="exrate exrate_head clearfix">
-			<div class="exrate__price exrate__price_asc">Продажа</div>
-			<div class="exrate__price exrate__price_desc">Покупка</div>
+			<div class="exrate__price"><span class="exrate__filter">Продажа</span></div>
+			<div class="exrate__price"><span class="exrate__filter exrate__filter_desc">Покупка</span></div>
 			<div class="exrate__controls">
 				<select name="currency" id="currency" class="m-select m-select_thin">
 					<option value="0">Доллар</option>
 					<option value="1">Евро</option>
 				</select>
-				<a href="#" class="link js-show-all-on-map">Показать все на карте</a>
+				<span class="exrate__filter exrate__filter_asc">Банк</span>
 			</div>
 		</div>
 
@@ -276,6 +283,10 @@
 		</div>
 		<a href="http://66.ru" class="m-menu__full-ver">полная версия&nbsp;сайта</a>
 	</div>
+</div>
+
+
+
 
 
 <script>
@@ -315,6 +326,5 @@
 		});
 	});
 </script>
-</div>
 </body>
 </html>
