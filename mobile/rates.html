@@ -10,10 +10,11 @@
 <script src="../bower_components/zepto/zepto.min.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
+<script src="../blocks/m-drugs-map/js/m-drugs-map.js"></script>
 <script src="js/foo.js"></script>
 <script src="js/exrates.js"></script>
 
-<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map" type="text/javascript"></script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark,control.ZoomControl,templateLayoutFactory" type="text/javascript"></script>
 </head>
 <body class="m-layout__body" style="overflow-x: visible;">
 <div class="m-layout__menu-wrap">
@@ -97,185 +98,198 @@
 		<h1 class="m-text__h2">Курсы валют в банках Екатеринбурга</h1>
 	</div>
 
-	<div class="m-text clearfix">
-		<a href="#" class="m-button m-button_left m-button_group_2 m-button_current">Список банков</a>
-		<a href="#" class="m-button m-button_right m-button_group_2">На карте</a>
-	</div>
-
-	<div class="m-text clearfix">
-		<div class="exrate exrate_head clearfix">
-			<div class="exrate__price"><span class="exrate__filter">Продажа</span></div>
-			<div class="exrate__price"><span class="exrate__filter exrate__filter_desc">Покупка</span></div>
-			<div class="exrate__controls">
-				<select name="currency" id="currency" class="m-select m-select_thin">
-					<option value="0">Доллар</option>
-					<option value="1">Евро</option>
-				</select>
-				<span class="exrate__filter exrate__filter_asc">Банк</span>
-			</div>
+	<div class="m-drugs-map">
+		<div class="m-text clearfix">
+			<a href="#" class="m-button m-button_left m-button_group_2 m-button_current m-drugs-map__list-button">Список банков</a>
+			<a href="#" class="m-button m-button_right m-button_group_2 m-drugs-map__map-button">На карте</a>
+		</div>
+		<div class="m-drugs-map__map-wrap">
+			<select name="currency" id="map-currency" class="m-select m-select_thin">
+				<option value="0">Доллар</option>
+				<option value="1">Евро</option>
+			</select>
+			<div class="m-drugs-map__map"></div>
 		</div>
 
-		<div class="exrate">
-			<div class="exrate__price">70,00</div>
-			<div class="exrate__price exrate__price_best">66,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Абсолют Банк</div>
+
+		<div class="m-drugs-map__list-wrap">
+			<div class="m-text clearfix">
+				<div class="exrate exrate_head clearfix">
+					<div class="exrate__price"><span class="exrate__filter">Продажа</span></div>
+					<div class="exrate__price"><span class="exrate__filter exrate__filter_desc">Покупка</span></div>
+					<div class="exrate__controls">
+						<select name="currency" id="currency" class="m-select m-select_thin">
+							<option value="0">Доллар</option>
+							<option value="1">Евро</option>
+						</select>
+						<span class="exrate__filter exrate__filter_asc">Банк</span>
+					</div>
+				</div>
+
+				<div class="exrate">
+					<div class="exrate__price">70,00</div>
+					<div class="exrate__price exrate__price_best">66,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Абсолют Банк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">70,00</div>
+					<div class="exrate__price">64,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Агропромкредит</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">68,73</div>
+					<div class="exrate__price">62,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Азиатско-Тихоокеанский Банк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">67,50</div>
+					<div class="exrate__price">63,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">АК БАРС Банк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">68,20</div>
+					<div class="exrate__price">65,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">АктивКапиталБанк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">69,00</div>
+					<div class="exrate__price">65,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Альфа-Банк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price exrate__price_best">67,00</div>
+					<div class="exrate__price">63,50</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Балтийский Банк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">75,00</div>
+					<div class="exrate__price">65,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Балтинвестбанк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">72,00</div>
+					<div class="exrate__price">62,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Банк «Восточный Экспресс»</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price exrate__price_best">67,00</div>
+					<div class="exrate__price">65,37</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Банк «Вятич»</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">70,00</div>
+					<div class="exrate__price exrate__price_best">66,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Банк «ИНТЕРКОММЕРЦ»</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">70,00</div>
+					<div class="exrate__price">64,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Банк «Кольцо Урала»</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">68,73</div>
+					<div class="exrate__price">62,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Банк «Открытие» Филиал «Губернский»</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">67,50</div>
+					<div class="exrate__price">63,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Банк «Пойдём!»</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">68,20</div>
+					<div class="exrate__price">65,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Банк «Российский Капитал»</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">69,00</div>
+					<div class="exrate__price">65,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Уральский банк Сбербанка России</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price exrate__price_best">67,00</div>
+					<div class="exrate__price">63,50</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Уральский межрегиональный банк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">75,00</div>
+					<div class="exrate__price">65,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">ЧЕЛИНДБАНК</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price">72,00</div>
+					<div class="exrate__price">62,00</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Экспобанк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
+				<div class="exrate">
+					<div class="exrate__price exrate__price_best">67,00</div>
+					<div class="exrate__price">65,37</div>
+					<div class="exrate__name">
+						<div class="exrate__name-wrap">Юниаструм Банк</div>
+					</div>
+					<div class="exrate__map clearfix"></div>
+				</div>
 			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">70,00</div>
-			<div class="exrate__price">64,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Агропромкредит</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">68,73</div>
-			<div class="exrate__price">62,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Азиатско-Тихоокеанский Банк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">67,50</div>
-			<div class="exrate__price">63,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">АК БАРС Банк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">68,20</div>
-			<div class="exrate__price">65,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">АктивКапиталБанк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">69,00</div>
-			<div class="exrate__price">65,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Альфа-Банк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price exrate__price_best">67,00</div>
-			<div class="exrate__price">63,50</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Балтийский Банк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">75,00</div>
-			<div class="exrate__price">65,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Балтинвестбанк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">72,00</div>
-			<div class="exrate__price">62,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Банк «Восточный Экспресс»</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price exrate__price_best">67,00</div>
-			<div class="exrate__price">65,37</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Банк «Вятич»</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">70,00</div>
-			<div class="exrate__price exrate__price_best">66,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Банк «ИНТЕРКОММЕРЦ»</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">70,00</div>
-			<div class="exrate__price">64,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Банк «Кольцо Урала»</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">68,73</div>
-			<div class="exrate__price">62,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Банк «Открытие» Филиал «Губернский»</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">67,50</div>
-			<div class="exrate__price">63,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Банк «Пойдём!»</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">68,20</div>
-			<div class="exrate__price">65,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Банк «Российский Капитал»</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">69,00</div>
-			<div class="exrate__price">65,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Уральский банк Сбербанка России</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price exrate__price_best">67,00</div>
-			<div class="exrate__price">63,50</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Уральский межрегиональный банк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">75,00</div>
-			<div class="exrate__price">65,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">ЧЕЛИНДБАНК</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price">72,00</div>
-			<div class="exrate__price">62,00</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Экспобанк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
-		</div>
-		<div class="exrate">
-			<div class="exrate__price exrate__price_best">67,00</div>
-			<div class="exrate__price">65,37</div>
-			<div class="exrate__name">
-				<div class="exrate__name-wrap">Юниаструм Банк</div>
-			</div>
-			<div class="exrate__map clearfix"></div>
 		</div>
 	</div>
+
 	<div class="m-menu m-menu_bottom">
 		<div class="m-menu__button m-layout__toggle-menu"></div>
 		<div class="m-menu__logo-wrap">
@@ -325,6 +339,51 @@
 			}
 		});
 	});
+</script>
+
+<script>
+$(function() {
+	$('.m-drugs-map__map').each(function() {
+		var $this = $(this);
+
+		ymaps.ready(function() {
+			var map = new ymaps.Map($this[0], {
+				center: [56.84, 60.61],
+				zoom: 12
+			});
+
+			var zoomControl = new ymaps.control.ZoomControl({
+				options: {
+					size: "small",
+					position: {
+						top: 90,
+						right: 10
+					}
+				}
+			});
+			map.controls.add(zoomControl);
+
+			var placemarkLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark placemark_lil placemark_{{ properties.mod }}">{{ properties.price|raw }}</div>');
+
+			var squarePlacemark = new ymaps.Placemark(
+				[56.836076, 60.614539], {
+					price: '63,00/67,00',
+					mod: '' // or 'active', or 'fade'
+				}, {
+					iconOffset: [-30, -29],
+					iconLayout: placemarkLayout,
+						iconShape: {
+							type: 'Rectangle',
+							coordinates: [
+							[-30, -29], [30, -5]
+							]
+						},
+			        }
+				);
+			map.geoObjects.add(squarePlacemark);
+		});
+	});
+});
 </script>
 </body>
 </html>

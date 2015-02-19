@@ -1190,6 +1190,10 @@
   border-left: 5px solid transparent;
 }
 
+.placemark_lil {
+  font-size: 12px;
+}
+
 .placemark_active {
   background-color: #c65e19;
   background-image: -webkit-linear-gradient(top, #ef8c23, #c65e19);

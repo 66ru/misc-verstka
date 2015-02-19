@@ -204,7 +204,6 @@
 
   width: 18px;
   height: 38px;
-
   // content: '';
 
   background: none center no-repeat transparent;
@@ -216,7 +215,6 @@
 }
 
 .exrate__price {
-
   float: right;
 
   box-sizing: border-box;
@@ -227,13 +225,15 @@
 
 .exrate__filter_asc:after,
 .exrate__filter_desc:after {
-display: inline-block;
-line-height: 30px;
-vertical-align: bottom;
+  line-height: 30px;
+
+  display: inline-block;
+
   width: 16px;
   height: 30px;
 
   content: '';
+  vertical-align: bottom;
 
   background: none center no-repeat transparent;
   background-size: 8px;
@@ -314,4 +314,12 @@ vertical-align: bottom;
 
   background-position: right 4px center;
   background-size: 10px;
+}
+
+.m-drugs-map__map-wrap .m-select {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  right: 10px;
+  top: 50px;
 }

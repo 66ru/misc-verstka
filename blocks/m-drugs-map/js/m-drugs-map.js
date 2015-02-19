@@ -9,12 +9,13 @@
 			showMapButtonClassName = 'm-drugs-map__map-button',
 			currentButtonClassName = 'm-button_current',
 
+			mapSelectSelector = '.m-drugs-map__map-wrap .m-select',
+
 			$window = $(window),
 			mobileSafari;
 
 			if(/iP/.test(navigator.platform) == /Safari/i.test(navigator.userAgent)) {
 				mobileSafari = true;
-				console.log(42)
 			}
 
 		$('.' + mainBlockClassName).each(function() {
@@ -51,6 +52,10 @@
 
 				ev.preventDefault();
 				ev.stopPropagation();
+			});
+
+			$(mapSelectSelector).on('click', function() {
+				$(window).scrollTop(mapOffsetTop);
 			});
 
 			$mapWrap.height(windowHeight);
