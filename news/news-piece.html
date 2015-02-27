@@ -51,7 +51,7 @@
         </div>
         <div class="news-piece-layout__main">
           <h1 class="text__h1">На берегу Исети появится новый жилой квартал</h1>
-          <div class="news_single_content content context">
+          <div class="news_single_content context">
             <div class="text__annotation">«Форум-групп» выходит на новую стройплощадку рядом с центром города. У домов жилого комплекса «Ольховский парк» будет закрытый двор и панорамное остекление.</div>
             <div class="news-content-2">
               <table class="simple-table" cellpadding="6" cellspacing="0">
@@ -363,6 +363,54 @@
                 </tbody>
               </table>
               <p>Погрузиться в&nbsp;сказочный мир человеческих фантазий вы сможете всей семьей.</p>
+              <form action="#" class="news-poll">
+                <div class="news-poll__intro">Вопрос</div>
+                <div class="news-poll__question">Вы примете участие в антикризисном марше?</div>
+                <ul class="news-poll__listing">
+                  <li class="news-poll__listing-elem">
+                    <input type="radio" name="vote" id="vote-0" class="news-poll__radio" />
+                    <label for="vote-0" class="news-poll__label">Да, но только если он будет официально согласован</label>
+                    <div class="news-poll__result">
+                      <div class="news-poll__value">14%</div>
+                      <div class="news-poll__bar">
+                        <div class="news-poll__fill" style="width: 14%;"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="news-poll__listing-elem">
+                    <input type="radio" name="vote" id="vote-1" class="news-poll__radio" />
+                    <label for="vote-1" class="news-poll__label">Да, пойду в любом случае</label>
+                    <div class="news-poll__result">
+                      <div class="news-poll__value">41%</div>
+                      <div class="news-poll__bar">
+                        <div class="news-poll__fill" style="width: 41%;"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="news-poll__listing-elem">
+                    <input type="radio" name="vote" id="vote-2" class="news-poll__radio" />
+                    <label for="vote-2" class="news-poll__label">Нет</label>
+                    <div class="news-poll__result">
+                      <div class="news-poll__value">45%</div>
+                      <div class="news-poll__bar">
+                        <div class="news-poll__fill" style="width: 45%;"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <input type="submit" value="Голосовать" class="button button_color_green" />
+                <div class="news-poll__toggle">Посмотреть результаты</div>
+                <div class="news-poll__toggle news-poll__toggle_hidden">Вернуться к голосованию</div>
+              </form>
+              <script>
+                $(function() {
+                  $('.news-poll__toggle').on('click', function() {
+                    $(this).parents('.news-poll').toggleClass('news-poll_results');
+                    $('.news-poll__toggle').toggleClass('news-poll__toggle_hidden');
+                  });
+                });
+              </script>
+
             </div>
             <div class="photorep">
               <a href="http://img.ffffound.com/static-data/assets/6/4f341ba1462676fe3835c8f66174f7f3fbb0f6f5_m.png" class="photorep__main">
