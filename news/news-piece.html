@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/news-piece.css">
   <link rel="stylesheet" href="css/swipebox.css">
 
-  <link href="http://t.66.ru/80d0123570a0ebcc03a9bad6bb215e4a40c02e70/2c53d18317b0920a01555441d07ce62c/client.css" rel="stylesheet" type="text/css"> <!-- Стили для комментов -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="../bower_components/Stickyfill/dist/stickyfill.js"></script>
@@ -316,11 +315,48 @@
                   </tr>
                 </tbody>
               </table>
+
+
+              <!-- news-live -->
+              <div class="news-live-header">
+                <div class="news-live-header__title">Онлайн трансляция</div>
+                <div class="news-live-header__update">
+                  Последнее обновление: <span class="time">1:12</span>
+                  <div class="spinner">
+                    <div class="spinner__bounce spinner__bounce_1"></div>
+                    <div class="spinner__bounce spinner__bounce_2"></div>
+                    <div class="spinner__bounce"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-live-time-tag"><span class="news-live-time-tag__time">0:53</span></div>
               <p>Также поступит и&nbsp;Acer: сейчас продаются товары, завезенные в&nbsp;августе, и&nbsp;на&nbsp;них цены повышаться не&nbsp;будут, но&nbsp;уже следующая партия будет продаваться дороже&nbsp;— примерно на&nbsp;15%. При&nbsp;этом, как&nbsp;сказал гендиректор Acer в&nbsp;России Денис Кутников, сейчас покупательский спрос уже близок к&nbsp;ажиотажному.</p>
-              <h2>Hello world, you don’t look so good.</h2>
+              <div class="news-live-time-tag"><span class="news-live-time-tag__time">0:49</span></div>
               <p>Huawei из-за&nbsp;девальвации рубля вообще пришлось пересмотреть цену на&nbsp;новый флагман.</p>
+              <div class="news-live-time-tag"><span class="news-live-time-tag__time">0:27</span></div>
+              <p>Ведущий специалист отдела продаж ZTE Device Group Виктор Колесниченко объяснил, что&nbsp;азиатские вендоры повышают цены из-за&nbsp;отсутствия прямого расчета по&nbsp;курсу рубля к&nbsp;юаням или&nbsp;другой местной валюте между&nbsp;партнерами: все расчеты с&nbsp;фабриками в&nbsp;Китае производятся в&nbsp;долларах. И&nbsp;чем дороже доллар, тем выше рублевая стоимость в&nbsp;конце цепочки фабрика-потребитель.</p>
+
+              <script>
+                $(function() {
+                  $('.news-live-header__update').on('click', function() {
+                    var $this = $(this);
+
+                    $this.parents('.news-live-header').addClass('news-live-header_updating');
+
+                    setTimeout(function() {
+                      $this.parents('.news-live-header').removeClass('news-live-header_updating');
+                    }, 1500);
+                  });
+                });
+              </script>
+
+              <!-- /news-live -->
+
+
+              <h2>Hello world, you don’t look so good.</h2>
               <h3 class="pic-without-cite-header"> Источник в&nbsp;компании Huawei:</h3>
               <p><ins>— Huawei Ascend Mate 7&nbsp;был представлен в&nbsp;России 20 ноября. Изначально планировалось установить на&nbsp;него официальную цену 24 999 рублей, но&nbsp;из-за&nbsp;ослабления рубля ее бы пришлось повысить спустя пару недель с&nbsp;начала продаж, что&nbsp;выглядело бы странно. Было много споров, и&nbsp;в&nbsp;результате за&nbsp;пару часов до&nbsp;российского анонса цену установили в&nbsp;29 999 рублей.</ins></p>
+              <p>Ведущий специалист отдела продаж ZTE Device Group Виктор Колесниченко объяснил, что&nbsp;азиатские вендоры повышают цены из-за&nbsp;отсутствия прямого расчета по&nbsp;курсу рубля к&nbsp;юаням или&nbsp;другой местной валюте между&nbsp;партнерами: все расчеты с&nbsp;фабриками в&nbsp;Китае производятся в&nbsp;долларах. И&nbsp;чем дороже доллар, тем выше рублевая стоимость в&nbsp;конце цепочки фабрика-потребитель.</p>
               <table border="0" cellpadding="0" cellspacing="0" class="simple-picture simple-picture_vertical">
                 <thead>
                   <tr>
@@ -337,7 +373,6 @@
                   </tr>
                 </tbody>
               </table>
-              <p>Ведущий специалист отдела продаж ZTE Device Group Виктор Колесниченко объяснил, что&nbsp;азиатские вендоры повышают цены из-за&nbsp;отсутствия прямого расчета по&nbsp;курсу рубля к&nbsp;юаням или&nbsp;другой местной валюте между&nbsp;партнерами: все расчеты с&nbsp;фабриками в&nbsp;Китае производятся в&nbsp;долларах. И&nbsp;чем дороже доллар, тем выше рублевая стоимость в&nbsp;конце цепочки фабрика-потребитель.</p>
               <div class="pic-with-cite">
                 <h3 class="pic-with-cite-header">Валерий Горелых, пресс-секретарь ГУ МВД по&nbsp;Свердловской области:</h3>
                 <p class="fo-width-120"><img style="width:100%; max-width:120px;" src="http://s.66.ru/localStorage/collection/f6/d5/05/f5/f6d505f5_resizedScaled_120to120.jpg" class="photo"></p>
