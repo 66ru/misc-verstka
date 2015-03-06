@@ -66,13 +66,14 @@
 
 .news-content {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 27px;
 
   margin: 30px 0;
 }
 
 .news-content p {
-  margin-bottom: 24px;
+  max-width: 680px;
+  margin-bottom: 30px;
 }
 
 .news-content p br {
@@ -310,7 +311,7 @@
 .news-content table.positive_picture,
 .news-content table.negative_picture {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 
   table-layout: fixed;
 }
@@ -520,6 +521,7 @@
   padding-bottom: 0;
 
   background: none center bottom no-repeat transparent;
+  background-size: 100% auto;
 }
 
 .news-piece-layout__main {
@@ -536,6 +538,7 @@
   width: 80%;
   margin-top: 50px;
   margin-left: 2%;
+  padding-bottom: 15px;
 }
 
 .news-piece-layout__section {
@@ -562,7 +565,7 @@
 
 
 .simple-table {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .simple-table th {
@@ -587,13 +590,14 @@
   font-size: 14px;
   line-height: 24px;
 
-  margin: 24px 0 32px;
+  margin: 24px 0 40px;
 }
 
 
 
 
 .annotated-picture {
+  max-width: 700px;
   margin-bottom: 20px;
 }
 
@@ -649,9 +653,10 @@
 
 .simple-blockquote {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
 
-  margin-bottom: 20px;
+  max-width: 700px;
+  margin-bottom: 40px;
 }
 
 .simple-blockquote__heading {
@@ -683,7 +688,7 @@
 }
 
 .news-content-2 .simple-blockquote {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 
@@ -846,12 +851,13 @@
 
 
 .news-live-header {
+  max-width: 645px;
   height: 40px;
   margin: 50px 0 20px;
-  padding: 0 15px 0 10px;
+  padding: 5px 15px 5px 20px;
 
-  color: #fff;
-  background-color: #6a920f;
+  color: #000;
+  background-color: #f2ffd3;
 }
 
 .news-live-header:before,
@@ -870,7 +876,7 @@
 }
 
 .news-live-header__update {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
 
   position: relative;
@@ -881,7 +887,11 @@
 
   cursor: pointer;
 
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #444;
+}
+
+.news-live-header_no-updates .news-live-header__update {
+  display: none;
 }
 
 .news-live-header .spinner {
@@ -899,7 +909,7 @@
 }
 
 .news-live-header .spinner__bounce {
-  background-color: #fff;
+  background-color: #000;
 }
 
 
@@ -908,6 +918,7 @@
 
   position: relative;
 
+  max-width: 680px;
   margin-top: 40px;
   margin-bottom: 15px;
 }

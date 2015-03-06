@@ -321,7 +321,7 @@
               <div class="news-live-header">
                 <div class="news-live-header__title">Онлайн трансляция</div>
                 <div class="news-live-header__update">
-                  Последнее обновление: <span class="time">1:12</span>
+                  4 новых сообщения
                   <div class="spinner">
                     <div class="spinner__bounce spinner__bounce_1"></div>
                     <div class="spinner__bounce spinner__bounce_2"></div>
@@ -344,7 +344,10 @@
                     $this.parents('.news-live-header').addClass('news-live-header_updating');
 
                     setTimeout(function() {
-                      $this.parents('.news-live-header').removeClass('news-live-header_updating');
+                      $this.parents('.news-live-header')
+                        .removeClass('news-live-header_updating')
+                        .addClass('news-live-header_no-updates');
+
                     }, 1500);
                   });
                 });
@@ -447,9 +450,17 @@
               </script>
 
             </div>
+
+
+
+            <!-- photorep -->
             <div class="photorep">
-              <a href="http://img.ffffound.com/static-data/assets/6/4f341ba1462676fe3835c8f66174f7f3fbb0f6f5_m.png" class="photorep__main">
-                <img src="http://img.ffffound.com/static-data/assets/6/4f341ba1462676fe3835c8f66174f7f3fbb0f6f5_m.png" alt="" class="photorep__main-thumbnail">
+              <div class="photorep__info">
+                <div class="photorep__title">Замечательный город Екатеринбург</div>
+                <div class="photorep__photos">10 фотографий</div>
+              </div>
+              <a href="http://s.66demo.ru/localStorage/collection/ea/44/95/1./ea44951_resizedScaled_817to613.jpg" class="photorep__main">
+                <img src="http://s.66demo.ru/localStorage/collection/ea/44/95/1./ea44951_resizedScaled_817to613.jpg" alt="" class="photorep__main-thumbnail">
               </a>
               <div class="photorep__side">
                 <a href="http://img.ffffound.com/static-data/assets/6/ec326c33055ce534a14f854f25d0ce3bf5e9376f_m.jpg" class="photorep__elem">
@@ -461,8 +472,8 @@
                 <a href="http://img.ffffound.com/static-data/assets/6/497aec3439cc0e9d609fd40f2fbd978847e4bca4_m.jpg" class="photorep__elem">
                   <img src="http://img.ffffound.com/static-data/assets/6/497aec3439cc0e9d609fd40f2fbd978847e4bca4_m.jpg" alt="" class="photorep__thumbnail">
                 </a>
-                <a href="http://img.ffffound.com/static-data/assets/6/c6cf1620bb7fd88277c3f27a72f21cdad434158a_m.jpg" class="photorep__elem">
-                  <img src="http://img.ffffound.com/static-data/assets/6/c6cf1620bb7fd88277c3f27a72f21cdad434158a_m.jpg" alt="" class="photorep__thumbnail">
+                <a href="http://img.ffffound.com/static-data/assets/6/3ffa7aaa4583d087a58d3a43c88d7fd8bb6a9b14_m.jpg" class="photorep__elem">
+                  <img src="http://img.ffffound.com/static-data/assets/6/3ffa7aaa4583d087a58d3a43c88d7fd8bb6a9b14_m.jpg" alt="" class="photorep__thumbnail">
                 </a>
               </div>
               <div class="photorep__nonexistent">
@@ -470,9 +481,42 @@
                 <a href="http://img.ffffound.com/static-data/assets/6/7adace088ba677e463dc1ca073f1bf287743dfa2_m.jpg" class="photorep__elem"></a>
                 <a href="http://img.ffffound.com/static-data/assets/6/55ab293137141eff31c9df4e1cb6223664d622e2_m.jpg" class="photorep__elem"></a>
                 <a href="http://img.ffffound.com/static-data/assets/6/1bb442bfc0132ca2d0f764a95df1a791eff12226_m.jpg" class="photorep__elem"></a>
-                <a href="http://img.ffffound.com/static-data/assets/6/3ffa7aaa4583d087a58d3a43c88d7fd8bb6a9b14_m.jpg" class="photorep__elem"></a>
+                <a href="http://img.ffffound.com/static-data/assets/6/c6cf1620bb7fd88277c3f27a72f21cdad434158a_m.jpg" class="photorep__elem"></a>
               </div>
             </div>
+
+
+            <script>
+            $(window).on('load', function() {
+              $('.photorep').each(function() {
+                var $this = $(this),
+                  $main = $this.find('.photorep__main'),
+                  $side = $this.find('.photorep__side'),
+
+                  $img = $this.find('.photorep__main-thumbnail'),
+
+                  w = $img[0].naturalWidth,
+                  h = $img[0].naturalHeight,
+
+                  imgRatio = w/h
+                  containerHeight = 1 / (imgRatio + 1),
+
+                  containerHeightCssValue = containerHeight * 100 + '%',
+                  mainWidthCssValue = (1 - containerHeight) * 100 + '%';
+
+                $this.addClass('photorep_adjusted');
+
+                $this.css( { 'padding-top': containerHeightCssValue } );
+                $main.css( { width: mainWidthCssValue } );
+                $side.css( { width: containerHeightCssValue } );
+              });
+            });
+            </script>
+            <!-- /photorep -->
+
+
+
+
           </div>
         </div>
         <div class="news-piece-layout__dummy" style="background-image: url('http://us.66.ru/530ec4b3f7c0796bbc546369');"></div>
