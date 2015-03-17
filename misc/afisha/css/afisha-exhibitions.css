@@ -1,0 +1,101 @@
+.afisha-exhibitions-date {
+  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 1.3;
+
+  margin: 32px 0 48px;
+  padding-left: 20px;
+}
+
+.afisha-exhibition + .afisha-exhibitions-date {
+  padding-top: 18px;
+
+  border-top: 1px dashed #ccc;
+}
+
+
+
+
+.afisha-exhibition {
+  position: relative;
+
+  max-width: 800px;
+  min-height: 180px;
+  margin-bottom: 56px;
+  padding-right: 300px;
+  padding-left: 20px;
+}
+
+.afisha-exhibition:before,
+.afisha-exhibition:after {
+  display: block;
+  clear: both;
+
+  content: '';
+}
+
+.afisha-exhibition__title {
+  font-size: 20px;
+  line-height: 24px;
+
+  display: inline-block;
+
+  margin-bottom: 24px;
+}
+
+.afisha-exhibition__title:active,
+.afisha-exhibition__title:hover {
+  color: #ff5400;
+}
+
+.afisha-exhibition__info {
+  font-size: 14px;
+  line-height: 18px;
+
+  display: block;
+
+  margin-bottom: 9px;
+}
+
+.afisha-exhibition__key {
+  font-style: italic;
+
+  float: left;
+
+  width: 70px;
+}
+
+.afisha-exhibition__value {
+  margin-left: 75px;
+}
+
+.afisha-exhibition__desc {
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-top: 18px;
+}
+
+.afisha-exhibition__img-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  overflow: hidden;
+
+  width: 240px;
+  height: 100%;
+}
+
+.afisha-exhibition__img {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.afisha-exhibition__img-link:active + .afisha-exhibition__title,
+.afisha-exhibition__img-link:hover + .afisha-exhibition__title {
+  color: #ff5400;
+}
