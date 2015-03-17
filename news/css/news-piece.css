@@ -1700,7 +1700,6 @@ i {
   margin: 30px 0;
 }
 .news-content p {
-  max-width: 680px;
   margin-bottom: 30px;
 }
 .news-content p br {
@@ -2056,7 +2055,6 @@ i {
   margin: 24px 0 40px;
 }
 .annotated-picture {
-  max-width: 700px;
   margin-bottom: 20px;
 }
 .annotated-picture__link {
@@ -2094,7 +2092,6 @@ i {
 .simple-blockquote {
   font-size: 18px;
   line-height: 26px;
-  max-width: 700px;
   margin-bottom: 40px;
 }
 .simple-blockquote__heading {
@@ -2228,7 +2225,6 @@ i {
   display: none;
 }
 .news-live-header {
-  max-width: 645px;
   height: 40px;
   margin: 50px 0 20px;
   padding: 5px 15px 5px 20px;
@@ -2274,7 +2270,6 @@ i {
 .news-live-time-tag {
   font-size: 18px;
   position: relative;
-  max-width: 680px;
   margin-top: 40px;
   margin-bottom: 15px;
 }
@@ -2296,4 +2291,30 @@ i {
 }
 .news-live-header + .news-live-time-tag {
   margin-top: 30px;
+}
+.news-live-sticky {
+  position: fixed;
+  z-index: 9;
+  top: 45px;
+  left: 50%;
+  box-sizing: border-box;
+  height: 35px;
+  padding: 3px 10px 0;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #fff;
+}
+.news-live-sticky__text {
+  transition: color .4s;
+  border-bottom: 1px dashed #999;
+}
+.news-live-sticky:hover {
+  transition-duration: .1s;
+  background-color: #fff;
+}
+.news-live-sticky:hover .news-live-sticky__text {
+  transition-duration: .1s;
+  color: #ff5400;
+  border-bottom-color: #ff5400;
 }
