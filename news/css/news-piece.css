@@ -1444,11 +1444,13 @@ i {
 }
 .photorep__title {
   font-size: 22px;
+  line-height: 22px;
   margin-bottom: 7px;
   white-space: nowrap;
   text-shadow: -1px 1px rgba(0, 0, 0, 0.4);
 }
 .photorep__photos {
+  line-height: 14px;
   position: relative;
   display: block;
   padding-left: 26px;
@@ -1799,6 +1801,7 @@ i {
 .news-content .pic-with-cite-header {
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0;
   margin-bottom: 12px;
 }
 .news-content .pic-with-cite .fo-width-120 {
@@ -2302,8 +2305,8 @@ i {
   padding: 3px 10px 0;
   cursor: pointer;
   transition: background-color 0.4s;
-  background-color: rgba(255, 255, 255, 0.85);
   border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 .news-live-sticky__text {
   transition: color .4s;
@@ -2317,4 +2320,10 @@ i {
   transition-duration: .1s;
   color: #ff5400;
   border-bottom-color: #ff5400;
+}
+.news-list-page__title {
+  font-family: PT Sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 44;
+  margin-bottom: 24px;
 }

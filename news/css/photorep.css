@@ -22,11 +22,13 @@
 }
 .photorep__title {
   font-size: 22px;
+  line-height: 22px;
   margin-bottom: 7px;
   white-space: nowrap;
   text-shadow: -1px 1px rgba(0, 0, 0, 0.4);
 }
 .photorep__photos {
+  line-height: 14px;
   position: relative;
   display: block;
   padding-left: 26px;
