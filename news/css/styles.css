@@ -62,7 +62,7 @@
 .news-case__info_photo {
   padding-left: 26px;
   background: none left top no-repeat transparent;
-  background-image: url('data:image/svg+xml;utf8,<svg width="23" height="19" viewBox="0 0 23 19" xmlns="http://www.w3.org/2000/svg"><title>Slice 2</title><desc>Created with Sketch.</desc><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#89BD13" offset="0%"/><stop stop-color="#608013" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path d="M16.5 4h3.505C21.098 4 22 4.898 22 6.006v9.988c0 1.11-.893 2.006-1.995 2.006H2.995C1.902 18 1 17.102 1 15.994V6.006C1 4.896 1.893 4 2.995 4H6.5l1.056-2.112C7.8 1.398 8.45 1 9.003 1h4.994c.565 0 1.202.397 1.447.888L16.5 4zm-5 11c2.485 0 4.5-2.015 4.5-4.5S13.985 6 11.5 6 7 8.015 7 10.5 9.015 15 11.5 15zm0-2c1.38 0 2.5-1.12 2.5-2.5S12.88 8 11.5 8 9 9.12 9 10.5s1.12 2.5 2.5 2.5z" fill="url(#a)"/></g></svg>');
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAyMyAxOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+U2xpY2UgMjwvdGl0bGU+PGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiIGlkPSJhIj48c3RvcCBzdG9wLWNvbG9yPSIjODlCRDEzIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzYwODAxMyIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTYuNSA0aDMuNTA1QzIxLjA5OCA0IDIyIDQuODk4IDIyIDYuMDA2djkuOTg4YzAgMS4xMS0uODkzIDIuMDA2LTEuOTk1IDIuMDA2SDIuOTk1QzEuOTAyIDE4IDEgMTcuMTAyIDEgMTUuOTk0VjYuMDA2QzEgNC44OTYgMS44OTMgNCAyLjk5NSA0SDYuNWwxLjA1Ni0yLjExMkM3LjggMS4zOTggOC40NSAxIDkuMDAzIDFoNC45OTRjLjU2NSAwIDEuMjAyLjM5NyAxLjQ0Ny44ODhMMTYuNSA0em0tNSAxMWMyLjQ4NSAwIDQuNS0yLjAxNSA0LjUtNC41UzEzLjk4NSA2IDExLjUgNiA3IDguMDE1IDcgMTAuNSA5LjAxNSAxNSAxMS41IDE1em0wLTJjMS4zOCAwIDIuNS0xLjEyIDIuNS0yLjVTMTIuODggOCAxMS41IDggOSA5LjEyIDkgMTAuNXMxLjEyIDIuNSAyLjUgMi41eiIgZmlsbD0idXJsKCNhKSIvPjwvZz48L3N2Zz4K');
   background-size: auto 16px;
 }
 .news-case:hover .news-case__text {
@@ -225,6 +225,9 @@
     line-height: 1.4;
   }
 }
+#body-wrap {
+  min-width: 0 !important;
+}
 .secondary-menu {
   z-index: 4;
   overflow: hidden;
@@ -244,7 +247,8 @@
 .secondary-menu__search {
   position: relative;
   z-index: 1;
-  width: 100%;
+  float: right;
+  width: 240px;
   height: 100%;
 }
 .secondary-menu__input {
@@ -274,7 +278,7 @@
   transition: opacity .4s;
   border: none;
   background: none center no-repeat transparent;
-  background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>magnifier</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M24 31c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C15.716 1 9 7.716 9 16c0 8.284 6.716 15 15 15zm0-5c5.523 0 10-4.477 10-10S29.523 6 24 6s-10 4.477-10 10 4.477 10 10 10z" fill="#3F5213"/><rect fill="#3F5213" transform="rotate(-315 9 31)" x="5" y="22" width="8" height="18" rx="3"/></g></svg>');
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+bWFnbmlmaWVyPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yNCAzMWM4LjI4NCAwIDE1LTYuNzE2IDE1LTE1IDAtOC4yODQtNi43MTYtMTUtMTUtMTVDMTUuNzE2IDEgOSA3LjcxNiA5IDE2YzAgOC4yODQgNi43MTYgMTUgMTUgMTV6bTAtNWM1LjUyMyAwIDEwLTQuNDc3IDEwLTEwUzI5LjUyMyA2IDI0IDZzLTEwIDQuNDc3LTEwIDEwIDQuNDc3IDEwIDEwIDEweiIgZmlsbD0iIzNGNTIxMyIvPjxyZWN0IGZpbGw9IiMzRjUyMTMiIHRyYW5zZm9ybT0icm90YXRlKC0zMTUgOSAzMSkiIHg9IjUiIHk9IjIyIiB3aWR0aD0iOCIgaGVpZ2h0PSIxOCIgcng9IjMiLz48L2c+PC9zdmc+Cg==');
   background-size: 16px;
 }
 .secondary-menu__submit:hover {
@@ -297,6 +301,18 @@
 .secondary-menu__input::-ms-clear {
   font-style: italic;
   color: #7d8c5d;
+}
+.secondary-menu__input:focus::-webkit-input-placeholder {
+  opacity: .5;
+}
+.secondary-menu__input:focus::-moz-placeholder {
+  opacity: .5;
+}
+.secondary-menu__input:focus:-ms-input-placeholder {
+  opacity: .5;
+}
+.secondary-menu__input:focus::-ms-clear {
+  opacity: .5;
 }
 .secondary-menu__elem {
   float: left;

@@ -209,6 +209,9 @@
 
 
 
+#body-wrap {
+  min-width: 0 !important;
+}
 
 .secondary-menu {
   z-index: 4;
@@ -237,7 +240,9 @@
   position: relative;
   z-index: 1;
 
-  width: 100%;
+  float: right;
+
+  width: 240px;
   height: 100%;
 }
 
@@ -275,7 +280,7 @@
 
   border: none;
   background: none center no-repeat transparent;
-  background-image: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>magnifier</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M24 31c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C15.716 1 9 7.716 9 16c0 8.284 6.716 15 15 15zm0-5c5.523 0 10-4.477 10-10S29.523 6 24 6s-10 4.477-10 10 4.477 10 10 10z" fill="#3F5213"/><rect fill="#3F5213" transform="rotate(-315 9 31)" x="5" y="22" width="8" height="18" rx="3"/></g></svg>');
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+bWFnbmlmaWVyPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yNCAzMWM4LjI4NCAwIDE1LTYuNzE2IDE1LTE1IDAtOC4yODQtNi43MTYtMTUtMTUtMTVDMTUuNzE2IDEgOSA3LjcxNiA5IDE2YzAgOC4yODQgNi43MTYgMTUgMTUgMTV6bTAtNWM1LjUyMyAwIDEwLTQuNDc3IDEwLTEwUzI5LjUyMyA2IDI0IDZzLTEwIDQuNDc3LTEwIDEwIDQuNDc3IDEwIDEwIDEweiIgZmlsbD0iIzNGNTIxMyIvPjxyZWN0IGZpbGw9IiMzRjUyMTMiIHRyYW5zZm9ybT0icm90YXRlKC0zMTUgOSAzMSkiIHg9IjUiIHk9IjIyIiB3aWR0aD0iOCIgaGVpZ2h0PSIxOCIgcng9IjMiLz48L2c+PC9zdmc+Cg==');
   background-size: 16px;
 }
 
@@ -291,21 +296,41 @@
 
   color: #7d8c5d;
 }
+
 .secondary-menu__input::-moz-placeholder {
   font-style: italic;
 
   color: #7d8c5d;
 }
+
 .secondary-menu__input:-ms-input-placeholder {
   font-style: italic;
 
   color: #7d8c5d;
 }
+
 .secondary-menu__input::-ms-clear {
   font-style: italic;
 
   color: #7d8c5d;
 }
+
+.secondary-menu__input:focus::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+.secondary-menu__input:focus::-moz-placeholder {
+  opacity: .5;
+}
+
+.secondary-menu__input:focus:-ms-input-placeholder {
+  opacity: .5;
+}
+
+.secondary-menu__input:focus::-ms-clear {
+  opacity: .5;
+}
+
 
 .secondary-menu__elem {
   float: left;
