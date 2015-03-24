@@ -298,21 +298,14 @@
   font-style: italic;
   color: #7d8c5d;
 }
-.secondary-menu__input::-ms-clear {
-  font-style: italic;
-  color: #7d8c5d;
-}
 .secondary-menu__input:focus::-webkit-input-placeholder {
-  opacity: .5;
+  opacity: .3;
 }
 .secondary-menu__input:focus::-moz-placeholder {
-  opacity: .5;
+  opacity: .3;
 }
 .secondary-menu__input:focus:-ms-input-placeholder {
-  opacity: .5;
-}
-.secondary-menu__input:focus::-ms-clear {
-  opacity: .5;
+  opacity: .3;
 }
 .secondary-menu__elem {
   float: left;
