@@ -473,12 +473,12 @@
                 <a href="http://img.ffffound.com/static-data/assets/6/7b8eacc8fa368c68553abebe7e42ddac8b8d0f2f_m.jpg" class="photorep__elem">
                   <img src="http://img.ffffound.com/static-data/assets/6/7b8eacc8fa368c68553abebe7e42ddac8b8d0f2f_m.jpg" alt="" class="photorep__thumbnail">
                 </a>
-                <a href="http://img.ffffound.com/static-data/assets/6/497aec3439cc0e9d609fd40f2fbd978847e4bca4_m.jpg" class="photorep__elem">
+               <!--  <a href="http://img.ffffound.com/static-data/assets/6/497aec3439cc0e9d609fd40f2fbd978847e4bca4_m.jpg" class="photorep__elem">
                   <img src="http://img.ffffound.com/static-data/assets/6/497aec3439cc0e9d609fd40f2fbd978847e4bca4_m.jpg" alt="" class="photorep__thumbnail">
                 </a>
                 <a href="http://img.ffffound.com/static-data/assets/6/3ffa7aaa4583d087a58d3a43c88d7fd8bb6a9b14_m.jpg" class="photorep__elem">
                   <img src="http://img.ffffound.com/static-data/assets/6/3ffa7aaa4583d087a58d3a43c88d7fd8bb6a9b14_m.jpg" alt="" class="photorep__thumbnail">
-                </a>
+                </a> -->
               </div>
               <div class="photorep__nonexistent">
                 <a href="http://img.ffffound.com/static-data/assets/6/7bd886cbed1bcc335bde5b63e6b60e105770ce8b_m.jpg" class="photorep__elem"></a>
@@ -503,16 +503,17 @@
                   h = $img[0].naturalHeight,
 
                   imgRatio = w/h
-                  containerHeight = 1 / (imgRatio + 1),
+                  containerHeight = 1 / (imgRatio + .5),
 
                   containerHeightCssValue = containerHeight * 100 + '%',
-                  mainWidthCssValue = (1 - containerHeight) * 100 + '%';
+                  mainWidthCssValue = (containerHeight * imgRatio) * 100 + '%';
+                  sideWidthCssValue = (containerHeight / 2) * 100 + '%';
 
                 $this.addClass('photorep_adjusted');
 
                 $this.css( { 'padding-top': containerHeightCssValue } );
                 $main.css( { width: mainWidthCssValue } );
-                $side.css( { width: containerHeightCssValue } );
+                $side.css( { width: sideWidthCssValue } );
               });
             });
             </script>
