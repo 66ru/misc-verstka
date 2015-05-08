@@ -1548,7 +1548,7 @@ i {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 130px;
+  bottom: 127px;
   left: 0;
   overflow: hidden;
 }
@@ -1562,11 +1562,11 @@ i {
 #swipebox-dots {
   position: absolute;
   right: 0;
-  bottom: 90px;
+  bottom: 93px;
   left: 0;
+  overflow: hidden;
   box-sizing: border-box;
-  height: 36px;
-  padding: 10px 0;
+  height: 35px;
   text-align: center;
 }
 .swipebox-dot {
@@ -1574,6 +1574,7 @@ i {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+  margin-bottom: 3px;
   cursor: pointer;
   -o-transition: opacity .4s;
   transition: opacity .4s;
@@ -1965,6 +1966,8 @@ i {
 }
 .news-piece-layout__section {
   margin-bottom: 40px;
+}
+.news-piece-layout__section_with-border {
   padding-right: 20px;
   border-right: 1px solid #c7c7c7;
 }
