@@ -850,10 +850,10 @@
 
             _.applyTransition(slideIndex);
 
-            _.$slides.eq(slideIndex).css({
-                opacity: 1,
-                zIndex: 1000
-            });
+            // _.$slides.eq(slideIndex).css({
+            //     opacity: 1,
+            //     zIndex: 1000
+            // });
 
             if (callback) {
                 setTimeout(function() {
