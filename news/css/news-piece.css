@@ -1663,6 +1663,18 @@ i {
 .news-content strike {
   text-decoration: line-through;
 }
+.news-content ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  list-style: disc outside;
+}
+.news-content ol {
+  margin-bottom: 10px;
+  list-style: decimal inside;
+}
+.news-content li {
+  margin-bottom: 5px;
+}
 .news-content table {
   font-size: 14px;
   margin-bottom: 32px;
@@ -2044,8 +2056,8 @@ i {
 .simple-blockquote {
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 40px;
   width: 90%;
+  margin-bottom: 40px;
 }
 .simple-blockquote__heading {
   font-weight: bold;
