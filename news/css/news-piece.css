@@ -1096,8 +1096,7 @@ i {
 }
 .social-button {
   font-family: PT Sans Narrow, Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 13px;
   line-height: 30px;
   display: inline-block;
   box-sizing: border-box;
@@ -1107,6 +1106,7 @@ i {
   padding-left: 36px;
   vertical-align: bottom;
   text-decoration: none;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff;
   border-radius: 4px;
@@ -1132,9 +1132,9 @@ i {
 .social-button_facebook {
   padding-left: 32px;
   background-color: #3a5795;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50"><path fill="#fff" d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z"/></svg>');
-  background-position: 5px center;
-  background-size: auto 28px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><title>Slice 1</title><path d="M90 15c0-7.88-7.116-15-15-15H15C7.116 0 0 7.12 0 15v60c0 7.88 7.116 15 15 15h30V56H34V41h11v-5.844C45 25.076 52.568 16 61.875 16H74v15H61.875C60.548 31 59 32.61 59 35.024V41h15v15H59v34h16c7.884 0 15-7.12 15-15V15z" fill="#FFF" fill-rule="evenodd"/></svg>');
+  background-position: 12px center;
+  background-size: 18px;
 }
 .social-button_twitter {
   background-color: #55acee;
@@ -1144,8 +1144,8 @@ i {
 .social-button_blablanator {
   background-color: #6a920f;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50"><path fill="#fff" d="M15 42h-2l1.2-1.6c.8-1.1 1.3-2.5 1.6-4.2C10.8 33.9 8 29.6 8 24c0-8.6 6.5-14 17-14s17 5.4 17 14c0 8.8-6.4 14-17 14h-.7c-1.6 1.9-4.4 4-9.3 4zm10-30c-9.4 0-15 4.5-15 12 0 6.4 3.9 9.4 7.2 10.7l.7.3-.1.8c-.2 1.6-.5 3-1.1 4.2 3.3-.4 5.2-2.1 6.3-3.5l.3-.4H25c13.5 0 15-8.4 15-12C40 16.5 34.4 12 25 12z"/></svg>');
-  background-position: 7px 1px;
-  background-size: auto 26px;
+  background-position: 8px 2px;
+  background-size: auto 24px;
 }
 .button {
   font-family: Arial, Helvetica, sans-serif;
@@ -1601,6 +1601,7 @@ i {
 }
 .splash-heading__img {
   width: 100%;
+  margin-bottom: 3px;
 }
 .splash-heading__shade {
   position: absolute;
@@ -1637,7 +1638,7 @@ i {
 }
 .news-content p {
   max-width: 90%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .news-content p br {
   margin-bottom: 24px;
@@ -1783,18 +1784,20 @@ i {
   box-sizing: border-box;
   width: 75.6%;
   height: 100%;
+  margin-bottom: 0;
   padding: 20px 5%;
   color: #4c4c4c;
   background-color: #f2ffd3;
 }
 .news-content table.simple-picture_vertical {
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 .news-content table.simple-picture_vertical p {
   position: relative;
   left: 0;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .news-content table.positive_picture,
@@ -1925,6 +1928,9 @@ i {
 .link_tdn {
   text-decoration: none;
 }
+.news-piece-layout__main .text__annotation {
+  width: 90%;
+}
 .news-piece-layout {
   display: block;
   display: -ms-flexbox;
@@ -1943,7 +1949,7 @@ i {
 }
 .news-piece-layout__left .social-button {
   width: 100%;
-  min-width: 130px;
+  min-width: 124px;
   padding-left: 40px;
 }
 .news-piece-layout__dummy {
@@ -1960,7 +1966,7 @@ i {
 .news-piece-layout__footer {
   float: left;
   width: 80%;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 2%;
   padding-bottom: 15px;
 }
@@ -2039,6 +2045,7 @@ i {
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 40px;
+  width: 90%;
 }
 .simple-blockquote__heading {
   font-weight: bold;
@@ -2068,11 +2075,12 @@ i {
 }
 .comms__comments {
   float: left;
-  width: 52%;
+  width: 64%;
+  padding-left: 15%;
 }
 .comms__ad {
   float: left;
-  width: 46%;
+  width: 1%;
   margin-left: 2%;
 }
 .comms_no-ad .comms__comments {
