@@ -13,8 +13,9 @@ body {
 
   overflow: hidden;
 
-  box-sizing: border-box;
   height: 180px;
+
+  border: 1px solid #ccc;
 }
 
 .hbanner__logo-wrap {
@@ -127,7 +128,7 @@ body {
 
   border-radius: 16px;
   background-color: #c6c6c6;
-  background-color: rgba(0, 0, 0, .23);
+  background-color: rgba(192, 192, 192, .6);
 }
 
 .hbanner__buy {
@@ -242,6 +243,62 @@ body {
 
 
 
+.hbanner_slim {
+  height: 90px;
+}
+
+.hbanner_slim .hbanner__logo-wrap {
+  height: 90px;
+}
+
+
+.hbanner_slim .hbanner__logo-img-wrap {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+}
+
+.hbanner_slim .hbanner__link {
+  display: none;
+}
+
+.hbanner_slim .hbanner__elem {
+  height: 90px;
+
+  background-position: center;
+}
+
+.hbanner_slim .hbanner__name {
+  top: 15px;
+
+  padding-left: 13px;
+
+  text-align: left;
+
+  text-shadow: -1px 1px 3px #fff;
+}
+
+.hbanner_slim .hbanner__button-wrap {
+  top: 45px;
+  text-align: left;
+}
+
+.hbanner_slim .hbanner__nav {
+  top: 45px;
+}
+
+.hbanner_slim .hbanner__nav_prev {
+  left: -40px;
+
+  background-position: 50px center;
+}
+
+.hbanner_slim .hbanner__nav_next {
+  right: -40px;
+  background-position: 20px center;
+}
 
 
 
