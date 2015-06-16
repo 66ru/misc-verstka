@@ -1,10 +1,3 @@
-body {
-  min-width: 960px;
-  max-width: 1280px;
-
-  -webkit-font-smoothing: antialiased;
-}
-
 .hbanner {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
@@ -70,7 +63,7 @@ body {
   box-sizing: border-box;
   height: 180px;
   padding-right: 50px;
-  padding-left: 60px;
+  padding-left: 50px;
 }
 
 .hbanner__container {

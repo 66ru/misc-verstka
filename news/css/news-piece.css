@@ -1099,6 +1099,7 @@ i {
   font-size: 13px;
   line-height: 30px;
   display: inline-block;
+  overflow: hidden;
   box-sizing: border-box;
   height: 30px;
   margin-right: 7px;
