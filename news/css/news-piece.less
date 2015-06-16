@@ -67,7 +67,7 @@
 
 .news-content {
   font-size: 18px;
-  line-height: 27px;
+  line-height: 26px;
 
   margin: 30px 0;
 }
@@ -237,7 +237,7 @@
   font-weight: bold;
 
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .news-content .pic-with-cite .fo-width-120 {
@@ -246,7 +246,6 @@
 
   width: 120px;
   margin-bottom: 0;
-  margin-left: 20px;
 }
 
 .news-content .pic-with-cite blockquote {
@@ -256,13 +255,60 @@
 
   box-sizing: border-box;
   margin-right: 20px;
-  margin-left: 180px;
+  margin-left: 150px;
 
   border-radius: 12px;
 }
 
+.news-content .pic-with-cite blockquote:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1px;
+
+  display: block;
+
+  width: 15px;
+
+  content: '';
+
+  background-color: #fff;
+}
+
 .news-content .pic-with-cite blockquote p {
   margin-bottom: 0;
+  padding-left: 30px;
+
+  color: #707070;
+  border-left: 1px solid #aaa;
+}
+
+.news-content .pic-with-cite blockquote p:after {
+  position: absolute;
+  top: 13px;
+  left: -7px;
+
+  display: block;
+
+  content: '';
+
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  border-left: 8px solid transparent;
+}
+
+.news-content .pic-with-cite blockquote p:before {
+  position: absolute;
+  top: 13px;
+  left: -9px;
+
+  display: block;
+
+  content: '';
+
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #aaa;
+  border-left: 9px solid transparent;
 }
 
 
@@ -781,8 +827,11 @@
   margin-bottom: 20px;
 }
 
-.news-poll__listing {
+.news-poll .news-poll__listing {
   margin-bottom: 20px;
+  padding-left: 0;
+
+  list-style: none;
 }
 
 .news-poll__listing-elem {
