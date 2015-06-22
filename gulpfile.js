@@ -83,8 +83,10 @@ gulp.task('realty-score', function() {
 gulp.task('watch', function() {
 	gulp.watch([
 		'./newMain/css/less/**/*.less',
-		'./newMain/css/less/**/*.css'
-		], ['mainmenuupgrade', 'atms', 'mobile', 'weather', 'realty', 'newmain', 'social', 'news']);
+		'./newMain/css/less/**/*.css',
+		'./blocks/**/*.less',
+		'./blocks/**/*.css',
+		], ['mainmenuupgrade', 'atms', 'mobile', 'weather', 'realty', 'newmain', 'news']);
 
 	gulp.watch([
 		'./mobile/css/*.less',
