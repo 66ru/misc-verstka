@@ -61,6 +61,9 @@
   border-top: 1px dotted #eee;
   border-bottom: 1px dotted #fff;
 }
+.exrate_fusty {
+  color: #999;
+}
 .exrate_expand {
   height: 240px;
   border-top: 1px solid #aaa;
@@ -129,7 +132,7 @@
   height: 100%;
   white-space: nowrap;
 }
-.exrate__name-wrap:after {
+.xexrate__name-wrap:after {
   position: absolute;
   top: 2px;
   right: -18px;
@@ -141,6 +144,15 @@
 }
 .exrate__name_long {
   font-size: 14px;
+}
+.exrate_fusty .exrate__name-wrap:after {
+  font-size: 10px;
+  position: absolute;
+  top: -6px;
+  left: 102%;
+  display: block;
+  content: 'Курсы устарели';
+  color: #e99;
 }
 .exrate__price {
   float: right;
@@ -218,7 +230,7 @@
 .m-drugs-map__map-wrap .m-select {
   position: absolute;
   z-index: 99999;
-  background-color: #fff;
-  right: 10px;
   top: 50px;
+  right: 10px;
+  background-color: #fff;
 }
