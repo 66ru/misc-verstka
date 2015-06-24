@@ -145,11 +145,11 @@
 .exrate__name_long {
   font-size: 14px;
 }
-.exrate_fusty .exrate__name-wrap:after {
-  font-size: 10px;
+.exrate_fusty:after {
+  font-size: 8px;
   position: absolute;
-  top: -6px;
-  left: 102%;
+  right: 27px;
+  bottom: -13px;
   display: block;
   content: 'Курсы устарели';
   color: #e99;
