@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="m-layout">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Новости</title>
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/photorep.css" />
+<!-- <script src="../bower_components/zepto/zepto.min.js"></script> -->
+<script src="../bower_components/jquery-1.9.1/jquery.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../blocks/m-layout/js/m-layout-init.js"></script>
+
+<link rel="stylesheet" href="../bower_components/fotorama/fotorama.css" />
+<script src="../bower_components/fotorama/fotorama.js"></script>
+
+</head>
+<body class="m-layout__body">
+<div class="m-layout__menu-wrap">
+	<ul class="m-layout__menu m-sidemenu">
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Новости</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Главные</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Общество</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">В мире</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Политика</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Бизнес</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Происшествия!</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Отдых</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Новости часа</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Авто</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Интернет</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Наука и техника</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Спорт</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Здоровье</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Безумный мир</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Афиша</a></div>
+		</li>
+		<li class="m-sidemenu__section">
+			<div class="m-sidemenu__heading"><a href="#" class="m-sidemenu__link">Объявления</a></div>
+			<div class="m-sidemenu__elems-wrap">
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Автомобили</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Буквально все</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Заполонили</a></li>
+				</ul>
+				<ul class="m-sidemenu__elems">
+					<li class="m-sidemenu__elem m-sidemenu__elem_hilite_yes"><a href="#" class="m-sidemenu__link">Там где</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Вековая</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Лежала пыль</a></li>
+					<li class="m-sidemenu__elem"><a href="#" class="m-sidemenu__link">Все еще лежит</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="m-layout__main" id="main">
+	<div class="m-layout__overlay"></div>
+	<div class="m-menu">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="74" height="50"></a>
+		</div>
+		<div class="m-menu__weather">
+			<span class="weather-icon weather-icon_basecloud weather-icon_sunny"></span>
+			<div class="m-menu__weather-now">&#8722;20°</div>
+			<div class="m-menu__weather-tomorrow">завтра &#8722;15°</div>
+		</div>
+	</div>
+	<div class="m-text clearfix">
+		<a href="#" class="m-button m-button_back">Происшествия!</a>
+	</div>
+	<div class="m-text">
+		<h1 class="m-text__h2">В Донском мужчина ранил поросят</h1>
+		<div class="m-text__date">23 сентября 2013, 11:48</div>
+	</div>
+	<div class="img-link">
+		<img src="http://img.ffffound.com/static-data/assets/6/525205af83bf559e1435cc4e8f3f0e2069249330_m.jpg" alt="" class="img-link__img">
+	</div>
+	<div class="m-text">
+		<p class="m-text__p">В&nbsp;отдел МВД по&nbsp;городу Донской заявил мужчина, что около дома по&nbsp;месту жительства неизвестные, используя огнестрельное оружие, причинили ранение 2&nbsp;поросятам. Ущерб 18&thinsp;000 рублей.</p>
+	</div>
+
+	<div class="fotorama-container">
+		<div class="fotorama"
+				 data-width="100%"
+				 data-height="100%"
+				 data-fit="contain"
+				 data-nav="false">
+			<img src="http://img.ffffound.com/static-data/assets/6/dade06a1e3b75af39182a70a1add718429661793_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/8d76d226d3dd3d7a71ae235b41977fe817f0e39a_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/1968ab5e058aaafe2e6e215f91f2d7ed28ca5796_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/d45d08f39945307d784cc89d6b3e575b4d90da30_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/5f58061495a952756bc9f70d2a3d98f27452aa47_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/d438617daa2a23ccd97875f61b49c29c526b4151_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/a178b344f09b7f26b11055ab192b3066c034de04_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/9673607fa1040add5d4d92fde5356554134511ac_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/0efd788141f560ffe217ebe59d2b47b87347746b_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/dc42fe8a620d33454a9d249da3a770baa6e6876d_m.jpg" alt="">
+		</div>
+	</div>
+	<div class="m-text">
+		<p class="m-text__p">Сотрудниками полиции установлен местный житель, 1983&nbsp;г.р. Изъято охотничье ружье МР-153 калибра 12. Мужчина сознался в&nbsp;содеянном.</p>
+	</div>
+	<div class="m-text clearfix">
+		<a href="#" class="m-button" id="show-comments">Комментарии<span class="m-button__extra">6</span></a>
+	</div>
+	<div class="m-text">
+		<h2 class="m-text__h3">Новости этого часа</h2>
+	</div>
+	<a href="#" class="img-link"><img src="http://img.ffffound.com/static-data/assets/6/f3fbd3c60f72ca17e4431a0e74069c7164dac22c_m.jpg" alt="" class="img-link__img"><span class="img-link__desc">А&nbsp;ведь Милонов предупреждал: гигантские помидоры-геи атакуют Европу</span></a>
+	<a href="#" class="block-link"><span class="news-piece">По-собянински: питерский губернатор придумал, как остаться молодым еще 50&nbsp;лет<span class="news-piece__activity">8</span></span></a>
+	<a href="#" class="block-link"><span class="news-piece news-piece_icon_photo">Василий Сигарев ищет «девушку» в&nbsp;Екатеринбурге для&nbsp;съемок нового фильма<span class="news-piece__activity">11</span></span></a>
+	<a href="#" class="block-link"><span class="news-piece news-piece_icon_video">Управлять «Уралмашзаводом» поставили башкира<span class="news-piece__activity">32</span></span></a>
+	<a href="#" class="block-link"><span class="news-piece">В&nbsp;Свердловской области полиция разыскивает нефть<span class="news-piece__activity">31</span></span></a>
+	<a href="#" class="img-link"><img src="http://img.ffffound.com/static-data/assets/6/bbc791bea9b9b7e5dc86800c8f7b3bb62c53c0c0_m.jpg" alt="" class="img-link__img"><span class="img-link__desc">Математика успеха. Молодой стартапер открыл свой секрет: Talk&nbsp;=&nbsp;Shit&nbsp;+&nbsp;Action</span></a>
+	<a href="#" class="block-link"><span class="news-piece news-piece_icon_photo">Ограблен очередной пункт экспресс-кредитов. На&nbsp;этот раз на&nbsp;Ботанике<span class="news-piece__activity">66</span></span></a>
+	<a href="#" class="block-link"><span class="news-piece news-piece_icon_photo">Уральцы стали обладателями Кубка мира по&nbsp;сабо<span class="news-piece__activity">3</span></span></a>
+		<div class="m-layout__overlay"></div>
+	<div class="m-menu m-menu_bottom">
+		<div class="m-menu__button m-layout__toggle-menu"></div>
+		<div class="m-menu__logo-wrap">
+			<a href="#" class="m-menu__logo-link"><img class="m-menu__logo" src="img/66logo.svg" alt="" width="72" height="50"></a>
+		</div>
+		<a href="http://66.ru" class="m-menu__full-ver">полная версия&nbsp;сайта</a>
+	</div>
+</div>
+<div class="m-layout__close-global"></div>
+</body>
+</html>

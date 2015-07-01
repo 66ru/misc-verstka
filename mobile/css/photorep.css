@@ -1,0 +1,30 @@
+.m-photorep {
+  font-size: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 90px;
+  margin: 10px 0;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.m-photorep__link {
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+}
+.m-photorep__img {
+  display: block;
+  height: 100%;
+}
+.fotorama-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.fotorama {
+  width: 100%;
+}

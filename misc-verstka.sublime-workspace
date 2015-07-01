@@ -1,0 +1,1633 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"brow",
+				"browser-sync"
+			],
+			[
+				"re",
+				"React.PropTypes.oneOf"
+			],
+			[
+				"any",
+				"any_bar"
+			],
+			[
+				"guard",
+				"guard_class"
+			],
+			[
+				"do",
+				"dow	downto(0) { |n| .. }"
+			],
+			[
+				"end",
+				"endpoint"
+			],
+			[
+				"lol",
+				"LolStaticDataRequest"
+			],
+			[
+				"social",
+				"social-button"
+			],
+			[
+				"socia",
+				"social-button"
+			],
+			[
+				"newsla",
+				"news-piece-layout__left"
+			],
+			[
+				"lsp",
+				"letter-spacing"
+			],
+			[
+				"vbanner",
+				"vbanner__name"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"fsm",
+				"wfsm	-webkit-font-smoothing: ${antialiased};"
+			],
+			[
+				"Reaprops",
+				"React.PropTypes.string"
+			],
+			[
+				"Rere",
+				"React.renderComponent"
+			],
+			[
+				"js",
+				"jsx"
+			],
+			[
+				"dump",
+				"dump_layout"
+			],
+			[
+				"smiles",
+				"smilesLists"
+			],
+			[
+				"smilli",
+				"smilesLists"
+			],
+			[
+				"ovx-",
+				"ovx-s	overflow-x: scroll;"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"contai",
+				"containerHeightPerCent"
+			],
+			[
+				"contain",
+				"containerHeightPerCent"
+			],
+			[
+				"img",
+				"imgRatio"
+			],
+			[
+				"linear",
+				"linear-gradient"
+			],
+			[
+				"news-live-header_u",
+				"news-live-header__update"
+			],
+			[
+				"newto",
+				"news-poll__toggle_hidden"
+			],
+			[
+				"news",
+				"news-poll"
+			],
+			[
+				"bl",
+				"baseline"
+			],
+			[
+				"wsp",
+				"whs-pw	white-space: pre-wrap;"
+			],
+			[
+				"lecut",
+				"lecture--photo"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"wa",
+				"w-a	width: auto;"
+			],
+			[
+				"ovx",
+				"ovx-a	overflow-x: auto;"
+			],
+			[
+				"op",
+				"options--elem-current"
+			],
+			[
+				"text",
+				"text-hidden"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"ad",
+				"adjustNamesLenghts"
+			],
+			[
+				"exrate",
+				"exrate__name"
+			],
+			[
+				"exra",
+				"exrate__name"
+			],
+			[
+				"moda",
+				"modalId"
+			],
+			[
+				"open",
+				"openModal"
+			],
+			[
+				"rgb",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"r",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"au",
+				"autoprefixerOptions"
+			],
+			[
+				"rs",
+				"rsz-v	resize: vertical;"
+			],
+			[
+				"movie",
+				"movie-tag"
+			],
+			[
+				"photo",
+				"photorep__wrap"
+			],
+			[
+				"set",
+				"setDot"
+			],
+			[
+				"swipe",
+				"swipebox-dots"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"ind",
+				"index"
+			],
+			[
+				"getPre",
+				"getPrevDot"
+			],
+			[
+				"get",
+				"getNext"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"photorep",
+				"photorep__img-link"
+			],
+			[
+				"conten",
+				"contenter"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"div_by_t",
+				"div_by_three"
+			],
+			[
+				"di",
+				"div_by_fifteen"
+			],
+			[
+				"a",
+				"answer"
+			],
+			[
+				"div",
+				"div_by_five"
+			],
+			[
+				"div_by",
+				"div_by_five"
+			],
+			[
+				"trs",
+				"trs	transition: ${1:prop} ${2:time};"
+			],
+			[
+				"comment__complain",
+				"comment__complain-wrap"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"onClick",
+				"onClickComplainLabel"
+			],
+			[
+				"comment__",
+				"comment__vote_down"
+			],
+			[
+				"hover",
+				"hoverRed"
+			],
+			[
+				"trsf",
+				"trf-sc	transform: scale(${1:x}, ${2:y});"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"dom",
+				"domWind"
+			],
+			[
+				"wi",
+				"windCollapsedClassName"
+			],
+			[
+				"str",
+				"strokeWidth"
+			],
+			[
+				"init",
+				"initFillColor"
+			],
+			[
+				"start",
+				"startColorParsed"
+			],
+			[
+				"star",
+				"startColorParsed"
+			],
+			[
+				"par",
+				"parseColor"
+			],
+			[
+				"we",
+				"-webkit-font-smoothing"
+			],
+			[
+				"rea",
+				"realty-score"
+			],
+			[
+				"ww",
+				"wow-nm	word-wrap: normal;"
+			],
+			[
+				"ele",
+				"elemsCount-1"
+			],
+			[
+				"buin",
+				"buttonInactiveClassName"
+			],
+			[
+				"bu",
+				"buttonInactiveClassName"
+			],
+			[
+				"elc",
+				"elemsCount-1"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"s",
+				"strap"
+			],
+			[
+				"buc",
+				"buttonPrevClassName"
+			],
+			[
+				"stra",
+				"strapClassName"
+			],
+			[
+				"reat",
+				"realty-elems"
+			],
+			[
+				"realty-e",
+				"realty-elems"
+			],
+			[
+				"mma",
+				"m-drugs-map__map-wrap"
+			],
+			[
+				"mawra",
+				"mapWrapClassName"
+			],
+			[
+				"show",
+				"showListButtonClassName"
+			],
+			[
+				"mao",
+				"mainBlockClassName"
+			],
+			[
+				"ru",
+				"rubrics-popup"
+			],
+			[
+				"rubrics",
+				"rubricsPopupExtendedClassName"
+			],
+			[
+				"ruwra",
+				"rubricsPopupWrap"
+			],
+			[
+				"requ",
+				"requestHandlers"
+			],
+			[
+				"tbc",
+				"table-cell"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"new",
+				"newmain"
+			],
+			[
+				"t",
+				"table"
+			],
+			[
+				"wfs",
+				"wfsm-a	-webkit-font-smoothing: antialiased;"
+			],
+			[
+				"n",
+				"normal"
+			],
+			[
+				"weath",
+				"weatherBlocks"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"mweather",
+				"m-weather__heading"
+			],
+			[
+				"m-xweth",
+				"m-xweather_wide"
+			],
+			[
+				"loq",
+				"loaderOpaqueClass"
+			],
+			[
+				"load",
+				"loaderShowClass"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"loa",
+				"loader_visible"
+			],
+			[
+				"wea",
+				"weather"
+			],
+			[
+				"weat",
+				"weather__row"
+			],
+			[
+				"tac",
+				"table-cell"
+			],
+			[
+				"trf",
+				"trf-t	transform: translate(${1:x}, ${2:y});"
+			],
+			[
+				"ws",
+				"whs	white-space"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"layout",
+				"layoutOverlay"
+			],
+			[
+				"lawr",
+				"layoutMenuWrapClass"
+			],
+			[
+				"l",
+				"layoutClass"
+			],
+			[
+				"layou",
+				"layoutMainOpenMenuClass"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"do",
+				"Set Syntax: Dockerfile"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"jx",
+				"Set Syntax: JSX"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"gis",
+				"Gist: Insert Gist"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upga",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Gist: Insert Gist"
+			],
+			[
+				"eco",
+				"Set Syntax: HTML (ECO)"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"dev",
+				"DevDocs: Search From Input"
+			],
+			[
+				"rust",
+				"Set Syntax: Rust"
+			],
+			[
+				"rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"ejs",
+				"Set Syntax: EJS (<% and %>)"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"upgar",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"inser",
+				"Gist: Insert Gist"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"liq",
+				"Set Syntax: HTML (Liquid)"
+			],
+			[
+				"remov",
+				"Emmet: Remove Tag"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"help",
+			"pwd",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/node_modules"
+	],
+	"file_history":
+	[
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/gulpfile_old.js",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/gulpfile.js",
+		"/Users/antonbelyaev/Documents/Workshop/dump 2015/gulpfile.js",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css/photorep.less",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/package.json",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css/news-piece.css",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css/styles.css",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css/news-piece.less",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/newMain/css/less/blocks/button/css/button.css",
+		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/User/Autoprefixer.sublime-settings",
+		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/gulpfile.js",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/misc-verstka.sublime-project",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/chef/vagrantfiles/gpor/Vagrantfile",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/_db/mysql/my.cnf",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/chef/vagrantfiles/gpor/params.yaml",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/_db/conf/my.cnf",
+		"/Users/antonbelyaev/.profile",
+		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/ritopls.gemspec",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/Guardfile",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/lib/ritopls/request.rb",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/Rakefile",
+		"/Users/antonbelyaev/.guard.rb",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/test/lol_static_data_request_spec.rb",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/test/client_spec.rb",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/lib/ritopls.rb",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/Gemfile",
+		"/Users/antonbelyaev/Documents/Workshop/ritopls/test/api_version_test.rb",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/misc/banners/css/styles.css",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/blocks/social-button/social-button.less",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/js/init_social_buttons.js",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/news-piece.html",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/misc/banners/index.html",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css/styles.less",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/img_base64/facebook.svg",
+		"/Users/antonbelyaev/Library/Caches/com.binarynights.ForkLift2/#103/class-twitter.php",
+		"/Users/antonbelyaev/Library/Caches/com.binarynights.ForkLift2/#85/index.php",
+		"/Volumes/u13888.netangels.ru/www/VIRUS_FILE.TXT",
+		"/Users/antonbelyaev/Library/Caches/com.binarynights.ForkLift2/#17/class-simplepie.php",
+		"/Users/antonbelyaev/Library/Caches/com.binarynights.ForkLift2/#8/index.php",
+		"/Users/antonbelyaev/Library/Caches/com.binarynights.ForkLift2/#5/index.php",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/bower_components/slick.js/slick/slick.js",
+		"/Applications/League of Legends.app/Contents/LoL/RADS/system/locale.cfg",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/photorep.html",
+		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/antonbelyaev/Documents/Workshop/dump 2015/Dockerfile",
+		"/Users/antonbelyaev/Documents/Workshop/dump 2015/docker-compose.yml",
+		"/Users/antonbelyaev/Documents/Workshop/dump 2015/dump/settings_local.py",
+		"/Applications/League of Legends.app/Contents/LoL/Config/input.ini",
+		"/Users/antonbelyaev/Documents/Workshop/dump 2015/requirements.txt",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/chef/vagrantfiles/gpor/attributes.yaml",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/chef/nodes/ekb-gpor-1.json",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/blablanator/frontend/webpack.conf.js",
+		"/Users/antonbelyaev/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/ruby-lol-0.10.0/lib/lol/rune_slot.rb",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/blablanator/frontend/src/emoji.json",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/blablanator/frontend/src/libs/emojione/emoji.json",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/blablanator/frontend/src/libs/emojione/lib/js/emojione.js",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/blablanator/frontend/smiles.js",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/blablanator/frontend/webpack.dev.conf.js",
+		"/Users/antonbelyaev/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/ruby-lol-0.10.0/Rakefile",
+		"/Users/antonbelyaev/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/ruby-lol-0.10.0/lib/lol.rb",
+		"/Users/antonbelyaev/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/ruby-lol-0.10.0/spec/lol/client_spec.rb",
+		"/Users/antonbelyaev/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/ruby-lol-0.10.0/ruby-lol.gemspec",
+		"/Users/antonbelyaev/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/ruby-lol-0.10.0/lib/lol/autoloader.rb",
+		"/Users/antonbelyaev/Workshop/66.ru/blablanator/bower.json",
+		"/Users/antonbelyaev/Desktop/untitled",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/news/css/photorep.less",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/blocks/news-case/news-case.less",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/news/css/styles.less",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/node_modules/gulp/node_modules/minimist/test/stop_early.js",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/b-credit-widget/simple.html",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/news/news-piece.html",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/news/css/news-piece.less",
+		"/Users/antonbelyaev/Desktop/untitled.sh",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/_spikes.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/sked.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/talks_list.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/sked_mobile.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/base.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/partners_row.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/sponsors_list.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/index_sked.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/footer.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/for_partners.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/trigrid.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/switch.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/header.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/index.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/lodash/internal/trimmedRightIndex.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/lodash/array/takeRight.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/text.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/dump/participate.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/panes.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/price.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/lodash/internal/shimIsPlainObject.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/index.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/sexagrid.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/lodash/string/startsWith.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/browser-sync-ui/static/server-info.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/browser-sync-ui/node_modules/weinre/web/client/CookieItemsView.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/dump_layout.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/_index.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/gulp-less/node_modules/less/test/css/extend-clearfix.css",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/gulp/node_modules/semver/test/clean.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/browser-sync-ui/lib/client-elements.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/ChangeLog.md",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/config.py",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/talks.html",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/menu.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/modal.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/scripts/isMobile.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/link.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/less/button.less",
+		"/Users/antonbelyaev/Workshop/dump 2015/node_modules/browser-sync/node_modules/lodash/internal/shimKeys.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/templates/sked-mobile.html",
+		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/src/components/video.js",
+		"/Users/antonbelyaev/Workshop/66.ru/blablanator/package.json",
+		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/src/modules/comments/less/smiles.less",
+		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/src/modules/comments/less/mobile.less",
+		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/modules/comments/templates.js",
+		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/humans.txt",
+		"/Users/antonbelyaev/Workshop/dump 2015/gulpfile.js",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/mobile/news-piece.html",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/news/img_base64/ei-sc-facebook.svg",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/newMain/css/doskaNewCard_standalone.css",
+		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/newMain/css/less/blocks/b-news-item/css/b-news-item.css"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"",
+			"/Users/antonbelyaev/Workshop/dump 2015/dump/templates",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console",
+			"dump/static",
+			"803380",
+			"folder",
+			"icon",
+			"true",
+			"close",
+			"tab",
+			", '\\n'",
+			"Обсудить</span> (33)</a>",
+			"Твитнуть</span></a>",
+			"Поделиться</span></a>",
+			"social social-button__label",
+			"npllOffsetTop",
+			"addremove",
+			"scroll",
+			"left",
+			"Поделиться",
+			"8",
+			"red",
+			".hbanner_",
+			"128",
+			"absolute",
+			"20px",
+			"hbanner",
+			"      infinite: false,\n",
+			"hbanner__nav",
+			"hban",
+			"h",
+			"buy",
+			"<div class=\"vbanner__button-wrap\">\n            <div class=\"vbanner__button\">\n              <a href=\"#\" class=\"vbanner__buy\">Добавить в заказ</a>\n            </div>\n          </div>",
+			"vbanner__price",
+			"vbanner__name vbanner__name-wrap",
+			"<div class=\"vbanner__name\"",
+			"hbanner",
+			".banner",
+			"banner",
+			"summary--photo",
+			"select--link",
+			"/li",
+			"li",
+			"li ",
+			"li",
+			"select--link",
+			"I ",
+			"primary",
+			"red",
+			"text={this.state.text}",
+			"text",
+			"handleChange",
+			"20px",
+			"10px",
+			"#d93600",
+			"event",
+			"updateText",
+			"margin",
+			"banner__button",
+			"0",
+			"relative",
+			"banner__button",
+			"banner__price",
+			"banner__buy",
+			"li class=\"banner__elem",
+			"JSX",
+			"CREATE",
+			"emoji",
+			"config.userUrl.replace",
+			"dasherize",
+			"autoload",
+			" autoload",
+			"def autoload",
+			"ty: .5;",
+			"third",
+			".dump_layout-mobile ",
+			"ird",
+			"talks_list--time",
+			"10px",
+			".talks_list-slot .talks_list--el",
+			".talks_list-slot .talks_list--elem",
+			"slick",
+			"&emsp;",
+			".news-content .news_singl",
+			"currentSmilesList",
+			"screen and ",
+			"margin",
+			"mg-link",
+			"title",
+			" > .afisha-exhibition__img",
+			"link",
+			".afisha-exhibition__img",
+			"afisha-exhibition__title",
+			"afisha-exhibition__img-link",
+			"afisha-exhibition__img",
+			"desc",
+			"afisha-exhibition__elem",
+			"afisha-exhibitions-row",
+			".afisha-exhibitions-row",
+			"Перерыв",
+			".talks_list--time",
+			"                    <div class=\"talks_list--section\">Системный анализ</div>\n",
+			"                    <div class=\"talks_list--section\">Дизайн</div>\n",
+			"                    <div class=\"talks_list--section\">Тестирование</div>\n",
+			"<div class=\"talks_list--section\">Serverside.<span class=\"ttc\">&#x200b;Knowle",
+			"<div class=\"talks_list--section\">Serverside.<span",
+			"<div class=\"talks_list--section\">Fronttalks</div>",
+			"<div class=\"talks_list--section\">Управление разработкой</div>",
+			"a href=\"/section//#talk_\" ",
+			"a href=\"#\" class=\"talks_list--elem",
+			"Доклады",
+			"<div class=\"break\">",
+			"sexagrid--col ",
+			"href=\"#\"",
+			"#",
+			"span class=\"talks_list--elem",
+			"14:30&ndash;15:10",
+			"magenta",
+			"Тестирование",
+			"12:50&ndash;13:30",
+			"12:00&ndash;12:40",
+			"Тестирование",
+			"wrap-half",
+			"talks_list--wrap-half",
+			"12:50&ndash;13:30",
+			"12:00&ndash;12:40",
+			"magenta",
+			"Serverside.<span class=\"ttc\">&#x200b;Knowledge</span>",
+			"ochre",
+			"talks_list--elem-c-green"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\t",
+			"",
+			"\\t",
+			"(../css/less/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 299.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 126.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 220.0
+	},
+	"pinned_build_system": "",
+	"project": "misc-verstka.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"button",
+				"newMain/css/less/blocks/button/css/button.css"
+			],
+			[
+				"test",
+				"test/api_version_test.rb"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"newssty",
+				"news/css/styles.less"
+			],
+			[
+				"swipe",
+				"news/js/jquery.swipebox.js"
+			],
+			[
+				"news-pie",
+				"news/news-piece.html"
+			],
+			[
+				"miscbannersin",
+				"misc/banners/index.html"
+			],
+			[
+				"photore",
+				"news/photorep.html"
+			],
+			[
+				"emoji.json",
+				"frontend/src/emoji.json"
+			],
+			[
+				"lol",
+				"lib/lol.rb"
+			],
+			[
+				"gems",
+				"ruby-lol.gemspec"
+			],
+			[
+				"req",
+				"lib/lol/request.rb"
+			],
+			[
+				"gemsp",
+				"ruby-lol.gemspec"
+			],
+			[
+				"clien",
+				"lib/lol/client.rb"
+			],
+			[
+				"newsstyl",
+				"news/css/styles.less"
+			],
+			[
+				"foote",
+				"dump/static/less/footer.less"
+			],
+			[
+				"footer",
+				"dump/static/less/footer.less"
+			],
+			[
+				"trigrid",
+				"dump/static/less/trigrid.less"
+			],
+			[
+				"partner",
+				"dump/templates/dump/partners_row.html"
+			],
+			[
+				"sponsor",
+				"dump/templates/dump/sponsors_list.html"
+			],
+			[
+				"index",
+				"dump/templates/dump/index.html"
+			],
+			[
+				"header",
+				"dump/static/less/header.less"
+			],
+			[
+				"swi",
+				"dump/static/less/switch.less"
+			],
+			[
+				"indexless",
+				"dump/static/less/_index.less"
+			],
+			[
+				"talksli",
+				"dump/static/less/talks_list.less"
+			],
+			[
+				"sex",
+				"dump/static/less/sexagrid.less"
+			],
+			[
+				"ske",
+				"dump/templates/dump/sked_mobile.html"
+			],
+			[
+				"layou",
+				"dump/static/less/dump_layout.less"
+			],
+			[
+				"base",
+				"dump/templates/dump/base.html"
+			],
+			[
+				"sked",
+				"dump/templates/dump/sked_mobile.html"
+			],
+			[
+				"spil",
+				"dump/static/less/_spikes.less"
+			],
+			[
+				"newspiele",
+				"news/css/news-piece.less"
+			],
+			[
+				"newsnews",
+				"news/news-piece.html"
+			],
+			[
+				"afishainde",
+				"misc/afisha/index.html"
+			],
+			[
+				"sexa",
+				"dump/static/less/sexagrid.less"
+			],
+			[
+				"talks",
+				"dump/static/talks.html"
+			],
+			[
+				"spik",
+				"dump/static/less/_spikes.less"
+			],
+			[
+				"billet",
+				"dump/static/less/billet.less"
+			],
+			[
+				"talkslis",
+				"dump/static/less/talks_list.less"
+			],
+			[
+				"_inde",
+				"dump/static/less/_index.less"
+			],
+			[
+				"newspi",
+				"news/news-piece.html"
+			],
+			[
+				"butto",
+				"newMain/css/less/blocks/button/css/button.css"
+			],
+			[
+				"spikes",
+				"dump/static/less/_spikes.less"
+			],
+			[
+				"spi",
+				"dump/static/less/_spikes.less"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"text",
+				"dump/static/less/text.less"
+			],
+			[
+				"newpiec",
+				"news/news-piece.html"
+			],
+			[
+				"newspie",
+				"mobile/news-piece.html"
+			],
+			[
+				"inde",
+				"dump/static/index.html"
+			],
+			[
+				"spike",
+				"dump/static/less/_spikes.less"
+			],
+			[
+				"manage",
+				"manage.py"
+			],
+			[
+				"model",
+				"dump/models.py"
+			],
+			[
+				"butt",
+				"dump/static/less/button.less"
+			],
+			[
+				"price",
+				"dump/static/less/price.less"
+			],
+			[
+				"but",
+				"dump/static/less/button.less"
+			],
+			[
+				"formle",
+				"dump/static/less/form.less"
+			],
+			[
+				"form",
+				"dump/forms.py"
+			],
+			[
+				"side",
+				"dump/static/less/side.less"
+			],
+			[
+				"foot",
+				"dump/static/less/footer.less"
+			],
+			[
+				"dumla",
+				"dump/static/less/dump_layout.less"
+			],
+			[
+				"link",
+				"dump/static/less/link.less"
+			],
+			[
+				"pri",
+				"dump/static/less/price.less"
+			],
+			[
+				"indexles",
+				"dump/static/less/_index.less"
+			],
+			[
+				"lay",
+				"dump/static/less/dump_layout.less"
+			],
+			[
+				"options",
+				"dump/static/less/options.less"
+			],
+			[
+				"anes",
+				"dump/static/less/panes.less"
+			],
+			[
+				"msele",
+				"blocks/m-select/css/m-select.css"
+			],
+			[
+				"indele",
+				"dump/static/less/_index.less"
+			],
+			[
+				"panes",
+				"dump/static/less/panes.less"
+			],
+			[
+				"optio",
+				"dump/static/less/options.less"
+			],
+			[
+				"per",
+				"dump/static/less/perk.less"
+			],
+			[
+				"duly",
+				"dump/static/less/dump_layout.less"
+			],
+			[
+				"ul",
+				"dump/static/less/ul.less"
+			],
+			[
+				"for",
+				"dump/static/for_partners.html"
+			],
+			[
+				"modal",
+				"dump/static/less/modal.less"
+			],
+			[
+				"ind",
+				"dump/static/index.html"
+			],
+			[
+				"dumpl",
+				"dump/static/less/dump_layout.less"
+			],
+			[
+				"thi",
+				"dump/static/third-post.html"
+			],
+			[
+				"_ind",
+				"dump/static/less/_index.less"
+			],
+			[
+				"moda",
+				"dump/static/less/modal.less"
+			],
+			[
+				"prices",
+				"dump/static/less/prices.less"
+			],
+			[
+				"tex",
+				"dump/static/less/text.less"
+			],
+			[
+				"frpart",
+				"dump/static/for_partners.html"
+			],
+			[
+				"_in",
+				"dump/static/less/_index.less"
+			],
+			[
+				"dump",
+				"dump/static/less/dump_layout.less"
+			],
+			[
+				"main",
+				"dump/static/less/main.less"
+			],
+			[
+				"icon",
+				"dump/static/less/icon.less"
+			],
+			[
+				"pend",
+				"dump/static/less/pending.less"
+			],
+			[
+				"likely",
+				"dump/static/css/likely.css"
+			],
+			[
+				"head",
+				"dump/static/less/header.less"
+			],
+			[
+				"hea",
+				"dump/static/less/header.less"
+			],
+			[
+				"me",
+				"dump/static/less/menu.less"
+			],
+			[
+				"dulay",
+				"dump/static/less/dump_layout.less"
+			],
+			[
+				"indeless",
+				"dump/static/less/_index.less"
+			],
+			[
+				"forpar",
+				"dump/static/for_partners.html"
+			],
+			[
+				"photo",
+				"news/css/photorep.less"
+			],
+			[
+				"movieta",
+				"misc/movie_tags/index.html"
+			],
+			[
+				"news/css",
+				"news/css/styles.less"
+			],
+			[
+				"newsstyless",
+				"news/css/styles.less"
+			],
+			[
+				"photoreple",
+				"news/css/photorep.less"
+			],
+			[
+				"photorecss",
+				"news/css/photorep.css"
+			],
+			[
+				"newind",
+				"news/index.html"
+			],
+			[
+				"newsple",
+				"news/css/news-piece.less"
+			],
+			[
+				"newspiece",
+				"news/news-piece.html"
+			],
+			[
+				"newscase",
+				"blocks/news-case/news-case.less"
+			],
+			[
+				"newsind",
+				"news/index.html"
+			],
+			[
+				"gridcss",
+				"blocks/grid/css/grid.css"
+			],
+			[
+				"newsin",
+				"news/index.html"
+			],
+			[
+				"layo",
+				"blocks/layout/layout.less"
+			],
+			[
+				"layout",
+				"blocks/layout/layout.less"
+			],
+			[
+				"doskaemp",
+				"doska/empty_filter_subscribe/index.html"
+			],
+			[
+				"empty_",
+				"doska/empty_filter_subscribe/index.html"
+			],
+			[
+				"buttn",
+				"newMain/css/less/blocks/button/css/button.css"
+			],
+			[
+				"reset",
+				"blocks/_meta/reset.less"
+			],
+			[
+				"news/in",
+				"news/index.html"
+			],
+			[
+				"_impo",
+				"blocks/_meta/_imports.less"
+			],
+			[
+				"news/",
+				"news/index.html"
+			],
+			[
+				"lent",
+				"news/lenta.html"
+			],
+			[
+				"lenta",
+				"news/lenta.html"
+			],
+			[
+				"comment",
+				"frontend/comments.html"
+			],
+			[
+				"normalize",
+				"bower_components/normalize-css/normalize.css"
+			],
+			[
+				"boot",
+				"bower_components/bootstrap/less/bootstrap.less"
+			],
+			[
+				"css",
+				"node_modules/gulp-less/node_modules/less/test/css/css.css"
+			],
+			[
+				"notesma",
+				"notes/map.html"
+			],
+			[
+				"staticspe",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"foo",
+				"app/views/layouts/_footer.html.erb"
+			],
+			[
+				"statispe",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
