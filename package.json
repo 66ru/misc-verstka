@@ -1,11 +1,14 @@
 {
-  "name": "bem",
-  "version": "0.1.0",
+  "name": "misc-verstka",
+  "version": "0.0.0",
   "devDependencies": {
-    "gulp-util": "~2.2.12",
-    "gulp": ">3.5.0",
-    "gulp-less": ">1.1.10",
-    "gulp-watch": "~0.5.0",
-    "browser-sync": "~0.5.7"
+    "autoprefixer-core": "^5.2.1",
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "gulp-postcss": "^5.1.9",
+    "gulp-sourcemaps": "^1.5.2",
+    "minimist": "^1.1.1",
+    "stream-combiner2": "^1.0.2"
   }
 }

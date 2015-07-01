@@ -1,113 +1,60 @@
-var gulp = require('gulp');
-require('gulp-watch');
+var gulp = require('gulp'),
+  autoprefixer = require('autoprefixer-core'),
+  browserSync = require('browser-sync'),
+  combiner = require('stream-combiner2'),
+  less = require('gulp-less'),
+  minimist = require('minimist'),
+  postcss = require('gulp-postcss'),
+  sourcemaps = require('gulp-sourcemaps'),
 
-var less = require('gulp-less');
-var lessOptions = {
-	strictImports: true,
-	ieCompat: true,
-	relativeUrls: false,
-};
+  lessOptions = {
+    strictImports: true,
+    ieCompat: true,
+    relativeUrls: false,
+  },
 
-gulp.task('mainmenuupgrade', function() {
-	return gulp.src('./main_menu_upgrade/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./main_menu_upgrade/css'));
+  autoprefixerOptions = {
+    browsers: ['last 2 versions', 'Android >= 2.3', 'ie >= 10'],
+    cascade: false
+  },
+
+  options = minimist(process.argv.slice(2)),
+
+  dir = options.dir || '',
+
+  browserSyncFiles = [
+    options.dir + '/**/*.html',
+    options.dir + '/css/**/*.css',
+    options.dir + '/js/**/*.js',
+    options.dir + '/img/**/*'
+  ];
+
+gulp.task('browser-sync', function() {
+  browserSync.init(browserSyncFiles, {
+    ui: {
+      port: 3067
+    },
+    server: {
+      baseDir: '.'
+    },
+    open: false,
+    port: 3066
+  });
 });
 
-gulp.task('atms', function() {
-	return gulp.src('./atms/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./atms/css'));
+gulp.task('build-styles', function() {
+  var combined = gulp.src(options.dir + '/' + 'css/**/*.less')
+    // .pipe(sourcemaps.init())
+    .pipe(less(lessOptions))
+    .pipe(postcss([ autoprefixer(autoprefixerOptions) ]))
+    // .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(options.dir + '/' + 'css'));
+
+  combined.on('error', console.error.bind(console));
+
+  return combined;
 });
 
-gulp.task('mobile', function() {
-	return gulp.src('./mobile/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./mobile/css'));
-});
-
-gulp.task('weather', function() {
-	return gulp.src('./weather/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./weather/css'));
-});
-
-gulp.task('newmain', function() {
-	return gulp.src('./newMain/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./newMain/css'));
-});
-
-gulp.task('news', function() {
-	return gulp.src('./news/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./news/css'));
-});
-
-gulp.task('realty', function() {
-	return gulp.src('./doska/realty/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./doska/realty/css'));
-});
-
-gulp.task('drugsearch', function() {
-	return gulp.src('./drug_search/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./drug_search/css'));
-});
-
-gulp.task('newmain', function() {
-	return gulp.src('./newMain/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./newMain/css'));
-});
-
-gulp.task('realty-elems', function() {
-	return gulp.src('./doska/realty-elems/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./doska/realty-elems/css'));
-});
-
-gulp.task('madv', function() {
-	return gulp.src('./misc/mobile_adv/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./misc/mobile_adv/css'));
-});
-
-gulp.task('realty-score', function() {
-	return gulp.src('./doska/realty-score/css/*.less')
-		.pipe(less(lessOptions))
-		.pipe(gulp.dest('./doska/realty-score/css'));
-});
-
-gulp.task('watch', function() {
-	gulp.watch([
-		'./newMain/css/less/**/*.less',
-		'./newMain/css/less/**/*.css',
-		'./blocks/**/*.less',
-		'./blocks/**/*.css',
-		], ['mainmenuupgrade', 'atms', 'mobile', 'weather', 'realty', 'newmain', 'news']);
-
-	gulp.watch([
-		'./mobile/css/*.less',
-		'./mobile/css/foo.css',
-		'./mobile/css/foo-doska.css',
-		'./mobile/css/m-normalize.css',
-		'./mobile/css/m-old-compat.css',
-		'./blocks/**/*.css',
-		'./weather/css/*.less',
-		'./weather/css/weather-desktop.css',
-		'./misc/mobile_adv/css/*.less'
-		], ['mobile', 'weather', 'realty-elems', 'madv']);
-
-	gulp.watch('./doska/**/*.less', ['realty', 'realty-elems', 'realty-score']);
-
-	gulp.watch([
-		'./blocks/**/*.css',
-		'./drug_search/**/*.less'
-		], ['drugsearch']);
-
-	gulp.watch([
-		'./news/css/*.less'
-		], ['news']);
-});
+gulp.task('default', ['browser-sync'], function() {
+  gulp.watch(options.dir + '/' + 'css/**/*.less', ['build-styles']);
+})
