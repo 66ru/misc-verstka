@@ -57,6 +57,7 @@
   position: relative;
   overflow: hidden;
   height: 40px;
+  -webkit-transition: height .4s;
   transition: height .4s;
   border-top: 1px dotted #eee;
   border-bottom: 1px dotted #fff;
@@ -99,6 +100,7 @@
   display: block;
   height: 5px;
   content: '';
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .exrate_head:after {
@@ -156,6 +158,7 @@
 }
 .exrate__price {
   float: right;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 50px;
   text-align: center;
@@ -169,6 +172,7 @@
   content: '';
   vertical-align: bottom;
   background: none center no-repeat transparent;
+  -webkit-background-size: 8px 8px;
   background-size: 8px;
 }
 .exrate__filter_asc:after {
@@ -211,6 +215,7 @@
 }
 .exrate__controls_map .link:before {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" enable-background="new 0 0 20 20"><path fill="#004a60" d="M14.4 9H8.6c-.552 0-.6.447-.6 1s.048 1 .6 1h5.8c.552 0 .6-.447.6-1s-.048-1-.6-1zm2 5H8.6c-.552 0-.6.447-.6 1s.048 1 .6 1h7.8c.552 0 .6-.447.6-1s-.048-1-.6-1zM8.6 6h7.8c.552 0 .6-.447.6-1s-.048-1-.6-1H8.6c-.552 0-.6.447-.6 1s.048 1 .6 1zM5.4 9H3.6c-.552 0-.6.447-.6 1s.048 1 .6 1h1.8c.552 0 .6-.447.6-1s-.048-1-.6-1zm0 5H3.6c-.552 0-.6.447-.6 1s.048 1 .6 1h1.8c.552 0 .6-.447.6-1s-.048-1-.6-1zm0-10H3.6c-.552 0-.6.447-.6 1s.048 1 .6 1h1.8c.552 0 .6-.447.6-1s-.048-1-.6-1z"/></svg>');
+  -webkit-background-size: 12px 12px;
   background-size: 12px;
 }
 .exrate__controls .m-select {
@@ -225,6 +230,7 @@
   margin-left: 10px;
   padding-right: 20px;
   background-position: right 4px center;
+  -webkit-background-size: 10px 10px;
   background-size: 10px;
 }
 .m-drugs-map__map-wrap .m-select {

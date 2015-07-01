@@ -12,12 +12,14 @@
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 76px;
   padding: 15px 25px;
   pointer-events: none;
   color: #fff;
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 .photorep__title {
@@ -142,6 +144,7 @@
   bottom: 93px;
   left: 0;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 35px;
   text-align: center;
@@ -153,13 +156,13 @@
   margin-right: 10px;
   margin-bottom: 3px;
   cursor: pointer;
-  -o-transition: opacity .4s;
+  -webkit-transition: opacity .4s;
   transition: opacity .4s;
   opacity: .7;
   background-color: #f2ffd3;
 }
 .swipebox-dot:hover {
-  -o-transition: none;
+  -webkit-transition: none;
   transition: none;
   opacity: 1;
 }
