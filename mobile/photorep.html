@@ -6,9 +6,13 @@
 <title>Новости</title>
 <link rel="stylesheet" href="css/news.css">
 <link rel="stylesheet" href="css/photorep.css" />
-<script src="../bower_components/zepto/zepto.min.js"></script>
+<!-- <script src="../bower_components/zepto/zepto.min.js"></script> -->
+<script src="../bower_components/jquery-1.9.1/jquery.js"></script>
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../blocks/m-layout/js/m-layout-init.js"></script>
+
+<link rel="stylesheet" href="../bower_components/fotorama/fotorama.css" />
+<script src="../bower_components/fotorama/fotorama.js"></script>
 </head>
 <body class="m-layout__body">
 <div class="m-layout__menu-wrap">
@@ -85,16 +89,29 @@
 		<p class="m-text__p">В&nbsp;отдел МВД по&nbsp;городу Донской заявил мужчина, что около дома по&nbsp;месту жительства неизвестные, используя огнестрельное оружие, причинили ранение 2&nbsp;поросятам. Ущерб 18&thinsp;000 рублей.</p>
 	</div>
 	<div class="m-photorep">
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/dade06a1e3b75af39182a70a1add718429661793_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/8d76d226d3dd3d7a71ae235b41977fe817f0e39a_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/1968ab5e058aaafe2e6e215f91f2d7ed28ca5796_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/d45d08f39945307d784cc89d6b3e575b4d90da30_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/5f58061495a952756bc9f70d2a3d98f27452aa47_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/d438617daa2a23ccd97875f61b49c29c526b4151_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/a178b344f09b7f26b11055ab192b3066c034de04_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/9673607fa1040add5d4d92fde5356554134511ac_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/0efd788141f560ffe217ebe59d2b47b87347746b_m.jpg" alt="" class="m-photorep__img"></a>
-		<a href="#" class="m-photorep__link"><img src="http://img.ffffound.com/static-data/assets/6/dc42fe8a620d33454a9d249da3a770baa6e6876d_m.jpg" alt="" class="m-photorep__img"></a>
+		<div class="m-photorep__caption">Фоторепортаж: Дмитрий Горчаков</div>
+		<div class="m-photorep__fotorama-container fotorama"
+				 data-width="100%"
+				 data-ratio="4/3"
+				 data-maxheight="80%"
+				 data-allowfullscreen="native"
+				 data-nav="thumbs"
+				 data-thumbheight="45"
+				 data-thumbmargin="0"
+				 data-thumbborderwidth="1"
+				 data-click="false"
+				 >
+			<img src="http://img.ffffound.com/static-data/assets/6/dade06a1e3b75af39182a70a1add718429661793_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/8d76d226d3dd3d7a71ae235b41977fe817f0e39a_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/1968ab5e058aaafe2e6e215f91f2d7ed28ca5796_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/d45d08f39945307d784cc89d6b3e575b4d90da30_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/5f58061495a952756bc9f70d2a3d98f27452aa47_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/d438617daa2a23ccd97875f61b49c29c526b4151_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/a178b344f09b7f26b11055ab192b3066c034de04_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/9673607fa1040add5d4d92fde5356554134511ac_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/0efd788141f560ffe217ebe59d2b47b87347746b_m.jpg" alt="">
+			<img src="http://img.ffffound.com/static-data/assets/6/dc42fe8a620d33454a9d249da3a770baa6e6876d_m.jpg" alt="">
+		</div>
 	</div>
 	<div class="m-text">
 		<p class="m-text__p">Сотрудниками полиции установлен местный житель, 1983&nbsp;г.р. Изъято охотничье ружье МР-153 калибра 12. Мужчина сознался в&nbsp;содеянном.</p>

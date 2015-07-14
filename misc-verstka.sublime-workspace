@@ -519,6 +519,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "mobile/photorep.html",
+			"settings":
+			{
+				"buffer_size": 9059,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mobile/photorep-fs.html",
+			"settings":
+			{
+				"buffer_size": 8773,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mobile/css/photorep.less",
+			"settings":
+			{
+				"buffer_size": 503,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mobile/css/foo.css",
+			"settings":
+			{
+				"buffer_size": 22293,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -716,12 +748,21 @@
 	"expanded_folders":
 	[
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka",
-		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news",
-		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css",
-		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/node_modules"
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/bower_components",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/bower_components/fotorama",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/mobile",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/mobile/css"
 	],
 	"file_history":
 	[
+		"/opt/homebrew-cask/Caskroom/league-of-legends/latest/League of Legends.app/Contents/LoL/RADS/system/locale.cfg",
+		"/opt/homebrew-cask/Caskroom/league-of-legends/latest/League of Legends.app/Contents/LoL/Config/game.cfg",
+		"/Users/antonbelyaev/Downloads/LOL_OPGG_Observer_1196424552_replay.cmd",
+		"/usr/local/bin/lol_replay",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/mobile/счет 3.6.15.txt",
+		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/gulpfile.js",
+		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/mobile/movie.html",
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/gulpfile_old.js",
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/gulpfile.js",
 		"/Users/antonbelyaev/Documents/Workshop/dump 2015/gulpfile.js",
@@ -732,8 +773,6 @@
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/news/css/news-piece.less",
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/newMain/css/less/blocks/button/css/button.css",
 		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/User/Autoprefixer.sublime-settings",
-		"/Users/antonbelyaev/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/gulpfile.js",
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/misc-verstka/misc-verstka.sublime-project",
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/chef/vagrantfiles/gpor/Vagrantfile",
 		"/Users/antonbelyaev/Documents/Workshop/66.ru/_db/mysql/my.cnf",
@@ -843,13 +882,7 @@
 		"/Users/antonbelyaev/Workshop/66.ru/blablanator/package.json",
 		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/src/modules/comments/less/smiles.less",
 		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/src/modules/comments/less/mobile.less",
-		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/modules/comments/templates.js",
-		"/Users/antonbelyaev/Workshop/dump 2015/dump/static/humans.txt",
-		"/Users/antonbelyaev/Workshop/dump 2015/gulpfile.js",
-		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/mobile/news-piece.html",
-		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/news/img_base64/ei-sc-facebook.svg",
-		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/newMain/css/doskaNewCard_standalone.css",
-		"/Users/antonbelyaev/Workshop/66.ru/misc-verstka/newMain/css/less/blocks/b-news-item/css/b-news-item.css"
+		"/Users/antonbelyaev/Workshop/66.ru/blablanator/frontend/modules/comments/templates.js"
 	],
 	"find":
 	{
@@ -870,6 +903,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<a href=\"#\" class=\"m-photorep__link\">",
+			"options.dir",
+			"./",
 			"console",
 			"dump/static",
 			"803380",
@@ -994,10 +1030,7 @@
 			"talks_list--wrap-half",
 			"12:50&ndash;13:30",
 			"12:00&ndash;12:40",
-			"magenta",
-			"Serverside.<span class=\"ttc\">&#x200b;Knowledge</span>",
-			"ochre",
-			"talks_list--elem-c-green"
+			"magenta"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1019,8 +1052,126 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "mobile/photorep.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4811,
+								4811
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1523.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mobile/photorep-fs.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5016,
+								5016
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 595.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "mobile/css/photorep.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								500,
+								500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mobile/css/foo.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 22293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11570,
+								11581
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8467.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1085,16 +1236,20 @@
 		"selected_items":
 		[
 			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"photorefs",
+				"mobile/photorep-fs.html"
+			],
+			[
 				"button",
 				"newMain/css/less/blocks/button/css/button.css"
 			],
 			[
 				"test",
 				"test/api_version_test.rb"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
 			],
 			[
 				"newssty",
@@ -1591,10 +1746,6 @@
 			[
 				"statispe",
 				"spec/requests/static_pages_spec.rb"
-			],
-			[
-				"grun",
-				"Gruntfile.js"
 			]
 		],
 		"width": 0.0
@@ -1624,7 +1775,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 248.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -1,11 +1,23 @@
 .m-photorep {
   font-size: 0;
+  position: relative;
+  z-index: 1;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 90px;
   margin: 10px 0;
   white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.9);
   -webkit-overflow-scrolling: touch;
+}
+.m-photorep__caption {
+  font-size: 10px;
+  position: absolute;
+  z-index: 9999;
+  text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding-top: 3px;
+  padding-left: 10px;
+  pointer-events: none;
+  color: #fff;
 }
 .m-photorep__link {
   display: inline-block;
@@ -15,16 +27,4 @@
 .m-photorep__img {
   display: block;
   height: 100%;
-}
-.fotorama-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.fotorama {
-  width: 100%;
 }
