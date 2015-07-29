@@ -1,76 +1,88 @@
-.photorep-fullscreen {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  min-width: 960px;
-  background-color: rgba(0, 0, 0, 0.95);
-}
 .photorep {
   position: relative;
   z-index: 1;
+
+  overflow: hidden;
+
   height: 0;
   padding-top: 42.87%;
 }
+
 .photorep__info {
   font-size: 14px;
+
   position: absolute;
   z-index: 4;
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-box-sizing: border-box;
+
   box-sizing: border-box;
   height: 76px;
   padding: 15px 25px;
+
   pointer-events: none;
+
   color: #fff;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
 }
+
 .photorep__title {
   font-size: 22px;
   line-height: 22px;
+
   margin-bottom: 7px;
+
   white-space: nowrap;
-  text-shadow: -1px 1px rgba(0, 0, 0, 0.4);
+
+  text-shadow: -1px 1px rgba(0, 0, 0, .4);
 }
+
 .photorep__photos {
   line-height: 14px;
+
   position: relative;
+
   display: block;
+
   padding-left: 26px;
 }
+
 .photorep__photos:before {
   position: absolute;
   top: -5px;
   left: 0;
+
   display: block;
+
   width: 24px;
   height: 24px;
+
   content: '';
+
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAgNTAiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNSA0MmMtOS40IDAtMTctNy42LTE3LTE3UzE1LjYgOCAyNSA4czE3IDcuNiAxNyAxNy03LjYgMTctMTcgMTd6bTAtMzJjLTguMyAwLTE1IDYuNy0xNSAxNXM2LjcgMTUgMTUgMTUgMTUtNi43IDE1LTE1LTYuNy0xNS0xNS0xNXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAgMzMuN1YxNi4zTDM1IDI1bC0xNSA4Ljd6bTItMTR2MTAuNWw5LTUuMy05LTUuMnoiLz48L3N2Zz4K');
 }
+
 .photorep__main {
   position: absolute;
   top: 0;
   left: 0;
+
   display: block;
   overflow: hidden;
+
   width: 57.13%;
   height: 100%;
 }
+
 .photorep__main-thumbnail {
   position: absolute;
   top: -9999px;
   right: -9999px;
   bottom: -9999px;
   left: -9999px;
+
   width: auto;
   min-width: 100%;
   max-width: 180%;
@@ -79,34 +91,43 @@
   max-height: 180%;
   margin: auto;
 }
+
 .photorep__main-thumbnail:hover,
 .photorep__main-thumbnail:active {
   opacity: .9;
 }
+
 .photorep_adjusted .photorep__main-thumbnail {
   max-width: 100%;
   max-height: 100%;
 }
+
 .photorep__side {
   position: absolute;
   top: 0;
   right: 0;
+
   width: 42.87%;
   height: 100%;
 }
+
 .photorep__nonexistent {
   display: none;
 }
+
 .photorep__elem {
   position: relative;
   z-index: 1;
+
   float: left;
   overflow: hidden;
+
   width: 98%;
   height: 49.5%;
   margin-bottom: 2%;
   margin-left: 2%;
 }
+
 .photorep__thumbnail {
   position: absolute;
   z-index: -1;
@@ -114,6 +135,7 @@
   right: -9999px;
   bottom: -9999px;
   left: -9999px;
+
   width: auto;
   min-width: 100%;
   max-width: 140%;
@@ -122,63 +144,87 @@
   max-height: 140%;
   margin: auto;
 }
+
 .photorep__thumbnail:hover,
 .photorep__thumbnail:active {
   opacity: .8;
 }
+
+
+
+
 #swipebox-overlay {
   background-color: #000 !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, .9) !important;
 }
+
 #swipebox-etui {
   position: relative;
+
   height: 100%;
 }
+
 #swipebox-main {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 127px;
   left: 0;
+
   overflow: hidden;
 }
+
 #swipebox-ad {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+
   height: 90px;
 }
+
 #swipebox-dots {
   position: absolute;
   right: 0;
   bottom: 93px;
   left: 0;
+  // padding: 10px 0;
+
   overflow: hidden;
-  -webkit-box-sizing: border-box;
+
   box-sizing: border-box;
   height: 35px;
+
   text-align: center;
 }
+
 .swipebox-dot {
   display: inline-block;
+
   width: 16px;
   height: 16px;
   margin-right: 10px;
+  // box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
   margin-bottom: 3px;
+
   cursor: pointer;
-  -webkit-transition: opacity .4s;
+  -o-transition: opacity .4s;
   transition: opacity .4s;
+
   opacity: .7;
   background-color: #f2ffd3;
 }
+
 .swipebox-dot:hover {
-  -webkit-transition: none;
+  -o-transition: none;
   transition: none;
+
   opacity: 1;
 }
+
 .swipebox-dot_current {
   cursor: default;
+
   opacity: 1;
   background-color: #6a920f;
 }

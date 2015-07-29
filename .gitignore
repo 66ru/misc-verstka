@@ -2,3 +2,5 @@
 /tmp
 .idea
 /src/img
+*.sublime-project
+*.sublime-workspace
