@@ -27,6 +27,7 @@ var fotoramaOptions = {
   click: false
 };
 
+
 class Photorep {
   constructor(elem, options) {
     this.isFullscreen = false;
@@ -35,11 +36,12 @@ class Photorep {
 
     let re = new RegExp(`.*\/photo\/${this.id}\/item\/(\\d)+\/?$`, 'i');
     this.re = re;
-    this.elemURLs = this.getElemURLs(re);
+    // console.log(this.re);
+    this.elemIDs = this.getElemIDs(re);
 
     this.fotorama = this.initFotorama(options);
 
-    router.add(re, this.showFrame.bind(this))
+    router//.add(re, this.showFrame.bind(this))
       .listen()
       .check();
 
@@ -63,20 +65,22 @@ class Photorep {
   }
 
   showFrame(index) {
-    var photoID = decodeURI(location.pathname).match(this.re)[1]
+    // var photoID = decodeURI(location.pathname).match(this.re)[1]
+    // console.log(photoID);
   }
 
   navigate() {
-    router.navigate(`photo/${this.id}/item/` + this.elemURLs[this.fotorama.activeIndex] + '/');
+    console.log(this.elemIDs[this.fotorama.activeIndex]);
+    router.navigate(`photo/${this.id}/item/` + this.elemIDs[this.fotorama.activeIndex] + '/');
   }
 
-  getElemURLs(re, id) {
-    var elemURLs = [];
+  getElemIDs(re, id) {
+    var elemIDs = [];
     this.$fotorama.find('.m-photorep__fotorama-elem')
       .each(function() {
-        elemURLs.push( $(this).attr('href').match(re)[1] );
+        elemIDs.push( $(this).attr('href').match(re)[1] );
       });
-    return elemURLs;
+    return elemIDs;
   }
 
   initFotorama(options) {
@@ -84,10 +88,8 @@ class Photorep {
   }
 }
 
-$(window).onload(function() {
-  $(function() {
-    $('.fotorama').each(function() {
-      new Photorep(this, fotoramaOptions);
-    });
+$(function() {
+  $('.fotorama').each(function() {
+    new Photorep(this, fotoramaOptions);
   });
 });
