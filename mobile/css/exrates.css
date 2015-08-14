@@ -163,6 +163,7 @@
   width: 50px;
   text-align: center;
 }
+.exrate__filter:after,
 .exrate__filter_asc:after,
 .exrate__filter_desc:after {
   line-height: 30px;
@@ -174,6 +175,9 @@
   background: none center no-repeat transparent;
   -webkit-background-size: 8px 8px;
   background-size: 8px;
+}
+.exrate__filter:after {
+  background-image: url('data:image/svg+xml;utf8,<svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg"><title>Untitled 2</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M10 11.4L.3.3h19.4L10 11.4z" fill="#ddd"/></g></svg>');
 }
 .exrate__filter_asc:after {
   background-image: url('data:image/svg+xml;utf8,<svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg"><title>Untitled 2</title><desc>Created with Sketch.</desc><g fill="none" fill-rule="evenodd"><path d="M10 11.4L.3.3h19.4L10 11.4z" fill="#777"/></g></svg>');
