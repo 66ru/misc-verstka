@@ -1,0 +1,13 @@
+[
+  {
+    "currency": "$",
+    "value": 66.424234234,
+    "fluct": 0.035,
+    "chartUrl": "https://www.quandl.com/api/v3/datasets/CURRFX/USDRUB.json?start_date=2014-10-04"
+  }, {
+    "currency": "€",
+    "value": 74.439234972,
+    "fluct": -0.193,
+    "chartUrl": "https://www.quandl.com/api/v3/datasets/CURRFX/EURRUB.json?start_date=2014-10-05"
+  }
+]

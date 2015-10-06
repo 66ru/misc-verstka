@@ -13,6 +13,10 @@
 <script src="../blocks/m-drugs-map/js/m-drugs-map.js"></script>
 <script src="js/foo.js"></script>
 <script src="js/exrates.js"></script>
+<script src="../bower_components/react/react.js"></script>
+<script src="../bower_components/react/react-dom.js"></script>
+<script src="../bower_components/d3/d3.js"></script>
+<script src="js/MainRates.react.js"></script>
 
 <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark,control.ZoomControl,templateLayoutFactory" type="text/javascript"></script>
 </head>
@@ -78,6 +82,11 @@
 	</div>
 
 	<div class="m-text clearfix">
+		<div class="m m-text__h2">Текущие котировки валют</div>
+		<div class="main-rates"></div>
+	</div>
+
+	<div class="m-text clearfix">
 		<h1 class="m-text__h2">Курсы валют ЦБ РФ</h1>
 		<div class="main-rate">
 			<span class="main-rate__currency">$</span>
@@ -93,7 +102,6 @@
 			<span class="main main-rate__additional">8299</span>
 			<span class="main-rate__fluct main-rate__fluct_appreciation">0,4451</span>
 		</div>
-
 
 		<h1 class="m-text__h2">Курсы валют в банках Екатеринбурга</h1>
 	</div>
