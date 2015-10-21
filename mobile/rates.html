@@ -81,10 +81,21 @@
 		</div>
 	</div>
 
+  <!-- Текущие котировки валют -->
 	<div class="m-text clearfix">
 		<div class="m m-text__h2">Текущие котировки валют</div>
 		<div class="main-rates"></div>
 	</div>
+	<script type="text/javascript">
+		$(function() {
+      var mainRates = React.createElement(MainRates);
+			ReactDOM.render(
+				mainRates,
+				$('.main-rates')[0]
+			);
+		});
+	</script>
+  <!-- /Текущие котировки валют -->
 
 	<div class="m-text clearfix">
 		<h1 class="m-text__h2">Курсы валют ЦБ РФ</h1>

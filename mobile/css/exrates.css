@@ -244,3 +244,14 @@
   right: 10px;
   background-color: #fff;
 }
+.axis {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: normal;
+}
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

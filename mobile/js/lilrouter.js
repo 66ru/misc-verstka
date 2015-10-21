@@ -8,73 +8,85 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
+var _lilRouterInstance = null;
+
 var LilRouter = (function () {
-  function LilRouter(overrides) {
+  function LilRouter(opts) {
     _classCallCheck(this, LilRouter);
 
-    var options = {
-      root: '/'
-    };
-    _extends(options, overrides);
-
-    this.root = options.root;
-    this.routes = new Map();
+    if (!_lilRouterInstance) {
+      this._initialize(opts);
+    }
+    return _lilRouterInstance;
   }
 
   _createClass(LilRouter, [{
     key: 'add',
     value: function add(route, action) {
       this.routes.set(route, action);
-      return this;
     }
   }, {
     key: 'remove',
     value: function remove(route) {
       this.routes['delete'](route);
-      return this;
     }
   }, {
     key: 'clear',
     value: function clear() {
       this.routes.clear();
-      return this;
     }
   }, {
     key: 'check',
     value: function check() {
       this.routes.forEach((function (action, route) {
-        var match = this.getPath().match(route);
+        var match = this._getPath().match(route);
         if (match) {
           match.shift();
           action.apply(undefined, _toConsumableArray(match));
         }
       }).bind(this));
-      return this;
     }
   }, {
     key: 'listen',
     value: function listen() {
-      window.addEventListener('popstate', this.check());
-      return this;
+      window.addEventListener('popstate', this.popStateListener, false);
     }
   }, {
-    key: 'stopListening',
-    value: function stopListening() {
-      window.removeEventListener('popstate', this.check());
-      return this;
+    key: 'stop',
+    value: function stop() {
+      window.removeEventListener('popstate', this.popStateListener, false);
     }
   }, {
     key: 'navigate',
     value: function navigate() {
       var path = arguments.length <= 0 || arguments[0] === undefined ? '' : arguments[0];
-
-      history.pushState(null, '', this.root + path);
-      return this;
+      // Navigate to root if (path === undefined).
+      history.pushState(null, '', this.root + this._clearPath(path));
     }
   }, {
-    key: 'getPath',
-    value: function getPath() {
+    key: '_initialize',
+    value: function _initialize(opts) {
+      var options = {
+        root: '/'
+      };
+      _extends(options, opts);
+
+      this.root = options.root;
+      this.routes = new Map();
+
+      this.popStateListener = this.check.bind(this);
+
+      _lilRouterInstance = this;
+    }
+  }, {
+    key: '_getPath',
+    value: function _getPath() {
       return decodeURI(location.pathname);
+    }
+  }, {
+    key: '_clearPath',
+    value: function _clearPath(path) {
+      return path.replace(this.root, '');
     }
   }]);
 

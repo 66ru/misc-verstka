@@ -54,42 +54,79 @@ class MainRate extends React.Component {
 
 
 class MainRateChart extends React.Component {
+  processData(data) {
+    let points = [],
+      format = d3.time.format('%Y-%m-%d'),
+      domainY = [0, 0];
+
+    data.dataset.data.forEach(function(elem, index) {
+      points.push({
+        x: format.parse(elem[0]),
+        y: elem[1]
+      });
+    });
+
+    domainY[0] = d3.min(points, function(elem) {
+      return elem.y;
+    });
+
+    domainY[1] = d3.max(points, function(elem) {
+      return elem.y;
+    });
+
+    return {
+      points: points,
+      domainY: domainY
+    };
+  }
+
   componentDidMount() {
     let $container = $(this.refs.container),
-      width = $container.width(),
-      height = 200;
+      margin = 20,
+      height = 200,
+      width = $container.width();
 
     $.getJSON(this.props.chartUrl, (data) => {
-      let points = data.dataset.data.map(function(elem, index) {
-        return {
-          x: index,
-          y: elem[1]
-        }
-      });
+      let processedData = this.processData(data);
+      let scaleX = d3.time.scale()
+        .domain([processedData.points[0].x, processedData.points[processedData.points.length - 1].x])
+        .range([width, 20]);
 
-      let x = d3.scale.linear()
-        .domain([0, width/2])
-        .range([0, width]);
-
-      let y = d3.scale.linear()
-        .domain([height, 0])
-        .range([height*2, 0]);
+      let scaleY = d3.scale.linear()
+        .domain(processedData.domainY)
+        .range([180, 0]);
 
       let d3container = d3.select(this.refs.container);
       let d3svg = d3container.append('svg:svg')
-        .attr('width', width)
+        .attr('width', '100%')
         .attr('height', height);
 
       let d3line = d3.svg.line()
-        .x(function(d) {return x(d.x);})
-        .y(function(d) {return y(d.y);})
+        .x(function(d) {return scaleX(d.x);})
+        .y(function(d) {return scaleY(d.y);})
         .interpolate('linear');
 
       d3svg.append('svg:path')
-        .attr('d', d3line(points))
+        .attr('d', d3line(processedData.points))
         .style('stroke-width', 1)
         .style('stroke', 'steelblue')
         .style('fill', 'none');
+
+      d3svg.append('g')
+        .attr('class', 'axis')
+        .attr('transform', 'translate(0,' + (height - margin) + ')')
+        .call(d3.svg.axis()
+          .scale(scaleX)
+          .orient('bottom')
+        );
+
+      d3svg.append('g')
+        .attr('class', 'axis')
+        .attr('transform', 'translate(20, 0)')
+        .call(d3.svg.axis()
+          .scale(scaleY)
+          .orient('left')
+        );
     });
   }
 
@@ -98,16 +135,52 @@ class MainRateChart extends React.Component {
   }
 
   render() {
-    return <div className="main-rate-chart" ref="container"></div>
+    return <div className="main-rate-chart" ref="container"></div>;
   }
 }
 
 
+// function ERData(rawData) {
+//   let dataset = rawData.dataset.data;
+
+//   function parseDot(dot) {
+//     return {
+//       x: this.timeFormat.parse(dot[0]),
+//       y: dot[1]
+//     };
+//   }
+
+//   this.timeFormat = d3.time.format('%Y-%m-%d');
+
+//   this.data = function() {
+//     return dataset.map(parseDot.bind(this));
+//   };
+// }
 
 
-$(function() {
-  ReactDOM.render(
-    <MainRates />,
-    $('.main-rates')[0]
-  );
-});
+// function ERPlot(data, node) {
+//   let ratio = .4,
+//     margin = {top: 0, right: 0, bottom: 20, left: 20},
+//     width, height, inputDomainX,
+
+//     $container = $(node);
+
+//   let scaleX = d3.time.scale()
+//     .domain([processedData.points[0].x, processedData.points[processedData.points.length - 1].x])
+//     .range([width, 20]);
+
+//   let scaleY = d3.scale.linear()
+//     .domain(processedData.domainY)
+//     .range([180, 0]);
+
+//   let d3svg = d3.select(this.refs.container)
+//     .append('svg:svg')
+//     .attr('width', '100%')
+//     .attr('height', height);
+
+//   this.getDimensions = function() {
+//     width = $container.width() - margin.right - margin.left,
+//     height = width * ratio,
+//     inputDomainX = [0, 0];
+//   };
+// }

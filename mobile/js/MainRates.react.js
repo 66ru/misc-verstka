@@ -117,37 +117,107 @@ var MainRateChart = (function (_React$Component3) {
     _get(Object.getPrototypeOf(MainRateChart.prototype), 'constructor', this).apply(this, arguments);
   }
 
+  // function ERData(rawData) {
+  //   let dataset = rawData.dataset.data;
+
+  //   function parseDot(dot) {
+  //     return {
+  //       x: this.timeFormat.parse(dot[0]),
+  //       y: dot[1]
+  //     };
+  //   }
+
+  //   this.timeFormat = d3.time.format('%Y-%m-%d');
+
+  //   this.data = function() {
+  //     return dataset.map(parseDot.bind(this));
+  //   };
+  // }
+
+  // function ERPlot(data, node) {
+  //   let ratio = .4,
+  //     margin = {top: 0, right: 0, bottom: 20, left: 20},
+  //     width, height, inputDomainX,
+
+  //     $container = $(node);
+
+  //   let scaleX = d3.time.scale()
+  //     .domain([processedData.points[0].x, processedData.points[processedData.points.length - 1].x])
+  //     .range([width, 20]);
+
+  //   let scaleY = d3.scale.linear()
+  //     .domain(processedData.domainY)
+  //     .range([180, 0]);
+
+  //   let d3svg = d3.select(this.refs.container)
+  //     .append('svg:svg')
+  //     .attr('width', '100%')
+  //     .attr('height', height);
+
+  //   this.getDimensions = function() {
+  //     width = $container.width() - margin.right - margin.left,
+  //     height = width * ratio,
+  //     inputDomainX = [0, 0];
+  //   };
+  // }
+
   _createClass(MainRateChart, [{
+    key: 'processData',
+    value: function processData(data) {
+      var points = [],
+          format = d3.time.format('%Y-%m-%d'),
+          domainY = [0, 0];
+
+      data.dataset.data.forEach(function (elem, index) {
+        points.push({
+          x: format.parse(elem[0]),
+          y: elem[1]
+        });
+      });
+
+      domainY[0] = d3.min(points, function (elem) {
+        return elem.y;
+      });
+
+      domainY[1] = d3.max(points, function (elem) {
+        return elem.y;
+      });
+
+      return {
+        points: points,
+        domainY: domainY
+      };
+    }
+  }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
       var _this2 = this;
 
       var $container = $(this.refs.container),
-          width = $container.width(),
-          height = 200;
+          margin = 20,
+          height = 200,
+          width = $container.width();
 
       $.getJSON(this.props.chartUrl, function (data) {
-        var points = data.dataset.data.map(function (elem, index) {
-          return {
-            x: index,
-            y: elem[1]
-          };
-        });
+        var processedData = _this2.processData(data);
+        var scaleX = d3.time.scale().domain([processedData.points[0].x, processedData.points[processedData.points.length - 1].x]).range([width, 20]);
 
-        var x = d3.scale.linear().domain([0, width / 2]).range([0, width]);
-
-        var y = d3.scale.linear().domain([height, 0]).range([height * 2, 0]);
+        var scaleY = d3.scale.linear().domain(processedData.domainY).range([180, 0]);
 
         var d3container = d3.select(_this2.refs.container);
-        var d3svg = d3container.append('svg:svg').attr('width', width).attr('height', height);
+        var d3svg = d3container.append('svg:svg').attr('width', '100%').attr('height', height);
 
         var d3line = d3.svg.line().x(function (d) {
-          return x(d.x);
+          return scaleX(d.x);
         }).y(function (d) {
-          return y(d.y);
+          return scaleY(d.y);
         }).interpolate('linear');
 
-        d3svg.append('svg:path').attr('d', d3line(points)).style('stroke-width', 1).style('stroke', 'steelblue').style('fill', 'none');
+        d3svg.append('svg:path').attr('d', d3line(processedData.points)).style('stroke-width', 1).style('stroke', 'steelblue').style('fill', 'none');
+
+        d3svg.append('g').attr('class', 'axis').attr('transform', 'translate(0,' + (height - margin) + ')').call(d3.svg.axis().scale(scaleX).orient('bottom'));
+
+        d3svg.append('g').attr('class', 'axis').attr('transform', 'translate(20, 0)').call(d3.svg.axis().scale(scaleY).orient('left'));
       });
     }
   }, {
@@ -164,7 +234,3 @@ var MainRateChart = (function (_React$Component3) {
 
   return MainRateChart;
 })(React.Component);
-
-$(function () {
-  ReactDOM.render(React.createElement(MainRates, null), $('.main-rates')[0]);
-});
