@@ -56,7 +56,7 @@ class MainRate extends React.Component {
 class MainRateChart extends React.Component {
   processData(data) {
     let points = [],
-      format = d3.time.format('%Y-%m-%d'),
+      format = d3.time.format('%Y-%m-%d %H:%M:%S'),
       domainY = [0, 0];
 
     data.dataset.data.forEach(function(elem, index) {
@@ -90,7 +90,7 @@ class MainRateChart extends React.Component {
       let processedData = this.processData(data);
       let scaleX = d3.time.scale()
         .domain([processedData.points[0].x, processedData.points[processedData.points.length - 1].x])
-        .range([width, 20]);
+        .range([width, 40]);
 
       let scaleY = d3.scale.linear()
         .domain(processedData.domainY)
@@ -122,7 +122,7 @@ class MainRateChart extends React.Component {
 
       d3svg.append('g')
         .attr('class', 'axis')
-        .attr('transform', 'translate(20, 0)')
+        .attr('transform', 'translate(40, 0)')
         .call(d3.svg.axis()
           .scale(scaleY)
           .orient('left')
